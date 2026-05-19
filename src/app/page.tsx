@@ -405,7 +405,7 @@ export default function Home() {
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <a href="/contact" className="gold-button text-center">
+                <a href="https://wa.me/8617666155283?text=Hello%2C%20I%20want%20to%20send%20an%20RFQ%20for%20your%20products." className="gold-button text-center">
                   Start RFQ Review
                 </a>
                 <a href="#capabilities" className="outline-button text-center">

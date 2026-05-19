@@ -218,7 +218,7 @@ export default function ContactPage() {
               </div>
             </div>
             <a
-              href="#rfq-form"
+              href="https://wa.me/8617666155283?text=Hello%2C%20I%20want%20to%20send%20an%20RFQ%20for%20your%20products."
               className="flex items-start gap-3 transition-colors hover:text-white"
             >
               <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
@@ -227,7 +227,7 @@ export default function ContactPage() {
               <span>{contactDetails.address}</span>
             </a>
           </div>
-          <a href="#rfq-form" className="gold-button w-full text-center sm:w-auto">
+          <a href="https://wa.me/8617666155283?text=Hello%2C%20I%20want%20to%20send%20an%20RFQ%20for%20your%20products." className="gold-button w-full text-center sm:w-auto">
             Start RFQ
           </a>
         </div>
@@ -278,7 +278,7 @@ export default function ContactPage() {
               Contact
             </a>
             <a
-              href="#rfq-form"
+              href="https://wa.me/8617666155283?text=Hello%2C%20I%20want%20to%20send%20an%20RFQ%20for%20your%20products."
               className="transition-colors hover:text-white"
             >
               RFQ Form
