@@ -536,7 +536,7 @@ export default function ContactPage() {
           </div>
         </section>
 
-        <section id="rfq-form" className="border-b border-white/8 py-16 lg:py-24">
+        <section id="rfq-form" className="hidden">
           <div className="container-shell grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-start">
             <div>
               <SectionHeading
