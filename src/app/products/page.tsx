@@ -300,7 +300,7 @@ export default function ProductsPage() {
               </div>
             </div>
             <a
-              href="#rfq"
+              href="/contact"
               className="flex items-start gap-3 transition-colors hover:text-white"
             >
               <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
@@ -309,7 +309,7 @@ export default function ProductsPage() {
               <span>{contactDetails.address}</span>
             </a>
           </div>
-          <a href="#rfq" className="gold-button w-full text-center sm:w-auto">
+          <a href="/contact" className="gold-button w-full text-center sm:w-auto">
             Get a Quote
           </a>
         </div>
@@ -366,7 +366,7 @@ export default function ProductsPage() {
             >
               Finishing
             </a>
-            <a href="#rfq" className="transition-colors hover:text-white">
+            <a href="/contact" className="transition-colors hover:text-white">
               RFQ
             </a>
           </nav>
@@ -398,7 +398,7 @@ export default function ProductsPage() {
                 >
                   Browse Product Categories
                 </a>
-                <a href="#rfq" className="outline-button text-center">
+                <a href="/contact" className="outline-button text-center">
                   Send RFQ Details
                 </a>
               </div>
@@ -559,7 +559,7 @@ export default function ProductsPage() {
                       ))}
                     </ul>
                     <a
-                      href="#rfq"
+                      href="/contact"
                       className="outline-button mt-6 w-full text-center"
                     >
                       Request Quote
