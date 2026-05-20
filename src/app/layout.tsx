@@ -95,6 +95,45 @@ export default function RootLayout({
             `,
           }}
         />
+              {/* HSX GA4 inquiry click tracking */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              document.addEventListener('click', function(event) {
+                var target = event.target;
+                var link = target && target.closest ? target.closest('a') : null;
+                if (!link || !window.gtag) return;
+
+                var href = link.getAttribute('href') || '';
+                var label = (link.innerText || link.textContent || '').trim();
+                var eventName = '';
+
+                if (href.indexOf('wa.me') !== -1 || href.indexOf('whatsapp') !== -1) {
+                  eventName = 'whatsapp_click';
+                } else if (href.indexOf('mailto:') === 0) {
+                  eventName = 'email_click';
+                } else if (href.indexOf('tel:') === 0) {
+                  eventName = 'phone_click';
+                } else if (
+                  label.toLowerCase().indexOf('quote') !== -1 ||
+                  label.toLowerCase().indexOf('drawings') !== -1 ||
+                  label.toLowerCase().indexOf('contact') !== -1 ||
+                  href.indexOf('/contact') !== -1
+                ) {
+                  eventName = 'inquiry_click';
+                }
+
+                if (eventName) {
+                  gtag('event', eventName, {
+                    link_url: href,
+                    link_text: label,
+                    page_location: window.location.href
+                  });
+                }
+              });
+            `,
+          }}
+        />
       </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
