@@ -849,6 +849,84 @@ export default function Home() {
             </div>
           </div>
         </section>
+      
+        {/* Internal links: homepage product category expansion */}
+        <section className="border-t border-white/10 bg-black/25 px-6 py-16 lg:px-12">
+          <div className="mx-auto max-w-6xl">
+            <p className="section-kicker">Expanded product categories</p>
+            <h2 className="mt-4 max-w-4xl text-3xl font-semibold tracking-tight text-white lg:text-5xl">
+              More OEM product pages for LED lighting and aluminum die casting buyers
+            </h2>
+            <p className="mt-6 max-w-4xl text-base leading-8 text-white/70 lg:text-lg">
+              Explore focused product pages for automotive LED lights, motorcycle LED lights,
+              aluminum light housings, decorative brake caliper covers, LED work lights,
+              and OEM aluminum die casting parts.
+            </p>
+
+            <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <a
+                href="/products/automotive-led-lights"
+                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
+              >
+                <h3 className="text-lg font-semibold text-white">Automotive LED Lights</h3>
+                <p className="mt-4 text-sm leading-7 text-white/65">
+                  OEM car LED lights, auxiliary lights, work lights, and aluminum lighting parts.
+                </p>
+              </a>
+
+              <a
+                href="/products/motorcycle-led-lights"
+                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
+              >
+                <h3 className="text-lg font-semibold text-white">Motorcycle LED Lights</h3>
+                <p className="mt-4 text-sm leading-7 text-white/65">
+                  Compact motorcycle LED lights, lamp housings, brackets, and lighting accessories.
+                </p>
+              </a>
+
+              <a
+                href="/products/aluminum-light-housings"
+                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
+              >
+                <h3 className="text-lg font-semibold text-white">Aluminum Light Housings</h3>
+                <p className="mt-4 text-sm leading-7 text-white/65">
+                  Die cast aluminum lamp housings, LED heat-sink bodies, covers, and brackets.
+                </p>
+              </a>
+
+              <a
+                href="/products/decorative-brake-caliper-covers"
+                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
+              >
+                <h3 className="text-lg font-semibold text-white">Decorative Brake Caliper Covers</h3>
+                <p className="mt-4 text-sm leading-7 text-white/65">
+                  Non-load-bearing decorative caliper covers and automotive appearance accessories.
+                </p>
+              </a>
+
+              <a
+                href="/products/led-work-lights"
+                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
+              >
+                <h3 className="text-lg font-semibold text-white">LED Work Lights</h3>
+                <p className="mt-4 text-sm leading-7 text-white/65">
+                  LED work lights and aluminum lighting-related parts for global B2B buyers.
+                </p>
+              </a>
+
+              <a
+                href="/products/oem-aluminum-die-casting-parts"
+                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
+              >
+                <h3 className="text-lg font-semibold text-white">OEM Aluminum Die Casting Parts</h3>
+                <p className="mt-4 text-sm leading-7 text-white/65">
+                  Small-to-medium aluminum die casting parts, housings, covers, and custom hardware.
+                </p>
+              </a>
+            </div>
+          </div>
+        </section>
+
       </main>
 
       <footer className="border-t border-white/8 bg-black/80 py-10">
