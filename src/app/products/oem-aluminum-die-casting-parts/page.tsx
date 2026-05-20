@@ -1036,6 +1036,66 @@ export default function OemAluminumDieCastingPartsPage() {
             </div>
           </div>
         </section>
+      
+        {/* SEO content enhancement: OEM Aluminum Die Casting Parts */}
+        <section className="border-t border-white/10 bg-black/20 px-6 py-16 lg:px-12">
+          <div className="mx-auto max-w-6xl">
+            <p className="section-kicker">OEM aluminum die casting parts</p>
+            <h2 className="mt-4 max-w-4xl text-3xl font-semibold tracking-tight text-white lg:text-5xl">
+              Small-to-medium aluminum die casting parts for global B2B sourcing
+            </h2>
+            <p className="mt-6 max-w-4xl text-base leading-8 text-white/70 lg:text-lg">
+              Foshan Huashunxiang Hardware Products Co., Ltd. focuses on small-to-medium aluminum
+              die casting parts, custom aluminum hardware parts, compact aluminum housings,
+              decorative covers, LED lighting-related aluminum parts, and non-load-bearing appearance
+              accessories for global OEM buyers, wholesalers, importers, distributors, and aftermarket
+              brands.
+            </p>
+
+            <div className="mt-10 grid gap-6 lg:grid-cols-3">
+              <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6">
+                <h3 className="text-lg font-semibold text-white">Production Scope</h3>
+                <p className="mt-4 text-sm leading-7 text-white/65">
+                  Our current aluminum die casting equipment includes 200-ton and 300-ton machines,
+                  suitable for compact aluminum components rather than oversized structural castings.
+                </p>
+              </div>
+              <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6">
+                <h3 className="text-lg font-semibold text-white">Secondary Processing</h3>
+                <p className="mt-4 text-sm leading-7 text-white/65">
+                  We support multi-axis drilling, multi-axis tapping, polishing, grinding, powder
+                  coating, painting, anodizing, and appearance finishing for aluminum parts.
+                </p>
+              </div>
+              <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6">
+                <h3 className="text-lg font-semibold text-white">Typical Part Types</h3>
+                <p className="mt-4 text-sm leading-7 text-white/65">
+                  Aluminum housings, hardware parts, lighting housings, brackets, covers, decorative
+                  accessories, compact cast bodies, and OEM parts based on drawings or samples.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-10 rounded-3xl border border-amber-300/20 bg-amber-300/[0.06] p-6">
+              <h3 className="text-xl font-semibold text-white">RFQ information for aluminum die casting projects</h3>
+              <p className="mt-4 text-sm leading-7 text-white/70">
+                To review your OEM project, please provide drawings, 3D files, product photos,
+                material requirements, part weight or size, surface treatment, expected order
+                quantity, target market, packaging request, and any inspection requirements. We will
+                confirm feasibility based on our 200T and 300T aluminum die casting capability.
+              </p>
+              <a
+                href="https://wa.me/8617666155283"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-6 inline-flex rounded-full bg-amber-300 px-6 py-3 text-sm font-semibold text-black transition hover:bg-amber-200"
+              >
+                Request OEM Die Casting Quote
+              </a>
+            </div>
+          </div>
+        </section>
+
       </main>
 
       <footer className="border-t border-white/8 bg-black/80 py-10">

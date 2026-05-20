@@ -933,6 +933,66 @@ export default function LedWorkLightsPage() {
             </div>
           </div>
         </section>
+      
+        {/* SEO content enhancement: LED Work Lights */}
+        <section className="border-t border-white/10 bg-black/20 px-6 py-16 lg:px-12">
+          <div className="mx-auto max-w-6xl">
+            <p className="section-kicker">OEM LED lighting supply support</p>
+            <h2 className="mt-4 max-w-4xl text-3xl font-semibold tracking-tight text-white lg:text-5xl">
+              LED work lights and aluminum lighting parts for automotive and industrial buyers
+            </h2>
+            <p className="mt-6 max-w-4xl text-base leading-8 text-white/70 lg:text-lg">
+              HSX DIECASTING supports OEM and wholesale LED work light programs for automotive,
+              motorcycle, off-road, industrial, agricultural, and aftermarket applications. Our
+              factory background in aluminum die casting, machining, polishing, powder coating,
+              painting, and anodizing helps buyers develop compact lighting housings, heat-sink
+              bodies, brackets, decorative covers, and related aluminum lighting components.
+            </p>
+
+            <div className="mt-10 grid gap-6 lg:grid-cols-3">
+              <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6">
+                <h3 className="text-lg font-semibold text-white">Typical Applications</h3>
+                <p className="mt-4 text-sm leading-7 text-white/65">
+                  LED work lights, automotive auxiliary lights, motorcycle lights, off-road lighting,
+                  utility vehicle lighting, machinery lighting, and compact lighting accessories.
+                </p>
+              </div>
+              <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6">
+                <h3 className="text-lg font-semibold text-white">OEM Custom Support</h3>
+                <p className="mt-4 text-sm leading-7 text-white/65">
+                  We can review buyer samples, drawings, size requirements, surface finish targets,
+                  logo or branding needs, packaging requirements, and wholesale order plans.
+                </p>
+              </div>
+              <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6">
+                <h3 className="text-lg font-semibold text-white">Factory Capability</h3>
+                <p className="mt-4 text-sm leading-7 text-white/65">
+                  Aluminum die casting, drilling, tapping, polishing, grinding, powder coating,
+                  painting, anodizing, assembly coordination, and export-ready packaging support.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-10 rounded-3xl border border-amber-300/20 bg-amber-300/[0.06] p-6">
+              <h3 className="text-xl font-semibold text-white">RFQ information for LED lighting projects</h3>
+              <p className="mt-4 text-sm leading-7 text-white/70">
+                For faster quotation, please send product photos, drawings, expected quantity, target
+                market, voltage or lighting requirements, housing material preference, finish color,
+                logo requirement, and packaging plan. Our team will review whether the project matches
+                our small-to-medium aluminum component and lighting supply scope.
+              </p>
+              <a
+                href="https://wa.me/8617666155283"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-6 inline-flex rounded-full bg-amber-300 px-6 py-3 text-sm font-semibold text-black transition hover:bg-amber-200"
+              >
+                Request LED Work Light Quote
+              </a>
+            </div>
+          </div>
+        </section>
+
       </main>
 
       <footer className="border-t border-white/8 bg-black/80 py-10">
