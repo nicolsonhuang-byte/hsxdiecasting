@@ -1,0 +1,100 @@
+import Link from "next/link";
+
+export const metadata = {
+  title: "Aluminum Light Housings Supplier | OEM Die Cast Lamp Housings | HSX DIECASTING",
+  description:
+    "HSX DIECASTING manufactures OEM aluminum light housings, die cast lamp housings, LED heat-sink bodies, covers, and compact aluminum lighting parts for global buyers.",
+};
+
+const productJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: "Aluminum Light Housings",
+  url: "https://www.hsxdiecasting.com/products/aluminum-light-housings",
+  image: ["https://www.hsxdiecasting.com/images/hero-factory-200t-300t.png"],
+  description:
+    "OEM aluminum light housings, die cast lamp housings, LED heat-sink bodies, covers, and compact aluminum lighting parts.",
+  brand: {
+    "@type": "Brand",
+    name: "HSX DIECASTING",
+  },
+  manufacturer: {
+    "@type": "Organization",
+    name: "Foshan Huashunxiang Hardware Products Co., Ltd.",
+    url: "https://www.hsxdiecasting.com",
+  },
+  material: "Aluminum alloy",
+  category: "Aluminum Lighting Housings",
+};
+
+export default function AluminumLightHousingsPage() {
+  return (
+    <main className="min-h-screen bg-black text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
+      <section className="px-6 py-10 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
+            Aluminum die cast lighting parts
+          </p>
+          <h1 className="mt-6 max-w-5xl text-5xl font-semibold tracking-tight lg:text-7xl">
+            OEM Aluminum Light Housings and Die Cast Lamp Bodies
+          </h1>
+          <p className="mt-8 max-w-4xl text-lg leading-8 text-white/70">
+            HSX DIECASTING manufactures compact aluminum light housings, LED lamp
+            housings, heat-sink bodies, covers, brackets, shells, and custom aluminum
+            lighting parts for global OEM and wholesale buyers.
+          </p>
+
+          <div className="mt-10 grid gap-6 lg:grid-cols-3">
+            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+              <h2 className="text-xl font-semibold">Typical Parts</h2>
+              <p className="mt-4 leading-7 text-white/65">
+                Aluminum lamp housings, LED heat-sink bodies, rear covers, mounting
+                brackets, shell parts, decorative covers, and custom compact castings.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+              <h2 className="text-xl font-semibold">Process Support</h2>
+              <p className="mt-4 leading-7 text-white/65">
+                200T and 300T aluminum die casting, drilling, tapping, polishing,
+                grinding, powder coating, spray painting, and anodizing.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+              <h2 className="text-xl font-semibold">Buyer Fit</h2>
+              <p className="mt-4 leading-7 text-white/65">
+                Lighting brands, LED work light suppliers, aftermarket brands,
+                importers, distributors, and OEM project buyers.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-12 rounded-3xl border border-amber-300/20 bg-amber-300/[0.08] p-6">
+            <h2 className="text-2xl font-semibold">Send aluminum housing drawings</h2>
+            <p className="mt-4 leading-7 text-white/70">
+              Please provide 2D drawings, 3D files, sample photos, dimensions,
+              expected quantity, surface treatment, and packaging request.
+            </p>
+            <a
+              href="https://wa.me/8617666155283"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-6 inline-flex rounded-full bg-amber-300 px-6 py-3 text-sm font-semibold text-black"
+            >
+              Request Aluminum Housing Quote
+            </a>
+          </div>
+
+          <div className="mt-10">
+            <Link href="/products" className="text-amber-300 underline">
+              Back to Products
+            </Link>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
