@@ -87,37 +87,37 @@ const heroStats = [
 
 const applications: InfoCard[] = [
   {
-    title: "Off-Road Vehicles",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Off-road LED work lights for utility vehicles, side-by-sides, and other accessory-driven vehicle programs.",
   },
   {
-    title: "Trucks and Trailers",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Truck LED work lights and trailer-mounted lighting products for fleets, aftermarket brands, and distributor channels.",
   },
   {
-    title: "Agricultural Machinery",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "LED work lighting for tractors, harvesters, utility machinery, and field-use equipment lines.",
   },
   {
-    title: "Construction Equipment",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Machinery work lights suited to construction equipment, site vehicles, and heavy-duty accessory sourcing programs.",
   },
   {
-    title: "Marine Accessories",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Compact LED work lights and aluminum housings for marine accessory applications requiring durable light bodies.",
   },
   {
-    title: "Motorcycle and Automotive Modification",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Auxiliary lights, compact lamp bodies, and appearance-focused lighting products for automotive and motorcycle modification buyers.",
   },
   {
-    title: "Industrial Work Environments",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Industrial service, maintenance, and equipment-lighting applications that need practical OEM supply support.",
   },
@@ -125,37 +125,37 @@ const applications: InfoCard[] = [
 
 const productFeatures: InfoCard[] = [
   {
-    title: "Durable Aluminum Housing",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "LED work lights are positioned around compact aluminum housings that support practical use across vehicles, machinery, and industrial environments.",
   },
   {
-    title: "Bright LED Illumination",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "The product page is written for buyers sourcing bright LED work lights for visibility, field work, and equipment support applications.",
   },
   {
-    title: "Heat Dissipation Design",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Aluminum housing structure supports heat-dissipation-focused design for work lights, auxiliary lights, and other compact lighting products.",
   },
   {
-    title: "Mounting Bracket Support",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Related brackets, covers, and compact mounting features can be coordinated with machining, drilling, and tapping support.",
   },
   {
-    title: "OEM / ODM Customization",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "HSX can review buyer-led work light projects for housing style, structure, branding, packaging, and application-specific requirements.",
   },
   {
-    title: "Surface Finishing Options",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Anodizing, powder coating, spray painting, polishing, and grinding support improve appearance and project-fit finishing options.",
   },
   {
-    title: "Wholesale Supply Support",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "The business positioning is built for bulk buyers, importers, distributors, online sellers, and private-label lighting programs.",
   },
@@ -163,32 +163,32 @@ const productFeatures: InfoCard[] = [
 
 const odmSupport: InfoCard[] = [
   {
-    title: "Samples and Drawings",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Buyers can send samples, housing drawings, lamp structure files, or reference photos to define the LED work light project clearly.",
   },
   {
-    title: "LED Power Requirements",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Share wattage targets, lighting application details, and output expectations so the product scope can be reviewed against the intended use.",
   },
   {
-    title: "Housing Design Requirements",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Provide aluminum housing size, bracket layout, cover details, mounting points, and other structure requirements for OEM or ODM review.",
   },
   {
-    title: "Quantity and Packaging Plan",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Order quantity, carton requirements, inner packaging, retail presentation, and shipping expectations help shape the quotation process.",
   },
   {
-    title: "Logo and Brand Needs",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Private-label, logo, and product-line positioning details can be shared for OEM work light programs intended for distribution or online retail.",
   },
   {
-    title: "Project Specification Review",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Technical points such as beam use, application environment, material preference, and finish requirements can all be consolidated in the RFQ.",
   },
@@ -206,28 +206,28 @@ const manufacturingPoints = [
 
 const galleryItems: GalleryItem[] = [
   {
-    title: "LED work lights for off-road and industrial use",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     caption:
       "LED work light product positioning for off-road vehicles, equipment lighting, and industrial work applications.",
     image: ledWorkLight,
     alt: "LED work light for off-road and industrial use",
   },
   {
-    title: "Aluminum die-cast housings for LED lighting products",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     caption:
       "Compact aluminum housings, covers, and related small-to-medium parts that support LED lighting product programs.",
     image: oemAluminumParts,
     alt: "Compact aluminum die-cast housings for LED lighting products",
   },
   {
-    title: "Factory capability for small-to-medium aluminum parts",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     caption:
       "Factory support for compact aluminum part production, machining, drilling, tapping, and finishing coordination.",
     image: factoryCapabilities,
     alt: "Factory capability for small-to-medium aluminum parts",
   },
   {
-    title: "OEM manufacturing support",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     caption:
       "Production environment aligned with 200T and 300T equipment for LED work light housings and related aluminum components.",
     image: heroFactory,
@@ -237,37 +237,37 @@ const galleryItems: GalleryItem[] = [
 
 const industriesServed: InfoCard[] = [
   {
-    title: "Auto Parts Wholesalers",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "LED work lights and related aluminum housings for bulk automotive accessory sourcing channels.",
   },
   {
-    title: "Off-Road Accessory Distributors",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Product supply for off-road lighting ranges, utility vehicle accessories, and brand-driven distribution programs.",
   },
   {
-    title: "Truck Accessory Brands",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Truck LED work lights and housing-related products for aftermarket truck equipment and branded accessory lines.",
   },
   {
-    title: "Machinery Parts Suppliers",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Work light and aluminum housing supply for machinery-focused parts businesses and equipment accessory sourcing teams.",
   },
   {
-    title: "Agricultural Equipment Suppliers",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Lighting products and compact housings suitable for agricultural machinery and utility equipment lines.",
   },
   {
-    title: "Construction Equipment Suppliers",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "OEM and wholesale support for work lights used in construction equipment and related site-service machinery.",
   },
   {
-    title: "Online Sellers and Private-Label Brands",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Suitable for buyers building branded LED work light programs for e-commerce and private-label channels.",
   },
@@ -341,7 +341,7 @@ export default function LedWorkLightsPage() {
               </div>
             </div>
             <a
-              href="#rfq"
+              href="https://wa.me/你的WhatsApp号码"
               className="flex items-start gap-3 transition-colors hover:text-white"
             >
               <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
@@ -350,7 +350,7 @@ export default function LedWorkLightsPage() {
               <span>{contactDetails.address}</span>
             </a>
           </div>
-          <a href="#rfq" className="gold-button w-full text-center sm:w-auto">
+          <a href="https://wa.me/你的WhatsApp号码" className="gold-button w-full text-center sm:w-auto">
             Get a Quote
           </a>
         </div>
@@ -409,7 +409,7 @@ export default function LedWorkLightsPage() {
             <a href="#gallery" className="transition-colors hover:text-white">
               Gallery
             </a>
-            <a href="#rfq" className="transition-colors hover:text-white">
+            <a href="https://wa.me/你的WhatsApp号码" className="transition-colors hover:text-white">
               RFQ
             </a>
           </nav>
@@ -439,7 +439,7 @@ export default function LedWorkLightsPage() {
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <a href="#rfq" className="gold-button text-center">
+                <a href="https://wa.me/你的WhatsApp号码" className="gold-button text-center">
                   Get a Quote
                 </a>
                 <a

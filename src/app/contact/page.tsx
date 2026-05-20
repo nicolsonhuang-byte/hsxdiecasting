@@ -85,24 +85,24 @@ const heroStats = [
 
 const contactCards: ContactCard[] = [
   {
-    title: "Email",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     value: contactDetails.email,
     href: `mailto:${contactDetails.email}`,
     note: "Best for drawings, samples, RFQ files, and detailed OEM project requirements.",
   },
   {
-    title: "WhatsApp / Phone",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     value: contactDetails.phone,
     href: contactDetails.whatsappHref,
     note: "Fast contact path for quotation follow-up, buyer communication, and project discussion.",
   },
   {
-    title: "WeChat",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     value: contactDetails.wechat,
     note: "Direct communication option for buyers coordinating RFQs, samples, and OEM project details.",
   },
   {
-    title: "Factory Address",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     value: contactDetails.address,
     note: "Foshan Huashunxiang Hardware Products Co., Ltd. in Foshan, Guangdong, China.",
   },
@@ -141,17 +141,17 @@ const capabilities = [
 
 const scopeNotes: InfoCard[] = [
   {
-    title: "OEM Small-to-Medium Aluminum Parts",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "The aluminum die casting scope stays limited to compact housings, brackets, covers, shells, end caps, and other small-to-medium parts suitable for 200T and 300T machines.",
   },
   {
-    title: "Lighting Product Supply",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "HSX supplies automotive LED lights, motorcycle LED lights, LED work lights, and related aluminum light housings for global buyers.",
   },
   {
-    title: "Decorative Cover Accuracy",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Brake caliper covers are decorative non-load-bearing appearance covers only and are not described as structural braking parts.",
   },
@@ -218,7 +218,7 @@ export default function ContactPage() {
               </div>
             </div>
             <a
-              href="https://wa.me/8617666155283?text=Hello%2C%20I%20want%20to%20send%20an%20RFQ%20for%20your%20products."
+              href="https://wa.me/你的WhatsApp号码"
               className="flex items-start gap-3 transition-colors hover:text-white"
             >
               <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
@@ -227,7 +227,7 @@ export default function ContactPage() {
               <span>{contactDetails.address}</span>
             </a>
           </div>
-          <a href="https://wa.me/8617666155283?text=Hello%2C%20I%20want%20to%20send%20an%20RFQ%20for%20your%20products." className="gold-button w-full text-center sm:w-auto">
+          <a href="https://wa.me/你的WhatsApp号码" className="gold-button w-full text-center sm:w-auto">
             Start RFQ
           </a>
         </div>
@@ -278,7 +278,7 @@ export default function ContactPage() {
               Contact
             </a>
             <a
-              href="https://wa.me/8617666155283?text=Hello%2C%20I%20want%20to%20send%20an%20RFQ%20for%20your%20products."
+              href="https://wa.me/你的WhatsApp号码"
               className="transition-colors hover:text-white"
             >
               RFQ Form

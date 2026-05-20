@@ -1,16 +1,17 @@
-import React from "react";
-import type { Metadata } from "next";
-import "./globals.css";
-
-const jsonLdOrganization = {
+xxx
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "HSX DIECASTING",
-  url: "https://www.hsxdiecasting.com",
-  logo: "https://www.hsxdiecasting.com/images/hero-factory-200t-300t.png",
-  sameAs: ["https://www.linkedin.com/company/hsxdiecasting"],
-};
+  "name": "HSX DIECASTING",
+  "url": "https://www.hsxdiecasting.com",
+  "logo": "https://www.hsxdiecasting.com/images/hero-factory-200t-300t.png",
+  "sameAs": ["https://www.linkedin.com/company/hsxdiecasting"]
+}
+</script>
 
+import type { Metadata } from "next";
+import "./globals.css";
 
 const siteTitle =
   "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights";
@@ -75,14 +76,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased">
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLdOrganization),
-          }}
-        />
-      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

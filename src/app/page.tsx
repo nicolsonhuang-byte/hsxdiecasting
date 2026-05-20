@@ -62,7 +62,7 @@ const heroStats = [
 
 const productCategories: ProductCategory[] = [
   {
-    title: "OEM Small-to-Medium Aluminum Die Casting Parts",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Aluminum housings, end caps, brackets, shells, and lamp bodies produced within realistic 200T and 300T machine scope.",
     image: oemAluminumParts,
@@ -75,7 +75,7 @@ const productCategories: ProductCategory[] = [
     ],
   },
   {
-    title: "Custom Aluminum Hardware Parts",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Custom aluminum accessories and hardware parts for aftermarket brands, distributors, and industrial hardware buyers.",
     image: oemAluminumParts,
@@ -87,7 +87,7 @@ const productCategories: ProductCategory[] = [
     ],
   },
   {
-    title: "Automotive LED Lights",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Automotive LED lighting products developed for aftermarket brands and wholesale distributors seeking durable aluminum light bodies.",
     image: automotiveLedLight,
@@ -99,7 +99,7 @@ const productCategories: ProductCategory[] = [
     ],
   },
   {
-    title: "Motorcycle LED Lights",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Motorcycle LED light products with compact aluminum housings for distributors and private-label buyers.",
     image: motorcycleLedLight,
@@ -111,7 +111,7 @@ const productCategories: ProductCategory[] = [
     ],
   },
   {
-    title: "LED Work Lights",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "LED work light products using aluminum housings and heat-dissipation-focused body structures for industrial and vehicle use.",
     image: ledWorkLight,
@@ -124,7 +124,7 @@ const productCategories: ProductCategory[] = [
     ],
   },
   {
-    title: "Decorative Brake Caliper Covers",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Decorative non-load-bearing appearance covers for styling programs, manufactured as aluminum exterior accessories.",
     image: brakeCaliperCover,
@@ -148,32 +148,32 @@ const capabilities = [
 
 const processSteps: InfoCard[] = [
   {
-    title: "RFQ Review",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Review drawings, samples, quantities, surface requirements, and application details before quoting.",
   },
   {
-    title: "DFM and Tooling Plan",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Confirm part geometry, die casting feasibility, machining features, and finishing expectations before launch.",
   },
   {
-    title: "Aluminum Die Casting",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Produce compact aluminum castings on 200T and 300T machines sized for small-to-medium OEM parts.",
   },
   {
-    title: "Secondary Machining",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Complete drilling, tapping, and detail work needed for mounting, assembly, or cosmetic fit-up.",
   },
   {
-    title: "Surface Preparation",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Polish and grind where required to prepare the part for anodizing, powder coating, or spray painting.",
   },
   {
-    title: "Inspection and Packing",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Check agreed dimensions, threads, appearance, and packing instructions before shipment to the buyer.",
   },
@@ -181,22 +181,22 @@ const processSteps: InfoCard[] = [
 
 const surfaceFinishes: InfoCard[] = [
   {
-    title: "Aluminum Anodizing",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Used where buyers need a clean metallic appearance, corrosion resistance, or controlled surface tone.",
   },
   {
-    title: "Powder Coating",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Suitable for durable exterior coverage on housings, covers, and aluminum accessory parts.",
   },
   {
-    title: "Spray Painting",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Applied when color control, styling alignment, or brand-specific appearance is required.",
   },
   {
-    title: "Polishing and Grinding Prep",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Surface conditioning for appearance improvement before finishing or direct visual inspection.",
   },
@@ -204,22 +204,22 @@ const surfaceFinishes: InfoCard[] = [
 
 const industriesServed: InfoCard[] = [
   {
-    title: "Automotive Aftermarket Brands",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Automotive LED lights, aluminum housings, and appearance accessories for private-label and replacement channels.",
   },
   {
-    title: "Motorcycle Accessory Buyers",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Compact lamp bodies, motorcycle lighting products, and branded aluminum accessory programs.",
   },
   {
-    title: "Industrial and Utility Lighting",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "LED work light housings and aluminum heat-sink structures for heavy-duty lighting lines.",
   },
   {
-    title: "Custom Hardware and Enclosures",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Small aluminum brackets, end caps, enclosure shells, and accessory parts for OEM project sourcing.",
   },
@@ -227,27 +227,27 @@ const industriesServed: InfoCard[] = [
 
 const buyerReasons: InfoCard[] = [
   {
-    title: "Accurate Product Scope",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Production focus stays on small-to-medium aluminum parts that fit 200T and 300T die casting reality.",
   },
   {
-    title: "OEM-Friendly Workflow",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Projects can begin from technical drawings, approved samples, or buyer-defined custom requirements.",
   },
   {
-    title: "Integrated Secondary Operations",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Drilling, tapping, polishing, and finishing coordination reduce handoff friction across the sourcing process.",
   },
   {
-    title: "Wholesale Buyer Positioning",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Homepage messaging and production offering are aligned for importers, distributors, aftermarket brands, and OEM buyers.",
   },
   {
-    title: "Practical Communication",
+    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
     description:
       "Copy focuses on manufacturable aluminum products, clear scope, and realistic factory capabilities.",
   },
@@ -405,7 +405,7 @@ export default function Home() {
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <a href="https://wa.me/8617666155283?text=Hello%2C%20I%20want%20to%20send%20an%20RFQ%20for%20your%20products." className="gold-button text-center">
+                <a href="https://wa.me/你的WhatsApp号码" className="gold-button text-center">
                   Start RFQ Review
                 </a>
                 <a href="#capabilities" className="outline-button text-center">
