@@ -284,7 +284,7 @@ export default function CapabilitiesPage() {
           <div className="flex flex-col gap-3">
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-6">
               <a
-                href={`mailto:${contactDetails.email}`}
+                href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
                 className="flex items-center gap-3 transition-colors hover:text-white"
               >
                 <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
@@ -400,7 +400,7 @@ export default function CapabilitiesPage() {
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
-                  href={`mailto:${contactDetails.email}`}
+                  href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
                   className="gold-button text-center"
                 >
                   Send Your Drawings
@@ -776,7 +776,7 @@ export default function CapabilitiesPage() {
 
                   <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                     <a
-                      href={`mailto:${contactDetails.email}`}
+                      href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
                       className="rounded-full bg-[#120f08] px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#f8f2e6] transition-transform duration-200 hover:-translate-y-0.5"
                     >
                       Send Email
@@ -822,7 +822,7 @@ export default function CapabilitiesPage() {
                       <p>
                         <span className="font-semibold">Email: </span>
                         <a
-                          href={`mailto:${contactDetails.email}`}
+                          href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
                           className="transition-colors hover:text-[#120f08]"
                         >
                           {contactDetails.email}
@@ -868,7 +868,7 @@ export default function CapabilitiesPage() {
             <p>
               <span className="text-white/90">Email:</span>{" "}
               <a
-                href={`mailto:${contactDetails.email}`}
+                href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
                 className="transition-colors hover:text-white"
               >
                 {contactDetails.email}
