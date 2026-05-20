@@ -2,6 +2,8 @@ import React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
 
+const gaMeasurementId = "G-JC89FFK3TM";
+
 const jsonLdOrganization = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -80,6 +82,17 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(jsonLdOrganization),
+          }}
+        />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${gaMeasurementId}');
+            `,
           }}
         />
       </head>
