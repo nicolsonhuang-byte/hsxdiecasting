@@ -95,6 +95,49 @@ export default function AluminumLightHousingsPage() {
           </div>
         </div>
       </section>
+    
+      {/* Deep SEO content: aluminum light housings */}
+      <section className="border-t border-white/10 bg-black/30 px-6 py-16 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
+            Aluminum die cast light housing details
+          </p>
+          <h2 className="mt-4 max-w-4xl text-3xl font-semibold tracking-tight text-white lg:text-5xl">
+            Aluminum light housings and die-cast lamp bodies for LED lighting products
+          </h2>
+          <p className="mt-6 max-w-4xl text-base leading-8 text-white/70">
+            HSX DIECASTING manufactures compact aluminum light housings, LED lamp bodies, heat-sink
+            shells, covers, brackets, and related lighting components for LED work light suppliers,
+            automotive lighting brands, motorcycle lighting programs, importers, distributors, and
+            OEM buyers.
+          </p>
+
+          <div className="mt-10 grid gap-6 lg:grid-cols-3">
+            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+              <h3 className="text-lg font-semibold text-white">Part Types</h3>
+              <p className="mt-4 text-sm leading-7 text-white/65">
+                Aluminum lamp housings, LED heat-sink bodies, rear covers, brackets, compact shells,
+                decorative covers, and custom aluminum lighting parts.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+              <h3 className="text-lg font-semibold text-white">Production Fit</h3>
+              <p className="mt-4 text-sm leading-7 text-white/65">
+                The current 200T and 300T aluminum die casting machines are suited for compact
+                light housings and small-to-medium aluminum components.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+              <h3 className="text-lg font-semibold text-white">Finishing Options</h3>
+              <p className="mt-4 text-sm leading-7 text-white/65">
+                Polishing, grinding, powder coating, painting, anodizing, appearance review, and
+                packaging coordination for export-ready aluminum lighting parts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 }

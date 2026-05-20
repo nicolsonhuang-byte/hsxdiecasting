@@ -94,6 +94,49 @@ export default function AutomotiveLedLightsPage() {
           </div>
         </div>
       </section>
+    
+      {/* Deep SEO content: automotive LED lights */}
+      <section className="border-t border-white/10 bg-black/30 px-6 py-16 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
+            Automotive LED lighting OEM details
+          </p>
+          <h2 className="mt-4 max-w-4xl text-3xl font-semibold tracking-tight text-white lg:text-5xl">
+            Automotive LED light supply for wholesalers, aftermarket brands, and OEM buyers
+          </h2>
+          <p className="mt-6 max-w-4xl text-base leading-8 text-white/70">
+            HSX DIECASTING supports automotive LED lighting programs for car accessory wholesalers,
+            aftermarket brands, importers, distributors, and OEM project buyers. The product scope
+            includes car LED work lights, auxiliary lights, compact lighting housings, aluminum lamp
+            bodies, brackets, covers, and die-cast aluminum lighting-related parts.
+          </p>
+
+          <div className="mt-10 grid gap-6 lg:grid-cols-3">
+            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+              <h3 className="text-lg font-semibold text-white">Buyer Applications</h3>
+              <p className="mt-4 text-sm leading-7 text-white/65">
+                Car modification channels, off-road accessory brands, truck accessory suppliers,
+                automotive aftermarket distributors, and private-label LED lighting programs.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+              <h3 className="text-lg font-semibold text-white">Manufacturing Support</h3>
+              <p className="mt-4 text-sm leading-7 text-white/65">
+                Aluminum die casting, compact housing review, drilling, tapping, polishing, powder
+                coating, painting, anodizing, packaging coordination, and OEM project review.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+              <h3 className="text-lg font-semibold text-white">RFQ Checklist</h3>
+              <p className="mt-4 text-sm leading-7 text-white/65">
+                Send product photos, drawings, voltage or lighting requirement, housing size,
+                expected quantity, logo request, finish color, packaging plan, and target market.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 }

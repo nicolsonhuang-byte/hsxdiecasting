@@ -94,6 +94,49 @@ export default function DecorativeBrakeCaliperCoversPage() {
           </div>
         </div>
       </section>
+    
+      {/* Deep SEO content: decorative brake caliper covers */}
+      <section className="border-t border-white/10 bg-black/30 px-6 py-16 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
+            Automotive decorative appearance cover details
+          </p>
+          <h2 className="mt-4 max-w-4xl text-3xl font-semibold tracking-tight text-white lg:text-5xl">
+            Decorative brake caliper covers for automotive aftermarket and private-label buyers
+          </h2>
+          <p className="mt-6 max-w-4xl text-base leading-8 text-white/70">
+            HSX DIECASTING supplies decorative brake caliper covers and non-load-bearing automotive
+            appearance covers for aftermarket brands, car modification accessory channels, importers,
+            wholesalers, distributors, and OEM project buyers. These products are positioned as
+            appearance accessories, not structural or braking-force components.
+          </p>
+
+          <div className="mt-10 grid gap-6 lg:grid-cols-3">
+            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+              <h3 className="text-lg font-semibold text-white">Product Position</h3>
+              <p className="mt-4 text-sm leading-7 text-white/65">
+                Decorative caliper covers, automotive appearance covers, visual upgrade accessories,
+                non-load-bearing covers, and private-label aftermarket products.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+              <h3 className="text-lg font-semibold text-white">OEM Options</h3>
+              <p className="mt-4 text-sm leading-7 text-white/65">
+                Product size review, sample development, surface color, logo, packaging, appearance
+                finish, and wholesale order coordination.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+              <h3 className="text-lg font-semibold text-white">RFQ Checklist</h3>
+              <p className="mt-4 text-sm leading-7 text-white/65">
+                Send product photo, dimensions, target vehicle fitment, finish color, logo request,
+                packaging plan, expected quantity, and market positioning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 }

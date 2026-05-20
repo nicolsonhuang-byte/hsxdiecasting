@@ -95,6 +95,49 @@ export default function MotorcycleLedLightsPage() {
           </div>
         </div>
       </section>
+    
+      {/* Deep SEO content: motorcycle LED lights */}
+      <section className="border-t border-white/10 bg-black/30 px-6 py-16 lg:px-12">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
+            Motorcycle LED lighting OEM details
+          </p>
+          <h2 className="mt-4 max-w-4xl text-3xl font-semibold tracking-tight text-white lg:text-5xl">
+            Motorcycle LED light programs for accessory brands and global B2B buyers
+          </h2>
+          <p className="mt-6 max-w-4xl text-base leading-8 text-white/70">
+            HSX DIECASTING supports motorcycle LED lighting projects for accessory brands, importers,
+            wholesalers, repair channels, distributors, and OEM buyers. Our production scope is suited
+            for compact LED lights, aluminum lamp housings, mounting brackets, covers, and lighting
+            accessories that require aluminum die casting and appearance finishing support.
+          </p>
+
+          <div className="mt-10 grid gap-6 lg:grid-cols-3">
+            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+              <h3 className="text-lg font-semibold text-white">Typical Products</h3>
+              <p className="mt-4 text-sm leading-7 text-white/65">
+                Motorcycle auxiliary lights, compact LED work lights, aluminum lamp housings, brackets,
+                mounting parts, covers, and decorative lighting accessories.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+              <h3 className="text-lg font-semibold text-white">OEM Customization</h3>
+              <p className="mt-4 text-sm leading-7 text-white/65">
+                Buyer sample review, drawing review, finish color, logo branding, private-label
+                packaging, mounting style, and wholesale order planning.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+              <h3 className="text-lg font-semibold text-white">Factory Process</h3>
+              <p className="mt-4 text-sm leading-7 text-white/65">
+                Aluminum die casting, secondary machining, drilling, tapping, polishing, painting,
+                powder coating, anodizing, and export packaging coordination.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 }
