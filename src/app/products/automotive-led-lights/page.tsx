@@ -11,7 +11,7 @@ const productJsonLd = {
   "@type": "Product",
   name: "Automotive LED Lights",
   url: "https://www.hsxdiecasting.com/products/automotive-led-lights",
-  image: ["https://www.hsxdiecasting.com/images/hero-factory-200t-300t.png"],
+  image: ["https://www.hsxdiecasting.com/images/automotive-led-work-light.png"],
   description:
     "OEM automotive LED lights, auxiliary lights, car LED work lights, and aluminum lighting housings for wholesale and aftermarket buyers.",
   brand: {
@@ -133,6 +133,34 @@ export default function AutomotiveLedLightsPage() {
                 expected quantity, logo request, finish color, packaging plan, and target market.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+    
+      {/* Product visual section: /images/automotive-led-work-light.png */}
+      <section className="border-t border-white/10 bg-black px-6 py-16 lg:px-12">
+        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
+              Product image
+            </p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white lg:text-5xl">
+              Automotive LED Work Light Product Showcase
+            </h2>
+            <p className="mt-6 text-base leading-8 text-white/70 lg:text-lg">
+              This product image helps global B2B buyers quickly understand the related supply scope,
+              including OEM product development, aluminum die casting, LED lighting components,
+              surface finishing, and export-ready project support.
+            </p>
+          </div>
+
+          <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] shadow-2xl">
+            <img
+              src="/images/automotive-led-work-light.png"
+              alt="Automotive LED work light for global wholesalers and OEM buyers"
+              className="h-full w-full object-cover"
+            />
           </div>
         </div>
       </section>

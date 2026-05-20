@@ -11,7 +11,7 @@ const productJsonLd = {
   "@type": "Product",
   name: "Motorcycle LED Lights",
   url: "https://www.hsxdiecasting.com/products/motorcycle-led-lights",
-  image: ["https://www.hsxdiecasting.com/images/hero-factory-200t-300t.png"],
+  image: ["https://www.hsxdiecasting.com/images/motorcycle-led-auxiliary-light.png"],
   description:
     "OEM motorcycle LED lights, compact LED work lights, aluminum lamp housings, and lighting accessories for global B2B buyers.",
   brand: {
@@ -134,6 +134,34 @@ export default function MotorcycleLedLightsPage() {
                 powder coating, anodizing, and export packaging coordination.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+    
+      {/* Product visual section: /images/motorcycle-led-auxiliary-light.png */}
+      <section className="border-t border-white/10 bg-black px-6 py-16 lg:px-12">
+        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
+              Product image
+            </p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white lg:text-5xl">
+              Motorcycle LED Auxiliary Light Product Showcase
+            </h2>
+            <p className="mt-6 text-base leading-8 text-white/70 lg:text-lg">
+              This product image helps global B2B buyers quickly understand the related supply scope,
+              including OEM product development, aluminum die casting, LED lighting components,
+              surface finishing, and export-ready project support.
+            </p>
+          </div>
+
+          <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] shadow-2xl">
+            <img
+              src="/images/motorcycle-led-auxiliary-light.png"
+              alt="Motorcycle LED auxiliary lights and compact lighting products"
+              className="h-full w-full object-cover"
+            />
           </div>
         </div>
       </section>

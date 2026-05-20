@@ -1096,7 +1096,35 @@ export default function OemAluminumDieCastingPartsPage() {
           </div>
         </section>
 
-      </main>
+      
+      {/* Product visual section: /images/aluminum-die-casting-parts.png */}
+      <section className="border-t border-white/10 bg-black px-6 py-16 lg:px-12">
+        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
+              Product image
+            </p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white lg:text-5xl">
+              OEM Aluminum Die Casting Parts Showcase
+            </h2>
+            <p className="mt-6 text-base leading-8 text-white/70 lg:text-lg">
+              This product image helps global B2B buyers quickly understand the related supply scope,
+              including OEM product development, aluminum die casting, LED lighting components,
+              surface finishing, and export-ready project support.
+            </p>
+          </div>
+
+          <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] shadow-2xl">
+            <img
+              src="/images/aluminum-die-casting-parts.png"
+              alt="OEM aluminum die casting parts and compact aluminum hardware components"
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+    </main>
 
       <footer className="border-t border-white/8 bg-black/80 py-10">
         <div className="container-shell grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
