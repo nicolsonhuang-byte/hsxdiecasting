@@ -727,6 +727,64 @@ export default function ProductsPage() {
             </div>
           </div>
         </section>
+      
+        {/* Internal links: expanded product category pages */}
+        <section className="border-t border-white/10 bg-black/20 px-6 py-16 lg:px-12">
+          <div className="mx-auto max-w-6xl">
+            <p className="section-kicker">More product categories</p>
+            <h2 className="mt-4 max-w-4xl text-3xl font-semibold tracking-tight text-white lg:text-5xl">
+              Explore focused product pages for LED lighting and aluminum die casting projects
+            </h2>
+            <p className="mt-6 max-w-4xl text-base leading-8 text-white/70 lg:text-lg">
+              These product category pages help buyers find the right supply scope faster,
+              including automotive LED lights, motorcycle LED lights, aluminum light housings,
+              and decorative brake caliper covers.
+            </p>
+
+            <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+              <a
+                href="/products/automotive-led-lights"
+                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
+              >
+                <h3 className="text-lg font-semibold text-white">Automotive LED Lights</h3>
+                <p className="mt-4 text-sm leading-7 text-white/65">
+                  OEM car LED lights, auxiliary lights, work lights, and aluminum lighting parts.
+                </p>
+              </a>
+
+              <a
+                href="/products/motorcycle-led-lights"
+                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
+              >
+                <h3 className="text-lg font-semibold text-white">Motorcycle LED Lights</h3>
+                <p className="mt-4 text-sm leading-7 text-white/65">
+                  Compact motorcycle LED lights, lamp housings, brackets, and lighting accessories.
+                </p>
+              </a>
+
+              <a
+                href="/products/aluminum-light-housings"
+                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
+              >
+                <h3 className="text-lg font-semibold text-white">Aluminum Light Housings</h3>
+                <p className="mt-4 text-sm leading-7 text-white/65">
+                  Die cast aluminum lamp housings, heat-sink bodies, covers, and brackets.
+                </p>
+              </a>
+
+              <a
+                href="/products/decorative-brake-caliper-covers"
+                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
+              >
+                <h3 className="text-lg font-semibold text-white">Decorative Brake Caliper Covers</h3>
+                <p className="mt-4 text-sm leading-7 text-white/65">
+                  Non-load-bearing decorative caliper covers and automotive appearance accessories.
+                </p>
+              </a>
+            </div>
+          </div>
+        </section>
+
       </main>
 
       <footer className="border-t border-white/8 bg-black/80 py-10">
