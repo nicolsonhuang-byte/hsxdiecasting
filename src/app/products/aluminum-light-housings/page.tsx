@@ -166,6 +166,65 @@ export default function AluminumLightHousingsPage() {
         </div>
       </section>
 
-    </main>
+    
+        {/* Product inquiry CTA block */}
+        <section className="mx-auto max-w-7xl px-6 py-16 sm:px-8 lg:px-12">
+          <div className="rounded-[2rem] border border-[#d7b56d]/25 bg-[#111111] p-8 shadow-2xl shadow-black/30 md:p-10">
+            <p className="section-kicker">Send project requirements</p>
+            <div className="mt-4 grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+              <div>
+                <h2 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">
+                  Request pricing for OEM aluminum die casting and LED lighting products
+                </h2>
+                <p className="mt-5 max-w-3xl text-sm leading-7 text-white/70 md:text-base">
+                  Send drawings, samples, product photos, wattage requirements, housing dimensions,
+                  packaging needs, or OEM branding requests. HSX supports compact aluminum die casting
+                  parts, LED work lights, automotive LED lights, motorcycle LED lights, aluminum light
+                  housings, and decorative brake caliper covers for global B2B buyers.
+                </p>
+              </div>
+
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
+                <a
+                  href="mailto:nicolsonhuang2020@gmail.com?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C"
+                  className="inline-flex items-center justify-center rounded-full bg-[#f4d27a] px-6 py-4 text-sm font-bold uppercase tracking-[0.18em] text-black transition hover:bg-white"
+                >
+                  Get a Quote
+                </a>
+                <a
+                  href="https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%20Please%20contact%20me%20with%20quotation%20details."
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center rounded-full border border-[#d7b56d]/40 px-6 py-4 text-sm font-bold uppercase tracking-[0.18em] text-white transition hover:border-[#f4d27a] hover:text-[#f4d27a]"
+                >
+                  Contact on WhatsApp
+                </a>
+                <a
+                  href="mailto:nicolsonhuang2020@gmail.com?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C"
+                  className="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-4 text-sm font-bold uppercase tracking-[0.18em] text-white/85 transition hover:border-white/40 hover:text-white sm:col-span-2 lg:col-span-1"
+                >
+                  Email HSX Diecasting
+                </a>
+              </div>
+            </div>
+
+            <div className="mt-8 grid gap-4 text-sm text-white/65 md:grid-cols-3">
+              <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+                <p className="text-[#f4d27a]">Email</p>
+                <p className="mt-2">nicolsonhuang2020@gmail.com</p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+                <p className="text-[#f4d27a]">WhatsApp / Phone</p>
+                <p className="mt-2">+8617666155283</p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+                <p className="text-[#f4d27a]">Factory location</p>
+                <p className="mt-2">Foshan, Guangdong, China</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
   );
 }
