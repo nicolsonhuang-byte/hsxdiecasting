@@ -90,42 +90,42 @@ const heroStats = [
 
 const manufacturedParts = [
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "LED Light Housings",
     description:
       "Compact lamp bodies and housing components for work lights, auxiliary lights, and project-based lighting assemblies.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Heat-Sink Aluminum Housings",
     description:
       "Aluminum housings designed for heat dissipation, cover integration, and mounting features in small-to-medium lighting products.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Mounting Brackets",
     description:
       "Mounting brackets and support pieces with drilling and tapping features for OEM hardware and accessory projects.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "End Caps and Closure Parts",
     description:
       "Compact end caps and closure parts for housings, accessories, and enclosure assemblies requiring a clean finished appearance.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Enclosure Shells",
     description:
       "Protective aluminum shells for lighting, hardware, and industrial accessory products based on drawing or sample requirements.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Motorcycle Light Housings",
     description:
       "Small-to-medium aluminum housings for aftermarket motorcycle lights, trim-oriented lamp bodies, and branded accessory programs.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Appearance Covers and Trim Parts",
     description:
       "Appearance-focused covers and trim parts for OEM buyers needing compact aluminum castings with post-finishing support.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Custom OEM Aluminum Parts",
     description:
       "OEM aluminum parts manufactured from drawings, samples, or custom project requirements for wholesale and distribution channels.",
   },
@@ -133,32 +133,32 @@ const manufacturedParts = [
 
 const manufacturingSupport: InfoCard[] = [
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Drawing and Sample Review",
     description:
       "Projects can start from 2D drawings, 3D files, reference parts, or approved samples so key dimensions, wall thickness, and mounting features are checked before tooling begins.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Mold Planning",
     description:
       "Mold planning is arranged after feasibility confirmation for compact housings, brackets, end caps, enclosure shells, and other small-to-medium OEM aluminum parts.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Aluminum Die Casting Production",
     description:
       "Production runs on 200-ton and 300-ton aluminum die casting machines sized for practical OEM parts with compact geometry.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Drilling and Tapping",
     description:
       "Post-casting machining includes hole processing and threaded features using the factory’s multi-axis drilling and tapping equipment.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Surface Finishing Coordination",
     description:
       "Polishing, grinding, anodizing, powder coating, and spray painting are coordinated to meet appearance, corrosion, and end-market requirements.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Assembly and Export Packing Support",
     description:
       "The factory can support basic assembly coordination, packing layout, and export packaging requirements for wholesale and OEM project delivery.",
   },
@@ -166,7 +166,7 @@ const manufacturingSupport: InfoCard[] = [
 
 const visualPrograms: VisualProgram[] = [
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "LED Work Light Housing Programs",
     description:
       "Compact aluminum lamp bodies, covers, end caps, and mounting features for OEM work-light programs supplied to wholesalers and lighting brands.",
     image: ledWorkLight,
@@ -179,7 +179,7 @@ const visualPrograms: VisualProgram[] = [
     ],
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Automotive Lamp Body Programs",
     description:
       "Small-to-medium aluminum housings used for lamp bodies, heat-sink structures, and enclosure-style shells in lighting-related projects.",
     image: automotiveLedLight,
@@ -192,7 +192,7 @@ const visualPrograms: VisualProgram[] = [
     ],
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Motorcycle Light Housing Programs",
     description:
       "Compact aluminum light housings and decorative accessory shells for motorcycle aftermarket brands, distributors, and OEM buyers.",
     image: motorcycleLedLight,
@@ -205,7 +205,7 @@ const visualPrograms: VisualProgram[] = [
     ],
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Custom Aluminum Hardware Programs",
     description:
       "OEM aluminum parts for hardware accessories, enclosure shells, decorative covers, end caps, and compact brackets with post-machining support.",
     image: oemAluminumParts,
@@ -231,27 +231,27 @@ const capacityPoints = [
 
 const surfaceFinishes: InfoCard[] = [
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Aluminum Die Casting Scope",
     description:
       "The page focuses on OEM aluminum die casting parts within the practical output range of 200T and 300T equipment for compact housings, brackets, covers, caps, and shells.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Anodizing",
     description:
       "Used when the part needs a clean metallic look, added corrosion resistance, or a controlled appearance on exposed aluminum surfaces.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Powder Coating",
     description:
       "Suitable for durable coverage on housings, decorative covers, brackets, and other OEM aluminum die casting parts supplied to wholesale buyers.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Spray Painting",
     description:
       "Applied when the buyer needs color matching, brand-specific presentation, or a painted surface for the target market.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Polishing and Grinding",
     description:
       "Surface preparation improves appearance consistency before final finishing or direct visual inspection on compact aluminum parts.",
   },
@@ -259,32 +259,32 @@ const surfaceFinishes: InfoCard[] = [
 
 const industries: InfoCard[] = [
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "LED Work Light Brands",
     description:
       "LED work light housings, lamp bodies, end caps, and heat-sink-style enclosures for lighting brands and OEM lighting projects.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Automotive Aftermarket Accessories",
     description:
       "Compact aluminum housings, decorative covers, and project-based accessory components for aftermarket brands and distributors.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Motorcycle Lighting and Accessories",
     description:
       "Motorcycle light housings and compact aluminum accessory parts for wholesalers, importers, and branded accessory lines.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "OEM Hardware Projects",
     description:
       "Small brackets, enclosure shells, end caps, and custom aluminum hardware accessories for buyer-defined OEM programs.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Utility and Industrial Accessories",
     description:
       "Functional aluminum parts for utility products, accessory assemblies, and compact industrial applications needing machining and finishing support.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Global Importers and Distributors",
     description:
       "Supply positioned for global wholesalers, importers, distributors, hardware brands, LED lighting brands, and OEM project buyers.",
   },
@@ -292,27 +292,27 @@ const industries: InfoCard[] = [
 
 const buyerReasons: InfoCard[] = [
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Drawing and Sample Based OEM Support",
     description:
       "HSX accepts OEM aluminum die casting parts manufacturing based on drawings, samples, or custom project requirements.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Realistic 200T and 300T Production Scope",
     description:
       "The factory keeps its offering aligned with 200T and 300T aluminum die casting capacity, which suits compact housings, brackets, caps, shells, and covers.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Casting, Machining, and Finishing Coordination",
     description:
       "Drilling, tapping, polishing, anodizing, powder coating, and spray painting are coordinated around the aluminum part project instead of split across multiple vendors.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Export Buyer Communication",
     description:
       "The business positioning is built for global buyers who need practical RFQ review, clear scope confirmation, and direct export communication.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Focused Small Aluminum Die Casting Positioning",
     description:
       "For buyers seeking a small aluminum die casting parts manufacturer or a custom aluminum die casting parts China sourcing partner, the RFQ workflow stays centered on manufacturable compact aluminum parts.",
   },
@@ -384,7 +384,7 @@ export default function OemAluminumDieCastingPartsPage() {
               </div>
             </div>
             <a
-              href="https://wa.me/你的WhatsApp号码"
+              href={contactDetails.whatsappHref}
               className="flex items-start gap-3 transition-colors hover:text-white"
             >
               <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
@@ -393,7 +393,7 @@ export default function OemAluminumDieCastingPartsPage() {
               <span>{contactDetails.address}</span>
             </a>
           </div>
-          <a href="https://wa.me/你的WhatsApp号码" className="gold-button w-full text-center sm:w-auto">
+          <a href={contactDetails.whatsappHref} className="gold-button w-full text-center sm:w-auto">
             Get a Quote
           </a>
         </div>
@@ -449,7 +449,7 @@ export default function OemAluminumDieCastingPartsPage() {
             <a href="#capacity" className="transition-colors hover:text-white">
               Capacity
             </a>
-            <a href="https://wa.me/你的WhatsApp号码" className="transition-colors hover:text-white">
+            <a href={contactDetails.whatsappHref} className="transition-colors hover:text-white">
               RFQ
             </a>
           </nav>
@@ -486,7 +486,7 @@ export default function OemAluminumDieCastingPartsPage() {
                 >
                   Send Your Drawings
                 </a>
-                <a href="https://wa.me/你的WhatsApp号码" className="outline-button text-center">
+                <a href={contactDetails.whatsappHref} className="outline-button text-center">
                   Get a Quote
                 </a>
               </div>
@@ -634,8 +634,8 @@ export default function OemAluminumDieCastingPartsPage() {
               </div>
 
               <div className="grid gap-5 md:grid-cols-2">
-                {manufacturedParts.map((part) => (
-                  <article key={part.title} className="industrial-card p-6">
+                {manufacturedParts.map((part, index) => (
+                  <article key={`${part.title}-${index}`} className="industrial-card p-6">
                     <h2 className="text-2xl font-semibold text-white">
                       {part.title}
                     </h2>
@@ -661,9 +661,9 @@ export default function OemAluminumDieCastingPartsPage() {
             />
 
             <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-              {visualPrograms.map((program) => (
+              {visualPrograms.map((program, index) => (
                 <article
-                  key={program.title}
+                  key={`${program.title}-${index}`}
                   className="industrial-card group overflow-hidden"
                 >
                   <div className="relative aspect-[4/3] overflow-hidden">
@@ -766,8 +766,8 @@ export default function OemAluminumDieCastingPartsPage() {
                 />
 
                 <div className="mt-12 grid gap-6 md:grid-cols-2">
-                  {manufacturingSupport.map((item) => (
-                    <article key={item.title} className="industrial-card p-6">
+                  {manufacturingSupport.map((item, index) => (
+                    <article key={`${item.title}-${index}`} className="industrial-card p-6">
                       <h2 className="text-2xl font-semibold text-white">
                         {item.title}
                       </h2>
@@ -859,8 +859,8 @@ export default function OemAluminumDieCastingPartsPage() {
             />
 
             <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
-              {surfaceFinishes.map((finish) => (
-                <article key={finish.title} className="industrial-card p-6">
+              {surfaceFinishes.map((finish, index) => (
+                <article key={`${finish.title}-${index}`} className="industrial-card p-6">
                   <h2 className="text-2xl font-semibold text-white">
                     {finish.title}
                   </h2>
@@ -882,8 +882,8 @@ export default function OemAluminumDieCastingPartsPage() {
             />
 
             <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-              {industries.map((industry) => (
-                <article key={industry.title} className="industrial-card p-6">
+              {industries.map((industry, index) => (
+                <article key={`${industry.title}-${index}`} className="industrial-card p-6">
                   <h2 className="text-2xl font-semibold text-white">
                     {industry.title}
                   </h2>
@@ -907,8 +907,8 @@ export default function OemAluminumDieCastingPartsPage() {
             </div>
 
             <div className="grid gap-5">
-              {buyerReasons.map((reason) => (
-                <article key={reason.title} className="industrial-card p-6">
+              {buyerReasons.map((reason, index) => (
+                <article key={`${reason.title}-${index}`} className="industrial-card p-6">
                   <h2 className="text-xl font-semibold text-white">
                     {reason.title}
                   </h2>
@@ -959,10 +959,16 @@ export default function OemAluminumDieCastingPartsPage() {
                     parts.
                   </p>
 
-                  <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                  <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
                     <a
-                      href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
+                      href={contactDetails.whatsappHref}
                       className="rounded-full bg-[#120f08] px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#f8f2e6] transition-transform duration-200 hover:-translate-y-0.5"
+                    >
+                      WhatsApp RFQ
+                    </a>
+                    <a
+                      href={`mailto:${contactDetails.email}?subject=RFQ%20for%20OEM%20Aluminum%20Die%20Casting%20Parts&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20would%20like%20to%20request%20a%20quotation%20for%20OEM%20aluminum%20die%20casting%20parts.%0A%0APart%20type%3A%0AQuantity%3A%0AMaterial%20/%20finish%3A%0ADrawing%20or%20sample%20available%3A%0APackaging%20requirements%3A%0A%0APlease%20contact%20me%20with%20pricing%20and%20production%20details.%0A%0ABest%20regards%2C`}
+                      className="rounded-full border border-[#2b2216]/20 px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#22190d] transition-colors hover:bg-[#120f08] hover:text-[#f8f2e6]"
                     >
                       Email Your RFQ
                     </a>
