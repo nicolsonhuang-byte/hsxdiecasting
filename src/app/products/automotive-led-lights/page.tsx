@@ -382,7 +382,7 @@ export default function AutomotiveLedLightsPage() {
               Capabilities
             </Link>
             <a href="#products" className="transition-colors hover:text-white">
-              Products
+              Programs
             </a>
             <a href="#process" className="transition-colors hover:text-white">
               Process
