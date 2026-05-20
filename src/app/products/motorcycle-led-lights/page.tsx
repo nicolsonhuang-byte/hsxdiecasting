@@ -631,7 +631,7 @@ export default function MotorcycleLedLightsPage() {
                 <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
                   <a
                     href={contactDetails.whatsappHref}
-                    className="rounded-full bg-[#120f08] px-7 py-4 text-center text-sm font-bold uppercase tracking-[0.18em] text-white transition hover:bg-black"
+                    className="inline-flex items-center justify-center rounded-full bg-[#120f08] px-7 py-4 text-center text-sm font-bold uppercase tracking-[0.18em] text-[#ffffff] shadow-lg shadow-black/20 transition hover:bg-black"
                   >
                     WhatsApp RFQ
                   </a>
