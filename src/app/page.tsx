@@ -134,7 +134,7 @@ const productCategories: ProductCategory[] = [
     alt: "Decorative aluminum brake caliper cover for vehicle appearance upgrades",
     href: "/products/decorative-brake-caliper-covers",
     details: [
-      "Appearance-focused cover parts only, not structural braking components",
+      "Appearance-focused cover parts only, not braking-force components",
       "Suitable for aftermarket styling sets and private-label accessory programs",
       "Produced as compact aluminum cover pieces within small-to-medium casting scope",
     ],

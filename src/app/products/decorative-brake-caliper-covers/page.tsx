@@ -120,7 +120,7 @@ const productTypes: CardItem[] = [
   {
     title: "Non-load-bearing Covers",
     description:
-      "Decorative exterior covers only, positioned as visual accessories rather than structural braking-force components.",
+      "Decorative exterior covers only, positioned as visual accessories rather than braking-force components.",
   },
   {
     title: "Color Finish Covers",
@@ -439,7 +439,7 @@ export default function DecorativeBrakeCaliperCoversPage() {
                     </p>
                     <p className="mt-2 text-sm leading-7 text-[#ede6d7]">
                       Decorative appearance covers only. These parts are installed outside the brake caliper
-                      for visual upgrade and are not structural braking-force components. High-temperature
+                      for visual upgrade and are not braking-force components. High-temperature
                       resistant paint can help maintain appearance and reduce paint peeling risk under
                       normal driving conditions. Custom logo font and custom logo color can be reviewed.
                     </p>
