@@ -25,7 +25,7 @@ const pageTitle =
   "Automotive LED Lights Supplier | OEM Car LED Lighting | HSX DIECASTING";
 
 const pageDescription =
-  "HSX DIECASTING supplies OEM automotive LED lights, car LED work lights, auxiliary lights, aluminum lamp housings, brackets, covers, and compact aluminum lighting parts for global wholesalers, importers, distributors, aftermarket brands, and OEM buyers.";
+  "HSX DIECASTING supplies OEM automotive LED lights, car LED work lights, auxiliary lights, aluminum lamp housings, brackets, covers, and compact lighting parts.";
 
 export const metadata: Metadata = {
   title: pageTitle,

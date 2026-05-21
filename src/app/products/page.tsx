@@ -24,10 +24,10 @@ type SupportStage = {
 };
 
 const pageTitle =
-  "Products | OEM Aluminum Die Casting Parts & LED Lights | HSX DIECASTING";
+  "Products | Aluminum Die Casting Parts & LED Lights | HSX";
 
 const pageDescription =
-  "Browse HSX DIECASTING products for global wholesalers and OEM buyers, including OEM small-to-medium aluminum die casting parts, custom aluminum hardware parts, automotive LED lights, motorcycle LED lights, LED work lights, and decorative brake caliper covers.";
+  "Browse OEM aluminum die casting parts, LED work lights, automotive and motorcycle LED lights, aluminum housings, and decorative caliper covers.";
 
 export const metadata: Metadata = {
   title: pageTitle,

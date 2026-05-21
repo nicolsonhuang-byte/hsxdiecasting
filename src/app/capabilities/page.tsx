@@ -13,10 +13,10 @@ type InfoCard = {
 };
 
 const pageTitle =
-  "Factory Capabilities | Aluminum Die Casting Capabilities & OEM Aluminum Parts Manufacturing | HSX DIECASTING";
+  "Factory Capabilities | Aluminum Die Casting & Finishing";
 
 const pageDescription =
-  "HSX DIECASTING supports buyers seeking aluminum die casting capabilities from an aluminum die casting factory in China, including OEM aluminum parts manufacturing, small aluminum die casting parts, and aluminum die casting machining and finishing support.";
+  "HSX DIECASTING supports OEM aluminum die casting, drilling, tapping, polishing, anodizing, powder coating, spray painting, and export packaging.";
 
 export const metadata: Metadata = {
   title: pageTitle,

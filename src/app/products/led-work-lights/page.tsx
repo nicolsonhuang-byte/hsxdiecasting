@@ -22,10 +22,10 @@ type ProgramCard = {
 };
 
 const pageTitle =
-  "LED Work Lights Supplier | OEM LED Work Lights & Aluminum Housings | HSX DIECASTING";
+  "LED Work Lights Supplier | OEM LED Work Lights & Housings";
 
 const pageDescription =
-  "HSX DIECASTING supplies OEM LED work lights, off-road LED work lights, truck LED work lights, machinery work lights, and aluminum LED work light housing support for global B2B buyers.";
+  "HSX DIECASTING supplies OEM LED work lights, off-road lights, truck work lights, machinery work lights, and aluminum LED work light housings.";
 
 export const metadata: Metadata = {
   title: pageTitle,

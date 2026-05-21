@@ -20,10 +20,10 @@ type ContactCard = {
 };
 
 const pageTitle =
-  "Contact | Aluminum Die Casting RFQ & OEM Aluminum Die Casting Quotation | HSX DIECASTING";
+  "Contact HSX DIECASTING | Aluminum Die Casting RFQ & OEM Quote";
 
 const pageDescription =
-  "Contact HSX DIECASTING for aluminum die casting RFQ, OEM aluminum die casting quotation, LED work lights supplier contact, and China aluminum die casting factory contact support.";
+  "Contact HSX DIECASTING for aluminum die casting RFQ, OEM quotation, LED work lights, aluminum housings, and custom product project support.";
 
 export const metadata: Metadata = {
   title: pageTitle,

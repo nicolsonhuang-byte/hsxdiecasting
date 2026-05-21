@@ -24,10 +24,10 @@ type ProductProgram = {
 };
 
 const pageTitle =
-  "Aluminum Light Housings Supplier | OEM Die Cast Lamp Housings | HSX DIECASTING";
+  "Aluminum Light Housings Supplier | OEM Die Cast Lamp Housings";
 
 const pageDescription =
-  "HSX DIECASTING supplies OEM aluminum light housings, die cast lamp housings, LED heat-sink bodies, aluminum lamp covers, brackets, and compact lighting parts for global OEM buyers.";
+  "HSX DIECASTING supplies OEM aluminum light housings, die cast lamp housings, LED heat-sink bodies, lamp covers, brackets, and compact lighting parts.";
 
 export const metadata: Metadata = {
   title: pageTitle,

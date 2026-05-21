@@ -15,10 +15,10 @@ const jsonLdOrganization = {
 
 
 const siteTitle =
-  "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights";
+  "HSX DIECASTING | OEM Aluminum Die Casting Parts & LED Lights";
 
 const siteDescription =
-  "Foshan Huashunxiang Hardware Products Co., Ltd. supplies OEM small-to-medium aluminum die casting parts, custom aluminum hardware parts, automotive LED lights, motorcycle LED lights, LED work lights, and decorative brake caliper covers for global wholesale and OEM buyers.";
+  "HSX DIECASTING supplies OEM aluminum die casting parts, LED work lights, automotive and motorcycle LED lights, aluminum housings, and decorative caliper covers.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hsxdiecasting.com"),

@@ -24,10 +24,10 @@ type VisualProgram = {
 };
 
 const pageTitle =
-  "OEM Aluminum Die Casting Parts | Small Aluminum Die Casting Parts Manufacturer | HSX DIECASTING";
+  "OEM Aluminum Die Casting Parts Supplier | HSX DIECASTING";
 
 const pageDescription =
-  "HSX DIECASTING is a small aluminum die casting parts manufacturer and aluminum die casting parts supplier in China for OEM small-to-medium aluminum housings, brackets, end caps, enclosure shells, and custom aluminum die casting parts based on drawings or samples.";
+  "HSX DIECASTING supplies OEM small-to-medium aluminum die casting parts, housings, brackets, end caps, covers, and custom aluminum parts from drawings or samples.";
 
 export const metadata: Metadata = {
   title: pageTitle,

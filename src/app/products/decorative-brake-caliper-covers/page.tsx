@@ -22,10 +22,10 @@ type ProgramCard = {
 };
 
 const pageTitle =
-  "Decorative Brake Caliper Covers Supplier | OEM Appearance Covers | HSX DIECASTING";
+  "Decorative Brake Caliper Covers Supplier | OEM Appearance Covers";
 
 const pageDescription =
-  "HSX DIECASTING supplies decorative brake caliper covers and non-load-bearing automotive appearance covers for aftermarket brands, wholesalers, importers, distributors, and OEM buyers.";
+  "HSX DIECASTING supplies decorative brake caliper covers, non-load-bearing appearance covers, high-temperature paint options, and custom logo support.";
 
 export const metadata: Metadata = {
   title: pageTitle,
