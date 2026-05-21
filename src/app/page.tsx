@@ -788,7 +788,7 @@ export default function Home() {
 
         <section
           id="factory-trust"
-          className="border-b border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(199,162,91,0.1),transparent_30%),linear-gradient(180deg,#0b0b0b_0%,#050505_100%)] py-16 lg:py-24"
+          className="scroll-mt-40 border-b border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(199,162,91,0.1),transparent_30%),linear-gradient(180deg,#0b0b0b_0%,#050505_100%)] py-16 lg:py-24"
         >
           <div className="container-shell">
             <SectionHeading
