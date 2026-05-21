@@ -786,6 +786,139 @@ export default function Home() {
           </div>
         </section>
 
+        <section
+          id="factory-trust"
+          className="border-b border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(199,162,91,0.1),transparent_30%),linear-gradient(180deg,#0b0b0b_0%,#050505_100%)] py-16 lg:py-24"
+        >
+          <div className="container-shell">
+            <SectionHeading
+              eyebrow="Factory / About / FAQ / Trust"
+              title="A practical aluminum die casting and LED lighting supplier for B2B buyers"
+              description="HSX DIECASTING is presented as a realistic factory partner for global wholesalers, importers, distributors, aftermarket brands, and OEM buyers who need compact aluminum parts, LED lighting products, and clear project communication."
+            />
+
+            <div className="mt-12 grid gap-6 lg:grid-cols-2">
+              <article className="industrial-card p-6 sm:p-8">
+                <p className="section-kicker">Factory background</p>
+                <h3 className="mt-4 text-2xl font-semibold text-white">
+                  Foshan Huashunxiang Hardware Products Co., Ltd.
+                </h3>
+                <p className="mt-5 text-sm leading-7 text-[#cac1b2]">
+                  HSX DIECASTING is based in Foshan, Guangdong, China, and focuses
+                  on small-to-medium aluminum die casting parts, aluminum light
+                  housings, LED work lights, automotive LED lights, motorcycle LED
+                  lights, and decorative brake caliper covers for export-oriented
+                  B2B buyers.
+                </p>
+                <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
+                  The factory scope is described carefully around 200T and 300T
+                  aluminum die casting machines, drilling, tapping, polishing,
+                  grinding, anodizing, powder coating, and spray painting support.
+                </p>
+              </article>
+
+              <article className="industrial-card p-6 sm:p-8">
+                <p className="section-kicker">Why buyers work with HSX</p>
+                <h3 className="mt-4 text-2xl font-semibold text-white">
+                  Clear scope, practical communication, and export-ready support
+                </h3>
+                <ul className="mt-5 space-y-4 text-sm leading-7 text-[#cac1b2]">
+                  <li className="flex gap-3">
+                    <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#d4ac67]" />
+                    <span>Realistic small-to-medium aluminum die casting scope instead of exaggerated capacity claims.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#d4ac67]" />
+                    <span>RFQ review based on drawings, samples, product photos, quantity, finish, packaging, and target market.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#d4ac67]" />
+                    <span>Support for aluminum parts, LED lighting products, decorative covers, and private-label project needs.</span>
+                  </li>
+                </ul>
+              </article>
+            </div>
+
+            <div className="mt-12 grid gap-6 lg:grid-cols-3">
+              <article className="industrial-card p-6">
+                <p className="section-kicker">FAQ 01</p>
+                <h3 className="mt-4 text-xl font-semibold text-white">
+                  What files should buyers send for quotation?
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
+                  Send drawings, samples, product photos, dimensions, material
+                  requirements, surface finish, target quantity, packaging
+                  requirements, logo needs, and target market details.
+                </p>
+              </article>
+
+              <article className="industrial-card p-6">
+                <p className="section-kicker">FAQ 02</p>
+                <h3 className="mt-4 text-xl font-semibold text-white">
+                  What aluminum die casting scope is suitable?
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
+                  The site focuses on compact housings, brackets, covers, end caps,
+                  shells, lamp bodies, heat-sink-style housings, and other
+                  small-to-medium aluminum components suitable for 200T and 300T
+                  equipment.
+                </p>
+              </article>
+
+              <article className="industrial-card p-6">
+                <p className="section-kicker">FAQ 03</p>
+                <h3 className="mt-4 text-xl font-semibold text-white">
+                  Are brake caliper covers functional brake parts?
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
+                  No. HSX decorative brake caliper covers are appearance accessories
+                  installed outside the brake caliper. They are not braking-force
+                  components. High-temperature paint options for normal driving use,
+                  custom colors, custom logo font, and logo color support can be
+                  reviewed by project.
+                </p>
+              </article>
+            </div>
+
+            <div className="mt-12 rounded-[2rem] border border-[#d7b56d]/25 bg-[#111111] p-8 shadow-2xl shadow-black/30">
+              <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+                <div>
+                  <p className="section-kicker">Trust signal</p>
+                  <h3 className="mt-4 text-3xl font-semibold tracking-tight text-white">
+                    Built for buyers who need a real factory conversation before quotation
+                  </h3>
+                  <p className="mt-5 text-sm leading-7 text-[#cac1b2]">
+                    HSX does not position every project as automatically suitable.
+                    Buyers are encouraged to send clear RFQ details first, so the
+                    factory can review whether the project matches the available
+                    die casting machines, secondary processing, finishing options,
+                    product category, and export packaging requirements.
+                  </p>
+                </div>
+
+                <div className="grid gap-4 text-sm text-[#efe7d9] sm:grid-cols-2">
+                  <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+                    <p className="text-[#f4d27a]">Factory location</p>
+                    <p className="mt-2">Foshan, Guangdong, China</p>
+                  </div>
+                  <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+                    <p className="text-[#f4d27a]">Main equipment</p>
+                    <p className="mt-2">200T + 300T aluminum die casting</p>
+                  </div>
+                  <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+                    <p className="text-[#f4d27a]">WhatsApp / Phone</p>
+                    <p className="mt-2">+86 176 6615 5283</p>
+                  </div>
+                  <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+                    <p className="text-[#f4d27a]">Email</p>
+                    <p className="mt-2">nicolsonhuang2020@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="rfq" className="py-16 lg:py-24">
           <div className="container-shell">
             <div className="gold-panel rounded-[2rem] p-8 sm:p-10 lg:p-12">
