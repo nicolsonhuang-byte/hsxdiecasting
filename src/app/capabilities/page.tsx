@@ -582,8 +582,8 @@ export default function CapabilitiesPage() {
                 </p>
                 <p className="mt-3 text-sm leading-7 text-[#c4bbaa]">
                   Brake caliper covers are decorative non-load-bearing
-                  appearance covers only and are not positioned as structural
-                  braking parts.
+                  appearance covers only and are not braking-force
+                  components.
                 </p>
               </article>
             </div>
