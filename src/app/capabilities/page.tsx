@@ -139,7 +139,7 @@ const castingApplications: InfoCard[] = [
   {
     title: "Decorative Non-load-bearing Covers",
     description:
-      "Appearance-focused covers, including non-load-bearing decorative caliper covers, produced as compact aluminum exterior parts only.",
+      "Appearance-focused covers, including non-load-bearing caliper appearance covers, produced as compact aluminum exterior parts only.",
   },
   {
     title: "Custom OEM Aluminum Hardware Parts",
@@ -394,7 +394,7 @@ export default function CapabilitiesPage() {
               <p className="mt-5 max-w-2xl text-base leading-8 text-[#c7beaf]">
                 The product mix includes automotive LED lights, motorcycle LED
                 lights, LED work lights, compact aluminum housings, decorative
-                non-load-bearing decorative caliper covers, and OEM aluminum parts
+                non-load-bearing caliper appearance covers, and OEM aluminum parts
                 produced from drawings, samples, or custom project requirements.
               </p>
 
