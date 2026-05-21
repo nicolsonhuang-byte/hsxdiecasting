@@ -85,24 +85,24 @@ const heroStats = [
 
 const contactCards: ContactCard[] = [
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Email HSX DIECASTING for RFQ Files",
     value: contactDetails.email,
     href: `mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`,
     note: "Best for drawings, samples, RFQ files, and detailed OEM project requirements.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "WhatsApp HSX DIECASTING for Fast Quotation Contact",
     value: contactDetails.phone,
     href: contactDetails.whatsappHref,
     note: "Fast contact path for quotation follow-up, buyer communication, and project discussion.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "WeChat Contact for OEM Project Communication",
     value: contactDetails.wechat,
     note: "Direct communication option for buyers coordinating RFQs, samples, and OEM project details.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Factory Address in Foshan, Guangdong, China",
     value: contactDetails.address,
     note: "Foshan Huashunxiang Hardware Products Co., Ltd. in Foshan, Guangdong, China.",
   },
@@ -141,17 +141,17 @@ const capabilities = [
 
 const scopeNotes: InfoCard[] = [
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Small-to-medium Aluminum Die Casting Scope",
     description:
       "The aluminum die casting scope stays limited to compact housings, brackets, covers, shells, end caps, and other small-to-medium parts suitable for 200T and 300T machines.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "LED Lighting and Aluminum Housing Product Supply",
     description:
       "HSX supplies automotive LED lights, motorcycle LED lights, LED work lights, and related aluminum light housings for global buyers.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Decorative Brake Caliper Cover Positioning",
     description:
       "Brake caliper covers are decorative non-load-bearing appearance covers only and are not described as structural braking parts.",
   },
