@@ -153,7 +153,7 @@ const scopeNotes: InfoCard[] = [
   {
     title: "Decorative Brake Caliper Cover Positioning",
     description:
-      "Brake caliper covers are decorative non-load-bearing appearance covers only and are not described as structural braking parts.",
+      "Brake caliper covers are decorative non-load-bearing appearance covers only and are not braking-force components.",
   },
 ];
 
