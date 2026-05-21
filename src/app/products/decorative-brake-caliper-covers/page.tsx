@@ -200,17 +200,17 @@ const processSteps: CardItem[] = [
   {
     title: "Non-structural Positioning",
     description:
-      "The product is positioned clearly as a decorative, non-load-bearing automotive appearance cover, not a braking-force component.",
+      "The product is positioned clearly as a decorative cover installed outside the brake caliper for appearance upgrade. It is non-load-bearing and not a braking-force component.",
   },
   {
     title: "Color and Finish Planning",
     description:
-      "Powder coating, spray painting, polishing, and other visual finishing needs are coordinated around buyer requirements.",
+      "Powder coating, spray painting, polishing, and high-temperature resistant paint needs for normal driving use are coordinated around buyer requirements.",
   },
   {
     title: "Logo and Packaging",
     description:
-      "Private-label logo, product line presentation, carton plan, and market positioning can be reviewed with the RFQ.",
+      "Private-label logo, custom logo font, custom logo color, product line presentation, carton plan, and market positioning can be reviewed with the RFQ.",
   },
   {
     title: "Inspection and Export Packing",
@@ -223,7 +223,7 @@ const finishingOptions: CardItem[] = [
   {
     title: "Powder Coating",
     description:
-      "Durable color coverage for decorative caliper covers and automotive appearance accessories.",
+      "Durable color coverage for decorative caliper covers and automotive appearance accessories, with high-temperature resistant paint options for normal driving use.",
   },
   {
     title: "Spray Painting",
@@ -238,7 +238,7 @@ const finishingOptions: CardItem[] = [
   {
     title: "Custom Color Review",
     description:
-      "Buyer-defined finish colors can be reviewed based on sample, photo, brand guide, or target market request.",
+      "Buyer-defined finish colors, custom logo font, and custom logo color can be reviewed based on sample, photo, brand guide, or target market request.",
   },
 ];
 
@@ -269,8 +269,8 @@ const rfqRequirements = [
   "Product photos, drawings, samples, or reference models",
   "Target vehicle fitment or product application market if available",
   "Cover dimensions, mounting style, appearance surface, and assembly needs",
-  "Color finish such as red, black, blue, silver, gold, powder coating, or spray painting",
-  "Logo request, private-label packaging plan, and product line positioning",
+  "High-temperature resistant paint or color finish such as red, black, blue, silver, gold, powder coating, or spray painting for normal driving use",
+  "Custom logo font, logo color request, private-label packaging plan, and product line positioning",
   "Estimated order quantity, target market, and repeat-order expectations",
 ];
 
@@ -668,8 +668,9 @@ export default function DecorativeBrakeCaliperCoversPage() {
                     Send your decorative brake caliper cover photos, samples, or OEM project requirements
                   </h2>
                   <p className="mt-7 max-w-3xl text-base leading-8 text-[#2d2417] lg:text-lg">
-                    HSX reviews decorative brake caliper covers, automotive appearance covers,
-                    color finish accessories, logo covers, and non-load-bearing visual upgrade
+                    HSX reviews decorative brake caliper covers installed outside the brake caliper,
+                    automotive appearance covers, high-temperature paint finish options for normal driving use,
+                    custom colors, custom logo font, logo color requests, and non-load-bearing visual upgrade
                     products for global wholesalers, importers, distributors, accessory brands,
                     and OEM buyers.
                   </p>
@@ -715,8 +716,8 @@ export default function DecorativeBrakeCaliperCoversPage() {
                           RFQ ready
                         </p>
                         <p className="mt-3 text-lg font-semibold text-white">
-                          Send photos, samples, dimensions, finish needs, logo requests,
-                          and target quantity for decorative cover review.
+                          Send photos, samples, dimensions, high-temperature paint needs for normal driving use,
+                          custom logo font, logo color requests, and target quantity for decorative cover review.
                         </p>
                       </div>
                     </div>
@@ -748,9 +749,11 @@ export default function DecorativeBrakeCaliperCoversPage() {
               Foshan Huashunxiang Hardware Products Co., Ltd.
             </p>
             <p className="mt-5 max-w-3xl text-sm leading-7 text-[#bdb5a8]">
-              Decorative brake caliper covers, non-load-bearing automotive appearance covers,
-              color finish accessories, logo covers, and visual upgrade products for global
-              wholesalers, importers, distributors, accessory brands, and OEM buyers.
+              Decorative brake caliper covers installed outside the brake caliper,
+              non-load-bearing automotive appearance covers, high-temperature paint finish options
+              for normal driving use, custom colors, custom logo font, logo color support,
+              and visual upgrade products for global wholesalers, importers, distributors,
+              accessory brands, and OEM buyers.
             </p>
           </div>
 
@@ -776,6 +779,8 @@ export default function DecorativeBrakeCaliperCoversPage() {
               {contactDetails.address}
             </p>
             <p>Decorative appearance cover supply for automotive aftermarket buyers</p>
+            <p>High-temperature resistant paint helps reduce paint peeling risk under normal driving conditions</p>
+            <p>Custom logo font and logo color support for private-label projects</p>
             <p>Non-load-bearing visual accessory product positioning</p>
             <p className="mt-2">
               © {currentYear} HSX DIECASTING. All rights reserved.
