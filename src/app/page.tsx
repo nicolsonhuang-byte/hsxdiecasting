@@ -777,7 +777,7 @@ export default function Home() {
                 </p>
                 <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
                   The homepage avoids any claim that decorative covers are
-                  structural brake components. This keeps the product scope clear
+                  braking-force components. This keeps the product scope clear
                   for buyers, prevents safety confusion, and aligns the offering
                   with realistic aluminum accessory manufacturing.
                 </p>
