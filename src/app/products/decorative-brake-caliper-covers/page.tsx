@@ -107,7 +107,7 @@ const heroStats = [
   {
     label: "Finish support",
     value: "Color + Logo",
-    note: "Color finish, brand presentation, packaging, and private-label support",
+    note: "High-temperature paint for normal driving use, custom colors, custom logo font, logo color, packaging, and private-label support",
   },
 ];
 
@@ -383,7 +383,8 @@ export default function DecorativeBrakeCaliperCoversPage() {
               </p>
               <p className="mt-5 max-w-3xl text-base leading-8 text-[#c7beaf]">
                 Buyers can start from product photos, samples, dimensions, target vehicle
-                fitment, color finish requests, logo needs, and packaging plans.
+                fitment, high-temperature paint requirements for normal driving use,
+                custom logo font, logo color, finish color requests, and packaging plans.
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -437,8 +438,10 @@ export default function DecorativeBrakeCaliperCoversPage() {
                       Important positioning
                     </p>
                     <p className="mt-2 text-sm leading-7 text-[#ede6d7]">
-                      Decorative appearance covers only. These parts are not
-                      structural braking-force components.
+                      Decorative appearance covers only. These parts are installed outside the brake caliper
+                      for visual upgrade and are not structural braking-force components. High-temperature
+                      resistant paint can help maintain appearance and reduce paint peeling risk under
+                      normal driving conditions. Custom logo font and custom logo color can be reviewed.
                     </p>
                   </div>
                 </div>
