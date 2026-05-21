@@ -79,32 +79,32 @@ const heroStats = [
 
 const equipmentCards: InfoCard[] = [
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "200T Aluminum Die Casting Machine",
     description:
       "Used for compact aluminum housings, brackets, end caps, covers, and other small-to-medium die cast parts with practical geometry.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "300T Aluminum Die Casting Machine",
     description:
       "Supports slightly larger small-to-medium aluminum parts within realistic factory scope for light housings, shells, covers, and OEM hardware accessories.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Multi-axis Drilling Support",
     description:
       "Supports repeatable hole processing, mounting-point preparation, and secondary machining for aluminum parts and housings.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Multi-axis Tapping Support",
     description:
       "Used for threaded features, assembly-related hole preparation, and OEM aluminum part functional detail work.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Polishing and Grinding Equipment",
     description:
       "Provides surface preparation and appearance improvement before finishing or final visual inspection.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Surface Finishing Coordination",
     description:
       "Aluminum anodizing, powder coating, and spray painting are coordinated with polishing and grinding preparation.",
   },
@@ -112,37 +112,37 @@ const equipmentCards: InfoCard[] = [
 
 const castingApplications: InfoCard[] = [
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Aluminum LED Light Housings",
     description:
       "Compact aluminum housings and shells for work lights, auxiliary lights, and industrial lighting-related product programs.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Heat Dissipation Aluminum Housings",
     description:
       "Small-to-medium aluminum housings designed around heat dissipation, light body structure, and practical assembly requirements.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Compact Aluminum Brackets",
     description:
       "Compact brackets and support parts with drilling and tapping features for lighting and hardware applications.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Aluminum End Caps and Covers",
     description:
       "Aluminum end caps and closure parts for housings, shells, and accessory assemblies requiring a finished appearance.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Small Aluminum Enclosure Shells",
     description:
       "Compact enclosure shells for lighting, hardware, and OEM aluminum accessories suited to 200T and 300T die casting capacity.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Decorative Non-load-bearing Covers",
     description:
       "Appearance-focused covers, including decorative non-load-bearing brake caliper covers, produced as compact aluminum exterior parts only.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Custom OEM Aluminum Hardware Parts",
     description:
       "Custom aluminum hardware parts manufactured from drawings, samples, or custom project requirements for global B2B buyers.",
   },
@@ -150,27 +150,27 @@ const castingApplications: InfoCard[] = [
 
 const machiningSupport: InfoCard[] = [
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Secondary Machining for Aluminum Parts",
     description:
       "Secondary machining supports hole processing, threaded features, mounting details, and assembly-related geometry on compact aluminum parts.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Surface Conditioning Before Finishing",
     description:
       "Surface conditioning improves appearance and prepares the part for anodizing, powder coating, spray painting, or direct inspection.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Edge and Visible Area Preparation",
     description:
       "Part edges and key visible areas can be prepared before finishing or packing to improve presentation and handling quality.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Basic Assembly Coordination",
     description:
       "Basic assembly coordination can be arranged where the OEM project needs bracket matching, cover fit-up, or related component preparation.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Export Packaging Support",
     description:
       "Export-oriented packaging and buyer-defined packing requirements are coordinated before shipment release.",
   },
@@ -178,22 +178,22 @@ const machiningSupport: InfoCard[] = [
 
 const finishingCards: InfoCard[] = [
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Aluminum Anodizing Support",
     description:
       "Used where the part needs a clean metallic appearance, corrosion resistance, or controlled finish tone on exposed aluminum surfaces.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Powder Coating for Aluminum Parts",
     description:
       "Suitable for durable exterior coverage on aluminum housings, brackets, covers, and custom hardware accessories.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Spray Painting and Color Matching",
     description:
       "Applied where the project requires color matching, market-specific appearance, or brand-oriented visual presentation.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Polishing and Grinding Preparation",
     description:
       "Supports appearance preparation and surface improvement before finishing or final shipment inspection.",
   },
@@ -213,32 +213,32 @@ const workflowSteps = [
 
 const industries: InfoCard[] = [
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "LED Work Light Housing Programs",
     description:
       "Compact housings, heat sink shells, covers, and brackets for LED work lights and related lighting product lines.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Automotive LED Light and Accessory Parts",
     description:
       "Automotive LED lights, compact aluminum housings, decorative covers, and appearance-focused accessory components.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Motorcycle LED Light Housing Parts",
     description:
       "Motorcycle light housings, small aluminum lamp bodies, and compact OEM accessory parts for distributors and private-label buyers.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "OEM Aluminum Hardware Accessories",
     description:
       "Custom aluminum hardware parts, end caps, brackets, shells, and other small-to-medium OEM aluminum accessories.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Off-road and Utility Equipment Lighting Parts",
     description:
       "LED work light housings, mounting parts, and compact aluminum accessories for off-road and utility equipment programs.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Global B2B OEM Project Buyers",
     description:
       "Project manufacturing for global wholesalers, importers, distributors, aftermarket brands, and OEM buyers.",
   },
