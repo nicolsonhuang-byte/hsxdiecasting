@@ -7,14 +7,16 @@ import heroFactory from "../../../../public/images/hero-factory-200t-300t.png";
 import ledWorkLight from "../../../../public/images/led-work-light.png";
 import oemAluminumParts from "../../../../public/images/oem-small-aluminum-die-casting-parts.png";
 
-type InfoCard = {
+type CardItem = {
   title: string;
   description: string;
 };
 
-type GalleryItem = {
+type ProgramCard = {
+  label: string;
   title: string;
-  caption: string;
+  description: string;
+  bullets: string[];
   image: StaticImageData;
   alt: string;
 };
@@ -23,7 +25,7 @@ const pageTitle =
   "LED Work Lights Supplier | OEM LED Work Lights & Aluminum Housings | HSX DIECASTING";
 
 const pageDescription =
-  "HSX DIECASTING supports buyers searching for a LED work lights supplier and LED work light manufacturer China source for OEM LED work lights, off-road LED work lights, truck LED work lights, and aluminum LED work light housing support.";
+  "HSX DIECASTING supplies OEM LED work lights, off-road LED work lights, truck LED work lights, machinery work lights, and aluminum LED work light housing support for global B2B buyers.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -61,227 +63,195 @@ export const metadata: Metadata = {
 const contactDetails = {
   email: "nicolsonhuang2020@gmail.com",
   phone: "+86 176 6615 5283",
-  whatsappHref: "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%20Please%20contact%20me%20with%20quotation%20details.",
+  whatsappHref:
+    "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20would%20like%20to%20request%20a%20quotation%20for%20LED%20work%20lights.%20Please%20contact%20me%20with%20pricing%20and%20production%20details.",
   wechat: "NicolsonHwang",
   address:
     "Huayue Road, National Eco-Industrial Park, Danzao Town, Nanhai District, Foshan, Guangdong, China",
 };
 
+const mailtoLedRfq =
+  "mailto:nicolsonhuang2020@gmail.com?subject=RFQ%20for%20LED%20Work%20Lights&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20would%20like%20to%20request%20a%20quotation%20for%20LED%20work%20lights.%0A%0AProduct%20type%3A%0AQuantity%3A%0AWattage%20or%20lighting%20requirement%3A%0AHousing%20size%20or%20drawing%3A%0AFinish%20/%20packaging%20request%3A%0A%0APlease%20contact%20me%20with%20pricing%20and%20production%20details.%0A%0ABest%20regards%2C";
+
 const heroStats = [
   {
-    label: "Buyer Positioning",
-    value: "Wholesale + OEM",
-    note: "Built for importers, distributors, private-label brands, and project buyers",
+    label: "Product focus",
+    value: "Work Lights",
+    note: "LED work lights, off-road lights, truck lights, and compact lighting products",
   },
   {
-    label: "Housing Support",
+    label: "Housing support",
     value: "200T + 300T",
-    note: "Small-to-medium aluminum die-cast housings aligned with realistic factory scope",
+    note: "Compact aluminum housings, brackets, covers, and heat-sink style parts",
   },
   {
-    label: "Finishing Flow",
-    value: "Drill to Coat",
-    note: "Drilling, tapping, polishing, anodizing, powder coating, and spray painting support",
-  },
-];
-
-const applications: InfoCard[] = [
-  {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
-    description:
-      "Off-road LED work lights for utility vehicles, side-by-sides, and other accessory-driven vehicle programs.",
-  },
-  {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
-    description:
-      "Truck LED work lights and trailer-mounted lighting products for fleets, aftermarket brands, and distributor channels.",
-  },
-  {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
-    description:
-      "LED work lighting for tractors, harvesters, utility machinery, and field-use equipment lines.",
-  },
-  {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
-    description:
-      "Machinery work lights suited to construction equipment, site vehicles, and heavy-duty accessory sourcing programs.",
-  },
-  {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
-    description:
-      "Compact LED work lights and aluminum housings for marine accessory applications requiring durable light bodies.",
-  },
-  {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
-    description:
-      "Auxiliary lights, compact lamp bodies, and appearance-focused lighting products for automotive and motorcycle modification buyers.",
-  },
-  {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
-    description:
-      "Industrial service, maintenance, and equipment-lighting applications that need practical OEM supply support.",
+    label: "Finish support",
+    value: "Coat + Paint",
+    note: "Powder coating, spray painting, anodizing, polishing, and grinding support",
   },
 ];
 
-const productFeatures: InfoCard[] = [
+const productTypes: CardItem[] = [
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Off-road LED Work Lights",
     description:
-      "LED work lights are positioned around compact aluminum housings that support practical use across vehicles, machinery, and industrial environments.",
+      "Compact LED work lights for off-road vehicles, utility equipment, outdoor use, and accessory distribution programs.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Truck LED Work Lights",
     description:
-      "The product page is written for buyers sourcing bright LED work lights for visibility, field work, and equipment support applications.",
+      "Truck work lights and auxiliary lighting products for aftermarket brands, importers, and wholesale channels.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Machinery Work Lights",
     description:
-      "Aluminum housing structure supports heat-dissipation-focused design for work lights, auxiliary lights, and other compact lighting products.",
+      "Lighting products for agricultural machinery, construction equipment, field-use vehicles, and industrial equipment lines.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Aluminum Lamp Housings",
     description:
-      "Related brackets, covers, and compact mounting features can be coordinated with machining, drilling, and tapping support.",
+      "Die-cast aluminum housings, covers, brackets, and heat-dissipation focused parts for compact LED lighting products.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Custom Lighting Components",
     description:
-      "HSX can review buyer-led work light projects for housing style, structure, branding, packaging, and application-specific requirements.",
+      "Buyer-defined LED work light parts developed from product photos, drawings, samples, or OEM project requirements.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Private-label Work Light Programs",
     description:
-      "Anodizing, powder coating, spray painting, polishing, and grinding support improve appearance and project-fit finishing options.",
-  },
-  {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
-    description:
-      "The business positioning is built for bulk buyers, importers, distributors, online sellers, and private-label lighting programs.",
+      "OEM support for lighting brands needing product review, finish color, packaging, logo, and export-ready communication.",
   },
 ];
 
-const odmSupport: InfoCard[] = [
+const productPrograms: ProgramCard[] = [
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    label: "Off-road",
+    title: "Off-road LED Work Light Programs",
     description:
-      "Buyers can send samples, housing drawings, lamp structure files, or reference photos to define the LED work light project clearly.",
-  },
-  {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
-    description:
-      "Share wattage targets, lighting application details, and output expectations so the product scope can be reviewed against the intended use.",
-  },
-  {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
-    description:
-      "Provide aluminum housing size, bracket layout, cover details, mounting points, and other structure requirements for OEM or ODM review.",
-  },
-  {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
-    description:
-      "Order quantity, carton requirements, inner packaging, retail presentation, and shipping expectations help shape the quotation process.",
-  },
-  {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
-    description:
-      "Private-label, logo, and product-line positioning details can be shared for OEM work light programs intended for distribution or online retail.",
-  },
-  {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
-    description:
-      "Technical points such as beam use, application environment, material preference, and finish requirements can all be consolidated in the RFQ.",
-  },
-];
-
-const manufacturingPoints = [
-  "2 aluminum die casting machines: 1 x 200-ton machine and 1 x 300-ton machine",
-  "Suitable for LED work light aluminum housings, heat sink housings, brackets, and covers with small-to-medium geometry",
-  "7 multi-axis drilling machines for repeatable hole and mounting-point processing",
-  "7 multi-axis tapping machines for threaded features and assembly-related details",
-  "3 polishing and grinding machines for appearance preparation before finishing",
-  "Aluminum anodizing, powder coating, and spray painting support for housing finishing",
-  "OEM small-to-medium aluminum die casting parts accepted from drawings, samples, or custom project requirements",
-];
-
-const galleryItems: GalleryItem[] = [
-  {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
-    caption:
-      "LED work light product positioning for off-road vehicles, equipment lighting, and industrial work applications.",
+      "LED work lights for utility vehicles, off-road equipment, maintenance channels, and aftermarket accessory buyers.",
+    bullets: [
+      "Compact LED light formats",
+      "Aluminum housing support",
+      "Wholesale and private-label fit",
+    ],
     image: ledWorkLight,
-    alt: "LED work light for off-road and industrial use",
+    alt: "Off-road LED work light for utility and equipment lighting programs",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
-    caption:
-      "Compact aluminum housings, covers, and related small-to-medium parts that support LED lighting product programs.",
+    label: "Truck",
+    title: "Truck and Utility Light Programs",
+    description:
+      "Truck LED work lights, auxiliary lights, and compact lamp body support for vehicle accessory distributors.",
+    bullets: [
+      "Truck accessory channel supply",
+      "Lamp body and cover support",
+      "OEM color and packaging needs",
+    ],
+    image: ledWorkLight,
+    alt: "Truck LED work light and utility lighting product support",
+  },
+  {
+    label: "Housings",
+    title: "Aluminum Housing Programs",
+    description:
+      "Die-cast aluminum lamp housings, rear covers, brackets, and compact lighting-related parts matched to practical manufacturing scope.",
+    bullets: [
+      "Small-to-medium aluminum parts",
+      "Drilling and tapping support",
+      "Surface finishing coordination",
+    ],
     image: oemAluminumParts,
-    alt: "Compact aluminum die-cast housings for LED lighting products",
-  },
-  {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
-    caption:
-      "Factory support for compact aluminum part production, machining, drilling, tapping, and finishing coordination.",
-    image: factoryCapabilities,
-    alt: "Factory capability for small-to-medium aluminum parts",
-  },
-  {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
-    caption:
-      "Production environment aligned with 200T and 300T equipment for LED work light housings and related aluminum components.",
-    image: heroFactory,
-    alt: "OEM manufacturing support for LED work lights and aluminum housings",
+    alt: "Aluminum LED work light housing and compact die casting parts",
   },
 ];
 
-const industriesServed: InfoCard[] = [
+const processSteps: CardItem[] = [
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Product Photo and Sample Review",
     description:
-      "LED work lights and related aluminum housings for bulk automotive accessory sourcing channels.",
+      "Buyer photos, samples, target size, wattage requirements, beam use, and packaging expectations are reviewed before quotation.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Housing and Part Feasibility",
     description:
-      "Product supply for off-road lighting ranges, utility vehicle accessories, and brand-driven distribution programs.",
+      "Compact aluminum lamp housings, brackets, covers, and mounting features are checked against practical 200T and 300T die casting scope.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Aluminum Die Casting",
     description:
-      "Truck LED work lights and housing-related products for aftermarket truck equipment and branded accessory lines.",
+      "LED work light housings and lighting-related aluminum parts are produced within small-to-medium aluminum part capacity.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Drilling and Tapping",
     description:
-      "Work light and aluminum housing supply for machinery-focused parts businesses and equipment accessory sourcing teams.",
+      "Mounting holes, threaded features, bracket points, and secondary processing details are supported by multi-axis drilling and tapping equipment.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Surface Finishing",
     description:
-      "Lighting products and compact housings suitable for agricultural machinery and utility equipment lines.",
+      "Powder coating, spray painting, anodizing, polishing, and grinding are coordinated around appearance, corrosion resistance, and brand presentation.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Inspection and Export Packing",
     description:
-      "OEM and wholesale support for work lights used in construction equipment and related site-service machinery.",
+      "Appearance, basic dimensions, finish requirements, packing layout, and export delivery needs are checked before shipment.",
+  },
+];
+
+const finishingOptions: CardItem[] = [
+  {
+    title: "Powder Coating",
+    description:
+      "Durable exterior coverage for LED work light housings, brackets, covers, and compact aluminum lamp bodies.",
   },
   {
-    title: "HSX DIECASTING | OEM Aluminum Die Casting Parts and Automotive LED Lights",
+    title: "Spray Painting",
     description:
-      "Suitable for buyers building branded LED work light programs for e-commerce and private-label channels.",
+      "Used when the LED lighting product requires color matching, branded visual presentation, or model-specific appearance.",
+  },
+  {
+    title: "Anodizing",
+    description:
+      "Suitable for selected aluminum parts needing a clean metallic appearance and improved surface protection.",
+  },
+  {
+    title: "Polishing and Grinding",
+    description:
+      "Surface preparation for visible aluminum parts before coating, painting, anodizing, or final appearance review.",
+  },
+];
+
+const buyerFit: CardItem[] = [
+  {
+    title: "Off-road Accessory Brands",
+    description:
+      "LED work lights and compact aluminum lamp housings for branded vehicle accessory product lines.",
+  },
+  {
+    title: "Truck Accessory Distributors",
+    description:
+      "Truck work lights, auxiliary lights, mounting parts, covers, and lighting accessories for wholesale and distribution channels.",
+  },
+  {
+    title: "Machinery Equipment Suppliers",
+    description:
+      "Work light programs for agricultural machinery, construction equipment, utility vehicles, and field-use equipment channels.",
+  },
+  {
+    title: "OEM Project Buyers",
+    description:
+      "Custom LED work light parts developed from buyer drawings, samples, product photos, or OEM project requirements.",
   },
 ];
 
 const rfqRequirements = [
-  "Product photos or drawings",
-  "LED power / wattage requirements",
-  "Housing size and material requirements",
-  "Beam pattern or lighting application",
-  "Quantity",
-  "Surface finish",
-  "Packaging and branding requirements",
-  "Target market",
+  "Product photos, drawings, samples, or reference models",
+  "Lighting type such as off-road light, truck work light, machinery work light, or custom LED light",
+  "Target wattage, voltage, beam use, lens, cable, or lighting performance requirements if available",
+  "Housing dimensions, bracket points, mounting requirements, and assembly needs",
+  "Surface finish such as powder coating, spray painting, anodizing, or polishing",
+  "Estimated order quantity, logo request, packaging plan, and target market",
 ];
 
 function SectionHeading({
@@ -294,9 +264,9 @@ function SectionHeading({
   description: string;
 }) {
   return (
-    <div className="max-w-3xl">
+    <div className="max-w-4xl">
       <p className="section-kicker">{eyebrow}</p>
-      <h2 className="section-heading mt-4 text-3xl text-white sm:text-4xl">
+      <h2 className="section-heading mt-4 text-3xl text-white sm:text-4xl lg:text-5xl">
         {title}
       </h2>
       <p className="mt-5 text-base leading-8 text-[#c9c1b2] sm:text-lg">
@@ -310,24 +280,18 @@ export default function LedWorkLightsPage() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="relative overflow-x-clip">
+    <div className="relative overflow-x-clip bg-black text-white">
       <div className="border-b border-white/8 bg-black/85">
         <div className="container-shell flex flex-col gap-3 py-3 text-sm text-[#d8ccb2] lg:flex-row lg:items-center lg:justify-between">
           <div className="flex flex-col gap-3">
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-6">
-              <a
-                href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
-                className="flex items-center gap-3 transition-colors hover:text-white"
-              >
+              <a href={mailtoLedRfq} className="flex items-center gap-3 transition-colors hover:text-white">
                 <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
                   Email
                 </span>
                 <span>{contactDetails.email}</span>
               </a>
-              <a
-                href={contactDetails.whatsappHref}
-                className="flex items-center gap-3 transition-colors hover:text-white"
-              >
+              <a href={contactDetails.whatsappHref} className="flex items-center gap-3 transition-colors hover:text-white">
                 <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
                   WhatsApp
                 </span>
@@ -340,17 +304,14 @@ export default function LedWorkLightsPage() {
                 <span>{contactDetails.wechat}</span>
               </div>
             </div>
-            <a
-              href="https://wa.me/你的WhatsApp号码"
-              className="flex items-start gap-3 transition-colors hover:text-white"
-            >
+            <div className="flex items-start gap-3">
               <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
                 Address
               </span>
               <span>{contactDetails.address}</span>
-            </a>
+            </div>
           </div>
-          <a href="https://wa.me/你的WhatsApp号码" className="gold-button w-full text-center sm:w-auto">
+          <a href={contactDetails.whatsappHref} className="gold-button w-full text-center sm:w-auto">
             Get a Quote
           </a>
         </div>
@@ -360,93 +321,53 @@ export default function LedWorkLightsPage() {
         <div className="container-shell flex flex-col gap-5 py-5 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-2xl">
             <p className="section-kicker">Foshan, Guangdong, China</p>
-            <Link
-              href="/"
-              className="section-heading mt-3 block text-2xl text-white sm:text-3xl"
-            >
+            <Link href="/" className="section-heading mt-3 block text-2xl text-white sm:text-3xl">
               HSX DIECASTING
             </Link>
             <p className="mt-3 text-sm leading-7 text-[#beb6a8]">
-              Foshan Huashunxiang Hardware Products Co., Ltd. supplies LED work
-              lights and aluminum light housings for global wholesalers,
-              importers, distributors, off-road accessory brands, truck
-              accessory suppliers, agricultural machinery suppliers,
-              construction equipment suppliers, and OEM buyers.
+              LED work lights, off-road lights, truck lights, machinery work lights,
+              aluminum lamp housings, brackets, covers, and lighting-related aluminum
+              parts for global B2B buyers.
             </p>
           </div>
 
-          <nav
-            aria-label="Primary"
-            className="flex flex-wrap gap-x-5 gap-y-3 text-sm text-[#ddd2ba]"
-          >
-            <Link href="/" className="transition-colors hover:text-white">
-              Home
-            </Link>
-            <Link
-              href="/products"
-              className="transition-colors hover:text-white"
-            >
-              Products
-            </Link>
-            <Link href="/contact" className="transition-colors hover:text-white">
-              Contact
-            </Link>
-            <Link
-              href="/capabilities"
-              className="transition-colors hover:text-white"
-            >
-              Capabilities
-            </Link>
-            <a
-              href="#applications"
-              className="transition-colors hover:text-white"
-            >
-              Applications
-            </a>
-            <a href="#features" className="transition-colors hover:text-white">
-              Features
-            </a>
-            <a href="#gallery" className="transition-colors hover:text-white">
-              Gallery
-            </a>
-            <a href="https://wa.me/你的WhatsApp号码" className="transition-colors hover:text-white">
-              RFQ
-            </a>
+          <nav aria-label="Primary" className="flex flex-wrap gap-x-5 gap-y-3 text-sm text-[#ddd2ba]">
+            <Link href="/" className="transition-colors hover:text-white">Home</Link>
+            <Link href="/products" className="transition-colors hover:text-white">Products</Link>
+            <Link href="/contact" className="transition-colors hover:text-white">Contact</Link>
+            <Link href="/capabilities" className="transition-colors hover:text-white">Capabilities</Link>
+            <a href="#programs" className="transition-colors hover:text-white">Programs</a>
+            <a href="#process" className="transition-colors hover:text-white">Process</a>
+            <a href="#rfq" className="transition-colors hover:text-white">RFQ</a>
           </nav>
         </div>
       </header>
 
       <main id="top">
         <section className="border-b border-white/8 bg-[radial-gradient(circle_at_top_right,rgba(199,162,91,0.14),transparent_34%),linear-gradient(180deg,#090909_0%,#050505_100%)]">
-          <div className="container-shell grid gap-12 py-16 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-center lg:py-24">
+          <div className="container-shell grid gap-12 py-16 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)] lg:items-center lg:py-24">
             <div className="motion-rise">
-              <p className="section-kicker">LED work lights and aluminum housings</p>
-              <h1 className="section-heading mt-6 text-4xl leading-none text-white sm:text-5xl xl:text-6xl">
-                LED Work Lights Supplier for Global Wholesalers & OEM Buyers
+              <p className="section-kicker">LED work lighting</p>
+              <h1 className="section-heading mt-6 text-5xl leading-none text-white sm:text-6xl xl:text-7xl">
+                LED Work Lights Supplier for Global B2B Buyers
               </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-[#d4cdc0]">
-                HSX supplies LED work lights, off-road LED work lights, truck
-                LED work lights, machinery work lights, and related aluminum
-                die-cast housings for export-focused buyers. The offering stays
-                centered on compact LED lighting products and small-to-medium
-                aluminum housings that match 200T and 300T factory capacity.
+              <p className="mt-7 max-w-3xl text-lg leading-8 text-[#d4cdc0]">
+                HSX DIECASTING supplies LED work lights, off-road LED work lights,
+                truck LED work lights, machinery work lights, and related aluminum
+                die-cast housings for global wholesalers, importers, distributors,
+                lighting brands, and OEM buyers.
               </p>
-              <p className="mt-5 max-w-2xl text-base leading-8 text-[#c7beaf]">
-                The company also manufactures automotive LED lights,
-                motorcycle LED lights, and OEM small-to-medium aluminum die
-                casting parts based on drawings, samples, or custom project
-                requirements.
+              <p className="mt-5 max-w-3xl text-base leading-8 text-[#c7beaf]">
+                Buyers can start from product photos, samples, drawings, wattage
+                requirements, housing size, finish colors, logo requests, and packaging plans.
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <a href="https://wa.me/你的WhatsApp号码" className="gold-button text-center">
-                  Get a Quote
+                <a href={contactDetails.whatsappHref} className="gold-button text-center">
+                  WhatsApp RFQ
                 </a>
-                <a
-                  href={contactDetails.whatsappHref}
-                  className="outline-button text-center"
-                >
-                  Contact on WhatsApp
+                <a href={mailtoLedRfq} className="outline-button text-center">
+                  Email Project Details
                 </a>
               </div>
 
@@ -468,173 +389,140 @@ export default function LedWorkLightsPage() {
             </div>
 
             <div className="motion-rise-delay">
-              <div className="grid gap-4">
-                <div className="industrial-card gold-frame relative overflow-hidden rounded-[2rem] p-3">
-                  <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
-                    <Image
-                      src={heroFactory}
-                      alt="HSX production environment supporting compact LED work light housings and related aluminum parts"
-                      fill
-                      preload
-                      sizes="(min-width: 1280px) 44rem, (min-width: 1024px) 46vw, 100vw"
-                      className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-br from-black/20 via-black/15 to-black/75" />
-                    <div className="absolute left-5 top-5 rounded-2xl border border-white/12 bg-black/55 px-4 py-3 backdrop-blur">
-                      <p className="text-[11px] uppercase tracking-[0.28em] text-[#efcf8d]">
-                        Factory scope
-                      </p>
-                      <p className="mt-2 text-lg font-semibold text-white">
-                        LED work lights + aluminum housings
-                      </p>
-                    </div>
-                    <div className="absolute bottom-5 left-5 right-5 grid gap-4 lg:grid-cols-2">
-                      <div className="rounded-2xl border border-white/10 bg-black/60 p-4 backdrop-blur">
-                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#efcf8d]">
-                          Typical programs
-                        </p>
-                        <p className="mt-2 text-sm leading-7 text-[#ede6d7]">
-                          Off-road lights, truck work lights, machinery work
-                          lights, and compact aluminum housings for LED
-                          lighting products.
-                        </p>
-                      </div>
-                      <div className="rounded-2xl border border-white/10 bg-black/60 p-4 backdrop-blur">
-                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#efcf8d]">
-                          OEM support
-                        </p>
-                        <p className="mt-2 text-sm leading-7 text-[#ede6d7]">
-                          Samples, drawings, wattage requirements, housing
-                          design notes, packaging requirements, and private-label
-                          branding support.
-                        </p>
-                      </div>
-                    </div>
+              <div className="industrial-card gold-frame relative overflow-hidden rounded-[2rem] p-3">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem]">
+                  <Image
+                    src={ledWorkLight}
+                    alt="LED work lights and aluminum lamp housing support"
+                    fill
+                    preload
+                    sizes="(min-width: 1280px) 44rem, (min-width: 1024px) 46vw, 100vw"
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-black/10 via-black/15 to-black/80" />
+                  <div className="absolute left-5 top-5 rounded-2xl border border-white/12 bg-black/60 px-4 py-3 backdrop-blur">
+                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#efcf8d]">
+                      LED work light scope
+                    </p>
+                    <p className="mt-2 text-lg font-semibold text-white">
+                      Work lights and aluminum housing support
+                    </p>
                   </div>
-                </div>
-
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <article className="industrial-card overflow-hidden p-3">
-                    <div className="relative aspect-[4/3] overflow-hidden rounded-[1.25rem]">
-                      <Image
-                        src={ledWorkLight}
-                        alt="LED work light for off-road, truck, and industrial use"
-                        fill
-                        sizes="(min-width: 1024px) 22vw, 100vw"
-                        className="object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent" />
-                      <div className="absolute bottom-4 left-4 right-4">
-                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#efcf8d]">
-                          Product direction
-                        </p>
-                        <p className="mt-2 text-sm leading-7 text-[#f2eadb]">
-                          Work light product supply for off-road, truck, and
-                          industrial equipment applications.
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-
-                  <article className="industrial-card overflow-hidden p-3">
-                    <div className="relative aspect-[4/3] overflow-hidden rounded-[1.25rem]">
-                      <Image
-                        src={oemAluminumParts}
-                        alt="Compact aluminum housings and lighting-related small-to-medium aluminum parts"
-                        fill
-                        sizes="(min-width: 1024px) 22vw, 100vw"
-                        className="object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent" />
-                      <div className="absolute bottom-4 left-4 right-4">
-                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#efcf8d]">
-                          Housing support
-                        </p>
-                        <p className="mt-2 text-sm leading-7 text-[#f2eadb]">
-                          Aluminum LED work light housing support for compact
-                          lamp bodies, covers, brackets, and heat-sink-style
-                          shells.
-                        </p>
-                      </div>
-                    </div>
-                  </article>
+                  <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/60 p-5 backdrop-blur">
+                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#efcf8d]">
+                      Typical products
+                    </p>
+                    <p className="mt-2 text-sm leading-7 text-[#ede6d7]">
+                      LED work lights, off-road lights, truck lights, machinery work lights,
+                      aluminum housings, brackets, rear covers, and compact lighting parts.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section
-          id="applications"
-          className="border-b border-white/8 py-16 lg:py-24"
-        >
-          <div className="container-shell">
-            <SectionHeading
-              eyebrow="Product applications"
-              title="LED work lights for practical B2B equipment and vehicle use"
-              description="The product page is positioned for wholesale and OEM buyers needing LED work lights and related aluminum housings for equipment, vehicle, and industrial applications."
-            />
+        <section className="border-b border-white/8 py-16 lg:py-24">
+          <div className="container-shell grid gap-12 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-center">
+            <div>
+              <SectionHeading
+                eyebrow="Typical LED work light products"
+                title="LED work lights, aluminum lamp bodies, brackets, and covers"
+                description="This page focuses on LED work lighting products and compact aluminum lighting-related parts that fit practical B2B sourcing needs for wholesale and OEM buyers."
+              />
+              <div className="mt-10 industrial-card gold-frame overflow-hidden p-3">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem]">
+                  <Image
+                    src={ledWorkLight}
+                    alt="LED work light products and compact aluminum lamp bodies"
+                    fill
+                    sizes="(min-width: 1024px) 42vw, 100vw"
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent" />
+                  <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/60 p-5 backdrop-blur">
+                    <p className="section-kicker">Work light coverage</p>
+                    <p className="mt-3 text-lg font-semibold text-white">
+                      Built around compact LED lighting, aluminum lamp housing support,
+                      mounting features, and export-ready B2B supply.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-              {applications.map((application) => (
-                <article key={application.title} className="industrial-card p-6">
-                  <h2 className="text-2xl font-semibold text-white">
-                    {application.title}
-                  </h2>
-                  <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
-                    {application.description}
-                  </p>
+            <div className="grid gap-6 md:grid-cols-2">
+              {productTypes.map((item) => (
+                <article key={item.title} className="industrial-card p-6">
+                  <h2 className="text-2xl font-semibold text-white">{item.title}</h2>
+                  <p className="mt-4 text-sm leading-7 text-[#cac1b2]">{item.description}</p>
                 </article>
               ))}
             </div>
           </div>
         </section>
 
-        <section
-          id="features"
-          className="border-b border-white/8 bg-[linear-gradient(180deg,rgba(14,14,14,0.98)_0%,rgba(7,7,7,1)_100%)] py-16 lg:py-24"
-        >
+        <section id="programs" className="border-b border-white/8 py-16 lg:py-24">
           <div className="container-shell">
             <SectionHeading
-              eyebrow="Product features"
-              title="Practical B2B features for wholesale and OEM LED work light supply"
-              description="The product positioning focuses on durable aluminum housings, compact thermal structure, mounting support, and OEM / ODM project flexibility for lighting buyers."
+              eyebrow="LED work light programs"
+              title="Product programs for off-road, truck, machinery, and OEM buyers"
+              description="These examples help buyers match their project to LED work light supply, auxiliary lighting products, and compact aluminum lighting component support."
             />
 
-            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-              {productFeatures.map((feature) => (
-                <article key={feature.title} className="industrial-card p-6">
-                  <h2 className="text-2xl font-semibold text-white">
-                    {feature.title}
-                  </h2>
-                  <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
-                    {feature.description}
-                  </p>
+            <div className="mt-12 grid gap-6 lg:grid-cols-3">
+              {productPrograms.map((program) => (
+                <article key={program.title} className="industrial-card group overflow-hidden">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image
+                      src={program.image}
+                      alt={program.alt}
+                      fill
+                      sizes="(min-width: 1024px) 33vw, 100vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
+                    <div className="absolute left-5 top-5 rounded-full bg-black/65 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.24em] text-[#efcf8d]">
+                      {program.label}
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <h2 className="text-2xl font-semibold text-white">{program.title}</h2>
+                    <p className="mt-5 text-sm leading-7 text-[#cac1b2]">{program.description}</p>
+                    <ul className="mt-6 space-y-3 text-sm text-[#efe7d9]">
+                      {program.bullets.map((bullet) => (
+                        <li key={bullet} className="flex gap-3">
+                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#d4ac67]" />
+                          <span>{bullet}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </article>
               ))}
             </div>
           </div>
         </section>
 
-        <section id="odm" className="border-b border-white/8 py-16 lg:py-24">
+        <section id="process" className="border-b border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(199,162,91,0.11),transparent_28%),linear-gradient(180deg,#0c0c0c_0%,#070707_100%)] py-16 lg:py-24">
           <div className="container-shell grid gap-10 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] lg:items-start">
-            <div className="space-y-4">
+            <div className="space-y-6">
               <div className="industrial-card gold-frame overflow-hidden p-3">
                 <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
                   <Image
-                    src={factoryCapabilities}
-                    alt="Factory capability image for LED work light production support and aluminum housing finishing"
+                    src={heroFactory}
+                    alt="HSX factory with 200T and 300T die casting machines for LED work light housing support"
                     fill
                     sizes="(min-width: 1280px) 34rem, (min-width: 1024px) 40vw, 100vw"
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent" />
-                  <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/55 p-5 backdrop-blur">
-                    <p className="section-kicker">OEM / ODM support</p>
+                  <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/60 p-5 backdrop-blur">
+                    <p className="section-kicker">OEM manufacturing flow</p>
                     <p className="mt-3 text-lg font-semibold text-white">
-                      Send product files, light specifications, housing design
-                      requirements, and packaging details to define the work
-                      light project accurately.
+                      Photos, samples, housing review, die casting, machining,
+                      finishing, inspection, and export packing.
                     </p>
                   </div>
                 </div>
@@ -643,27 +531,26 @@ export default function LedWorkLightsPage() {
               <div className="grid gap-4 sm:grid-cols-2">
                 <article className="metric-pill">
                   <p className="text-xs uppercase tracking-[0.28em] text-[#e8ce97]">
-                    Buyer input
+                    Project input
                   </p>
                   <p className="mt-3 text-2xl font-semibold text-white">
-                    Samples + Specs
+                    Photos + Specs
                   </p>
                   <p className="mt-3 text-sm leading-7 text-[#c4bbaa]">
-                    Samples, drawings, product specifications, and brand needs
-                    can all be reviewed together.
+                    Product photos, samples, drawings, wattage requirements,
+                    and packaging requests can start the RFQ review.
                   </p>
                 </article>
                 <article className="metric-pill">
                   <p className="text-xs uppercase tracking-[0.28em] text-[#e8ce97]">
-                    OEM extension
+                    Process coverage
                   </p>
                   <p className="mt-3 text-2xl font-semibold text-white">
-                    Parts + Lights
+                    Cast to Pack
                   </p>
                   <p className="mt-3 text-sm leading-7 text-[#c4bbaa]">
-                    The factory also accepts OEM small-to-medium aluminum die
-                    casting parts from drawings, samples, or custom project
-                    requirements.
+                    Aluminum die casting, machining, finishing, inspection,
+                    and export packing are coordinated for B2B buyers.
                   </p>
                 </article>
               </div>
@@ -671,20 +558,16 @@ export default function LedWorkLightsPage() {
 
             <div>
               <SectionHeading
-                eyebrow="OEM / ODM support"
-                title="Project review built for product specifications and housing requirements"
-                description="Buyers can send samples, drawings, product specifications, LED power requirements, housing design requirements, quantity, packaging requirements, and logo or brand needs for LED work light development or bulk supply review."
+                eyebrow="OEM project support"
+                title="From LED work light RFQ to export-ready supply"
+                description="HSX reviews LED work light projects around product requirements, aluminum housing fit, surface finish, packaging, and buyer communication before quotation and production planning."
               />
 
               <div className="mt-12 grid gap-6 md:grid-cols-2">
-                {odmSupport.map((item) => (
+                {processSteps.map((item) => (
                   <article key={item.title} className="industrial-card p-6">
-                    <h2 className="text-2xl font-semibold text-white">
-                      {item.title}
-                    </h2>
-                    <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
-                      {item.description}
-                    </p>
+                    <h2 className="text-2xl font-semibold text-white">{item.title}</h2>
+                    <p className="mt-4 text-sm leading-7 text-[#cac1b2]">{item.description}</p>
                   </article>
                 ))}
               </div>
@@ -692,108 +575,20 @@ export default function LedWorkLightsPage() {
           </div>
         </section>
 
-        <section
-          id="manufacturing"
-          className="border-b border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(199,162,91,0.11),transparent_28%),linear-gradient(180deg,#0c0c0c_0%,#070707_100%)] py-16 lg:py-24"
-        >
-          <div className="container-shell grid gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-center">
-            <div className="industrial-card gold-frame overflow-hidden p-3">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem]">
-                <Image
-                  src={oemAluminumParts}
-                  alt="Small-to-medium aluminum housings and related compact parts for LED work light manufacturing"
-                  fill
-                  sizes="(min-width: 1280px) 36rem, (min-width: 1024px) 42vw, 100vw"
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
-                <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/55 p-5 backdrop-blur">
-                  <p className="section-kicker">Aluminum housing capability</p>
-                  <p className="mt-3 text-lg font-semibold text-white">
-                    Compact aluminum housings, covers, brackets, and heat-sink-style
-                    shells coordinated with drilling, tapping, polishing, and
-                    finishing support.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <SectionHeading
-                eyebrow="Aluminum housing and manufacturing capability"
-                title="Factory support for LED work light housings and related aluminum parts"
-                description="The 200T and 300T die casting machines are presented accurately for small-to-medium aluminum parts. This includes support for LED work light aluminum housings, heat sink housings, brackets, covers, and related compact parts that need post-machining and finishing."
-              />
-
-              <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                <article className="metric-pill">
-                  <p className="text-xs uppercase tracking-[0.28em] text-[#e8ce97]">
-                    Die casting machines
-                  </p>
-                  <p className="mt-3 text-3xl font-semibold text-white">2</p>
-                  <p className="mt-3 text-sm leading-7 text-[#c4bbaa]">
-                    1 x 200-ton machine and 1 x 300-ton machine
-                  </p>
-                </article>
-                <article className="metric-pill">
-                  <p className="text-xs uppercase tracking-[0.28em] text-[#e8ce97]">
-                    Secondary equipment
-                  </p>
-                  <p className="mt-3 text-3xl font-semibold text-white">
-                    17
-                  </p>
-                  <p className="mt-3 text-sm leading-7 text-[#c4bbaa]">
-                    7 drilling machines, 7 tapping machines, and 3 polishing
-                    and grinding machines
-                  </p>
-                </article>
-              </div>
-
-              <ul className="mt-8 space-y-4 text-base leading-8 text-[#e7dfcf]">
-                {manufacturingPoints.map((point) => (
-                  <li key={point} className="flex gap-3">
-                    <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#d4ac67]" />
-                    <span>{point}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section id="gallery" className="border-b border-white/8 py-16 lg:py-24">
+        <section className="border-b border-white/8 py-16 lg:py-24">
           <div className="container-shell">
             <SectionHeading
-              eyebrow="Product gallery"
-              title="Visual references for work lights, housings, and factory support"
-              description="The gallery uses local project images to show the product direction, compact aluminum housing scope, and manufacturing support behind LED work light supply."
+              eyebrow="Surface finishing"
+              title="Finishing options for LED work light housings"
+              description="Finishing is planned around appearance, corrosion resistance, brand presentation, and practical LED work light part requirements."
             />
 
-            <div className="mt-12 grid gap-6 md:grid-cols-2">
-              {galleryItems.map((item) => (
-                <figure
-                  key={item.title}
-                  className="industrial-card group overflow-hidden"
-                >
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <Image
-                      src={item.image}
-                      alt={item.alt}
-                      fill
-                      sizes="(min-width: 1280px) 34rem, (min-width: 768px) 50vw, 100vw"
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
-                  </div>
-                  <figcaption className="p-6">
-                    <p className="text-xl font-semibold text-white">
-                      {item.title}
-                    </p>
-                    <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
-                      {item.caption}
-                    </p>
-                  </figcaption>
-                </figure>
+            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+              {finishingOptions.map((item) => (
+                <article key={item.title} className="industrial-card p-6">
+                  <h2 className="text-2xl font-semibold text-white">{item.title}</h2>
+                  <p className="mt-4 text-sm leading-7 text-[#cac1b2]">{item.description}</p>
+                </article>
               ))}
             </div>
           </div>
@@ -802,20 +597,16 @@ export default function LedWorkLightsPage() {
         <section className="border-b border-white/8 py-16 lg:py-24">
           <div className="container-shell">
             <SectionHeading
-              eyebrow="Industries served"
-              title="Buyer segments aligned with LED work light wholesale and OEM supply"
-              description="This page is positioned for buyers needing LED work lights supplier support with compact aluminum housing capability, export-ready communication, and realistic factory scope."
+              eyebrow="Buyer fit"
+              title="Built for off-road brands, truck accessory buyers, machinery suppliers, and OEM buyers"
+              description="The page is positioned for buyers sourcing LED work lights, auxiliary lights, aluminum lamp housings, and lighting components with practical factory support and direct export communication."
             />
 
             <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-              {industriesServed.map((industry) => (
-                <article key={industry.title} className="industrial-card p-6">
-                  <h2 className="text-2xl font-semibold text-white">
-                    {industry.title}
-                  </h2>
-                  <p className="mt-4 text-sm leading-7 text-[#cbc3b4]">
-                    {industry.description}
-                  </p>
+              {buyerFit.map((item) => (
+                <article key={item.title} className="industrial-card p-6">
+                  <h2 className="text-2xl font-semibold text-white">{item.title}</h2>
+                  <p className="mt-4 text-sm leading-7 text-[#cbc3b4]">{item.description}</p>
                 </article>
               ))}
             </div>
@@ -827,7 +618,7 @@ export default function LedWorkLightsPage() {
             <SectionHeading
               eyebrow="RFQ requirements"
               title="Send the details needed for accurate LED work light quotation"
-              description="For faster review, buyers should send the lighting, housing, quantity, finish, branding, and market details that define the LED work light project clearly."
+              description="For faster review, buyers should send product photos, lighting requirements, housing details, finish requests, quantity plans, and packaging information."
             />
 
             <div className="mt-10 industrial-card p-6 sm:p-8">
@@ -849,29 +640,38 @@ export default function LedWorkLightsPage() {
               <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:items-start">
                 <div>
                   <p className="section-kicker">Final inquiry CTA</p>
-                  <h2 className="section-heading mt-4 text-3xl text-[#120f08] sm:text-4xl">
-                    Send your LED work light or aluminum housing inquiry
+                  <h2 className="section-heading mt-5 text-4xl font-semibold uppercase tracking-[0.12em] text-[#120f08] lg:text-5xl">
+                    Send your LED work light photos, samples, or OEM project requirements
                   </h2>
-                  <p className="mt-5 max-w-2xl text-base leading-8 text-[#2d2417] sm:text-lg">
-                    HSX reviews OEM LED work lights, off-road LED work lights,
-                    truck LED work lights, machinery work lights, and related
-                    compact aluminum housing projects for global buyers and
-                    wholesale programs.
+                  <p className="mt-7 max-w-3xl text-base leading-8 text-[#2d2417] lg:text-lg">
+                    HSX reviews LED work lights, off-road LED work lights, truck LED work lights,
+                    machinery work lights, aluminum lamp housings, brackets, covers, and
+                    lighting-related aluminum parts for global wholesalers, importers, distributors,
+                    accessory brands, and OEM buyers.
                   </p>
 
-                  <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                    <a
-                      href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
-                      className="rounded-full bg-[#120f08] px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#f8f2e6] transition-transform duration-200 hover:-translate-y-0.5"
-                    >
-                      Email Your RFQ
-                    </a>
+                  <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
                     <a
                       href={contactDetails.whatsappHref}
-                      className="rounded-full border border-[#2b2216]/20 px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#22190d] transition-colors hover:bg-[#120f08] hover:text-[#f8f2e6]"
+                      className="inline-flex items-center justify-center rounded-full bg-[#120f08] px-7 py-4 text-center text-sm font-bold uppercase tracking-[0.18em] shadow-lg shadow-black/20 transition hover:bg-black"
+                      aria-label="WhatsApp RFQ"
                     >
-                      WhatsApp Contact
+                      <span className="relative z-10" style={{ color: "#ffffff" }}>
+                        WhatsApp RFQ
+                      </span>
                     </a>
+                    <a
+                      href={mailtoLedRfq}
+                      className="rounded-full border border-[#2b2216]/20 px-7 py-4 text-center text-sm font-bold uppercase tracking-[0.18em] text-[#120f08] transition hover:bg-[#120f08] hover:text-white"
+                    >
+                      Email Project Details
+                    </a>
+                    <Link
+                      href="/products"
+                      className="rounded-full border border-[#2b2216]/20 px-7 py-4 text-center text-sm font-bold uppercase tracking-[0.18em] text-[#120f08] transition hover:bg-[#120f08] hover:text-white"
+                    >
+                      Back to Products
+                    </Link>
                   </div>
                 </div>
 
@@ -891,9 +691,8 @@ export default function LedWorkLightsPage() {
                           RFQ ready
                         </p>
                         <p className="mt-3 text-lg font-semibold text-white">
-                          Send photos, drawings, wattage requirements, finish
-                          details, packaging notes, and target quantity for a
-                          faster quotation review.
+                          Send photos, samples, lighting requirements, finish needs,
+                          and target quantity for LED work light review.
                         </p>
                       </div>
                     </div>
@@ -904,28 +703,10 @@ export default function LedWorkLightsPage() {
                       Direct contact
                     </p>
                     <div className="mt-5 space-y-4 text-sm leading-7 text-[#2c2316]">
-                      <p>
-                        <span className="font-semibold">Email: </span>
-                        <a
-                          href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
-                          className="transition-colors hover:text-[#120f08]"
-                        >
-                          {contactDetails.email}
-                        </a>
-                      </p>
-                      <p>
-                        <span className="font-semibold">WhatsApp / Phone: </span>
-                        <a
-                          href={contactDetails.whatsappHref}
-                          className="transition-colors hover:text-[#120f08]"
-                        >
-                          {contactDetails.phone}
-                        </a>
-                      </p>
-                      <p>
-                        <span className="font-semibold">WeChat: </span>
-                        {contactDetails.wechat}
-                      </p>
+                      <p><span className="font-semibold">Email: </span>{contactDetails.email}</p>
+                      <p><span className="font-semibold">WhatsApp / Phone: </span>{contactDetails.phone}</p>
+                      <p><span className="font-semibold">WeChat: </span>{contactDetails.wechat}</p>
+                      <p><span className="font-semibold">Address: </span>{contactDetails.address}</p>
                     </div>
                   </div>
                 </div>
@@ -933,126 +714,33 @@ export default function LedWorkLightsPage() {
             </div>
           </div>
         </section>
-      
-        {/* SEO content enhancement: LED Work Lights */}
-        <section className="border-t border-white/10 bg-black/20 px-6 py-16 lg:px-12">
-          <div className="mx-auto max-w-6xl">
-            <p className="section-kicker">OEM LED lighting supply support</p>
-            <h2 className="mt-4 max-w-4xl text-3xl font-semibold tracking-tight text-white lg:text-5xl">
-              LED work lights and aluminum lighting parts for automotive and industrial buyers
-            </h2>
-            <p className="mt-6 max-w-4xl text-base leading-8 text-white/70 lg:text-lg">
-              HSX DIECASTING supports OEM and wholesale LED work light programs for automotive,
-              motorcycle, off-road, industrial, agricultural, and aftermarket applications. Our
-              factory background in aluminum die casting, machining, polishing, powder coating,
-              painting, and anodizing helps buyers develop compact lighting housings, heat-sink
-              bodies, brackets, decorative covers, and related aluminum lighting components.
-            </p>
-
-            <div className="mt-10 grid gap-6 lg:grid-cols-3">
-              <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6">
-                <h3 className="text-lg font-semibold text-white">Typical Applications</h3>
-                <p className="mt-4 text-sm leading-7 text-white/65">
-                  LED work lights, automotive auxiliary lights, motorcycle lights, off-road lighting,
-                  utility vehicle lighting, machinery lighting, and compact lighting accessories.
-                </p>
-              </div>
-              <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6">
-                <h3 className="text-lg font-semibold text-white">OEM Custom Support</h3>
-                <p className="mt-4 text-sm leading-7 text-white/65">
-                  We can review buyer samples, drawings, size requirements, surface finish targets,
-                  logo or branding needs, packaging requirements, and wholesale order plans.
-                </p>
-              </div>
-              <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6">
-                <h3 className="text-lg font-semibold text-white">Factory Capability</h3>
-                <p className="mt-4 text-sm leading-7 text-white/65">
-                  Aluminum die casting, drilling, tapping, polishing, grinding, powder coating,
-                  painting, anodizing, assembly coordination, and export-ready packaging support.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-10 rounded-3xl border border-amber-300/20 bg-amber-300/[0.06] p-6">
-              <h3 className="text-xl font-semibold text-white">RFQ information for LED lighting projects</h3>
-              <p className="mt-4 text-sm leading-7 text-white/70">
-                For faster quotation, please send product photos, drawings, expected quantity, target
-                market, voltage or lighting requirements, housing material preference, finish color,
-                logo requirement, and packaging plan. Our team will review whether the project matches
-                our small-to-medium aluminum component and lighting supply scope.
-              </p>
-              <a
-                href="https://wa.me/8617666155283"
-                target="_blank"
-                rel="noreferrer"
-                className="mt-6 inline-flex rounded-full bg-amber-300 px-6 py-3 text-sm font-semibold text-black transition hover:bg-amber-200"
-              >
-                Request LED Work Light Quote
-              </a>
-            </div>
-          </div>
-        </section>
-
-      
-      {/* Product visual section: /images/led-work-light-housing-showcase.png */}
-      <section className="border-t border-white/10 bg-black px-6 py-16 lg:px-12">
-        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
-              Product image
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white lg:text-5xl">
-              LED Work Lights and Aluminum Light Housing Showcase
-            </h2>
-            <p className="mt-6 text-base leading-8 text-white/70 lg:text-lg">
-              This product image helps global B2B buyers quickly understand the related supply scope,
-              including OEM product development, aluminum die casting, LED lighting components,
-              surface finishing, and export-ready project support.
-            </p>
-          </div>
-
-          <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] shadow-2xl">
-            <img
-              src="/images/led-work-light-housing-showcase.png"
-              alt="LED work lights and aluminum LED work light housing product showcase"
-              className="h-full w-full object-cover"
-            />
-          </div>
-        </div>
-      </section>
-
-    </main>
+      </main>
 
       <footer className="border-t border-white/8 bg-black/80 py-10">
         <div className="container-shell grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
           <div>
             <p className="section-kicker">Footer</p>
-            <p className="section-heading mt-3 text-2xl text-white">
+            <p className="mt-4 text-3xl font-semibold uppercase tracking-[0.08em] text-white">
               Foshan Huashunxiang Hardware Products Co., Ltd.
             </p>
-            <p className="mt-4 max-w-3xl text-sm leading-7 text-[#bbb2a3]">
-              LED work lights and aluminum light housing supplier for global
-              wholesalers, importers, distributors, off-road accessory brands,
-              truck accessory suppliers, machinery suppliers, and OEM buyers.
+            <p className="mt-5 max-w-3xl text-sm leading-7 text-[#bdb5a8]">
+              LED work lights, off-road LED work lights, truck LED work lights,
+              machinery work lights, aluminum lamp housings, brackets, covers,
+              and lighting-related aluminum parts for global wholesalers,
+              importers, distributors, accessory brands, and OEM buyers.
             </p>
           </div>
 
           <div className="text-sm leading-7 text-[#b7ae9e]">
             <p>
               <span className="text-white/90">Email:</span>{" "}
-              <a
-                href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
-                className="transition-colors hover:text-white"
-              >
+              <a href={mailtoLedRfq} className="transition-colors hover:text-white">
                 {contactDetails.email}
               </a>
             </p>
             <p>
               <span className="text-white/90">WhatsApp / Phone:</span>{" "}
-              <a
-                href={contactDetails.whatsappHref}
-                className="transition-colors hover:text-white"
-              >
+              <a href={contactDetails.whatsappHref} className="transition-colors hover:text-white">
                 {contactDetails.phone}
               </a>
             </p>
@@ -1064,9 +752,11 @@ export default function LedWorkLightsPage() {
               <span className="text-white/90">Address:</span>{" "}
               {contactDetails.address}
             </p>
-            <p>LED work light and aluminum housing supply for OEM buyers</p>
             <p>Small-to-medium aluminum die casting scope: 200T and 300T</p>
-            <p className="mt-2">© {currentYear} HSX DIECASTING. All rights reserved.</p>
+            <p>OEM based on photos, drawings, samples, or custom project requirements</p>
+            <p className="mt-2">
+              © {currentYear} HSX DIECASTING. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
