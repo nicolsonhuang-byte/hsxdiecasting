@@ -125,12 +125,12 @@ const productTypes: CardItem[] = [
   {
     title: "Color Finish Covers",
     description:
-      "Red, blue, black, silver, gold, or buyer-defined color finishes for branded automotive appearance product lines.",
+      "Red, blue, black, silver, gold, or buyer-defined paint finishes for branded automotive appearance product lines, with high-temperature resistant coating options for normal driving use.",
   },
   {
     title: "Logo and Brand Covers",
     description:
-      "Private-label logo, model-specific visual presentation, and retail-ready packaging support for distributors.",
+      "Private-label logo, custom logo font, custom logo color, model-specific visual presentation, and retail-ready packaging support for distributors.",
   },
   {
     title: "Sample-based Projects",
@@ -149,10 +149,10 @@ const productPrograms: ProgramCard[] = [
     label: "Appearance",
     title: "Decorative Appearance Cover Programs",
     description:
-      "Caliper appearance covers and visual upgrade accessories for aftermarket brands, wholesalers, and distributors.",
+      "Caliper appearance covers and visual upgrade accessories with high-temperature paint options for normal driving use, custom color support, and private-label logo options for aftermarket brands, wholesalers, and distributors.",
     bullets: [
       "Non-load-bearing product positioning",
-      "Color finish and logo support",
+      "High-temperature paint and custom logo support",
       "Private-label packaging needs",
     ],
     image: decorativeBrakeCaliperCover,
@@ -162,9 +162,9 @@ const productPrograms: ProgramCard[] = [
     label: "Branding",
     title: "Private-label Caliper Cover Programs",
     description:
-      "Appearance cover programs for buyers needing logo, color, product line presentation, and market-ready packaging.",
+      "Appearance cover programs for buyers needing custom logo font, logo color, product color, high-temperature paint options, product line presentation, and market-ready packaging.",
     bullets: [
-      "Brand visual presentation",
+      "Custom logo font and logo color",
       "Sample and photo review",
       "Wholesale order planning",
     ],
@@ -495,7 +495,7 @@ export default function DecorativeBrakeCaliperCoversPage() {
             <SectionHeading
               eyebrow="Decorative cover programs"
               title="Product programs for appearance accessories, private-label buyers, and OEM projects"
-              description="These examples help buyers match their project to decorative caliper cover supply, color finish requirements, and automotive appearance component support."
+              description="These examples help buyers match their project to decorative caliper cover supply, high-temperature paint requirements for normal driving use, custom colors, custom logo font, logo color requests, and automotive appearance component support."
             />
 
             <div className="mt-12 grid gap-6 lg:grid-cols-3">
