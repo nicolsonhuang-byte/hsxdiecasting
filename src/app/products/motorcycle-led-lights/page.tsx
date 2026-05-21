@@ -611,6 +611,102 @@ export default function MotorcycleLedLightsPage() {
           </div>
         </section>
 
+        <section className="border-b border-white/10 bg-[#050505] px-6 py-16 lg:px-12 lg:py-24">
+          <div className="mx-auto max-w-7xl">
+            <SectionHeading
+              eyebrow="Related product pages"
+              title="Explore related motorcycle, automotive, and aluminum product pages"
+              description="Motorcycle LED light projects may also connect with automotive LED lights, LED work lights, aluminum light housings, OEM aluminum die casting parts, and decorative appearance covers. These pages help buyers compare related product scope."
+            />
+
+            <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+              <Link
+                href="/products/automotive-led-lights"
+                className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
+              >
+                <p className="section-kicker">Related product</p>
+                <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
+                  Automotive LED Lights
+                </h2>
+                <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
+                  OEM automotive LED lights, auxiliary lights, car LED work lights,
+                  aluminum lamp housings, brackets, and compact lighting parts.
+                </p>
+              </Link>
+
+              <Link
+                href="/products/led-work-lights"
+                className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
+              >
+                <p className="section-kicker">Related product</p>
+                <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
+                  LED Work Lights
+                </h2>
+                <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
+                  LED work lights with aluminum housing support for off-road,
+                  utility, truck, machinery, and outdoor equipment programs.
+                </p>
+              </Link>
+
+              <Link
+                href="/products/aluminum-light-housings"
+                className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
+              >
+                <p className="section-kicker">Related product</p>
+                <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
+                  Aluminum Light Housings
+                </h2>
+                <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
+                  Die cast lamp housings, heat-sink-style bodies, covers, brackets,
+                  and compact aluminum lighting components.
+                </p>
+              </Link>
+
+              <Link
+                href="/products/oem-aluminum-die-casting-parts"
+                className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
+              >
+                <p className="section-kicker">Related product</p>
+                <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
+                  OEM Aluminum Die Casting Parts
+                </h2>
+                <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
+                  Small-to-medium aluminum housings, brackets, covers, shells,
+                  end caps, and custom hardware accessories.
+                </p>
+              </Link>
+
+              <Link
+                href="/products/decorative-brake-caliper-covers"
+                className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
+              >
+                <p className="section-kicker">Related product</p>
+                <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
+                  Decorative Brake Caliper Covers
+                </h2>
+                <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
+                  Non-load-bearing appearance covers installed outside the brake
+                  caliper, with high-temperature paint and custom logo support.
+                </p>
+              </Link>
+
+              <Link
+                href="/products"
+                className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
+              >
+                <p className="section-kicker">All product categories</p>
+                <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
+                  Back to Products Overview
+                </h2>
+                <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
+                  Review the full HSX product scope before sending drawings,
+                  samples, photos, quantity, finish, and packaging requirements.
+                </p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <section className="px-6 py-16 lg:px-12 lg:py-24">
           <div className="mx-auto max-w-7xl rounded-[2rem] bg-gradient-to-br from-[#f4d27a] to-[#f8ead0] p-8 text-[#130f08] shadow-2xl shadow-black/30 lg:p-12">
             <div className="grid gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-start">
