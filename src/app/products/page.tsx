@@ -815,7 +815,7 @@ export default function ProductsPage() {
           <div>
             <p className="section-kicker">Footer</p>
             <p className="section-heading mt-3 text-2xl text-white">
-              Foshan Huashunxiang Hardware Products Co., Ltd.
+              Foshan Huashunxiang Hardware Products Factory
             </p>
             <p className="mt-4 max-w-3xl text-sm leading-7 text-[#bbb2a3]">
               OEM small-to-medium aluminum die casting parts and automotive LED

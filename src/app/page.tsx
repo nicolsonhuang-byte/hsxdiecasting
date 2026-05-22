@@ -354,7 +354,7 @@ export default function Home() {
               HSX DIECASTING
             </a>
             <p className="mt-3 text-sm leading-7 text-[#beb6a8]">
-              Foshan Huashunxiang Hardware Products Co., Ltd. supplies OEM
+              Foshan Huashunxiang Hardware Products Factory supplies OEM
               small-to-medium aluminum die casting parts and automotive LED
               lighting for global wholesalers, importers, distributors,
               aftermarket brands, and OEM buyers.
@@ -400,7 +400,7 @@ export default function Home() {
                 Global B2B Buyers
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-[#d4cdc0]">
-                Foshan Huashunxiang Hardware Products Co., Ltd. focuses on
+                Foshan Huashunxiang Hardware Products Factory focuses on
                 compact aluminum die cast parts, custom aluminum hardware parts,
                 automotive LED lights, motorcycle LED lights, LED work lights,
                 and decorative brake caliper covers. The production scope is
@@ -801,7 +801,7 @@ export default function Home() {
               <article className="industrial-card p-6 sm:p-8">
                 <p className="section-kicker">Factory background</p>
                 <h3 className="mt-4 text-2xl font-semibold text-white">
-                  Foshan Huashunxiang Hardware Products Co., Ltd.
+                  Foshan Huashunxiang Hardware Products Factory
                 </h3>
                 <p className="mt-5 text-sm leading-7 text-[#cac1b2]">
                   HSX DIECASTING is based in Foshan, Guangdong, China, and focuses
@@ -930,7 +930,7 @@ export default function Home() {
                   </h2>
                   <p className="mt-5 max-w-2xl text-base leading-8 text-[#2d2417] sm:text-lg">
                     Share your drawing set, sample, target finish, and order
-                    plan. Foshan Huashunxiang Hardware Products Co., Ltd. is
+                    plan. Foshan Huashunxiang Hardware Products Factory is
                     positioned to review small-to-medium aluminum die casting
                     parts, custom hardware projects, LED light housings, and
                     decorative cover programs for export buyers.
@@ -1094,7 +1094,7 @@ export default function Home() {
           <div>
             <p className="section-kicker">Footer</p>
             <p className="section-heading mt-3 text-2xl text-white">
-              Foshan Huashunxiang Hardware Products Co., Ltd.
+              Foshan Huashunxiang Hardware Products Factory
             </p>
             <p className="mt-4 max-w-3xl text-sm leading-7 text-[#bbb2a3]">
               OEM small-to-medium aluminum die casting parts and automotive LED

@@ -104,7 +104,7 @@ const contactCards: ContactCard[] = [
   {
     title: "Factory Address in Foshan, Guangdong, China",
     value: contactDetails.address,
-    note: "Foshan Huashunxiang Hardware Products Co., Ltd. in Foshan, Guangdong, China.",
+    note: "Foshan Huashunxiang Hardware Products Factory in Foshan, Guangdong, China.",
   },
 ];
 
@@ -244,7 +244,7 @@ export default function ContactPage() {
               HSX DIECASTING
             </Link>
             <p className="mt-3 text-sm leading-7 text-[#beb6a8]">
-              Foshan Huashunxiang Hardware Products Co., Ltd. supplies OEM
+              Foshan Huashunxiang Hardware Products Factory supplies OEM
               small-to-medium aluminum die casting parts, automotive LED
               lights, motorcycle LED lights, LED work lights, and decorative
               brake caliper covers for global wholesalers, importers,
@@ -894,7 +894,7 @@ export default function ContactPage() {
           <div>
             <p className="section-kicker">Footer</p>
             <p className="section-heading mt-3 text-2xl text-white">
-              Foshan Huashunxiang Hardware Products Co., Ltd.
+              Foshan Huashunxiang Hardware Products Factory
             </p>
             <p className="mt-4 max-w-3xl text-sm leading-7 text-[#bbb2a3]">
               OEM small-to-medium aluminum die casting parts and LED lighting

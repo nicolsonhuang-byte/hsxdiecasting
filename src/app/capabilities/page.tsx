@@ -335,7 +335,7 @@ export default function CapabilitiesPage() {
               HSX DIECASTING
             </Link>
             <p className="mt-3 text-sm leading-7 text-[#beb6a8]">
-              Foshan Huashunxiang Hardware Products Co., Ltd. manufactures OEM
+              Foshan Huashunxiang Hardware Products Factory manufactures OEM
               small-to-medium aluminum die casting parts, automotive LED
               lights, motorcycle LED lights, LED work lights, decorative brake
               caliper covers, and custom aluminum hardware parts for global
@@ -855,7 +855,7 @@ export default function CapabilitiesPage() {
           <div>
             <p className="section-kicker">Footer</p>
             <p className="section-heading mt-3 text-2xl text-white">
-              Foshan Huashunxiang Hardware Products Co., Ltd.
+              Foshan Huashunxiang Hardware Products Factory
             </p>
             <p className="mt-4 max-w-3xl text-sm leading-7 text-[#bbb2a3]">
               Aluminum die casting capabilities, machining, and finishing

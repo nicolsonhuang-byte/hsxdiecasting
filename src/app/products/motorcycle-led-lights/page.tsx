@@ -20,7 +20,7 @@ const productJsonLd = {
   },
   manufacturer: {
     "@type": "Organization",
-    name: "Foshan Huashunxiang Hardware Products Co., Ltd.",
+    name: "Foshan Huashunxiang Hardware Products Factory",
     url: "https://www.hsxdiecasting.com",
   },
   category: "Motorcycle LED Lighting",
@@ -795,7 +795,7 @@ export default function MotorcycleLedLightsPage() {
               Footer
             </p>
             <p className="mt-4 text-3xl font-semibold uppercase tracking-[0.08em] text-white">
-              Foshan Huashunxiang Hardware Products Co., Ltd.
+              Foshan Huashunxiang Hardware Products Factory
             </p>
             <p className="mt-5 max-w-3xl text-sm leading-7 text-[#bdb5a8]">
               Motorcycle LED lights, auxiliary lights, compact LED work lights,

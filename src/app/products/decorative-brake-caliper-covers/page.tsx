@@ -74,7 +74,7 @@ const productJsonLd = {
   },
   manufacturer: {
     "@type": "Organization",
-    name: "Foshan Huashunxiang Hardware Products Co., Ltd.",
+    name: "Foshan Huashunxiang Hardware Products Factory",
     url: "https://www.hsxdiecasting.com",
   },
   category: "Automotive Decorative Appearance Covers",
@@ -840,7 +840,7 @@ export default function DecorativeBrakeCaliperCoversPage() {
           <div>
             <p className="section-kicker">Footer</p>
             <p className="mt-4 text-3xl font-semibold uppercase tracking-[0.08em] text-white">
-              Foshan Huashunxiang Hardware Products Co., Ltd.
+              Foshan Huashunxiang Hardware Products Factory
             </p>
             <p className="mt-5 max-w-3xl text-sm leading-7 text-[#bdb5a8]">
               Decorative brake caliper covers installed outside the brake caliper,

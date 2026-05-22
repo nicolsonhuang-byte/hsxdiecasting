@@ -16,7 +16,7 @@ const productJsonLd = {
   },
   manufacturer: {
     "@type": "Organization",
-    name: "Foshan Huashunxiang Hardware Products Co., Ltd.",
+    name: "Foshan Huashunxiang Hardware Products Factory",
     url: "https://www.hsxdiecasting.com",
   },
   material: "Aluminum alloy and LED lighting components",
