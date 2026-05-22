@@ -253,7 +253,7 @@ const buyerFit: InfoCard[] = [
   {
     title: "OEM Project Buyers",
     description:
-      "Custom aluminum lighting parts developed from drawings, samples, or project requirements for global B2B supply.",
+      "Custom aluminum lighting parts developed from drawings, samples, or project requirements, with direct factory-side communication for sample-stage review, small-to-medium batch planning, and practical finish confirmation.",
   },
 ];
 
