@@ -244,11 +244,17 @@ export default function ContactPage() {
               HSX DIECASTING
             </Link>
             <p className="mt-3 text-sm leading-7 text-[#beb6a8]">
-              Foshan Huashunxiang Hardware Products Factory supplies OEM
+              Foshan Huashunxiang Hardware Products Factory is a direct
+              manufacturing factory in Foshan, Guangdong, China, supplying OEM
               small-to-medium aluminum die casting parts, automotive LED
               lights, motorcycle LED lights, LED work lights, and decorative
               brake caliper covers for global wholesalers, importers,
               distributors, aftermarket brands, and OEM buyers.
+            </p>
+            <p className="mt-3 text-sm leading-7 text-[#beb6a8]">
+              Buyers can contact the factory-side team directly for drawings,
+              samples, photos, finish requirements, quantity plans, and OEM
+              project communication before quotation.
             </p>
           </div>
 
