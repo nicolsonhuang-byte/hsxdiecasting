@@ -241,7 +241,7 @@ const buyerFit: CardItem[] = [
   {
     title: "OEM Project Buyers",
     description:
-      "Custom LED work light parts developed from buyer drawings, samples, product photos, or OEM project requirements.",
+      "Custom LED work light parts developed from buyer drawings, samples, product photos, or OEM project requirements, with direct factory-side communication for sample-stage review, new product development, and small-to-medium batch planning.",
   },
 ];
 
