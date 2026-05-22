@@ -220,7 +220,7 @@ const buyerFit: InfoCard[] = [
   {
     title: "OEM Project Buyers",
     description:
-      "Custom motorcycle lighting parts developed from buyer drawings, samples, product photos, or OEM project requirements.",
+      "Custom motorcycle lighting parts developed from buyer drawings, samples, product photos, or OEM project requirements, with direct factory-side communication for sample-stage review, new product development, and small-to-medium batch planning.",
   },
 ];
 
