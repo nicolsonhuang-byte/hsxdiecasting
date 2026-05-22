@@ -307,6 +307,16 @@ const buyerReasons: InfoCard[] = [
       "Drilling, tapping, polishing, anodizing, powder coating, and spray painting are coordinated around the aluminum part project instead of split across multiple vendors.",
   },
   {
+    title: "Direct Factory-Side Communication",
+    description:
+      "Buyers can discuss drawings, samples, tolerances, surface finish, and production limits with a factory-side team that stays closer to the workshop and decision process.",
+  },
+  {
+    title: "Flexible Sample-Stage and Batch Support",
+    description:
+      "The factory is suitable for new product development, sample-stage confirmation, and small-to-medium batch OEM aluminum parts that need practical review before scaling.",
+  },
+  {
     title: "Export Buyer Communication",
     description:
       "The business positioning is built for global buyers who need practical RFQ review, clear scope confirmation, and direct export communication.",
