@@ -261,7 +261,7 @@ const buyerFit: CardItem[] = [
   {
     title: "OEM Project Buyers",
     description:
-      "Custom decorative cover projects developed from buyer drawings, samples, product photos, or OEM requirements.",
+      "Custom decorative appearance cover projects developed from buyer drawings, samples, product photos, or OEM requirements, with direct factory-side communication for sample-stage review, logo and color confirmation, and small-to-medium batch planning.",
   },
 ];
 
