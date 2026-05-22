@@ -829,7 +829,19 @@ export default function Home() {
                   </li>
                   <li className="flex gap-3">
                     <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#d4ac67]" />
+                    <span>Direct factory communication with a shorter decision path, so RFQ details can be checked closer to the production workshop.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#d4ac67]" />
+                    <span>Flexible support for sample-stage projects, new product development, and small-to-medium batch OEM orders.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#d4ac67]" />
                     <span>RFQ review based on drawings, samples, product photos, quantity, finish, packaging, and target market.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#d4ac67]" />
+                    <span>Coordinated die casting, post-processing, and surface finishing support, including anodizing for suitable aluminum projects.</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#d4ac67]" />
