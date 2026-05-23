@@ -2,53 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.hsxdiecasting.com/</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-05-23</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.hsxdiecasting.com/products</loc>
-    <lastmod>2026-05-21</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.hsxdiecasting.com/products/oem-aluminum-die-casting-parts</loc>
-    <lastmod>2026-05-21</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.hsxdiecasting.com/products/led-work-lights</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-05-23</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.hsxdiecasting.com/capabilities</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-05-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.hsxdiecasting.com/contact</loc>
-    <lastmod>2026-05-21</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.hsxdiecasting.com/products/automotive-led-lights</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-05-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.hsxdiecasting.com/products/motorcycle-led-lights</loc>
-    <lastmod>2026-05-21</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.hsxdiecasting.com/products/oem-aluminum-die-casting-parts</loc>
+    <lastmod>2026-05-23</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.hsxdiecasting.com/products/aluminum-light-housings</loc>
-    <lastmod>2026-05-21</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-05-23</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.hsxdiecasting.com/products/automotive-led-lights</loc>
+    <lastmod>2026-05-23</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.hsxdiecasting.com/products/motorcycle-led-lights</loc>
+    <lastmod>2026-05-23</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.hsxdiecasting.com/products/led-work-lights</loc>
+    <lastmod>2026-05-23</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.hsxdiecasting.com/products/decorative-brake-caliper-covers</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-05-23</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hsxdiecasting.com/blog</loc>
+    <lastmod>2026-05-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hsxdiecasting.com/blog/what-is-aluminum-die-casting</loc>
+    <lastmod>2026-05-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hsxdiecasting.com/blog/how-to-choose-aluminum-die-casting-manufacturer-china</loc>
+    <lastmod>2026-05-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hsxdiecasting.com/blog/aluminum-die-casting-led-light-housings</loc>
+    <lastmod>2026-05-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hsxdiecasting.com/blog/powder-coating-vs-anodizing-aluminum-die-casting</loc>
+    <lastmod>2026-05-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hsxdiecasting.com/blog/how-to-customize-led-work-lights</loc>
+    <lastmod>2026-05-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hsxdiecasting.com/blog/oem-automotive-led-light-manufacturing-process</loc>
+    <lastmod>2026-05-23</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>
