@@ -109,8 +109,8 @@ const contactCards: ContactCard[] = [
 ];
 
 const rfqChecklist = [
-  "Product drawings or samples",
-  "Product photos",
+  "Product drawings, 3D CAD files, or reference samples",
+  "Product photos or sample reference photos",
   "Material requirements",
   "Quantity",
   "Surface finish",
@@ -118,6 +118,37 @@ const rfqChecklist = [
   "Target market",
   "Logo / branding needs",
   "Delivery expectations",
+];
+
+const acceptedFileFormats = [
+  {
+    title: "3D CAD Files",
+    description:
+      "STEP / STP, IGS / IGES, STL, and X_T files are accepted for project evaluation, mold feasibility review, and tolerance confirmation on compact aluminum parts.",
+  },
+  {
+    title: "2D Drawings",
+    description:
+      "PDF, DWG, and DXF drawings are accepted for dimensional review, mounting feature confirmation, surface finish callouts, and thread or hole specifications before quotation.",
+  },
+  {
+    title: "Sample Photos",
+    description:
+      "Clear product photos, reference samples, or dimensional sketches are accepted when complete drawings are not available, so the factory can still scope the project for quotation review.",
+  },
+];
+
+const fileDeliveryNotes = [
+  {
+    title: "Send by Business Email",
+    value: contactDetails.email,
+    note: "Preferred channel for drawing sets, 3D CAD files, finish specifications, packaging notes, and detailed OEM project briefs.",
+  },
+  {
+    title: "Send by WhatsApp",
+    value: contactDetails.phone,
+    note: "Fastest channel for product photos, quick samples, sketches, and follow-up communication about quotation details.",
+  },
 ];
 
 const processSteps = [
@@ -537,6 +568,79 @@ export default function ContactPage() {
                     </p>
                   </article>
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="rfq-files"
+          className="border-b border-white/8 py-16 lg:py-24"
+        >
+          <div className="container-shell">
+            <SectionHeading
+              eyebrow="Accepted file formats"
+              title="Send 3D CAD files, 2D drawings, or sample photos for project evaluation"
+              description="HSX evaluates compact aluminum part projects from 3D CAD files, 2D drawings, or sample photos. The factory team reviews part geometry, mold feasibility, secondary machining features, surface finish, and packaging requirements before quotation."
+            />
+
+            <div className="mt-12 grid gap-6 md:grid-cols-3">
+              {acceptedFileFormats.map((format) => (
+                <article key={format.title} className="industrial-card p-6">
+                  <h3 className="text-xl font-semibold text-white">
+                    {format.title}
+                  </h3>
+                  <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
+                    {format.description}
+                  </p>
+                </article>
+              ))}
+            </div>
+
+            <div className="mt-10 industrial-card gold-frame p-6 sm:p-8">
+              <p className="section-kicker">How to send files</p>
+              <h3 className="mt-4 text-2xl font-semibold text-white sm:text-3xl">
+                Send files by business email or WhatsApp instead of uploading on the website
+              </h3>
+              <p className="mt-5 text-sm leading-7 text-[#e7dfcf] sm:text-base">
+                The website does not accept file uploads. Please send 3D CAD
+                files, 2D drawings, sample photos, and any supporting documents
+                directly to the business email or WhatsApp contact below. This
+                keeps drawings, revisions, and project communication tracked in
+                one place and avoids upload failures, compressed image quality,
+                or missing CAD references.
+              </p>
+
+              <div className="mt-8 grid gap-5 md:grid-cols-2">
+                {fileDeliveryNotes.map((option) => (
+                  <article
+                    key={option.title}
+                    className="rounded-2xl border border-white/10 bg-black/45 p-6"
+                  >
+                    <p className="section-kicker">{option.title}</p>
+                    <p className="mt-4 text-xl font-semibold text-white">
+                      {option.value}
+                    </p>
+                    <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
+                      {option.note}
+                    </p>
+                  </article>
+                ))}
+              </div>
+
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                <a
+                  href={`mailto:${contactDetails.email}?subject=RFQ%20Files%20for%20HSX%20Diecasting%20OEM%20Project&body=Hello%20HSX%20Diecasting%2C%0A%0APlease%20find%20the%20attached%20files%20for%20quotation%20review.%0A%0A3D%20CAD%20file%20%28STEP%20%2F%20STP%2C%20IGS%20%2F%20IGES%2C%20STL%2C%20X_T%29%3A%0A2D%20drawing%20%28PDF%2C%20DWG%2C%20DXF%29%3A%0ASample%20photos%3A%0A%0AProduct%20type%3A%0AQuantity%3A%0AMaterial%20%2F%20finish%3A%0APackaging%20requirements%3A%0ATarget%20market%3A%0A%0APlease%20contact%20me%20with%20pricing%20and%20production%20details.%0A%0ABest%20regards%2C`}
+                  className="gold-button text-center"
+                >
+                  Email Files to HSX
+                </a>
+                <a
+                  href={contactDetails.whatsappHref}
+                  className="outline-button text-center"
+                >
+                  Send Files on WhatsApp
+                </a>
               </div>
             </div>
           </div>
