@@ -6,10 +6,33 @@ const gaMeasurementId = "G-JC89FFK3TM";
 
 const jsonLdOrganization = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": "LocalBusiness",
   name: "HSX DIECASTING",
+  legalName: "Foshan Huashunxiang Hardware Products Factory",
   url: "https://www.hsxdiecasting.com",
   logo: "https://www.hsxdiecasting.com/images/hero-factory-200t-300t.png",
+  image: "https://www.hsxdiecasting.com/images/hero-factory-200t-300t.png",
+  description:
+    "HSX DIECASTING is a Foshan manufacturing factory supplying OEM aluminum die casting parts, LED work lights, automotive and motorcycle LED lights, aluminum light housings, and decorative brake caliper covers for global B2B buyers.",
+  email: "mailto:nicolsonhuang2020@gmail.com",
+  telephone: "+8617666155283",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Huayue Road, National Eco-Industrial Park, Danzao Town",
+    addressLocality: "Foshan",
+    addressRegion: "Guangdong",
+    addressCountry: "CN",
+  },
+  areaServed: [
+    "United States",
+    "Europe",
+    "Japan",
+    "Canada",
+    "Australia",
+    "Middle East",
+    "Southeast Asia",
+    "Global B2B Markets",
+  ],
   sameAs: ["https://www.linkedin.com/company/hsxdiecasting"],
 };
 
