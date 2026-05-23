@@ -42,6 +42,37 @@ const contactDetails = {
     "Huayue Road, National Eco-Industrial Park, Danzao Town, Nanhai District, Foshan, Guangdong, China",
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What files should buyers send for quotation?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Send drawings, samples, product photos, dimensions, material requirements, surface finish, target quantity, packaging requirements, logo needs, and target market details.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What aluminum die casting scope is suitable?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "HSX focuses on compact housings, brackets, covers, end caps, shells, lamp bodies, heat-sink-style housings, and other small-to-medium aluminum components suitable for 200T and 300T equipment.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are brake caliper covers functional brake parts?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. HSX decorative brake caliper covers are appearance accessories installed outside the brake caliper. They are not braking-force components. High-temperature paint options for normal driving use, custom colors, custom logo font, and logo color support can be reviewed by project.",
+      },
+    },
+  ],
+};
+
 const heroStats = [
   {
     label: "Die Casting Scope",
@@ -389,6 +420,12 @@ export default function Home() {
       </header>
 
       <main id="top">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqJsonLd),
+          }}
+        />
         <section className="border-b border-white/8 bg-[radial-gradient(circle_at_top_right,rgba(199,162,91,0.14),transparent_34%),linear-gradient(180deg,#090909_0%,#050505_100%)]">
           <div className="container-shell grid gap-12 py-16 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-center lg:py-24">
             <div className="motion-rise">
