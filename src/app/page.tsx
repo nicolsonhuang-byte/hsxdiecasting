@@ -34,7 +34,7 @@ const navigationLinks = [
 ];
 
 const contactDetails = {
-  email: "nicolsonhuang2020@gmail.com",
+  email: "nicolson@hsxdiecasting.com",
   phone: "+86 176 6615 5283",
   whatsappHref: "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%20Please%20contact%20me%20with%20quotation%20details.",
   wechat: "NicolsonHwang",
@@ -960,7 +960,7 @@ export default function Home() {
                   </div>
                   <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
                     <p className="text-[#f4d27a]">Email</p>
-                    <p className="mt-2">nicolsonhuang2020@gmail.com</p>
+                    <p className="mt-2">nicolson@hsxdiecasting.com</p>
                   </div>
                 </div>
               </div>

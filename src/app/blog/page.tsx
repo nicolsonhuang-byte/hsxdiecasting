@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const contactDetails = {
-  email: "nicolsonhuang2020@gmail.com",
+  email: "nicolson@hsxdiecasting.com",
   whatsappHref:
     "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%20Please%20contact%20me%20with%20quotation%20details.",
 };

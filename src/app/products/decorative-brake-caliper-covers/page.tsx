@@ -81,7 +81,7 @@ const productJsonLd = {
 };
 
 const contactDetails = {
-  email: "nicolsonhuang2020@gmail.com",
+  email: "nicolson@hsxdiecasting.com",
   phone: "+86 176 6615 5283",
   whatsappHref:
     "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20would%20like%20to%20request%20a%20quotation%20for%20decorative%20brake%20caliper%20covers.%20Please%20contact%20me%20with%20pricing%20and%20production%20details.",
@@ -91,7 +91,7 @@ const contactDetails = {
 };
 
 const mailtoCaliperRfq =
-  "mailto:nicolsonhuang2020@gmail.com?subject=RFQ%20for%20Decorative%20Brake%20Caliper%20Covers&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20would%20like%20to%20request%20a%20quotation%20for%20decorative%20brake%20caliper%20covers.%0A%0AProduct%20style%3A%0AQuantity%3A%0AColor%20/%20finish%20request%3A%0ALogo%20or%20packaging%20request%3A%0ATarget%20vehicle%20or%20market%3A%0A%0APlease%20contact%20me%20with%20pricing%20and%20production%20details.%0A%0ABest%20regards%2C";
+  "mailto:nicolson@hsxdiecasting.com?subject=RFQ%20for%20Decorative%20Brake%20Caliper%20Covers&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20would%20like%20to%20request%20a%20quotation%20for%20decorative%20brake%20caliper%20covers.%0A%0AProduct%20style%3A%0AQuantity%3A%0AColor%20/%20finish%20request%3A%0ALogo%20or%20packaging%20request%3A%0ATarget%20vehicle%20or%20market%3A%0A%0APlease%20contact%20me%20with%20pricing%20and%20production%20details.%0A%0ABest%20regards%2C";
 
 const heroStats = [
   {

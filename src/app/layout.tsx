@@ -14,7 +14,7 @@ const jsonLdOrganization = {
   image: "https://www.hsxdiecasting.com/images/hero-factory-200t-300t.png",
   description:
     "HSX DIECASTING is a Foshan manufacturing factory supplying OEM aluminum die casting parts, LED work lights, automotive and motorcycle LED lights, aluminum light housings, and decorative brake caliper covers for global B2B buyers.",
-  email: "mailto:nicolsonhuang2020@gmail.com",
+  email: "mailto:nicolson@hsxdiecasting.com",
   telephone: "+8617666155283",
   address: {
     "@type": "PostalAddress",

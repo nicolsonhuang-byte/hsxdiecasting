@@ -61,7 +61,7 @@ export const metadata: Metadata = {
 };
 
 const contactDetails = {
-  email: "nicolsonhuang2020@gmail.com",
+  email: "nicolson@hsxdiecasting.com",
   phone: "+86 176 6615 5283",
   whatsappHref:
     "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20would%20like%20to%20request%20a%20quotation%20for%20LED%20work%20lights.%20Please%20contact%20me%20with%20pricing%20and%20production%20details.",
@@ -71,7 +71,7 @@ const contactDetails = {
 };
 
 const mailtoLedRfq =
-  "mailto:nicolsonhuang2020@gmail.com?subject=RFQ%20for%20LED%20Work%20Lights&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20would%20like%20to%20request%20a%20quotation%20for%20LED%20work%20lights.%0A%0AProduct%20type%3A%0AQuantity%3A%0AWattage%20or%20lighting%20requirement%3A%0AHousing%20size%20or%20drawing%3A%0AFinish%20/%20packaging%20request%3A%0A%0APlease%20contact%20me%20with%20pricing%20and%20production%20details.%0A%0ABest%20regards%2C";
+  "mailto:nicolson@hsxdiecasting.com?subject=RFQ%20for%20LED%20Work%20Lights&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20would%20like%20to%20request%20a%20quotation%20for%20LED%20work%20lights.%0A%0AProduct%20type%3A%0AQuantity%3A%0AWattage%20or%20lighting%20requirement%3A%0AHousing%20size%20or%20drawing%3A%0AFinish%20/%20packaging%20request%3A%0A%0APlease%20contact%20me%20with%20pricing%20and%20production%20details.%0A%0ABest%20regards%2C";
 
 const heroStats = [
   {

@@ -63,7 +63,7 @@ export const metadata: Metadata = {
 };
 
 const contactDetails = {
-  email: "nicolsonhuang2020@gmail.com",
+  email: "nicolson@hsxdiecasting.com",
   phone: "+86 176 6615 5283",
   whatsappHref:
     "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20am%20interested%20in%20OEM%20aluminum%20light%20housings%2C%20die%20cast%20lamp%20housings%2C%20or%20LED%20heat-sink%20bodies.%20Please%20contact%20me%20with%20quotation%20details.",

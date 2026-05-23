@@ -81,7 +81,7 @@ const productJsonLd = {
 };
 
 const contactDetails = {
-  email: "nicolsonhuang2020@gmail.com",
+  email: "nicolson@hsxdiecasting.com",
   phone: "+86 176 6615 5283",
   whatsappHref:
     "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20am%20interested%20in%20your%20automotive%20LED%20lights%2C%20car%20LED%20work%20lights%2C%20or%20aluminum%20lighting%20housings.%20Please%20contact%20me%20with%20quotation%20details.",

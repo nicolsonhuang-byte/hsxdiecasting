@@ -27,7 +27,7 @@ const productJsonLd = {
 };
 
 const contactDetails = {
-  email: "nicolsonhuang2020@gmail.com",
+  email: "nicolson@hsxdiecasting.com",
   phone: "+86 176 6615 5283",
   whatsappHref:
     "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20am%20interested%20in%20your%20motorcycle%20LED%20lights%2C%20aluminum%20lamp%20housings%2C%20or%20OEM%20motorcycle%20lighting%20project%20support.%20Please%20contact%20me%20with%20quotation%20details.",
