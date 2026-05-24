@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -44,7 +44,7 @@ const siteDescription =
   "HSX DIECASTING supplies OEM aluminum die casting parts, LED work lights, automotive and motorcycle LED lights, aluminum housings, and decorative caliper covers.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hsxdiecasting.com"),
+  metadataBase: new URL("https://www.hsxdiecasting.com"),
   title: siteTitle,
   description: siteDescription,
   applicationName: "HSX DIECASTING",
