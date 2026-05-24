@@ -129,19 +129,24 @@ export default function RootLayout({
 
                 var href = link.getAttribute('href') || '';
                 var label = (link.innerText || link.textContent || '').trim();
+                var lowerHref = href.toLowerCase();
+                var lowerLabel = label.toLowerCase();
                 var eventName = '';
 
-                if (href.indexOf('wa.me') !== -1 || href.indexOf('whatsapp') !== -1) {
+                if (lowerHref.indexOf('wa.me') !== -1 || lowerHref.indexOf('whatsapp') !== -1) {
                   eventName = 'whatsapp_click';
-                } else if (href.indexOf('mailto:') === 0) {
+                } else if (lowerHref.indexOf('mailto:') === 0) {
                   eventName = 'email_click';
-                } else if (href.indexOf('tel:') === 0) {
+                } else if (lowerHref.indexOf('tel:') === 0) {
                   eventName = 'phone_click';
                 } else if (
-                  label.toLowerCase().indexOf('quote') !== -1 ||
-                  label.toLowerCase().indexOf('drawings') !== -1 ||
-                  label.toLowerCase().indexOf('contact') !== -1 ||
-                  href.indexOf('/contact') !== -1
+                  lowerLabel.indexOf('rfq') !== -1 ||
+                  lowerLabel.indexOf('inquiry') !== -1 ||
+                  lowerLabel.indexOf('quote') !== -1 ||
+                  lowerLabel.indexOf('drawings') !== -1 ||
+                  lowerLabel.indexOf('contact') !== -1 ||
+                  lowerHref.indexOf('#rfq') !== -1 ||
+                  lowerHref.indexOf('/contact') !== -1
                 ) {
                   eventName = 'inquiry_click';
                 }

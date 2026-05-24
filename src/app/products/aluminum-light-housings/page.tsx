@@ -268,24 +268,22 @@ const rfqChecklist = [
 
 const productJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Product",
-  name: "Aluminum Light Housings",
+  "@type": "Service",
+  name: "OEM Aluminum Light Housing Manufacturing Service",
   url: "https://www.hsxdiecasting.com/products/aluminum-light-housings",
   image: [
     "https://www.hsxdiecasting.com/images/aluminum-light-housing-heat-sink.png",
   ],
-  description: pageDescription,
-  brand: {
-    "@type": "Brand",
-    name: "HSX DIECASTING",
-  },
-  manufacturer: {
+  description:
+    "B2B OEM manufacturing service for compact aluminum light housings, die cast lamp housings, LED heat-sink bodies, covers, brackets, and lighting-related parts based on buyer drawings, samples, photos, and project requirements.",
+  provider: {
     "@type": "Organization",
     name: "Foshan Huashunxiang Hardware Products Factory",
     url: "https://www.hsxdiecasting.com",
   },
-  material: "Aluminum alloy",
-  category: "Aluminum Lighting Housings",
+  serviceType: "OEM aluminum light housing manufacturing",
+  areaServed: "Global B2B Markets",
+  category: "Aluminum lighting housing manufacturing",
 };
 
 function SectionHeading({

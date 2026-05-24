@@ -8,22 +8,20 @@ export const metadata = {
 
 const productJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Product",
-  name: "Motorcycle LED Lights",
+  "@type": "Service",
+  name: "OEM Motorcycle LED Lighting Manufacturing Service",
   url: "https://www.hsxdiecasting.com/products/motorcycle-led-lights",
   image: ["https://www.hsxdiecasting.com/images/motorcycle-led-auxiliary-light.png"],
   description:
-    "OEM motorcycle LED lights, auxiliary motorcycle lights, compact LED work lights, aluminum lamp housings, brackets, covers, and lighting accessories for global B2B buyers.",
-  brand: {
-    "@type": "Brand",
-    name: "HSX DIECASTING",
-  },
-  manufacturer: {
+    "B2B OEM manufacturing service for motorcycle LED lights, auxiliary lights, compact LED work lights, aluminum lamp housings, brackets, covers, and lighting accessories for global buyers.",
+  provider: {
     "@type": "Organization",
     name: "Foshan Huashunxiang Hardware Products Factory",
     url: "https://www.hsxdiecasting.com",
   },
-  category: "Motorcycle LED Lighting",
+  serviceType: "OEM motorcycle LED lighting manufacturing",
+  areaServed: "Global B2B Markets",
+  category: "Motorcycle LED lighting manufacturing",
 };
 
 const contactDetails = {

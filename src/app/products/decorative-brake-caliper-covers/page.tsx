@@ -913,7 +913,7 @@ export default function DecorativeBrakeCaliperCoversPage() {
             <p>Custom logo font and logo color support for private-label projects</p>
             <p>Non-load-bearing visual accessory product positioning</p>
             <p className="mt-2">
-              漏 {currentYear} HSX DIECASTING. All rights reserved.
+              {"\u00A9"} {currentYear} HSX DIECASTING. All rights reserved.
             </p>
           </div>
         </div>

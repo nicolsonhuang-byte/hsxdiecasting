@@ -62,22 +62,20 @@ export const metadata: Metadata = {
 
 const productJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Product",
-  name: "Automotive LED Lights",
+  "@type": "Service",
+  name: "OEM Automotive LED Lighting Manufacturing Service",
   url: "https://www.hsxdiecasting.com/products/automotive-led-lights",
   image: ["https://www.hsxdiecasting.com/images/automotive-led-work-light.png"],
   description:
-    "OEM automotive LED lights, auxiliary lights, car LED work lights, aluminum lamp housings, brackets, covers, and compact aluminum lighting parts for wholesale and aftermarket buyers.",
-  brand: {
-    "@type": "Brand",
-    name: "HSX DIECASTING",
-  },
-  manufacturer: {
+    "B2B OEM manufacturing service for automotive LED lights, auxiliary lights, car LED work lights, aluminum lamp housings, brackets, covers, and compact lighting parts for wholesale and aftermarket buyers.",
+  provider: {
     "@type": "Organization",
     name: "Foshan Huashunxiang Hardware Products Factory",
     url: "https://www.hsxdiecasting.com",
   },
-  category: "Automotive LED Lighting",
+  serviceType: "OEM automotive LED lighting manufacturing",
+  areaServed: "Global B2B Markets",
+  category: "Automotive LED lighting manufacturing",
 };
 
 const contactDetails = {

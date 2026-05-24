@@ -1179,7 +1179,7 @@ export default function Home() {
             <p>Small-to-medium aluminum die casting scope: 200T and 300T</p>
             <p>OEM based on drawings, samples, or custom project requirements</p>
             <p className="mt-2">
-              漏 {currentYear} HSX DIECASTING. All rights reserved.
+              {"\u00A9"} {currentYear} HSX DIECASTING. All rights reserved.
             </p>
           </div>
         </div>
