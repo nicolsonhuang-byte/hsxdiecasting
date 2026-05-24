@@ -114,7 +114,7 @@ export default function BlogPage() {
                 <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#d4ac67]">
                   {post.category}
                 </p>
-                <h2 className="mt-4 text-2xl font-semibold text-white group-hover:text-[#f4d27a]">
+                <h2 className="mt-4 text-2xl font-semibold !text-white group-hover:text-[#f4d27a]">
                   {post.title}
                 </h2>
                 <p className="mt-4 text-sm leading-7 text-[#c9c0b0]">

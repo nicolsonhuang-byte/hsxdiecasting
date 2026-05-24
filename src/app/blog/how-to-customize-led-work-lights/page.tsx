@@ -46,7 +46,7 @@ export default function ArticlePage() {
 
         <div className="mt-10 space-y-10 text-base leading-8 text-[#cfc6b6]">
           <section>
-            <h2 className="text-2xl font-semibold text-white">
+            <h2 className="text-2xl font-semibold !text-white">
               1. Define the LED work light application
             </h2>
             <p className="mt-4">
@@ -59,7 +59,7 @@ export default function ArticlePage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white">
+            <h2 className="text-2xl font-semibold !text-white">
               2. Confirm aluminum housing and bracket needs
             </h2>
             <p className="mt-4">
@@ -76,7 +76,7 @@ export default function ArticlePage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white">
+            <h2 className="text-2xl font-semibold !text-white">
               3. Choose finish, color, logo, and packaging
             </h2>
             <p className="mt-4">
@@ -93,7 +93,7 @@ export default function ArticlePage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white">
+            <h2 className="text-2xl font-semibold !text-white">
               4. Prepare lighting and electrical details if available
             </h2>
             <p className="mt-4">
@@ -106,7 +106,7 @@ export default function ArticlePage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white">
+            <h2 className="text-2xl font-semibold !text-white">
               5. Work with a direct factory-side team
             </h2>
             <p className="mt-4">
@@ -124,7 +124,7 @@ export default function ArticlePage() {
         </div>
 
         <section className="mt-14 rounded-[2rem] border border-[#d7b56d]/25 bg-[#111111] p-8">
-          <h2 className="text-2xl font-semibold text-white">Related HSX pages</h2>
+          <h2 className="text-2xl font-semibold !text-white">Related HSX pages</h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {relatedLinks.map((item) => (
               <Link
@@ -145,7 +145,7 @@ export default function ArticlePage() {
             finish request, logo need, packaging plan, and target quantity.
           </p>
           <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <a href={contactDetails.whatsappHref} className="rounded-full bg-[#111] px-6 py-3 text-center text-sm font-semibold text-white">
+            <a href={contactDetails.whatsappHref} className="rounded-full bg-[#111] px-6 py-3 text-center text-sm font-semibold !text-white">
               WhatsApp RFQ
             </a>
             <a

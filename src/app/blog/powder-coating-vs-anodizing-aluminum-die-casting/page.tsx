@@ -46,7 +46,7 @@ export default function ArticlePage() {
 
         <div className="mt-10 space-y-10 text-base leading-8 text-[#cfc6b6]">
           <section>
-            <h2 className="text-2xl font-semibold text-white">
+            <h2 className="text-2xl font-semibold !text-white">
               What is powder coating?
             </h2>
             <p className="mt-4">
@@ -63,7 +63,7 @@ export default function ArticlePage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white">
+            <h2 className="text-2xl font-semibold !text-white">
               What is anodizing?
             </h2>
             <p className="mt-4">
@@ -81,7 +81,7 @@ export default function ArticlePage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white">
+            <h2 className="text-2xl font-semibold !text-white">
               Powder coating vs anodizing: how to choose
             </h2>
             <p className="mt-4">
@@ -99,7 +99,7 @@ export default function ArticlePage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white">
+            <h2 className="text-2xl font-semibold !text-white">
               What about spray painting, polishing, and grinding?
             </h2>
             <p className="mt-4">
@@ -116,7 +116,7 @@ export default function ArticlePage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white">
+            <h2 className="text-2xl font-semibold !text-white">
               What should buyers send before finishing quotation?
             </h2>
             <p className="mt-4">
@@ -129,7 +129,7 @@ export default function ArticlePage() {
         </div>
 
         <section className="mt-14 rounded-[2rem] border border-[#d7b56d]/25 bg-[#111111] p-8">
-          <h2 className="text-2xl font-semibold text-white">Related HSX pages</h2>
+          <h2 className="text-2xl font-semibold !text-white">Related HSX pages</h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {relatedLinks.map((item) => (
               <Link
@@ -150,7 +150,7 @@ export default function ArticlePage() {
             quantity, and packaging needs for factory-side review.
           </p>
           <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <a href={contactDetails.whatsappHref} className="rounded-full bg-[#111] px-6 py-3 text-center text-sm font-semibold text-white">
+            <a href={contactDetails.whatsappHref} className="rounded-full bg-[#111] px-6 py-3 text-center text-sm font-semibold !text-white">
               WhatsApp RFQ
             </a>
             <a
