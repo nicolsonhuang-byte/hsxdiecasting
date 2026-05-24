@@ -448,6 +448,45 @@ export default function DecorativeBrakeCaliperCoversPage() {
         </section>
 
         <section className="border-b border-white/8 py-16 lg:py-24">
+          <div className="container-shell grid gap-12 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center">
+            <div>
+              <SectionHeading
+                eyebrow="Installation demonstration"
+                title="Installation video for decorative brake caliper appearance covers"
+                description="This short demonstration shows how a decorative brake caliper appearance cover is positioned outside the brake caliper for visual upgrade projects. The cover is for appearance use only and is not a functional brake part."
+              />
+              <div className="mt-8 rounded-[2rem] border border-[#d7b56d]/25 bg-[#111111] p-6">
+                <p className="text-sm leading-7 text-[#d8cdbb]">
+                  Suitable for buyers reviewing aftermarket styling sets, private-label programs, logo color options, and appearance-focused automotive accessory projects.
+                </p>
+              </div>
+            </div>
+
+            <div className="industrial-card gold-frame overflow-hidden p-3">
+              <div className="relative overflow-hidden rounded-[1.5rem] bg-black">
+                <video
+                  className="aspect-[3/4] w-full object-cover"
+                  controls
+                  muted
+                  playsInline
+                  preload="metadata"
+                  poster="/videos/hsx_decorative_brake_caliper_cover_installation_nologo_18s_poster.jpg"
+                >
+                  <source
+                    src="/videos/hsx_decorative_brake_caliper_cover_installation_nologo_18s_web.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <p className="mt-4 px-2 text-sm leading-7 text-[#cfc6b6]">
+                Installation demonstration for decorative brake caliper appearance covers. Decorative cover only, not a functional brake part.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="border-b border-white/8 py-16 lg:py-24">
           <div className="container-shell grid gap-12 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-center">
             <div>
               <SectionHeading
