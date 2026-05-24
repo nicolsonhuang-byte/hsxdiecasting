@@ -27,7 +27,7 @@ const pageTitle =
   "Products | Aluminum Die Casting Parts & LED Lights | HSX";
 
 const pageDescription =
-  "Browse OEM aluminum die casting parts, LED work lights, automotive and motorcycle LED lights, aluminum housings, and decorative caliper covers.";
+  "Browse decorative brake caliper covers, OEM aluminum die casting parts, aluminum housings, and selected LED lighting products.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -110,6 +110,19 @@ const introCards = [
 
 const productCategories: ProductCategory[] = [
   {
+    title: "Decorative Brake Caliper Covers",
+    description:
+      "Decorative non-load-bearing appearance covers for aftermarket styling programs, offered as compact aluminum exterior accessories only.",
+    image: brakeCaliperCover,
+    alt: "Decorative aluminum brake caliper cover for vehicle appearance upgrades",
+    href: "/products/decorative-brake-caliper-covers",
+    applications: [
+      "Aftermarket appearance kits",
+      "Private-label vehicle styling accessories",
+      "Showroom and cosmetic upgrade programs",
+    ],
+  },
+  {
     title: "OEM Aluminum Die Casting Parts",
     description:
       "Compact aluminum housings, end caps, brackets, shells, lamp bodies, and cover parts produced within the practical range of 200T and 300T die casting machines.",
@@ -174,19 +187,7 @@ const productCategories: ProductCategory[] = [
       "Equipment and off-road accessory lines",
     ],
   },
-  {
-    title: "Decorative Brake Caliper Covers",
-    description:
-      "Decorative non-load-bearing appearance covers for aftermarket styling programs, offered as compact aluminum exterior accessories only.",
-    image: brakeCaliperCover,
-    alt: "Decorative aluminum brake caliper cover for vehicle appearance upgrades",
-    href: "/products/decorative-brake-caliper-covers",
-    applications: [
-      "Aftermarket appearance kits",
-      "Private-label vehicle styling accessories",
-      "Showroom and cosmetic upgrade programs",
-    ],
-  },
+
 ];
 
 const supportStages: SupportStage[] = [
@@ -383,13 +384,12 @@ export default function ProductsPage() {
             <div className="motion-rise">
               <p className="section-kicker">HSX product range</p>
               <h1 className="section-heading mt-6 text-4xl leading-none text-white sm:text-5xl xl:text-6xl">
-                Products for Global Wholesalers & OEM Buyers
+                Decorative Brake Caliper Covers, OEM Parts & LED Lighting
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-[#d4cdc0]">
-                HSX DIECASTING supplies OEM small-to-medium aluminum die
-                casting parts, custom aluminum hardware parts, automotive LED
-                lights, motorcycle LED lights, LED work lights, and decorative
-                brake caliper covers. The product scope stays inside realistic
+                HSX DIECASTING focuses first on decorative brake caliper
+                covers for appearance upgrade programs, then OEM aluminum die
+                casting parts and selected LED lighting products. The product scope stays inside realistic
                 200T and 300T aluminum die casting capacity for compact
                 housings, brackets, covers, shells, and other practical OEM
                 components.
@@ -467,8 +467,8 @@ export default function ProductsPage() {
           <div className="container-shell">
             <SectionHeading
               eyebrow="Product introduction"
-              title="OEM aluminum parts and LED lighting with clear manufacturing fit"
-              description="This page focuses on OEM small-to-medium aluminum die casting parts and automotive LED lighting products that match the factory’s 200T and 300T equipment. The offering is shaped for global wholesalers, importers, distributors, and OEM buyers who need practical product scope and clear project support."
+              title="Decorative brake caliper covers first, OEM aluminum parts second"
+              description="This page focuses first on decorative brake caliper covers, then OEM small-to-medium aluminum die casting parts, with selected LED lighting products as supporting product lines. The offering is shaped for global wholesalers, importers, distributors, and OEM buyers who need practical product scope and clear project support."
             />
 
             <div className="mt-10 grid gap-6 md:grid-cols-3">

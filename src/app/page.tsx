@@ -1,4 +1,4 @@
-import Image, { type StaticImageData } from "next/image";
+﻿import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 
 import automotiveLedLight from "../../public/images/automotive-led-light.png";
@@ -67,7 +67,7 @@ const faqJsonLd = {
       name: "Are brake caliper covers functional brake parts?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. HSX decorative brake caliper covers are appearance accessories installed outside the brake caliper. They are not braking-force components. High-temperature paint options for normal driving use, custom colors, custom logo font, and logo color support can be reviewed by project.",
+        text: "No. HSX decorative brake caliper covers are appearance accessories installed outside the brake caliper. They are not functional brake parts. High-temperature paint options for normal driving use, custom colors, custom logo font, and logo color support can be reviewed by project.",
       },
     },
   ],
@@ -92,6 +92,19 @@ const heroStats = [
 ];
 
 const productCategories: ProductCategory[] = [
+  {
+    title: "Decorative Brake Caliper Covers",
+    description:
+      "Decorative non-load-bearing appearance covers for styling programs, manufactured as aluminum exterior accessories.",
+    image: brakeCaliperCover,
+    alt: "Decorative aluminum brake caliper cover for vehicle appearance upgrades",
+    href: "/products/decorative-brake-caliper-covers",
+    details: [
+      "Appearance-focused cover parts only, not functional brake parts",
+      "Suitable for aftermarket styling sets and private-label accessory programs",
+      "Produced as compact aluminum cover pieces within small-to-medium casting scope",
+    ],
+  },
   {
     title: "OEM Aluminum Die Casting Parts",
     description:
@@ -157,19 +170,7 @@ const productCategories: ProductCategory[] = [
       "Balanced for OEM appearance, thermal structure, and practical assembly",
     ],
   },
-  {
-    title: "Decorative Brake Caliper Covers",
-    description:
-      "Decorative non-load-bearing appearance covers for styling programs, manufactured as aluminum exterior accessories.",
-    image: brakeCaliperCover,
-    alt: "Decorative aluminum brake caliper cover for vehicle appearance upgrades",
-    href: "/products/decorative-brake-caliper-covers",
-    details: [
-      "Appearance-focused cover parts only, not braking-force components",
-      "Suitable for aftermarket styling sets and private-label accessory programs",
-      "Produced as compact aluminum cover pieces within small-to-medium casting scope",
-    ],
-  },
+
 ];
 
 const capabilities = [
@@ -430,17 +431,16 @@ export default function Home() {
           <div className="container-shell grid gap-12 py-16 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-center lg:py-24">
             <div className="motion-rise">
               <p className="section-kicker">
-                OEM aluminum die casting and LED lighting supply
+                Decorative brake caliper covers and OEM aluminum die casting supply
               </p>
               <h1 className="section-heading mt-6 text-4xl leading-none text-white sm:text-5xl xl:text-6xl">
-                Small-to-Medium Aluminum Die Casting Parts and LED Lighting for
+                Decorative Brake Caliper Covers and OEM Aluminum Parts for
                 Global B2B Buyers
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-[#d4cdc0]">
                 Foshan Huashunxiang Hardware Products Factory focuses on
-                compact aluminum die cast parts, custom aluminum hardware parts,
-                automotive LED lights, motorcycle LED lights, LED work lights,
-                and decorative brake caliper covers. The production scope is
+                decorative brake caliper covers, compact aluminum die cast parts,
+                custom aluminum hardware parts, and selected LED lighting products. The production scope is
                 aligned with 200T and 300T aluminum die casting capacity and is
                 built for wholesale, aftermarket, and OEM sourcing programs.
               </p>
@@ -814,7 +814,7 @@ export default function Home() {
                 </p>
                 <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
                   The homepage avoids any claim that decorative covers are
-                  braking-force components. This keeps the product scope clear
+                  functional brake parts. This keeps the product scope clear
                   for buyers, prevents safety confusion, and aligns the offering
                   with realistic aluminum accessory manufacturing.
                 </p>
@@ -1182,7 +1182,7 @@ export default function Home() {
             <p>Small-to-medium aluminum die casting scope: 200T and 300T</p>
             <p>OEM based on drawings, samples, or custom project requirements</p>
             <p className="mt-2">
-              © {currentYear} HSX DIECASTING. All rights reserved.
+              漏 {currentYear} HSX DIECASTING. All rights reserved.
             </p>
           </div>
         </div>
