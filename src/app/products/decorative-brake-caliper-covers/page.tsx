@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 
@@ -62,16 +62,13 @@ export const metadata: Metadata = {
 
 const productJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Product",
+  "@type": "Service",
   name: "Decorative Brake Caliper Covers",
   url: "https://www.hsxdiecasting.com/products/decorative-brake-caliper-covers",
   image: ["https://www.hsxdiecasting.com/images/decorative-brake-caliper-cover.png"],
   description:
     "Decorative brake caliper covers and non-load-bearing automotive appearance covers for aftermarket brands, wholesalers, importers, distributors, and OEM buyers.",
-  brand: {
-    "@type": "Brand",
-    name: "HSX DIECASTING",
-  },
+  provider: { "@type": "Organization", name: "Foshan Huashunxiang Hardware Products Factory", url: "https://www.hsxdiecasting.com" },
   manufacturer: {
     "@type": "Organization",
     name: "Foshan Huashunxiang Hardware Products Factory",
@@ -877,7 +874,7 @@ export default function DecorativeBrakeCaliperCoversPage() {
             <p>Custom logo font and logo color support for private-label projects</p>
             <p>Non-load-bearing visual accessory product positioning</p>
             <p className="mt-2">
-              © {currentYear} HSX DIECASTING. All rights reserved.
+              漏 {currentYear} HSX DIECASTING. All rights reserved.
             </p>
           </div>
         </div>
