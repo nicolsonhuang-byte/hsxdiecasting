@@ -331,9 +331,7 @@ export default function ProductsPage() {
               HSX DIECASTING
             </Link>
             <p className="mt-3 text-sm leading-7 text-[#beb6a8]">
-              Product programs for OEM small-to-medium aluminum die casting
-              parts, custom aluminum hardware parts, and automotive LED
-              lighting supply.
+              Product programs for decorative brake caliper covers, OEM aluminum die casting parts, custom aluminum hardware parts, and selected LED lighting supply.
             </p>
           </div>
 

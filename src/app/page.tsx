@@ -386,10 +386,7 @@ export default function Home() {
               HSX DIECASTING
             </a>
             <p className="mt-3 text-sm leading-7 text-[#beb6a8]">
-              Foshan Huashunxiang Hardware Products Factory supplies OEM
-              small-to-medium aluminum die casting parts and automotive LED
-              lighting for global wholesalers, importers, distributors,
-              aftermarket brands, and OEM buyers.
+              Foshan Huashunxiang Hardware Products Factory supplies decorative brake caliper covers, OEM aluminum die casting parts, and selected LED lighting products for global wholesalers, importers, distributors, aftermarket brands, and OEM buyers.
             </p>
           </div>
 
