@@ -18,6 +18,13 @@ const contactDetails = {
 
 const blogPosts = [
   {
+    title: "How to Customize Decorative Brake Caliper Covers for Aftermarket Brands",
+    description:
+      "A practical B2B guide to decorative brake caliper cover customization, including color, logo, packaging, sample review, and RFQ preparation.",
+    href: "/blog/how-to-customize-decorative-brake-caliper-covers-aftermarket-brands",
+    category: "Decorative Caliper Covers",
+  },
+  {
     title: "What Is Aluminum Die Casting?",
     description:
       "A practical introduction to aluminum die casting for compact OEM parts, housings, covers, brackets, and export-oriented manufacturing projects.",
