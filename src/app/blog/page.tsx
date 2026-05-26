@@ -18,6 +18,14 @@ const contactDetails = {
 
 const blogPosts = [
   {
+    title:
+      "Decorative Brake Caliper Covers for Tesla Model 3 / Model Y Accessory Brands",
+    description:
+      "An OEM supplier checklist for Tesla accessory brands sourcing decorative brake caliper covers with color, logo, packaging, and sample review.",
+    href: "/blog/decorative-brake-caliper-covers-tesla-model-3-model-y-accessory-brands",
+    category: "Tesla Accessory Brands",
+  },
+  {
     title: "How to Customize Decorative Brake Caliper Covers for Aftermarket Brands",
     description:
       "A practical B2B guide to decorative brake caliper cover customization, including color, logo, packaging, sample review, and RFQ preparation.",
