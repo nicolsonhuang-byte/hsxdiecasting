@@ -4,6 +4,9 @@ export const metadata = {
   title: "Motorcycle LED Lights Supplier | OEM Motorcycle Lighting",
   description:
     "HSX DIECASTING supplies OEM motorcycle LED lights, auxiliary lights, compact LED work lights, aluminum lamp housings, brackets, covers, and lighting accessories.",
+  alternates: {
+    canonical: "/products/motorcycle-led-lights",
+  },
 };
 
 const productJsonLd = {
