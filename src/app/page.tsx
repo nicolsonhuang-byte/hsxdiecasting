@@ -67,7 +67,7 @@ const faqJsonLd = {
       name: "Are brake caliper covers functional brake parts?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. HSX decorative brake caliper covers are appearance accessories installed outside the brake caliper. They are not functional brake parts. High-temperature paint options for normal driving use, custom colors, custom logo font, and logo color support can be reviewed by project.",
+        text: "No. HSX decorative brake caliper covers are appearance accessories installed outside the brake caliper. They are not functional brake parts. Color and surface finishing options, custom colors, custom logo font, and logo color support can be reviewed by project.",
       },
     },
   ],
@@ -812,7 +812,7 @@ export default function Home() {
                 <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
                   The homepage avoids any claim that decorative covers are
                   functional brake parts. This keeps the product scope clear
-                  for buyers, prevents safety confusion, and aligns the offering
+                  for buyers, prevents positioning confusion, and aligns the offering
                   with realistic aluminum accessory manufacturing.
                 </p>
               </div>
@@ -919,7 +919,7 @@ export default function Home() {
                 <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
                   No. HSX decorative brake caliper covers are appearance accessories
                   installed outside the brake caliper. They are not braking-force
-                  components. High-temperature paint options for normal driving use,
+                  components. Color and surface finishing options,
                   custom colors, custom logo font, and logo color support can be
                   reviewed by project.
                 </p>

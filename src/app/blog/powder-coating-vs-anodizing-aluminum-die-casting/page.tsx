@@ -109,9 +109,10 @@ export default function ArticlePage() {
               appearance review.
             </p>
             <p className="mt-4">
-              For decorative brake caliper covers, high-temperature resistant paint
-              options for normal driving use can be reviewed by project, together
-              with custom color, logo font, and logo color requirements.
+              For decorative brake caliper covers, paint color and surface
+              finishing options for decorative appearance use can be reviewed by
+              project, together with custom color, logo font, and logo color
+              requirements.
             </p>
           </section>
 

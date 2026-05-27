@@ -1027,7 +1027,7 @@ export default function OemAluminumDieCastingPartsPage() {
                 </h2>
                 <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
                   Non-load-bearing appearance covers installed outside the brake
-                  caliper, with high-temperature paint and custom logo support.
+                  caliper, with color finishing and custom logo support.
                 </p>
               </Link>
 

@@ -143,10 +143,10 @@ export default function ArticlePage() {
               appearance expected by the buyer.
             </p>
             <p className="mt-4">
-              High-temperature coating can help maintain appearance and reduce
-              paint peeling risk under normal driving use. Buyers should still
-              treat these covers as appearance-focused exterior accessories, not
-              parts designed to alter brake system behavior.
+              Paint spraying and finishing options should be presented for
+              decorative appearance use. Buyers should still treat these covers
+              as appearance-focused exterior accessories, not parts designed to
+              alter brake system behavior.
             </p>
           </section>
 

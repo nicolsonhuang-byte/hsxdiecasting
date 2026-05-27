@@ -95,9 +95,9 @@ export default function ArticlePage() {
               For Tesla Model 3 brake caliper covers and Tesla Model Y brake
               caliper covers, buyer communication should focus on appearance,
               color, logo presentation, packaging, and sample confirmation. HSX
-              DIECASTING does not position these decorative covers as products
-              that improve braking, safety, heat performance, or vehicle
-              performance.
+              DIECASTING does not position these decorative covers as functional
+              brake parts or components that change brake system behavior or
+              vehicle operation.
             </p>
           </section>
 
@@ -130,11 +130,10 @@ export default function ArticlePage() {
               font, logo color, and visible placement requirements.
             </p>
             <p className="mt-4">
-              High-temperature coating can help maintain appearance and reduce
-              paint peeling risk under normal driving conditions, but buyers
-              should not treat coating as a promise of absolute prevention. The
-              product should still be presented as an appearance-focused exterior
-              accessory.
+              Paint spraying and finishing options should be presented for
+              decorative appearance use. Buyers should not present coating or
+              finishing as a brake system function. The product should still be
+              presented as an appearance-focused exterior accessory.
             </p>
           </section>
 
