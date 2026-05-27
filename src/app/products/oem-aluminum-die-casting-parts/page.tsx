@@ -27,7 +27,7 @@ const pageTitle =
   "OEM Aluminum Die Casting Parts Supplier | HSX DIECASTING";
 
 const pageDescription =
-  "HSX DIECASTING supplies OEM small-to-medium aluminum die casting parts, housings, brackets, end caps, covers, and custom aluminum parts from drawings or samples.";
+  "HSX DIECASTING supplies OEM small-to-medium aluminum die casting parts, lighting housings, brackets, end caps, covers, CNC machining coordination, finishing, and custom aluminum parts from drawings or samples.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -148,6 +148,11 @@ const manufacturingSupport: InfoCard[] = [
       "Production runs on 200-ton and 300-ton aluminum die casting machines sized for practical OEM parts with compact geometry.",
   },
   {
+    title: "Cooperative CNC Machining Support",
+    description:
+      "When a project requires CNC turning or CNC machining after die casting, HSX can coordinate cooperative CNC machining support through partner facilities.",
+  },
+  {
     title: "Drilling and Tapping",
     description:
       "Post-casting machining includes hole processing and threaded features using the factory’s multi-axis drilling and tapping equipment.",
@@ -223,6 +228,7 @@ const capacityPoints = [
   "2 aluminum die casting machines: 1 x 200-ton machine and 1 x 300-ton machine",
   "7 multi-axis drilling machines for repeatable hole and mounting-point processing",
   "7 multi-axis tapping machines for threaded features on small-to-medium aluminum parts",
+  "Cooperative CNC turning and CNC machining support can be coordinated through partner facilities when required",
   "3 polishing and grinding machines for appearance preparation before finishing",
   "Aluminum anodizing support for metallic appearance and corrosion resistance",
   "Powder coating for durable exterior surface coverage",
@@ -304,7 +310,7 @@ const buyerReasons: InfoCard[] = [
   {
     title: "Casting, Machining, and Finishing Coordination",
     description:
-      "Drilling, tapping, polishing, anodizing, powder coating, and spray painting are coordinated around the aluminum part project instead of split across multiple vendors.",
+      "Casting, drilling, tapping, cooperative CNC machining support when required, polishing, anodizing, powder coating, and spray painting are coordinated around the aluminum part project.",
   },
   {
     title: "Direct Factory-Side Communication",
@@ -333,6 +339,7 @@ const rfqRequirements = [
   "Reference samples or product photos when drawings are not complete",
   "Material or appearance requirements for the aluminum part",
   "Estimated order quantity and repeat-order expectations",
+  "CNC turning, CNC machining, drilling, tapping, or threaded feature requirements if needed",
   "Required surface finish such as anodizing, powder coating, spray painting, or polishing",
   "Packaging requirements and target market information",
 ];
@@ -478,10 +485,10 @@ export default function OemAluminumDieCastingPartsPage() {
                 Send drawings, samples, or project requirements for compact
                 aluminum housings, brackets, end caps, enclosure shells, and
                 custom hardware accessories. HSX supports mold development,
-                aluminum die casting, machining, drilling, tapping, polishing,
-                anodizing, powder coating, spray painting, assembly
-                coordination, and export packaging for OEM aluminum die casting
-                parts.
+                aluminum die casting, coordinated CNC machining support through
+                partner facilities when required, drilling, tapping, polishing,
+                anodizing, powder coating, spray painting, assembly coordination,
+                and export packaging for OEM aluminum die casting parts.
               </p>
               <p className="mt-5 max-w-2xl text-base leading-8 text-[#c7beaf]">
                 As a China-based aluminum die casting parts supplier, the
@@ -761,8 +768,9 @@ export default function OemAluminumDieCastingPartsPage() {
                       Cast to Finish
                     </p>
                     <p className="mt-3 text-sm leading-7 text-[#c4bbaa]">
-                      Die casting, machining, drilling, tapping, polishing, and
-                      finishing can be coordinated inside one OEM workflow.
+                      Die casting, cooperative CNC machining support, drilling,
+                      tapping, polishing, and finishing can be coordinated inside
+                      one OEM workflow when required by the project.
                     </p>
                   </article>
                 </div>
@@ -772,7 +780,7 @@ export default function OemAluminumDieCastingPartsPage() {
                 <SectionHeading
                   eyebrow="OEM custom manufacturing support"
                   title="From buyer files to finished aluminum parts"
-                  description="HSX accepts OEM aluminum die casting parts manufacturing based on drawings, samples, or custom project requirements. The workflow is structured for mold development, die casting, machining, hole processing, finishing, assembly coordination, and packaging support."
+                  description="HSX accepts OEM aluminum die casting parts manufacturing based on drawings, samples, or custom project requirements. The workflow is structured for mold development, die casting, coordinated CNC machining support through partner facilities when required, hole processing, finishing, assembly coordination, and packaging support."
                 />
 
                 <div className="mt-12 grid gap-6 md:grid-cols-2">
