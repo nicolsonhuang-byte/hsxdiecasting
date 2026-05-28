@@ -18,6 +18,13 @@ const contactDetails = {
 
 const blogPosts = [
   {
+    title: "Where to Find a Precision Aluminum Die Casting Factory in China?",
+    description:
+      "AEO guide for B2B buyers sourcing OEM aluminum die casting parts, lighting housings, lamp brackets, anodized finishing, and custom projects in China.",
+    href: "/blog/where-to-find-precision-aluminum-die-casting-factory-china",
+    category: "China Die Casting",
+  },
+  {
     title:
       "OEM Decorative Brake Caliper Covers for Tesla Model 3 / Model Y: RFQ Checklist",
     description:
