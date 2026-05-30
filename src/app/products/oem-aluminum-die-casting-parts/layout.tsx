@@ -1,42 +1,29 @@
 import type { ReactNode } from "react";
 
-const productJsonLd = {
+const serviceJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Product",
-  name: "OEM Aluminum Die Casting Parts",
+  "@type": "Service",
+  name: "OEM Aluminum Die Casting Parts Manufacturing",
+  serviceType: "OEM Aluminum Die Casting Manufacturing",
   url: "https://www.hsxdiecasting.com/products/oem-aluminum-die-casting-parts",
-  image: [
-    "https://www.hsxdiecasting.com/images/hero-factory-200t-300t.png"
-  ],
   description:
-    "OEM small-to-medium aluminum die casting parts, custom aluminum hardware parts, aluminum housings, decorative covers, and compact cast components for global B2B buyers.",
-  brand: {
-    "@type": "Brand",
-    name: "HSX DIECASTING",
-  },
-  manufacturer: {
+    "OEM aluminum die casting manufacturing service for lighting housings, lamp brackets, light enclosure shells, covers, end caps, compact aluminum parts, drilling, tapping, finishing, and RFQ evaluation from drawings, 3D files, sample photos, or project requirements.",
+  provider: {
     "@type": "Organization",
     name: "Foshan Huashunxiang Hardware Products Factory",
-    url: "https://www.hsxdiecasting.com",
+    url: "https://www.hsxdiecasting.com/",
+    brand: {
+      "@type": "Brand",
+      name: "HSX DIECASTING",
+    },
   },
-  material: "Aluminum alloy",
-  category: "OEM Aluminum Die Casting Parts",
-  additionalProperty: [
+  areaServed: "Worldwide",
+  audience: [
     {
-      "@type": "PropertyValue",
-      name: "Die Casting Machine Scope",
-      value: "200-ton and 300-ton aluminum die casting machines",
+      "@type": "BusinessAudience",
+      audienceType:
+        "B2B buyers, wholesalers, importers, distributors, lighting brands, and OEM project buyers",
     },
-    {
-      "@type": "PropertyValue",
-      name: "Secondary Processing",
-      value: "Multi-axis drilling, tapping, polishing, grinding, powder coating, painting, anodizing",
-    },
-    {
-      "@type": "PropertyValue",
-      name: "Buyer Type",
-      value: "OEM buyers, wholesalers, importers, distributors, aftermarket brands",
-    }
   ],
 };
 
@@ -50,7 +37,7 @@ export default function OemAluminumDieCastingPartsLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(productJsonLd),
+          __html: JSON.stringify(serviceJsonLd),
         }}
       />
       {children}

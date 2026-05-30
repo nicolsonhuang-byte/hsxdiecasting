@@ -320,12 +320,12 @@ const buyerReasons: InfoCard[] = [
   {
     title: "Flexible Sample-Stage and Batch Support",
     description:
-      "The factory is suitable for new product development, sample-stage confirmation, and small-to-medium batch OEM aluminum parts that need practical review before scaling.",
+      "The factory is suitable for new product development, sample-stage confirmation, and small-to-medium batch OEM aluminum parts that need practical evaluation before scaling.",
   },
   {
     title: "Export Buyer Communication",
     description:
-      "The business positioning is built for global buyers who need practical RFQ review, clear scope confirmation, and direct export communication.",
+      "The business positioning is built for global buyers who need practical RFQ evaluation, clear scope confirmation, and direct export communication.",
   },
   {
     title: "Focused Small Aluminum Die Casting Positioning",
@@ -764,7 +764,7 @@ export default function OemAluminumDieCastingPartsPage() {
                     </p>
                     <p className="mt-3 text-sm leading-7 text-[#c4bbaa]">
                       Part files, samples, and custom project requirements are
-                      reviewed before tooling or production launch.
+                      checked before tooling or production launch.
                     </p>
                   </article>
                   <article className="metric-pill">
@@ -951,7 +951,7 @@ export default function OemAluminumDieCastingPartsPage() {
             <SectionHeading
               eyebrow="RFQ requirements"
               title="Send the details needed for accurate OEM quotation"
-              description="For faster review, buyers should send the part files, quantity plan, finish requirements, and packaging information that define the OEM aluminum part project clearly."
+              description="For faster evaluation, buyers should send the part files, quantity plan, finish requirements, and packaging information that define the OEM aluminum part project clearly."
             />
 
             <div className="mt-10 industrial-card p-6 sm:p-8">
@@ -1123,11 +1123,11 @@ export default function OemAluminumDieCastingPartsPage() {
               >
                 <p className="section-kicker">RFQ contact</p>
                 <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
-                  Contact HSX for Project Review
+                  Contact HSX for Project Evaluation
                 </h2>
                 <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
                   Send drawings, 3D files, sample photos, quantity, finishing,
-                  and machining requirements for OEM aluminum part review.
+                  and machining requirements for OEM aluminum part evaluation.
                 </p>
               </Link>
             </div>
@@ -1144,7 +1144,7 @@ export default function OemAluminumDieCastingPartsPage() {
                     Send your drawings, samples, or custom project requirements
                   </h2>
                   <p className="mt-5 max-w-2xl text-base leading-8 text-[#2d2417] sm:text-lg">
-                    HSX reviews OEM aluminum die casting parts for global
+                    HSX evaluates OEM aluminum die casting parts for global
                     wholesalers, importers, distributors, hardware brands,
                     automotive aftermarket brands, LED lighting brands, and OEM
                     project buyers needing compact small-to-medium aluminum
@@ -1190,7 +1190,7 @@ export default function OemAluminumDieCastingPartsPage() {
                         </p>
                         <p className="mt-3 text-lg font-semibold text-white">
                           Send drawings, samples, finish requirements, and
-                          target quantity for a compact aluminum part review.
+                          target quantity for a compact aluminum part evaluation.
                         </p>
                       </div>
                     </div>
