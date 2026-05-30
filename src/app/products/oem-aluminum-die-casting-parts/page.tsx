@@ -27,7 +27,7 @@ const pageTitle =
   "OEM Aluminum Die Casting Parts Supplier | HSX DIECASTING";
 
 const pageDescription =
-  "HSX DIECASTING supplies OEM small-to-medium aluminum die casting parts, lighting housings, brackets, end caps, covers, CNC machining coordination, finishing, and custom aluminum parts from drawings or samples.";
+  "HSX DIECASTING supplies OEM aluminum die casting parts, lighting housings, lamp brackets, light enclosures, end caps, covers, CNC machining coordination, anodizing, powder coating, and custom parts from drawings or samples.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -92,7 +92,7 @@ const manufacturedParts = [
   {
     title: "LED Light Housings",
     description:
-      "Compact lamp bodies and housing components for work lights, auxiliary lights, and project-based lighting assemblies.",
+      "Lighting housings and light enclosure shells for work lights, auxiliary lights, and project-based lighting assemblies.",
   },
   {
     title: "Heat-Sink Aluminum Housings",
@@ -102,12 +102,12 @@ const manufacturedParts = [
   {
     title: "Mounting Brackets",
     description:
-      "Mounting brackets and support pieces with drilling and tapping features for OEM hardware and accessory projects.",
+      "Lamp brackets and compact mounting brackets with drilling and tapping features for OEM hardware and lighting accessory projects.",
   },
   {
     title: "End Caps and Closure Parts",
     description:
-      "Compact end caps and closure parts for housings, accessories, and enclosure assemblies requiring a clean finished appearance.",
+      "End caps, covers, and closure parts for housings, accessories, and enclosure assemblies requiring a clean finished appearance.",
   },
   {
     title: "Enclosure Shells",
@@ -127,7 +127,7 @@ const manufacturedParts = [
   {
     title: "Custom OEM Aluminum Parts",
     description:
-      "OEM aluminum parts manufactured from drawings, samples, or custom project requirements for wholesale and distribution channels.",
+      "Compact custom aluminum parts for OEM projects manufactured from drawings, samples, or custom project requirements.",
   },
 ];
 
@@ -376,7 +376,7 @@ export default function OemAluminumDieCastingPartsPage() {
           <div className="flex flex-col gap-3">
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-6">
               <a
-                href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
+                href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ARegards%2C`}
                 className="flex items-center gap-3 transition-colors hover:text-white"
               >
                 <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
@@ -479,16 +479,17 @@ export default function OemAluminumDieCastingPartsPage() {
             <div className="motion-rise">
               <p className="section-kicker">OEM aluminum die casting parts</p>
               <h1 className="section-heading mt-6 text-4xl leading-none text-white sm:text-5xl xl:text-6xl">
-                OEM Small-to-Medium Aluminum Die Casting Parts Manufacturer
+                OEM Aluminum Die Casting Parts for Lighting Housings, Brackets,
+                Covers, and End Caps
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-[#d4cdc0]">
-                Send drawings, samples, or project requirements for compact
-                aluminum housings, brackets, end caps, enclosure shells, and
-                custom hardware accessories. HSX supports mold development,
-                aluminum die casting, coordinated CNC machining support through
-                partner facilities when required, drilling, tapping, polishing,
-                anodizing, powder coating, spray painting, assembly coordination,
-                and export packaging for OEM aluminum die casting parts.
+                Send drawings, 3D files, sample photos, or project requirements
+                for compact aluminum lighting housings, lamp brackets, light
+                enclosure shells, covers, end caps, and custom OEM aluminum
+                parts. HSX supports 200T / 300T aluminum die casting, drilling,
+                tapping, polishing, anodizing, powder coating, paint spraying,
+                and cooperative CNC machining support through partner facilities
+                when required.
               </p>
               <p className="mt-5 max-w-2xl text-base leading-8 text-[#c7beaf]">
                 As a China-based aluminum die casting parts supplier, the
@@ -498,15 +499,21 @@ export default function OemAluminumDieCastingPartsPage() {
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
-                  href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
+                  href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ARegards%2C`}
                   className="gold-button text-center"
                 >
-                  Send Your Drawings
+                  Send RFQ Files
                 </a>
                 <a href={contactDetails.whatsappHref} className="outline-button text-center">
-                  Get a Quote
+                  WhatsApp Project Review
                 </a>
               </div>
+
+              <p className="mt-6 max-w-2xl text-sm leading-7 text-[#c9c1b2]">
+                Useful RFQ details include part drawings, 3D files, sample
+                photos, target quantity, surface finishing, drilling / tapping /
+                threaded features, and CNC requirements if needed.
+              </p>
 
               <div className="mt-10 grid gap-4 sm:grid-cols-3">
                 {heroStats.map((stat) => (
@@ -826,7 +833,7 @@ export default function OemAluminumDieCastingPartsPage() {
               <SectionHeading
                 eyebrow="Factory equipment and capacity"
                 title="Equipment sized for compact OEM aluminum part manufacturing"
-                description="The factory capacity is described directly and conservatively. It is best suited to small-to-medium aluminum die casting parts that need repeatable casting, drilling, tapping, polishing, and finishing support."
+                description="The factory capacity is described directly and conservatively. It is well suited to small-to-medium aluminum die casting parts that need repeatable casting, drilling, tapping, polishing, and finishing support."
               />
 
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -1052,6 +1059,77 @@ export default function OemAluminumDieCastingPartsPage() {
                   samples, photos, quantity, finish, and packaging requirements.
                 </p>
               </Link>
+
+              <Link
+                href="/blog/aluminum-die-casting-led-light-housings"
+                className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
+              >
+                <p className="section-kicker">Related article</p>
+                <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
+                  Aluminum Die Casting LED Light Housings
+                </h2>
+                <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
+                  Review how aluminum die casting supports lighting housings,
+                  covers, brackets, and compact enclosure parts for OEM lighting
+                  projects.
+                </p>
+              </Link>
+
+              <Link
+                href="/blog/powder-coating-vs-anodizing-aluminum-die-casting"
+                className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
+              >
+                <p className="section-kicker">Related article</p>
+                <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
+                  Powder Coating vs. Anodizing
+                </h2>
+                <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
+                  Compare surface finishing choices for OEM aluminum die casting
+                  parts before preparing RFQ requirements.
+                </p>
+              </Link>
+
+              <Link
+                href="/blog/where-to-find-precision-aluminum-die-casting-factory-china"
+                className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
+              >
+                <p className="section-kicker">Related article</p>
+                <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
+                  Finding a Die Casting Factory in China
+                </h2>
+                <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
+                  A buyer-focused guide for matching custom aluminum die casting
+                  projects with a practical factory scope.
+                </p>
+              </Link>
+
+              <Link
+                href="/blog/how-to-choose-aluminum-die-casting-manufacturer-china"
+                className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
+              >
+                <p className="section-kicker">Related article</p>
+                <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
+                  Choosing an Aluminum Die Casting Manufacturer
+                </h2>
+                <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
+                  Check supplier-fit questions for buyers preparing drawings,
+                  sample photos, finishing needs, and quantity plans.
+                </p>
+              </Link>
+
+              <Link
+                href="/contact"
+                className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
+              >
+                <p className="section-kicker">RFQ contact</p>
+                <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
+                  Contact HSX for Project Review
+                </h2>
+                <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
+                  Send drawings, 3D files, sample photos, quantity, finishing,
+                  and machining requirements for OEM aluminum part review.
+                </p>
+              </Link>
             </div>
           </div>
         </section>
@@ -1081,7 +1159,7 @@ export default function OemAluminumDieCastingPartsPage() {
                       WhatsApp RFQ
                     </a>
                     <a
-                      href={`mailto:${contactDetails.email}?subject=RFQ%20for%20OEM%20Aluminum%20Die%20Casting%20Parts&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20would%20like%20to%20request%20a%20quotation%20for%20OEM%20aluminum%20die%20casting%20parts.%0A%0APart%20type%3A%0AQuantity%3A%0AMaterial%20/%20finish%3A%0ADrawing%20or%20sample%20available%3A%0APackaging%20requirements%3A%0A%0APlease%20contact%20me%20with%20pricing%20and%20production%20details.%0A%0ABest%20regards%2C`}
+                      href={`mailto:${contactDetails.email}?subject=RFQ%20for%20OEM%20Aluminum%20Die%20Casting%20Parts&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20would%20like%20to%20request%20a%20quotation%20for%20OEM%20aluminum%20die%20casting%20parts.%0A%0APart%20type%3A%0AQuantity%3A%0AMaterial%20/%20finish%3A%0ADrawing%20or%20sample%20available%3A%0APackaging%20requirements%3A%0A%0APlease%20contact%20me%20with%20pricing%20and%20production%20details.%0A%0ARegards%2C`}
                       className="rounded-full border border-[#2b2216]/20 px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#22190d] transition-colors hover:bg-[#120f08] hover:text-[#f8f2e6]"
                     >
                       Email Your RFQ
@@ -1126,7 +1204,7 @@ export default function OemAluminumDieCastingPartsPage() {
                       <p>
                         <span className="font-semibold">Email: </span>
                         <a
-                          href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
+                          href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ARegards%2C`}
                           className="transition-colors hover:text-[#120f08]"
                         >
                           {contactDetails.email}
@@ -1177,7 +1255,7 @@ export default function OemAluminumDieCastingPartsPage() {
             <p>
               <span className="text-white/90">Email:</span>{" "}
               <a
-                href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
+                href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ARegards%2C`}
                 className="transition-colors hover:text-white"
               >
                 {contactDetails.email}
