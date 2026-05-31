@@ -18,6 +18,14 @@ const contactDetails = {
 
 const blogPosts = [
   {
+    title:
+      "RFQ Checklist for Custom OEM Aluminum Die Casting Parts: What Buyers Should Prepare",
+    description:
+      "Practical RFQ checklist for B2B buyers preparing custom OEM aluminum die casting projects, including drawings, 3D files, samples, finishing, drilling, tapping, CNC needs, and packaging.",
+    href: "/blog/rfq-checklist-custom-oem-aluminum-die-casting-parts",
+    category: "RFQ Checklist",
+  },
+  {
     title: "Where to Find a Precision Aluminum Die Casting Factory in China?",
     description:
       "AEO guide for B2B buyers sourcing OEM aluminum die casting parts, lighting housings, lamp brackets, anodized finishing, and custom projects in China.",
