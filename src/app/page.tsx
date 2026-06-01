@@ -25,6 +25,7 @@ type InfoCard = {
 
 const navigationLinks = [
   { label: "Products", href: "/products" },
+  { label: "Project Review", href: "/b2b-oem-project-review" },
   { label: "Contact", href: "/contact" },
   { label: "Capabilities", href: "#capabilities" },
   { label: "Process", href: "#process" },
