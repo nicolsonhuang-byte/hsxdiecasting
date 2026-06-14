@@ -1,0 +1,601 @@
+.page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, rgba(199, 162, 91, 0.1), transparent 34%),
+    linear-gradient(180deg, #080808 0%, #050505 100%);
+  color: #f8f2e6;
+}
+
+.page > section {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-block: 4rem;
+}
+
+.page > section:last-child {
+  border-bottom: 0;
+}
+
+.page :global(.section-heading) {
+  color: #ffffff;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.08;
+}
+
+.page :global(.section-kicker) {
+  display: block;
+  color: #edd29a;
+  line-height: 1.4;
+}
+
+.page p {
+  line-height: 1.75;
+}
+
+.page :global(.industrial-card) {
+  padding: 1.5rem;
+}
+
+.page :global(.metric-pill) {
+  padding: 1.25rem;
+}
+
+.heroSection {
+  padding-block: 3rem 3.5rem !important;
+  background:
+    radial-gradient(circle at top right, rgba(212, 172, 103, 0.16), transparent 34%),
+    linear-gradient(180deg, #0b0b0b 0%, #050505 100%);
+}
+
+.heroGrid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.heroContent {
+  max-width: 48rem;
+}
+
+.heroTitle {
+  margin-top: 1.25rem;
+  max-width: 52rem;
+  font-size: clamp(2.35rem, 4.2vw, 3.8rem) !important;
+  line-height: 1.04 !important;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.heroLead {
+  margin-top: 1.5rem;
+  max-width: 43rem;
+  color: #eee4d4;
+  font-size: 1.02rem;
+}
+
+.heroBody {
+  margin-top: 1.2rem;
+  max-width: 43rem;
+  color: #d4cbbb;
+  font-size: 1rem;
+}
+
+.heroActions {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+  max-width: 42rem;
+}
+
+.actionButton,
+.ctaButton {
+  display: block;
+  min-height: 3.2rem;
+  border-radius: 999px;
+  padding: 0.95rem 1.35rem;
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.35;
+  text-transform: uppercase;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.actionButton:hover,
+.ctaButton:hover {
+  transform: translateY(-2px);
+}
+
+.primaryButton,
+.ctaButtonPrimary {
+  background: linear-gradient(135deg, #d7b067 0%, #f0d9a4 100%);
+  color: #140f08;
+  box-shadow: 0 14px 30px rgba(226, 195, 123, 0.22);
+}
+
+.secondaryButton,
+.ctaButtonSecondary {
+  border: 1px solid rgba(226, 195, 123, 0.48);
+  color: #f8f2e6;
+}
+
+.secondaryButton:hover,
+.ctaButtonSecondary:hover {
+  background: #e2c37b;
+  color: #140f08;
+}
+
+.ctaButtonTertiary {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #f8f2e6;
+}
+
+.ctaButtonTertiary:hover {
+  border-color: rgba(226, 195, 123, 0.7);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.heroMedia {
+  max-width: 38rem;
+}
+
+.heroImageCard,
+.relatedImageCard {
+  overflow: hidden;
+  border-radius: 1.75rem;
+}
+
+.heroImageFrame {
+  overflow: hidden;
+  border-radius: 1.25rem;
+}
+
+.responsiveImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.imageCaption {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.72);
+  padding: 1rem;
+}
+
+.captionKicker,
+.metricLabel,
+.resourceLabel,
+.ctaEyebrow,
+.ctaAsideTitle,
+.contactTitle,
+.faqLabel {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.captionKicker,
+.metricLabel,
+.resourceLabel,
+.faqLabel {
+  color: #d4ac67;
+}
+
+.captionText {
+  margin-top: 0.5rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.metricGrid {
+  display: grid;
+  gap: 1rem;
+}
+
+.metricCard {
+  min-height: 100%;
+}
+
+.metricValue {
+  margin-top: 0.75rem;
+  color: #ffffff;
+  font-size: 1.45rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.metricNote {
+  margin-top: 0.75rem;
+  color: #c4bbaa;
+  font-size: 0.95rem;
+}
+
+.colorSection {
+  padding-block: 4rem !important;
+}
+
+.colorLayout {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.colorCollageCard,
+.sampleCard {
+  overflow: hidden;
+  border: 1px solid rgba(215, 181, 109, 0.28);
+  border-radius: 1.5rem;
+  background: #101010;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+}
+
+.colorCaption,
+.sampleCardBody {
+  border-top: 1px solid rgba(215, 181, 109, 0.2);
+  background: rgba(0, 0, 0, 0.72);
+  padding: 1.25rem;
+}
+
+.sampleCardGrid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.sampleCard {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.sampleCardBody {
+  flex: 1;
+}
+
+.sampleCardTitle {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.sampleCardCaption {
+  margin-top: 0.8rem;
+  color: #d8cfbf;
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+.faqSection,
+.relatedSection {
+  background: #080808;
+}
+
+.faqLayout,
+.relatedLayout {
+  display: grid;
+  gap: 3rem;
+}
+
+.faqList {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 54rem;
+}
+
+.faqCard {
+  border: 1px solid rgba(215, 181, 109, 0.3);
+  border-radius: 1.35rem;
+  background: #101010;
+  padding: 1.5rem;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+}
+
+.faqMeta {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.25rem;
+}
+
+.faqNumber {
+  display: inline-flex;
+  width: 2.25rem;
+  height: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(215, 181, 109, 0.35);
+  border-radius: 999px;
+  background: rgba(212, 172, 103, 0.1);
+  color: #f4d27a;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.faqQuestion {
+  max-width: 46rem;
+  color: #ffffff;
+  font-size: clamp(1.35rem, 2vw, 1.6rem);
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.faqAnswer {
+  margin-top: 1rem;
+  max-width: 50rem;
+  color: #d6cdbd;
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.relatedImageCard {
+  border: 1px solid rgba(215, 181, 109, 0.25);
+}
+
+.resourceGrid {
+  display: grid;
+  gap: 1.25rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resourceCard {
+  display: flex;
+  flex-direction: column;
+  min-height: 9rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.25rem;
+  background: #101010;
+  padding: 1.25rem;
+  color: #efe7d9;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.24);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease;
+}
+
+.resourceCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(215, 181, 109, 0.6);
+  background: #17120a;
+}
+
+.resourceTitle {
+  display: block;
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.18rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.resourceCard .resourceLabel {
+  display: block;
+  margin-top: 0.85rem;
+}
+
+.resourceCard:hover .resourceTitle {
+  color: #f4d27a;
+}
+
+.resourceArrow {
+  display: block;
+  margin-top: auto;
+  padding-top: 1.5rem;
+  color: #d7b56d;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.ctaSection {
+  padding-block: 4rem 5rem !important;
+}
+
+.ctaPanel {
+  overflow: hidden;
+  border: 1px solid rgba(215, 181, 109, 0.42);
+  border-radius: 2rem;
+  background: #0d0b07;
+  box-shadow: 0 32px 90px rgba(0, 0, 0, 0.42);
+}
+
+.ctaTopRule {
+  height: 0.5rem;
+  background: linear-gradient(90deg, #9f762d, #e2c37b, #f3e6c9);
+}
+
+.ctaInner {
+  background:
+    radial-gradient(circle at top left, rgba(243, 230, 201, 0.16), transparent 34%),
+    linear-gradient(135deg, #191309 0%, #0d0b07 58%, #050505 100%);
+  padding: 1.75rem;
+}
+
+.ctaGrid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.ctaEyebrow {
+  color: #e8ce97;
+}
+
+.ctaTitle {
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: clamp(2rem, 4vw, 3.15rem) !important;
+  line-height: 1.05 !important;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.ctaText {
+  margin-top: 1.25rem;
+  max-width: 44rem;
+  color: #e4dac7;
+  font-size: 1.1rem;
+}
+
+.ctaActions {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+  max-width: 48rem;
+}
+
+.ctaAside {
+  border: 1px solid rgba(226, 195, 123, 0.28);
+  border-radius: 1.5rem;
+  background: #f6ead0;
+  padding: 1.5rem;
+  color: #171108;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
+}
+
+.ctaAsideTitle,
+.contactTitle {
+  color: #6e501b;
+}
+
+.ctaChecklist {
+  display: grid;
+  gap: 0.8rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ctaChecklistItem {
+  border: 1px solid rgba(141, 106, 45, 0.18);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.62);
+  padding: 1rem;
+  color: #2c2316;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.contactBox {
+  margin-top: 1.5rem;
+  border: 1px solid rgba(43, 34, 22, 0.15);
+  border-radius: 1rem;
+  background: #fff8e8;
+  padding: 1.25rem;
+  color: #2c2316;
+  font-size: 0.95rem;
+}
+
+.contactLine {
+  margin-top: 0.85rem;
+}
+
+.contactLine span {
+  font-weight: 800;
+}
+
+.contactLink {
+  color: #2c2316;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: rgba(141, 106, 45, 0.42);
+  text-underline-offset: 0.25rem;
+}
+
+.contactLink:hover {
+  color: #6e501b;
+}
+
+@media (min-width: 640px) {
+  .heroActions,
+  .ctaActions,
+  .ctaChecklist,
+  .resourceGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ctaChecklist {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sampleCardGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .page > section {
+    padding-block: 5.5rem;
+  }
+
+  .heroSection {
+    padding-block: 4rem 4.5rem !important;
+  }
+
+  .heroGrid {
+    grid-template-columns: minmax(0, 1.05fr) minmax(22rem, 0.82fr);
+  }
+
+  .heroActions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .metricGrid {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .colorSection {
+    padding-block: 5.5rem !important;
+  }
+
+  .colorLayout {
+    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+    align-items: start;
+  }
+
+  .sampleCardGrid {
+    grid-column: 1 / -1;
+  }
+
+  .faqLayout {
+    grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+    align-items: start;
+  }
+
+  .relatedLayout {
+    grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+    align-items: center;
+  }
+
+  .resourceGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ctaInner {
+    padding: 3rem;
+  }
+
+  .ctaGrid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    align-items: start;
+  }
+
+  .ctaActions {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .ctaChecklist {
+    grid-template-columns: 1fr;
+  }
+}
