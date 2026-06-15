@@ -882,6 +882,18 @@ export default function OemAluminumDieCastingPartsPage() {
               title="Aluminum parts with project-matched finishing support"
               description="The factory supplies aluminum die casting parts and coordinates finishing around the target appearance, corrosion resistance, and end-market presentation required by the OEM project."
             />
+            <p className="mt-5 max-w-3xl text-base leading-8 text-[#c9c1b2]">
+              For projects that specifically target an anodized metallic
+              appearance, HSX can review{" "}
+              <Link
+                href="/anodizable-aluminum-die-casting-parts"
+                className="font-semibold text-[#f4d27a]"
+              >
+                anodizable aluminum die casting parts
+              </Link>{" "}
+              before tooling, including visible surfaces, geometry, material
+              direction, machining, and sample evaluation needs.
+            </p>
 
             <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
               {surfaceFinishes.map((finish, index) => (

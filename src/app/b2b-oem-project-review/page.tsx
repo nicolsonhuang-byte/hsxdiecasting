@@ -470,6 +470,15 @@ export default function B2bOemProjectReviewPage() {
                   aluminum anodizing, OEM / ODM customization, and cooperative
                   CNC turning / CNC machining support through partner facilities
                   when required.
+                  For projects with anodized appearance requirements, HSX can
+                  review{" "}
+                  <Link
+                    href="/anodizable-aluminum-die-casting-parts"
+                    className="font-semibold text-[#f4d27a]"
+                  >
+                    anodized appearance aluminum die casting parts
+                  </Link>{" "}
+                  before confirming whether the route is practical.
                 </p>
               </article>
             </div>

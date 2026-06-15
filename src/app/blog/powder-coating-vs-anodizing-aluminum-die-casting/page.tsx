@@ -74,9 +74,19 @@ export default function ArticlePage() {
               and buyer requirement before confirming.
             </p>
             <p className="mt-4">
-              HSX can review anodizing for suitable aluminum projects. This is a
-              useful capability because many aluminum die casting suppliers focus
-              only on coating or painting and may not support anodizing review.
+              HSX can review anodizing for suitable aluminum projects, and
+              buyers who need{" "}
+              <Link
+                href="/anodizable-aluminum-die-casting-parts"
+                className="font-semibold text-[#f4d27a]"
+              >
+                OEM aluminum die casting parts with anodized appearance
+                requirements
+              </Link>{" "}
+              should share drawings, visible-surface notes, material
+              expectations, and sample targets early. This is a useful
+              capability because many aluminum die casting suppliers focus only
+              on coating or painting and may not support anodizing review.
             </p>
           </section>
 
