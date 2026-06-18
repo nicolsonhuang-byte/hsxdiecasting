@@ -6,7 +6,6 @@ import brakeCaliperCover from "../../public/images/brake-caliper-cover.png";
 import factoryCapabilities from "../../public/images/factory-capabilities.png";
 import heroFactory from "../../public/images/hero-factory-200t-300t.png";
 import ledWorkLight from "../../public/images/led-work-light.png";
-import motorcycleLedLight from "../../public/images/motorcycle-led-light.png";
 import oemAluminumParts from "../../public/images/oem-small-aluminum-die-casting-parts.png";
 
 type ProductCategory = {
@@ -94,81 +93,67 @@ const heroStats = [
 
 const productCategories: ProductCategory[] = [
   {
-    title: "Decorative Brake Caliper Covers",
-    description:
-      "Decorative non-load-bearing appearance covers for styling programs, manufactured as aluminum exterior accessories.",
-    image: brakeCaliperCover,
-    alt: "Decorative aluminum brake caliper cover for vehicle appearance upgrades",
-    href: "/products/decorative-brake-caliper-covers",
-    details: [
-      "Appearance-focused cover parts only, not functional brake parts",
-      "Suitable for aftermarket styling sets and private-label accessory programs",
-      "Produced as compact aluminum cover pieces within small-to-medium casting scope",
-    ],
-  },
-  {
     title: "OEM Aluminum Die Casting Parts",
     description:
-      "Aluminum housings, end caps, brackets, shells, and lamp bodies produced within realistic 200T and 300T machine scope.",
+      "Small-to-medium aluminum housings, end caps, brackets, shells, covers, and OEM parts produced within realistic 200T and 300T machine scope.",
     image: oemAluminumParts,
     alt: "Small-to-medium aluminum die casting parts for OEM lighting and hardware applications",
     href: "/products/oem-aluminum-die-casting-parts",
     details: [
       "Suitable for compact housings, covers, brackets, and enclosure shells",
-      "Production accepted from drawings, samples, or custom project requirements",
+      "Production review based on drawings, samples, or custom project requirements",
       "Ideal for export buyers sourcing repeatable OEM aluminum components",
     ],
   },
   {
-    title: "Custom Aluminum Hardware Parts",
+    title: "Die Cast Aluminum LED Light Housings",
     description:
-      "Custom aluminum accessories and hardware parts for aftermarket brands, distributors, and industrial hardware buyers.",
-    image: oemAluminumParts,
-    alt: "Custom aluminum hardware parts with machined openings and mounting points",
-    href: "/products/oem-aluminum-die-casting-parts",
+      "Die cast aluminum lamp bodies, heat-sink-style housings, bezels, covers, and compact lighting enclosures for LED product programs.",
+    image: ledWorkLight,
+    alt: "Die cast aluminum LED light housing and compact lighting product body",
+    href: "/products/aluminum-light-housings",
     details: [
-      "Small brackets, accessory bases, caps, and functional hardware parts",
-      "Dimensional features coordinated with drilling and tapping operations",
-      "Designed for practical aluminum applications instead of oversized castings",
+      "Best suited to compact light housings and heat-dissipation body structures",
+      "Can be reviewed together with finish, assembly, and packaging requirements",
+      "Aligned with practical small-to-medium aluminum die casting capability",
     ],
   },
   {
-    title: "Automotive LED Lights",
+    title: "Secondary Machining and Surface Finishing",
     description:
-      "Automotive LED lighting products developed for aftermarket brands and wholesale distributors seeking durable aluminum light bodies.",
+      "Drilling, tapping, polishing, grinding, anodizing, powder coating, and spray painting support for suitable aluminum die casting projects.",
+    image: factoryCapabilities,
+    alt: "Secondary machining and surface finishing support for compact aluminum die casting parts",
+    details: [
+      "7 multi-axis drilling machines and 7 multi-axis tapping machines",
+      "Polishing and grinding support before appearance finishing",
+      "Finishing expectations reviewed case by case before quotation",
+    ],
+  },
+  {
+    title: "Decorative Brake Caliper Appearance Covers",
+    description:
+      "Decorative non-load-bearing exterior appearance covers for vehicle styling programs, kept as one product category within the wider factory scope.",
+    image: brakeCaliperCover,
+    alt: "Decorative aluminum brake caliper appearance cover for exterior customization",
+    href: "/products/decorative-brake-caliper-covers",
+    details: [
+      "Exterior appearance customization only, not functional brake parts",
+      "Suitable for styling sets and private-label accessory programs",
+      "Produced as compact aluminum cover pieces within small-to-medium casting scope",
+    ],
+  },
+  {
+    title: "Motorcycle / Automotive LED Lighting Products",
+    description:
+      "Selected motorcycle and automotive LED lighting products for wholesale buyers, aftermarket brands, and private-label sourcing programs.",
     image: automotiveLedLight,
-    alt: "Automotive LED light with aluminum housing for aftermarket supply",
+    alt: "Automotive and motorcycle LED lighting products with compact aluminum housings",
     href: "/products/automotive-led-lights",
     details: [
-      "Aluminum light housings and heat-sink structures suited to compact die casting",
-      "Built for buyer-led branding, packaging, and model selection",
-      "Appropriate for utility, visibility, and styling-focused vehicle programs",
-    ],
-  },
-  {
-    title: "Motorcycle LED Lights",
-    description:
-      "Motorcycle LED light products with compact aluminum housings for distributors and private-label buyers.",
-    image: motorcycleLedLight,
-    alt: "Motorcycle LED light product with compact aluminum housing",
-    href: "/products/motorcycle-led-lights",
-    details: [
-      "Compact cast lamp bodies aligned with 200T and 300T aluminum equipment",
-      "Fit for model-specific aftermarket and replacement lighting programs",
-      "Useful for sourcing projects requiring small, repeatable aluminum lamp parts",
-    ],
-  },
-  {
-    title: "LED Work Lights",
-    description:
-      "LED work light products using aluminum housings and heat-dissipation-focused body structures for industrial and vehicle use.",
-    image: ledWorkLight,
-    alt: "LED work light with aluminum housing and compact form factor",
-    href: "/products/led-work-lights",
-    details: [
-      "Well suited for cast aluminum housings, bezels, and end caps",
-      "Designed for industrial, utility, and off-road accessory channels",
-      "Balanced for OEM appearance, thermal structure, and practical assembly",
+      "Selected lighting products with compact aluminum housing requirements",
+      "Buyer-led branding, packaging, and model selection can be reviewed",
+      "A supporting product line after OEM aluminum parts and light housings",
     ],
   },
 
@@ -360,15 +345,12 @@ export default function Home() {
                 <span>{contactDetails.wechat}</span>
               </div>
             </div>
-            <a
-              href="/contact"
-              className="flex items-start gap-3 transition-colors hover:text-white"
-            >
+            <div className="flex items-start gap-3">
               <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
                 Address
               </span>
               <span>{contactDetails.address}</span>
-            </a>
+            </div>
           </div>
           <a href="/contact" className="gold-button w-full text-center sm:w-auto">
             Get a Quote
@@ -387,7 +369,7 @@ export default function Home() {
               HSX DIECASTING
             </a>
             <p className="mt-3 text-sm leading-7 text-[#beb6a8]">
-              Foshan Huashunxiang Hardware Products Factory supplies decorative brake caliper covers, OEM aluminum die casting parts, and selected LED lighting products for global wholesalers, importers, distributors, aftermarket brands, and OEM buyers.
+              Foshan Huashunxiang Hardware Products Factory is the factory behind HSX DIECASTING, focused on small-to-medium OEM aluminum die casting parts, aluminum light housings, and selected LED lighting products for global B2B buyers.
             </p>
           </div>
 
@@ -429,24 +411,24 @@ export default function Home() {
           <div className="container-shell grid gap-12 py-16 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-center lg:py-24">
             <div className="motion-rise">
               <p className="section-kicker">
-                Decorative brake caliper covers and OEM aluminum die casting supply
+                Real aluminum die casting factory for practical OEM projects
               </p>
               <h1 className="section-heading mt-6 text-4xl leading-none text-white sm:text-5xl xl:text-6xl">
-                Decorative Brake Caliper Covers and OEM Aluminum Parts for
-                Global B2B Buyers
+                OEM Aluminum Die Casting Parts Factory for Small-to-Medium Components
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-[#d4cdc0]">
-                Foshan Huashunxiang Hardware Products Factory focuses on
-                decorative brake caliper covers, compact aluminum die cast parts,
-                custom aluminum hardware parts, and selected LED lighting products. The production scope is
-                aligned with 200T and 300T aluminum die casting capacity and is
-                built for wholesale, aftermarket, and OEM sourcing programs.
+                HSX DIECASTING focuses on compact aluminum die casting parts,
+                die cast aluminum LED light housings, secondary machining,
+                surface finishing, and selected lighting product programs. The
+                production scope is aligned with 200T and 300T aluminum die
+                casting capacity for wholesale, aftermarket, and OEM sourcing
+                programs.
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <a href={contactDetails.whatsappHref} className="gold-button text-center">
-                  Start RFQ Review
-                </a>
+                <Link href="/contact" className="gold-button text-center">
+                  Send RFQ
+                </Link>
                 <a href="#capabilities" className="outline-button text-center">
                   View Factory Capabilities
                 </a>
@@ -601,12 +583,12 @@ export default function Home() {
                           View Details
                         </Link>
                       ) : null}
-                      <a
-                        href={contactDetails.whatsappHref}
+                      <Link
+                        href="/contact"
                         className="rounded-full bg-[#d5ae67] px-4 py-2 text-center text-xs font-semibold uppercase tracking-[0.18em] text-black transition-transform duration-200 hover:-translate-y-0.5"
                       >
-                        Send Inquiry
-                      </a>
+                        Send RFQ
+                      </Link>
                     </div>
                   </div>
                 </article>
@@ -842,7 +824,7 @@ export default function Home() {
                   HSX DIECASTING is based in Foshan, Guangdong, China, and focuses
                   on small-to-medium aluminum die casting parts, aluminum light
                   housings, LED work lights, automotive LED lights, motorcycle LED
-                  lights, and decorative brake caliper covers for export-oriented
+                  lights, and decorative brake caliper appearance covers for export-oriented
                   B2B buyers.
                 </p>
                 <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
@@ -1062,32 +1044,22 @@ export default function Home() {
           <div className="mx-auto max-w-6xl">
             <p className="section-kicker">Expanded product categories</p>
             <h2 className="mt-4 max-w-4xl text-3xl font-semibold tracking-tight text-white lg:text-5xl">
-              More OEM product pages for LED lighting and aluminum die casting buyers
+              More OEM product pages for aluminum die casting and lighting buyers
             </h2>
             <p className="mt-6 max-w-4xl text-base leading-8 text-white/70 lg:text-lg">
-              Explore focused product pages for automotive LED lights, motorcycle LED lights,
-              aluminum light housings, decorative brake caliper covers, LED work lights,
-              and OEM aluminum die casting parts.
+              Explore focused product pages for OEM aluminum die casting parts, aluminum
+              light housings, secondary machining and finishing support, decorative brake
+              caliper appearance covers, and selected LED lighting products.
             </p>
 
             <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <a
-                href="/products/automotive-led-lights"
+                href="/products/oem-aluminum-die-casting-parts"
                 className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
               >
-                <h3 className="text-lg font-semibold text-white">Automotive LED Lights</h3>
+                <h3 className="text-lg font-semibold text-white">OEM Aluminum Die Casting Parts</h3>
                 <p className="mt-4 text-sm leading-7 text-white/65">
-                  OEM car LED lights, auxiliary lights, work lights, and aluminum lighting parts.
-                </p>
-              </a>
-
-              <a
-                href="/products/motorcycle-led-lights"
-                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
-              >
-                <h3 className="text-lg font-semibold text-white">Motorcycle LED Lights</h3>
-                <p className="mt-4 text-sm leading-7 text-white/65">
-                  Compact motorcycle LED lights, lamp housings, brackets, and lighting accessories.
+                  Small-to-medium aluminum die casting parts, housings, covers, and custom hardware.
                 </p>
               </a>
 
@@ -1102,32 +1074,32 @@ export default function Home() {
               </a>
 
               <a
+                href="#finishing"
+                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
+              >
+                <h3 className="text-lg font-semibold text-white">Secondary Machining and Surface Finishing</h3>
+                <p className="mt-4 text-sm leading-7 text-white/65">
+                  Drilling, tapping, polishing, grinding, anodizing, powder coating, and spray painting support.
+                </p>
+              </a>
+
+              <a
                 href="/products/decorative-brake-caliper-covers"
                 className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
               >
-                <h3 className="text-lg font-semibold text-white">Decorative Brake Caliper Covers</h3>
+                <h3 className="text-lg font-semibold text-white">Decorative Brake Caliper Appearance Covers</h3>
                 <p className="mt-4 text-sm leading-7 text-white/65">
                   Non-load-bearing decorative caliper covers and automotive appearance accessories.
                 </p>
               </a>
 
               <a
-                href="/products/led-work-lights"
+                href="/products/automotive-led-lights"
                 className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
               >
-                <h3 className="text-lg font-semibold text-white">LED Work Lights</h3>
+                <h3 className="text-lg font-semibold text-white">Motorcycle / Automotive LED Lighting Products</h3>
                 <p className="mt-4 text-sm leading-7 text-white/65">
-                  LED work lights and aluminum lighting-related parts for global B2B buyers.
-                </p>
-              </a>
-
-              <a
-                href="/products/oem-aluminum-die-casting-parts"
-                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
-              >
-                <h3 className="text-lg font-semibold text-white">OEM Aluminum Die Casting Parts</h3>
-                <p className="mt-4 text-sm leading-7 text-white/65">
-                  Small-to-medium aluminum die casting parts, housings, covers, and custom hardware.
+                  Selected automotive and motorcycle LED lighting products for global B2B buyers.
                 </p>
               </a>
             </div>

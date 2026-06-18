@@ -74,7 +74,7 @@ const heroStats = [
   {
     label: "Product Mix",
     value: "Parts + LED Lights",
-    note: "OEM aluminum parts, automotive LED lights, motorcycle LED lights, LED work lights, and decorative brake caliper covers",
+    note: "OEM aluminum parts, automotive LED lights, motorcycle LED lights, LED work lights, and decorative brake caliper appearance covers",
   },
   {
     label: "RFQ Flow",
@@ -109,15 +109,15 @@ const contactCards: ContactCard[] = [
 ];
 
 const rfqChecklist = [
-  "Product drawings, 3D CAD files, or reference samples",
-  "Product photos or sample reference photos",
-  "Material requirements",
-  "Quantity",
-  "Surface finish",
-  "Packaging requirements",
-  "Target market",
-  "Logo / branding needs",
-  "Delivery expectations",
+  "2D drawings with key dimensions, tolerances, and thread or hole callouts",
+  "3D files such as STEP, STP, IGS, IGES, STL, X_T for die casting evaluation",
+  "Sample photos or reference sample details when drawings are incomplete",
+  "Product application and end-use environment",
+  "Estimated quantity for quotation and production planning",
+  "Material expectations for the aluminum part or housing",
+  "Surface finishing requirements such as anodizing, powder coating, spray painting, polishing, or grinding",
+  "Machining, drilling, and tapping requirements for mounting or assembly features",
+  "Packaging requirements for export shipment or buyer-side retail preparation",
 ];
 
 const acceptedFileFormats = [
@@ -148,6 +148,11 @@ const fileDeliveryNotes = [
     title: "Send by WhatsApp",
     value: contactDetails.phone,
     note: "Fastest channel for product photos, quick samples, sketches, and follow-up communication about quotation details.",
+  },
+  {
+    title: "Discuss by WeChat",
+    value: contactDetails.wechat,
+    note: "Useful for direct project communication, quick clarification, and sample-stage RFQ follow-up.",
   },
 ];
 
@@ -212,10 +217,6 @@ function SectionHeading({
 
 export default function ContactPage() {
   const currentYear = new Date().getFullYear();
-  const fieldClass =
-    "mt-3 w-full rounded-2xl border border-[#c7a25b]/20 bg-black/35 px-4 py-3 text-sm text-white outline-none transition-colors placeholder:text-[#948a79] focus:border-[#e4c88f]/55";
-  const selectClass =
-    "mt-3 w-full rounded-2xl border border-[#c7a25b]/20 bg-black/35 px-4 py-3 text-sm text-white outline-none transition-colors focus:border-[#e4c88f]/55";
 
   return (
     <div className="relative overflow-x-clip">
@@ -248,19 +249,16 @@ export default function ContactPage() {
                 <span>{contactDetails.wechat}</span>
               </div>
             </div>
-            <a
-              href={contactDetails.whatsappHref}
-              className="flex items-start gap-3 transition-colors hover:text-white"
-            >
+            <div className="flex items-start gap-3">
               <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
                 Address
               </span>
               <span>{contactDetails.address}</span>
-            </a>
+            </div>
           </div>
-          <a href={contactDetails.whatsappHref} className="gold-button w-full text-center sm:w-auto">
-            Start RFQ
-          </a>
+          <Link href="/contact" className="gold-button w-full text-center sm:w-auto">
+            Send RFQ
+          </Link>
         </div>
       </div>
 
@@ -314,11 +312,8 @@ export default function ContactPage() {
             >
               Contact
             </a>
-            <a
-              href={contactDetails.whatsappHref}
-              className="transition-colors hover:text-white"
-            >
-              RFQ Form
+            <a href="#rfq-info" className="transition-colors hover:text-white">
+              RFQ Checklist
             </a>
             <a
               href="#capability"
@@ -423,7 +418,7 @@ export default function ContactPage() {
                         <p className="mt-2 text-sm leading-7 text-[#ede6d7]">
                           OEM aluminum die casting parts, LED work lights,
                           automotive LED lights, motorcycle LED lights, and
-                          decorative brake caliper covers.
+                          decorative brake caliper appearance covers.
                         </p>
                       </div>
                     </div>
@@ -545,7 +540,7 @@ export default function ContactPage() {
               <SectionHeading
                 eyebrow="What to send"
                 title="RFQ details that help the factory review your project accurately"
-                description="The strongest RFQ starts with the buyer’s part files, quantity plan, finish expectations, branding notes, and delivery requirements."
+                description="The strongest RFQ starts with buyer part files, quantity planning, material expectations, product application, machining requirements, finishing needs, and packaging details."
               />
 
               <ul className="mt-10 space-y-4 text-base leading-8 text-[#e7dfcf]">
@@ -600,18 +595,17 @@ export default function ContactPage() {
             <div className="mt-10 industrial-card gold-frame p-6 sm:p-8">
               <p className="section-kicker">How to send files</p>
               <h3 className="mt-4 text-2xl font-semibold text-white sm:text-3xl">
-                Send files by business email or WhatsApp instead of uploading on the website
+                Send RFQ files by business email, WhatsApp, or WeChat
               </h3>
               <p className="mt-5 text-sm leading-7 text-[#e7dfcf] sm:text-base">
-                The website does not accept file uploads. Please send 3D CAD
-                files, 2D drawings, sample photos, and any supporting documents
-                directly to the business email or WhatsApp contact below. This
-                keeps drawings, revisions, and project communication tracked in
-                one place and avoids upload failures, compressed image quality,
-                or missing CAD references.
+                Please send 3D CAD files, 2D drawings, sample photos, and
+                supporting documents directly to the business email, WhatsApp,
+                or WeChat contact below. This keeps drawings, revisions, and
+                project communication connected with the factory-side quotation
+                review.
               </p>
 
-              <div className="mt-8 grid gap-5 md:grid-cols-2">
+              <div className="mt-8 grid gap-5 md:grid-cols-3">
                 {fileDeliveryNotes.map((option) => (
                   <article
                     key={option.title}
@@ -642,172 +636,6 @@ export default function ContactPage() {
                   Send Files on WhatsApp
                 </a>
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="rfq-form" className="hidden">
-          <div className="container-shell grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-start">
-            <div>
-              <SectionHeading
-                eyebrow="RFQ form UI"
-                title="Professional frontend-only quotation form layout"
-                description="This form layout is prepared for buyer convenience only at this stage. You can also send drawings, photos, or samples directly by email or WhatsApp."
-              />
-
-              <div className="industrial-card gold-frame mt-10 overflow-hidden p-3">
-                <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem]">
-                  <Image
-                    src={ledWorkLight}
-                    alt="LED work light inquiry support and buyer RFQ preparation"
-                    fill
-                    sizes="(min-width: 1280px) 34rem, (min-width: 1024px) 40vw, 100vw"
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
-                  <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/55 p-5 backdrop-blur">
-                    <p className="section-kicker">Direct file sharing</p>
-                    <p className="mt-3 text-lg font-semibold text-white">
-                      You can also send drawings, photos, or samples directly
-                      by email or WhatsApp.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="industrial-card mt-6 p-6">
-                <p className="section-kicker">Important note</p>
-                <p className="mt-4 text-sm leading-8 text-[#e9e1d3]">
-                  This RFQ form is frontend-only for now. No backend or email
-                  sending logic has been added yet.
-                </p>
-              </div>
-            </div>
-
-            <div className="industrial-card p-6 sm:p-8">
-              <form className="grid gap-5">
-                <div className="grid gap-5 md:grid-cols-2">
-                  <label className="text-sm font-medium text-[#f2eadb]">
-                    Name
-                    <input
-                      type="text"
-                      placeholder="Your name"
-                      className={fieldClass}
-                    />
-                  </label>
-                  <label className="text-sm font-medium text-[#f2eadb]">
-                    Company
-                    <input
-                      type="text"
-                      placeholder="Company name"
-                      className={fieldClass}
-                    />
-                  </label>
-                </div>
-
-                <div className="grid gap-5 md:grid-cols-2">
-                  <label className="text-sm font-medium text-[#f2eadb]">
-                    Email
-                    <input
-                      type="email"
-                      placeholder="name@company.com"
-                      className={fieldClass}
-                    />
-                  </label>
-                  <label className="text-sm font-medium text-[#f2eadb]">
-                    WhatsApp / Phone
-                    <input
-                      type="text"
-                      placeholder="+86..."
-                      className={fieldClass}
-                    />
-                  </label>
-                </div>
-
-                <div className="grid gap-5 md:grid-cols-2">
-                  <label className="text-sm font-medium text-[#f2eadb]">
-                    Country
-                    <input
-                      type="text"
-                      placeholder="Your country"
-                      className={fieldClass}
-                    />
-                  </label>
-                  <label className="text-sm font-medium text-[#f2eadb]">
-                    Product category
-                    <select className={selectClass} defaultValue="">
-                      <option value="" disabled>
-                        Select a category
-                      </option>
-                      <option>OEM Aluminum Die Casting Parts</option>
-                      <option>Automotive LED Lights</option>
-                      <option>Motorcycle LED Lights</option>
-                      <option>LED Work Lights</option>
-                      <option>Decorative Brake Caliper Covers</option>
-                    </select>
-                  </label>
-                </div>
-
-                <div className="grid gap-5 md:grid-cols-2">
-                  <label className="text-sm font-medium text-[#f2eadb]">
-                    Quantity
-                    <input
-                      type="text"
-                      placeholder="Estimated order quantity"
-                      className={fieldClass}
-                    />
-                  </label>
-                  <label className="text-sm font-medium text-[#f2eadb]">
-                    Surface finish
-                    <select className={selectClass} defaultValue="">
-                      <option value="" disabled>
-                        Select a finish
-                      </option>
-                      <option>Anodizing</option>
-                      <option>Powder Coating</option>
-                      <option>Spray Painting</option>
-                      <option>Polishing</option>
-                      <option>Grinding Preparation</option>
-                    </select>
-                  </label>
-                </div>
-
-                <label className="text-sm font-medium text-[#f2eadb]">
-                  Message
-                  <textarea
-                    rows={6}
-                    placeholder="Share your project details, product scope, target market, branding requirements, and delivery expectations."
-                    className={fieldClass}
-                  />
-                </label>
-
-                <label className="text-sm font-medium text-[#f2eadb]">
-                  File upload placeholder for drawings or photos
-                  <div className="mt-3 rounded-[1.5rem] border border-dashed border-[#c7a25b]/35 bg-black/30 p-5">
-                    <input
-                      type="file"
-                      multiple
-                      className="block w-full text-sm text-[#f2eadb] file:mr-4 file:rounded-full file:border-0 file:bg-[#d7b067] file:px-4 file:py-2 file:text-sm file:font-semibold file:text-[#140f08]"
-                    />
-                    <p className="mt-4 text-sm leading-7 text-[#bfb6a8]">
-                      Placeholder UI only. You can also send drawings, photos,
-                      or samples directly by email or WhatsApp.
-                    </p>
-                  </div>
-                </label>
-
-                <div className="flex flex-col gap-4 sm:flex-row">
-                  <button type="button" className="gold-button text-center">
-                    Prepare RFQ Details
-                  </button>
-                  <a
-                    href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
-                    className="outline-button text-center"
-                  >
-                    Send by Email Instead
-                  </a>
-                </div>
-              </form>
             </div>
           </div>
         </section>
@@ -917,7 +745,7 @@ export default function ContactPage() {
                     Global wholesalers, importers, distributors, aftermarket
                     brands, and OEM buyers can send RFQs for compact aluminum
                     parts, LED work lights, automotive LED lights, motorcycle
-                    LED lights, and decorative brake caliper covers.
+                    LED lights, and decorative brake caliper appearance covers.
                   </p>
 
                   <div className="mt-8 flex flex-col gap-4 sm:flex-row">
