@@ -343,7 +343,7 @@ const factoryExperience: InfoCard[] = [
   {
     title: "Stable Mold Cavity Layout",
     description:
-      "For some small-to-medium parts, stable one-cavity or two-cavity molds may be more practical than unstable multi-cavity layouts. HSX reviews cavity count around part structure, aluminum flow, cycle time, trimming work, expected yield, and downstream cost.",
+      "For some small-to-medium parts, stable one-cavity or two-cavity molds may be more practical than unstable multi-cavity layouts. HSX reviews cavity count around part structure, aluminum flow, cycle time, trimming work, production stability, and downstream cost.",
   },
   {
     title: "Mold Success Is Not Only the Rough Casting",
@@ -353,7 +353,7 @@ const factoryExperience: InfoCard[] = [
   {
     title: "Prototype Confirmation Before Tooling",
     description:
-      "After cooperation terms and the tooling-fee arrangement are confirmed, HSX may make a prototype for customer assembly confirmation before formal mold production. Prototype methods may include a 3D-printed plastic prototype or a CNC-machined aluminum prototype. Too many mold modifications may affect mold life, delay delivery, and sometimes affect casting blank appearance or stability because mold changes may affect molten aluminum flow.",
+      "After cooperation terms and agreed tooling terms are confirmed, HSX may make a prototype for customer assembly confirmation before formal mold production. Prototype methods may include a 3D-printed plastic prototype or a CNC-machined aluminum prototype. Too many mold modifications may affect mold life, delay delivery, and sometimes affect casting blank appearance or stability because mold changes may affect molten aluminum flow.",
   },
   {
     title: "We Review Before We Produce",
@@ -361,9 +361,9 @@ const factoryExperience: InfoCard[] = [
       "HSX does not blindly accept every OEM aluminum die casting inquiry. If another material or process may offer better quality, lower cost, or fewer production risks, the factory will explain this before accepting the project.",
   },
   {
-    title: "From Sample Approval to Stable Batch Delivery",
+    title: "From Sample Approval to Consistent Batch Production Control",
     description:
-      "A good sample is only the beginning. HSX focuses on stable batch production control, mold maintenance, drilling and tapping control, polishing consistency, finishing preparation, and customer-specific inspection requirements.",
+      "A good sample is only the beginning. HSX supports consistent batch production control, mold maintenance, drilling and tapping control, polishing consistency, finishing preparation, and customer-specific inspection requirements.",
   },
 ];
 
@@ -913,7 +913,7 @@ export default function OemAluminumDieCastingPartsPage() {
             <SectionHeading
               eyebrow="Factory experience"
               title="Practical review before OEM aluminum die casting production"
-              description="HSX DIECASTING is a real aluminum die casting factory, not a trading company. The factory reviews whether each small-to-medium OEM aluminum die casting project matches its equipment, mold planning, trimming, machining, finishing, and batch control capability before production."
+              description="HSX DIECASTING supports factory-direct OEM project communication and factory-controlled production. The factory reviews whether each small-to-medium OEM aluminum die casting project matches its equipment, mold planning, trimming, machining, finishing, and batch control capability before production."
             />
 
             <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">

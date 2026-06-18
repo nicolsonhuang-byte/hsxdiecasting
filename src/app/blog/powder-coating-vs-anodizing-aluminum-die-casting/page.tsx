@@ -63,7 +63,7 @@ export default function ArticlePage() {
                 "In-house painting / spray painting",
                 "In-house polishing",
                 "Anodizing through cooperating anodizing partners for suitable projects",
-                "Passivation or hardening-related treatment through cooperating treatment partners when required",
+                "Passivation or other project-specific protective surface treatment through cooperating treatment partners when required",
               ].map((item) => (
                 <li key={item} className="flex gap-3">
                   <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#d4ac67]" />
@@ -193,9 +193,9 @@ export default function ArticlePage() {
             <p className="mt-4">
               Some internal parts may only require casting blanks plus CNC
               turning, drilling, and tapping. Other internal parts may require
-              passivation or hardening-related treatment, which should be
-              confirmed according to the project and handled through cooperating
-              treatment partners when required.
+              passivation or other project-specific protective surface treatment
+              through cooperating treatment partners when required. This should
+              be confirmed according to the project.
             </p>
           </section>
 
