@@ -9,7 +9,7 @@ import oemAluminumParts from "../../../public/images/oem-small-aluminum-die-cast
 export const metadata: Metadata = {
   title: "B2B OEM Project Review | HSX DIECASTING",
   description:
-    "B2B OEM project review page for decorative brake caliper appearance covers and custom OEM aluminum die casting parts. Send RFQ details, drawings, 3D files, samples, finishing needs, logo, packaging, and quantity plans to HSX DIECASTING.",
+    "Direct factory RFQ and suitable-project review page for OEM aluminum die casting parts, aluminum light housings, and decorative brake caliper appearance covers from HSX DIECASTING.",
   alternates: {
     canonical: "https://www.hsxdiecasting.com/b2b-oem-project-review",
   },
@@ -27,18 +27,18 @@ const mailtoRfq =
 
 const pathCards = [
   {
-    title: "Decorative Brake Caliper Appearance Covers OEM Review",
-    description:
-      "For Tesla / EV accessory brands, automotive appearance accessory sellers, private-label buyers, and aftermarket resellers looking for decorative appearance cover customization.",
-    href: "#appearance-cover-review",
-    cta: "Send Appearance Cover OEM Inquiry",
-  },
-  {
     title: "OEM Aluminum Die Casting Parts RFQ Review",
     description:
-      "For buyers sourcing lighting housings, lamp brackets, covers, end caps, enclosure shells, brackets, and compact custom aluminum components.",
+      "For buyers sourcing light housings, lamp brackets, covers, end caps, enclosure shells, brackets, and suitable small-to-medium aluminum components.",
     href: "#aluminum-die-casting-review",
     cta: "Send Aluminum Die Casting RFQ",
+  },
+  {
+    title: "Decorative Brake Caliper Appearance Covers OEM Review",
+    description:
+      "For automotive appearance accessory buyers looking for decorative exterior appearance cover customization as one HSX product category.",
+    href: "#appearance-cover-review",
+    cta: "Send Appearance Cover OEM Inquiry",
   },
 ];
 
@@ -110,12 +110,12 @@ const processSteps = [
   {
     title: "Send Project Details",
     description:
-      "Send drawings, 3D files, sample photos, product requirements, quantity plan, finishing needs, and packaging details by email or WhatsApp.",
+      "Send drawings, 3D files, sample photos, product application, quantity plan, machining needs, finishing requirements, and packaging details by email or WhatsApp.",
   },
   {
-    title: "HSX Checks Project Scope",
+    title: "HSX Reviews Factory Fit",
     description:
-      "HSX checks whether the project fits the factory product direction, process scope, and small-to-medium OEM / ODM customization model.",
+      "HSX checks whether the project fits its aluminum die casting equipment, mold experience, machining capability, polishing, coating, painting, and production control.",
   },
   {
     title: "Missing Details Are Confirmed",
@@ -123,14 +123,47 @@ const processSteps = [
       "If key information is missing, HSX may ask for drawings, photos, dimensions, finishing requirements, or quantity details before the next step.",
   },
   {
-    title: "Sample-Stage Or RFQ Discussion Begins",
+    title: "RFQ Or Prototype Discussion Begins",
     description:
-      "If the project fits the scope, HSX can continue discussing sample-stage evaluation, OEM customization details, or quotation preparation.",
+      "If the project fits the scope, HSX can discuss quotation preparation, sample-stage evaluation, or prototype confirmation before formal tooling where appropriate.",
   },
   {
     title: "Buyer Confirms The Next Step",
     description:
       "The buyer can decide whether to continue with samples, design adjustment, packaging discussion, or further RFQ communication.",
+  },
+];
+
+const factoryReviewCards = [
+  {
+    title: "Direct Factory RFQ Communication",
+    description:
+      "HSX supports direct OEM project discussion with the factory team, so buyers can communicate drawings, applications, quantities, machining needs, and finishing requirements more clearly before production.",
+  },
+  {
+    title: "Not a Trading Company",
+    description:
+      "HSX DIECASTING is a real aluminum die casting factory, not a trading company. HSX focuses on projects that match its equipment, mold experience, machining capability, polishing, powder coating, painting, and production control.",
+  },
+  {
+    title: "Suitable Projects Only",
+    description:
+      "HSX does not blindly accept every inquiry. If another material or process may provide better quality, lower cost, or fewer production risks, HSX will explain this before accepting the project.",
+  },
+  {
+    title: "Quality Budget Stays in Production",
+    description:
+      "Direct factory communication helps keep more of the project budget inside production quality, tooling control, machining accuracy, finishing preparation, inspection, and stable delivery.",
+  },
+  {
+    title: "Prototype Confirmation Before Tooling",
+    description:
+      "For suitable OEM projects, after project details and agreed tooling terms are confirmed, HSX may prepare a prototype for assembly confirmation before formal mold production. Prototype methods may include 3D-printed plastic prototypes or CNC-machined aluminum prototypes.",
+  },
+  {
+    title: "Customer-Specific Inspection Requirements",
+    description:
+      "Quality requirements are reviewed according to each project, customer standard, product application, tolerance, visible surface requirements, and inspection requirements.",
   },
 ];
 
@@ -204,18 +237,19 @@ export default function B2bOemProjectReviewPage() {
           <div className="motion-rise">
             <p className="section-kicker">B2B OEM project review</p>
             <h1 className="section-heading mt-6 text-4xl leading-none text-white sm:text-5xl xl:text-6xl">
-              Choose the right inquiry path before contacting HSX DIECASTING
+              Direct factory RFQ review for suitable OEM aluminum projects
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[#d4cdc0]">
-              HSX DIECASTING is a Foshan-based manufacturing factory supporting
-              B2B OEM / ODM project evaluation for decorative brake caliper
-              appearance covers and custom OEM aluminum die casting parts.
+              HSX DIECASTING is a Foshan-based aluminum die casting factory
+              supporting B2B OEM project evaluation for suitable small-to-medium
+              aluminum parts, aluminum light housings, and decorative brake
+              caliper appearance covers.
             </p>
             <p className="mt-5 max-w-2xl text-base leading-8 text-[#c7beaf]">
-              Send project details by email or WhatsApp, including drawings, 3D
-              files, sample photos, target quantity, surface finishing
-              requirements, logo / packaging needs, drilling / tapping
-              requirements, and CNC requirements if needed.
+              Send project details by email or WhatsApp so the factory team can
+              review the application, drawings, 3D files, samples, target
+              quantity, machining needs, surface finishing requirements, and
+              packaging details before production discussion.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
@@ -251,8 +285,9 @@ export default function B2bOemProjectReviewPage() {
                     Project details first
                   </p>
                   <p className="mt-3 text-lg font-semibold text-white">
-                    Drawings, 3D files, samples, finishing, logo, packaging,
-                    quantity plan, and CNC requirements if needed.
+                    Drawings, 3D files, samples, application, quantity,
+                    machining, finishing, packaging, and inspection
+                    requirements.
                   </p>
                 </div>
               </div>
@@ -266,7 +301,7 @@ export default function B2bOemProjectReviewPage() {
           <SectionHeading
             eyebrow="Buyer path selector"
             title="Choose your project type"
-            description="This page separates two common B2B inquiry paths so buyers can send the right information from the beginning."
+            description="This page separates common B2B inquiry paths so buyers can send the right technical and purchasing information to the factory team from the beginning."
           />
 
           <div className="mt-12 grid gap-6 lg:grid-cols-2">
@@ -286,6 +321,29 @@ export default function B2bOemProjectReviewPage() {
                   {card.cta}
                 </p>
               </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-white/8 bg-[#080808] py-16 lg:py-24">
+        <div className="container-shell">
+          <SectionHeading
+            eyebrow="Factory-direct review"
+            title="Suitable-project review before production discussion"
+            description="HSX reviews OEM aluminum die casting inquiries as factory-fit projects, not generic product sourcing. The goal is to confirm whether the part, process route, tooling plan, secondary processing, finishing preparation, and inspection needs are practical before moving forward."
+          />
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {factoryReviewCards.map((card) => (
+              <article key={card.title} className="industrial-card p-6">
+                <h3 className="text-xl font-semibold text-white">
+                  {card.title}
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-[#cfc6b6]">
+                  {card.description}
+                </p>
+              </article>
             ))}
           </div>
         </div>
@@ -357,7 +415,7 @@ export default function B2bOemProjectReviewPage() {
           <SectionHeading
             eyebrow="Path 02"
             title="OEM Aluminum Die Casting Parts RFQ Review"
-            description="HSX can evaluate custom OEM aluminum die casting parts for B2B buyers preparing drawings, 3D files, sample photos, or project requirements."
+            description="HSX can evaluate suitable small-to-medium OEM aluminum die casting parts for B2B buyers preparing drawings, 3D files, sample photos, product applications, machining requirements, finishing requirements, and inspection needs."
           />
 
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
@@ -441,7 +499,7 @@ export default function B2bOemProjectReviewPage() {
             <SectionHeading
               eyebrow="What HSX can evaluate"
               title="Two practical B2B project directions"
-              description="HSX can evaluate decorative appearance cover projects and custom aluminum die casting projects with clear project information."
+              description="HSX can evaluate custom aluminum die casting projects and decorative appearance cover projects when the buyer can provide clear project information."
             />
             <div className="mt-8 grid gap-6">
               <article className="industrial-card p-6">
@@ -491,7 +549,7 @@ export default function B2bOemProjectReviewPage() {
           <SectionHeading
             eyebrow="RFQ preparation checklist"
             title="Prepare the details buyers usually need before first contact"
-            description="A complete RFQ helps HSX check the project scope more efficiently and confirm what additional information may be needed."
+            description="A complete RFQ helps the HSX factory team check the project scope, possible process route, production risks, and missing information more efficiently."
           />
 
           <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -512,7 +570,7 @@ export default function B2bOemProjectReviewPage() {
           <SectionHeading
             eyebrow="How the review process works"
             title="A simple path from project details to next-step discussion"
-            description="The page is designed to make first contact easier, especially when buyers have technical files, sample photos, finishing needs, or packaging requirements ready."
+            description="The page is designed to make first contact clearer before quotation, prototype discussion, tooling confirmation, machining planning, finishing preparation, or inspection review."
           />
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
@@ -542,9 +600,11 @@ export default function B2bOemProjectReviewPage() {
               description="HSX DIECASTING is operated by Foshan Huashunxiang Hardware Products Factory, a Foshan-based manufacturing factory in Guangdong, China."
             />
             <p className="mt-8 text-base leading-8 text-[#c9c1b2]">
-              HSX focuses on B2B OEM / ODM project evaluation for decorative
-              brake caliper appearance covers and small-to-medium custom
-              aluminum die casting parts.
+              HSX DIECASTING is a real aluminum die casting factory, not a
+              trading company. HSX focuses on B2B OEM project evaluation for
+              suitable small-to-medium custom aluminum die casting parts and
+              decorative brake caliper appearance covers as one product
+              category.
             </p>
             <p className="mt-5 text-base leading-8 text-[#c9c1b2]">
               For aluminum die casting projects, HSX supports 200T / 300T
@@ -552,6 +612,12 @@ export default function B2bOemProjectReviewPage() {
               tapping, polishing / grinding, powder coating, paint spraying,
               aluminum anodizing, and cooperative CNC turning / CNC machining
               support through partner facilities when required.
+            </p>
+            <p className="mt-5 text-base leading-8 text-[#c9c1b2]">
+              HSX reviews each project against the product application,
+              tolerance, visible surface requirements, machining plan, finishing
+              preparation, inspection requirements, and stable delivery needs
+              before accepting the work.
             </p>
             <p className="mt-5 text-base leading-8 text-[#c9c1b2]">
               For decorative brake caliper appearance covers, HSX focuses on

@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "RFQ Checklist for Custom OEM Aluminum Die Casting Parts",
   description:
-    "Learn what B2B buyers should prepare before requesting a quote for custom OEM aluminum die casting parts, including drawings, 3D files, samples, finishing, drilling, tapping, CNC needs, and packaging.",
+    "Learn what B2B buyers should send before HSX reviews a custom OEM aluminum die casting project, including drawings, 3D files, application, quantity, material expectations, tolerance, machining, finishing, and packaging.",
   alternates: {
     canonical:
       "https://www.hsxdiecasting.com/blog/rfq-checklist-custom-oem-aluminum-die-casting-parts",
@@ -18,7 +18,7 @@ const contactDetails = {
 };
 
 const mailtoRfq =
-  "mailto:nicolson@hsxdiecasting.com?subject=RFQ%20for%20Custom%20OEM%20Aluminum%20Die%20Casting%20Parts&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20preparing%20an%20RFQ%20for%20custom%20OEM%20aluminum%20die%20casting%20parts.%0A%0APart%20type%3A%0ADrawings%20or%203D%20files%20available%3A%0ASample%20photos%20available%3A%0ATarget%20quantity%3A%0ASurface%20finishing%20requirements%3A%0ADrilling%20/%20tapping%20/%20threaded%20feature%20requirements%3A%0ACNC%20turning%20or%20CNC%20machining%20requirements%20if%20needed%3A%0APackaging%20details%3A%0A%0APlease%20contact%20me%20for%20project%20evaluation.";
+  "mailto:nicolson@hsxdiecasting.com?subject=RFQ%20for%20Custom%20OEM%20Aluminum%20Die%20Casting%20Parts&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20preparing%20an%20RFQ%20for%20custom%20OEM%20aluminum%20die%20casting%20parts.%0A%0APart%20type%3A%0AProduct%20application%3A%0A2D%20drawings%20available%3A%0A3D%20files%20%28STEP%20/%20STP%20/%20IGS%20/%20IGES%20/%20STL%20/%20X_T%29%20available%3A%0ASample%20photos%20available%3A%0AEstimated%20quantity%3A%0AMaterial%20expectations%3A%0AVisible%20surface%20requirements%3A%0AInternal%20component%20or%20assembly%20requirements%3A%0ATolerance%20requirements%3A%0AHole%20position%20requirements%3A%0AThread%20requirements%3A%0AMachining%20/%20drilling%20/%20tapping%20requirements%3A%0ASurface%20finishing%20requirements%3A%0APackaging%20details%3A%0A%0APlease%20contact%20me%20for%20project%20evaluation.";
 
 const relatedLinks = [
   {
@@ -52,12 +52,16 @@ const relatedLinks = [
 ];
 
 const rfqChecklist = [
-  "Part drawings, 3D files, dimensional sketches, or sample photos",
-  "Target part type, such as lighting housing, lamp bracket, cover, end cap, enclosure shell, bracket, or compact aluminum component",
-  "Target quantity, sample-stage needs, and small-to-medium batch plan",
-  "Surface finishing requirements such as polishing, grinding, powder coating, paint spraying, or aluminum anodizing",
-  "Drilling, tapping, threaded feature, hole, slot, mounting point, or assembly area requirements",
-  "CNC turning or CNC machining requirements if needed",
+  "2D drawings with dimensions, tolerance notes, visible surfaces, hole positions, and assembly areas",
+  "3D files such as STEP, STP, IGS, IGES, STL, or X_T for geometry review",
+  "Sample photos or reference photos when drawings are incomplete",
+  "Product application and where the part will be assembled or used",
+  "Estimated quantity, sample-stage needs, and repeat-order expectations",
+  "Material expectations or known material restrictions",
+  "Visible surface requirements and internal component or assembly requirements",
+  "Tolerance requirements, hole position requirements, and thread requirements",
+  "Machining, drilling, tapping, CNC turning, or CNC machining requirements if needed",
+  "Surface finishing requirements such as polishing, grinding, powder coating, paint spraying, or aluminum anodizing review",
   "OEM / ODM customization, packaging, label, and export packing requirements",
 ];
 
@@ -182,7 +186,28 @@ export default function ArticlePage() {
 
           <section>
             <h2 className="text-2xl font-semibold !text-white">
-              3. Prepare Drawings, 3D Files, or Sample Photos
+              3. Why HSX Asks About Product Application
+            </h2>
+            <p className="mt-4">
+              Product application is not just background information. It can
+              affect material selection, mold design, machining allowance,
+              surface finishing, tolerance control, assembly requirements, and
+              whether aluminum die casting is a suitable process for the part at
+              all.
+            </p>
+            <p className="mt-4">
+              For example, a visible light housing, an internal bracket, an end
+              cap, and a threaded enclosure part may need different gate
+              planning, wall thickness review, polishing preparation, machining
+              control, and inspection focus. HSX asks about application so the
+              factory review can be based on the actual product use rather than
+              only the outside shape.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold !text-white">
+              4. Prepare Drawings, 3D Files, or Sample Photos
             </h2>
             <p className="mt-4">
               Drawings and 3D files are the most useful RFQ materials for
@@ -195,32 +220,36 @@ export default function ArticlePage() {
             </h3>
             <p className="mt-3">
               A 2D drawing should show key dimensions, hole positions, threaded
-              features, visible surfaces, and assembly points. If only a sketch
-              is available, mark the most important dimensions clearly.
+              features, tolerance requirements, visible surfaces, internal
+              component areas, and assembly points. If only a sketch is
+              available, mark the most important dimensions and inspection areas
+              clearly.
             </p>
             <h3 className="mt-6 text-xl font-semibold !text-white">
               3D Files for Geometry Evaluation
             </h3>
             <p className="mt-3">
-              3D files help the factory understand geometry, wall structure,
-              parting direction, and areas that may need secondary processing.
-              They are also useful when the part has complex surfaces or
-              internal features.
+              3D files such as STEP, STP, IGS, IGES, STL, and X_T help the
+              factory understand geometry, wall structure, parting direction,
+              machining allowance, and areas that may need secondary processing.
+              They are also useful when the part has complex surfaces, internal
+              features, or assembly interfaces.
             </p>
             <h3 className="mt-6 text-xl font-semibold !text-white">
               Sample Photos When Drawings Are Not Complete
             </h3>
             <p className="mt-3">
               If drawings are not ready, send clear sample photos from multiple
-              angles with approximate size, material expectation, surface
-              finishing direction, and quantity plan. This helps the factory
-              decide what additional information is needed.
+              angles with approximate size, product application, material
+              expectation, visible surface requirement, internal component
+              requirement, surface finishing direction, and quantity plan. This
+              helps the factory decide what additional information is needed.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold !text-white">
-              4. Confirm Quantity and Project Stage
+              5. Confirm Quantity, Material Expectations, and Project Stage
             </h2>
             <p className="mt-4">
               Custom die casting quotation depends on both the part and the
@@ -245,11 +274,21 @@ export default function ArticlePage() {
               expectations so the factory can evaluate whether the project fits
               its production scope.
             </p>
+            <h3 className="mt-6 text-xl font-semibold !text-white">
+              Material Expectations
+            </h3>
+            <p className="mt-3">
+              If the buyer already has material expectations, mechanical
+              concerns, surface appearance requirements, or restrictions from
+              the final assembly, these should be included in the RFQ. HSX can
+              then review whether aluminum die casting is practical or whether
+              another material or process should be considered.
+            </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold !text-white">
-              5. List Machining and Feature Requirements
+              6. List Machining and Feature Requirements
             </h2>
             <p className="mt-4">
               Many aluminum die casting parts need secondary processing after
@@ -288,7 +327,7 @@ export default function ArticlePage() {
 
           <section>
             <h2 className="text-2xl font-semibold !text-white">
-              6. Choose Surface Finishing Requirements
+              7. Choose Surface Finishing Requirements
             </h2>
             <p className="mt-4">
               Surface finishing can affect appearance, handling, and project
@@ -332,7 +371,7 @@ export default function ArticlePage() {
 
           <section>
             <h2 className="text-2xl font-semibold !text-white">
-              7. Prepare Packaging and Market Requirements
+              8. Prepare Packaging and Market Requirements
             </h2>
             <p className="mt-4">
               Packaging details are often missing from early RFQs, but they can
@@ -352,7 +391,7 @@ export default function ArticlePage() {
 
           <section>
             <h2 className="text-2xl font-semibold !text-white">
-              8. What HSX DIECASTING Can Evaluate
+              9. Suitable Project Review at HSX DIECASTING
             </h2>
             <p className="mt-4">
               HSX DIECASTING is operated by Foshan Huashunxiang Hardware
@@ -368,6 +407,18 @@ export default function ArticlePage() {
               powder coating, paint spraying, aluminum anodizing, OEM / ODM
               customization, and cooperative CNC turning / CNC machining support
               through partner facilities when required.
+            </p>
+            <p className="mt-4">
+              HSX reviews whether the project fits its equipment, mold
+              experience, machining capability, finishing process, and
+              production control. The review is intended to confirm a practical
+              production route before accepting the project.
+            </p>
+            <p className="mt-4">
+              HSX does not blindly accept every inquiry. If another material or
+              process may provide better quality, lower cost, or fewer
+              production risks, HSX will explain this before accepting the
+              project.
             </p>
             <p className="mt-4">
               Buyers can compare this scope on the{" "}
@@ -390,10 +441,12 @@ export default function ArticlePage() {
 
           <section>
             <h2 className="text-2xl font-semibold !text-white">
-              9. Practical RFQ Checklist Summary
+              10. Practical RFQ Checklist Summary
             </h2>
             <p className="mt-4">
-              Before contacting a factory, prepare the following RFQ details:
+              Before contacting a factory, prepare the following RFQ details so
+              HSX can review the project application, part structure, machining
+              needs, finishing route, and production fit more clearly:
             </p>
             <ul className="mt-5 space-y-3">
               {rfqChecklist.map((item) => (
@@ -417,14 +470,15 @@ export default function ArticlePage() {
 
           <section>
             <h2 className="text-2xl font-semibold !text-white">
-              10. Send Your RFQ to HSX
+              11. Send Your RFQ to HSX
             </h2>
             <p className="mt-4">
               To start an OEM aluminum die casting project evaluation, send
-              drawings, 3D files, sample photos, target quantity, finishing
-              requirements, drilling / tapping / threaded feature requirements,
-              CNC requirements if needed, and packaging details by email or
-              WhatsApp.
+              2D drawings, 3D files, sample photos, product application,
+              estimated quantity, material expectations, tolerance
+              requirements, hole position requirements, thread requirements,
+              machining / drilling / tapping requirements, surface finishing
+              requirements, and packaging details by email or WhatsApp.
             </p>
             <p className="mt-4">
               For direct contact details, visit the{" "}
@@ -458,10 +512,11 @@ export default function ArticlePage() {
             Send your custom aluminum die casting RFQ to HSX
           </h2>
           <p className="mt-4 text-sm leading-7">
-            Send drawings, 3D files, sample photos, target quantity, finishing
-            requirements, drilling / tapping / threaded feature requirements,
-            CNC requirements if needed, and packaging details by email or
-            WhatsApp.
+            Send 2D drawings, 3D files such as STEP, STP, IGS, IGES, STL, or
+            X_T, sample photos, product application, estimated quantity,
+            material expectations, tolerance notes, machining / drilling /
+            tapping requirements, surface finishing requirements, and packaging
+            details by email or WhatsApp.
           </p>
           <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
             <a

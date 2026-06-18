@@ -27,7 +27,7 @@ const pageTitle =
   "Aluminum Light Housings Supplier | OEM Die Cast Lamp Housings";
 
 const pageDescription =
-  "HSX DIECASTING supplies OEM aluminum light housings, die cast lamp housings, LED heat-sink bodies, lamp covers, brackets, and compact lighting parts.";
+  "HSX DIECASTING reviews OEM die cast aluminum LED light housing projects, including outdoor light housings, garden lamp housings, work light housings, brackets, enclosures, and compact lighting parts.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -92,14 +92,24 @@ const heroStats = [
 
 const typicalParts: InfoCard[] = [
   {
-    title: "Die Cast Lamp Housings",
+    title: "Die Cast Aluminum LED Light Housings",
     description:
-      "Compact aluminum lamp bodies for LED work lights, automotive auxiliary lights, motorcycle lights, and other OEM lighting programs.",
+      "Compact aluminum lamp bodies for outdoor LED lights, work lights, automotive auxiliary lights, motorcycle lights, and other focused OEM lighting programs.",
+  },
+  {
+    title: "Outdoor LED Light Housings",
+    description:
+      "Die cast aluminum housings for suitable outdoor lighting projects where the housing structure, mounting features, finish, and packaging requirements can be reviewed before quotation.",
+  },
+  {
+    title: "Garden Lamp Housings",
+    description:
+      "Small-to-medium garden lamp bodies, covers, and enclosure-style aluminum parts for buyers who provide drawings, samples, application details, and finishing requirements.",
   },
   {
     title: "LED Heat-Sink Bodies",
     description:
-      "Aluminum housings shaped around heat dissipation, mounting space, cover integration, and compact lighting assembly needs.",
+      "Aluminum housings shaped around ribs, fins, wall thickness, mounting space, cover integration, and compact lighting assembly needs, without overclaiming final product performance.",
   },
   {
     title: "Rear Covers and End Caps",
@@ -117,9 +127,9 @@ const typicalParts: InfoCard[] = [
       "Custom compact aluminum shells for lighting products, hardware accessories, and OEM enclosure-style projects.",
   },
   {
-    title: "Custom Lighting Parts",
+    title: "Aluminum Lighting Brackets and Enclosures",
     description:
-      "Buyer-defined aluminum lighting parts developed from drawings, samples, product photos, or project requirements.",
+      "Lighting brackets, compact enclosures, and semi-finished aluminum die casting parts prepared for drilling, tapping, polishing, powder coating, painting, or buyer-specified finishing.",
   },
 ];
 
@@ -132,7 +142,7 @@ const processSupport: InfoCard[] = [
   {
     title: "Mold and Part Feasibility",
     description:
-      "Check whether the aluminum light housing fits practical 200T and 300T die casting scope before mold development or production planning.",
+      "Check whether the aluminum light housing fits practical 200T and 300T die casting scope before mold development or production planning, including housing structure, wall thickness, ribs, fins, and machining allowance.",
   },
   {
     title: "Aluminum Die Casting",
@@ -147,12 +157,40 @@ const processSupport: InfoCard[] = [
   {
     title: "Surface Finishing",
     description:
-      "Coordinate polishing, grinding, powder coating, spray painting, and anodizing around project appearance and corrosion resistance needs.",
+      "Coordinate polishing, grinding, powder coating, spray painting, and selected anodizing review around project appearance and surface preparation needs.",
   },
   {
     title: "Inspection and Packing",
     description:
       "Check appearance, agreed dimensions, mounting features, thread details, and export packing requirements before shipment.",
+  },
+];
+
+const engineeringReview: InfoCard[] = [
+  {
+    title: "Die Cast Aluminum LED Light Housing Supplier",
+    description:
+      "HSX can review suitable OEM aluminum light housing projects based on 2D drawings, 3D files, samples, estimated quantity, product application, machining needs, surface finishing, and packaging requirements.",
+  },
+  {
+    title: "Lighting Housing Applications",
+    description:
+      "Suitable project directions may include outdoor LED light housings, garden lamp housings, work light housings, motorcycle / automotive light housings, aluminum lighting brackets, and compact enclosure parts.",
+  },
+  {
+    title: "Heat Dissipation Structure Review",
+    description:
+      "For lighting housings, HSX reviews ribs, fins, housing structure, wall thickness, machining allowance, and surface finishing needs where they affect manufacturability. The review does not claim final thermal performance, waterproof performance, certifications, or finished product performance.",
+  },
+  {
+    title: "Secondary Processing and Semi-finished Parts",
+    description:
+      "The factory can support drilling, tapping, polishing, powder coating, painting, and semi-finished aluminum die casting parts before final finishing or buyer-side assembly planning.",
+  },
+  {
+    title: "Right-sized Factory Fit",
+    description:
+      "HSX focuses on suitable small-to-medium aluminum die casting projects that match its equipment and process control, rather than oversized structural castings or unrelated all-product sourcing.",
   },
 ];
 
@@ -258,11 +296,13 @@ const buyerFit: InfoCard[] = [
 ];
 
 const rfqChecklist = [
-  "2D drawings, 3D files, sample photos, or reference product photos",
-  "Housing dimensions, mounting areas, wall thickness, and assembly requirements",
-  "Target finish such as powder coating, spray painting, anodizing, or polishing",
-  "Estimated order quantity and repeat-order expectations",
-  "Application market such as LED work light, automotive light, or motorcycle light",
+  "2D drawings with dimensions, mounting points, and important tolerance notes",
+  "3D files such as STEP, STP, IGS, IGES, STL, or X_T when available",
+  "Sample photos or reference product photos",
+  "Product application such as outdoor LED light, garden lamp, work light, motorcycle light, or automotive light",
+  "Estimated quantity and repeat-order expectations",
+  "Machining requirements such as drilling, tapping, threaded holes, or assembly features",
+  "Surface finishing requirements such as powder coating, painting, polishing, or anodizing review",
   "Packaging requirements, branding needs, and target market information",
 ];
 
@@ -587,6 +627,35 @@ export default function AluminumLightHousingsPage() {
                       ))}
                     </ul>
                   </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="engineering-review"
+          className="border-b border-white/8 py-16 lg:py-24"
+        >
+          <div className="container-shell">
+            <SectionHeading
+              eyebrow="Engineering review"
+              title="Practical review for OEM die cast aluminum LED light housings"
+              description="HSX DIECASTING reviews aluminum light housing inquiries as factory-fit projects, not as generic product trading. The focus is on suitable small-to-medium aluminum die casting parts that can move through mold planning, die casting, secondary processing, finishing preparation, and export packing with clear buyer requirements."
+            />
+
+            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+              {engineeringReview.map((item, index) => (
+                <article key={`${item.title}-${index}`} className="industrial-card p-6">
+                  <p className="section-kicker">
+                    Review {String(index + 1).padStart(2, "0")}
+                  </p>
+                  <h2 className="mt-4 text-2xl font-semibold text-white">
+                    {item.title}
+                  </h2>
+                  <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
+                    {item.description}
+                  </p>
                 </article>
               ))}
             </div>

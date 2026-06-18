@@ -334,6 +334,39 @@ const buyerReasons: InfoCard[] = [
   },
 ];
 
+const factoryExperience: InfoCard[] = [
+  {
+    title: "Right-sized Machine Tonnage",
+    description:
+      "Larger die casting machines are not automatically better for small-to-medium aluminum parts. Suitable tonnage, mold stability, cycle control, trimming, machining, and finishing control may be more important than simply choosing oversized equipment.",
+  },
+  {
+    title: "Stable Mold Cavity Layout",
+    description:
+      "For some small-to-medium parts, stable one-cavity or two-cavity molds may be more practical than unstable multi-cavity layouts. HSX reviews cavity count around part structure, aluminum flow, cycle time, trimming work, expected yield, and downstream cost.",
+  },
+  {
+    title: "Mold Success Is Not Only the Rough Casting",
+    description:
+      "A successful mold is not only about forming the casting blank. Gate, runner, overflow, venting, drilling position, tapping features, and machining allowance should help reduce trimming work, machining time, downstream processing cost, and total production cost.",
+  },
+  {
+    title: "Prototype Confirmation Before Tooling",
+    description:
+      "After cooperation terms and the tooling-fee arrangement are confirmed, HSX may make a prototype for customer assembly confirmation before formal mold production. Prototype methods may include a 3D-printed plastic prototype or a CNC-machined aluminum prototype. Too many mold modifications may affect mold life, delay delivery, and sometimes affect casting blank appearance or stability because mold changes may affect molten aluminum flow.",
+  },
+  {
+    title: "We Review Before We Produce",
+    description:
+      "HSX does not blindly accept every OEM aluminum die casting inquiry. If another material or process may offer better quality, lower cost, or fewer production risks, the factory will explain this before accepting the project.",
+  },
+  {
+    title: "From Sample Approval to Stable Batch Delivery",
+    description:
+      "A good sample is only the beginning. HSX focuses on stable batch production control, mold maintenance, drilling and tapping control, polishing consistency, finishing preparation, and customer-specific inspection requirements.",
+  },
+];
+
 const rfqRequirements = [
   "Part drawings, 3D files, or clear dimensional sketches",
   "Reference samples or product photos when drawings are not complete",
@@ -868,6 +901,35 @@ export default function OemAluminumDieCastingPartsPage() {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="factory-experience"
+          className="border-b border-white/8 bg-[linear-gradient(180deg,rgba(14,14,14,0.98)_0%,rgba(7,7,7,1)_100%)] py-16 lg:py-24"
+        >
+          <div className="container-shell">
+            <SectionHeading
+              eyebrow="Factory experience"
+              title="Practical review before OEM aluminum die casting production"
+              description="HSX DIECASTING is a real aluminum die casting factory, not a trading company. The factory reviews whether each small-to-medium OEM aluminum die casting project matches its equipment, mold planning, trimming, machining, finishing, and batch control capability before production."
+            />
+
+            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+              {factoryExperience.map((item, index) => (
+                <article key={`${item.title}-${index}`} className="industrial-card p-6">
+                  <p className="section-kicker">
+                    Experience {String(index + 1).padStart(2, "0")}
+                  </p>
+                  <h2 className="mt-4 text-2xl font-semibold text-white">
+                    {item.title}
+                  </h2>
+                  <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
+                    {item.description}
+                  </p>
+                </article>
+              ))}
             </div>
           </div>
         </section>
