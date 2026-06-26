@@ -62,6 +62,25 @@ Explain that HSX clarifies key requirements before tooling or production to redu
 - Check organic impressions after 1 to 3 hours.
 - Check impressions, likes, comments, reposts, company visits, and new followers after 24 hours.
 
+## Third Factory Video Post
+
+- Platform: LinkedIn company page.
+- Company page: HSX DIECASTING.
+- Post date: 2026-06-25.
+- Post type: Video.
+- Topic: Post-casting drilling for aluminum die casting parts; different products may require different fixtures.
+
+## Third Post 24-Hour Performance Snapshot
+
+- Impressions: 20.
+- Video views: 6.
+- Clicks: 2.
+- Ads: 0.
+- Boost / promotion: no.
+- LinkedIn actions after publishing: no self-like, no self-comment, no self-repost.
+- Comparison note: the 2026-06-23 RFQ / project review text post showed 83 impressions and 1 click in the same analytics view.
+- Interpretation: the video post has lower reach so far than the text post, but better click efficiency. Keep it published and continue observing; do not delete, repost, or boost.
+
 ## Rules
 
 - Do not boost/promote the LinkedIn post yet.
