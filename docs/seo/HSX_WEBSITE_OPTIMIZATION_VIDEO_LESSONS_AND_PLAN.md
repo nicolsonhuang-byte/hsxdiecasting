@@ -87,6 +87,81 @@ This document records SEO, GEO, foreign trade website, B2B traffic, external tru
 - Confidentiality and customer tooling policy: customer-funded mold handling, drawings, samples, project parameters, and safe public display rules.
 - Factory process video page or section: curated public-safe videos showing real process evidence.
 
+## Additional Lessons From SEO Tools and AI/GEO Content Videos
+
+### SEO Tools and Competitor Research
+
+- Many foreign trade and independent websites use SEO intentionally.
+- HSX should not rely only on guessing keywords.
+- Future SEO planning should combine Google Search Console data, competitor/peer website structure research, and long-tail keyword discovery.
+- Useful research directions include competitor keywords, ranking pages, content structure, backlinks, and long-tail search terms.
+- HSX should study but not copy competitor content.
+
+### Long-Tail Keyword Strategy for HSX
+
+HSX should pay attention to practical long-tail topics such as:
+
+- aluminum die casting parts
+- custom aluminum die casting
+- die cast aluminum housing
+- aluminum light housing
+- pump housing casting
+- die cast pump body
+- post-casting drilling
+- secondary machining for die casting
+- surface finishing for aluminum die casting
+- RFQ checklist for aluminum die casting
+
+### Article and Page Writing Upgrade
+
+- Avoid only writing definition-style content.
+- HSX pages should be project-review oriented, not just informational.
+- Content should help buyers understand what information is needed before quotation, tooling, machining, finishing, and production.
+- Pages should answer practical buyer questions, not just explain what a term means.
+- Content should connect product application, material/process choice, machining requirements, surface finishing, testing, packaging, and RFQ steps.
+
+### AI/GEO Content Direction
+
+- Google and AI systems are more likely to understand pages with clear structure, evidence, application scenarios, and specific technical context.
+- HSX should build structured pages with headings, FAQs, RFQ checklists, image alt text, and practical factory experience.
+- HSX should move from generic product descriptions toward factory project review knowledge.
+
+### Website Content Implications
+
+Future content clusters should emphasize:
+
+- Secondary machining for aluminum die casting parts.
+- Post-casting drilling and tapping requirements.
+- Fixture/jig considerations for different parts.
+- Aluminum die-cast pump body / pump housing components.
+- LED light housing project review.
+- Surface finishing for aluminum die casting parts.
+- Materials suitable for aluminum die casting projects.
+- Confidentiality and customer tooling policy.
+
+### Social Media Implications
+
+- LinkedIn and YouTube posts should turn factory videos into small factory knowledge points.
+- Example: drilling video should explain that different parts require different fixtures.
+- Example: pump body sample videos can support pump body / pump housing project review content.
+- Example: mold maintenance video can support production stability and batch consistency messaging.
+
+### Customer Development Implications
+
+- When reviewing target companies, HSX should not only ask whether they may need aluminum die casting.
+- Also check whether their websites show application pages, technical product pages, supplier/RFQ pages, standards, housing/enclosure/pump/lighting product details, or signs of outsourced component needs.
+- Deep-dive reviews should produce both buyer-fit judgement and website-learning points for HSX.
+
+### Positioning Guardrails
+
+- HSX is a real aluminum die casting factory.
+- HSX focuses on small-to-medium aluminum die casting parts.
+- CNC is only secondary machining after die casting when required.
+- Do not position HSX as a CNC shop.
+- Do not proactively mention 7075.
+- Do not claim aerospace, military, brake, safety, load-bearing, performance, or structural functions unless specifically confirmed safe.
+- Public content should focus on ordinary commercial and industrial aluminum die casting projects.
+
 ## 10. Timeline
 
 - Now to 2026-06-27: observe only, no website changes.
