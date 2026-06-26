@@ -24,10 +24,10 @@ type VisualProgram = {
 };
 
 const pageTitle =
-  "OEM Aluminum Die Casting Parts Supplier | HSX DIECASTING";
+  "OEM Aluminum Die Casting Parts Factory | Small-to-Medium Projects";
 
 const pageDescription =
-  "HSX DIECASTING supplies OEM aluminum die casting parts, lighting housings, lamp brackets, light enclosures, end caps, covers, CNC machining coordination, anodizing, powder coating, and custom parts from drawings or samples.";
+  "HSX DIECASTING reviews small-to-medium OEM aluminum die casting parts from drawings, 3D files, samples, or photos, with drilling, tapping, finishing support, and practical factory RFQ response.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -135,7 +135,7 @@ const manufacturingSupport: InfoCard[] = [
   {
     title: "Drawing and Sample Review",
     description:
-      "Projects can start from 2D drawings, 3D files, reference parts, or approved samples so key dimensions, wall thickness, and mounting features are checked before tooling begins.",
+      "New aluminum die casting projects can start from 2D drawings, 3D files, reference samples, or clear product photos so key dimensions, wall thickness, mounting features, and RFQ gaps can be checked quickly.",
   },
   {
     title: "Mold Planning",
@@ -300,7 +300,7 @@ const buyerReasons: InfoCard[] = [
   {
     title: "Drawing and Sample Based OEM Support",
     description:
-      "HSX accepts OEM aluminum die casting parts manufacturing based on drawings, samples, or custom project requirements.",
+      "HSX reviews OEM aluminum die casting parts from drawings, 3D files, samples, or photos, which is useful for new product landing, replacement parts, and early-stage project evaluation.",
   },
   {
     title: "Realistic 200T and 300T Production Scope",
@@ -325,12 +325,17 @@ const buyerReasons: InfoCard[] = [
   {
     title: "Export Buyer Communication",
     description:
-      "The business positioning is built for global buyers who need practical RFQ evaluation, clear scope confirmation, and direct export communication.",
+      "The business positioning is built for global buyers who need practical RFQ evaluation, clear scope confirmation, direct export communication, and a quick first response on whether a project fits HSX factory capability.",
   },
   {
     title: "Focused Small Aluminum Die Casting Positioning",
     description:
       "For buyers seeking a small aluminum die casting parts manufacturer or a custom aluminum die casting parts China sourcing partner, the RFQ workflow stays centered on manufacturable compact aluminum parts.",
+  },
+  {
+    title: "Practical Second Supplier Option",
+    description:
+      "For buyers who already have suppliers, HSX can still review drawings, samples, quality concerns, machining details, or finishing requirements as a practical second option for suitable small-to-medium aluminum die casting projects.",
   },
 ];
 
@@ -370,9 +375,10 @@ const factoryExperience: InfoCard[] = [
 const rfqRequirements = [
   "Part drawings, 3D files, or clear dimensional sketches",
   "Reference samples or product photos when drawings are not complete",
+  "Product application, whether this is new tooling or an existing mold project, and the main reason for supplier review",
   "Material or appearance requirements for the aluminum part",
   "Estimated order quantity and repeat-order expectations",
-  "CNC turning, CNC machining, drilling, tapping, or threaded feature requirements if needed",
+  "Secondary machining after casting, such as drilling, tapping, threaded features, or CNC machining through partners if needed",
   "Required surface finish such as anodizing, powder coating, spray painting, or polishing",
   "Packaging requirements and target market information",
 ];
@@ -443,9 +449,9 @@ export default function OemAluminumDieCastingPartsPage() {
               <span>{contactDetails.address}</span>
             </a>
           </div>
-          <a href={contactDetails.whatsappHref} className="gold-button w-full text-center sm:w-auto">
+          <Link href="/contact" className="gold-button w-full text-center sm:w-auto">
             Get a Quote
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -512,22 +518,22 @@ export default function OemAluminumDieCastingPartsPage() {
             <div className="motion-rise">
               <p className="section-kicker">OEM aluminum die casting parts</p>
               <h1 className="section-heading mt-6 text-4xl leading-none text-white sm:text-5xl xl:text-6xl">
-                OEM Aluminum Die Casting Parts for Lighting Housings, Brackets,
-                Covers, and End Caps
+                OEM Aluminum Die Casting Parts Factory for Small-to-Medium
+                Projects
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-[#d4cdc0]">
-                Send drawings, 3D files, sample photos, or project requirements
-                for compact aluminum lighting housings, lamp brackets, light
-                enclosure shells, covers, end caps, and custom OEM aluminum
-                parts. HSX supports 200T / 300T aluminum die casting, drilling,
-                tapping, polishing, anodizing, powder coating, paint spraying,
-                and cooperative CNC machining support through partner facilities
-                when required.
+                Send drawings, 3D files, samples, or product photos for quick
+                factory review of compact aluminum housings, brackets, covers,
+                end caps, shells, and custom OEM aluminum parts. HSX is
+                small-batch friendly for suitable new product landing projects
+                and practical second-supplier reviews.
               </p>
               <p className="mt-5 max-w-2xl text-base leading-8 text-[#c7beaf]">
-                As a China-based aluminum die casting parts supplier, the
-                factory stays focused on practical small-to-medium part
-                manufacturing that matches 200T and 300T machine capacity.
+                As a China-based aluminum die casting factory, HSX stays
+                focused on practical small-to-medium parts that match 200T and
+                300T machine capacity, with secondary drilling, tapping,
+                finishing support, and partner CNC machining only when required
+                after casting.
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -1000,8 +1006,8 @@ export default function OemAluminumDieCastingPartsPage() {
             <div>
               <SectionHeading
                 eyebrow="Why global buyers choose us"
-                title="Clear part scope, OEM support, and practical factory coordination"
-                description="The strongest signal for wholesale and OEM buyers is accuracy. HSX is positioned as an aluminum die casting parts supplier focused on compact projects, coordinated secondary processes, and straightforward RFQ communication."
+                title="Quick RFQ review, OEM support, and practical factory coordination"
+                description="The strongest signal for wholesale and OEM buyers is accuracy. HSX is positioned as an aluminum die casting parts supplier focused on compact projects, small-batch friendly project review, coordinated secondary processes, and straightforward RFQ communication."
               />
             </div>
 
@@ -1024,8 +1030,8 @@ export default function OemAluminumDieCastingPartsPage() {
           <div className="container-shell">
             <SectionHeading
               eyebrow="RFQ requirements"
-              title="Send the details needed for accurate OEM quotation"
-              description="For faster evaluation, buyers should send the part files, quantity plan, finish requirements, and packaging information that define the OEM aluminum part project clearly."
+              title="Send the details needed for faster OEM project review"
+              description="For faster evaluation, buyers should send part files, application details, quantity plan, machining needs, finish requirements, packaging information, and whether the project is new tooling, an existing mold, or a second-supplier review."
             />
 
             <div className="mt-10 industrial-card p-6 sm:p-8">

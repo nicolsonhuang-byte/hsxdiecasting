@@ -20,10 +20,10 @@ type ContactCard = {
 };
 
 const pageTitle =
-  "Contact HSX DIECASTING | Aluminum Die Casting RFQ & OEM Quote";
+  "Send Aluminum Die Casting RFQ to HSX Factory | Contact";
 
 const pageDescription =
-  "Contact HSX DIECASTING for aluminum die casting RFQ, OEM quotation, LED work lights, aluminum housings, and custom product project support.";
+  "Send drawings, 3D files, samples, or photos to HSX DIECASTING for quick small-to-medium aluminum die casting project review, RFQ support, machining, finishing, testing, and packaging discussion.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -73,13 +73,13 @@ const heroStats = [
   },
   {
     label: "Product Mix",
-    value: "Parts + LED Lights",
-    note: "OEM aluminum parts, automotive LED lights, motorcycle LED lights, LED work lights, and decorative brake caliper appearance covers",
+    value: "OEM Parts",
+    note: "Small-to-medium aluminum die casting parts, aluminum light housings, brackets, covers, and selected project-based OEM components",
   },
   {
     label: "RFQ Flow",
-    value: "Drawings to Shipment",
-    note: "Engineering review, quotation, sample confirmation, production, finishing, packaging, and export delivery support",
+    value: "Files to Review",
+    note: "Drawings, 3D files, samples, photos, quantity, material, application, machining, finishing, testing, and packaging review",
   },
 ];
 
@@ -88,13 +88,13 @@ const contactCards: ContactCard[] = [
     title: "Email HSX DIECASTING for RFQ Files",
     value: contactDetails.email,
     href: `mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`,
-    note: "Best for drawings, samples, RFQ files, and detailed OEM project requirements.",
+    note: "Best for drawings, 3D files, samples, RFQ files, and detailed OEM project requirements.",
   },
   {
     title: "WhatsApp HSX DIECASTING for Fast Quotation Contact",
     value: contactDetails.phone,
     href: contactDetails.whatsappHref,
-    note: "Fast contact path for quotation follow-up, buyer communication, and project discussion.",
+    note: "Fast contact path for product photos, quick project review, buyer communication, and quotation follow-up.",
   },
   {
     title: "WeChat Contact for OEM Project Communication",
@@ -113,11 +113,13 @@ const rfqChecklist = [
   "3D files such as STEP, STP, IGS, IGES, STL, X_T for die casting evaluation",
   "Sample photos or reference sample details when drawings are incomplete",
   "Product application and end-use environment",
-  "Estimated quantity for quotation and production planning",
+  "Estimated quantity for quotation, small-batch planning, or repeat-order planning",
   "Material expectations for the aluminum part or housing",
   "Surface finishing requirements such as anodizing, powder coating, spray painting, polishing, or grinding",
   "Machining, drilling, and tapping requirements for mounting or assembly features",
+  "Testing or inspection requirements such as key dimensions, threads, appearance, corrosion, waterproofing, or customer-specific checks",
   "Packaging requirements for export shipment or buyer-side retail preparation",
+  "Whether the project is new tooling, an existing mold, a sample-copy review, or a second-supplier review",
 ];
 
 const acceptedFileFormats = [
@@ -157,8 +159,8 @@ const fileDeliveryNotes = [
 ];
 
 const processSteps = [
-  "Send drawings / samples",
-  "Engineering review",
+  "Send files / samples",
+  "Quick project review",
   "Quotation",
   "Mold development",
   "Sample confirmation",
@@ -182,9 +184,9 @@ const scopeNotes: InfoCard[] = [
       "The aluminum die casting scope stays limited to compact housings, brackets, covers, shells, end caps, and other small-to-medium parts suitable for 200T and 300T machines.",
   },
   {
-    title: "LED Lighting and Aluminum Housing Product Supply",
+    title: "Aluminum Light Housing and Lighting-Related Parts",
     description:
-      "HSX supplies automotive LED lights, motorcycle LED lights, LED work lights, and related aluminum light housings for global buyers.",
+      "HSX reviews aluminum light housings, brackets, covers, and selected lighting-related aluminum die casting parts for global buyers. Complete lamp assembly should only be discussed when project details are confirmed.",
   },
   {
     title: "Decorative Brake Caliper Cover Positioning",
@@ -331,20 +333,20 @@ export default function ContactPage() {
             <div className="motion-rise">
               <p className="section-kicker">Contact / Get a Quote</p>
               <h1 className="section-heading mt-6 text-4xl leading-none text-white sm:text-5xl xl:text-6xl">
-                Send Your RFQ or Drawings
+                Send Aluminum Die Casting RFQ to HSX Factory
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-[#d4cdc0]">
-                Contact us for OEM aluminum die casting parts, LED work lights,
-                automotive LED lights, motorcycle LED lights, and decorative
-                brake caliper covers. We review drawings, samples, photos, and
-                RFQ details for global wholesalers, importers, distributors,
-                aftermarket brands, and OEM buyers.
+                Send drawings, 3D files, samples, or product photos for quick
+                project review. HSX reviews small-to-medium OEM aluminum die
+                casting parts, aluminum light housings, brackets, covers,
+                shells, and related project requirements for global B2B buyers.
               </p>
               <p className="mt-5 max-w-2xl text-base leading-8 text-[#c7beaf]">
-                The aluminum die casting scope stays focused on
-                small-to-medium parts suitable for 200T and 300T machines,
-                including compact housings, brackets, covers, shells, and
-                related aluminum lighting components.
+                The aluminum die casting scope stays focused on parts suitable
+                for 200T and 300T machines. Small-batch and new project support
+                can be reviewed when buyers provide quantity, material,
+                application, machining, surface finish, testing, packaging, and
+                tooling status details.
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -540,7 +542,7 @@ export default function ContactPage() {
               <SectionHeading
                 eyebrow="What to send"
                 title="RFQ details that help the factory review your project accurately"
-                description="The strongest RFQ starts with buyer part files, quantity planning, material expectations, product application, machining requirements, finishing needs, and packaging details."
+                description="The strongest RFQ starts with buyer part files, quantity planning, material expectations, product application, machining requirements, finishing needs, testing requirements, packaging details, and whether the project is new tooling or an existing mold."
               />
 
               <ul className="mt-10 space-y-4 text-base leading-8 text-[#e7dfcf]">
@@ -624,7 +626,7 @@ export default function ContactPage() {
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
-                  href={`mailto:${contactDetails.email}?subject=RFQ%20Files%20for%20HSX%20Diecasting%20OEM%20Project&body=Hello%20HSX%20Diecasting%2C%0A%0APlease%20find%20the%20attached%20files%20for%20quotation%20review.%0A%0A3D%20CAD%20file%20%28STEP%20%2F%20STP%2C%20IGS%20%2F%20IGES%2C%20STL%2C%20X_T%29%3A%0A2D%20drawing%20%28PDF%2C%20DWG%2C%20DXF%29%3A%0ASample%20photos%3A%0A%0AProduct%20type%3A%0AQuantity%3A%0AMaterial%20%2F%20finish%3A%0APackaging%20requirements%3A%0ATarget%20market%3A%0A%0APlease%20contact%20me%20with%20pricing%20and%20production%20details.%0A%0ABest%20regards%2C`}
+                  href={`mailto:${contactDetails.email}?subject=RFQ%20Files%20for%20HSX%20Diecasting%20OEM%20Project&body=Hello%20HSX%20Diecasting%2C%0A%0APlease%20find%20the%20attached%20files%20for%20quotation%20review.%0A%0A3D%20CAD%20file%20%28STEP%20%2F%20STP%2C%20IGS%20%2F%20IGES%2C%20STL%2C%20X_T%29%3A%0A2D%20drawing%20%28PDF%2C%20DWG%2C%20DXF%29%3A%0ASample%20photos%20or%20reference%20photos%3A%0A%0AProduct%20type%20and%20application%3A%0AQuantity%3A%0AMaterial%20expectation%3A%0AMachining%20/%20drilling%20/%20tapping%20requirements%3A%0ASurface%20finish%20requirement%3A%0ATesting%20or%20inspection%20requirements%3A%0APackaging%20requirements%3A%0ANew%20tooling%20or%20existing%20mold%3A%0ATarget%20market%3A%0A%0APlease%20contact%20me%20with%20project%20review%20and%20quotation%20details.%0A%0ABest%20regards%2C`}
                   className="gold-button text-center"
                 >
                   Email Files to HSX
@@ -648,7 +650,7 @@ export default function ContactPage() {
             <SectionHeading
               eyebrow="OEM project process"
               title="From buyer RFQ to finished shipment"
-              description="The quotation and production workflow is organized around clear project inputs, engineering review, sample confirmation, production, finishing, and export packing."
+              description="The quotation and production workflow is organized around clear project inputs, quick project review, sample confirmation, production, finishing, inspection, and export packing."
             />
 
             <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
@@ -693,7 +695,7 @@ export default function ContactPage() {
               <SectionHeading
                 eyebrow="Capability reminder"
                 title="Equipment and finishing support for compact OEM part supply"
-                description="The factory supports small-to-medium aluminum die casting parts and related lighting housings with post-machining and finishing coordination."
+                description="The factory supports small-to-medium aluminum die casting parts and related lighting housings with drilling, tapping, selected partner CNC machining after casting when required, finishing coordination, and small-batch or new project review."
               />
 
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
