@@ -138,7 +138,7 @@ export default function ArticlePage() {
             <p className="mt-4">
               The first RFQ detail should be the part type. A factory cannot
               evaluate a custom aluminum die casting project accurately if the
-              buyer only says "aluminum part" without explaining the product
+              buyer only says &quot;aluminum part&quot; without explaining the product
               form and expected use.
             </p>
             <h3 className="mt-6 text-xl font-semibold !text-white">
