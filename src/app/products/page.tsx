@@ -624,6 +624,16 @@ export default function ProductsPage() {
               title="Finishing options for appearance and protection"
               description="Surface treatment is coordinated around the end-market appearance, corrosion resistance, and visual quality required by each aluminum part or lighting program."
             />
+            <p className="mt-6 max-w-3xl text-sm leading-7 text-[#cfc5b5]">
+              For appearance-sensitive RFQs, buyers can also review{" "}
+              <Link
+                href="/anodizable-aluminum-die-casting-parts"
+                className="font-semibold text-[#efcf8d] underline-offset-4 transition-colors hover:text-white hover:underline"
+              >
+                aluminum die casting parts for anodizing
+              </Link>{" "}
+              before confirming surface finishing expectations.
+            </p>
 
             <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
               {surfaceFinishes.map((finish, index) => (

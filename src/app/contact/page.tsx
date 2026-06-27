@@ -544,6 +544,17 @@ export default function ContactPage() {
                 title="RFQ details that help the factory review your project accurately"
                 description="The strongest RFQ starts with buyer part files, quantity planning, material expectations, product application, machining requirements, finishing needs, testing requirements, packaging details, and whether the project is new tooling or an existing mold."
               />
+              <p className="mt-6 text-sm leading-7 text-[#d8cfbf]">
+                If the project includes anodizing or visible metallic appearance
+                requirements, please also review HSX guidance for{" "}
+                <Link
+                  href="/anodizable-aluminum-die-casting-parts"
+                  className="font-semibold text-[#efcf8d] underline-offset-4 transition-colors hover:text-white hover:underline"
+                >
+                  anodizable aluminum die casting parts
+                </Link>{" "}
+                before sending finish notes.
+              </p>
 
               <ul className="mt-10 space-y-4 text-base leading-8 text-[#e7dfcf]">
                 {rfqChecklist.map((item) => (
