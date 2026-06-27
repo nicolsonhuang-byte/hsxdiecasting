@@ -40,3 +40,22 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .omx/
+
+# HSX housekeeping: local caches, generated output, logs, and media temp files
+.codex_pydeps/
+output/
+*.log
+ffmpeg-log*.txt
+
+tmp-*
+tmp_*/
+tmp*/
+_*_frames/
+_spray*/
+_spray*.jpg
+_subtitle*/
+tmp-edited-*/
+tmp-video-*/
+
+video_edit_assets/
+poster-*.png
