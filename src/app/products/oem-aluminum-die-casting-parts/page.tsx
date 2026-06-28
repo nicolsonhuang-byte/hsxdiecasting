@@ -24,10 +24,10 @@ type VisualProgram = {
 };
 
 const pageTitle =
-  "OEM Aluminum Die Casting Parts Factory | Small-to-Medium Projects";
+  "OEM Aluminum Die Casting Parts for Small-to-Medium Projects | HSX DIECASTING";
 
 const pageDescription =
-  "HSX DIECASTING reviews small-to-medium OEM aluminum die casting parts from drawings, 3D files, samples, or photos, with drilling, tapping, finishing support, and practical factory RFQ response.";
+  "HSX DIECASTING reviews and produces small-to-medium OEM aluminum die casting parts, housings, covers, brackets, and machined aluminum components. Send drawings, 3D files, sample photos, quantity, machining, and finishing requirements for project review before quotation.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -244,7 +244,7 @@ const surfaceFinishes: InfoCard[] = [
   {
     title: "Anodizing",
     description:
-      "Used when the part needs a clean metallic look, added corrosion resistance, or a controlled appearance on exposed aluminum surfaces.",
+      "Reviewed for suitable projects when the buyer needs a controlled metallic appearance on exposed aluminum surfaces. Final anodized appearance depends on alloy selection, casting quality, surface preparation, and sample evaluation.",
   },
   {
     title: "Powder Coating",
@@ -343,7 +343,7 @@ const factoryExperience: InfoCard[] = [
   {
     title: "Right-sized Machine Tonnage",
     description:
-      "Larger die casting machines are not automatically better for small-to-medium aluminum parts. Suitable tonnage, mold stability, cycle control, trimming, machining, and finishing control may be more important than simply choosing oversized equipment.",
+      "Bigger die casting machines are not automatically better for small-to-medium aluminum parts. Suitable tonnage, mold stability, casting flow, venting, cycle control, trimming, machining, and finishing control may be more important than simply choosing oversized equipment.",
   },
   {
     title: "Stable Mold Cavity Layout",
@@ -356,9 +356,19 @@ const factoryExperience: InfoCard[] = [
       "A successful mold is not only about forming the casting blank. Gate, runner, overflow, venting, drilling position, tapping features, and machining allowance should help reduce trimming work, machining time, downstream processing cost, and total production cost.",
   },
   {
+    title: "Core Pins, Fixed Pins, and Hole Planning",
+    description:
+      "For some hole structures, core pins or fixed pins may help reduce later drilling or machining steps. The feasibility depends on part design, tolerance requirements, mold structure, and production stability.",
+  },
+  {
     title: "Prototype Confirmation Before Tooling",
     description:
       "After cooperation terms and agreed tooling terms are confirmed, HSX may make a prototype for customer assembly confirmation before formal mold production. Prototype methods may include a 3D-printed plastic prototype or a CNC-machined aluminum prototype. Too many mold modifications may affect mold life, delay delivery, and sometimes affect casting blank appearance or stability because mold changes may affect molten aluminum flow.",
+  },
+  {
+    title: "Mold Durability Depends on Project Conditions",
+    description:
+      "Mold durability depends on part structure, alloy, production volume, thermal cycle, maintenance, and mold material selection. HSX reviews these factors cautiously instead of publishing a guaranteed tooling life.",
   },
   {
     title: "We Review Before We Produce",
@@ -373,14 +383,45 @@ const factoryExperience: InfoCard[] = [
 ];
 
 const rfqRequirements = [
-  "Part drawings, 3D files, or clear dimensional sketches",
-  "Reference samples or product photos when drawings are not complete",
+  "2D drawings, 3D files, or clear dimensional sketches",
+  "Sample photos or existing part photos when drawings are not complete",
   "Product application, whether this is new tooling or an existing mold project, and the main reason for supplier review",
   "Material or appearance requirements for the aluminum part",
   "Estimated order quantity and repeat-order expectations",
-  "Secondary machining after casting, such as drilling, tapping, threaded features, or CNC machining through partners if needed",
-  "Required surface finish such as anodizing, powder coating, spray painting, or polishing",
-  "Packaging requirements and target market information",
+  "Secondary machining after casting, such as drilling, tapping, threaded features, or CNC machining through partners when required",
+  "Drilling or tapping requirements, hole positions, thread specifications, and tolerance expectations",
+  "Required surface finish such as polishing, powder coating, spray painting, or anodizing feasibility review for suitable projects",
+  "Packaging needs, testing requirements if applicable, and target market information",
+];
+
+const faqItems = [
+  {
+    question: "What OEM aluminum die casting parts can HSX review?",
+    answer:
+      "HSX can review small-to-medium OEM aluminum die casting parts such as housings, covers, brackets, rear covers, heat-sink housings, mounting parts, and machined aluminum components based on drawings, 3D files, sample photos, quantity, machining, and finishing requirements.",
+  },
+  {
+    question:
+      "Is a bigger die casting machine always better for small OEM aluminum parts?",
+    answer:
+      "Not always. Small-to-medium aluminum parts need right-sized die casting production. Machine tonnage, part size, projected area, mold structure, casting flow, venting, trimming, machining, and finishing requirements should be reviewed together before production.",
+  },
+  {
+    question: "What should buyers send for an OEM aluminum die casting RFQ?",
+    answer:
+      "Buyers can send 2D drawings, 3D files, sample photos, existing part photos, target material, quantity, application, machining requirements, drilling or tapping requirements, surface finishing requirements, and packaging needs.",
+  },
+  {
+    question: "Can core pins or fixed pins reduce later drilling?",
+    answer:
+      "For some hole structures, core pins or fixed pins may help reduce later drilling or machining steps. The feasibility depends on part design, tolerance requirements, mold structure, and production stability.",
+  },
+  {
+    question:
+      "Can all die-cast aluminum parts be anodized with a perfect appearance?",
+    answer:
+      "No. Anodized appearance depends on alloy selection, casting quality, porosity, surface preparation, visible surface requirements, and sample evaluation. HSX can review anodizing feasibility before production.",
+  },
 ];
 
 function SectionHeading({
@@ -518,8 +559,7 @@ export default function OemAluminumDieCastingPartsPage() {
             <div className="motion-rise">
               <p className="section-kicker">OEM aluminum die casting parts</p>
               <h1 className="section-heading mt-6 text-4xl leading-none text-white sm:text-5xl xl:text-6xl">
-                OEM Aluminum Die Casting Parts Factory for Small-to-Medium
-                Projects
+                OEM Aluminum Die Casting Parts for Small-to-Medium Projects
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-[#d4cdc0]">
                 Send drawings, 3D files, samples, or product photos for quick
@@ -537,15 +577,12 @@ export default function OemAluminumDieCastingPartsPage() {
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <a
-                  href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ARegards%2C`}
-                  className="gold-button text-center"
-                >
-                  Send RFQ Files
-                </a>
-                <a href={contactDetails.whatsappHref} className="outline-button text-center">
-                  WhatsApp Project Review
-                </a>
+                <Link href="/b2b-oem-project-review" className="gold-button text-center">
+                  Request Project Review
+                </Link>
+                <Link href="/contact" className="outline-button text-center">
+                  Send RFQ Details
+                </Link>
               </div>
 
               <p className="mt-6 max-w-2xl text-sm leading-7 text-[#c9c1b2]">
@@ -671,8 +708,8 @@ export default function OemAluminumDieCastingPartsPage() {
           <div className="container-shell">
             <SectionHeading
               eyebrow="What we manufacture"
-              title="Small-to-medium OEM aluminum parts with realistic product fit"
-              description="This page is dedicated to compact OEM aluminum die casting parts that suit 200T and 300T machine capacity. The product scope is written for buyers who need manufacturable housings, shells, brackets, caps, and accessory components with post-machining and finishing support."
+              title="OEM Aluminum Parts HSX Can Review"
+              description="This page is dedicated to compact OEM aluminum die casting parts that suit 200T and 300T machine capacity. HSX reviews whether housings, covers, brackets, rear covers, heat-sink housings, mounting parts, and machined aluminum components fit the factory process before quotation."
             />
 
             <div className="mt-12 grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center">
@@ -825,8 +862,8 @@ export default function OemAluminumDieCastingPartsPage() {
               <div>
                 <SectionHeading
                   eyebrow="OEM custom manufacturing support"
-                  title="From buyer files to finished aluminum parts"
-                  description="HSX accepts OEM aluminum die casting parts manufacturing based on drawings, samples, or custom project requirements. The workflow is structured for mold development, die casting, coordinated CNC machining support through partner facilities when required, hole processing, finishing, assembly coordination, and packaging support."
+                  title="Project Suitability Review Before Quotation"
+                  description="HSX reviews part structure, size, wall thickness, holes, threads, machining steps, surface finishing requirements, quantity, and application details before quotation. The workflow is structured for mold development, die casting, coordinated CNC machining support through partner facilities when required, hole processing, finishing, assembly coordination, and packaging support."
                 />
 
                 <div className="mt-12 grid gap-6 md:grid-cols-2">
@@ -871,8 +908,8 @@ export default function OemAluminumDieCastingPartsPage() {
             <div>
               <SectionHeading
                 eyebrow="Factory equipment and capacity"
-                title="Equipment sized for compact OEM aluminum part manufacturing"
-                description="The factory capacity is described directly and conservatively. It is well suited to small-to-medium aluminum die casting parts that need repeatable casting, drilling, tapping, polishing, and finishing support."
+                title="Right-Sized Die Casting Production for Small-to-Medium Aluminum Parts"
+                description="The factory capacity is described directly and conservatively. Bigger die casting machines are not always better for small aluminum parts. HSX reviews machine tonnage, projected area, mold structure, casting flow, venting, trimming, machining, and finishing requirements together before production."
               />
 
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -947,8 +984,8 @@ export default function OemAluminumDieCastingPartsPage() {
           <div className="container-shell">
             <SectionHeading
               eyebrow="Materials and surface finishing"
-              title="Aluminum parts with project-matched finishing support"
-              description="The factory supplies aluminum die casting parts and coordinates finishing around the target appearance, corrosion resistance, and end-market presentation required by the OEM project."
+              title="Machining and Surface Finishing Support"
+              description="The factory supplies aluminum die casting parts and coordinates drilling, tapping, cooperative machining support when required, polishing, powder coating, spray painting, and suitable anodizing evaluation around the target application and appearance requirements."
             />
             <p className="mt-5 max-w-3xl text-base leading-8 text-[#c9c1b2]">
               For projects that specifically target an anodized metallic
@@ -1030,8 +1067,8 @@ export default function OemAluminumDieCastingPartsPage() {
           <div className="container-shell">
             <SectionHeading
               eyebrow="RFQ requirements"
-              title="Send the details needed for faster OEM project review"
-              description="For faster evaluation, buyers should send part files, application details, quantity plan, machining needs, finish requirements, packaging information, and whether the project is new tooling, an existing mold, or a second-supplier review."
+              title="What to Send for RFQ"
+              description="Send drawings, 3D files, sample photos, existing part photos, quantity, machining requirements, drilling or tapping requirements, and surface finishing requirements for project review before quotation."
             />
 
             <div className="mt-10 industrial-card p-6 sm:p-8">
@@ -1043,6 +1080,55 @@ export default function OemAluminumDieCastingPartsPage() {
                   </li>
                 ))}
               </ul>
+            </div>
+
+            <p className="mt-8 max-w-3xl text-base leading-8 text-[#c9c1b2]">
+              Buyers can prepare an{" "}
+              <Link
+                href="/blog/rfq-checklist-custom-oem-aluminum-die-casting-parts"
+                className="font-semibold text-[#f4d27a]"
+              >
+                aluminum die casting RFQ checklist
+              </Link>
+              , request a{" "}
+              <Link
+                href="/b2b-oem-project-review"
+                className="font-semibold text-[#f4d27a]"
+              >
+                project suitability review
+              </Link>
+              , or{" "}
+              <Link href="/contact" className="font-semibold text-[#f4d27a]">
+                contact HSX for project review
+              </Link>{" "}
+              when drawings, samples, machining details, or finishing
+              requirements need to be checked before quotation.
+            </p>
+          </div>
+        </section>
+
+        <section
+          id="faq"
+          className="border-b border-white/8 bg-[linear-gradient(180deg,rgba(14,14,14,0.98)_0%,rgba(7,7,7,1)_100%)] py-16 lg:py-24"
+        >
+          <div className="container-shell">
+            <SectionHeading
+              eyebrow="OEM die casting FAQ"
+              title="FAQ for OEM Aluminum Die Casting Projects"
+              description="These answers help buyers and AI search systems understand how HSX reviews small-to-medium aluminum die casting projects before quotation, tooling, machining, and finishing."
+            />
+
+            <div className="mt-12 grid gap-5 lg:grid-cols-2">
+              {faqItems.map((item, index) => (
+                <article key={`${item.question}-${index}`} className="industrial-card p-6">
+                  <h2 className="text-xl font-semibold text-white">
+                    {item.question}
+                  </h2>
+                  <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
+                    {item.answer}
+                  </p>
+                </article>
+              ))}
             </div>
           </div>
         </section>
@@ -1062,7 +1148,7 @@ export default function OemAluminumDieCastingPartsPage() {
               >
                 <p className="section-kicker">Related product</p>
                 <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
-                  Aluminum Light Housings
+                  Die-Cast Aluminum Light Housings
                 </h2>
                 <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
                   Die cast lamp housings, heat-sink-style bodies, covers, brackets,
@@ -1232,18 +1318,18 @@ export default function OemAluminumDieCastingPartsPage() {
                   </p>
 
                   <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-                    <a
-                      href={contactDetails.whatsappHref}
+                    <Link
+                      href="/b2b-oem-project-review"
                       className="rounded-full bg-[#120f08] px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#f8f2e6] transition-transform duration-200 hover:-translate-y-0.5"
                     >
-                      WhatsApp RFQ
-                    </a>
-                    <a
-                      href={`mailto:${contactDetails.email}?subject=RFQ%20for%20OEM%20Aluminum%20Die%20Casting%20Parts&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20would%20like%20to%20request%20a%20quotation%20for%20OEM%20aluminum%20die%20casting%20parts.%0A%0APart%20type%3A%0AQuantity%3A%0AMaterial%20/%20finish%3A%0ADrawing%20or%20sample%20available%3A%0APackaging%20requirements%3A%0A%0APlease%20contact%20me%20with%20pricing%20and%20production%20details.%0A%0ARegards%2C`}
+                      Request Project Review
+                    </Link>
+                    <Link
+                      href="/contact"
                       className="rounded-full border border-[#2b2216]/20 px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#22190d] transition-colors hover:bg-[#120f08] hover:text-[#f8f2e6]"
                     >
-                      Email Your RFQ
-                    </a>
+                      Send RFQ Details
+                    </Link>
                     <Link
                       href="/products"
                       className="rounded-full border border-[#2b2216]/20 px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#22190d] transition-colors hover:bg-[#120f08] hover:text-[#f8f2e6]"
