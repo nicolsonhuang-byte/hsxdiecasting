@@ -692,6 +692,84 @@ export default function AluminumLightHousingsPage() {
           </div>
         </section>
 
+        <section className="border-b border-white/8 bg-[radial-gradient(circle_at_center_left,rgba(199,162,91,0.12),transparent_32%),linear-gradient(180deg,#0a0a0a_0%,#050505_100%)] py-16 lg:py-24">
+          <div className="container-shell grid gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-center">
+            <div className="industrial-card overflow-hidden p-3">
+              <video
+                className="aspect-video w-full rounded-[1.25rem] bg-black object-cover"
+                controls
+                playsInline
+                preload="metadata"
+                aria-label="Aluminum die-cast work light housing parts in batch production at HSX"
+              >
+                <source
+                  src="/media/aluminum-die-cast-work-light-housing-production-hsx.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+
+            <div>
+              <p className="section-kicker">Factory video</p>
+              <h2 className="section-heading mt-4 text-3xl text-white sm:text-4xl">
+                Aluminum Die-Cast Work Light Housing Production
+              </h2>
+              <p className="mt-6 text-base leading-8 text-[#d4cdc0] sm:text-lg">
+                This production video shows small-to-medium aluminum die-cast
+                work light housing parts in batch production at HSX. Depending
+                on the project requirements, these housing parts may require
+                trimming, drilling, tapping, machining, polishing, powder
+                coating, or spray painting after die casting.
+              </p>
+              <p className="mt-5 text-base leading-8 text-[#c9c1b2]">
+                HSX reviews drawings, 3D files, sample photos, quantity,
+                machining requirements, and surface finishing requirements
+                before quotation.
+              </p>
+              <p className="mt-5 text-sm leading-7 text-[#bfb6a7]">
+                Buyers can compare related{" "}
+                <Link
+                  href="/products/oem-aluminum-die-casting-parts"
+                  className="font-semibold text-[#efcf8d] underline-offset-4 transition-colors hover:text-white hover:underline"
+                >
+                  OEM aluminum die casting parts
+                </Link>
+                , prepare an{" "}
+                <Link
+                  href="/blog/rfq-checklist-custom-oem-aluminum-die-casting-parts"
+                  className="font-semibold text-[#efcf8d] underline-offset-4 transition-colors hover:text-white hover:underline"
+                >
+                  aluminum die casting RFQ checklist
+                </Link>
+                , request a{" "}
+                <Link
+                  href="/b2b-oem-project-review"
+                  className="font-semibold text-[#efcf8d] underline-offset-4 transition-colors hover:text-white hover:underline"
+                >
+                  project suitability review
+                </Link>
+                , or{" "}
+                <Link
+                  href="/contact"
+                  className="font-semibold text-[#efcf8d] underline-offset-4 transition-colors hover:text-white hover:underline"
+                >
+                  contact HSX for project review
+                </Link>
+                .
+              </p>
+
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+                <Link href="/b2b-oem-project-review" className="gold-button text-center">
+                  Request Project Review
+                </Link>
+                <Link href="/contact" className="outline-button text-center">
+                  Send RFQ Details
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="process" className="border-b border-white/8 py-16 lg:py-24">
           <div className="container-shell grid gap-10 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] lg:items-start">
             <div className="space-y-4">
@@ -811,84 +889,6 @@ export default function AluminumLightHousingsPage() {
                   </p>
                 </article>
               ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="border-b border-white/8 bg-[radial-gradient(circle_at_center_left,rgba(199,162,91,0.12),transparent_32%),linear-gradient(180deg,#0a0a0a_0%,#050505_100%)] py-16 lg:py-24">
-          <div className="container-shell grid gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-center">
-            <div className="industrial-card overflow-hidden p-3">
-              <video
-                className="aspect-video w-full rounded-[1.25rem] bg-black object-cover"
-                controls
-                playsInline
-                preload="metadata"
-                aria-label="Aluminum die-cast work light housing parts in batch production at HSX"
-              >
-                <source
-                  src="/media/aluminum-die-cast-work-light-housing-production-hsx.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-
-            <div>
-              <p className="section-kicker">Factory video</p>
-              <h2 className="section-heading mt-4 text-3xl text-white sm:text-4xl">
-                Aluminum Die-Cast Work Light Housing Production
-              </h2>
-              <p className="mt-6 text-base leading-8 text-[#d4cdc0] sm:text-lg">
-                This production video shows small-to-medium aluminum die-cast
-                work light housing parts in batch production at HSX. Depending
-                on the project requirements, these housing parts may require
-                trimming, drilling, tapping, machining, polishing, powder
-                coating, or spray painting after die casting.
-              </p>
-              <p className="mt-5 text-base leading-8 text-[#c9c1b2]">
-                HSX reviews drawings, 3D files, sample photos, quantity,
-                machining requirements, and surface finishing requirements
-                before quotation.
-              </p>
-              <p className="mt-5 text-sm leading-7 text-[#bfb6a7]">
-                Buyers can compare related{" "}
-                <Link
-                  href="/products/oem-aluminum-die-casting-parts"
-                  className="font-semibold text-[#efcf8d] underline-offset-4 transition-colors hover:text-white hover:underline"
-                >
-                  OEM aluminum die casting parts
-                </Link>
-                , prepare an{" "}
-                <Link
-                  href="/blog/rfq-checklist-custom-oem-aluminum-die-casting-parts"
-                  className="font-semibold text-[#efcf8d] underline-offset-4 transition-colors hover:text-white hover:underline"
-                >
-                  aluminum die casting RFQ checklist
-                </Link>
-                , request a{" "}
-                <Link
-                  href="/b2b-oem-project-review"
-                  className="font-semibold text-[#efcf8d] underline-offset-4 transition-colors hover:text-white hover:underline"
-                >
-                  project suitability review
-                </Link>
-                , or{" "}
-                <Link
-                  href="/contact"
-                  className="font-semibold text-[#efcf8d] underline-offset-4 transition-colors hover:text-white hover:underline"
-                >
-                  contact HSX for project review
-                </Link>
-                .
-              </p>
-
-              <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-                <Link href="/b2b-oem-project-review" className="gold-button text-center">
-                  Request Project Review
-                </Link>
-                <Link href="/contact" className="outline-button text-center">
-                  Send RFQ Details
-                </Link>
-              </div>
             </div>
           </div>
         </section>
