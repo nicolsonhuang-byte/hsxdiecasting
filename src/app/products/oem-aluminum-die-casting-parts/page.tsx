@@ -8,6 +8,9 @@ import heroFactory from "../../../../public/images/hero-factory-200t-300t.png";
 import ledWorkLight from "../../../../public/images/led-work-light.png";
 import motorcycleLedLight from "../../../../public/images/motorcycle-led-light.png";
 import oemAluminumParts from "../../../../public/images/oem-small-aluminum-die-casting-parts.png";
+import coatingInspectionQc from "../../../../public/images/hsx-factory/coating-inspection-qc-aluminum-parts.jpg";
+import multiSpindleDrillingFixture from "../../../../public/images/hsx-factory/multi-spindle-drilling-fixture-aluminum-part.jpg";
+import oemDieCastHousing from "../../../../public/images/hsx-factory/oem-aluminum-die-cast-housing.jpg";
 
 type InfoCard = {
   title: string;
@@ -128,6 +131,30 @@ const manufacturedParts = [
     title: "Custom OEM Aluminum Parts",
     description:
       "Compact custom aluminum parts for OEM projects manufactured from drawings, samples, or custom project requirements.",
+  },
+];
+
+const realFactoryExamples = [
+  {
+    image: oemDieCastHousing,
+    alt: "OEM aluminum die-cast housing with ribs, bosses, and mounting features",
+    caption: "OEM aluminum die-cast housing example",
+    description:
+      "Ribs, bosses, mounting features, and internal structures can be reviewed before quotation based on drawings, 3D files, or sample photos.",
+  },
+  {
+    image: multiSpindleDrillingFixture,
+    alt: "Multi-spindle drilling with product-specific fixture for aluminum die casting parts",
+    caption: "Drilling, tapping, and fixture support",
+    description:
+      "For suitable parts, HSX can arrange in-house drilling and tapping with product-specific fixtures for repeat positioning.",
+  },
+  {
+    image: coatingInspectionQc,
+    alt: "In-house coating inspection and surface check before packing",
+    caption: "Finishing inspection before packing",
+    description:
+      "Powder-coated or spray-painted parts can be checked for surface condition, color consistency, adhesion sampling when required, and packing readiness.",
   },
 ];
 
@@ -261,6 +288,13 @@ const surfaceFinishes: InfoCard[] = [
     description:
       "Surface preparation improves appearance consistency before final finishing or direct visual inspection on compact aluminum parts.",
   },
+];
+
+const secondaryOperations = [
+  "In-house trimming, deburring, and flash removal after rough casting",
+  "In-house drilling and tapping for suitable hole and thread requirements",
+  "Polishing, powder coating, spray painting, QC checks, and packing support",
+  "CNC machining and anodizing can be coordinated with partner resources when required by the project",
 ];
 
 const industries: InfoCard[] = [
@@ -749,6 +783,58 @@ export default function OemAluminumDieCastingPartsPage() {
           </div>
         </section>
 
+        <section className="border-b border-white/8 bg-[radial-gradient(circle_at_top_right,rgba(199,162,91,0.1),transparent_30%),linear-gradient(180deg,#080808_0%,#0e0e0e_100%)] py-16 lg:py-24">
+          <div className="container-shell">
+            <SectionHeading
+              eyebrow="Factory examples"
+              title="Real Factory Examples for OEM Aluminum Die Casting Parts"
+              description="These examples show practical OEM aluminum die casting work around part structure, fixture-based secondary machining, surface inspection, and packing readiness. HSX reviews each project by drawings, 3D files, samples, quantity, machining needs, and finishing requirements before quotation."
+            />
+
+            <div className="mt-12 grid gap-6 md:grid-cols-3">
+              {realFactoryExamples.map((example) => (
+                <article
+                  key={example.caption}
+                  className="industrial-card overflow-hidden p-3"
+                >
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-[1.25rem]">
+                    <Image
+                      src={example.image}
+                      alt={example.alt}
+                      fill
+                      sizes="(min-width: 1280px) 24rem, (min-width: 768px) 30vw, 100vw"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h2 className="text-xl font-semibold text-white">
+                      {example.caption}
+                    </h2>
+                    <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
+                      {example.description}
+                    </p>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+              <Link href="/b2b-oem-project-review" className="gold-button text-center">
+                Request Project Review
+              </Link>
+              <Link href="/contact" className="outline-button text-center">
+                Send RFQ Details
+              </Link>
+              <a
+                href={contactDetails.whatsappHref}
+                className="outline-button text-center"
+              >
+                Discuss on WhatsApp
+              </a>
+            </div>
+          </div>
+        </section>
+
         <section
           id="programs"
           className="border-b border-white/8 bg-[linear-gradient(180deg,rgba(14,14,14,0.98)_0%,rgba(7,7,7,1)_100%)] py-16 lg:py-24"
@@ -1129,6 +1215,31 @@ export default function OemAluminumDieCastingPartsPage() {
                   </p>
                 </article>
               ))}
+            </div>
+
+            <div className="mt-10 industrial-card p-6 sm:p-8">
+              <div className="grid gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-start">
+                <div>
+                  <p className="section-kicker">Secondary operations</p>
+                  <h2 className="section-heading mt-4 text-3xl text-white">
+                    Secondary Operations After Die Casting
+                  </h2>
+                  <p className="mt-5 text-base leading-8 text-[#c9c1b2]">
+                    After the rough casting is produced, HSX reviews the required
+                    secondary operations based on part structure, hole and thread
+                    requirements, surface requirements, and packing needs.
+                  </p>
+                </div>
+
+                <ul className="space-y-4 text-base leading-8 text-[#efe7d9]">
+                  {secondaryOperations.map((operation) => (
+                    <li key={operation} className="flex gap-3">
+                      <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#d4ac67]" />
+                      <span>{operation}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </section>
