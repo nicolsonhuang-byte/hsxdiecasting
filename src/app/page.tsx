@@ -22,6 +22,12 @@ type InfoCard = {
   description: string;
 };
 
+type FactoryImageCard = {
+  src: string;
+  alt: string;
+  caption: string;
+};
+
 const navigationLinks = [
   { label: "Products", href: "/products" },
   { label: "Project Review", href: "/b2b-oem-project-review" },
@@ -192,6 +198,24 @@ const coreCapabilityCards: InfoCard[] = [
     title: "Finishing and Packing Support",
     description:
       "HSX provides in-house polishing, powder coating, spray painting, coating inspection, manual counting, weight checking, and protective packing before shipment.",
+  },
+];
+
+const homepageFactoryProofCards: FactoryImageCard[] = [
+  {
+    src: "/images/hsx-factory/oem-aluminum-die-cast-housing.jpg",
+    alt: "OEM aluminum die-cast housing with ribs, bosses, and mounting features",
+    caption: "OEM aluminum die-cast housing example",
+  },
+  {
+    src: "/images/hsx-factory/multi-spindle-drilling-fixture-aluminum-part.jpg",
+    alt: "Multi-spindle drilling with product-specific fixture for aluminum die casting parts",
+    caption: "Multi-spindle drilling and fixture support",
+  },
+  {
+    src: "/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg",
+    alt: "In-house spray painting area for aluminum die casting parts",
+    caption: "In-house spray painting and finishing support",
   },
 ];
 
@@ -677,6 +701,29 @@ export default function Home() {
                       {card.description}
                     </p>
                   </article>
+                ))}
+              </div>
+
+              <div className="mt-8 grid gap-5 md:grid-cols-3">
+                {homepageFactoryProofCards.map((card) => (
+                  <figure
+                    key={card.src}
+                    className="industrial-card overflow-hidden p-3"
+                  >
+                    <div className="relative aspect-[4/3] overflow-hidden rounded-[1.25rem]">
+                      <Image
+                        src={card.src}
+                        alt={card.alt}
+                        fill
+                        sizes="(min-width: 1024px) 18rem, (min-width: 768px) 30vw, 100vw"
+                        className="object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
+                    </div>
+                    <figcaption className="px-3 pb-3 pt-4 text-sm font-semibold text-[#efe7d9]">
+                      {card.caption}
+                    </figcaption>
+                  </figure>
                 ))}
               </div>
 

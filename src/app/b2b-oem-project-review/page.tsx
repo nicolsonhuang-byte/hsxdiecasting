@@ -6,6 +6,12 @@ import factoryCapabilities from "../../../public/images/factory-capabilities.png
 import heroFactory from "../../../public/images/hero-factory-200t-300t.png";
 import oemAluminumParts from "../../../public/images/oem-small-aluminum-die-casting-parts.png";
 
+type FactoryEvidenceImage = {
+  src: string;
+  alt: string;
+  caption: string;
+};
+
 export const metadata: Metadata = {
   title: "OEM Aluminum Die Casting Project Review Before Quotation | HSX DIECASTING",
   description:
@@ -182,6 +188,24 @@ const anotherProcessReasons = [
   "The volume is too low for tooling without a long-term plan",
   "The tolerance target cannot be reached even with die casting plus CNC finishing",
 ];
+
+const projectReviewEvidenceImages = {
+  batchParts: {
+    src: "/images/hsx-factory/batch-aluminum-die-cast-parts-before-finishing.jpg",
+    alt: "Batch aluminum die-cast parts before finishing and packing",
+    caption: "Batch aluminum die-cast parts before finishing",
+  },
+  drillingFixture: {
+    src: "/images/hsx-factory/multi-spindle-drilling-fixture-aluminum-part.jpg",
+    alt: "Multi-spindle drilling with product-specific fixture for aluminum die casting parts",
+    caption: "Multi-spindle drilling with product-specific fixture",
+  },
+  coatingInspection: {
+    src: "/images/hsx-factory/coating-inspection-qc-aluminum-parts.jpg",
+    alt: "In-house coating inspection and surface check before packing",
+    caption: "Coating inspection and surface check before packing",
+  },
+} satisfies Record<string, FactoryEvidenceImage>;
 
 const faqItems = [
   {
@@ -400,6 +424,22 @@ export default function B2bOemProjectReviewPage() {
               </article>
             ))}
           </div>
+
+          <figure className="industrial-card mt-10 overflow-hidden p-3">
+            <div className="relative aspect-[16/9] overflow-hidden rounded-[1.5rem]">
+              <Image
+                src={projectReviewEvidenceImages.batchParts.src}
+                alt={projectReviewEvidenceImages.batchParts.alt}
+                fill
+                sizes="(min-width: 1280px) 72rem, 100vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+            </div>
+            <figcaption className="px-4 pb-4 pt-5 text-sm font-semibold text-[#efe7d9]">
+              {projectReviewEvidenceImages.batchParts.caption}
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -510,6 +550,22 @@ export default function B2bOemProjectReviewPage() {
             together with die casting, fixtures, machining allowance, visible
             surface requirements, inspection needs, and packing protection.
           </p>
+
+          <figure className="industrial-card mt-10 overflow-hidden p-3">
+            <div className="relative aspect-[16/9] overflow-hidden rounded-[1.5rem]">
+              <Image
+                src={projectReviewEvidenceImages.drillingFixture.src}
+                alt={projectReviewEvidenceImages.drillingFixture.alt}
+                fill
+                sizes="(min-width: 1280px) 72rem, 100vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+            </div>
+            <figcaption className="px-4 pb-4 pt-5 text-sm font-semibold text-[#efe7d9]">
+              {projectReviewEvidenceImages.drillingFixture.caption}
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -617,6 +673,22 @@ export default function B2bOemProjectReviewPage() {
               </article>
             ))}
           </div>
+
+          <figure className="industrial-card mt-10 overflow-hidden p-3">
+            <div className="relative aspect-[16/9] overflow-hidden rounded-[1.5rem]">
+              <Image
+                src={projectReviewEvidenceImages.coatingInspection.src}
+                alt={projectReviewEvidenceImages.coatingInspection.alt}
+                fill
+                sizes="(min-width: 1280px) 72rem, 100vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+            </div>
+            <figcaption className="px-4 pb-4 pt-5 text-sm font-semibold text-[#efe7d9]">
+              {projectReviewEvidenceImages.coatingInspection.caption}
+            </figcaption>
+          </figure>
         </div>
       </section>
 
