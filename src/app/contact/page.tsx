@@ -111,7 +111,7 @@ const contactCards: ContactCard[] = [
 const rfqChecklist = [
   "2D drawings with key dimensions, tolerances, and thread or hole callouts",
   "3D files such as STEP, STP, IGS, IGES, STL, X_T for die casting evaluation",
-  "Sample photos or reference sample details when drawings are incomplete",
+  "Sample photos, existing part photos, or reference sample details when drawings are incomplete",
   "Product application and end-use environment",
   "Estimated quantity for quotation, small-batch planning, or repeat-order planning",
   "Material expectations for the aluminum part or housing",
@@ -259,7 +259,7 @@ export default function ContactPage() {
             </div>
           </div>
           <Link href="/contact" className="gold-button w-full text-center sm:w-auto">
-            Send RFQ
+            Send RFQ Details
           </Link>
         </div>
       </div>
@@ -354,13 +354,13 @@ export default function ContactPage() {
                   href={contactDetails.whatsappHref}
                   className="gold-button text-center"
                 >
-                  Contact on WhatsApp
+                  Discuss on WhatsApp
                 </a>
                 <a
                   href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
                   className="outline-button text-center"
                 >
-                  Send Email
+                  Send RFQ Details
                 </a>
               </div>
 
@@ -588,8 +588,8 @@ export default function ContactPage() {
           <div className="container-shell">
             <SectionHeading
               eyebrow="Accepted file formats"
-              title="Send 3D CAD files, 2D drawings, or sample photos for project evaluation"
-              description="HSX evaluates compact aluminum part projects from 3D CAD files, 2D drawings, or sample photos. The factory team reviews part geometry, mold feasibility, secondary machining features, surface finish, and packaging requirements before quotation."
+              title="Send 3D CAD files, 2D drawings, sample photos, or existing part photos for project evaluation"
+              description="HSX evaluates compact aluminum part projects from 3D CAD files, 2D drawings, sample photos, or existing part photos. The factory team reviews part geometry, mold feasibility, secondary operations, surface finishing requirements, and packing support before quotation."
             />
 
             <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -611,11 +611,11 @@ export default function ContactPage() {
                 Send RFQ files by business email, WhatsApp, or WeChat
               </h3>
               <p className="mt-5 text-sm leading-7 text-[#e7dfcf] sm:text-base">
-                Please send 3D CAD files, 2D drawings, sample photos, and
-                supporting documents directly to the business email, WhatsApp,
-                or WeChat contact below. This keeps drawings, revisions, and
-                project communication connected with the factory-side quotation
-                review.
+                Please send 3D CAD files, 2D drawings, sample photos, existing
+                part photos, and supporting documents directly to the business
+                email, WhatsApp, or WeChat contact below. This keeps drawings,
+                revisions, and OEM aluminum die casting project review
+                communication connected with the factory-side quotation review.
               </p>
 
               <div className="mt-8 grid gap-5 md:grid-cols-3">
@@ -640,13 +640,13 @@ export default function ContactPage() {
                   href={`mailto:${contactDetails.email}?subject=RFQ%20Files%20for%20HSX%20Diecasting%20OEM%20Project&body=Hello%20HSX%20Diecasting%2C%0A%0APlease%20find%20the%20attached%20files%20for%20quotation%20review.%0A%0A3D%20CAD%20file%20%28STEP%20%2F%20STP%2C%20IGS%20%2F%20IGES%2C%20STL%2C%20X_T%29%3A%0A2D%20drawing%20%28PDF%2C%20DWG%2C%20DXF%29%3A%0ASample%20photos%20or%20reference%20photos%3A%0A%0AProduct%20type%20and%20application%3A%0AQuantity%3A%0AMaterial%20expectation%3A%0AMachining%20/%20drilling%20/%20tapping%20requirements%3A%0ASurface%20finish%20requirement%3A%0ATesting%20or%20inspection%20requirements%3A%0APackaging%20requirements%3A%0ANew%20tooling%20or%20existing%20mold%3A%0ATarget%20market%3A%0A%0APlease%20contact%20me%20with%20project%20review%20and%20quotation%20details.%0A%0ABest%20regards%2C`}
                   className="gold-button text-center"
                 >
-                  Email Files to HSX
+                  Request Project Review
                 </a>
                 <a
                   href={contactDetails.whatsappHref}
                   className="outline-button text-center"
                 >
-                  Send Files on WhatsApp
+                  Discuss on WhatsApp
                 </a>
               </div>
             </div>
@@ -752,7 +752,7 @@ export default function ContactPage() {
                 <div>
                   <p className="section-kicker">Final CTA</p>
                   <h2 className="section-heading mt-4 text-3xl text-[#120f08] sm:text-4xl">
-                    Contact us for quotation, drawings review, and OEM project support
+                    Request project review for your aluminum die casting RFQ
                   </h2>
                   <p className="mt-5 max-w-2xl text-base leading-8 text-[#2d2417] sm:text-lg">
                     Global wholesalers, importers, distributors, aftermarket
@@ -766,13 +766,13 @@ export default function ContactPage() {
                       href={contactDetails.whatsappHref}
                       className="rounded-full bg-[#120f08] px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#f8f2e6] transition-transform duration-200 hover:-translate-y-0.5"
                     >
-                      WhatsApp Contact
+                      Discuss on WhatsApp
                     </a>
                     <a
                       href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
                       className="rounded-full border border-[#2b2216]/20 px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#22190d] transition-colors hover:bg-[#120f08] hover:text-[#f8f2e6]"
                     >
-                      Send Email
+                      Send RFQ Details
                     </a>
                   </div>
                 </div>
