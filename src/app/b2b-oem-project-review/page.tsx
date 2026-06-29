@@ -7,9 +7,9 @@ import heroFactory from "../../../public/images/hero-factory-200t-300t.png";
 import oemAluminumParts from "../../../public/images/oem-small-aluminum-die-casting-parts.png";
 
 export const metadata: Metadata = {
-  title: "B2B OEM Project Review | HSX DIECASTING",
+  title: "OEM Aluminum Die Casting Project Review Before Quotation | HSX DIECASTING",
   description:
-    "Direct factory RFQ and suitable-project review page for OEM aluminum die casting parts, aluminum light housings, and decorative brake caliper appearance covers from HSX DIECASTING.",
+    "Send 3D files, 2D drawings, sample photos, application, quantity, machining needs, finishing requirements, and packing needs. HSX reviews whether aluminum die casting is suitable before quotation.",
   alternates: {
     canonical: "https://www.hsxdiecasting.com/b2b-oem-project-review",
   },
@@ -22,36 +22,21 @@ const contactDetails = {
     "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20would%20like%20to%20send%20B2B%20OEM%20project%20details%20for%20evaluation.",
 };
 
-const mailtoRfq =
-  "mailto:nicolson@hsxdiecasting.com?subject=B2B%20OEM%20Project%20Review%20for%20HSX%20DIECASTING&body=Hello%20HSX%20DIECASTING%2C%0A%0AI%20would%20like%20to%20send%20B2B%20OEM%20project%20details%20for%20evaluation.%0A%0AProject%20type%3A%0ADrawings%20/%203D%20files%20/%20sample%20photos%20available%3A%0ATarget%20quantity%3A%0ASurface%20finishing%20requirements%3A%0ALogo%20/%20packaging%20requirements%3A%0ADrilling%20/%20tapping%20/%20CNC%20requirements%20if%20needed%3A%0ADestination%20market%3A";
-
 const pathCards = [
   {
-    title: "OEM Aluminum Die Casting Parts RFQ Review",
+    title: "OEM Aluminum Die Casting Project Review",
     description:
-      "For buyers sourcing light housings, lamp brackets, covers, end caps, enclosure shells, brackets, and suitable small-to-medium aluminum components.",
+      "For buyers sourcing small-to-medium aluminum housings, covers, brackets, end caps, enclosure shells, light housings, and other suitable OEM aluminum components.",
     href: "#aluminum-die-casting-review",
-    cta: "Send Aluminum Die Casting RFQ",
+    cta: "Review OEM Aluminum Project Fit",
   },
   {
-    title: "Decorative Brake Caliper Appearance Covers OEM Review",
+    title: "RFQ Details and Process Cost Review",
     description:
-      "For automotive appearance accessory buyers looking for decorative exterior appearance cover customization as one HSX product category.",
-    href: "#appearance-cover-review",
-    cta: "Send Appearance Cover OEM Inquiry",
+      "For buyers who need the quotation reviewed by process, including die casting, trimming, drilling, tapping, finishing, QC, and packing requirements.",
+    href: "#cost-review",
+    cta: "Check Required RFQ Details",
   },
-];
-
-const appearanceInquiryDetails = [
-  "Target vehicle model",
-  "Product photos or sample reference",
-  "Color requirements",
-  "Logo / font / logo color requirements",
-  "Surface finishing preference",
-  "Packaging requirement",
-  "Target quantity",
-  "Destination market",
-  "Sample-stage evaluation needs",
 ];
 
 const aluminumProjectTypes = [
@@ -66,44 +51,42 @@ const aluminumProjectTypes = [
 
 const aluminumCapabilities = [
   "200T / 300T aluminum die casting machines",
-  "Multi-axis drilling",
-  "Multi-axis tapping",
-  "Polishing / grinding",
-  "Powder coating",
-  "Paint spraying",
-  "Aluminum anodizing",
-  "OEM / ODM customization",
-  "Cooperative CNC turning / CNC machining support through partner facilities when required",
+  "Trimming and deburring after die casting",
+  "In-house bench drilling and multi-spindle drilling",
+  "In-house desktop tapping and multi-spindle tapping",
+  "Product-specific fixtures designed in-house for repeat positioning",
+  "In-house polishing, powder coating, spray painting, QC, and packing",
+  "CNC machining and anodizing coordinated with partner resources when required",
 ];
 
 const aluminumRfqDetails = [
-  "2D drawings",
   "3D files",
+  "2D drawings",
   "Sample photos",
-  "Target quantity",
-  "Part size and application",
+  "Existing part photos",
+  "Application",
+  "Target material or material requirement",
+  "Quantity",
+  "Long-term production plan if available",
+  "Hole and thread requirements",
+  "Machining requirements",
   "Surface finishing requirements",
-  "Drilling / tapping / threaded feature requirements",
-  "CNC turning / CNC machining requirements if needed",
-  "Packaging details",
+  "Color or physical color sample if custom spray painting is needed",
+  "Packing requirements",
 ];
 
 const checklistItems = [
   "Product type",
-  "Drawings, 3D files, or sample photos",
-  "Target model or application",
-  "Main dimensions",
-  "Target quantity",
-  "Sample-stage needs",
+  "3D files and 2D drawings",
+  "Sample photos or existing part photos",
+  "Application and working environment",
+  "Target material or material requirement",
+  "Quantity and long-term production plan if available",
+  "Hole and thread requirements",
+  "Machining requirements",
   "Surface finishing requirements",
-  "Color requirements",
-  "Logo / font / logo color requirements",
-  "Packaging requirements",
-  "Drilling requirements",
-  "Tapping or threaded feature requirements",
-  "CNC turning / CNC machining requirements if needed",
-  "Destination market",
-  "Contact person and company information",
+  "Color or physical color sample if custom spray painting is needed",
+  "Packing requirements",
 ];
 
 const processSteps = [
@@ -136,14 +119,14 @@ const processSteps = [
 
 const factoryReviewCards = [
   {
-    title: "Direct Factory RFQ Communication",
+    title: "HSX Does Not Quote Blindly",
     description:
-      "HSX supports direct OEM project discussion with the factory team, so buyers can communicate drawings, applications, quantities, machining needs, and finishing requirements more clearly before production.",
+      "HSX first reviews whether the part is suitable for aluminum die casting before preparing a quotation. Application, quantity, machining needs, finishing requirements, and production plan are checked together.",
   },
   {
-    title: "Not a Trading Company",
+    title: "Direct Factory RFQ Communication",
     description:
-      "HSX DIECASTING is a real aluminum die casting factory, not a trading company. HSX focuses on projects that match its equipment, mold experience, machining capability, polishing, powder coating, painting, and production control.",
+      "Buyers can communicate drawings, applications, quantities, machining needs, and finishing requirements with the factory team before production discussion.",
   },
   {
     title: "Suitable Projects Only",
@@ -167,30 +150,87 @@ const factoryReviewCards = [
   },
 ];
 
-const internalLinks = [
+const quotationReviewItems = [
+  "Part structure and wall thickness",
+  "Hole and thread requirements",
+  "Assembly areas and visible surfaces",
+  "Material requirements and application",
+  "Machining needs and tolerance expectations",
+  "Surface finishing requirements",
+  "Quantity and tooling suitability",
+  "Production plan and packing needs",
+];
+
+const costReviewItems = [
+  "Die casting",
+  "Trimming",
+  "Deburring",
+  "Drilling",
+  "Tapping",
+  "Polishing",
+  "Powder coating",
+  "Spray painting",
+  "CNC machining if needed through partner resources",
+  "Anodizing if needed through partner resources",
+  "QC",
+  "Packing and packaging requirements",
+];
+
+const anotherProcessReasons = [
+  "The part is too large for current HSX equipment",
+  "The part may be better suited for zinc alloy or plastic",
+  "The volume is too low for tooling without a long-term plan",
+  "The tolerance target cannot be reached even with die casting plus CNC finishing",
+];
+
+const faqItems = [
   {
-    label: "Decorative Brake Caliper Appearance Covers",
-    href: "/products/decorative-brake-caliper-covers",
+    question: "What should I send for an OEM aluminum die casting quotation?",
+    answer:
+      "Send 3D files, 2D drawings, sample photos, application, quantity, machining requirements, hole and thread requirements, finishing requirements, and packing needs. HSX reviews these details before quotation.",
   },
   {
-    label: "OEM Aluminum Die Casting Parts",
+    question: "Does HSX quote every aluminum die casting project immediately?",
+    answer:
+      "No. HSX first reviews whether aluminum die casting is suitable for the part structure, application, quantity, material, machining, finishing, and production plan.",
+  },
+  {
+    question: "Can HSX support drilling and tapping after die casting?",
+    answer:
+      "Yes. HSX supports in-house drilling and tapping, including bench drilling, desktop tapping, multi-spindle drilling, multi-spindle tapping, and product-specific fixtures designed in-house.",
+  },
+  {
+    question: "Can HSX help if a part is not suitable for aluminum die casting?",
+    answer:
+      "If another material or process is more suitable, HSX will explain the reason when possible instead of forcing the wrong process.",
+  },
+  {
+    question: "Does HSX provide finishing and packing support?",
+    answer:
+      "Yes. HSX supports in-house polishing, powder coating, spray painting, coating inspection, manual counting, weight checking, QC, and protective packing. CNC machining and anodizing can be coordinated with partner resources when required.",
+  },
+];
+
+const internalLinks = [
+  {
+    label: "OEM aluminum die casting parts",
     href: "/products/oem-aluminum-die-casting-parts",
   },
   {
-    label: "Aluminum Light Housings",
+    label: "die-cast aluminum light housings",
     href: "/products/aluminum-light-housings",
   },
   {
-    label: "Custom Aluminum Die Casting RFQ Checklist",
+    label: "aluminum die casting RFQ checklist",
     href: "/blog/rfq-checklist-custom-oem-aluminum-die-casting-parts",
   },
   {
-    label: "Tesla Decorative Appearance Cover RFQ Checklist",
-    href: "/blog/oem-decorative-brake-caliper-covers-tesla-model-3-model-y-rfq-checklist",
+    label: "Send RFQ Details",
+    href: "/contact",
   },
   {
-    label: "Contact HSX",
-    href: "/contact",
+    label: "HSX DIECASTING homepage",
+    href: "/",
   },
 ];
 
@@ -237,33 +277,36 @@ export default function B2bOemProjectReviewPage() {
           <div className="motion-rise">
             <p className="section-kicker">B2B OEM project review</p>
             <h1 className="section-heading mt-6 text-4xl leading-none text-white sm:text-5xl xl:text-6xl">
-              Direct factory RFQ review for suitable OEM aluminum projects
+              OEM Aluminum Die Casting Project Review Before Quotation
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[#d4cdc0]">
-              HSX DIECASTING is a Foshan-based aluminum die casting factory
-              supporting B2B OEM project evaluation for suitable small-to-medium
-              aluminum parts, aluminum light housings, and decorative brake
-              caliper appearance covers.
+              Send your 3D files, 2D drawings, sample photos, application,
+              quantity, machining needs, finishing requirements, and packing
+              needs. HSX reviews whether aluminum die casting is suitable before
+              preparing a quotation.
             </p>
             <p className="mt-5 max-w-2xl text-base leading-8 text-[#c7beaf]">
-              Send project details by email or WhatsApp so the factory team can
-              review the application, drawings, 3D files, samples, target
-              quantity, machining needs, surface finishing requirements, and
-              packaging details before production discussion.
+              HSX does not quote blindly. The factory team first checks the part
+              structure, application, quantity, process route, secondary
+              machining, surface finishing, and production plan so buyers can
+              avoid wasting tooling cost or choosing the wrong process.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-              <a href={mailtoRfq} className="gold-button text-center">
+              <Link href="/contact" className="gold-button text-center">
                 Send RFQ Details
-              </a>
+              </Link>
               <a
                 href={contactDetails.whatsappHref}
                 className="outline-button text-center"
               >
-                WhatsApp Project Review
+                Discuss on WhatsApp
               </a>
-              <Link href="/contact" className="outline-button text-center">
-                Email Project Details
+              <Link
+                href="/blog/rfq-checklist-custom-oem-aluminum-die-casting-parts"
+                className="outline-button text-center"
+              >
+                View RFQ Checklist
               </Link>
             </div>
           </div>
@@ -329,13 +372,24 @@ export default function B2bOemProjectReviewPage() {
       <section className="border-b border-white/8 bg-[#080808] py-16 lg:py-24">
         <div className="container-shell">
           <SectionHeading
-            eyebrow="Factory-direct review"
-            title="Suitable-project review before production discussion"
-            description="HSX reviews OEM aluminum die casting inquiries as factory-fit projects, not generic product sourcing. The goal is to confirm whether the part, process route, tooling plan, secondary processing, finishing preparation, and inspection needs are practical before moving forward."
+            eyebrow="Before quotation"
+            title="What HSX Reviews Before Quotation"
+            description="HSX reviews part structure, wall thickness, hole and thread requirements, assembly areas, visible surfaces, material requirements, machining needs, finishing requirements, quantity, tooling suitability, and production plan before preparing a quotation."
           />
 
-          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {factoryReviewCards.map((card) => (
+          <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {quotationReviewItems.map((item) => (
+              <div
+                key={item}
+                className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 text-sm font-semibold text-[#efe7d9]"
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {factoryReviewCards.slice(0, 3).map((card) => (
               <article key={card.title} className="industrial-card p-6">
                 <h3 className="text-xl font-semibold text-white">
                   {card.title}
@@ -345,64 +399,6 @@ export default function B2bOemProjectReviewPage() {
                 </p>
               </article>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="appearance-cover-review"
-        className="border-b border-white/8 bg-[#080808] py-16 lg:py-24"
-      >
-        <div className="container-shell grid gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-start">
-          <div>
-            <SectionHeading
-              eyebrow="Path 01"
-              title="Decorative Brake Caliper Appearance Covers OEM Review"
-              description="HSX can evaluate OEM decorative brake caliper appearance cover projects for Tesla Model 3 / Model Y accessory programs, EV accessory shops, private-label brands, and aftermarket appearance product buyers."
-            />
-            <div className="mt-8 rounded-[1.5rem] border border-[#d7b56d]/25 bg-[#111111] p-6">
-              <p className="text-sm leading-8 text-[#efe7d9]">
-                These products are decorative appearance covers only. They are
-                not functional brake parts, braking performance components,
-                load-bearing brake parts, or structural brake parts.
-              </p>
-            </div>
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-              <a href={mailtoRfq} className="gold-button text-center">
-                Send Appearance Cover OEM Inquiry
-              </a>
-              <Link
-                href="/products/decorative-brake-caliper-covers"
-                className="outline-button text-center"
-              >
-                View Appearance Covers
-              </Link>
-            </div>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2">
-            <article className="industrial-card p-6">
-              <h3 className="text-xl font-semibold text-white">
-                HSX can evaluate
-              </h3>
-              <BulletList
-                items={[
-                  "Color options",
-                  "Logo / font / logo color requirements",
-                  "Surface finishing options",
-                  "Packaging planning",
-                  "Small-to-medium batch OEM customization",
-                  "Sample-stage evaluation",
-                  "Private-label appearance accessory programs",
-                ]}
-              />
-            </article>
-            <article className="industrial-card p-6">
-              <h3 className="text-xl font-semibold text-white">
-                Useful inquiry details
-              </h3>
-              <BulletList items={appearanceInquiryDetails} />
-            </article>
           </div>
         </div>
       </section>
@@ -465,18 +461,55 @@ export default function B2bOemProjectReviewPage() {
                 ))}
               </div>
               <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-                <a href={mailtoRfq} className="gold-button text-center">
-                  Send Aluminum Die Casting RFQ
-                </a>
+                <Link href="/contact" className="gold-button text-center">
+                  Send RFQ Details
+                </Link>
                 <Link
                   href="/products/oem-aluminum-die-casting-parts"
                   className="outline-button text-center"
                 >
-                  View OEM Parts Page
+                  OEM aluminum die casting parts
+                </Link>
+                <Link
+                  href="/products/aluminum-light-housings"
+                  className="outline-button text-center"
+                >
+                  die-cast aluminum light housings
                 </Link>
               </div>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section
+        id="cost-review"
+        className="border-b border-white/8 bg-[#080808] py-16 lg:py-24"
+      >
+        <div className="container-shell">
+          <SectionHeading
+            eyebrow="Process cost review"
+            title="Aluminum Die Casting + Secondary Operations Cost Review"
+            description="Quotation is reviewed by process, including die casting, trimming, deburring, drilling, tapping, polishing, powder coating, spray painting, CNC machining if needed, anodizing if needed, QC, packing, and packaging requirements."
+          />
+
+          <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {costReviewItems.map((item) => (
+              <div
+                key={item}
+                className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 text-sm font-semibold text-[#efe7d9]"
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-8 max-w-4xl text-sm leading-7 text-[#cfc6b6]">
+            CNC machining and anodizing are coordinated with partner resources
+            when required. HSX reviews whether these operations are practical
+            together with die casting, fixtures, machining allowance, visible
+            surface requirements, inspection needs, and packing protection.
+          </p>
         </div>
       </section>
 
@@ -497,48 +530,18 @@ export default function B2bOemProjectReviewPage() {
 
           <div>
             <SectionHeading
-              eyebrow="What HSX can evaluate"
-              title="Two practical B2B project directions"
-              description="HSX can evaluate custom aluminum die casting projects and decorative appearance cover projects when the buyer can provide clear project information."
+              eyebrow="Process suitability"
+              title="When HSX May Recommend Another Process"
+              description="HSX may recommend another process or decline a project if aluminum die casting is not the most practical route for the part, quantity, tolerance, material, or production plan."
             />
-            <div className="mt-8 grid gap-6">
-              <article className="industrial-card p-6">
-                <h3 className="text-xl font-semibold text-white">
-                  Decorative appearance cover projects
-                </h3>
-                <p className="mt-4 text-sm leading-7 text-[#cfc6b6]">
-                  HSX can evaluate decorative brake caliper appearance cover
-                  projects for Tesla / EV accessory programs, automotive
-                  appearance accessory sellers, and private-label buyers.
-                  Discussion can include color, logo / font / logo color,
-                  surface finishing, packaging, small-to-medium batch
-                  customization, and sample-stage evaluation.
-                </p>
-              </article>
-              <article className="industrial-card p-6">
-                <h3 className="text-xl font-semibold text-white">
-                  Custom aluminum die casting projects
-                </h3>
-                <p className="mt-4 text-sm leading-7 text-[#cfc6b6]">
-                  HSX can evaluate custom OEM aluminum die casting parts such as
-                  lighting housings, lamp brackets, covers, end caps, enclosure
-                  shells, brackets, and compact custom aluminum components.
-                  Discussion can include die casting, drilling, tapping,
-                  polishing / grinding, powder coating, paint spraying,
-                  aluminum anodizing, OEM / ODM customization, and cooperative
-                  CNC turning / CNC machining support through partner facilities
-                  when required.
-                  For projects with anodized appearance requirements, HSX can
-                  review{" "}
-                  <Link
-                    href="/anodizable-aluminum-die-casting-parts"
-                    className="font-semibold text-[#f4d27a]"
-                  >
-                    anodized appearance aluminum die casting parts
-                  </Link>{" "}
-                  before confirming whether the route is practical.
-                </p>
-              </article>
+            <div className="mt-8 industrial-card p-6">
+              <BulletList items={anotherProcessReasons} />
+              <p className="mt-6 text-sm leading-7 text-[#cfc6b6]">
+                If another material or process may reduce production risk, HSX
+                explains the reason when possible before buyers invest time in
+                tooling, sampling, or a quotation route that may not fit the
+                project.
+              </p>
             </div>
           </div>
         </div>
@@ -548,8 +551,8 @@ export default function B2bOemProjectReviewPage() {
         <div className="container-shell">
           <SectionHeading
             eyebrow="RFQ preparation checklist"
-            title="Prepare the details buyers usually need before first contact"
-            description="A complete RFQ helps the HSX factory team check the project scope, possible process route, production risks, and missing information more efficiently."
+            title="What Buyers Should Send"
+            description="A complete RFQ helps the HSX factory team check the project scope, possible process route, production risks, and missing information more efficiently before quotation."
           />
 
           <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -560,6 +563,58 @@ export default function B2bOemProjectReviewPage() {
               >
                 {item}
               </div>
+            ))}
+          </div>
+
+          <p className="mt-8 max-w-4xl text-sm leading-7 text-[#cfc6b6]">
+            Buyers can also review HSX{" "}
+            <Link
+              href="/products/oem-aluminum-die-casting-parts"
+              className="font-semibold text-[#f4d27a]"
+            >
+              OEM aluminum die casting parts
+            </Link>
+            ,{" "}
+            <Link
+              href="/products/aluminum-light-housings"
+              className="font-semibold text-[#f4d27a]"
+            >
+              die-cast aluminum light housings
+            </Link>
+            , and the{" "}
+            <Link
+              href="/blog/rfq-checklist-custom-oem-aluminum-die-casting-parts"
+              className="font-semibold text-[#f4d27a]"
+            >
+              aluminum die casting RFQ checklist
+            </Link>{" "}
+            before sending details through the{" "}
+            <Link href="/contact" className="font-semibold text-[#f4d27a]">
+              Send RFQ Details
+            </Link>{" "}
+            contact path.
+          </p>
+        </div>
+      </section>
+
+      <section className="border-b border-white/8 bg-[#080808] py-16 lg:py-24">
+        <div className="container-shell">
+          <SectionHeading
+            eyebrow="Honest process advice"
+            title="How HSX Helps Buyers Avoid the Wrong Process"
+            description="If a project is not suitable for HSX or not suitable for aluminum die casting, HSX explains the reason when possible. The goal is to help buyers avoid wasted tooling cost, production time, or choosing the wrong process."
+          />
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {factoryReviewCards.slice(3).map((card) => (
+              <article key={card.title} className="industrial-card p-6">
+                <h3 className="text-xl font-semibold text-white">
+                  {card.title}
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-[#cfc6b6]">
+                  {card.description}
+                </p>
+              </article>
             ))}
           </div>
         </div>
@@ -592,6 +647,29 @@ export default function B2bOemProjectReviewPage() {
       </section>
 
       <section className="border-b border-white/8 py-16 lg:py-24">
+        <div className="container-shell">
+          <SectionHeading
+            eyebrow="FAQ / GEO project review answers"
+            title="OEM Aluminum Die Casting Project Review FAQ"
+            description="These short answers help buyers, search engines, and AI search systems understand what HSX needs before quotation and how the factory reviews suitable aluminum die casting projects."
+          />
+
+          <div className="mt-12 grid gap-6 lg:grid-cols-2">
+            {faqItems.map((item) => (
+              <article key={item.question} className="industrial-card p-6">
+                <h3 className="text-xl font-semibold text-white">
+                  {item.question}
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-[#cfc6b6]">
+                  {item.answer}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-white/8 py-16 lg:py-24">
         <div className="container-shell grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:items-start">
           <div>
             <SectionHeading
@@ -610,8 +688,8 @@ export default function B2bOemProjectReviewPage() {
               For aluminum die casting projects, HSX supports 200T / 300T
               aluminum die casting machines, multi-axis drilling, multi-axis
               tapping, polishing / grinding, powder coating, paint spraying,
-              aluminum anodizing, and cooperative CNC turning / CNC machining
-              support through partner facilities when required.
+              QC, and packing. CNC machining and anodizing can be coordinated
+              with partner resources when required by the project.
             </p>
             <p className="mt-5 text-base leading-8 text-[#c9c1b2]">
               HSX reviews each project against the product application,
@@ -653,32 +731,27 @@ export default function B2bOemProjectReviewPage() {
               <div>
                 <p className="section-kicker">Final contact / RFQ CTA</p>
                 <h2 className="section-heading mt-4 text-3xl text-[#120f08] sm:text-4xl">
-                  Send your OEM project details to HSX
+                  Email or WhatsApp for Project Review
                 </h2>
                 <p className="mt-5 max-w-2xl text-base leading-8 text-[#2d2417] sm:text-lg">
-                  If you are preparing a decorative appearance cover project or
-                  a custom OEM aluminum die casting RFQ, send your project
-                  details to HSX by email or WhatsApp.
+                  Buyers can send RFQ details by contact form, email, or
+                  WhatsApp. Keep the message focused on project review,
+                  drawings, application, quantity, machining, finishing, and
+                  packing needs.
                 </p>
                 <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-                  <a
-                    href={mailtoRfq}
+                  <Link
+                    href="/contact"
                     className="rounded-full bg-[#120f08] px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#f8f2e6] transition-transform duration-200 hover:-translate-y-0.5"
                   >
                     Send RFQ Details
-                  </a>
+                  </Link>
                   <a
                     href={contactDetails.whatsappHref}
                     className="rounded-full border border-[#2b2216]/20 px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#22190d] transition-colors hover:bg-[#120f08] hover:text-[#f8f2e6]"
                   >
-                    WhatsApp Project Review
+                    Discuss on WhatsApp
                   </a>
-                  <Link
-                    href="/contact"
-                    className="rounded-full border border-[#2b2216]/20 px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#22190d] transition-colors hover:bg-[#120f08] hover:text-[#f8f2e6]"
-                  >
-                    Email Project Details
-                  </Link>
                 </div>
               </div>
 
@@ -688,15 +761,14 @@ export default function B2bOemProjectReviewPage() {
                 </p>
                 <ul className="mt-5 space-y-4 text-sm leading-7 text-[#2c2316]">
                   {[
-                    "Product type",
-                    "Drawings, 3D files, or sample photos",
-                    "Target quantity",
-                    "Surface finishing requirements",
-                    "Logo / packaging requirements",
-                    "Drilling / tapping / threaded feature requirements",
-                    "CNC requirements if needed",
-                    "Destination market",
-                    "Any sample-stage evaluation needs",
+                    "3D files and 2D drawings",
+                    "Sample photos or existing part photos",
+                    "Product application and working environment",
+                    "Target material or material requirement",
+                    "Quantity and long-term production plan if available",
+                    "Hole, thread, drilling, tapping, or machining needs",
+                    "Surface finishing and color requirements",
+                    "Packing and protective packaging requirements",
                   ].map((item) => (
                     <li key={item} className="flex gap-3">
                       <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#8d6a2d]" />
