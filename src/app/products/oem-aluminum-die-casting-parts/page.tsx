@@ -1,29 +1,18 @@
 import type { Metadata } from "next";
-import Image, { type StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
-import automotiveLedLight from "../../../../public/images/automotive-led-light.png";
 import factoryCapabilities from "../../../../public/images/factory-capabilities.png";
 import heroFactory from "../../../../public/images/hero-factory-200t-300t.png";
-import ledWorkLight from "../../../../public/images/led-work-light.png";
-import motorcycleLedLight from "../../../../public/images/motorcycle-led-light.png";
 import oemAluminumParts from "../../../../public/images/oem-small-aluminum-die-casting-parts.png";
-import coatingInspectionQc from "../../../../public/images/hsx-factory/coating-inspection-qc-aluminum-parts.jpg";
-import multiSpindleDrillingFixture from "../../../../public/images/hsx-factory/multi-spindle-drilling-fixture-aluminum-part.jpg";
-import oemDieCastHousing from "../../../../public/images/hsx-factory/oem-aluminum-die-cast-housing.jpg";
+import communicationEquipmentHousing from "../../../../public/images/hsx-factory/communication-equipment-aluminum-die-cast-housing.jpg";
+import machineryAccessoryDieCastPart from "../../../../public/images/hsx-factory/machinery-accessory-aluminum-die-cast-part.jpg";
+import opticalModuleHousingA from "../../../../public/images/hsx-factory/optical-module-aluminum-die-cast-housing-a.jpg";
+import stageLightDieCastHousing from "../../../../public/images/hsx-factory/stage-light-aluminum-die-cast-housing.jpg";
 
 type InfoCard = {
   title: string;
   description: string;
-};
-
-type VisualProgram = {
-  title: string;
-  description: string;
-  image: StaticImageData;
-  alt: string;
-  tag: string;
-  highlights: string[];
 };
 
 const pageTitle =
@@ -81,13 +70,13 @@ const heroStats = [
   },
   {
     label: "Secondary Machining",
-    value: "7 + 7",
-    note: "7 multi-axis drilling machines and 7 multi-axis tapping machines",
+    value: "Drill + Tap",
+    note: "In-house drilling and tapping support for suitable aluminum die casting projects",
   },
   {
     label: "Finishing Support",
-    value: "Anodize + Coat",
-    note: "3 polishing and grinding machines plus anodizing, powder coating, and spray painting",
+    value: "Finish + Pack",
+    note: "Polishing, powder coating, spray painting, QC, and packing support",
   },
 ];
 
@@ -134,28 +123,64 @@ const manufacturedParts = [
   },
 ];
 
-const realFactoryExamples = [
+const rfqProjectExamples = [
   {
-    image: oemDieCastHousing,
-    alt: "OEM aluminum die-cast housing with ribs, bosses, and mounting features",
-    caption: "OEM aluminum die-cast housing example",
-    description:
-      "Ribs, bosses, mounting features, and internal structures can be reviewed before quotation based on drawings, 3D files, or sample photos.",
+    image: communicationEquipmentHousing,
+    alt: "Communication equipment aluminum die-cast housing for OEM RFQ review",
+    title: "Communication Equipment Housing",
+    searchIntent: "communication equipment aluminum housing",
+    buyerProblem:
+      "Need a small aluminum housing or cover for equipment assembly.",
+    hsxReviews:
+      "Wall thickness, mounting points, surface finishing, quantity, and packing needs.",
   },
   {
-    image: multiSpindleDrillingFixture,
-    alt: "Multi-spindle drilling with product-specific fixture for aluminum die casting parts",
-    caption: "Drilling, tapping, and fixture support",
-    description:
-      "For suitable parts, HSX can arrange in-house drilling and tapping with product-specific fixtures for repeat positioning.",
+    image: opticalModuleHousingA,
+    alt: "Optical module aluminum die-cast housing for custom aluminum casting projects",
+    title: "Optical Module Housing",
+    searchIntent: "optical module aluminum housing",
+    buyerProblem:
+      "Need a compact die-cast housing with controlled geometry and assembly features.",
+    hsxReviews:
+      "Part structure, tolerance, secondary operations, finishing, and batch quantity.",
   },
   {
-    image: coatingInspectionQc,
-    alt: "In-house coating inspection and surface check before packing",
-    caption: "Finishing inspection before packing",
-    description:
-      "Powder-coated or spray-painted parts can be checked for surface condition, color consistency, adhesion sampling when required, and packing readiness.",
+    image: machineryAccessoryDieCastPart,
+    alt: "Machinery accessory aluminum die-cast part for drawing-based project review",
+    title: "Machinery Accessory Part",
+    searchIntent: "custom aluminum machinery parts",
+    buyerProblem:
+      "Need a metal component for equipment, machinery, or assembly use.",
+    hsxReviews:
+      "Product size, holes, threaded features, machining needs, finishing, and packing.",
   },
+  {
+    image: stageLightDieCastHousing,
+    alt: "Stage light aluminum die-cast housing for lighting parts RFQ",
+    title: "Lighting Housing",
+    searchIntent: "aluminum die casting lighting parts",
+    buyerProblem:
+      "Need an aluminum housing or shell for lighting-related products.",
+    hsxReviews:
+      "Housing structure, coating or painting, QC, quantity, and project fit.",
+  },
+];
+
+const dieCastingFitSignals = [
+  "Batch production",
+  "A molded aluminum structure",
+  "Stable shape and repeatability",
+  "Controlled cost after tooling investment",
+  "Secondary operations such as drilling, tapping, finishing, QC, and packing",
+];
+
+const rfqReviewItems = [
+  "2D drawings or 3D files",
+  "Sample photos",
+  "Material and quantity requirements",
+  "Tolerance and secondary operation requirements",
+  "Surface finishing and packing needs",
+  "Application or usage information",
 ];
 
 const manufacturingSupport: InfoCard[] = [
@@ -187,7 +212,7 @@ const manufacturingSupport: InfoCard[] = [
   {
     title: "Surface Finishing Coordination",
     description:
-      "Polishing, grinding, anodizing, powder coating, and spray painting are coordinated to meet appearance, corrosion, and end-market requirements.",
+      "Polishing, powder coating, spray painting, and partner-supported anodizing when required are coordinated around appearance, corrosion, and end-market requirements.",
   },
   {
     title: "Assembly and Export Packing Support",
@@ -196,70 +221,11 @@ const manufacturingSupport: InfoCard[] = [
   },
 ];
 
-const visualPrograms: VisualProgram[] = [
-  {
-    title: "LED Work Light Housing Programs",
-    description:
-      "Compact aluminum lamp bodies, covers, end caps, and mounting features for OEM work-light programs supplied to wholesalers and lighting brands.",
-    image: ledWorkLight,
-    alt: "LED work light with compact aluminum housing for OEM lighting projects",
-    tag: "LED Lighting",
-    highlights: [
-      "Compact cast housings",
-      "Heat-dissipation-friendly geometry",
-      "Suitable for branded OEM programs",
-    ],
-  },
-  {
-    title: "Automotive Lamp Body Programs",
-    description:
-      "Small-to-medium aluminum housings used for lamp bodies, heat-sink structures, and enclosure-style shells in lighting-related projects.",
-    image: automotiveLedLight,
-    alt: "Auxiliary LED light with aluminum housing suitable for compact OEM die casting",
-    tag: "Lamp Bodies",
-    highlights: [
-      "Housing and shell formats",
-      "Mounting and cover integration",
-      "Good fit for 200T and 300T scope",
-    ],
-  },
-  {
-    title: "Motorcycle Light Housing Programs",
-    description:
-      "Compact aluminum light housings and decorative accessory shells for motorcycle aftermarket brands, distributors, and OEM buyers.",
-    image: motorcycleLedLight,
-    alt: "Motorcycle light with compact aluminum housing for aftermarket and OEM buyers",
-    tag: "Motorcycle",
-    highlights: [
-      "Small housing footprints",
-      "Appearance-driven finishing support",
-      "Drawings or sample-based development",
-    ],
-  },
-  {
-    title: "Custom Aluminum Hardware Programs",
-    description:
-      "OEM aluminum parts for hardware accessories, enclosure shells, decorative covers, end caps, and compact brackets with post-machining support.",
-    image: oemAluminumParts,
-    alt: "OEM aluminum die casting parts including small brackets, end caps, and enclosure shells",
-    tag: "Hardware",
-    highlights: [
-      "Drilling and tapping features",
-      "Anodizing, coating, or painting",
-      "Export-ready small-to-medium parts",
-    ],
-  },
-];
-
 const capacityPoints = [
-  "2 aluminum die casting machines: 1 x 200-ton machine and 1 x 300-ton machine",
-  "7 multi-axis drilling machines for repeatable hole and mounting-point processing",
-  "7 multi-axis tapping machines for threaded features on small-to-medium aluminum parts",
-  "Cooperative CNC turning and CNC machining support can be coordinated through partner facilities when required",
-  "3 polishing and grinding machines for appearance preparation before finishing",
-  "Aluminum anodizing support for metallic appearance and corrosion resistance",
-  "Powder coating for durable exterior surface coverage",
-  "Spray painting for project-specific color and visual requirements",
+  "200-ton and 300-ton die casting machines are used for suitable small-to-medium aluminum die casting projects",
+  "HSX supports in-house drilling, tapping, polishing, powder coating, spray painting, QC, and packing for suitable aluminum die casting projects",
+  "Partner-supported CNC machining can be coordinated when required by the project",
+  "Partner-supported anodizing can be coordinated when required by the project",
 ];
 
 const surfaceFinishes: InfoCard[] = [
@@ -271,7 +237,7 @@ const surfaceFinishes: InfoCard[] = [
   {
     title: "Anodizing",
     description:
-      "Reviewed for suitable projects when the buyer needs a controlled metallic appearance on exposed aluminum surfaces. Final anodized appearance depends on alloy selection, casting quality, surface preparation, and sample evaluation.",
+      "Partner-supported anodizing can be reviewed for suitable projects when the buyer needs a controlled metallic appearance on exposed aluminum surfaces. Final anodized appearance depends on alloy selection, casting quality, surface preparation, and sample evaluation.",
   },
   {
     title: "Powder Coating",
@@ -344,7 +310,7 @@ const buyerReasons: InfoCard[] = [
   {
     title: "Casting, Machining, and Finishing Coordination",
     description:
-      "Casting, drilling, tapping, cooperative CNC machining support when required, polishing, anodizing, powder coating, and spray painting are coordinated around the aluminum part project.",
+      "Casting, drilling, tapping, partner-supported CNC machining when required, polishing, partner-supported anodizing when required, powder coating, and spray painting are coordinated around the aluminum part project.",
   },
   {
     title: "Direct Factory-Side Communication",
@@ -783,42 +749,104 @@ export default function OemAluminumDieCastingPartsPage() {
           </div>
         </section>
 
-        <section className="border-b border-white/8 bg-[radial-gradient(circle_at_top_right,rgba(199,162,91,0.1),transparent_30%),linear-gradient(180deg,#080808_0%,#0e0e0e_100%)] py-16 lg:py-24">
+        <section className="border-b border-white/8 py-20 lg:py-28">
           <div className="container-shell">
-            <SectionHeading
-              eyebrow="Factory examples"
-              title="Real Factory Examples for OEM Aluminum Die Casting Parts"
-              description="These examples show practical OEM aluminum die casting work around part structure, fixture-based secondary machining, surface inspection, and packing readiness. HSX reviews each project by drawings, 3D files, samples, quantity, machining needs, and finishing requirements before quotation."
-            />
+            <div className="grid gap-10 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:items-start">
+              <div>
+                <SectionHeading
+                  eyebrow="Process fit"
+                  title="When Aluminum Die Casting May Be a Suitable Process"
+                  description="Aluminum die casting may be suitable when a part needs repeatable molded aluminum structure, batch production, stable shape, and secondary operations after tooling investment."
+                />
 
-            <div className="mt-12 grid gap-6 md:grid-cols-3">
-              {realFactoryExamples.map((example) => (
+                <div className="mt-8 rounded-sm border border-white/10 bg-white/[0.03] p-6">
+                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#d4ac67]">
+                    Good fit signals
+                  </p>
+                  <ul className="mt-5 space-y-3 text-base leading-7 text-[#efe7d9]">
+                    {dieCastingFitSignals.map((item) => (
+                      <li key={item} className="flex gap-3">
+                        <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-[#d4ac67]" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              <div className="industrial-card p-7 sm:p-9">
+                <h2 className="text-2xl font-semibold text-white">
+                  RFQ Project Examples We Can Review
+                </h2>
+                <p className="mt-5 text-base leading-8 text-[#c9c1b2]">
+                  Different buyers may search by product, industry, or
+                  manufacturing problem. HSX connects these RFQ directions back
+                  to drawing review, factory fit, secondary operations,
+                  finishing, and packing requirements.
+                </p>
+                <p className="mt-6 border-l-2 border-[#d4ac67]/50 pl-5 text-sm leading-7 text-[#efe7d9]">
+                  Not every aluminum part is suitable for die casting or for our
+                  current machine range. Before quotation, HSX reviews the
+                  drawing, part size, structure, wall thickness, tolerance, mold
+                  design, machine matching, quantity, secondary operations,
+                  surface finishing, and packing requirements to confirm whether
+                  aluminum die casting is suitable for the project.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-14 grid gap-7 lg:grid-cols-2">
+              {rfqProjectExamples.map((example) => (
                 <article
-                  key={example.caption}
-                  className="industrial-card overflow-hidden p-3"
+                  key={example.title}
+                  className="industrial-card group overflow-hidden"
                 >
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-[1.25rem]">
+                  <div className="relative aspect-[4/3] overflow-hidden">
                     <Image
                       src={example.image}
                       alt={example.alt}
                       fill
-                      sizes="(min-width: 1280px) 24rem, (min-width: 768px) 30vw, 100vw"
-                      className="object-cover"
+                      sizes="(min-width: 1280px) 24rem, (min-width: 768px) 50vw, 100vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
                   </div>
-                  <div className="p-4">
-                    <h2 className="text-xl font-semibold text-white">
-                      {example.caption}
+                  <div className="p-6 sm:p-7">
+                    <h2 className="text-lg font-semibold text-white">
+                      {example.title}
                     </h2>
-                    <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
-                      {example.description}
-                    </p>
+                    <dl className="mt-5 space-y-4 text-sm leading-6">
+                      <div>
+                        <dt className="font-semibold uppercase tracking-[0.16em] text-[#d4ac67]">
+                          Search intent
+                        </dt>
+                        <dd className="mt-1 text-[#efe7d9]">
+                          {example.searchIntent}
+                        </dd>
+                      </div>
+                      <div>
+                        <dt className="font-semibold uppercase tracking-[0.16em] text-[#d4ac67]">
+                          Buyer problem
+                        </dt>
+                        <dd className="mt-1 text-[#cac1b2]">
+                          {example.buyerProblem}
+                        </dd>
+                      </div>
+                      <div>
+                        <dt className="font-semibold uppercase tracking-[0.16em] text-[#d4ac67]">
+                          HSX reviews
+                        </dt>
+                        <dd className="mt-1 text-[#cac1b2]">
+                          {example.hsxReviews}
+                        </dd>
+                      </div>
+                    </dl>
                   </div>
                 </article>
               ))}
             </div>
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+            <div className="mt-12 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
               <Link href="/b2b-oem-project-review" className="gold-button text-center">
                 Request Project Review
               </Link>
@@ -831,59 +859,6 @@ export default function OemAluminumDieCastingPartsPage() {
               >
                 Discuss on WhatsApp
               </a>
-            </div>
-          </div>
-        </section>
-
-        <section
-          id="programs"
-          className="border-b border-white/8 bg-[linear-gradient(180deg,rgba(14,14,14,0.98)_0%,rgba(7,7,7,1)_100%)] py-16 lg:py-24"
-        >
-          <div className="container-shell">
-            <SectionHeading
-              eyebrow="Representative OEM part programs"
-              title="Visual examples of compact aluminum projects that match the factory fit"
-              description="These program examples keep the page grounded in realistic small-to-medium aluminum die casting scope. The focus stays on lamp housings, heat-sink-style shells, brackets, end caps, enclosure shells, and compact custom hardware accessories."
-            />
-
-            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-              {visualPrograms.map((program, index) => (
-                <article
-                  key={`${program.title}-${index}`}
-                  className="industrial-card group overflow-hidden"
-                >
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <Image
-                      src={program.image}
-                      alt={program.alt}
-                      fill
-                      sizes="(min-width: 1280px) 22rem, (min-width: 768px) 50vw, 100vw"
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
-                    <div className="absolute left-4 top-4 rounded-full border border-white/10 bg-black/60 px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#efcf8d]">
-                      {program.tag}
-                    </div>
-                  </div>
-
-                  <div className="p-6">
-                    <h2 className="text-2xl font-semibold text-white">
-                      {program.title}
-                    </h2>
-                    <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
-                      {program.description}
-                    </p>
-                    <ul className="mt-5 space-y-3 text-sm leading-7 text-[#f3ecdd]">
-                      {program.highlights.map((highlight) => (
-                        <li key={highlight} className="flex gap-3">
-                          <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-[#d5ae67]" />
-                          <span>{highlight}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </article>
-              ))}
             </div>
           </div>
         </section>
@@ -937,9 +912,9 @@ export default function OemAluminumDieCastingPartsPage() {
                       Cast to Finish
                     </p>
                     <p className="mt-3 text-sm leading-7 text-[#c4bbaa]">
-                      Die casting, cooperative CNC machining support, drilling,
-                      tapping, polishing, and finishing can be coordinated inside
-                      one OEM workflow when required by the project.
+                      Die casting, drilling, tapping, polishing, finishing, and
+                      partner-supported CNC machining when required can be
+                      coordinated around one OEM workflow.
                     </p>
                   </article>
                 </div>
@@ -949,7 +924,7 @@ export default function OemAluminumDieCastingPartsPage() {
                 <SectionHeading
                   eyebrow="OEM custom manufacturing support"
                   title="Project Suitability Review Before Quotation"
-                  description="HSX reviews part structure, size, wall thickness, holes, threads, machining steps, surface finishing requirements, quantity, and application details before quotation. The workflow is structured for mold development, die casting, coordinated CNC machining support through partner facilities when required, hole processing, finishing, assembly coordination, and packaging support."
+                  description="HSX reviews part structure, size, wall thickness, holes, threads, machining steps, surface finishing requirements, quantity, and application details before quotation. The workflow is structured for mold development, die casting, partner-supported CNC machining when required, hole processing, finishing, assembly coordination, and packaging support."
                 />
 
                 <div className="mt-12 grid gap-6 md:grid-cols-2">
@@ -1003,21 +978,24 @@ export default function OemAluminumDieCastingPartsPage() {
                   <p className="text-xs uppercase tracking-[0.28em] text-[#e8ce97]">
                     Die casting machines
                   </p>
-                  <p className="mt-3 text-3xl font-semibold text-white">2</p>
+                  <p className="mt-3 text-3xl font-semibold text-white">
+                    200T + 300T
+                  </p>
                   <p className="mt-3 text-sm leading-7 text-[#c4bbaa]">
-                    1 x 200-ton machine and 1 x 300-ton machine
+                    Used for suitable small-to-medium aluminum die casting
+                    projects.
                   </p>
                 </article>
                 <article className="metric-pill">
                   <p className="text-xs uppercase tracking-[0.28em] text-[#e8ce97]">
-                    Secondary equipment
+                    Secondary operations
                   </p>
                   <p className="mt-3 text-3xl font-semibold text-white">
-                    17
+                    In-house
                   </p>
                   <p className="mt-3 text-sm leading-7 text-[#c4bbaa]">
-                    7 drilling machines, 7 tapping machines, and 3 polishing
-                    and grinding machines
+                    Drilling, tapping, polishing, powder coating, spray
+                    painting, QC, and packing support.
                   </p>
                 </article>
               </div>
@@ -1071,7 +1049,7 @@ export default function OemAluminumDieCastingPartsPage() {
             <SectionHeading
               eyebrow="Materials and surface finishing"
               title="Machining and Surface Finishing Support"
-              description="The factory supplies aluminum die casting parts and coordinates drilling, tapping, cooperative machining support when required, polishing, powder coating, spray painting, and suitable anodizing evaluation around the target application and appearance requirements."
+              description="The factory supplies aluminum die casting parts and coordinates drilling, tapping, polishing, powder coating, spray painting, partner-supported CNC machining when required, and partner-supported anodizing when required around the target application and appearance requirements."
             />
             <p className="mt-5 max-w-3xl text-base leading-8 text-[#c9c1b2]">
               For projects that specifically target an anodized metallic
@@ -1153,9 +1131,20 @@ export default function OemAluminumDieCastingPartsPage() {
           <div className="container-shell">
             <SectionHeading
               eyebrow="RFQ requirements"
-              title="What to Send for RFQ"
-              description="Send drawings, 3D files, sample photos, existing part photos, quantity, machining requirements, drilling or tapping requirements, and surface finishing requirements for project review before quotation."
+              title="What Buyers Can Send for RFQ Review"
+              description="Clear RFQ details help HSX review the process route, tooling feasibility, secondary operations, finishing, and packing needs before quotation."
             />
+
+            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {rfqReviewItems.map((item) => (
+                <div
+                  key={item}
+                  className="rounded-sm border border-white/10 bg-white/[0.03] px-5 py-4 text-sm font-semibold leading-6 text-[#efe7d9]"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
 
             <div className="mt-10 industrial-card p-6 sm:p-8">
               <ul className="space-y-4 text-base leading-8 text-[#efe7d9]">
