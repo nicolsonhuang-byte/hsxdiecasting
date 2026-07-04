@@ -121,6 +121,23 @@ export default function ArticlePage() {
           </div>
         </section>
 
+        <section className="mt-10 rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
+          <h2 className="text-2xl font-semibold !text-white">
+            What Buyers Can Send for LED Light Housing RFQ Review
+          </h2>
+          <p className="mt-4 text-sm leading-7 text-[#d4cdc0]">
+            For OEM aluminum die-cast LED light housing projects, buyers can send
+            2D drawings, 3D files, sample photos, housing size, material
+            requirements, quantity, tolerance needs, surface finishing
+            requirements, packing requirements, and application information.
+          </p>
+          <p className="mt-4 text-sm leading-7 text-[#d4cdc0]">
+            Before quotation, HSX reviews the part structure, die casting
+            suitability, drilling or tapping needs, coating or spray painting
+            requirements, QC points, and packing details.
+          </p>
+        </section>
+
         <section className="mt-10 rounded-[2rem] border border-[#d7b56d]/25 bg-[#d4ac67] p-8 text-[#120f08]">
           <h2 className="text-2xl font-semibold">
             Send your automotive LED light RFQ
