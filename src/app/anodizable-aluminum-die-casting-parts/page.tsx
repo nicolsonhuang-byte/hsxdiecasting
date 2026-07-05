@@ -4,6 +4,9 @@ import Link from "next/link";
 
 import factoryCapabilities from "../../../public/images/factory-capabilities.png";
 import oemAluminumParts from "../../../public/images/oem-small-aluminum-die-casting-parts.png";
+import asCastFullShotBlank from "../../../public/images/hsx-factory/as-cast-full-shot-die-casting-blank-with-runner-gates-overflows.jpg";
+import blueAnodizedFullShotDemo from "../../../public/images/hsx-factory/blue-anodized-die-cast-full-shot-demonstration-sample.jpg";
+import redAnodizedFullShotDemo from "../../../public/images/hsx-factory/red-anodized-die-cast-full-shot-demonstration-sample.jpg";
 import anodizedColorSamplesCollage from "../../../public/images/v2-hsx-anodized-color-samples-collage-16x9.webp";
 import anodizedSampleReviewHeroCard from "../../../public/images/v2-hsx-anodized-sample-review-hero-card.webp";
 import blueBlackAnodizedSamples from "../../../public/images/v2-hsx-blue-black-anodized-samples-4x5.webp";
@@ -208,6 +211,41 @@ const anodizedSampleCards = [
     image: champagneRoseAnodizedSamples,
     alt: "Champagne and red anodized aluminum die casting color direction samples",
   },
+];
+
+const anodizingDemonstrationCards = [
+  {
+    title: "As-cast full-shot blank",
+    image: asCastFullShotBlank,
+    alt: "As-cast full-shot die casting blank with runner gates parts and overflows attached",
+    caption:
+      "As-cast full-shot blank directly from the die casting machine, showing runner, gates, parts, and overflows.",
+  },
+  {
+    title: "Red anodized demonstration sample",
+    image: redAnodizedFullShotDemo,
+    alt: "Red anodized die-cast full-shot demonstration sample with gates and overflows attached",
+    caption:
+      "Red anodized die-cast demonstration sample with gates and overflows intentionally kept for process proof.",
+  },
+  {
+    title: "Blue anodized demonstration sample",
+    image: blueAnodizedFullShotDemo,
+    alt: "Blue anodized die-cast full-shot demonstration sample with gates and overflows attached",
+    caption:
+      "Blue anodized die-cast demonstration sample showing another anodized appearance option for suitable projects.",
+  },
+];
+
+const anodizingProductionFlow = [
+  "Die casting",
+  "Gate / runner / overflow removal",
+  "Drilling and tapping",
+  "Polishing",
+  "Sandblasting as pre-anodizing preparation",
+  "Anodizing through a long-term partner",
+  "QC inspection",
+  "Packing",
 ];
 
 const suitableApplications: InfoCard[] = [
@@ -604,6 +642,98 @@ export default function AnodizableAluminumDieCastingPartsPage() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="border-b border-white/8 py-16 lg:py-24">
+        <div className="container-shell">
+          <SectionHeading
+            eyebrow="Appearance review"
+            title="Can Die-Cast Aluminum Parts Be Anodized for Appearance Requirements?"
+            description="Some buyers choose CNC machining before anodizing because common die-casting materials may not support a stable anodized appearance. For suitable projects, HSX can review whether a die-casting route can support the target appearance before tooling."
+          />
+
+          <div className="mt-10 grid gap-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-start">
+            <div className="space-y-5 text-base leading-8 text-[#c9c1b2]">
+              <p>
+                HSX reviews selected material, controlled casting quality,
+                proper secondary operations, and long-term partner-supported
+                anodizing before confirming whether the project is worth sample
+                evaluation.
+              </p>
+              <p>
+                The as-cast full-shot blank shows the part directly from the die
+                casting machine, with runner, gates, parts, and overflows
+                attached. The red and blue anodized full-shot samples are
+                demonstration samples. They intentionally keep the runner,
+                gates, and overflows to show that the parts are die-cast, not
+                CNC-machined profiles or aluminum extrusion.
+              </p>
+              <p>
+                The full-shot anodized samples are demonstration samples only.
+                In regular production, parts are trimmed and prepared before
+                anodizing.
+              </p>
+            </div>
+
+            <div className="industrial-card p-6 sm:p-8">
+              <h3 className="text-xl font-semibold text-white">
+                Normal production flow
+              </h3>
+              <div className="mt-5 flex flex-wrap gap-3 text-sm leading-7 text-[#d8cfbf]">
+                {anodizingProductionFlow.map((step, index) => (
+                  <span key={step} className="inline-flex items-center gap-3">
+                    <span className="rounded-full border border-[#d7b56d]/30 px-3 py-1">
+                      {step}
+                    </span>
+                    {index < anodizingProductionFlow.length - 1 ? (
+                      <span className="text-[#d4ac67]" aria-hidden="true">
+                        -&gt;
+                      </span>
+                    ) : null}
+                  </span>
+                ))}
+              </div>
+              <div className="mt-6 border-t border-white/10 pt-6">
+                <h3 className="text-xl font-semibold text-white">
+                  RFQ details buyers should send
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-[#d8cfbf]">
+                  Buyers can send drawings, sample photos, quantity, surface
+                  expectations, application details, and whether the part is
+                  intended for visible appearance use.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {anodizingDemonstrationCards.map((sample) => (
+              <article key={sample.title} className="industrial-card overflow-hidden">
+                <Image
+                  src={sample.image}
+                  alt={sample.alt}
+                  sizes="(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw"
+                  className="block aspect-[4/3] w-full object-cover"
+                />
+                <div className="p-5">
+                  <h3 className="text-lg font-semibold text-white">
+                    {sample.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
+                    {sample.caption}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <p className="mt-8 text-sm leading-7 text-[#c9c1b2]">
+            Not every die-cast aluminum part is suitable for anodizing.
+            Suitability depends on selected material, casting quality, part
+            structure, surface condition, appearance requirements, and project
+            quantity.
+          </p>
         </div>
       </section>
 
