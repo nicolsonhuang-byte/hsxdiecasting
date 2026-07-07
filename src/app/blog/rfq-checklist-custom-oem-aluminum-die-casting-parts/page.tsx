@@ -270,6 +270,55 @@ export default function ArticlePage() {
 
           <section>
             <h2 className="text-2xl font-semibold !text-white">
+              Wall Thickness and Filling Risk Review Before Tooling
+            </h2>
+            <p className="mt-4">
+              Wall thickness is one of the key points HSX reviews before
+              quotation and tooling discussion.
+            </p>
+            <p className="mt-4">
+              In aluminum die casting, a thicker section does not always mean a
+              better structure. If the wall thickness changes too suddenly, the
+              thick section may become the slowest cooling area inside the mold.
+              This can increase the risk of gas concentration, shrinkage,
+              internal porosity, or unstable casting quality.
+            </p>
+            <p className="mt-4">
+              For die casting parts, good wall thickness design is not only
+              about one thickness number. It is more about continuous, uniform,
+              and well-transitioned geometry.
+            </p>
+            <p className="mt-4">
+              For HSX, wall thickness review is not only a quotation step. It
+              also helps guide mold design decisions before mold manufacturing
+              starts.
+            </p>
+            <p className="mt-4">
+              HSX reviews wall thickness, filling risk, and cooling logic before
+              tooling. These risks are then considered during die casting mold
+              design, including gate, runner, overflow, venting, and related
+              tooling layout before mold manufacturing starts.
+            </p>
+            <p className="mt-4">
+              For complex or higher-risk parts, CAD drawings and STEP / STP 3D
+              files help HSX review wall thickness direction, structure
+              complexity, and possible filling risks more accurately.
+            </p>
+            <div className="mt-6 flex flex-col gap-4 rounded-[1.5rem] border border-[#d7b56d]/20 bg-white/[0.03] p-5 sm:flex-row sm:items-center sm:justify-between">
+              <p className="text-sm font-semibold text-[#efe7d9]">
+                Send CAD drawings and STEP / STP files for project review.
+              </p>
+              <Link
+                href="/b2b-oem-project-review"
+                className="rounded-full bg-[#d4ac67] px-5 py-3 text-center text-sm font-semibold text-[#120f08]"
+              >
+                Request Project Review
+              </Link>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold !text-white">
               4. Prepare Drawings, 3D Files, or Sample Photos
             </h2>
             <p className="mt-4">
