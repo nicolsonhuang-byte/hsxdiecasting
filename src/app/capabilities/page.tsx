@@ -4,8 +4,8 @@ import Link from "next/link";
 
 import factoryCapabilities from "../../../public/images/factory-capabilities.png";
 import heroFactory from "../../../public/images/hero-factory-200t-300t.png";
-import ledWorkLight from "../../../public/images/led-work-light.png";
 import oemAluminumParts from "../../../public/images/oem-small-aluminum-die-casting-parts.png";
+import qualityInspectionFinishedAluminumParts from "../../../public/images/hsx-factory/quality-inspection-finished-aluminum-parts.jpg";
 
 type InfoCard = {
   title: string;
@@ -738,8 +738,8 @@ export default function CapabilitiesPage() {
             <div className="industrial-card gold-frame overflow-hidden p-3">
               <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem]">
                 <Image
-                  src={ledWorkLight}
-                  alt="Lighting product and housing quality checks before shipment"
+                  src={qualityInspectionFinishedAluminumParts}
+                  alt="Manual visual inspection of finished aluminum parts before packing at HSX."
                   fill
                   sizes="(min-width: 1280px) 34rem, (min-width: 1024px) 40vw, 100vw"
                   className="object-cover"
