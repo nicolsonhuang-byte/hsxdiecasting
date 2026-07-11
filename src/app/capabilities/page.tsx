@@ -324,7 +324,7 @@ export default function CapabilitiesPage() {
         </div>
       </div>
 
-      <header className="sticky top-0 z-40 border-b border-white/8 bg-[#050505]/88 backdrop-blur-xl">
+      <header className="z-40 border-b border-white/8 bg-[#050505]/88 backdrop-blur-xl">
         <div className="container-shell flex flex-col gap-5 py-5 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-2xl">
             <p className="section-kicker">Foshan, Guangdong, China</p>
