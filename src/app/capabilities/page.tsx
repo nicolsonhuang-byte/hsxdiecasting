@@ -61,14 +61,14 @@ const contactDetails = {
 
 const heroStats = [
   {
-    label: "Die Casting Scope",
-    value: "200T + 300T",
+    label: "Die Casting Equipment",
+    value: "280T and 320T",
     note: "Focused on small-to-medium aluminum die casting parts and compact aluminum housings",
   },
   {
-    label: "Secondary Equipment",
-    value: "17",
-    note: "7 drilling machines, 7 tapping machines, and 3 polishing and grinding machines",
+    label: "Selected In-House Secondary Operations",
+    value: "In-House",
+    note: "Drilling, tapping, polishing, trimming, deburring, QC, and packing support suitable OEM aluminum die casting projects.",
   },
   {
     label: "OEM Input",
@@ -79,12 +79,12 @@ const heroStats = [
 
 const equipmentCards: InfoCard[] = [
   {
-    title: "200T Aluminum Die Casting Machine",
+    title: "280T Aluminum Die Casting Equipment",
     description:
       "Used for compact aluminum housings, brackets, end caps, covers, and other small-to-medium die cast parts with practical geometry.",
   },
   {
-    title: "300T Aluminum Die Casting Machine",
+    title: "320T Aluminum Die Casting Equipment",
     description:
       "Supports slightly larger small-to-medium aluminum parts within realistic factory scope for light housings, shells, covers, and OEM hardware accessories.",
   },
@@ -134,7 +134,7 @@ const castingApplications: InfoCard[] = [
   {
     title: "Small Aluminum Enclosure Shells",
     description:
-      "Compact enclosure shells for lighting, hardware, and OEM aluminum accessories suited to 200T and 300T die casting capacity.",
+      "Compact enclosure shells for lighting, hardware, and OEM aluminum accessories suited to 280T and 320T aluminum die casting equipment.",
   },
   {
     title: "Decorative Non-load-bearing Covers",
@@ -440,7 +440,7 @@ export default function CapabilitiesPage() {
                   <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
                     <Image
                       src={heroFactory}
-                      alt="HSX factory capability aligned with 200T and 300T aluminum die casting and selected secondary operations"
+                      alt="HSX factory capability aligned with 280T and 320T aluminum die casting equipment and selected secondary operations"
                       fill
                       preload
                       sizes="(min-width: 1280px) 44rem, (min-width: 1024px) 46vw, 100vw"
@@ -522,7 +522,7 @@ export default function CapabilitiesPage() {
                         </p>
                         <p className="mt-2 text-sm leading-7 text-[#f2eadb]">
                           OEM small aluminum die casting parts produced within
-                          realistic 200T and 300T factory capacity.
+                          the scope of 280T and 320T aluminum die casting equipment.
                         </p>
                       </div>
                     </div>
@@ -576,8 +576,8 @@ export default function CapabilitiesPage() {
                     <p className="section-kicker">Aluminum die casting capability</p>
                     <p className="mt-3 text-lg font-semibold text-white">
                       The factory stays focused on small aluminum die casting
-                      parts and compact housings that fit 200T and 300T machine
-                      capacity.
+                      parts and compact housings that fit 280T and 320T aluminum
+                      die casting equipment.
                     </p>
                   </div>
                 </div>
@@ -602,7 +602,7 @@ export default function CapabilitiesPage() {
               <SectionHeading
                 eyebrow="Aluminum die casting capability"
                 title="Realistic part scope for compact OEM aluminum manufacturing"
-                description="The page is intentionally limited to manufacturable small-to-medium aluminum parts suitable for the factory’s 200T and 300T machines."
+                description="The page is intentionally limited to manufacturable small-to-medium aluminum parts suitable for the factory's 280T and 320T aluminum die casting equipment."
               />
 
               <div className="mt-12 grid gap-6 md:grid-cols-2">
@@ -899,7 +899,7 @@ export default function CapabilitiesPage() {
               <span className="text-white/90">WeChat:</span>{" "}
               {contactDetails.wechat}
             </p>
-            <p>Small-to-medium aluminum die casting scope: 200T and 300T</p>
+            <p>Small-to-medium aluminum die casting equipment: 280T and 320T</p>
             <p>Brake caliper covers are decorative non-load-bearing appearance covers only</p>
             <p className="mt-2">
               © {currentYear} HSX DIECASTING. All rights reserved.
