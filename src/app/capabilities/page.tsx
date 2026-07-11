@@ -318,9 +318,12 @@ export default function CapabilitiesPage() {
               <span>{contactDetails.address}</span>
             </a>
           </div>
-          <a href="#cta" className="gold-button w-full text-center sm:w-auto">
-            Get a Quote
-          </a>
+          <Link
+            href="/b2b-oem-project-review"
+            className="gold-button w-full text-center sm:w-auto"
+          >
+            Request Project Review
+          </Link>
         </div>
       </div>
 
@@ -409,15 +412,18 @@ export default function CapabilitiesPage() {
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <a
-                  href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
+                <Link
+                  href="/b2b-oem-project-review"
                   className="gold-button text-center"
                 >
-                  Send Your Drawings
-                </a>
-                <a href="#cta" className="outline-button text-center">
-                  Get a Quote
-                </a>
+                  Request Project Review
+                </Link>
+                <Link
+                  href="/products/oem-aluminum-die-casting-parts"
+                  className="outline-button text-center"
+                >
+                  View OEM Parts
+                </Link>
               </div>
 
               <div className="mt-10 grid gap-4 sm:grid-cols-3">
