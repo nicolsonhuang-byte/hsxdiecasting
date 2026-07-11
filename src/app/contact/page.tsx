@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import factoryCapabilities from "../../../public/images/factory-capabilities.png";
-import heroFactory from "../../../public/images/hero-factory-200t-300t.png";
+import batchAluminumDieCastParts from "../../../public/images/hsx-factory/batch-aluminum-die-cast-parts-before-finishing.jpg";
+import inHouseSprayPainting from "../../../public/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg";
 import ledWorkLight from "../../../public/images/led-work-light.png";
 import oemAluminumParts from "../../../public/images/oem-small-aluminum-die-casting-parts.png";
 
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
     url: "/contact",
     images: [
       {
-        url: "/images/hero-factory-200t-300t.png",
-        alt: "HSX DIECASTING contact and RFQ support for aluminum die casting parts and LED lighting products",
+        url: "/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg",
+        alt: "In-house spray painting of aluminum parts at HSX DIECASTING",
       },
     ],
   },
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: pageTitle,
     description: pageDescription,
-    images: ["/images/hero-factory-200t-300t.png"],
+    images: ["/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg"],
   },
 };
 
@@ -388,8 +388,8 @@ export default function ContactPage() {
                 <div className="industrial-card gold-frame relative overflow-hidden rounded-[2rem] p-3">
                   <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
                     <Image
-                      src={heroFactory}
-                      alt="HSX factory environment supporting OEM RFQs and compact aluminum part manufacturing"
+                      src={inHouseSprayPainting}
+                      alt="In-house spray painting of aluminum parts at HSX DIECASTING"
                       fill
                       preload
                       sizes="(min-width: 1280px) 44rem, (min-width: 1024px) 46vw, 100vw"
@@ -686,8 +686,8 @@ export default function ContactPage() {
             <div className="industrial-card gold-frame overflow-hidden p-3">
               <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
                 <Image
-                  src={factoryCapabilities}
-                  alt="Factory capability reminder for compact aluminum parts, drilling, tapping, polishing, and finishing support"
+                  src={inHouseSprayPainting}
+                  alt="In-house spray painting of aluminum parts at HSX DIECASTING"
                   fill
                   sizes="(min-width: 1280px) 36rem, (min-width: 1024px) 42vw, 100vw"
                   className="object-cover"
@@ -785,8 +785,8 @@ export default function ContactPage() {
                   <div className="overflow-hidden rounded-[1.5rem] border border-[#2b2216]/15 bg-[#120f08] p-3 shadow-[0_18px_48px_rgba(18,15,8,0.22)]">
                     <div className="relative aspect-[4/3] overflow-hidden rounded-[1.1rem]">
                       <Image
-                        src={factoryCapabilities}
-                        alt="Factory contact and quotation support for aluminum die casting and LED lighting projects"
+                        src={batchAluminumDieCastParts}
+                        alt="Batch aluminum die cast parts before finishing and project review"
                         fill
                         sizes="(min-width: 1024px) 26rem, 100vw"
                         className="object-cover"
