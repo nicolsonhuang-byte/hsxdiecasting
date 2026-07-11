@@ -357,10 +357,22 @@ export default function CapabilitiesPage() {
               Home
             </Link>
             <Link
+              href="/about"
+              className="transition-colors hover:text-white"
+            >
+              About
+            </Link>
+            <Link
               href="/products"
               className="transition-colors hover:text-white"
             >
               Products
+            </Link>
+            <Link
+              href="/b2b-oem-project-review"
+              className="transition-colors hover:text-white"
+            >
+              Project Review
             </Link>
             <Link
               href="/contact"
@@ -368,15 +380,6 @@ export default function CapabilitiesPage() {
             >
               Contact
             </Link>
-            <a href="#equipment" className="transition-colors hover:text-white">
-              Equipment
-            </a>
-            <a href="#workflow" className="transition-colors hover:text-white">
-              Workflow
-            </a>
-            <a href="#quality" className="transition-colors hover:text-white">
-              Quality
-            </a>
           </nav>
         </div>
       </header>
