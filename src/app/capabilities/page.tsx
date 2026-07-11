@@ -13,10 +13,10 @@ type InfoCard = {
 };
 
 const pageTitle =
-  "Factory Capabilities | Aluminum Die Casting & Finishing";
+  "Factory Capabilities | Aluminum Die Casting and Secondary Operations";
 
 const pageDescription =
-  "HSX DIECASTING supports OEM aluminum die casting, drilling, tapping, polishing, anodizing, powder coating, spray painting, and export packaging.";
+  "HSX DIECASTING provides in-house aluminum die casting, trimming, deburring, drilling, tapping, polishing, powder coating, spray painting, QC, and packing. CNC machining and anodizing can be coordinated through partner-supported resources when required by the project.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "aluminum die casting factory China",
     "OEM aluminum parts manufacturing",
     "small aluminum die casting parts",
-    "aluminum die casting machining and finishing",
+    "aluminum die casting secondary operations",
   ],
   openGraph: {
     title: pageTitle,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/factory-capabilities.png",
-        alt: "HSX DIECASTING factory capabilities for compact aluminum parts, machining, and finishing",
+        alt: "HSX DIECASTING capability overview for compact aluminum parts, selected secondary operations, and project coordination",
       },
     ],
   },
@@ -89,24 +89,24 @@ const equipmentCards: InfoCard[] = [
       "Supports slightly larger small-to-medium aluminum parts within realistic factory scope for light housings, shells, covers, and OEM hardware accessories.",
   },
   {
-    title: "Multi-axis Drilling Support",
+    title: "In-House Drilling Support",
     description:
-      "Supports repeatable hole processing, mounting-point preparation, and secondary machining for aluminum parts and housings.",
+      "Supports in-house drilling for repeatable hole processing, mounting-point preparation, and secondary operations on aluminum parts and housings.",
   },
   {
-    title: "Multi-axis Tapping Support",
+    title: "In-House Tapping Support",
     description:
-      "Used for threaded features, assembly-related hole preparation, and OEM aluminum part functional detail work.",
+      "Supports in-house tapping for threaded features, assembly-related hole preparation, and OEM aluminum part functional detail work.",
   },
   {
-    title: "Polishing and Grinding Equipment",
+    title: "In-House Polishing Equipment",
     description:
-      "Provides surface preparation and appearance improvement before finishing or final visual inspection.",
+      "Provides in-house polishing and surface preparation for appearance improvement before finishing or final visual inspection.",
   },
   {
-    title: "Surface Finishing Coordination",
+    title: "In-House Coating and Partner-Supported Anodizing",
     description:
-      "Aluminum anodizing, powder coating, and spray painting are coordinated with polishing and grinding preparation.",
+      "Powder coating and spray painting are supported in-house. CNC machining and anodizing can be coordinated through partner-supported resources when required by the project.",
   },
 ];
 
@@ -150,19 +150,19 @@ const castingApplications: InfoCard[] = [
 
 const machiningSupport: InfoCard[] = [
   {
-    title: "Secondary Machining for Aluminum Parts",
+    title: "In-House Drilling and Tapping for Aluminum Parts",
     description:
-      "Secondary machining supports hole processing, threaded features, mounting details, and assembly-related geometry on compact aluminum parts.",
+      "In-house drilling and tapping support hole processing, threaded features, mounting details, and assembly-related geometry on compact aluminum parts.",
   },
   {
-    title: "Surface Conditioning Before Finishing",
+    title: "In-House Surface Preparation Before Finishing",
     description:
-      "Surface conditioning improves appearance and prepares the part for anodizing, powder coating, spray painting, or direct inspection.",
+      "In-house polishing, grinding, and surface preparation improve appearance before powder coating, spray painting, direct inspection, or partner-supported anodizing.",
   },
   {
-    title: "Edge and Visible Area Preparation",
+    title: "In-House Edge and Visible Area Preparation",
     description:
-      "Part edges and key visible areas can be prepared before finishing or packing to improve presentation and handling quality.",
+      "In-house trimming and deburring prepare part edges and key visible areas before finishing or packing to improve presentation and handling quality.",
   },
   {
     title: "Basic Assembly Coordination",
@@ -170,32 +170,32 @@ const machiningSupport: InfoCard[] = [
       "Basic assembly coordination can be arranged where the OEM project needs bracket matching, cover fit-up, or related component preparation.",
   },
   {
-    title: "Export Packaging Support",
+    title: "In-House QC and Export Packing",
     description:
-      "Export-oriented packaging and buyer-defined packing requirements are coordinated before shipment release.",
+      "In-house QC and export-oriented packing support buyer-defined packing requirements before shipment release.",
   },
 ];
 
 const finishingCards: InfoCard[] = [
   {
-    title: "Aluminum Anodizing Support",
+    title: "Partner-Supported Anodizing Coordination",
     description:
-      "Used where the part needs a clean metallic appearance, corrosion resistance, or controlled finish tone on exposed aluminum surfaces.",
+      "CNC machining and anodizing can be coordinated through partner-supported resources when required by the project.",
   },
   {
-    title: "Powder Coating for Aluminum Parts",
+    title: "In-House Powder Coating for Aluminum Parts",
     description:
-      "Suitable for durable exterior coverage on aluminum housings, brackets, covers, and custom hardware accessories.",
+      "In-house powder coating provides durable exterior coverage on aluminum housings, brackets, covers, and custom hardware accessories.",
   },
   {
-    title: "Spray Painting and Color Matching",
+    title: "In-House Spray Painting and Color Matching",
     description:
-      "Applied where the project requires color matching, market-specific appearance, or brand-oriented visual presentation.",
+      "In-house spray painting supports color matching, market-specific appearance, or brand-oriented visual presentation.",
   },
   {
-    title: "Polishing and Grinding Preparation",
+    title: "In-House Polishing and Surface Preparation",
     description:
-      "Supports appearance preparation and surface improvement before finishing or final shipment inspection.",
+      "In-house polishing and surface preparation support appearance preparation and surface improvement before finishing or final shipment inspection.",
   },
 ];
 
@@ -204,9 +204,9 @@ const workflowSteps = [
   "Engineering review",
   "Mold development",
   "Die casting",
-  "Drilling and tapping",
-  "Polishing / grinding",
-  "Surface finishing",
+  "In-house drilling and tapping",
+  "In-house polishing and surface preparation",
+  "In-house powder coating / spray painting or partner-supported anodizing",
   "Inspection",
   "Packaging and shipment",
 ];
@@ -387,14 +387,16 @@ export default function CapabilitiesPage() {
             <div className="motion-rise">
               <p className="section-kicker">Factory capabilities</p>
               <h1 className="section-heading mt-6 text-4xl leading-none text-white sm:text-5xl xl:text-6xl">
-                In-House Aluminum Die Casting, Machining & Finishing Capabilities
+                In-House Aluminum Die Casting and Selected Secondary Operations
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-[#d4cdc0]">
                 Focused on small-to-medium aluminum die casting parts, LED
                 light housings, brackets, decorative covers, and OEM custom
-                aluminum hardware parts. The factory capability is aligned with
-                realistic 200T and 300T machine scope for compact aluminum
-                products and housings.
+                aluminum hardware parts. The in-house scope includes aluminum
+                die casting, trimming, deburring, drilling, tapping, polishing,
+                powder coating, spray painting, QC, and packing. CNC machining
+                and anodizing can be coordinated through partner-supported
+                resources when required by the project.
               </p>
               <p className="mt-5 max-w-2xl text-base leading-8 text-[#c7beaf]">
                 The product mix includes automotive LED lights, motorcycle LED
@@ -438,7 +440,7 @@ export default function CapabilitiesPage() {
                   <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
                     <Image
                       src={heroFactory}
-                      alt="HSX in-house factory capability aligned with 200T and 300T aluminum die casting and secondary processing"
+                      alt="HSX factory capability aligned with 200T and 300T aluminum die casting and selected secondary operations"
                       fill
                       preload
                       sizes="(min-width: 1280px) 44rem, (min-width: 1024px) 46vw, 100vw"
@@ -450,7 +452,7 @@ export default function CapabilitiesPage() {
                         Capability focus
                       </p>
                       <p className="mt-2 text-lg font-semibold text-white">
-                        Compact aluminum parts, machining, and finishing
+                        Aluminum die casting and selected secondary operations
                       </p>
                     </div>
                     <div className="absolute bottom-5 left-5 right-5 grid gap-4 lg:grid-cols-2">
@@ -469,9 +471,10 @@ export default function CapabilitiesPage() {
                           OEM workflow
                         </p>
                         <p className="mt-2 text-sm leading-7 text-[#ede6d7]">
-                          Drawings, engineering review, mold development, die
-                          casting, machining, finishing, inspection, packaging,
-                          and shipment support.
+                          Drawings, engineering review, mold development,
+                          in-house die casting and selected secondary operations,
+                          partner-supported resources when required, inspection,
+                          packing, and shipment support.
                         </p>
                       </div>
                     </div>
@@ -494,8 +497,10 @@ export default function CapabilitiesPage() {
                           Equipment depth
                         </p>
                         <p className="mt-2 text-sm leading-7 text-[#f2eadb]">
-                          Die casting, drilling, tapping, polishing, and
-                          surface finishing support inside one factory workflow.
+                          In-house die casting, drilling, tapping, polishing,
+                          powder coating, spray painting, QC, and packing, with
+                          partner-supported CNC machining and anodizing when
+                          required.
                         </p>
                       </div>
                     </div>
@@ -532,7 +537,7 @@ export default function CapabilitiesPage() {
           <div className="container-shell">
             <SectionHeading
               eyebrow="Factory equipment overview"
-              title="Key in-house equipment for die casting, machining, and finishing"
+              title="Key in-house equipment for die casting and selected secondary operations"
               description="The capability overview stays grounded in the actual factory setup for compact aluminum part production and secondary processing."
             />
 
@@ -619,9 +624,9 @@ export default function CapabilitiesPage() {
         <section id="machining" className="border-b border-white/8 py-16 lg:py-24">
           <div className="container-shell">
             <SectionHeading
-              eyebrow="Machining and secondary processing"
-              title="Secondary operations that support functional fit and appearance"
-              description="Drilling, tapping, polishing, grinding, deburring, assembly support, and packaging coordination are part of the broader OEM part manufacturing flow."
+              eyebrow="In-house secondary operations and project support"
+              title="In-house operations that support functional fit and appearance"
+              description="In-house drilling, tapping, polishing, grinding, deburring, QC, and packing support the broader OEM part manufacturing flow. CNC machining and anodizing can be coordinated through partner-supported resources when required by the project."
             />
 
             <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -645,9 +650,9 @@ export default function CapabilitiesPage() {
         >
           <div className="container-shell">
             <SectionHeading
-              eyebrow="Surface finishing"
-              title="Appearance and protection options for aluminum parts"
-              description="The finishing capability is positioned around project appearance, corrosion resistance, and wholesale presentation requirements."
+              eyebrow="In-house coating and partner-supported anodizing"
+              title="Appearance and protection options with clear process boundaries"
+              description="Powder coating and spray painting are supported in-house. CNC machining and anodizing can be coordinated through partner-supported resources when required by the project."
             />
 
             <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
@@ -673,7 +678,7 @@ export default function CapabilitiesPage() {
             <SectionHeading
               eyebrow="OEM project workflow"
               title="From buyer input to finished shipment"
-              description="The OEM aluminum parts manufacturing process is structured around review discipline, machining support, finishing, inspection, and export packing."
+              description="The OEM aluminum parts manufacturing process is structured around review discipline, in-house secondary operations, partner-supported resources when required, inspection, and export packing."
             />
 
             <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -863,9 +868,11 @@ export default function CapabilitiesPage() {
               Foshan Huashunxiang Hardware Products Factory
             </p>
             <p className="mt-4 max-w-3xl text-sm leading-7 text-[#bbb2a3]">
-              Aluminum die casting capabilities, machining, and finishing
-              support for compact OEM parts, LED lighting housings, and
-              wholesale B2B projects.
+              In-house aluminum die casting, selected secondary operations, QC,
+              and packing support for compact OEM parts, LED lighting housings,
+              and wholesale B2B projects. CNC machining and anodizing can be
+              coordinated through partner-supported resources when required by
+              the project.
             </p>
           </div>
 
