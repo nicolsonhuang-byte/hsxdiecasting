@@ -68,7 +68,7 @@ const contactDetails = {
 const heroStats = [
   {
     label: "Factory Scope",
-    value: "200T + 300T",
+    value: "280T and 320T aluminum die casting equipment",
     note: "Small-to-medium aluminum die casting parts and compact aluminum housings only",
   },
   {
@@ -115,7 +115,7 @@ const rfqChecklist = [
   "Product application and end-use environment",
   "Estimated quantity for quotation, small-batch planning, or repeat-order planning",
   "Material expectations for the aluminum part or housing",
-  "Surface finishing requirements such as anodizing, powder coating, spray painting, polishing, or grinding",
+  "Surface finishing requirements such as powder coating, spray painting, polishing, or partner-supported anodizing",
   "Machining, drilling, and tapping requirements for mounting or assembly features",
   "Testing or inspection requirements such as key dimensions, threads, appearance, corrosion, waterproofing, or customer-specific checks",
   "Packaging requirements for export shipment or buyer-side retail preparation",
@@ -170,18 +170,19 @@ const processSteps = [
 ];
 
 const capabilities = [
-  "2 aluminum die casting machines: 1 x 200T and 1 x 300T",
-  "7 multi-axis drilling machines",
-  "7 multi-axis tapping machines",
-  "3 polishing and grinding machines",
-  "Aluminum anodizing, powder coating, and spray painting support",
+  "280T and 320T aluminum die casting equipment",
+  "In-house trimming and deburring after die casting",
+  "In-house drilling and tapping for suitable secondary operations",
+  "In-house polishing, powder coating, and spray painting support",
+  "QC and packing support",
+  "CNC machining and anodizing can be coordinated through partner-supported resources when required by the project.",
 ];
 
 const scopeNotes: InfoCard[] = [
   {
     title: "Small-to-medium Aluminum Die Casting Scope",
     description:
-      "The aluminum die casting scope stays limited to compact housings, brackets, covers, shells, end caps, and other small-to-medium parts suitable for 200T and 300T machines.",
+      "The aluminum die casting scope stays limited to compact housings, brackets, covers, shells, end caps, and other small-to-medium parts suitable for 280T and 320T aluminum die casting equipment.",
   },
   {
     title: "Aluminum Light Housing and Lighting-Related Parts",
@@ -258,8 +259,11 @@ export default function ContactPage() {
               <span>{contactDetails.address}</span>
             </div>
           </div>
-          <Link href="/contact" className="gold-button w-full text-center sm:w-auto">
-            Send RFQ Details
+          <Link
+            href="/b2b-oem-project-review"
+            className="gold-button w-full text-center sm:w-auto"
+          >
+            Request Project Review
           </Link>
         </div>
       </div>
@@ -297,32 +301,29 @@ export default function ContactPage() {
               Home
             </Link>
             <Link
+              href="/about"
+              className="transition-colors hover:text-white"
+            >
+              About
+            </Link>
+            <Link
               href="/products"
               className="transition-colors hover:text-white"
             >
               Products
             </Link>
             <Link
-              href="/capabilities"
+              href="/b2b-oem-project-review"
               className="transition-colors hover:text-white"
             >
-              Capabilities
+              Project Review
             </Link>
-            <a
-              href="#contact-cards"
+            <Link
+              href="/contact"
               className="transition-colors hover:text-white"
             >
               Contact
-            </a>
-            <a href="#rfq-info" className="transition-colors hover:text-white">
-              RFQ Checklist
-            </a>
-            <a
-              href="#capability"
-              className="transition-colors hover:text-white"
-            >
-              Capability
-            </a>
+            </Link>
           </nav>
         </div>
       </header>
@@ -343,19 +344,20 @@ export default function ContactPage() {
               </p>
               <p className="mt-5 max-w-2xl text-base leading-8 text-[#c7beaf]">
                 The aluminum die casting scope stays focused on parts suitable
-                for 200T and 300T machines. Small-batch and new project support
+                for 280T and 320T aluminum die casting equipment. Small-batch
+                and new project support
                 can be reviewed when buyers provide quantity, material,
                 application, machining, surface finish, testing, packaging, and
                 tooling status details.
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <a
-                  href={contactDetails.whatsappHref}
+                <Link
+                  href="/b2b-oem-project-review"
                   className="gold-button text-center"
                 >
-                  Discuss on WhatsApp
-                </a>
+                  Request Project Review
+                </Link>
                 <a
                   href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
                   className="outline-button text-center"
@@ -636,12 +638,12 @@ export default function ContactPage() {
               </div>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <a
-                  href={`mailto:${contactDetails.email}?subject=RFQ%20Files%20for%20HSX%20Diecasting%20OEM%20Project&body=Hello%20HSX%20Diecasting%2C%0A%0APlease%20find%20the%20attached%20files%20for%20quotation%20review.%0A%0A3D%20CAD%20file%20%28STEP%20%2F%20STP%2C%20IGS%20%2F%20IGES%2C%20STL%2C%20X_T%29%3A%0A2D%20drawing%20%28PDF%2C%20DWG%2C%20DXF%29%3A%0ASample%20photos%20or%20reference%20photos%3A%0A%0AProduct%20type%20and%20application%3A%0AQuantity%3A%0AMaterial%20expectation%3A%0AMachining%20/%20drilling%20/%20tapping%20requirements%3A%0ASurface%20finish%20requirement%3A%0ATesting%20or%20inspection%20requirements%3A%0APackaging%20requirements%3A%0ANew%20tooling%20or%20existing%20mold%3A%0ATarget%20market%3A%0A%0APlease%20contact%20me%20with%20project%20review%20and%20quotation%20details.%0A%0ABest%20regards%2C`}
+                <Link
+                  href="/b2b-oem-project-review"
                   className="gold-button text-center"
                 >
                   Request Project Review
-                </a>
+                </Link>
                 <a
                   href={contactDetails.whatsappHref}
                   className="outline-button text-center"
@@ -712,23 +714,25 @@ export default function ContactPage() {
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
                 <article className="metric-pill">
                   <p className="text-xs uppercase tracking-[0.28em] text-[#e8ce97]">
-                    Die casting machines
+                    Die Casting Equipment
                   </p>
-                  <p className="mt-3 text-3xl font-semibold text-white">2</p>
+                  <p className="mt-3 text-3xl font-semibold text-white">
+                    In-House
+                  </p>
                   <p className="mt-3 text-sm leading-7 text-[#c4bbaa]">
-                    200T and 300T aluminum die casting machines
+                    280T and 320T aluminum die casting equipment
                   </p>
                 </article>
                 <article className="metric-pill">
                   <p className="text-xs uppercase tracking-[0.28em] text-[#e8ce97]">
-                    Secondary equipment
+                    Selected In-House Secondary Operations
                   </p>
                   <p className="mt-3 text-3xl font-semibold text-white">
-                    17
+                    In-House
                   </p>
                   <p className="mt-3 text-sm leading-7 text-[#c4bbaa]">
-                    7 drilling machines, 7 tapping machines, and 3 polishing
-                    and grinding machines
+                    Drilling, tapping, polishing, trimming, deburring, QC, and
+                    packing support for suitable OEM aluminum die casting projects.
                   </p>
                 </article>
               </div>
@@ -881,7 +885,10 @@ export default function ContactPage() {
               <span className="text-white/90">Address:</span>{" "}
               {contactDetails.address}
             </p>
-            <p>Small-to-medium aluminum die casting scope: 200T and 300T</p>
+            <p>
+              Small-to-medium aluminum die casting scope: 280T and 320T
+              aluminum die casting equipment
+            </p>
             <p>Brake caliper covers are decorative non-load-bearing appearance covers only</p>
             <p className="mt-2">
               © {currentYear} HSX DIECASTING. All rights reserved.
