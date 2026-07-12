@@ -4,7 +4,8 @@ import Link from "next/link";
 import automotiveLedLight from "../../public/images/automotive-led-light.png";
 import aboutWorkshop from "../../public/images/about-hsx-aluminum-die-casting-workshop.jpg";
 import brakeCaliperCover from "../../public/images/brake-caliper-cover.png";
-import factoryCapabilities from "../../public/images/factory-capabilities.png";
+import sprayPainting from "../../public/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg";
+import workshopHorizontal from "../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
 import ledWorkLight from "../../public/images/led-work-light.png";
 import oemAluminumParts from "../../public/images/oem-small-aluminum-die-casting-parts.png";
 
@@ -124,8 +125,8 @@ const productCategories: ProductCategory[] = [
     title: "Secondary Machining and Surface Finishing",
     description:
       "Drilling, tapping, polishing, grinding, anodizing, powder coating, and spray painting support for suitable aluminum die casting projects.",
-    image: factoryCapabilities,
-    alt: "Secondary machining and surface finishing support for compact aluminum die casting parts",
+    image: sprayPainting,
+    alt: "In-house spray painting and surface finishing support for aluminum die casting parts",
     details: [
       "7 multi-axis drilling machines and 7 multi-axis tapping machines",
       "Polishing and grinding support before appearance finishing",
@@ -575,8 +576,8 @@ export default function Home() {
             <div className="industrial-card gold-frame overflow-hidden p-3">
               <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
                 <Image
-                  src={factoryCapabilities}
-                  alt="Factory capability view showing aluminum die casting and machining support for compact aluminum parts"
+                  src={workshopHorizontal}
+                  alt="HSX aluminum die casting workshop with production equipment for small-to-medium OEM projects"
                   fill
                   sizes="(min-width: 1280px) 36rem, (min-width: 1024px) 42vw, 100vw"
                   className="object-cover"
