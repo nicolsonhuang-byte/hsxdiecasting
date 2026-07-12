@@ -479,23 +479,23 @@ export default function OemAluminumDieCastingPartsPage() {
                 <span>{contactDetails.wechat}</span>
               </div>
             </div>
-            <a
-              href={contactDetails.whatsappHref}
-              className="flex items-start gap-3 transition-colors hover:text-white"
-            >
+            <div className="flex items-start gap-3">
               <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
                 Address
               </span>
               <span>{contactDetails.address}</span>
-            </a>
+            </div>
           </div>
-          <Link href="/contact" className="gold-button w-full text-center sm:w-auto">
-            Get a Quote
+          <Link
+            href="/b2b-oem-project-review"
+            className="gold-button w-full text-center sm:w-auto"
+          >
+            Request Project Review
           </Link>
         </div>
       </div>
 
-      <header className="sticky top-0 z-40 border-b border-white/8 bg-[#050505]/88 backdrop-blur-xl">
+      <header className="z-40 border-b border-white/8 bg-[#050505]/88 backdrop-blur-xl">
         <div className="container-shell flex flex-col gap-5 py-5 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-2xl">
             <p className="section-kicker">Foshan, Guangdong, China</p>
@@ -521,33 +521,24 @@ export default function OemAluminumDieCastingPartsPage() {
             <Link href="/" className="transition-colors hover:text-white">
               Home
             </Link>
+            <Link href="/about" className="transition-colors hover:text-white">
+              About
+            </Link>
             <Link
               href="/products"
               className="transition-colors hover:text-white"
             >
               Products
             </Link>
+            <Link
+              href="/b2b-oem-project-review"
+              className="transition-colors hover:text-white"
+            >
+              Project Review
+            </Link>
             <Link href="/contact" className="transition-colors hover:text-white">
               Contact
             </Link>
-            <Link
-              href="/capabilities"
-              className="transition-colors hover:text-white"
-            >
-              Capabilities
-            </Link>
-            <a
-              href="#manufacture"
-              className="transition-colors hover:text-white"
-            >
-              Manufacture
-            </a>
-            <a href="#capacity" className="transition-colors hover:text-white">
-              Capacity
-            </a>
-            <a href={contactDetails.whatsappHref} className="transition-colors hover:text-white">
-              RFQ
-            </a>
           </nav>
         </div>
       </header>
