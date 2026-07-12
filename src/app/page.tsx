@@ -61,7 +61,7 @@ const faqJsonLd = {
       name: "What aluminum die casting scope is suitable?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "HSX focuses on compact housings, brackets, covers, end caps, shells, lamp bodies, heat-sink-style housings, and other small-to-medium aluminum components suitable for 200T and 300T equipment.",
+        text: "HSX focuses on compact housings, brackets, covers, end caps, shells, lamp bodies, heat-sink-style housings, and other small-to-medium aluminum components within the practical product range covered by 200T and 300T die casting capability.",
       },
     },
     {
@@ -79,7 +79,7 @@ const heroProofItems = [
   {
     title: "Die Casting",
     description:
-      "200T and 300T support for suitable small-to-medium aluminum parts.",
+      "Product capability aligned with the practical range typically covered by 200T and 300T die casting classes for suitable small-to-medium aluminum parts.",
   },
   {
     title: "Secondary Operations",
@@ -97,7 +97,7 @@ const productCategories: ProductCategory[] = [
   {
     title: "OEM Aluminum Die Casting Parts",
     description:
-      "Small-to-medium aluminum housings, end caps, brackets, shells, covers, and OEM parts produced within realistic 200T and 300T machine scope.",
+      "Small-to-medium aluminum housings, end caps, brackets, shells, covers, and OEM parts within the practical product range covered by 200T and 300T die casting capability.",
     image: oemAluminumParts,
     alt: "Small-to-medium aluminum die casting parts for OEM lighting and hardware applications",
     href: "/products/oem-aluminum-die-casting-parts",
@@ -162,7 +162,7 @@ const productCategories: ProductCategory[] = [
 ];
 
 const capabilities = [
-  "2 aluminum die casting machines: 1 x 200-ton and 1 x 300-ton",
+  "280T and 320T aluminum die casting machines",
   "In-house trimming and deburring support after die casting",
   "7 multi-axis drilling machines for repeatable hole processing",
   "7 multi-axis tapping machines for threaded aluminum parts",
@@ -238,7 +238,7 @@ const processSteps: InfoCard[] = [
   {
     title: "Aluminum Die Casting Production",
     description:
-      "Produce compact aluminum castings on 200T and 300T machines sized for small-to-medium OEM parts.",
+      "Produce compact aluminum castings using 280T and 320T aluminum die casting machines for suitable small-to-medium OEM parts.",
   },
   {
     title: "Drilling and Tapping",
@@ -305,9 +305,9 @@ const industriesServed: InfoCard[] = [
 
 const buyerReasons: InfoCard[] = [
   {
-    title: "Realistic Machine Scope",
+    title: "200T / 300T Product Capability Range",
     description:
-      "Production focus stays on small-to-medium aluminum parts that fit 200T and 300T die casting reality.",
+      "Production focus stays on small-to-medium aluminum parts within the practical product range covered by 200T and 300T die casting capability.",
   },
   {
     title: "Flexible OEM Project Input",
@@ -481,7 +481,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="Product categories"
               title="Focused aluminum parts and lighting programs"
-              description="The homepage stays inside realistic 200T and 300T aluminum die casting scope. Product messaging centers on compact cast components, aluminum housings, and export-ready lighting categories rather than oversized structural castings."
+              description="The homepage stays within the practical product range covered by 200T and 300T die casting capability. Product messaging centers on compact cast components, aluminum housings, and export-ready lighting categories rather than oversized structural castings."
             />
 
             <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -585,8 +585,9 @@ export default function Home() {
                 <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/55 p-5 backdrop-blur">
                   <p className="section-kicker">Capability focus</p>
                   <p className="mt-3 text-lg font-semibold text-white">
-                    Compact aluminum parts that match 200T and 300T die casting,
-                    secondary machining, and appearance finishing requirements.
+                    Compact aluminum parts within the practical product range
+                    covered by 200T and 300T die casting capability, with
+                    secondary machining and appearance finishing requirements.
                   </p>
                 </div>
               </div>
@@ -640,9 +641,9 @@ export default function Home() {
                   <p className="text-xs uppercase tracking-[0.28em] text-[#e8ce97]">
                     Die casting machines
                   </p>
-                  <p className="mt-3 text-3xl font-semibold text-white">2</p>
+                  <p className="mt-3 text-3xl font-semibold text-white">280T + 320T</p>
                   <p className="mt-3 text-sm leading-7 text-[#c4bbaa]">
-                    1 x 200-ton and 1 x 300-ton aluminum die casting machine
+                    280T and 320T aluminum die casting machines
                   </p>
                 </article>
                 <article className="metric-pill">
@@ -893,7 +894,7 @@ export default function Home() {
                   B2B buyers.
                 </p>
                 <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
-                  The factory scope is described carefully around 200T and 300T
+                  The factory scope is described carefully around 280T and 320T
                   aluminum die casting machines, drilling, tapping, polishing,
                   grinding, anodizing, powder coating, and spray painting support.
                 </p>
@@ -954,8 +955,8 @@ export default function Home() {
                 <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
                   The site focuses on compact housings, brackets, covers, end caps,
                   shells, lamp bodies, heat-sink-style housings, and other
-                  small-to-medium aluminum components suitable for 200T and 300T
-                  equipment.
+                  small-to-medium aluminum components within the practical
+                  product range covered by 200T and 300T die casting capability.
                 </p>
               </article>
 
@@ -996,8 +997,8 @@ export default function Home() {
                     <p className="mt-2">Foshan, Guangdong, China</p>
                   </div>
                   <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-                    <p className="text-[#f4d27a]">Main equipment</p>
-                    <p className="mt-2">200T + 300T aluminum die casting</p>
+                    <p className="text-[#f4d27a]">Product capability</p>
+                    <p className="mt-2">200T / 300T Product Capability Range</p>
                   </div>
                   <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
                     <p className="text-[#f4d27a]">WhatsApp / Phone</p>
@@ -1214,7 +1215,7 @@ export default function Home() {
               <span className="text-white/90">Address:</span>{" "}
               {contactDetails.address}
             </p>
-            <p>Small-to-medium aluminum die casting scope: 200T and 300T</p>
+            <p>Small-to-medium aluminum parts within the practical 200T / 300T product capability range</p>
             <p>OEM based on drawings, samples, or custom project requirements</p>
             <p className="mt-2">
               {"\u00A9"} {currentYear} HSX DIECASTING. All rights reserved.
