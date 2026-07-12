@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import factoryCapabilities from "../../../../public/images/factory-capabilities.png";
-import heroFactory from "../../../../public/images/hero-factory-200t-300t.png";
+import workshopHorizontal from "../../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
 import oemAluminumParts from "../../../../public/images/oem-small-aluminum-die-casting-parts.png";
 import communicationEquipmentHousing from "../../../../public/images/hsx-factory/communication-equipment-aluminum-die-cast-housing.jpg";
 import machineryAccessoryDieCastPart from "../../../../public/images/hsx-factory/machinery-accessory-aluminum-die-cast-part.jpg";
@@ -19,7 +18,7 @@ const pageTitle =
   "OEM Aluminum Die Casting Parts for Small-to-Medium Projects | HSX DIECASTING";
 
 const pageDescription =
-  "HSX DIECASTING reviews and produces small-to-medium OEM aluminum die casting parts, housings, covers, brackets, and machined aluminum components. Send drawings, 3D files, sample photos, quantity, machining, and finishing requirements for project review before quotation.";
+  "HSX DIECASTING reviews and produces small-to-medium OEM aluminum die casting parts, housings, covers, brackets, and aluminum die-cast components with partner-supported machining when required. Send drawings, 3D files, sample photos, quantity, machining requirements when needed, and finishing requirements for project review before quotation.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -65,7 +64,7 @@ const contactDetails = {
 const heroStats = [
   {
     label: "Machine Capacity",
-    value: "200T + 300T",
+    value: "280T + 320T",
     note: "Sized for compact and small-to-medium aluminum die casting parts",
   },
   {
@@ -197,12 +196,12 @@ const manufacturingSupport: InfoCard[] = [
   {
     title: "Aluminum Die Casting Production",
     description:
-      "Production runs on 200-ton and 300-ton aluminum die casting machines sized for practical OEM parts with compact geometry.",
+      "Production runs on 280T and 320T aluminum die casting equipment sized for practical OEM parts with compact geometry.",
   },
   {
-    title: "Cooperative CNC Machining Support",
+    title: "Partner-Supported CNC Machining",
     description:
-      "When a project requires CNC turning or CNC machining after die casting, HSX can coordinate cooperative CNC machining support through partner facilities.",
+      "CNC machining can be coordinated through partner-supported resources when required by the project.",
   },
   {
     title: "Drilling and Tapping",
@@ -222,9 +221,9 @@ const manufacturingSupport: InfoCard[] = [
 ];
 
 const capacityPoints = [
-  "200-ton and 300-ton die casting machines are used for suitable small-to-medium aluminum die casting projects",
+  "280T and 320T aluminum die casting equipment is used for suitable small-to-medium aluminum die casting projects",
   "HSX supports in-house drilling, tapping, polishing, powder coating, spray painting, QC, and packing for suitable aluminum die casting projects",
-  "Partner-supported CNC machining can be coordinated when required by the project",
+  "CNC machining can be coordinated through partner-supported resources when required by the project.",
   "Partner-supported anodizing can be coordinated when required by the project",
 ];
 
@@ -232,10 +231,10 @@ const surfaceFinishes: InfoCard[] = [
   {
     title: "Aluminum Die Casting Scope",
     description:
-      "The page focuses on OEM aluminum die casting parts within the practical output range of 200T and 300T equipment for compact housings, brackets, covers, caps, and shells.",
+      "The page focuses on OEM aluminum die casting parts aligned with 280T and 320T aluminum die casting equipment for compact housings, brackets, covers, caps, and shells.",
   },
   {
-    title: "Anodizing",
+    title: "Partner-Supported Anodizing",
     description:
       "Partner-supported anodizing can be reviewed for suitable projects when the buyer needs a controlled metallic appearance on exposed aluminum surfaces. Final anodized appearance depends on alloy selection, casting quality, surface preparation, and sample evaluation.",
   },
@@ -260,7 +259,7 @@ const secondaryOperations = [
   "In-house trimming, deburring, and flash removal after rough casting",
   "In-house drilling and tapping for suitable hole and thread requirements",
   "Polishing, powder coating, spray painting, QC checks, and packing support",
-  "CNC machining and anodizing can be coordinated with partner resources when required by the project",
+  "CNC machining and anodizing can be coordinated through partner-supported resources when required by the project.",
 ];
 
 const industries: InfoCard[] = [
@@ -287,7 +286,7 @@ const industries: InfoCard[] = [
   {
     title: "Utility and Industrial Accessories",
     description:
-      "Functional aluminum parts for utility products, accessory assemblies, and compact industrial applications needing machining and finishing support.",
+      "Functional aluminum parts for utility products, accessory assemblies, and compact industrial applications that may require partner-supported machining and finishing support.",
   },
   {
     title: "Global Importers and Distributors",
@@ -303,12 +302,12 @@ const buyerReasons: InfoCard[] = [
       "HSX reviews OEM aluminum die casting parts from drawings, 3D files, samples, or photos, which is useful for new product landing, replacement parts, and early-stage project evaluation.",
   },
   {
-    title: "Realistic 200T and 300T Production Scope",
+    title: "Practical 280T and 320T Production Scope",
     description:
-      "The factory keeps its offering aligned with 200T and 300T aluminum die casting capacity, which suits compact housings, brackets, caps, shells, and covers.",
+      "The factory keeps its offering aligned with 280T and 320T aluminum die casting equipment, which suits compact housings, brackets, caps, shells, and covers.",
   },
   {
-    title: "Casting, Machining, and Finishing Coordination",
+    title: "Casting, Partner-Supported Machining, and Finishing Coordination",
     description:
       "Casting, drilling, tapping, partner-supported CNC machining when required, polishing, partner-supported anodizing when required, powder coating, and spray painting are coordinated around the aluminum part project.",
   },
@@ -388,9 +387,9 @@ const rfqRequirements = [
   "Product application, whether this is new tooling or an existing mold project, and the main reason for supplier review",
   "Material or appearance requirements for the aluminum part",
   "Estimated order quantity and repeat-order expectations",
-  "Secondary machining after casting, such as drilling, tapping, threaded features, or CNC machining through partners when required",
+  "Secondary machining after casting, such as drilling, tapping, threaded features, or partner-supported CNC machining when required",
   "Drilling or tapping requirements, hole positions, thread specifications, and tolerance expectations",
-  "Required surface finish such as polishing, powder coating, spray painting, or anodizing feasibility review for suitable projects",
+  "Required surface finish such as polishing, powder coating, spray painting, or partner-supported anodizing feasibility review for suitable projects",
   "Packaging needs, testing requirements if applicable, and target market information",
 ];
 
@@ -398,7 +397,7 @@ const faqItems = [
   {
     question: "What OEM aluminum die casting parts can HSX review?",
     answer:
-      "HSX can review small-to-medium OEM aluminum die casting parts such as housings, covers, brackets, rear covers, heat-sink housings, mounting parts, and machined aluminum components based on drawings, 3D files, sample photos, quantity, machining, and finishing requirements.",
+      "HSX can review small-to-medium OEM aluminum die casting parts such as housings, covers, brackets, rear covers, heat-sink housings, mounting parts, and other aluminum die-cast components based on drawings, 3D files, sample photos, quantity, finishing requirements, and any partner-supported machining needs.",
   },
   {
     question:
@@ -420,7 +419,7 @@ const faqItems = [
     question:
       "Can all die-cast aluminum parts be anodized with a perfect appearance?",
     answer:
-      "No. Anodized appearance depends on alloy selection, casting quality, porosity, surface preparation, visible surface requirements, and sample evaluation. HSX can review anodizing feasibility before production.",
+      "No. Anodized appearance depends on alloy selection, casting quality, porosity, surface preparation, visible surface requirements, and sample evaluation. HSX can review anodizing feasibility and coordinate suitable projects through partner-supported resources.",
   },
 ];
 
@@ -570,9 +569,9 @@ export default function OemAluminumDieCastingPartsPage() {
               </p>
               <p className="mt-5 max-w-2xl text-base leading-8 text-[#c7beaf]">
                 As a China-based aluminum die casting factory, HSX stays
-                focused on practical small-to-medium parts that match 200T and
-                300T machine capacity, with secondary drilling, tapping,
-                finishing support, and partner CNC machining only when required
+                focused on practical small-to-medium parts that match 280T and
+                320T aluminum die casting equipment, with secondary drilling, tapping,
+                finishing support, and partner-supported CNC machining when required
                 after casting.
               </p>
 
@@ -588,7 +587,8 @@ export default function OemAluminumDieCastingPartsPage() {
               <p className="mt-6 max-w-2xl text-sm leading-7 text-[#c9c1b2]">
                 Useful RFQ details include part drawings, 3D files, sample
                 photos, target quantity, surface finishing, drilling / tapping /
-                threaded features, and CNC requirements if needed.
+                threaded features, and CNC machining requirements when partner-supported
+                machining is needed.
               </p>
 
               <div className="mt-10 grid gap-4 sm:grid-cols-3">
@@ -613,8 +613,8 @@ export default function OemAluminumDieCastingPartsPage() {
                 <div className="industrial-card gold-frame relative overflow-hidden rounded-[2rem] p-3">
                   <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
                     <Image
-                      src={heroFactory}
-                      alt="HSX aluminum die casting workshop aligned with 200-ton and 300-ton machine capacity for compact OEM aluminum parts"
+                      src={workshopHorizontal}
+                      alt="HSX aluminum die casting workshop for small-to-medium OEM projects"
                       fill
                       preload
                       sizes="(min-width: 1280px) 44rem, (min-width: 1024px) 46vw, 100vw"
@@ -626,7 +626,7 @@ export default function OemAluminumDieCastingPartsPage() {
                         Factory positioning
                       </p>
                       <p className="mt-2 text-lg font-semibold text-white">
-                        200T + 300T small-to-medium aluminum parts
+                        Equipment aligned with small-to-medium OEM aluminum parts
                       </p>
                     </div>
                     <div className="absolute bottom-5 left-5 right-5 grid gap-4 lg:grid-cols-2">
@@ -680,8 +680,8 @@ export default function OemAluminumDieCastingPartsPage() {
                   <article className="industrial-card overflow-hidden p-3">
                     <div className="relative aspect-[4/3] overflow-hidden rounded-[1.25rem]">
                       <Image
-                        src={factoryCapabilities}
-                        alt="Factory capabilities supporting drilling, tapping, polishing, and finishing"
+                        src={workshopHorizontal}
+                        alt="HSX aluminum die casting workshop for small-to-medium OEM projects"
                         fill
                         sizes="(min-width: 1024px) 22vw, 100vw"
                         className="object-cover"
@@ -692,8 +692,8 @@ export default function OemAluminumDieCastingPartsPage() {
                           Process depth
                         </p>
                         <p className="mt-2 text-sm leading-7 text-[#f2eadb]">
-                          Drilling, tapping, polishing, anodizing, coating, and
-                          spray painting support.
+                          Drilling, tapping, polishing, powder coating, spray
+                          painting, and partner-supported anodizing.
                         </p>
                       </div>
                     </div>
@@ -709,7 +709,7 @@ export default function OemAluminumDieCastingPartsPage() {
             <SectionHeading
               eyebrow="What we manufacture"
               title="OEM Aluminum Parts HSX Can Review"
-              description="This page is dedicated to compact OEM aluminum die casting parts that suit 200T and 300T machine capacity. HSX reviews whether housings, covers, brackets, rear covers, heat-sink housings, mounting parts, and machined aluminum components fit the factory process before quotation."
+              description="This page is dedicated to compact OEM aluminum die casting parts that suit 280T and 320T aluminum die casting equipment. HSX reviews whether housings, covers, brackets, rear covers, heat-sink housings, mounting parts, and other aluminum die-cast components fit the factory process, and whether partner-supported machining is required before quotation."
             />
 
             <div className="mt-12 grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center">
@@ -873,8 +873,8 @@ export default function OemAluminumDieCastingPartsPage() {
                 <div className="industrial-card gold-frame overflow-hidden p-3">
                   <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
                     <Image
-                      src={factoryCapabilities}
-                      alt="Factory capability image showing aluminum die casting support, machining, and finishing preparation"
+                      src={workshopHorizontal}
+                      alt="HSX aluminum die casting workshop for small-to-medium OEM projects"
                       fill
                       sizes="(min-width: 1280px) 34rem, (min-width: 1024px) 40vw, 100vw"
                       className="object-cover"
@@ -884,7 +884,8 @@ export default function OemAluminumDieCastingPartsPage() {
                       <p className="section-kicker">OEM custom manufacturing support</p>
                       <p className="mt-3 text-lg font-semibold text-white">
                         Projects move from drawings and samples into mold
-                        development, die casting, machining, finishing, and
+                        development, die casting, partner-supported machining when
+                        required, finishing, and
                         buyer-ready packaging.
                       </p>
                     </div>
@@ -949,8 +950,8 @@ export default function OemAluminumDieCastingPartsPage() {
             <div className="industrial-card gold-frame overflow-hidden p-3">
               <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
                 <Image
-                  src={factoryCapabilities}
-                  alt="Factory capabilities for compact aluminum die casting, machining, drilling, tapping, and finishing support"
+                  src={workshopHorizontal}
+                  alt="HSX aluminum die casting workshop for small-to-medium OEM projects"
                   fill
                   sizes="(min-width: 1280px) 36rem, (min-width: 1024px) 42vw, 100vw"
                   className="object-cover"
@@ -959,8 +960,9 @@ export default function OemAluminumDieCastingPartsPage() {
                 <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/55 p-5 backdrop-blur">
                   <p className="section-kicker">Factory equipment</p>
                   <p className="mt-3 text-lg font-semibold text-white">
-                    Compact aluminum die casting supported by machining and
-                    finishing capacity matched to OEM part programs.
+                    Compact aluminum die casting with partner-supported machining
+                    when required and finishing support matched to OEM part
+                    programs.
                   </p>
                 </div>
               </div>
@@ -979,7 +981,7 @@ export default function OemAluminumDieCastingPartsPage() {
                     Die casting machines
                   </p>
                   <p className="mt-3 text-3xl font-semibold text-white">
-                    200T + 300T
+                    280T + 320T
                   </p>
                   <p className="mt-3 text-sm leading-7 text-[#c4bbaa]">
                     Used for suitable small-to-medium aluminum die casting
@@ -1048,7 +1050,7 @@ export default function OemAluminumDieCastingPartsPage() {
           <div className="container-shell">
             <SectionHeading
               eyebrow="Materials and surface finishing"
-              title="Machining and Surface Finishing Support"
+              title="Partner-Supported Machining and Surface Finishing Support"
               description="The factory supplies aluminum die casting parts and coordinates drilling, tapping, polishing, powder coating, spray painting, partner-supported CNC machining when required, and partner-supported anodizing when required around the target application and appearance requirements."
             />
             <p className="mt-5 max-w-3xl text-base leading-8 text-[#c9c1b2]">
@@ -1544,7 +1546,7 @@ export default function OemAluminumDieCastingPartsPage() {
               <span className="text-white/90">Address:</span>{" "}
               {contactDetails.address}
             </p>
-            <p>Small-to-medium aluminum die casting scope: 200T and 300T</p>
+            <p>Small-to-medium aluminum die casting scope: 280T and 320T aluminum die casting equipment</p>
             <p>OEM based on drawings, samples, or custom project requirements</p>
             <p className="mt-2">
               © {currentYear} HSX DIECASTING. All rights reserved.
