@@ -360,6 +360,11 @@ const factoryExperience: InfoCard[] = [
       "For some hole structures, core pins or fixed pins may help reduce later drilling or machining steps. The feasibility depends on part design, tolerance requirements, mold structure, and production stability.",
   },
   {
+    title: "Thin-Wall and Tolerance Review",
+    description:
+      "Based on HSX production experience, suitable high-pressure aluminum die-cast parts commonly use wall thicknesses of around 1–3 mm. Localized sections may reach approximately 0.5 mm when part geometry, alloy, mold design, filling conditions, and cooling control are suitable. Certain local dimensions may reach approximately ±0.05 mm under suitable production and measurement conditions. Tighter or more critical dimensions may require partner-supported post-machining. Final feasibility should be reviewed from the drawing, datum definition, part structure, application, and production requirements.",
+  },
+  {
     title: "Prototype Confirmation Before Tooling",
     description:
       "After cooperation terms and agreed tooling terms are confirmed, HSX may make a prototype for customer assembly confirmation before formal mold production. Prototype methods may include a 3D-printed plastic prototype or a CNC-machined aluminum prototype. Too many mold modifications may affect mold life, delay delivery, and sometimes affect casting blank appearance or stability because mold changes may affect molten aluminum flow.",
