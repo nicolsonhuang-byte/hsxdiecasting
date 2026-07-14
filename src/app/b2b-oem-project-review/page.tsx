@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
-import factoryCapabilities from "../../../public/images/factory-capabilities.png";
-import heroFactory from "../../../public/images/hero-factory-200t-300t.png";
+import sprayPainting from "../../../public/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg";
+import workshopHorizontal from "../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
 import oemAluminumParts from "../../../public/images/oem-small-aluminum-die-casting-parts.png";
 
 type FactoryEvidenceImage = {
@@ -342,8 +342,8 @@ export default function B2bOemProjectReviewPage() {
             <div className="industrial-card gold-frame overflow-hidden rounded-[2rem] p-3">
               <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
                 <Image
-                  src={heroFactory}
-                  alt="HSX DIECASTING factory project review for B2B OEM buyers"
+                  src={workshopHorizontal}
+                  alt="HSX aluminum die casting workshop for B2B OEM project review"
                   fill
                   priority
                   sizes="(min-width: 1280px) 42rem, (min-width: 1024px) 46vw, 100vw"
@@ -577,8 +577,8 @@ export default function B2bOemProjectReviewPage() {
           <div className="industrial-card gold-frame overflow-hidden p-3">
             <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
               <Image
-                src={factoryCapabilities}
-                alt="HSX DIECASTING factory capabilities for OEM project evaluation"
+                src={sprayPainting}
+                alt="In-house spray painting process for aluminum die casting project evaluation"
                 fill
                 sizes="(min-width: 1280px) 36rem, (min-width: 1024px) 42vw, 100vw"
                 className="object-cover"
