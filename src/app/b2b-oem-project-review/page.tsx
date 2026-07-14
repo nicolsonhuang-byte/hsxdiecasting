@@ -28,6 +28,8 @@ const contactDetails = {
   phone: "+86 176 6615 5283",
   whatsappHref:
     "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20would%20like%20to%20send%20B2B%20OEM%20project%20details%20for%20evaluation.",
+  wechat: "NicolsonHwang",
+  address: "Foshan, Guangdong, China",
 };
 
 const pathCards = [
@@ -298,7 +300,101 @@ function BulletList({ items }: { items: string[] }) {
 
 export default function B2bOemProjectReviewPage() {
   return (
-    <main className="min-h-screen bg-[#050505] text-white">
+    <div className="relative overflow-x-clip">
+      <div className="border-b border-white/8 bg-black/85">
+        <div className="container-shell flex flex-col gap-3 py-3 text-sm text-[#beb6a8] lg:flex-row lg:items-center lg:justify-between">
+          <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-6">
+              <a
+                href={contactDetails.emailHref}
+                className="flex items-center gap-3 transition-colors hover:text-white"
+              >
+                <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
+                  Email
+                </span>
+                <span>{contactDetails.email}</span>
+              </a>
+              <a
+                href={contactDetails.whatsappHref}
+                className="flex items-center gap-3 transition-colors hover:text-white"
+              >
+                <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
+                  WhatsApp
+                </span>
+                <span>{contactDetails.phone}</span>
+              </a>
+              <div className="flex items-center gap-3">
+                <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
+                  WeChat
+                </span>
+                <span>{contactDetails.wechat}</span>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
+                Address
+              </span>
+              <span>{contactDetails.address}</span>
+            </div>
+          </div>
+          <a
+            href={contactDetails.emailHref}
+            className="gold-button w-full text-center sm:w-auto"
+          >
+            Email RFQ Details
+          </a>
+        </div>
+      </div>
+
+      <header className="z-40 border-b border-white/8 bg-[#050505]/88 backdrop-blur-xl">
+        <div className="container-shell flex flex-col gap-5 py-5 lg:flex-row lg:items-center lg:justify-between">
+          <div className="max-w-2xl">
+            <p className="section-kicker">Foshan, Guangdong, China</p>
+            <Link
+              href="/"
+              className="section-heading mt-3 block text-2xl text-white sm:text-3xl"
+            >
+              HSX DIECASTING
+            </Link>
+            <p className="mt-3 text-sm leading-7 text-[#beb6a8]">
+              Foshan Huashunxiang Hardware Products Factory provides OEM
+              small-to-medium aluminum die casting parts for global
+              wholesalers, importers, distributors, hardware brands,
+              automotive aftermarket brands, LED lighting brands, and OEM
+              project buyers.
+            </p>
+          </div>
+
+          <nav
+            aria-label="Primary"
+            className="flex flex-wrap gap-x-5 gap-y-3 text-sm text-[#ddd2ba]"
+          >
+            <Link href="/" className="transition-colors hover:text-white">
+              Home
+            </Link>
+            <Link href="/about" className="transition-colors hover:text-white">
+              About
+            </Link>
+            <Link
+              href="/products"
+              className="transition-colors hover:text-white"
+            >
+              Products
+            </Link>
+            <Link
+              href="/b2b-oem-project-review"
+              className="transition-colors hover:text-white"
+            >
+              Project Review
+            </Link>
+            <Link href="/contact" className="transition-colors hover:text-white">
+              Contact
+            </Link>
+          </nav>
+        </div>
+      </header>
+
+      <main className="min-h-screen bg-[#050505] text-white">
       <section className="border-b border-white/8 bg-[radial-gradient(circle_at_top_right,rgba(199,162,91,0.14),transparent_34%),linear-gradient(180deg,#090909_0%,#050505_100%)]">
         <div className="container-shell grid gap-12 py-16 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-center lg:py-24">
           <div className="motion-rise">
@@ -867,6 +963,7 @@ export default function B2bOemProjectReviewPage() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+    </div>
   );
 }
