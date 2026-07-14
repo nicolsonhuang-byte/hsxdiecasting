@@ -23,6 +23,8 @@ export const metadata: Metadata = {
 
 const contactDetails = {
   email: "nicolson@hsxdiecasting.com",
+  emailHref:
+    "mailto:nicolson@hsxdiecasting.com?subject=OEM%20Aluminum%20Die%20Casting%20Project%20Review&body=Hello%20HSX%20DIECASTING%2C%0A%0AI%20would%20like%20to%20request%20an%20OEM%20aluminum%20die%20casting%20project%20review.%0A%0AProduct%20application%3A%0ATarget%20material%3A%0AEstimated%20quantity%3A%0ATolerance%20requirements%3A%0ASurface%20finishing%3A%0APacking%20requirements%3A%0A%0AI%20will%20attach%20drawings%2C%203D%20files%2C%20or%20sample%20photos%20where%20available.%0A%0ARegards%2C",
   phone: "+86 176 6615 5283",
   whatsappHref:
     "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20would%20like%20to%20send%20B2B%20OEM%20project%20details%20for%20evaluation.",
@@ -56,7 +58,8 @@ const aluminumProjectTypes = [
 ];
 
 const aluminumCapabilities = [
-  "200T / 300T aluminum die casting machines",
+  "280T and 320T aluminum die casting machines",
+  "200T / 300T Product Capability Range for suitable small-to-medium aluminum die casting parts",
   "Trimming and deburring after die casting",
   "In-house bench drilling and multi-spindle drilling",
   "In-house desktop tapping and multi-spindle tapping",
@@ -249,7 +252,7 @@ const internalLinks = [
     href: "/blog/rfq-checklist-custom-oem-aluminum-die-casting-parts",
   },
   {
-    label: "Send RFQ Details",
+    label: "Contact HSX",
     href: "/contact",
   },
   {
@@ -317,9 +320,9 @@ export default function B2bOemProjectReviewPage() {
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-              <Link href="/contact" className="gold-button text-center">
-                Send RFQ Details
-              </Link>
+              <a href={contactDetails.emailHref} className="gold-button text-center">
+                Email RFQ Details
+              </a>
               <a
                 href={contactDetails.whatsappHref}
                 className="outline-button text-center"
@@ -501,9 +504,9 @@ export default function B2bOemProjectReviewPage() {
                 ))}
               </div>
               <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-                <Link href="/contact" className="gold-button text-center">
-                  Send RFQ Details
-                </Link>
+                <a href={contactDetails.emailHref} className="gold-button text-center">
+                  Email RFQ Details
+                </a>
                 <Link
                   href="/products/oem-aluminum-die-casting-parts"
                   className="outline-button text-center"
@@ -757,11 +760,13 @@ export default function B2bOemProjectReviewPage() {
               category.
             </p>
             <p className="mt-5 text-base leading-8 text-[#c9c1b2]">
-              For aluminum die casting projects, HSX supports 200T / 300T
-              aluminum die casting machines, multi-axis drilling, multi-axis
-              tapping, polishing / grinding, powder coating, paint spraying,
-              QC, and packing. CNC machining and anodizing can be coordinated
-              with partner resources when required by the project.
+              For aluminum die casting projects, HSX operates 280T and 320T
+              aluminum die casting machines. The practical product scope includes
+              suitable small-to-medium parts within the 200T / 300T Product
+              Capability Range, together with multi-axis drilling, multi-axis
+              tapping, polishing / grinding, powder coating, spray painting, QC,
+              and packing. CNC machining and anodizing can be coordinated through
+              partner-supported resources when required by the project.
             </p>
             <p className="mt-5 text-base leading-8 text-[#c9c1b2]">
               HSX reviews each project against the product application,
@@ -806,18 +811,17 @@ export default function B2bOemProjectReviewPage() {
                   Email or WhatsApp for Project Review
                 </h2>
                 <p className="mt-5 max-w-2xl text-base leading-8 text-[#2d2417] sm:text-lg">
-                  Buyers can send RFQ details by contact form, email, or
-                  WhatsApp. Keep the message focused on project review,
-                  drawings, application, quantity, machining, finishing, and
-                  packing needs.
+                  Buyers can send RFQ details directly by email or WhatsApp. Keep
+                  the message focused on project review, drawings, application,
+                  quantity, machining, finishing, and packing needs.
                 </p>
                 <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-                  <Link
-                    href="/contact"
+                  <a
+                    href={contactDetails.emailHref}
                     className="rounded-full bg-[#120f08] px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#f8f2e6] transition-transform duration-200 hover:-translate-y-0.5"
                   >
-                    Send RFQ Details
-                  </Link>
+                    Email RFQ Details
+                  </a>
                   <a
                     href={contactDetails.whatsappHref}
                     className="rounded-full border border-[#2b2216]/20 px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#22190d] transition-colors hover:bg-[#120f08] hover:text-[#f8f2e6]"
@@ -851,11 +855,11 @@ export default function B2bOemProjectReviewPage() {
                 <div className="mt-6 border-t border-[#2b2216]/15 pt-6 text-sm leading-7 text-[#2c2316]">
                   <p>
                     <span className="font-semibold">Email: </span>
-                    {contactDetails.email}
+                    <a href={contactDetails.emailHref}>{contactDetails.email}</a>
                   </p>
                   <p>
                     <span className="font-semibold">WhatsApp: </span>
-                    {contactDetails.phone}
+                    <a href={contactDetails.whatsappHref}>{contactDetails.phone}</a>
                   </p>
                 </div>
               </div>
