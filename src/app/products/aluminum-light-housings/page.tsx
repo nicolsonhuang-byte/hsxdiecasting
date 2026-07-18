@@ -24,10 +24,10 @@ type ProductProgram = {
 };
 
 const pageTitle =
-  "Die-Cast Aluminum Light Housings for Work Lights | HSX DIECASTING";
+  "OEM Aluminum Die Casting Lighting Parts & Light Housings | HSX";
 
 const pageDescription =
-  "HSX DIECASTING reviews and produces small-to-medium die-cast aluminum light housings, heat-sink housings, rear covers, and mounting brackets for LED work light and industrial lighting projects. Send drawings, 3D files, sample photos, quantity, machining, and finishing requirements for project review.";
+  "OEM aluminum die casting lighting parts and light housings for suitable small-to-medium projects. Send drawings, 3D files, quantity, machining, and finishing requirements for HSX project review.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -75,7 +75,7 @@ const contactDetails = {
 const heroStats = [
   {
     label: "Die Casting Scope",
-    value: "200T + 300T",
+    value: "200T / 300T Product Capability Range",
     note: "Focused on compact aluminum light housings and small-to-medium lamp parts",
   },
   {
@@ -85,8 +85,8 @@ const heroStats = [
   },
   {
     label: "Finishing Support",
-    value: "Coat + Anodize",
-    note: "Powder coating, spray painting, anodizing, polishing, and grinding support",
+    value: "Coat + Finish",
+    note: "Powder coating, spray painting, polishing, grinding, and partner-supported anodizing review",
   },
 ];
 
@@ -142,7 +142,7 @@ const processSupport: InfoCard[] = [
   {
     title: "Mold and Part Feasibility",
     description:
-      "Check whether the aluminum light housing fits practical 200T and 300T die casting scope before mold development or production planning, including housing structure, wall thickness, ribs, fins, and machining allowance.",
+      "Actual equipment: 280T and 320T aluminum die casting machines. Check whether the aluminum light housing fits the 200T / 300T Product Capability Range before mold development or production planning, including housing structure, wall thickness, ribs, fins, and machining allowance.",
   },
   {
     title: "Aluminum Die Casting",
@@ -152,12 +152,12 @@ const processSupport: InfoCard[] = [
   {
     title: "Drilling and Tapping",
     description:
-      "Support mounting holes, threaded features, and secondary processing needed for lamp assembly and installation.",
+      "In-house drilling and tapping; CNC machining can be coordinated through partner-supported resources when required.",
   },
   {
     title: "Surface Finishing",
     description:
-      "Coordinate polishing, grinding, powder coating, spray painting, and selected anodizing review around project appearance and surface preparation needs.",
+      "Coordinate polishing, grinding, powder coating, and spray painting around project appearance and surface preparation needs. Anodizing can be coordinated through partner-supported resources for selected suitable parts when required by the project.",
   },
   {
     title: "Inspection and Packing",
@@ -268,12 +268,12 @@ const finishingOptions: InfoCard[] = [
   {
     title: "Anodizing",
     description:
-      "Suitable for selected aluminum parts needing a clean metallic appearance and improved surface protection.",
+      "Anodizing can be coordinated through partner-supported resources for selected suitable parts when required by the project.",
   },
   {
     title: "Polishing and Grinding",
     description:
-      "Surface preparation for visible aluminum parts before coating, painting, anodizing, or final appearance review.",
+      "Surface preparation for visible aluminum parts before coating, painting, partner-supported anodizing, or final appearance review.",
   },
 ];
 
@@ -308,7 +308,7 @@ const rfqChecklist = [
   "Waterproof, corrosion resistance, heat dissipation, and surface exposure requirements if they apply to the housing project",
   "Estimated quantity and repeat-order expectations",
   "Machining requirements such as drilling, tapping, threaded holes, or assembly features",
-  "Surface finishing requirements such as powder coating, painting, polishing, or anodizing review",
+  "Surface finishing requirements such as powder coating, painting, polishing, or partner-supported anodizing review",
   "Packaging requirements, branding needs, and target market information",
 ];
 
@@ -480,15 +480,15 @@ export default function AluminumLightHousingsPage() {
             <div className="motion-rise">
               <p className="section-kicker">Aluminum die cast lighting parts</p>
               <h1 className="section-heading mt-6 text-4xl leading-none text-white sm:text-5xl xl:text-6xl">
-                OEM Aluminum Light Housings and Die Cast LED Heat-Sink Bodies
+                OEM Aluminum Die Casting Lighting Parts and Light Housings
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-[#d4cdc0]">
                 HSX DIECASTING supplies compact aluminum light housings, LED
                 work light aluminum housings, die-cast heat-sink bodies,
                 covers, brackets, shells, and custom aluminum lighting parts
                 for global OEM and wholesale buyers. The product scope is
-                focused on small-to-medium aluminum parts that match 200T and
-                300T die casting reality.
+                focused on suitable small-to-medium aluminum parts within the
+                200T / 300T Product Capability Range.
               </p>
               <p className="mt-5 max-w-2xl text-base leading-8 text-[#c7beaf]">
                 Buyers can start from drawings, samples, or product photos for
@@ -815,7 +815,7 @@ export default function AluminumLightHousingsPage() {
                   </p>
                   <p className="mt-3 text-sm leading-7 text-[#c4bbaa]">
                     Drilling, tapping, polishing, grinding, coating, painting,
-                    and anodizing support.
+                    and partner-supported anodizing review.
                   </p>
                 </article>
               </div>
@@ -1170,7 +1170,7 @@ export default function AluminumLightHousingsPage() {
               <span className="text-white/90">Address:</span>{" "}
               {contactDetails.address}
             </p>
-            <p>Small-to-medium aluminum die casting scope: 200T and 300T</p>
+            <p>Small-to-medium aluminum parts within the 200T / 300T Product Capability Range</p>
             <p>OEM based on drawings, samples, or custom project requirements</p>
             <p className="mt-2">
               © {currentYear} HSX DIECASTING. All rights reserved.

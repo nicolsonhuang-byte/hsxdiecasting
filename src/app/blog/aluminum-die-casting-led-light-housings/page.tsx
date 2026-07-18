@@ -17,7 +17,7 @@ const contactDetails = {
 };
 
 const relatedLinks = [
-  { label: "Aluminum Light Housings", href: "/products/aluminum-light-housings" },
+  { label: "OEM Aluminum Die Casting Lighting Parts", href: "/products/aluminum-light-housings" },
   { label: "LED Work Lights", href: "/products/led-work-lights" },
   { label: "OEM Aluminum Die Casting Parts", href: "/products/oem-aluminum-die-casting-parts" },
   { label: "Factory Capabilities", href: "/capabilities" },
