@@ -120,10 +120,53 @@ export default function RootLayout({
             `,
           }}
         />
-              {/* HSX GA4 inquiry click tracking */}
+        {/* HSX GA4 conversion click tracking */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
+              function getAnalyticsLinkPath(href) {
+                try {
+                  var url = new URL(href, window.location.href);
+                  var pathname = url.pathname;
+
+                  while (pathname.length > 1 && pathname.endsWith('/')) {
+                    pathname = pathname.slice(0, -1);
+                  }
+
+                  return pathname;
+                } catch (error) {
+                  return '';
+                }
+              }
+
+              function getAnalyticsLinkUrl(eventName, href) {
+                if (eventName === 'email_click') return 'mailto:';
+                if (eventName === 'whatsapp_click') return 'whatsapp:';
+                if (eventName === 'phone_click') return 'tel:';
+
+                try {
+                  var url = new URL(href, window.location.href);
+                  return url.origin === window.location.origin
+                    ? url.pathname
+                    : url.origin + url.pathname;
+                } catch (error) {
+                  return '';
+                }
+              }
+
+              function getAnalyticsCtaLocation(link) {
+                if (link.closest('footer')) return 'footer';
+                if (link.closest('header')) return 'header';
+
+                var pagePath = window.location.pathname;
+                if (pagePath === '/b2b-oem-project-review') return 'project_review';
+                if (pagePath.indexOf('/products/') === 0) return 'product_page';
+                if (pagePath.indexOf('/blog/') === 0) return 'blog';
+                if (pagePath === '/') return 'homepage';
+
+                return 'page';
+              }
+
               document.addEventListener('click', function(event) {
                 var target = event.target;
                 var link = target && target.closest ? target.closest('a') : null;
@@ -132,7 +175,9 @@ export default function RootLayout({
                 var href = link.getAttribute('href') || '';
                 var label = (link.innerText || link.textContent || '').trim();
                 var lowerHref = href.toLowerCase();
-                var lowerLabel = label.toLowerCase();
+                var linkPath = getAnalyticsLinkPath(href);
+                var currentPagePath = getAnalyticsLinkPath(window.location.href);
+                var explicitEvent = link.getAttribute('data-ga-event') || '';
                 var eventName = '';
 
                 if (lowerHref.indexOf('wa.me') !== -1 || lowerHref.indexOf('whatsapp') !== -1) {
@@ -142,22 +187,25 @@ export default function RootLayout({
                 } else if (lowerHref.indexOf('tel:') === 0) {
                   eventName = 'phone_click';
                 } else if (
-                  lowerLabel.indexOf('rfq') !== -1 ||
-                  lowerLabel.indexOf('inquiry') !== -1 ||
-                  lowerLabel.indexOf('quote') !== -1 ||
-                  lowerLabel.indexOf('drawings') !== -1 ||
-                  lowerLabel.indexOf('contact') !== -1 ||
-                  lowerHref.indexOf('#rfq') !== -1 ||
-                  lowerHref.indexOf('/contact') !== -1
+                  linkPath === '/b2b-oem-project-review' &&
+                  currentPagePath !== '/b2b-oem-project-review'
                 ) {
+                  eventName = 'request_project_review';
+                } else if (explicitEvent === 'inquiry_click') {
                   eventName = 'inquiry_click';
                 }
 
                 if (eventName) {
+                  var safeLabel = label;
+                  if (eventName === 'email_click') safeLabel = 'Email';
+                  if (eventName === 'whatsapp_click') safeLabel = 'WhatsApp';
+                  if (eventName === 'phone_click') safeLabel = 'Phone';
+
                   gtag('event', eventName, {
-                    link_url: href,
-                    link_text: label,
-                    page_location: window.location.href
+                    link_url: getAnalyticsLinkUrl(eventName, href),
+                    link_text: safeLabel,
+                    page_path: window.location.pathname,
+                    cta_location: getAnalyticsCtaLocation(link)
                   });
                 }
               });
