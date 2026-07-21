@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 
-import automotiveLedLight from "../../../public/images/automotive-led-light.png";
-import brakeCaliperCover from "../../../public/images/brake-caliper-cover.png";
+import { SiteFooter, SiteHeader } from "../components/site-navigation";
+
 import ledWorkLight from "../../../public/images/led-work-light.png";
 import oemAluminumParts from "../../../public/images/oem-small-aluminum-die-casting-parts.png";
 import sprayPainting from "../../../public/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg";
@@ -110,70 +110,68 @@ const introCards = [
 
 const productCategories: ProductCategory[] = [
   {
-    title: "OEM Aluminum Die Casting Parts",
+    title: "Lighting Housings",
     description:
-      "Compact aluminum housings, end caps, brackets, shells, covers, lamp bodies, and small-to-medium OEM components produced within the practical 200T / 300T Product Capability Range.",
-    image: oemAluminumParts,
-    alt: "OEM small-to-medium aluminum die casting parts for lighting and hardware projects",
-    href: "/products/oem-aluminum-die-casting-parts",
-    applications: [
-      "Automotive and motorcycle lamp housings",
-      "Mounting brackets and enclosure shells",
-      "Accessory covers and end-cap components",
-    ],
-  },
-  {
-    title: "Die Cast Aluminum LED Light Housings",
-    description:
-      "Die cast aluminum lamp housings, heat-sink-style bodies, bezels, covers, and compact lighting enclosures for LED lighting programs.",
+      "Aluminum light housings, heat-dissipation bodies, covers, and compact lighting components reviewed for suitable OEM projects.",
     image: ledWorkLight,
-    alt: "Die cast aluminum LED light housing with compact heat-dissipation body",
+    alt: "Aluminum die casting lighting housing for an OEM project",
     href: "/products/aluminum-light-housings",
     applications: [
-      "LED light housings and lamp bodies",
-      "Heat-sink-style aluminum covers and shells",
-      "Lighting components that need appearance finishing",
+      "LED light housings and heat-dissipation bodies",
+      "Compact lamp covers and enclosure shells",
+      "Lighting parts based on drawings or samples",
     ],
   },
   {
-    title: "Secondary Machining and Surface Finishing",
+    title: "Enclosures and Housings",
     description:
-      "Drilling, tapping, polishing, grinding, anodizing, powder coating, and spray painting support for suitable compact aluminum die casting projects.",
+      "Communication, optical-module, access-control, and industrial enclosure projects reviewed around structure, assembly, finishing, and packing needs.",
+    image: oemAluminumParts,
+    alt: "Custom aluminum die casting enclosures and housings",
+    href: "/products/oem-aluminum-die-casting-parts",
+    applications: [
+      "Communication equipment housings",
+      "Lock and access-control housings",
+      "Protective covers and enclosure shells",
+    ],
+  },
+  {
+    title: "Hardware and Mechanical Parts",
+    description:
+      "Brackets, supports, mounting parts, end caps, covers, and other compact components produced from buyer drawings or samples.",
+    image: workshopHorizontal,
+    alt: "HSX workshop supporting custom aluminum hardware and mechanical parts",
+    href: "/products/oem-aluminum-die-casting-parts",
+    applications: [
+      "Brackets and support parts",
+      "End caps, covers, and mounting parts",
+      "Hardware and machinery components",
+    ],
+  },
+  {
+    title: "Custom OEM Die Cast Parts",
+    description:
+      "Drawing-based small-to-medium aluminum die casting projects with selected in-house secondary operations, QC, packing, and partner-supported resources when required.",
     image: sprayPainting,
-    alt: "Secondary machining and surface finishing support for OEM aluminum die casting parts",
+    alt: "Surface finishing support for custom OEM aluminum die cast parts",
+    href: "/products/oem-aluminum-die-casting-parts",
     applications: [
-      "Machined holes and threaded mounting features",
-      "Surface preparation before coating or painting",
-      "Finish expectations reviewed case by case before quotation",
+      "Parts reviewed from 2D or 3D drawings",
+      "Appearance-sensitive aluminum components",
+      "Projects requiring coordinated secondary operations",
     ],
   },
-  {
-    title: "Decorative Brake Caliper Appearance Covers",
-    description:
-      "Decorative non-load-bearing exterior appearance covers for vehicle styling programs, offered as one aluminum accessory category within the wider factory scope.",
-    image: brakeCaliperCover,
-    alt: "Decorative aluminum brake caliper appearance cover for exterior customization",
-    href: "/products/decorative-brake-caliper-covers",
-    applications: [
-      "Exterior appearance customization only",
-      "Private-label vehicle styling accessories",
-      "Non-functional and non-load-bearing decorative cover programs",
-    ],
-  },
-  {
-    title: "Motorcycle / Automotive LED Lighting Products",
-    description:
-      "Selected motorcycle and automotive LED lighting products for wholesale buyers, aftermarket brands, and private-label sourcing programs.",
-    image: automotiveLedLight,
-    alt: "Motorcycle and automotive LED lighting products with compact aluminum housings",
-    href: "/products/automotive-led-lights",
-    applications: [
-      "Automotive LED lighting lines",
-      "Motorcycle accessory and replacement lighting",
-      "Selected private-label lighting product programs",
-    ],
-  },
+];
 
+const productScopeItems = [
+  "Aluminum housings and enclosure shells",
+  "Lighting housings and heat-dissipation bodies",
+  "Brackets and support parts",
+  "End caps and covers",
+  "Hardware and mechanical components",
+  "Lock and access-control housings",
+  "Decorative aluminum appearance parts",
+  "Other custom OEM aluminum die cast components",
 ];
 
 const supportStages: SupportStage[] = [
@@ -193,9 +191,9 @@ const supportStages: SupportStage[] = [
       "Mold development is arranged after feasibility review so compact aluminum parts can move into repeatable OEM production with clear expectations.",
   },
   {
-    title: "Die Casting and Machining",
+    title: "Die Casting and Secondary Operations",
     description:
-      "The 200T / 300T Product Capability Range is paired with drilling and tapping support for compact housings, brackets, covers, and hardware parts.",
+      "The 200T / 300T Product Capability Range is paired with in-house drilling and tapping. CNC machining can be coordinated through partner-supported resources when required by the project.",
   },
   {
     title: "Finishing, Inspection, and Packing",
@@ -206,9 +204,9 @@ const supportStages: SupportStage[] = [
 
 const surfaceFinishes = [
   {
-    title: "Anodizing",
+    title: "Partner-Supported Anodizing",
     description:
-      "Used for clean metallic appearance, corrosion resistance, and consistent finish on aluminum housings, covers, and hardware parts.",
+      "Anodizing can be coordinated through partner-supported resources for selected suitable parts when required by the project.",
   },
   {
     title: "Powder Coating",
@@ -221,9 +219,9 @@ const surfaceFinishes = [
       "Applied where the project requires color matching, branded appearance, or a specific visual finish for end-market presentation.",
   },
   {
-    title: "Polishing and Grinding",
+    title: "Polishing and Surface Preparation",
     description:
-      "Used for surface preparation and appearance improvement before coating, painting, or final inspection on visible aluminum parts.",
+      "In-house polishing and surface preparation support appearance improvement before coating, painting, or final inspection on visible aluminum parts.",
   },
 ];
 
@@ -257,10 +255,8 @@ function SectionHeading({
 }
 
 export default function ProductsPage() {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <div className="relative overflow-x-clip">
+    <div className="relative">
       <div className="border-b border-white/8 bg-black/85">
         <div className="container-shell flex flex-col gap-3 py-3 text-sm text-[#d8ccb2] lg:flex-row lg:items-center lg:justify-between">
           <div className="flex flex-col gap-3">
@@ -297,67 +293,16 @@ export default function ProductsPage() {
               <span>{contactDetails.address}</span>
             </div>
           </div>
-          <a href="/contact" className="gold-button w-full text-center sm:w-auto">
-            Get a Quote
-          </a>
+          <Link
+            href="/b2b-oem-project-review"
+            className="gold-button w-full text-center sm:w-auto"
+          >
+            Request Project Review
+          </Link>
         </div>
       </div>
 
-      <header className="sticky top-0 z-40 border-b border-white/8 bg-[#050505]/88 backdrop-blur-xl">
-        <div className="container-shell flex flex-col gap-5 py-5 lg:flex-row lg:items-center lg:justify-between">
-          <div className="max-w-2xl">
-            <p className="section-kicker">Foshan, Guangdong, China</p>
-            <Link
-              href="/"
-              className="section-heading mt-3 block text-2xl text-white sm:text-3xl"
-            >
-              HSX DIECASTING
-            </Link>
-            <p className="mt-3 text-sm leading-7 text-[#beb6a8]">
-              Product programs for OEM aluminum die casting parts, die cast aluminum LED light housings, secondary machining and surface finishing, decorative brake caliper appearance covers, and selected LED lighting supply.
-            </p>
-          </div>
-
-          <nav
-            aria-label="Primary"
-            className="flex flex-wrap gap-x-5 gap-y-3 text-sm text-[#ddd2ba]"
-          >
-            <Link href="/" className="transition-colors hover:text-white">
-              Home
-            </Link>
-            <Link href="/contact" className="transition-colors hover:text-white">
-              Contact
-            </Link>
-            <Link
-              href="/capabilities"
-              className="transition-colors hover:text-white"
-            >
-              Capabilities
-            </Link>
-            <a
-              href="#product-categories"
-              className="transition-colors hover:text-white"
-            >
-              Products
-            </a>
-            <a
-              href="#oem-support"
-              className="transition-colors hover:text-white"
-            >
-              OEM Support
-            </a>
-            <a
-              href="#surface-finishing"
-              className="transition-colors hover:text-white"
-            >
-              Finishing
-            </a>
-            <a href="/contact" className="transition-colors hover:text-white">
-              RFQ
-            </a>
-          </nav>
-        </div>
-      </header>
+      <SiteHeader />
 
       <main id="top">
         <section className="border-b border-white/8 bg-[radial-gradient(circle_at_top_right,rgba(199,162,91,0.14),transparent_34%),linear-gradient(180deg,#090909_0%,#050505_100%)]">
@@ -365,25 +310,25 @@ export default function ProductsPage() {
             <div className="motion-rise">
               <p className="section-kicker">HSX product range</p>
               <h1 className="section-heading mt-6 text-4xl leading-none text-white sm:text-5xl xl:text-6xl">
-                OEM Aluminum Die Casting Parts and Light Housings for B2B Buyers
+                Custom OEM Aluminum Die Casting Parts and Selected Applications
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-[#d4cdc0]">
-                HSX DIECASTING focuses on small-to-medium OEM aluminum die
-                casting parts, die cast aluminum LED light housings, secondary
-                machining, surface finishing, decorative brake caliper
-                appearance covers, and selected LED lighting products. The
-                product scope stays inside the 200T / 300T Product Capability
-                Range for compact housings, brackets, covers,
-                shells, and other practical OEM components.
+                HSX DIECASTING focuses on small-to-medium custom OEM aluminum die
+                casting parts, including lighting housings, enclosures, and
+                hardware or mechanical components, with selected secondary
+                operations and finishing coordination. The product scope stays
+                inside the 200T / 300T Product Capability Range for compact
+                housings, brackets, covers, shells, and other practical OEM
+                components.
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <a
-                  href="#product-categories"
+                <Link
+                  href="/b2b-oem-project-review"
                   className="gold-button text-center"
                 >
-                  Browse Product Categories
-                </a>
+                  Request Project Review
+                </Link>
                 <a
                   href={contactDetails.whatsappHref}
                   className="outline-button text-center"
@@ -474,12 +419,12 @@ export default function ProductsPage() {
         >
           <div className="container-shell">
             <SectionHeading
-              eyebrow="Product categories"
-              title="Category coverage for OEM sourcing programs"
-              description="Each category below is described within realistic compact aluminum manufacturing scope. The emphasis stays on small-to-medium OEM parts, aluminum lighting housings, and decorative appearance accessories rather than oversized structural castings."
+              eyebrow="Core OEM product categories"
+              title="Custom OEM Aluminum Die Casting"
+              description="Four representative categories help buyers identify a practical project fit. Final feasibility is reviewed from drawings, samples, dimensions, quantity, application, and finishing requirements."
             />
 
-            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            <div className="mt-12 grid gap-6 md:grid-cols-2">
               {productCategories.map((category, index) => (
                 <article
                   key={`${category.title}-${index}`}
@@ -567,6 +512,39 @@ export default function ProductsPage() {
                 </article>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="border-b border-white/8 py-16 lg:py-24">
+          <div className="container-shell">
+            <details className="industrial-card group p-6 sm:p-8">
+              <summary className="cursor-pointer list-none text-xl font-semibold text-white sm:text-2xl">
+                What kinds of aluminum die cast parts can HSX manufacture?
+              </summary>
+              <div className="mt-6 border-t border-white/10 pt-6">
+                <p className="max-w-4xl text-sm leading-7 text-[#cac1b2]">
+                  HSX manufactures custom aluminum die cast parts based on
+                  customer drawings, samples, dimensions, quantities, and
+                  application requirements.
+                </p>
+                <p className="mt-4 text-sm font-semibold text-white">
+                  Typical project types include:
+                </p>
+                <ul className="mt-5 grid gap-3 text-sm leading-7 text-[#f3ecdd] sm:grid-cols-2">
+                  {productScopeItems.map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-[#d5ae67]" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-6 max-w-4xl text-sm leading-7 text-[#cac1b2]">
+                  For a new project, customers can send 3D drawings, 2D
+                  drawings, sample photos, or basic dimensions for project
+                  review.
+                </p>
+              </div>
+            </details>
           </div>
         </section>
 
@@ -658,7 +636,7 @@ export default function ProductsPage() {
                 <div>
                   <p className="section-kicker">RFQ contact</p>
                   <h2 className="section-heading mt-4 text-3xl text-[#120f08] sm:text-4xl">
-                    Send your drawings, samples, or project requirements
+                    Send us your drawing or sample for project review.
                   </h2>
                   <p className="mt-5 max-w-2xl text-base leading-8 text-[#2d2417] sm:text-lg">
                     Share the product category, drawing set, reference sample,
@@ -743,125 +721,36 @@ export default function ProductsPage() {
           </div>
         </section>
       
-        {/* Internal links: expanded product category pages */}
-        <section className="border-t border-white/10 bg-black/20 px-6 py-16 lg:px-12">
-          <div className="mx-auto max-w-6xl">
-            <p className="section-kicker">More product categories</p>
-            <h2 className="mt-4 max-w-4xl text-3xl font-semibold tracking-tight text-white lg:text-5xl">
-              Explore focused product pages for LED lighting and aluminum die casting projects
-            </h2>
-            <p className="mt-6 max-w-4xl text-base leading-8 text-white/70 lg:text-lg">
-              These product category pages help buyers find the right supply scope faster,
-              starting with OEM aluminum die casting parts, aluminum light housings,
-              secondary machining and finishing support, decorative brake caliper appearance
-              covers, and selected LED lighting products.
-            </p>
-
-            <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              <a
-                href="/products/oem-aluminum-die-casting-parts"
-                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
-              >
-                <h3 className="text-lg font-semibold text-white">OEM Aluminum Die Casting Parts</h3>
-                <p className="mt-4 text-sm leading-7 text-white/65">
-                  Small-to-medium aluminum die casting parts, housings, covers, and custom hardware.
-                </p>
-              </a>
-
-              <a
-                href="/products/aluminum-light-housings"
-                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
-              >
-                <h3 className="text-lg font-semibold text-white">Aluminum Light Housings</h3>
-                <p className="mt-4 text-sm leading-7 text-white/65">
-                  Die cast aluminum lamp housings, heat-sink bodies, covers, and brackets.
-                </p>
-              </a>
-
-              <a
-                href="#surface-finishing"
-                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
-              >
-                <h3 className="text-lg font-semibold text-white">Secondary Machining and Surface Finishing</h3>
-                <p className="mt-4 text-sm leading-7 text-white/65">
-                  Drilling, tapping, polishing, grinding, anodizing, powder coating, and spray painting support.
-                </p>
-              </a>
-
-              <a
-                href="/products/decorative-brake-caliper-covers"
-                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
-              >
-                <h3 className="text-lg font-semibold text-white">Decorative Brake Caliper Appearance Covers</h3>
-                <p className="mt-4 text-sm leading-7 text-white/65">
-                  Non-load-bearing decorative appearance covers for exterior customization.
-                </p>
-              </a>
-
-              <a
-                href="/products/automotive-led-lights"
-                className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
-              >
-                <h3 className="text-lg font-semibold text-white">Motorcycle / Automotive LED Lighting Products</h3>
-                <p className="mt-4 text-sm leading-7 text-white/65">
-                  Selected automotive and motorcycle LED lighting products for global B2B buyers.
-                </p>
-              </a>
-            </div>
+        <section className="border-t border-white/10 bg-black/20 py-12">
+          <div className="container-shell">
+            <details className="rounded-3xl border border-white/10 bg-white/[0.03] p-6">
+              <summary className="cursor-pointer list-none text-lg font-semibold text-white">
+                Additional focused product pages
+              </summary>
+              <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 border-t border-white/10 pt-5 text-sm text-[#ddd2ba]">
+                <Link href="/products/automotive-led-lights" className="hover:text-white">
+                  Automotive LED Lights
+                </Link>
+                <Link href="/products/motorcycle-led-lights" className="hover:text-white">
+                  Motorcycle LED Lights
+                </Link>
+                <Link href="/products/led-work-lights" className="hover:text-white">
+                  LED Work Lights
+                </Link>
+                <Link
+                  href="/products/decorative-brake-caliper-covers"
+                  className="hover:text-white"
+                >
+                  Decorative Brake Caliper Appearance Covers
+                </Link>
+              </div>
+            </details>
           </div>
         </section>
 
       </main>
 
-      <footer className="border-t border-white/8 bg-black/80 py-10">
-        <div className="container-shell grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
-          <div>
-            <p className="section-kicker">Footer</p>
-            <p className="section-heading mt-3 text-2xl text-white">
-              Foshan Huashunxiang Hardware Products Factory
-            </p>
-            <p className="mt-4 max-w-3xl text-sm leading-7 text-[#bbb2a3]">
-              OEM small-to-medium aluminum die casting parts and automotive LED
-              lighting supplier for global wholesalers, importers,
-              distributors, aftermarket brands, and OEM buyers.
-            </p>
-          </div>
-
-          <div className="text-sm leading-7 text-[#b7ae9e]">
-            <p>
-              <span className="text-white/90">Email:</span>{" "}
-              <a
-                href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
-                className="transition-colors hover:text-white"
-              >
-                {contactDetails.email}
-              </a>
-            </p>
-            <p>
-              <span className="text-white/90">WhatsApp / Phone:</span>{" "}
-              <a
-                href={contactDetails.whatsappHref}
-                className="transition-colors hover:text-white"
-              >
-                {contactDetails.phone}
-              </a>
-            </p>
-            <p>
-              <span className="text-white/90">WeChat:</span>{" "}
-              {contactDetails.wechat}
-            </p>
-            <p>
-              <span className="text-white/90">Address:</span>{" "}
-              {contactDetails.address}
-            </p>
-            <p>Small-to-medium aluminum parts within the 200T / 300T Product Capability Range</p>
-            <p>OEM based on drawings, samples, or custom project requirements</p>
-            <p className="mt-2">
-              © {currentYear} HSX DIECASTING. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

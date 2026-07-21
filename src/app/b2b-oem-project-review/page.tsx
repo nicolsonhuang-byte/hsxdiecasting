@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
+import { SiteFooter, SiteHeader } from "../components/site-navigation";
+
 import sprayPainting from "../../../public/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg";
 import workshopHorizontal from "../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
 import oemAluminumParts from "../../../public/images/oem-small-aluminum-die-casting-parts.png";
@@ -18,6 +20,26 @@ export const metadata: Metadata = {
     "Send 3D files, 2D drawings, sample photos, application, quantity, machining needs, finishing requirements, and packing needs. HSX reviews whether aluminum die casting is suitable before quotation.",
   alternates: {
     canonical: "https://www.hsxdiecasting.com/b2b-oem-project-review",
+  },
+  openGraph: {
+    title: "OEM Aluminum Die Casting Project Review Before Quotation | HSX DIECASTING",
+    description:
+      "Send drawings, 3D files, sample photos, quantity, finishing, and packing requirements for factory-direct OEM aluminum die casting project review.",
+    url: "https://www.hsxdiecasting.com/b2b-oem-project-review",
+    siteName: "HSX DIECASTING",
+    type: "website",
+    images: [
+      "/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg",
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "OEM Aluminum Die Casting Project Review Before Quotation | HSX DIECASTING",
+    description:
+      "Send drawings, 3D files, sample photos, quantity, finishing, and packing requirements for factory-direct OEM aluminum die casting project review.",
+    images: [
+      "/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg",
+    ],
   },
 };
 
@@ -300,7 +322,7 @@ function BulletList({ items }: { items: string[] }) {
 
 export default function B2bOemProjectReviewPage() {
   return (
-    <div className="relative overflow-x-clip">
+    <div className="relative">
       <div className="border-b border-white/8 bg-black/85">
         <div className="container-shell flex flex-col gap-3 py-3 text-sm text-[#beb6a8] lg:flex-row lg:items-center lg:justify-between">
           <div className="flex flex-col gap-3">
@@ -346,53 +368,7 @@ export default function B2bOemProjectReviewPage() {
         </div>
       </div>
 
-      <header className="z-40 border-b border-white/8 bg-[#050505]/88 backdrop-blur-xl">
-        <div className="container-shell flex flex-col gap-5 py-5 lg:flex-row lg:items-center lg:justify-between">
-          <div className="max-w-2xl">
-            <p className="section-kicker">Foshan, Guangdong, China</p>
-            <Link
-              href="/"
-              className="section-heading mt-3 block text-2xl text-white sm:text-3xl"
-            >
-              HSX DIECASTING
-            </Link>
-            <p className="mt-3 text-sm leading-7 text-[#beb6a8]">
-              Foshan Huashunxiang Hardware Products Factory provides OEM
-              small-to-medium aluminum die casting parts for global
-              wholesalers, importers, distributors, hardware brands,
-              automotive aftermarket brands, LED lighting brands, and OEM
-              project buyers.
-            </p>
-          </div>
-
-          <nav
-            aria-label="Primary"
-            className="flex flex-wrap gap-x-5 gap-y-3 text-sm text-[#ddd2ba]"
-          >
-            <Link href="/" className="transition-colors hover:text-white">
-              Home
-            </Link>
-            <Link href="/about" className="transition-colors hover:text-white">
-              About
-            </Link>
-            <Link
-              href="/products"
-              className="transition-colors hover:text-white"
-            >
-              Products
-            </Link>
-            <Link
-              href="/b2b-oem-project-review"
-              className="transition-colors hover:text-white"
-            >
-              Project Review
-            </Link>
-            <Link href="/contact" className="transition-colors hover:text-white">
-              Contact
-            </Link>
-          </nav>
-        </div>
-      </header>
+      <SiteHeader />
 
       <main className="min-h-screen bg-[#050505] text-white">
       <section className="border-b border-white/8 bg-[radial-gradient(circle_at_top_right,rgba(199,162,91,0.14),transparent_34%),linear-gradient(180deg,#090909_0%,#050505_100%)]">
@@ -860,7 +836,7 @@ export default function B2bOemProjectReviewPage() {
               aluminum die casting machines. The practical product scope includes
               suitable small-to-medium parts within the 200T / 300T Product
               Capability Range, together with multi-axis drilling, multi-axis
-              tapping, polishing / grinding, powder coating, spray painting, QC,
+              tapping, polishing and surface preparation, powder coating, spray painting, QC,
               and packing. CNC machining and anodizing can be coordinated through
               partner-supported resources when required by the project.
             </p>
@@ -964,6 +940,7 @@ export default function B2bOemProjectReviewPage() {
         </div>
       </section>
       </main>
+      <SiteFooter />
     </div>
   );
 }

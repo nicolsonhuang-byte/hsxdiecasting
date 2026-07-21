@@ -1,14 +1,20 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "How to Customize LED Work Lights | HSX DIECASTING",
-  description:
-    "A practical guide for customizing LED work lights, aluminum housings, brackets, finishes, logos, packaging, and OEM project details.",
-  alternates: {
-    canonical: "/blog/how-to-customize-led-work-lights",
-  },
-};
+import {
+  ArticleStructuredData,
+  buildArticleMetadata,
+} from "../article-structured-data";
+
+const articleTitle = "How to Customize LED Work Lights | HSX DIECASTING";
+const articleDescription =
+  "A practical guide for customizing LED work lights, aluminum housings, brackets, finishes, logos, packaging, and OEM project details.";
+const articlePath = "/blog/how-to-customize-led-work-lights";
+
+export const metadata = buildArticleMetadata({
+  title: articleTitle,
+  description: articleDescription,
+  path: articlePath,
+});
 
 const contactDetails = {
   email: "nicolson@hsxdiecasting.com",
@@ -26,6 +32,11 @@ const relatedLinks = [
 export default function ArticlePage() {
   return (
     <main className="min-h-screen bg-[#050505] text-white">
+      <ArticleStructuredData
+        title={articleTitle}
+        description={articleDescription}
+        path={articlePath}
+      />
       <article className="mx-auto max-w-4xl px-6 py-16 lg:px-8 lg:py-24">
         <Link href="/blog" className="text-sm font-semibold text-[#f4d27a]">
           ← Back to Blog

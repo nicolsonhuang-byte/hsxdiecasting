@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 
+import { SiteFooter, SiteHeader } from "../../components/site-navigation";
+
 import automotiveLedLight from "../../../../public/images/automotive-led-light.png";
 import ledWorkLight from "../../../../public/images/led-work-light.png";
 import oemAluminumParts from "../../../../public/images/oem-small-aluminum-die-casting-parts.png";
@@ -102,7 +104,7 @@ const heroStats = [
   {
     label: "Factory Support",
     value: "Cast + Finish",
-    note: "Aluminum die casting, drilling, tapping, polishing, coating, painting, and anodizing support",
+    note: "In-house aluminum die casting, drilling, tapping, polishing, coating, and painting, with partner-supported anodizing for selected suitable parts",
   },
 ];
 
@@ -205,7 +207,7 @@ const manufacturingFlow: InfoCard[] = [
   {
     title: "Surface Finishing",
     description:
-      "Powder coating, spray painting, anodizing, polishing, and grinding are coordinated around appearance, corrosion resistance, and brand presentation.",
+      "In-house powder coating, spray painting, polishing, and surface preparation are coordinated with partner-supported anodizing around appearance, corrosion resistance, and brand presentation.",
   },
   {
     title: "Inspection and Export Packing",
@@ -226,14 +228,14 @@ const finishingOptions: InfoCard[] = [
       "Used when the lighting product requires color matching, branded visual presentation, or model-specific appearance.",
   },
   {
-    title: "Anodizing",
+    title: "Partner-Supported Anodizing",
     description:
-      "Suitable for selected aluminum parts needing clean metallic appearance and improved surface protection.",
+      "Anodizing can be coordinated through partner-supported resources for selected suitable aluminum parts when required by the project.",
   },
   {
-    title: "Polishing and Grinding",
+    title: "Polishing and Surface Preparation",
     description:
-      "Surface preparation for visible aluminum parts before coating, painting, anodizing, or final appearance review.",
+      "Surface preparation for visible aluminum parts before coating, painting, partner-supported anodizing, or final appearance review.",
   },
 ];
 
@@ -265,7 +267,7 @@ const rfqRequirements = [
   "Lighting type such as LED work light, auxiliary light, or custom vehicle light",
   "Housing dimensions, mounting points, bracket requirements, and assembly needs",
   "Target wattage, voltage, lens, cable, or lighting performance requirements if available",
-  "Surface finish such as powder coating, spray painting, anodizing, or polishing",
+  "Surface finish such as powder coating, spray painting, polishing, or partner-supported anodizing",
   "Estimated order quantity, logo request, packaging plan, and target market",
 ];
 
@@ -292,10 +294,8 @@ function SectionHeading({
 }
 
 export default function AutomotiveLedLightsPage() {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <div className="relative overflow-x-clip">
+    <div className="relative">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
@@ -340,57 +340,16 @@ export default function AutomotiveLedLightsPage() {
               <span>{contactDetails.address}</span>
             </a>
           </div>
-          <a href={contactDetails.whatsappHref} className="gold-button w-full text-center sm:w-auto">
-            Get a Quote
-          </a>
+          <Link
+            href="/b2b-oem-project-review"
+            className="gold-button w-full text-center sm:w-auto"
+          >
+            Request Project Review
+          </Link>
         </div>
       </div>
 
-      <header className="sticky top-0 z-40 border-b border-white/8 bg-[#050505]/88 backdrop-blur-xl">
-        <div className="container-shell flex flex-col gap-5 py-5 lg:flex-row lg:items-center lg:justify-between">
-          <div className="max-w-2xl">
-            <p className="section-kicker">Foshan, Guangdong, China</p>
-            <Link
-              href="/"
-              className="section-heading mt-3 block text-2xl text-white sm:text-3xl"
-            >
-              HSX DIECASTING
-            </Link>
-            <p className="mt-3 text-sm leading-7 text-[#beb6a8]">
-              Automotive LED lights, car LED work lights, auxiliary lights,
-              aluminum lamp housings, brackets, covers, and compact lighting
-              parts for global B2B buyers.
-            </p>
-          </div>
-
-          <nav
-            aria-label="Primary"
-            className="flex flex-wrap gap-x-5 gap-y-3 text-sm text-[#ddd2ba]"
-          >
-            <Link href="/" className="transition-colors hover:text-white">
-              Home
-            </Link>
-            <Link href="/products" className="transition-colors hover:text-white">
-              Products
-            </Link>
-            <Link href="/contact" className="transition-colors hover:text-white">
-              Contact
-            </Link>
-            <Link href="/capabilities" className="transition-colors hover:text-white">
-              Capabilities
-            </Link>
-            <a href="#products" className="transition-colors hover:text-white">
-              Programs
-            </a>
-            <a href="#process" className="transition-colors hover:text-white">
-              Process
-            </a>
-            <a href="#rfq" className="transition-colors hover:text-white">
-              RFQ
-            </a>
-          </nav>
-        </div>
-      </header>
+      <SiteHeader />
 
       <main id="top">
         <section className="border-b border-white/8 bg-[radial-gradient(circle_at_top_right,rgba(199,162,91,0.14),transparent_34%),linear-gradient(180deg,#090909_0%,#050505_100%)]">
@@ -908,56 +867,7 @@ export default function AutomotiveLedLightsPage() {
 
       </main>
 
-      <footer className="border-t border-white/8 bg-black/80 py-10">
-        <div className="container-shell grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
-          <div>
-            <p className="section-kicker">Footer</p>
-            <p className="section-heading mt-3 text-2xl text-white">
-              Foshan Huashunxiang Hardware Products Factory
-            </p>
-            <p className="mt-4 max-w-3xl text-sm leading-7 text-[#bbb2a3]">
-              Automotive LED lights, car LED work lights, auxiliary lights,
-              aluminum lamp housings, and compact lighting-related aluminum
-              parts for global wholesalers, importers, distributors,
-              aftermarket brands, and OEM buyers.
-            </p>
-          </div>
-
-          <div className="text-sm leading-7 text-[#b7ae9e]">
-            <p>
-              <span className="text-white/90">Email:</span>{" "}
-              <a
-                href={`mailto:${contactDetails.email}?subject=RFQ%20for%20Automotive%20LED%20Lights&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20would%20like%20to%20request%20a%20quotation%20for%20automotive%20LED%20lights.%0A%0AProduct%20type%3A%0AQuantity%3A%0AHousing%20size%3A%0ALighting%20requirement%3A%0AFinish%20/%20packaging%20request%3A%0A%0APlease%20contact%20me%20with%20pricing%20and%20production%20details.%0A%0ABest%20regards%2C`}
-                className="transition-colors hover:text-white"
-              >
-                {contactDetails.email}
-              </a>
-            </p>
-            <p>
-              <span className="text-white/90">WhatsApp / Phone:</span>{" "}
-              <a
-                href={contactDetails.whatsappHref}
-                className="transition-colors hover:text-white"
-              >
-                {contactDetails.phone}
-              </a>
-            </p>
-            <p>
-              <span className="text-white/90">WeChat:</span>{" "}
-              {contactDetails.wechat}
-            </p>
-            <p>
-              <span className="text-white/90">Address:</span>{" "}
-              {contactDetails.address}
-            </p>
-            <p>Small-to-medium aluminum parts within the 200T / 300T Product Capability Range</p>
-            <p>OEM based on photos, drawings, samples, or custom project requirements</p>
-            <p className="mt-2">
-              © {currentYear} HSX DIECASTING. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

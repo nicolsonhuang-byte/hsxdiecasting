@@ -8,6 +8,7 @@ import sprayPainting from "../../public/images/hsx-factory/in-house-spray-painti
 import workshopHorizontal from "../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
 import ledWorkLight from "../../public/images/led-work-light.png";
 import oemAluminumParts from "../../public/images/oem-small-aluminum-die-casting-parts.png";
+import { SiteFooter, SiteHeader } from "./components/site-navigation";
 
 type ProductCategory = {
   title: string;
@@ -28,13 +29,6 @@ type FactoryImageCard = {
   alt: string;
   caption: string;
 };
-
-const navigationLinks = [
-  { label: "About", href: "/about" },
-  { label: "Products", href: "/products" },
-  { label: "Project Review", href: "/b2b-oem-project-review" },
-  { label: "Contact", href: "/contact" },
-];
 
 const contactDetails = {
   email: "nicolson@hsxdiecasting.com",
@@ -122,14 +116,14 @@ const productCategories: ProductCategory[] = [
     ],
   },
   {
-    title: "Secondary Machining and Surface Finishing",
+    title: "Selected Secondary Operations and Surface Finishing",
     description:
-      "Drilling, tapping, polishing, grinding, anodizing, powder coating, and spray painting support for suitable aluminum die casting projects.",
+      "In-house drilling, tapping, polishing, powder coating, and spray painting support suitable aluminum die casting projects. Anodizing can be coordinated through partner-supported resources for selected suitable parts.",
     image: sprayPainting,
     alt: "In-house spray painting and surface finishing support for aluminum die casting parts",
     details: [
-      "7 multi-axis drilling machines and 7 multi-axis tapping machines",
-      "Polishing and grinding support before appearance finishing",
+      "In-house drilling and tapping for hole and thread requirements",
+      "In-house polishing and surface preparation before appearance finishing",
       "Finishing expectations reviewed case by case before quotation",
     ],
   },
@@ -165,11 +159,11 @@ const productCategories: ProductCategory[] = [
 const capabilities = [
   "280T and 320T aluminum die casting machines",
   "In-house trimming and deburring support after die casting",
-  "7 multi-axis drilling machines for repeatable hole processing",
-  "7 multi-axis tapping machines for threaded aluminum parts",
+  "In-house drilling support for repeatable hole processing",
+  "In-house tapping support for threaded aluminum parts",
   "Bench drilling, desktop tapping, multi-spindle drilling, and multi-spindle tapping support for different hole and thread requirements",
   "Product-specific fixtures can be designed in-house for repeat positioning",
-  "3 polishing and grinding machines for appearance preparation",
+  "In-house polishing and surface preparation for appearance requirements",
   "In-house polishing, powder coating, spray painting, coating inspection, manual counting, weight checking, QC, and protective packing",
   "CNC machining and anodizing can be coordinated with partner resources based on project requirements",
   "Best suited to aluminum lamp housings, brackets, end caps, covers, and shells",
@@ -249,7 +243,7 @@ const processSteps: InfoCard[] = [
   {
     title: "Polishing and Surface Preparation",
     description:
-      "Polish and grind where required to prepare the part for anodizing, powder coating, or spray painting.",
+      "Polish and prepare selected surfaces for powder coating, spray painting, or partner-supported anodizing.",
   },
   {
     title: "Inspection and Export Packing",
@@ -260,7 +254,7 @@ const processSteps: InfoCard[] = [
 
 const surfaceFinishes: InfoCard[] = [
   {
-    title: "Anodizing",
+    title: "Partner-Supported Anodizing",
     description:
       "Coordinated with partner resources for suitable aluminum projects where buyers need a controlled metallic appearance or surface tone.",
   },
@@ -275,7 +269,7 @@ const surfaceFinishes: InfoCard[] = [
       "Applied when color control, styling alignment, or brand-specific appearance is required.",
   },
   {
-    title: "Polishing and Grinding",
+    title: "Polishing and Surface Preparation",
     description:
       "Surface conditioning for appearance improvement before finishing or direct visual inspection.",
   },
@@ -369,45 +363,9 @@ function SectionHeading({
 }
 
 export default function Home() {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <div className="relative overflow-x-clip">
-      <header className="sticky top-0 z-40 border-b border-white/8 bg-[#050505]/88 backdrop-blur-xl">
-        <div className="container-shell flex flex-col gap-5 py-5 sm:flex-row sm:items-center sm:justify-between">
-          <Link
-            href="/"
-            className="text-2xl font-semibold tracking-tight text-white transition-colors hover:text-[#efcf8d] sm:text-3xl"
-          >
-            HSX DIECASTING
-          </Link>
-
-          <nav
-            aria-label="Primary"
-            className="flex flex-wrap gap-x-5 gap-y-3 text-sm text-[#ddd2ba] sm:justify-end"
-          >
-            {navigationLinks.map((link) => (
-              link.href.startsWith("/") ? (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="transition-colors hover:text-white"
-                >
-                  {link.label}
-                </Link>
-              ) : (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="transition-colors hover:text-white"
-                >
-                  {link.label}
-                </a>
-              )
-            ))}
-          </nav>
-        </div>
-      </header>
+    <div className="relative">
+      <SiteHeader />
 
       <main id="top">
         <script
@@ -479,7 +437,7 @@ export default function Home() {
 
         <section id="products" className="border-b border-white/8 py-16 lg:py-24">
           <div className="container-shell">
-            <SectionHeading
+                <SectionHeading
               eyebrow="Product categories"
               title="Focused aluminum parts and lighting programs"
               description="The homepage stays within the 200T / 300T Product Capability Range. Product messaging centers on compact cast components, aluminum housings, and export-ready lighting categories rather than oversized structural castings."
@@ -601,6 +559,13 @@ export default function Home() {
                 description="HSX is not only a casting-blank supplier. We support in-house die casting, trimming, deburring, drilling, tapping, polishing, powder coating, spray painting, QC, and packing. CNC machining and anodizing can be coordinated with partner resources based on project requirements."
               />
 
+              <Link
+                href="/capabilities"
+                className="outline-button mt-7 inline-flex w-full justify-center text-center sm:w-auto"
+              >
+                Review Factory Capabilities
+              </Link>
+
               <div className="mt-10 grid gap-5 sm:grid-cols-2">
                 {coreCapabilityCards.map((card, index) => (
                   <article key={`${card.title}-${index}`} className="industrial-card p-6">
@@ -649,14 +614,12 @@ export default function Home() {
                 </article>
                 <article className="metric-pill">
                   <p className="text-xs uppercase tracking-[0.28em] text-[#e8ce97]">
-                    Machining support
+                    Selected in-house secondary operations
                   </p>
-                  <p className="mt-3 text-3xl font-semibold text-white">
-                    14
-                  </p>
+                  <p className="mt-3 text-3xl font-semibold text-white">In-House</p>
                   <p className="mt-3 text-sm leading-7 text-[#c4bbaa]">
-                    7 multi-axis drilling machines and 7 multi-axis tapping
-                    machines
+                    Drilling, tapping, polishing, trimming, deburring, QC, and
+                    packing support for suitable OEM projects
                   </p>
                 </article>
               </div>
@@ -897,7 +860,8 @@ export default function Home() {
                 <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
                   The factory scope is described carefully around 280T and 320T
                   aluminum die casting machines, drilling, tapping, polishing,
-                  grinding, anodizing, powder coating, and spray painting support.
+                  surface preparation, powder coating, spray painting, and
+                  partner-supported anodizing.
                 </p>
               </article>
 
@@ -925,7 +889,7 @@ export default function Home() {
                   </li>
                   <li className="flex gap-3">
                     <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#d4ac67]" />
-                    <span>Coordinated die casting, post-processing, and surface finishing support, including anodizing for suitable aluminum projects.</span>
+                    <span>Coordinated die casting, post-processing, and surface finishing support, including partner-supported anodizing for suitable aluminum projects.</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#d4ac67]" />
@@ -1141,12 +1105,12 @@ export default function Home() {
               </a>
 
               <a
-                href="#finishing"
+                href="/capabilities"
                 className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-amber-300/50"
               >
-                <h3 className="text-lg font-semibold text-white">Secondary Machining and Surface Finishing</h3>
+                <h3 className="text-lg font-semibold text-white">Selected Secondary Operations and Surface Finishing</h3>
                 <p className="mt-4 text-sm leading-7 text-white/65">
-                  Drilling, tapping, polishing, grinding, anodizing, powder coating, and spray painting support.
+                  In-house drilling, tapping, polishing, powder coating, and spray painting, with partner-supported anodizing for selected suitable parts.
                 </p>
               </a>
 
@@ -1175,55 +1139,7 @@ export default function Home() {
 
       </main>
 
-      <footer className="border-t border-white/8 bg-black/80 py-10">
-        <div className="container-shell grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
-          <div>
-            <p className="section-kicker">Footer</p>
-            <p className="section-heading mt-3 text-2xl text-white">
-              Foshan Huashunxiang Hardware Products Factory
-            </p>
-            <p className="mt-4 max-w-3xl text-sm leading-7 text-[#bbb2a3]">
-              OEM small-to-medium aluminum die casting parts and automotive LED
-              lighting supplier for global wholesalers, importers,
-              distributors, aftermarket brands, and OEM buyers.
-            </p>
-          </div>
-
-          <div className="text-sm leading-7 text-[#b7ae9e]">
-            <p>
-              <span className="text-white/90">Email:</span>{" "}
-              <a
-                href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
-                className="transition-colors hover:text-white"
-              >
-                {contactDetails.email}
-              </a>
-            </p>
-            <p>
-              <span className="text-white/90">WhatsApp / Phone:</span>{" "}
-              <a
-                href={contactDetails.whatsappHref}
-                className="transition-colors hover:text-white"
-              >
-                {contactDetails.phone}
-              </a>
-            </p>
-            <p>
-              <span className="text-white/90">WeChat:</span>{" "}
-              {contactDetails.wechat}
-            </p>
-            <p>
-              <span className="text-white/90">Address:</span>{" "}
-              {contactDetails.address}
-            </p>
-            <p>Small-to-medium aluminum parts within the 200T / 300T Product Capability Range</p>
-            <p>OEM based on drawings, samples, or custom project requirements</p>
-            <p className="mt-2">
-              {"\u00A9"} {currentYear} HSX DIECASTING. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

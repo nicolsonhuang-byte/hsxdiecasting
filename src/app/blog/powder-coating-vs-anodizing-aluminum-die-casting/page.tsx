@@ -1,14 +1,22 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Powder Coating vs Anodizing for Aluminum Die Casting | HSX DIECASTING",
-  description:
-    "A practical comparison of in-house powder coating, painting, spray painting, polishing, anodizing partner support, and finishing selection for OEM aluminum die casting parts.",
-  alternates: {
-    canonical: "/blog/powder-coating-vs-anodizing-aluminum-die-casting",
-  },
-};
+import {
+  ArticleStructuredData,
+  buildArticleMetadata,
+} from "../article-structured-data";
+
+const articleTitle =
+  "Powder Coating vs Anodizing for Aluminum Die Casting | HSX DIECASTING";
+const articleDescription =
+  "A practical comparison of in-house powder coating, painting, spray painting, polishing, anodizing partner support, and finishing selection for OEM aluminum die casting parts.";
+const articlePath =
+  "/blog/powder-coating-vs-anodizing-aluminum-die-casting";
+
+export const metadata = buildArticleMetadata({
+  title: articleTitle,
+  description: articleDescription,
+  path: articlePath,
+});
 
 const contactDetails = {
   email: "nicolson@hsxdiecasting.com",
@@ -26,6 +34,11 @@ const relatedLinks = [
 export default function ArticlePage() {
   return (
     <main className="min-h-screen bg-[#050505] text-white">
+      <ArticleStructuredData
+        title={articleTitle}
+        description={articleDescription}
+        path={articlePath}
+      />
       <article className="mx-auto max-w-4xl px-6 py-16 lg:px-8 lg:py-24">
         <Link href="/blog" className="text-sm font-semibold text-[#f4d27a]">
           ← Back to Blog
@@ -39,9 +52,9 @@ export default function ArticlePage() {
         </h1>
         <p className="mt-6 text-lg leading-8 text-[#d4cdc0]">
           Surface finishing is an important part of many aluminum die casting
-          projects. Powder coating, spray painting, anodizing, polishing, and
-          grinding can affect the final appearance, color, texture, protection, and
-          buyer perception of aluminum parts. The right finishing route should
+          projects. Powder coating, spray painting, polishing, surface preparation,
+          and partner-supported anodizing can affect the final appearance, color,
+          texture, protection, and buyer perception of aluminum parts. The right finishing route should
           match the product application, visible surface requirements, exposure
           environment, and customer standard instead of being added blindly.
         </p>
@@ -156,11 +169,11 @@ export default function ArticlePage() {
 
           <section>
             <h2 className="text-2xl font-semibold !text-white">
-              What about spray painting, polishing, and grinding?
+              What about spray painting, polishing, and surface preparation?
             </h2>
             <p className="mt-4">
               Spray painting can be used for appearance color and brand styling.
-              Polishing and grinding are often used as preparation steps for visible
+              Polishing and surface preparation are often used on visible
               aluminum surfaces before coating, painting, anodizing, or final
               appearance review.
             </p>

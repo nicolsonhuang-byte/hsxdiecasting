@@ -1,14 +1,22 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "How to Choose an Aluminum Die Casting Manufacturer in China | HSX DIECASTING",
-  description:
-    "A practical checklist for global B2B buyers choosing an aluminum die casting manufacturer in China for OEM parts, housings, finishing, and export projects.",
-  alternates: {
-    canonical: "/blog/how-to-choose-aluminum-die-casting-manufacturer-china",
-  },
-};
+import {
+  ArticleStructuredData,
+  buildArticleMetadata,
+} from "../article-structured-data";
+
+const articleTitle =
+  "How to Choose an Aluminum Die Casting Manufacturer in China | HSX DIECASTING";
+const articleDescription =
+  "A practical checklist for global B2B buyers choosing an aluminum die casting manufacturer in China for OEM parts, housings, finishing, and export projects.";
+const articlePath =
+  "/blog/how-to-choose-aluminum-die-casting-manufacturer-china";
+
+export const metadata = buildArticleMetadata({
+  title: articleTitle,
+  description: articleDescription,
+  path: articlePath,
+});
 
 const contactDetails = {
   email: "nicolson@hsxdiecasting.com",
@@ -26,6 +34,11 @@ const relatedLinks = [
 export default function ArticlePage() {
   return (
     <main className="min-h-screen bg-[#050505] text-white">
+      <ArticleStructuredData
+        title={articleTitle}
+        description={articleDescription}
+        path={articlePath}
+      />
       <article className="mx-auto max-w-4xl px-6 py-16 lg:px-8 lg:py-24">
         <Link href="/blog" className="text-sm font-semibold text-[#f4d27a]">
           ← Back to Blog
@@ -88,9 +101,10 @@ export default function ArticlePage() {
             </h2>
             <p className="mt-4">
               Many die cast parts need more than casting. Drilling, tapping,
-              polishing, grinding, powder coating, spray painting, and anodizing for
-              suitable aluminum projects may be needed before the part is ready for
-              assembly, branding, or export packing.
+              polishing, surface preparation, powder coating, spray painting,
+              and partner-supported anodizing for suitable aluminum projects may
+              be needed before the part is ready for assembly, branding, or export
+              packing.
             </p>
             <p className="mt-4">
               A factory that can coordinate casting, post-processing, and finishing

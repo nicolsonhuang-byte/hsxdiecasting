@@ -1,6 +1,10 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+import {
+  ArticleStructuredData,
+  buildArticleMetadata,
+} from "../article-structured-data";
 
 import batchDieCastPartsBeforeTrimming from "../../../../public/images/hsx-factory/batch-die-cast-parts-before-trimming.jpg";
 import fixtureSupportedDrillingCooling from "../../../../public/images/hsx-factory/fixture-supported-multi-spindle-drilling-cooling.jpg";
@@ -8,15 +12,17 @@ import inHouseBlueSprayPainting from "../../../../public/images/hsx-factory/in-h
 import individualWrappingPacking from "../../../../public/images/hsx-factory/individual-wrapping-batch-packing-aluminum-parts.jpg";
 import qcCheckDuringPacking from "../../../../public/images/hsx-factory/qc-check-during-packing-aluminum-parts.jpg";
 
-export const metadata: Metadata = {
-  title: "Aluminum Casting RFQ Checklist for OEM Die Casting Parts",
-  description:
-    "Learn what B2B buyers should send for an aluminum casting RFQ or OEM aluminum die casting quotation, including drawings, 3D files, sample photos, quantity, machining, finishing, color, and packing requirements.",
-  alternates: {
-    canonical:
-      "https://www.hsxdiecasting.com/blog/rfq-checklist-custom-oem-aluminum-die-casting-parts",
-  },
-};
+const articleTitle = "Aluminum Casting RFQ Checklist for OEM Die Casting Parts";
+const articleDescription =
+  "Learn what B2B buyers should send for an aluminum casting RFQ or OEM aluminum die casting quotation, including drawings, 3D files, sample photos, quantity, machining, finishing, color, and packing requirements.";
+const articlePath =
+  "/blog/rfq-checklist-custom-oem-aluminum-die-casting-parts";
+
+export const metadata = buildArticleMetadata({
+  title: articleTitle,
+  description: articleDescription,
+  path: articlePath,
+});
 
 const contactDetails = {
   email: "nicolson@hsxdiecasting.com",
@@ -65,7 +71,7 @@ const rfqChecklist = [
   "Visible surface requirements and internal component or assembly requirements",
   "Tolerance requirements, hole position requirements, and thread requirements",
   "Machining, drilling, tapping, or partner-supported CNC machining requirements if needed",
-  "Surface finishing requirements such as polishing, grinding, powder coating, spray painting, or partner-supported anodizing review for suitable projects",
+  "Surface finishing requirements such as polishing, surface preparation, powder coating, spray painting, or partner-supported anodizing review for suitable projects",
   "Color sample or color card if custom spray painting is needed",
   "OEM / ODM customization, packing requirements, label, and export packing requirements",
 ];
@@ -111,6 +117,11 @@ const rfqReviewImages = [
 export default function ArticlePage() {
   return (
     <main className="min-h-screen bg-[#050505] text-white">
+      <ArticleStructuredData
+        title={articleTitle}
+        description={articleDescription}
+        path={articlePath}
+      />
       <article className="mx-auto max-w-4xl px-6 py-16 lg:px-8 lg:py-24">
         <Link href="/blog" className="text-sm font-semibold text-[#f4d27a]">
           Back to Blog
@@ -446,10 +457,10 @@ export default function ArticlePage() {
               waiting until the quotation stage.
             </p>
             <h3 className="mt-6 text-xl font-semibold !text-white">
-              Polishing and Grinding
+              Polishing and Surface Preparation
             </h3>
             <p className="mt-3">
-              Polishing and grinding may be used for selected surfaces before
+              Polishing and surface preparation may be used for selected surfaces before
               coating, painting, or other appearance finishing steps. Mark the
               visible areas and areas where surface treatment matters.
             </p>

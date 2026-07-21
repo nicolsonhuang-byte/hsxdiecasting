@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import { SiteFooter, SiteHeader } from "../../components/site-navigation";
+
 import workshopHorizontal from "../../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
 import oemAluminumParts from "../../../../public/images/oem-small-aluminum-die-casting-parts.png";
 import communicationEquipmentHousing from "../../../../public/images/hsx-factory/communication-equipment-aluminum-die-cast-housing.jpg";
@@ -12,6 +14,13 @@ import stageLightDieCastHousing from "../../../../public/images/hsx-factory/stag
 type InfoCard = {
   title: string;
   description: string;
+};
+
+type FaqItem = {
+  question: string;
+  answer: string;
+  items?: string[];
+  closing?: string;
 };
 
 const pageTitle =
@@ -81,44 +90,24 @@ const heroStats = [
 
 const manufacturedParts = [
   {
-    title: "LED Light Housings",
+    title: "Lighting Housings",
     description:
-      "Lighting housings and light enclosure shells for work lights, auxiliary lights, and project-based lighting assemblies.",
+      "Lighting housings, heat-dissipation bodies, covers, and compact light enclosure shells reviewed for suitable OEM projects.",
   },
   {
-    title: "Heat-Sink Aluminum Housings",
+    title: "Enclosures and Housings",
     description:
-      "Aluminum housings designed for heat dissipation, cover integration, and mounting features in small-to-medium lighting products.",
+      "Communication, optical-module, access-control, lighting, and industrial enclosure projects based on buyer drawings or samples.",
   },
   {
-    title: "Mounting Brackets",
+    title: "Hardware and Mechanical Parts",
     description:
-      "Lamp brackets and compact mounting brackets with drilling and tapping features for OEM hardware and lighting accessory projects.",
+      "Brackets, support parts, mounting components, end caps, covers, and other compact hardware or machinery parts.",
   },
   {
-    title: "End Caps and Closure Parts",
+    title: "Custom OEM Die Cast Parts",
     description:
-      "End caps, covers, and closure parts for housings, accessories, and enclosure assemblies requiring a clean finished appearance.",
-  },
-  {
-    title: "Enclosure Shells",
-    description:
-      "Protective aluminum shells for lighting, hardware, and industrial accessory products based on drawing or sample requirements.",
-  },
-  {
-    title: "Motorcycle Light Housings",
-    description:
-      "Small-to-medium aluminum housings for aftermarket motorcycle lights, trim-oriented lamp bodies, and branded accessory programs.",
-  },
-  {
-    title: "Appearance Covers and Trim Parts",
-    description:
-      "Appearance-focused covers and trim parts for OEM buyers needing compact aluminum castings with post-finishing support.",
-  },
-  {
-    title: "Custom OEM Aluminum Parts",
-    description:
-      "Compact custom aluminum parts for OEM projects manufactured from drawings, samples, or custom project requirements.",
+      "Other suitable small-to-medium aluminum die cast components manufactured from drawings, samples, dimensions, and application requirements.",
   },
 ];
 
@@ -249,7 +238,7 @@ const surfaceFinishes: InfoCard[] = [
       "Applied when the buyer needs color matching, brand-specific presentation, or a painted surface for the target market.",
   },
   {
-    title: "Polishing and Grinding",
+    title: "Polishing and Surface Preparation",
     description:
       "Surface preparation improves appearance consistency before final finishing or direct visual inspection on compact aluminum parts.",
   },
@@ -398,11 +387,23 @@ const rfqRequirements = [
   "Packaging needs, testing requirements if applicable, and target market information",
 ];
 
-const faqItems = [
+const faqItems: FaqItem[] = [
   {
-    question: "What OEM aluminum die casting parts can HSX review?",
+    question: "What kinds of aluminum die cast parts can HSX manufacture?",
     answer:
-      "HSX can review small-to-medium OEM aluminum die casting parts such as housings, covers, brackets, rear covers, heat-sink housings, mounting parts, and other aluminum die-cast components based on drawings, 3D files, sample photos, quantity, finishing requirements, and any partner-supported machining needs.",
+      "HSX manufactures custom aluminum die cast parts based on customer drawings, samples, dimensions, quantities, and application requirements.",
+    items: [
+      "Aluminum housings and enclosure shells",
+      "Lighting housings and heat-dissipation bodies",
+      "Brackets and support parts",
+      "End caps and covers",
+      "Hardware and mechanical components",
+      "Lock and access-control housings",
+      "Decorative aluminum appearance parts",
+      "Other custom OEM aluminum die cast components",
+    ],
+    closing:
+      "For a new project, customers can send 3D drawings, 2D drawings, sample photos, or basic dimensions for project review.",
   },
   {
     question:
@@ -451,10 +452,8 @@ function SectionHeading({
 }
 
 export default function OemAluminumDieCastingPartsPage() {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <div className="relative overflow-x-clip">
+    <div className="relative">
       <div className="border-b border-white/8 bg-black/85">
         <div className="container-shell flex flex-col gap-3 py-3 text-sm text-[#d8ccb2] lg:flex-row lg:items-center lg:justify-between">
           <div className="flex flex-col gap-3">
@@ -500,53 +499,7 @@ export default function OemAluminumDieCastingPartsPage() {
         </div>
       </div>
 
-      <header className="z-40 border-b border-white/8 bg-[#050505]/88 backdrop-blur-xl">
-        <div className="container-shell flex flex-col gap-5 py-5 lg:flex-row lg:items-center lg:justify-between">
-          <div className="max-w-2xl">
-            <p className="section-kicker">Foshan, Guangdong, China</p>
-            <Link
-              href="/"
-              className="section-heading mt-3 block text-2xl text-white sm:text-3xl"
-            >
-              HSX DIECASTING
-            </Link>
-            <p className="mt-3 text-sm leading-7 text-[#beb6a8]">
-              Foshan Huashunxiang Hardware Products Factory provides OEM
-              small-to-medium aluminum die casting parts for global
-              wholesalers, importers, distributors, hardware brands,
-              automotive aftermarket brands, LED lighting brands, and OEM
-              project buyers.
-            </p>
-          </div>
-
-          <nav
-            aria-label="Primary"
-            className="flex flex-wrap gap-x-5 gap-y-3 text-sm text-[#ddd2ba]"
-          >
-            <Link href="/" className="transition-colors hover:text-white">
-              Home
-            </Link>
-            <Link href="/about" className="transition-colors hover:text-white">
-              About
-            </Link>
-            <Link
-              href="/products"
-              className="transition-colors hover:text-white"
-            >
-              Products
-            </Link>
-            <Link
-              href="/b2b-oem-project-review"
-              className="transition-colors hover:text-white"
-            >
-              Project Review
-            </Link>
-            <Link href="/contact" className="transition-colors hover:text-white">
-              Contact
-            </Link>
-          </nav>
-        </div>
-      </header>
+      <SiteHeader />
 
       <main id="top">
         <section className="border-b border-white/8 bg-[radial-gradient(circle_at_top_right,rgba(199,162,91,0.14),transparent_34%),linear-gradient(180deg,#090909_0%,#050505_100%)]">
@@ -554,7 +507,7 @@ export default function OemAluminumDieCastingPartsPage() {
             <div className="motion-rise">
               <p className="section-kicker">OEM aluminum die casting parts</p>
               <h1 className="section-heading mt-6 text-4xl leading-none text-white sm:text-5xl xl:text-6xl">
-                OEM Aluminum Die Casting Parts for Small-to-Medium Projects
+                OEM Aluminum Die Casting Parts Based on Your Drawings
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-[#d4cdc0]">
                 Send drawings, 3D files, samples, or product photos for quick
@@ -1200,6 +1153,21 @@ export default function OemAluminumDieCastingPartsPage() {
                   <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
                     {item.answer}
                   </p>
+                  {item.items ? (
+                    <ul className="mt-5 space-y-3 text-sm leading-7 text-[#f3ecdd]">
+                      {item.items.map((scopeItem) => (
+                        <li key={scopeItem} className="flex gap-3">
+                          <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-[#d5ae67]" />
+                          <span>{scopeItem}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+                  {item.closing ? (
+                    <p className="mt-5 text-sm leading-7 text-[#cac1b2]">
+                      {item.closing}
+                    </p>
+                  ) : null}
                 </article>
               ))}
             </div>
@@ -1405,7 +1373,7 @@ export default function OemAluminumDieCastingPartsPage() {
                 <div>
                   <p className="section-kicker">Final inquiry CTA</p>
                   <h2 className="section-heading mt-4 text-3xl text-[#120f08] sm:text-4xl">
-                    Send your drawings, samples, or custom project requirements
+                    Send us your drawing or sample for project review.
                   </h2>
                   <p className="mt-5 max-w-2xl text-base leading-8 text-[#2d2417] sm:text-lg">
                     HSX evaluates OEM aluminum die casting parts for global
@@ -1500,56 +1468,7 @@ export default function OemAluminumDieCastingPartsPage() {
         </section>
     </main>
 
-      <footer className="border-t border-white/8 bg-black/80 py-10">
-        <div className="container-shell grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
-          <div>
-            <p className="section-kicker">Footer</p>
-            <p className="section-heading mt-3 text-2xl text-white">
-              Foshan Huashunxiang Hardware Products Factory
-            </p>
-            <p className="mt-4 max-w-3xl text-sm leading-7 text-[#bbb2a3]">
-              OEM small-to-medium aluminum die casting parts supplier for
-              global wholesalers, importers, distributors, hardware brands,
-              automotive aftermarket brands, LED lighting brands, and OEM
-              buyers.
-            </p>
-          </div>
-
-          <div className="text-sm leading-7 text-[#b7ae9e]">
-            <p>
-              <span className="text-white/90">Email:</span>{" "}
-              <a
-                href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ARegards%2C`}
-                className="transition-colors hover:text-white"
-              >
-                {contactDetails.email}
-              </a>
-            </p>
-            <p>
-              <span className="text-white/90">WhatsApp / Phone:</span>{" "}
-              <a
-                href={contactDetails.whatsappHref}
-                className="transition-colors hover:text-white"
-              >
-                {contactDetails.phone}
-              </a>
-            </p>
-            <p>
-              <span className="text-white/90">WeChat:</span>{" "}
-              {contactDetails.wechat}
-            </p>
-            <p>
-              <span className="text-white/90">Address:</span>{" "}
-              {contactDetails.address}
-            </p>
-            <p>Small-to-medium aluminum die casting scope: 280T and 320T aluminum die casting equipment</p>
-            <p>OEM based on drawings, samples, or custom project requirements</p>
-            <p className="mt-2">
-              © {currentYear} HSX DIECASTING. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

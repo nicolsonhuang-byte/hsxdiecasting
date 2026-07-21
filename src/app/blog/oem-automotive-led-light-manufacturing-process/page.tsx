@@ -1,14 +1,21 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "OEM Automotive LED Light Manufacturing Process | HSX DIECASTING",
-  description:
-    "A practical overview of OEM automotive LED light manufacturing, including RFQ review, aluminum housing confirmation, finishing, sample review, and export communication.",
-  alternates: {
-    canonical: "/blog/oem-automotive-led-light-manufacturing-process",
-  },
-};
+import {
+  ArticleStructuredData,
+  buildArticleMetadata,
+} from "../article-structured-data";
+
+const articleTitle =
+  "OEM Automotive LED Light Manufacturing Process | HSX DIECASTING";
+const articleDescription =
+  "A practical overview of OEM automotive LED light manufacturing, including RFQ review, aluminum housing confirmation, finishing, sample review, and export communication.";
+const articlePath = "/blog/oem-automotive-led-light-manufacturing-process";
+
+export const metadata = buildArticleMetadata({
+  title: articleTitle,
+  description: articleDescription,
+  path: articlePath,
+});
 
 const contactDetails = {
   email: "nicolson@hsxdiecasting.com",
@@ -26,6 +33,11 @@ const relatedLinks = [
 export default function ArticlePage() {
   return (
     <main className="min-h-screen bg-[#050505] text-white">
+      <ArticleStructuredData
+        title={articleTitle}
+        description={articleDescription}
+        path={articlePath}
+      />
       <article className="mx-auto max-w-4xl px-6 py-16 lg:px-8 lg:py-24">
         <Link href="/blog" className="text-sm font-semibold text-[#f4d27a]">
           ← Back to Blog
@@ -76,8 +88,9 @@ export default function ArticlePage() {
             <p className="mt-4">
               Automotive LED lights often require consistent appearance for brand
               lines and distribution channels. Powder coating, spray painting,
-              polishing, grinding, and suitable aluminum finishing options can be
-              reviewed based on the housing design and target market.
+              polishing, surface preparation, and partner-supported anodizing for
+              selected suitable parts can be reviewed based on the housing design
+              and target market.
             </p>
           </section>
 

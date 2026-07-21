@@ -1,14 +1,21 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Aluminum Die Casting for LED Light Housings | HSX DIECASTING",
-  description:
-    "How aluminum die casting supports LED light housings, lamp bodies, covers, brackets, and heat-sink-style aluminum lighting components for OEM projects.",
-  alternates: {
-    canonical: "/blog/aluminum-die-casting-led-light-housings",
-  },
-};
+import {
+  ArticleStructuredData,
+  buildArticleMetadata,
+} from "../article-structured-data";
+
+const articleTitle =
+  "Aluminum Die Casting for LED Light Housings | HSX DIECASTING";
+const articleDescription =
+  "How aluminum die casting supports LED light housings, lamp bodies, covers, brackets, and heat-sink-style aluminum lighting components for OEM projects.";
+const articlePath = "/blog/aluminum-die-casting-led-light-housings";
+
+export const metadata = buildArticleMetadata({
+  title: articleTitle,
+  description: articleDescription,
+  path: articlePath,
+});
 
 const contactDetails = {
   email: "nicolson@hsxdiecasting.com",
@@ -26,6 +33,11 @@ const relatedLinks = [
 export default function ArticlePage() {
   return (
     <main className="min-h-screen bg-[#050505] text-white">
+      <ArticleStructuredData
+        title={articleTitle}
+        description={articleDescription}
+        path={articlePath}
+      />
       <article className="mx-auto max-w-4xl px-6 py-16 lg:px-8 lg:py-24">
         <Link href="/blog" className="text-sm font-semibold text-[#f4d27a]">
           ← Back to Blog
@@ -83,8 +95,9 @@ export default function ArticlePage() {
             <p className="mt-4">
               Aluminum light housings often require appearance finishing after
               casting and machining. Powder coating, spray painting, polishing,
-              grinding, and anodizing for suitable aluminum projects can be reviewed
-              based on the target appearance, product line, and market requirement.
+              surface preparation, and partner-supported anodizing for suitable
+              aluminum projects can be reviewed based on the target appearance,
+              product line, and market requirement.
             </p>
             <p className="mt-4">
               Buyers should confirm finish color, surface texture, logo requirement,

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import { SiteFooter, SiteHeader } from "../components/site-navigation";
+
 const pageTitle =
   "About HSX Die Casting | Aluminum Die Casting Factory in China";
 
@@ -32,14 +34,6 @@ export const metadata: Metadata = {
     images: ["/images/about-hsx-aluminum-die-casting-workshop.jpg"],
   },
 };
-
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/products", label: "Products" },
-  { href: "/b2b-oem-project-review", label: "Project Review" },
-  { href: "/contact", label: "Contact" },
-];
 
 const heroBadges = [
   "Production since 2009",
@@ -76,36 +70,10 @@ const buyerInputs = [
 
 export default function AboutPage() {
   return (
-    <main style={{ background: "#050505", color: "#fff", minHeight: "100vh" }}>
-      <div style={{ maxWidth: "1180px", margin: "0 auto", padding: "56px 24px" }}>
-        <nav
-          aria-label="Primary"
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "10px",
-            alignItems: "center",
-            marginBottom: "40px",
-            color: "#ddd2ba",
-            fontSize: "14px",
-          }}
-        >
-          {navLinks.map((link, index) => (
-            <span
-              key={link.href}
-              style={{ display: "inline-flex", alignItems: "center", gap: "10px" }}
-            >
-              {index > 0 ? <span style={{ color: "#7f7668" }}>/</span> : null}
-              <Link
-                href={link.href}
-                style={{ color: "inherit", textDecoration: "none" }}
-              >
-                {link.label}
-              </Link>
-            </span>
-          ))}
-        </nav>
-
+    <div className="relative min-w-0">
+      <SiteHeader />
+      <main style={{ background: "#050505", color: "#fff", minHeight: "100vh" }}>
+        <div style={{ maxWidth: "1180px", margin: "0 auto", padding: "56px 24px" }}>
         <section>
           <p
             style={{
@@ -494,7 +462,9 @@ export default function AboutPage() {
             </Link>
           </div>
         </section>
-      </div>
-    </main>
+        </div>
+      </main>
+      <SiteFooter />
+    </div>
   );
 }

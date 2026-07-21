@@ -1,22 +1,28 @@
-import type { Metadata } from "next";
 import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
+
+import {
+  ArticleStructuredData,
+  buildArticleMetadata,
+} from "../article-structured-data";
 
 import redPackaging from "../../../../public/images/custom-decorative-brake-caliper-covers-red-packaging.jpg";
 import sprayPainting from "../../../../public/images/decorative-brake-caliper-cover-spray-painting-process.jpg";
 import yellowPackaging from "../../../../public/images/custom-decorative-brake-caliper-covers-yellow-packaging.jpg";
 import inHouseSprayPainting from "../../../../public/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg";
 
-export const metadata: Metadata = {
-  title:
-    "Customize Decorative Brake Caliper Covers for Aftermarket Brands | HSX DIECASTING",
-  description:
-    "Learn how aftermarket brands can customize decorative brake caliper covers with color, logo, appearance, packaging, and sample-stage review for B2B sourcing projects.",
-  alternates: {
-    canonical:
-      "/blog/how-to-customize-decorative-brake-caliper-covers-aftermarket-brands",
-  },
-};
+const articleTitle =
+  "Customize Decorative Brake Caliper Covers for Aftermarket Brands | HSX DIECASTING";
+const articleDescription =
+  "Learn how aftermarket brands can customize decorative brake caliper covers with color, logo, appearance, packaging, and sample-stage review for B2B sourcing projects.";
+const articlePath =
+  "/blog/how-to-customize-decorative-brake-caliper-covers-aftermarket-brands";
+
+export const metadata = buildArticleMetadata({
+  title: articleTitle,
+  description: articleDescription,
+  path: articlePath,
+});
 
 const contactDetails = {
   email: "nicolson@hsxdiecasting.com",
@@ -67,6 +73,11 @@ function ArticleImage({
 export default function ArticlePage() {
   return (
     <main className="min-h-screen bg-[#050505] text-white">
+      <ArticleStructuredData
+        title={articleTitle}
+        description={articleDescription}
+        path={articlePath}
+      />
       <article className="mx-auto max-w-4xl px-6 py-16 lg:px-8 lg:py-24">
         <Link href="/blog" className="text-sm font-semibold text-[#f4d27a]">
           Back to Blog

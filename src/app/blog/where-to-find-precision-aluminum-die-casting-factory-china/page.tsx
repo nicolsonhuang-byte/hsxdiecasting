@@ -1,15 +1,22 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Where to Find a Precision Aluminum Die Casting Factory in China?",
-  description:
-    "Learn how B2B buyers can find a precision aluminum die casting factory in China for OEM parts, lighting housings, lamp brackets, anodized finishing, and custom projects.",
-  alternates: {
-    canonical:
-      "/blog/where-to-find-precision-aluminum-die-casting-factory-china",
-  },
-};
+import {
+  ArticleStructuredData,
+  buildArticleMetadata,
+} from "../article-structured-data";
+
+const articleTitle =
+  "Where to Find a Precision Aluminum Die Casting Factory in China?";
+const articleDescription =
+  "Learn how B2B buyers can find a precision aluminum die casting factory in China for OEM parts, lighting housings, lamp brackets, anodized finishing, and custom projects.";
+const articlePath =
+  "/blog/where-to-find-precision-aluminum-die-casting-factory-china";
+
+export const metadata = buildArticleMetadata({
+  title: articleTitle,
+  description: articleDescription,
+  path: articlePath,
+});
 
 const contactDetails = {
   email: "nicolson@hsxdiecasting.com",
@@ -55,7 +62,7 @@ const rfqItems = [
   "2D drawings, 3D files, dimensional sketches, or sample photos",
   "Target part type, such as lighting housing, lamp bracket, cover, end cap, or enclosure shell",
   "Target quantity and repeat-order expectations",
-  "Surface finishing requirements such as anodizing, powder coating, paint spraying, polishing, or grinding",
+  "Surface finishing requirements such as powder coating, paint spraying, polishing, surface preparation, or partner-supported anodizing",
   "CNC turning, CNC machining, drilling, tapping, or threaded feature requirements if needed",
   "Assembly, packaging, destination market, and project timing details",
 ];
@@ -92,6 +99,11 @@ const faqs = [
 export default function ArticlePage() {
   return (
     <main className="min-h-screen bg-[#050505] text-white">
+      <ArticleStructuredData
+        title={articleTitle}
+        description={articleDescription}
+        path={articlePath}
+      />
       <article className="mx-auto max-w-4xl px-6 py-16 lg:px-8 lg:py-24">
         <Link href="/blog" className="text-sm font-semibold text-[#f4d27a]">
           Back to Blog
@@ -210,9 +222,9 @@ export default function ArticlePage() {
             <p className="mt-4">
               Many aluminum die casting parts need secondary processing after
               casting. Buyers should check whether the supplier can coordinate
-              drilling, tapping, polishing, grinding, powder coating, paint
-              spraying, aluminum anodizing, assembly coordination, and export
-              packaging.
+              drilling, tapping, polishing, surface preparation, powder coating,
+              paint spraying, partner-supported anodizing, assembly coordination,
+              and export packaging.
             </p>
             <p className="mt-4">
               For finish decisions, buyers can review HSX&apos;s guide to{" "}

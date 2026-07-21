@@ -1,14 +1,20 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "What Is Aluminum Die Casting? | HSX DIECASTING",
-  description:
-    "A practical guide to aluminum die casting for OEM aluminum parts, compact housings, covers, brackets, and global B2B sourcing projects.",
-  alternates: {
-    canonical: "/blog/what-is-aluminum-die-casting",
-  },
-};
+import {
+  ArticleStructuredData,
+  buildArticleMetadata,
+} from "../article-structured-data";
+
+const articleTitle = "What Is Aluminum Die Casting? | HSX DIECASTING";
+const articleDescription =
+  "A practical guide to aluminum die casting for OEM aluminum parts, compact housings, covers, brackets, and global B2B sourcing projects.";
+const articlePath = "/blog/what-is-aluminum-die-casting";
+
+export const metadata = buildArticleMetadata({
+  title: articleTitle,
+  description: articleDescription,
+  path: articlePath,
+});
 
 const contactDetails = {
   email: "nicolson@hsxdiecasting.com",
@@ -26,6 +32,11 @@ const relatedLinks = [
 export default function ArticlePage() {
   return (
     <main className="min-h-screen bg-[#050505] text-white">
+      <ArticleStructuredData
+        title={articleTitle}
+        description={articleDescription}
+        path={articlePath}
+      />
       <article className="mx-auto max-w-4xl px-6 py-16 lg:px-8 lg:py-24">
         <Link href="/blog" className="text-sm font-semibold text-[#f4d27a]">
           ← Back to Blog
@@ -54,8 +65,9 @@ export default function ArticlePage() {
               In a typical aluminum die casting project, molten aluminum alloy is
               injected into a metal mold. After cooling and solidifying, the part is
               removed and then processed through trimming, drilling, tapping,
-              polishing, grinding, coating, painting, anodizing when suitable, and
-              inspection steps depending on the product requirement.
+              polishing, surface preparation, coating, painting, partner-supported
+              anodizing when suitable, and inspection steps depending on the product
+              requirement.
             </p>
             <p className="mt-4">
               The process is suitable when a buyer needs repeatable aluminum parts

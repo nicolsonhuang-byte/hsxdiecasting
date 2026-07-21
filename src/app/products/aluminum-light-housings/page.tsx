@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import { SiteFooter, SiteHeader } from "../../components/site-navigation";
+
 import aluminumLightHousing from "../../../../public/images/aluminum-light-housing-heat-sink.png";
 import ledWorkLight from "../../../../public/images/led-work-light.png";
 import automotiveLedLight from "../../../../public/images/automotive-led-light.png";
@@ -86,7 +88,7 @@ const heroStats = [
   {
     label: "Finishing Support",
     value: "Coat + Finish",
-    note: "Powder coating, spray painting, polishing, grinding, and partner-supported anodizing review",
+    note: "Powder coating, spray painting, polishing, and partner-supported anodizing review",
   },
 ];
 
@@ -157,7 +159,7 @@ const processSupport: InfoCard[] = [
   {
     title: "Surface Finishing",
     description:
-      "Coordinate polishing, grinding, powder coating, and spray painting around project appearance and surface preparation needs. Anodizing can be coordinated through partner-supported resources for selected suitable parts when required by the project.",
+      "Coordinate polishing, powder coating, and spray painting around project appearance and surface preparation needs. Anodizing can be coordinated through partner-supported resources for selected suitable parts when required by the project.",
   },
   {
     title: "Inspection and Packing",
@@ -271,7 +273,7 @@ const finishingOptions: InfoCard[] = [
       "Anodizing can be coordinated through partner-supported resources for selected suitable parts when required by the project.",
   },
   {
-    title: "Polishing and Grinding",
+    title: "Polishing and Surface Preparation",
     description:
       "Surface preparation for visible aluminum parts before coating, painting, partner-supported anodizing, or final appearance review.",
   },
@@ -374,10 +376,8 @@ function SectionHeading({
 }
 
 export default function AluminumLightHousingsPage() {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <div className="relative overflow-x-clip">
+    <div className="relative">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
@@ -422,57 +422,16 @@ export default function AluminumLightHousingsPage() {
               <span>{contactDetails.address}</span>
             </a>
           </div>
-          <Link href="/contact" className="gold-button w-full text-center sm:w-auto">
-            Get a Quote
+          <Link
+            href="/b2b-oem-project-review"
+            className="gold-button w-full text-center sm:w-auto"
+          >
+            Request Project Review
           </Link>
         </div>
       </div>
 
-      <header className="sticky top-0 z-40 border-b border-white/8 bg-[#050505]/88 backdrop-blur-xl">
-        <div className="container-shell flex flex-col gap-5 py-5 lg:flex-row lg:items-center lg:justify-between">
-          <div className="max-w-2xl">
-            <p className="section-kicker">Foshan, Guangdong, China</p>
-            <Link
-              href="/"
-              className="section-heading mt-3 block text-2xl text-white sm:text-3xl"
-            >
-              HSX DIECASTING
-            </Link>
-            <p className="mt-3 text-sm leading-7 text-[#beb6a8]">
-              OEM aluminum light housings, die cast lamp housings, LED
-              heat-sink bodies, covers, brackets, and compact lighting parts
-              for global B2B buyers.
-            </p>
-          </div>
-
-          <nav
-            aria-label="Primary"
-            className="flex flex-wrap gap-x-5 gap-y-3 text-sm text-[#ddd2ba]"
-          >
-            <Link href="/" className="transition-colors hover:text-white">
-              Home
-            </Link>
-            <Link href="/products" className="transition-colors hover:text-white">
-              Products
-            </Link>
-            <Link href="/contact" className="transition-colors hover:text-white">
-              Contact
-            </Link>
-            <Link href="/capabilities" className="transition-colors hover:text-white">
-              Capabilities
-            </Link>
-            <a href="#typical-parts" className="transition-colors hover:text-white">
-              Parts
-            </a>
-            <a href="#process" className="transition-colors hover:text-white">
-              Process
-            </a>
-            <a href="#rfq" className="transition-colors hover:text-white">
-              RFQ
-            </a>
-          </nav>
-        </div>
-      </header>
+      <SiteHeader />
 
       <main id="top">
         <section className="border-b border-white/8 bg-[radial-gradient(circle_at_top_right,rgba(199,162,91,0.14),transparent_34%),linear-gradient(180deg,#090909_0%,#050505_100%)]">
@@ -814,7 +773,7 @@ export default function AluminumLightHousingsPage() {
                     Cast to Finish
                   </p>
                   <p className="mt-3 text-sm leading-7 text-[#c4bbaa]">
-                    Drilling, tapping, polishing, grinding, coating, painting,
+                    Drilling, tapping, polishing, coating, painting,
                     and partner-supported anodizing review.
                   </p>
                 </article>
@@ -1129,55 +1088,7 @@ export default function AluminumLightHousingsPage() {
         </section>
       </main>
 
-      <footer className="border-t border-white/8 bg-black/80 py-10">
-        <div className="container-shell grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
-          <div>
-            <p className="section-kicker">Footer</p>
-            <p className="section-heading mt-3 text-2xl text-white">
-              Foshan Huashunxiang Hardware Products Factory
-            </p>
-            <p className="mt-4 max-w-3xl text-sm leading-7 text-[#bbb2a3]">
-              OEM aluminum light housings, die cast lamp housings, LED
-              heat-sink bodies, and compact aluminum lighting parts supplier
-              for global B2B buyers.
-            </p>
-          </div>
-
-          <div className="text-sm leading-7 text-[#b7ae9e]">
-            <p>
-              <span className="text-white/90">Email:</span>{" "}
-              <a
-                href={`mailto:${contactDetails.email}?subject=RFQ%20for%20Aluminum%20Light%20Housings&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20would%20like%20to%20request%20a%20quotation%20for%20aluminum%20light%20housings.%0A%0AProduct%20type%3A%0AQuantity%3A%0AHousing%20dimensions%3A%0AFinish%20requirement%3A%0ADrawing%20or%20sample%20available%3A%0A%0APlease%20contact%20me%20with%20pricing%20and%20production%20details.%0A%0ABest%20regards%2C`}
-                className="transition-colors hover:text-white"
-              >
-                {contactDetails.email}
-              </a>
-            </p>
-            <p>
-              <span className="text-white/90">WhatsApp / Phone:</span>{" "}
-              <a
-                href={contactDetails.whatsappHref}
-                className="transition-colors hover:text-white"
-              >
-                {contactDetails.phone}
-              </a>
-            </p>
-            <p>
-              <span className="text-white/90">WeChat:</span>{" "}
-              {contactDetails.wechat}
-            </p>
-            <p>
-              <span className="text-white/90">Address:</span>{" "}
-              {contactDetails.address}
-            </p>
-            <p>Small-to-medium aluminum parts within the 200T / 300T Product Capability Range</p>
-            <p>OEM based on drawings, samples, or custom project requirements</p>
-            <p className="mt-2">
-              © {currentYear} HSX DIECASTING. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

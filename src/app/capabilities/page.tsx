@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import { SiteFooter, SiteHeader } from "../components/site-navigation";
+
 import oemAluminumParts from "../../../public/images/oem-small-aluminum-die-casting-parts.png";
 import workshopHorizontal from "../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
 import sprayPainting from "../../../public/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg";
@@ -159,7 +161,7 @@ const machiningSupport: InfoCard[] = [
   {
     title: "In-House Surface Preparation Before Finishing",
     description:
-      "In-house polishing, grinding, and surface preparation improve appearance before powder coating, spray painting, direct inspection, or partner-supported anodizing.",
+      "In-house polishing and surface preparation improve appearance before powder coating, spray painting, direct inspection, or partner-supported anodizing.",
   },
   {
     title: "In-House Edge and Visible Area Preparation",
@@ -277,10 +279,8 @@ function SectionHeading({
 }
 
 export default function CapabilitiesPage() {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <div className="relative overflow-x-clip">
+    <div className="relative">
       <div className="border-b border-white/8 bg-black/85">
         <div className="container-shell flex flex-col gap-3 py-3 text-sm text-[#d8ccb2] lg:flex-row lg:items-center lg:justify-between">
           <div className="flex flex-col gap-3">
@@ -329,65 +329,7 @@ export default function CapabilitiesPage() {
         </div>
       </div>
 
-      <header className="z-40 border-b border-white/8 bg-[#050505]/88 backdrop-blur-xl">
-        <div className="container-shell flex flex-col gap-5 py-5 lg:flex-row lg:items-center lg:justify-between">
-          <div className="max-w-2xl">
-            <p className="section-kicker">Foshan, Guangdong, China</p>
-            <Link
-              href="/"
-              className="section-heading mt-3 block text-2xl text-white sm:text-3xl"
-            >
-              HSX DIECASTING
-            </Link>
-            <p className="mt-3 text-sm leading-7 text-[#beb6a8]">
-              Foshan Huashunxiang Hardware Products Factory is a real manufacturing
-              factory in Foshan, Guangdong, China, focused on OEM small-to-medium
-              aluminum die casting parts, automotive LED lights, motorcycle LED
-              lights, LED work lights, decorative brake caliper covers, and custom
-              aluminum hardware parts for global wholesalers, importers,
-              distributors, aftermarket brands, and OEM buyers.
-            </p>
-            <p className="mt-3 text-sm leading-7 text-[#beb6a8]">
-              Buyers can communicate directly with a factory-side team, so drawings,
-              samples, finish requirements, and production limits can be reviewed
-              closer to the workshop before quotation.
-            </p>
-          </div>
-
-          <nav
-            aria-label="Primary"
-            className="flex flex-wrap gap-x-5 gap-y-3 text-sm text-[#ddd2ba]"
-          >
-            <Link href="/" className="transition-colors hover:text-white">
-              Home
-            </Link>
-            <Link
-              href="/about"
-              className="transition-colors hover:text-white"
-            >
-              About
-            </Link>
-            <Link
-              href="/products"
-              className="transition-colors hover:text-white"
-            >
-              Products
-            </Link>
-            <Link
-              href="/b2b-oem-project-review"
-              className="transition-colors hover:text-white"
-            >
-              Project Review
-            </Link>
-            <Link
-              href="/contact"
-              className="transition-colors hover:text-white"
-            >
-              Contact
-            </Link>
-          </nav>
-        </div>
-      </header>
+      <SiteHeader />
 
       <main id="top">
         <section className="border-b border-white/8 bg-[radial-gradient(circle_at_top_right,rgba(199,162,91,0.14),transparent_34%),linear-gradient(180deg,#090909_0%,#050505_100%)]">
@@ -637,7 +579,7 @@ export default function CapabilitiesPage() {
             <SectionHeading
               eyebrow="In-house secondary operations and project support"
               title="In-house operations that support functional fit and appearance"
-              description="In-house drilling, tapping, polishing, grinding, deburring, QC, and packing support the broader OEM part manufacturing flow. CNC machining and anodizing can be coordinated through partner-supported resources when required by the project."
+              description="In-house drilling, tapping, polishing, surface preparation, deburring, QC, and packing support the broader OEM part manufacturing flow. CNC machining and anodizing can be coordinated through partner-supported resources when required by the project."
             />
 
             <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -871,53 +813,7 @@ export default function CapabilitiesPage() {
         </section>
       </main>
 
-      <footer className="border-t border-white/8 bg-black/80 py-10">
-        <div className="container-shell grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
-          <div>
-            <p className="section-kicker">Footer</p>
-            <p className="section-heading mt-3 text-2xl text-white">
-              Foshan Huashunxiang Hardware Products Factory
-            </p>
-            <p className="mt-4 max-w-3xl text-sm leading-7 text-[#bbb2a3]">
-              In-house aluminum die casting, selected secondary operations, QC,
-              and packing support for compact OEM parts, LED lighting housings,
-              and wholesale B2B projects. CNC machining and anodizing can be
-              coordinated through partner-supported resources when required by
-              the project.
-            </p>
-          </div>
-
-          <div className="text-sm leading-7 text-[#b7ae9e]">
-            <p>
-              <span className="text-white/90">Email:</span>{" "}
-              <a
-                href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
-                className="transition-colors hover:text-white"
-              >
-                {contactDetails.email}
-              </a>
-            </p>
-            <p>
-              <span className="text-white/90">WhatsApp / Phone:</span>{" "}
-              <a
-                href={contactDetails.whatsappHref}
-                className="transition-colors hover:text-white"
-              >
-                {contactDetails.phone}
-              </a>
-            </p>
-            <p>
-              <span className="text-white/90">WeChat:</span>{" "}
-              {contactDetails.wechat}
-            </p>
-            <p>Small-to-medium aluminum die casting equipment: 280T and 320T</p>
-            <p>Brake caliper covers are decorative non-load-bearing appearance covers only</p>
-            <p className="mt-2">
-              © {currentYear} HSX DIECASTING. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

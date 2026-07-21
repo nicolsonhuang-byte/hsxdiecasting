@@ -1,16 +1,22 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title:
-    "Tesla Model 3 / Model Y Decorative Brake Caliper Covers | HSX DIECASTING",
-  description:
-    "OEM supplier checklist for Tesla Model 3 and Model Y accessory brands sourcing decorative brake caliper covers with color, logo, packaging, and sample review.",
-  alternates: {
-    canonical:
-      "/blog/decorative-brake-caliper-covers-tesla-model-3-model-y-accessory-brands",
-  },
-};
+import {
+  ArticleStructuredData,
+  buildArticleMetadata,
+} from "../article-structured-data";
+
+const articleTitle =
+  "Tesla Model 3 / Model Y Decorative Brake Caliper Covers | HSX DIECASTING";
+const articleDescription =
+  "OEM supplier checklist for Tesla Model 3 and Model Y accessory brands sourcing decorative brake caliper covers with color, logo, packaging, and sample review.";
+const articlePath =
+  "/blog/decorative-brake-caliper-covers-tesla-model-3-model-y-accessory-brands";
+
+export const metadata = buildArticleMetadata({
+  title: articleTitle,
+  description: articleDescription,
+  path: articlePath,
+});
 
 const contactDetails = {
   email: "nicolson@hsxdiecasting.com",
@@ -38,6 +44,11 @@ const relatedLinks = [
 export default function ArticlePage() {
   return (
     <main className="min-h-screen bg-[#050505] text-white">
+      <ArticleStructuredData
+        title={articleTitle}
+        description={articleDescription}
+        path={articlePath}
+      />
       <article className="mx-auto max-w-4xl px-6 py-16 lg:px-8 lg:py-24">
         <Link href="/blog" className="text-sm font-semibold text-[#f4d27a]">
           Back to Blog

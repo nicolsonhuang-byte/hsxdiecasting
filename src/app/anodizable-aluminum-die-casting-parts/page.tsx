@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import { SiteFooter, SiteHeader } from "../components/site-navigation";
+
 import oemAluminumParts from "../../../public/images/oem-small-aluminum-die-casting-parts.png";
 import asCastFullShotBlank from "../../../public/images/hsx-factory/as-cast-full-shot-die-casting-blank-with-runner-gates-overflows.jpg";
 import blueAnodizedFullShotDemo from "../../../public/images/hsx-factory/blue-anodized-die-cast-full-shot-demonstration-sample.jpg";
@@ -176,7 +178,7 @@ const keyFactors: Factor[] = [
   {
     title: "Machining, Post-Processing and Sandblasting Before Anodizing",
     description:
-      "Machining, polishing, grinding, deburring, and sandblasting can change how anodized die cast aluminum parts look. These steps should be planned together with the cooperating anodizing partner.",
+      "Machining, polishing, deburring, sandblasting, and other surface preparation can change how anodized die cast aluminum parts look. These steps should be planned together with the cooperating anodizing partner.",
     points: [
       "Mark machined surfaces, cosmetic surfaces, threads, and assembly areas in the drawing.",
       "Confirm whether sandblasting texture, polishing level, or masked areas are required.",
@@ -309,7 +311,7 @@ const rfqItems = [
   "Target surface finish and anodized color requirement",
   "Material expectation or existing material notes, if already defined",
   "Machining, drilling, tapping, threaded feature, or assembly requirements",
-  "Sandblasting, polishing, grinding, masking, or texture expectations",
+  "Sandblasting, polishing, surface preparation, masking, or texture expectations",
   "Sample-stage needs, target quantity, and repeat-order plan",
   "Packaging requirements and destination market information",
 ];
@@ -438,7 +440,9 @@ function BulletList({ items }: { items: string[] }) {
 
 export default function AnodizableAluminumDieCastingPartsPage() {
   return (
-    <main className={styles.page}>
+    <div className="relative min-w-0">
+      <SiteHeader />
+      <main className={styles.page}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }}
@@ -1061,6 +1065,8 @@ export default function AnodizableAluminumDieCastingPartsPage() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+      <SiteFooter />
+    </div>
   );
 }

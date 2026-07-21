@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 
+import { SiteFooter, SiteHeader } from "../../components/site-navigation";
+
 import ledWorkLight from "../../../../public/images/led-work-light.png";
 import oemAluminumParts from "../../../../public/images/oem-small-aluminum-die-casting-parts.png";
 import workshopHorizontal from "../../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
@@ -276,10 +278,8 @@ function SectionHeading({
 }
 
 export default function LedWorkLightsPage() {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <div className="relative overflow-x-clip bg-black text-white">
+    <div className="relative bg-black text-white">
       <div className="border-b border-white/8 bg-black/85">
         <div className="container-shell flex flex-col gap-3 py-3 text-sm text-[#d8ccb2] lg:flex-row lg:items-center lg:justify-between">
           <div className="flex flex-col gap-3">
@@ -310,44 +310,23 @@ export default function LedWorkLightsPage() {
               <span>{contactDetails.address}</span>
             </div>
           </div>
-          <a href={contactDetails.whatsappHref} className="gold-button w-full text-center sm:w-auto">
-            Get a Quote
-          </a>
+          <Link
+            href="/b2b-oem-project-review"
+            className="gold-button w-full text-center sm:w-auto"
+          >
+            Request Project Review
+          </Link>
         </div>
       </div>
 
-      <header className="sticky top-0 z-40 border-b border-white/8 bg-[#050505]/88 backdrop-blur-xl">
-        <div className="container-shell flex flex-col gap-5 py-5 lg:flex-row lg:items-center lg:justify-between">
-          <div className="max-w-2xl">
-            <p className="section-kicker">Foshan, Guangdong, China</p>
-            <Link href="/" className="section-heading mt-3 block text-2xl text-white sm:text-3xl">
-              HSX DIECASTING
-            </Link>
-            <p className="mt-3 text-sm leading-7 text-[#beb6a8]">
-              LED work lights, off-road lights, truck lights, machinery work lights,
-              aluminum lamp housings, brackets, covers, and lighting-related aluminum
-              parts for global B2B buyers.
-            </p>
-          </div>
-
-          <nav aria-label="Primary" className="flex flex-wrap gap-x-5 gap-y-3 text-sm text-[#ddd2ba]">
-            <Link href="/" className="transition-colors hover:text-white">Home</Link>
-            <Link href="/products" className="transition-colors hover:text-white">Products</Link>
-            <Link href="/contact" className="transition-colors hover:text-white">Contact</Link>
-            <Link href="/capabilities" className="transition-colors hover:text-white">Capabilities</Link>
-            <a href="#programs" className="transition-colors hover:text-white">Programs</a>
-            <a href="#process" className="transition-colors hover:text-white">Process</a>
-            <a href="#rfq" className="transition-colors hover:text-white">RFQ</a>
-          </nav>
-        </div>
-      </header>
+      <SiteHeader />
 
       <main id="top">
         <section className="border-b border-white/8 bg-[radial-gradient(circle_at_top_right,rgba(199,162,91,0.14),transparent_34%),linear-gradient(180deg,#090909_0%,#050505_100%)]">
           <div className="container-shell grid gap-12 py-16 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)] lg:items-center lg:py-24">
             <div className="motion-rise">
               <p className="section-kicker">LED work lighting</p>
-              <h1 className="section-heading mt-6 text-5xl leading-none text-white sm:text-6xl xl:text-7xl">
+              <h1 className="section-heading mt-6 text-4xl leading-tight text-white sm:text-5xl xl:text-6xl">
                 LED Work Lights Supplier for Global B2B Buyers
               </h1>
               <p className="mt-7 max-w-3xl text-lg leading-8 text-[#d4cdc0]">
@@ -808,50 +787,7 @@ export default function LedWorkLightsPage() {
         </section>
       </main>
 
-      <footer className="border-t border-white/8 bg-black/80 py-10">
-        <div className="container-shell grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
-          <div>
-            <p className="section-kicker">Footer</p>
-            <p className="mt-4 text-3xl font-semibold uppercase tracking-[0.08em] text-white">
-              Foshan Huashunxiang Hardware Products Factory
-            </p>
-            <p className="mt-5 max-w-3xl text-sm leading-7 text-[#bdb5a8]">
-              LED work lights, off-road LED work lights, truck LED work lights,
-              machinery work lights, aluminum lamp housings, brackets, covers,
-              and lighting-related aluminum parts for global wholesalers,
-              importers, distributors, accessory brands, and OEM buyers.
-            </p>
-          </div>
-
-          <div className="text-sm leading-7 text-[#b7ae9e]">
-            <p>
-              <span className="text-white/90">Email:</span>{" "}
-              <a href={mailtoLedRfq} className="transition-colors hover:text-white">
-                {contactDetails.email}
-              </a>
-            </p>
-            <p>
-              <span className="text-white/90">WhatsApp / Phone:</span>{" "}
-              <a href={contactDetails.whatsappHref} className="transition-colors hover:text-white">
-                {contactDetails.phone}
-              </a>
-            </p>
-            <p>
-              <span className="text-white/90">WeChat:</span>{" "}
-              {contactDetails.wechat}
-            </p>
-            <p>
-              <span className="text-white/90">Address:</span>{" "}
-              {contactDetails.address}
-            </p>
-            <p>Small-to-medium aluminum parts within the 200T / 300T Product Capability Range</p>
-            <p>OEM based on photos, drawings, samples, or custom project requirements</p>
-            <p className="mt-2">
-              © {currentYear} HSX DIECASTING. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

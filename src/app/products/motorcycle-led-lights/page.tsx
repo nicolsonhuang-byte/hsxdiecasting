@@ -1,4 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
+
+import { SiteFooter, SiteHeader } from "../../components/site-navigation";
 
 export const metadata = {
   title: "Motorcycle LED Lights Supplier | OEM Motorcycle Lighting",
@@ -67,7 +70,7 @@ const heroStats: InfoCard[] = [
   {
     title: "Factory Support",
     description:
-      "Aluminum die casting, drilling, tapping, polishing, coating, painting, anodizing, inspection, and export packing support.",
+      "In-house aluminum die casting, drilling, tapping, polishing, coating, painting, inspection, and export packing, with partner-supported anodizing for selected suitable parts.",
   },
 ];
 
@@ -170,7 +173,7 @@ const processSteps: InfoCard[] = [
   {
     title: "Surface Finishing",
     description:
-      "Powder coating, spray painting, anodizing, polishing, and grinding are coordinated around appearance, corrosion resistance, and brand presentation.",
+      "In-house powder coating, spray painting, polishing, and surface preparation are coordinated with partner-supported anodizing around appearance, corrosion resistance, and brand presentation.",
   },
   {
     title: "Inspection and Export Packing",
@@ -191,14 +194,14 @@ const finishes: InfoCard[] = [
       "Used when the motorcycle lighting product requires color matching, branded visual presentation, or model-specific appearance.",
   },
   {
-    title: "Anodizing",
+    title: "Partner-Supported Anodizing",
     description:
-      "Suitable for selected aluminum parts needing a clean metallic appearance and improved surface protection.",
+      "Anodizing can be coordinated through partner-supported resources for selected suitable aluminum parts when required by the project.",
   },
   {
-    title: "Polishing and Grinding",
+    title: "Polishing and Surface Preparation",
     description:
-      "Surface preparation for visible aluminum parts before coating, painting, anodizing, or final appearance review.",
+      "Surface preparation for visible aluminum parts before coating, painting, partner-supported anodizing, or final appearance review.",
   },
 ];
 
@@ -230,7 +233,7 @@ const rfqRequirements = [
   "Lighting type such as motorcycle auxiliary light, compact LED work light, or custom motorcycle light",
   "Housing dimensions, mounting points, bracket requirements, and assembly needs",
   "Target wattage, voltage, lens, cable, or lighting performance requirements if available",
-  "Surface finish such as powder coating, spray painting, anodizing, or polishing",
+  "Surface finish such as powder coating, spray painting, polishing, or partner-supported anodizing",
   "Estimated order quantity, logo request, packaging plan, and target market",
 ];
 
@@ -268,8 +271,6 @@ function DarkCard({ title, description }: InfoCard) {
 }
 
 export default function MotorcycleLedLightsPage() {
-  const currentYear = new Date().getFullYear();
-
   return (
     <div className="min-h-screen bg-black text-white">
       <script
@@ -318,48 +319,25 @@ export default function MotorcycleLedLightsPage() {
             </a>
           </div>
 
-          <a href={contactDetails.whatsappHref} className="rounded-full bg-[#f4d27a] px-8 py-4 text-center text-sm font-bold uppercase tracking-[0.2em] text-black transition hover:bg-white">
-            Get a Quote
-          </a>
+          <Link
+            href="/b2b-oem-project-review"
+            className="rounded-full bg-[#f4d27a] px-8 py-4 text-center text-sm font-bold uppercase tracking-[0.2em] text-black transition hover:bg-white"
+          >
+            Request Project Review
+          </Link>
         </div>
       </div>
 
-      <header className="sticky top-0 z-40 border-b border-white/10 bg-black/90 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 py-6 lg:flex-row lg:items-center lg:justify-between lg:px-12">
-          <div className="max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
-              Foshan, Guangdong, China
-            </p>
-            <Link href="/" className="mt-4 block text-3xl font-semibold uppercase tracking-[0.08em] text-white">
-              HSX DIECASTING
-            </Link>
-            <p className="mt-4 text-sm leading-7 text-[#bdb5a8]">
-              Motorcycle LED lights, auxiliary lights, compact LED work lights,
-              aluminum lamp housings, brackets, covers, and lighting accessories
-              for global B2B buyers.
-            </p>
-          </div>
-
-          <nav className="flex flex-wrap gap-x-6 gap-y-3 text-sm text-[#ddd2ba]" aria-label="Primary">
-            <Link href="/" className="transition-colors hover:text-white">Home</Link>
-            <Link href="/products" className="transition-colors hover:text-white">Products</Link>
-            <Link href="/contact" className="transition-colors hover:text-white">Contact</Link>
-            <Link href="/capabilities" className="transition-colors hover:text-white">Capabilities</Link>
-            <a href="#programs" className="transition-colors hover:text-white">Programs</a>
-            <a href="#process" className="transition-colors hover:text-white">Process</a>
-            <a href="#rfq" className="transition-colors hover:text-white">RFQ</a>
-          </nav>
-        </div>
-      </header>
+      <SiteHeader />
 
       <main>
         <section className="border-b border-white/10 bg-[radial-gradient(circle_at_top_right,rgba(215,181,109,0.12),transparent_35%),linear-gradient(180deg,#090909_0%,#030303_100%)] px-6 py-16 lg:px-12 lg:py-24">
-          <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-            <div>
+          <div className="mx-auto grid min-w-0 max-w-7xl gap-14 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-center">
+            <div className="min-w-0">
               <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
                 Motorcycle LED lighting
               </p>
-              <h1 className="mt-7 max-w-5xl text-5xl font-semibold uppercase leading-none tracking-[0.12em] text-white lg:text-7xl">
+              <h1 className="mt-7 max-w-5xl text-4xl font-semibold uppercase leading-tight tracking-[0.06em] text-white sm:text-5xl sm:tracking-[0.1em] lg:text-7xl">
                 Motorcycle LED Lights Supplier for Global B2B Buyers
               </h1>
               <p className="mt-8 max-w-4xl text-lg leading-8 text-[#d7d0c2]">
@@ -397,12 +375,14 @@ export default function MotorcycleLedLightsPage() {
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-[#d7b56d]/25 bg-white/[0.035] p-3 shadow-2xl shadow-black/40">
-              <div className="relative overflow-hidden rounded-[1.5rem]">
-                <img
+            <div className="min-w-0 rounded-[2rem] border border-[#d7b56d]/25 bg-white/[0.035] p-3 shadow-2xl shadow-black/40">
+              <div className="relative aspect-[3/2] overflow-hidden rounded-[1.5rem]">
+                <Image
                   src="/images/motorcycle-led-auxiliary-light.png"
                   alt="Motorcycle LED auxiliary light product for OEM motorcycle lighting supply"
-                  className="h-full w-full object-cover"
+                  fill
+                  sizes="(min-width: 1024px) 46vw, 100vw"
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
                 <div className="absolute left-5 right-5 top-5 rounded-2xl border border-white/10 bg-black/70 p-5 backdrop-blur">
@@ -438,11 +418,13 @@ export default function MotorcycleLedLightsPage() {
 
             <div className="mt-12 grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
               <div className="rounded-[2rem] border border-[#d7b56d]/25 bg-white/[0.035] p-3 shadow-2xl shadow-black/40">
-                <div className="relative overflow-hidden rounded-[1.5rem]">
-                  <img
+                <div className="relative aspect-[3/2] overflow-hidden rounded-[1.5rem]">
+                  <Image
                     src="/images/motorcycle-led-auxiliary-light.png"
                     alt="Motorcycle LED light and compact aluminum lighting part coverage"
-                    className="h-full w-full object-cover"
+                    fill
+                    sizes="(min-width: 1024px) 46vw, 100vw"
+                    className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
                   <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/70 p-5 backdrop-blur">
@@ -478,10 +460,12 @@ export default function MotorcycleLedLightsPage() {
               {productPrograms.map((program) => (
                 <article key={program.title} className="overflow-hidden rounded-[1.5rem] border border-[#d7b56d]/20 bg-white/[0.035] shadow-2xl shadow-black/30">
                   <div className="relative aspect-[4/3] overflow-hidden">
-                    <img
+                    <Image
                       src={program.image}
                       alt={program.alt}
-                      className="h-full w-full object-cover transition duration-700 hover:scale-105"
+                      fill
+                      sizes="(min-width: 1024px) 31vw, (min-width: 768px) 50vw, 100vw"
+                      className="object-cover transition duration-700 hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
                     <div className="absolute left-4 top-4 rounded-full border border-white/10 bg-black/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-amber-300">
@@ -512,11 +496,13 @@ export default function MotorcycleLedLightsPage() {
           <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <div className="rounded-[2rem] border border-[#d7b56d]/25 bg-white/[0.035] p-3 shadow-2xl shadow-black/40">
-                <div className="relative overflow-hidden rounded-[1.5rem]">
-                  <img
+                <div className="relative aspect-[3/2] overflow-hidden rounded-[1.5rem]">
+                  <Image
                     src="/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg"
                     alt="HSX aluminum die casting workshop for motorcycle LED lighting projects"
-                    className="h-full w-full object-cover"
+                    fill
+                    sizes="(min-width: 1024px) 42vw, 100vw"
+                    className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
                   <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/70 p-5 backdrop-blur">
@@ -709,13 +695,13 @@ export default function MotorcycleLedLightsPage() {
         </section>
 
         <section className="px-6 py-16 lg:px-12 lg:py-24">
-          <div className="mx-auto max-w-7xl rounded-[2rem] bg-gradient-to-br from-[#f4d27a] to-[#f8ead0] p-8 text-[#130f08] shadow-2xl shadow-black/30 lg:p-12">
-            <div className="grid gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-start">
-              <div>
+          <div className="mx-auto min-w-0 max-w-7xl rounded-[2rem] bg-gradient-to-br from-[#f4d27a] to-[#f8ead0] p-5 text-[#130f08] shadow-2xl shadow-black/30 sm:p-8 lg:p-12">
+            <div className="grid min-w-0 gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:items-start">
+              <div className="min-w-0">
                 <p className="text-xs font-semibold uppercase tracking-[0.35em] text-white/70">
                   Final inquiry CTA
                 </p>
-                <h2 className="mt-5 text-4xl font-semibold uppercase tracking-[0.12em] lg:text-5xl">
+                <h2 className="mt-5 break-words text-3xl font-semibold uppercase tracking-[0.08em] sm:text-4xl sm:tracking-[0.12em] lg:text-5xl">
                   Send your motorcycle LED light photos, samples, or OEM project requirements
                 </h2>
                 <p className="mt-7 max-w-3xl text-base leading-8 text-[#2d2417] lg:text-lg">
@@ -728,7 +714,7 @@ export default function MotorcycleLedLightsPage() {
                 <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
                   <a
                     href={contactDetails.whatsappHref}
-                    className="inline-flex items-center justify-center rounded-full bg-[#120f08] px-7 py-4 text-center text-sm font-bold uppercase tracking-[0.18em] shadow-lg shadow-black/20 transition hover:bg-black"
+                    className="inline-flex w-full min-w-0 items-center justify-center whitespace-normal rounded-full bg-[#120f08] px-5 py-4 text-center text-sm font-bold uppercase tracking-[0.18em] shadow-lg shadow-black/20 transition hover:bg-black sm:w-auto sm:px-7"
                     aria-label="WhatsApp RFQ"
                   >
                     <span className="relative z-10" style={{ color: "#ffffff" }}>
@@ -737,13 +723,13 @@ export default function MotorcycleLedLightsPage() {
                   </a>
                   <a
                     href={mailtoMotorcycleRfq}
-                    className="rounded-full border border-[#2b2216]/20 px-7 py-4 text-center text-sm font-bold uppercase tracking-[0.18em] text-white transition hover:bg-[#120f08] hover:text-white"
+                    className="w-full min-w-0 whitespace-normal rounded-full border border-[#2b2216]/20 px-5 py-4 text-center text-sm font-bold uppercase tracking-[0.18em] text-white transition hover:bg-[#120f08] hover:text-white sm:w-auto sm:px-7"
                   >
                     Email Project Details
                   </a>
                   <Link
                     href="/products"
-                    className="rounded-full border border-[#2b2216]/20 px-7 py-4 text-center text-sm font-bold uppercase tracking-[0.18em] text-white transition hover:bg-[#120f08] hover:text-white"
+                    className="w-full min-w-0 whitespace-normal rounded-full border border-[#2b2216]/20 px-5 py-4 text-center text-sm font-bold uppercase tracking-[0.18em] text-white transition hover:bg-[#120f08] hover:text-white sm:w-auto sm:px-7"
                   >
                     Back to Products
                   </Link>
@@ -752,11 +738,13 @@ export default function MotorcycleLedLightsPage() {
 
               <div className="space-y-6">
                 <div className="overflow-hidden rounded-[1.5rem] border border-[#120f08]/10 bg-[#120f08] p-3 shadow-2xl shadow-black/20">
-                  <div className="relative overflow-hidden rounded-[1rem]">
-                    <img
+                  <div className="relative aspect-[3/2] overflow-hidden rounded-[1rem]">
+                    <Image
                       src="/images/motorcycle-led-auxiliary-light.png"
                       alt="Motorcycle LED lighting RFQ ready product image"
-                      className="h-full w-full object-cover"
+                      fill
+                      sizes="(min-width: 1024px) 42vw, 100vw"
+                      className="object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
                     <div className="absolute bottom-5 left-5 right-5">
@@ -789,52 +777,7 @@ export default function MotorcycleLedLightsPage() {
         </section>
       </main>
 
-      <footer className="border-t border-white/10 bg-black px-6 py-12 lg:px-12">
-        <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
-              Footer
-            </p>
-            <p className="mt-4 text-3xl font-semibold uppercase tracking-[0.08em] text-white">
-              Foshan Huashunxiang Hardware Products Factory
-            </p>
-            <p className="mt-5 max-w-3xl text-sm leading-7 text-[#bdb5a8]">
-              Motorcycle LED lights, auxiliary lights, compact LED work lights,
-              aluminum lamp housings, brackets, covers, and lighting-related
-              aluminum parts for global wholesalers, importers, distributors,
-              accessory brands, and OEM buyers.
-            </p>
-          </div>
-
-          <div className="text-sm leading-7 text-[#b7ae9e]">
-            <p>
-              <span className="text-white/90">Email:</span>{" "}
-              <a href={mailtoMotorcycleRfq} className="transition-colors hover:text-white">
-                {contactDetails.email}
-              </a>
-            </p>
-            <p>
-              <span className="text-white/90">WhatsApp / Phone:</span>{" "}
-              <a href={contactDetails.whatsappHref} className="transition-colors hover:text-white">
-                {contactDetails.phone}
-              </a>
-            </p>
-            <p>
-              <span className="text-white/90">WeChat:</span>{" "}
-              {contactDetails.wechat}
-            </p>
-            <p>
-              <span className="text-white/90">Address:</span>{" "}
-              {contactDetails.address}
-            </p>
-            <p>Small-to-medium aluminum parts within the 200T / 300T Product Capability Range</p>
-            <p>OEM based on photos, drawings, samples, or custom project requirements</p>
-            <p className="mt-2">
-              © {currentYear} HSX DIECASTING. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

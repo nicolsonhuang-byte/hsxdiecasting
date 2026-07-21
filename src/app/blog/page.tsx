@@ -8,6 +8,26 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/blog",
   },
+  openGraph: {
+    title: "Aluminum Die Casting & LED Lighting Blog | HSX DIECASTING",
+    description:
+      "Practical articles about aluminum die casting, LED light housings, OEM manufacturing, surface finishing, and B2B sourcing from a real Foshan manufacturing factory.",
+    url: "/blog",
+    siteName: "HSX DIECASTING",
+    type: "website",
+    images: [
+      "/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg",
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aluminum Die Casting & LED Lighting Blog | HSX DIECASTING",
+    description:
+      "Practical articles about aluminum die casting, LED light housings, OEM manufacturing, surface finishing, and B2B sourcing from a real Foshan manufacturing factory.",
+    images: [
+      "/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg",
+    ],
+  },
 };
 
 const contactDetails = {

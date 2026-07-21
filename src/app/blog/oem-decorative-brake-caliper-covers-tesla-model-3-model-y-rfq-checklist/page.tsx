@@ -1,16 +1,22 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title:
-    "OEM Decorative Brake Caliper Covers for Tesla Model 3 / Model Y: RFQ Checklist",
-  description:
-    "RFQ checklist for Tesla Model 3 and Model Y accessory resellers sourcing OEM decorative brake caliper appearance covers, including color, logo, packaging, samples, and requirements.",
-  alternates: {
-    canonical:
-      "/blog/oem-decorative-brake-caliper-covers-tesla-model-3-model-y-rfq-checklist",
-  },
-};
+import {
+  ArticleStructuredData,
+  buildArticleMetadata,
+} from "../article-structured-data";
+
+const articleTitle =
+  "OEM Decorative Brake Caliper Covers for Tesla Model 3 / Model Y: RFQ Checklist";
+const articleDescription =
+  "RFQ checklist for Tesla Model 3 and Model Y accessory resellers sourcing OEM decorative brake caliper appearance covers, including color, logo, packaging, samples, and requirements.";
+const articlePath =
+  "/blog/oem-decorative-brake-caliper-covers-tesla-model-3-model-y-rfq-checklist";
+
+export const metadata = buildArticleMetadata({
+  title: articleTitle,
+  description: articleDescription,
+  path: articlePath,
+});
 
 const contactDetails = {
   email: "nicolson@hsxdiecasting.com",
@@ -62,6 +68,11 @@ const checklistItems = [
 export default function ArticlePage() {
   return (
     <main className="min-h-screen bg-[#050505] text-white">
+      <ArticleStructuredData
+        title={articleTitle}
+        description={articleDescription}
+        path={articlePath}
+      />
       <article className="mx-auto max-w-4xl px-6 py-16 lg:px-8 lg:py-24">
         <Link href="/blog" className="text-sm font-semibold text-[#f4d27a]">
           Back to Blog

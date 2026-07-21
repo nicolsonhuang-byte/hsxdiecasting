@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import { SiteFooter, SiteHeader } from "../components/site-navigation";
+
 import batchAluminumDieCastParts from "../../../public/images/hsx-factory/batch-aluminum-die-cast-parts-before-finishing.jpg";
 import inHouseSprayPainting from "../../../public/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg";
 import ledWorkLight from "../../../public/images/led-work-light.png";
@@ -219,22 +221,20 @@ function SectionHeading({
 }
 
 export default function ContactPage() {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <div className="relative overflow-x-clip">
+    <div className="relative min-w-0">
       <div className="border-b border-white/8 bg-black/85">
         <div className="container-shell flex flex-col gap-3 py-3 text-sm text-[#d8ccb2] lg:flex-row lg:items-center lg:justify-between">
-          <div className="flex flex-col gap-3">
+          <div className="min-w-0 flex flex-col gap-3">
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-6">
               <a
                 href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
-                className="flex items-center gap-3 transition-colors hover:text-white"
+                className="flex min-w-0 items-center gap-3 transition-colors hover:text-white"
               >
                 <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
                   Email
                 </span>
-                <span>{contactDetails.email}</span>
+                <span className="min-w-0 break-all">{contactDetails.email}</span>
               </a>
               <a
                 href={contactDetails.whatsappHref}
@@ -268,65 +268,7 @@ export default function ContactPage() {
         </div>
       </div>
 
-      <header className="relative z-40 border-b border-white/8 bg-[#050505]/88 backdrop-blur-xl">
-        <div className="container-shell flex flex-col gap-5 py-5 lg:flex-row lg:items-center lg:justify-between">
-          <div className="max-w-2xl">
-            <p className="section-kicker">Foshan, Guangdong, China</p>
-            <Link
-              href="/"
-              className="section-heading mt-3 block text-2xl text-white sm:text-3xl"
-            >
-              HSX DIECASTING
-            </Link>
-            <p className="mt-3 text-sm leading-7 text-[#beb6a8]">
-              Foshan Huashunxiang Hardware Products Factory is a direct
-              manufacturing factory in Foshan, Guangdong, China, supplying OEM
-              small-to-medium aluminum die casting parts, automotive LED
-              lights, motorcycle LED lights, LED work lights, and decorative
-              brake caliper covers for global wholesalers, importers,
-              distributors, aftermarket brands, and OEM buyers.
-            </p>
-            <p className="mt-3 text-sm leading-7 text-[#beb6a8]">
-              Buyers can contact the factory-side team directly for drawings,
-              samples, photos, finish requirements, quantity plans, and OEM
-              project communication before quotation.
-            </p>
-          </div>
-
-          <nav
-            aria-label="Primary"
-            className="flex flex-wrap gap-x-5 gap-y-3 text-sm text-[#ddd2ba]"
-          >
-            <Link href="/" className="transition-colors hover:text-white">
-              Home
-            </Link>
-            <Link
-              href="/about"
-              className="transition-colors hover:text-white"
-            >
-              About
-            </Link>
-            <Link
-              href="/products"
-              className="transition-colors hover:text-white"
-            >
-              Products
-            </Link>
-            <Link
-              href="/b2b-oem-project-review"
-              className="transition-colors hover:text-white"
-            >
-              Project Review
-            </Link>
-            <Link
-              href="/contact"
-              className="transition-colors hover:text-white"
-            >
-              Contact
-            </Link>
-          </nav>
-        </div>
-      </header>
+      <SiteHeader />
 
       <main id="top">
         <section className="border-b border-white/8 bg-[radial-gradient(circle_at_top_right,rgba(199,162,91,0.14),transparent_34%),linear-gradient(180deg,#090909_0%,#050505_100%)]">
@@ -490,19 +432,19 @@ export default function ContactPage() {
               description="Buyers can contact HSX directly by email, WhatsApp, WeChat, or through the factory address details below."
             />
 
-            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <div className="mt-12 grid min-w-0 gap-6 md:grid-cols-2 xl:grid-cols-4">
               {contactCards.map((card) => (
-                <article key={card.title} className="industrial-card p-6">
-                  <p className="section-kicker">{card.title}</p>
+                <article key={card.title} className="industrial-card min-w-0 p-5 sm:p-6">
+                  <p className="section-kicker break-words">{card.title}</p>
                   {card.href ? (
                     <a
                       href={card.href}
-                      className="mt-4 block text-xl font-semibold text-white transition-colors hover:text-[#efcf8d]"
+                      className="mt-4 block min-w-0 break-all text-xl font-semibold text-white transition-colors hover:text-[#efcf8d]"
                     >
                       {card.value}
                     </a>
                   ) : (
-                    <p className="mt-4 text-xl font-semibold text-white">
+                    <p className="mt-4 min-w-0 break-words text-xl font-semibold text-white">
                       {card.value}
                     </p>
                   )}
@@ -607,7 +549,7 @@ export default function ContactPage() {
               ))}
             </div>
 
-            <div className="mt-10 industrial-card gold-frame p-6 sm:p-8">
+            <div className="mt-10 min-w-0 industrial-card gold-frame p-5 sm:p-8">
               <p className="section-kicker">How to send files</p>
               <h3 className="mt-4 text-2xl font-semibold text-white sm:text-3xl">
                 Send RFQ files by business email, WhatsApp, or WeChat
@@ -620,14 +562,14 @@ export default function ContactPage() {
                 communication connected with the factory-side quotation review.
               </p>
 
-              <div className="mt-8 grid gap-5 md:grid-cols-3">
+              <div className="mt-8 grid min-w-0 gap-5 md:grid-cols-3">
                 {fileDeliveryNotes.map((option) => (
                   <article
                     key={option.title}
-                    className="rounded-2xl border border-white/10 bg-black/45 p-6"
+                    className="min-w-0 rounded-2xl border border-white/10 bg-black/45 p-5 sm:p-6"
                   >
-                    <p className="section-kicker">{option.title}</p>
-                    <p className="mt-4 text-xl font-semibold text-white">
+                    <p className="section-kicker break-words">{option.title}</p>
+                    <p className="mt-4 min-w-0 break-all text-xl font-semibold text-white">
                       {option.value}
                     </p>
                     <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
@@ -813,7 +755,7 @@ export default function ContactPage() {
                         <span className="font-semibold">Email: </span>
                         <a
                           href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
-                          className="transition-colors hover:text-[#120f08]"
+                          className="break-all transition-colors hover:text-[#120f08]"
                         >
                           {contactDetails.email}
                         </a>
@@ -844,58 +786,7 @@ export default function ContactPage() {
         </section>
       </main>
 
-      <footer className="border-t border-white/8 bg-black/80 py-10">
-        <div className="container-shell grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
-          <div>
-            <p className="section-kicker">Footer</p>
-            <p className="section-heading mt-3 text-2xl text-white">
-              Foshan Huashunxiang Hardware Products Factory
-            </p>
-            <p className="mt-4 max-w-3xl text-sm leading-7 text-[#bbb2a3]">
-              OEM small-to-medium aluminum die casting parts and LED lighting
-              supplier for global wholesalers, importers, distributors,
-              aftermarket brands, and OEM buyers.
-            </p>
-          </div>
-
-          <div className="text-sm leading-7 text-[#b7ae9e]">
-            <p>
-              <span className="text-white/90">Email:</span>{" "}
-              <a
-                href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
-                className="transition-colors hover:text-white"
-              >
-                {contactDetails.email}
-              </a>
-            </p>
-            <p>
-              <span className="text-white/90">WhatsApp / Phone:</span>{" "}
-              <a
-                href={contactDetails.whatsappHref}
-                className="transition-colors hover:text-white"
-              >
-                {contactDetails.phone}
-              </a>
-            </p>
-            <p>
-              <span className="text-white/90">WeChat:</span>{" "}
-              {contactDetails.wechat}
-            </p>
-            <p>
-              <span className="text-white/90">Address:</span>{" "}
-              {contactDetails.address}
-            </p>
-            <p>
-              Small-to-medium aluminum die casting scope: 280T and 320T
-              aluminum die casting equipment
-            </p>
-            <p>Brake caliper covers are decorative non-load-bearing appearance covers only</p>
-            <p className="mt-2">
-              © {currentYear} HSX DIECASTING. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }
