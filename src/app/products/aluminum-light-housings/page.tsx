@@ -3,10 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 import aluminumLightHousing from "../../../../public/images/aluminum-light-housing-heat-sink.png";
-import factoryCapabilities from "../../../../public/images/factory-capabilities.png";
 import ledWorkLight from "../../../../public/images/led-work-light.png";
 import automotiveLedLight from "../../../../public/images/automotive-led-light.png";
 import motorcycleLedLight from "../../../../public/images/motorcycle-led-light.png";
+import workshopHorizontal from "../../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
 import oemAluminumParts from "../../../../public/images/oem-small-aluminum-die-casting-parts.png";
 
 type InfoCard = {
@@ -776,8 +776,8 @@ export default function AluminumLightHousingsPage() {
               <div className="industrial-card gold-frame overflow-hidden p-3">
                 <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
                   <Image
-                    src={factoryCapabilities}
-                    alt="Factory capability for aluminum die cast lamp housings and finishing support"
+                    src={workshopHorizontal}
+                    alt="HSX aluminum die casting workshop for small-to-medium OEM lighting projects"
                     fill
                     sizes="(min-width: 1280px) 34rem, (min-width: 1024px) 40vw, 100vw"
                     className="object-cover"

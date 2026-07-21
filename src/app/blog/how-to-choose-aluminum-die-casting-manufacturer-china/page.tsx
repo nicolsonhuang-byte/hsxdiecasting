@@ -75,8 +75,8 @@ export default function ArticlePage() {
               shape, surface area, and assembly requirement.
             </p>
             <p className="mt-4">
-              HSX keeps its website scope aligned with 200T and 300T aluminum die
-              casting reality, which is more suitable for compact housings, brackets,
+              HSX keeps its website scope aligned with the 200T / 300T Product
+              Capability Range, which is more suitable for compact housings, brackets,
               caps, covers, shells, lamp bodies, and other small-to-medium OEM
               aluminum parts.
             </p>

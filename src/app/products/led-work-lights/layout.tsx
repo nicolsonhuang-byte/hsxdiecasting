@@ -6,7 +6,7 @@ const productJsonLd = {
   name: "LED Work Lights",
   url: "https://www.hsxdiecasting.com/products/led-work-lights",
   image: [
-    "https://www.hsxdiecasting.com/images/hero-factory-200t-300t.png"
+    "https://www.hsxdiecasting.com/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg",
   ],
   description:
     "OEM LED work lights and aluminum lighting-related parts for automotive, motorcycle, off-road, industrial, and wholesale B2B buyers.",
@@ -35,8 +35,9 @@ const productJsonLd = {
     {
       "@type": "PropertyValue",
       name: "Factory Capability",
-      value: "Aluminum die casting, machining, polishing, powder coating, painting, anodizing",
-    }
+      value:
+        "In-house aluminum die casting, trimming, deburring, drilling, tapping, polishing, powder coating, spray painting, QC, and packing. CNC machining can be coordinated through partner-supported resources when required. Anodizing can be coordinated through partner-supported resources for selected suitable parts.",
+    },
   ],
 };
 

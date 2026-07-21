@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import factoryCapabilities from "../../../public/images/factory-capabilities.png";
-import heroFactory from "../../../public/images/hero-factory-200t-300t.png";
 import oemAluminumParts from "../../../public/images/oem-small-aluminum-die-casting-parts.png";
+import workshopHorizontal from "../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
+import sprayPainting from "../../../public/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg";
 import qualityInspectionFinishedAluminumParts from "../../../public/images/hsx-factory/quality-inspection-finished-aluminum-parts.jpg";
 
 type InfoCard = {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     url: "/capabilities",
     images: [
       {
-        url: "/images/factory-capabilities.png",
+        url: "/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg",
         alt: "HSX DIECASTING capability overview for compact aluminum parts, selected secondary operations, and project coordination",
       },
     ],
@@ -46,7 +46,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: pageTitle,
     description: pageDescription,
-    images: ["/images/factory-capabilities.png"],
+    images: [
+      "/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg",
+    ],
   },
 };
 
@@ -448,8 +450,8 @@ export default function CapabilitiesPage() {
                 <div className="industrial-card gold-frame relative overflow-hidden rounded-[2rem] p-3">
                   <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
                     <Image
-                      src={heroFactory}
-                      alt="HSX factory capability aligned with 280T and 320T aluminum die casting equipment and selected secondary operations"
+                      src={workshopHorizontal}
+                      alt="HSX aluminum die casting workshop for small-to-medium OEM projects"
                       fill
                       preload
                       sizes="(min-width: 1280px) 44rem, (min-width: 1024px) 46vw, 100vw"
@@ -494,8 +496,8 @@ export default function CapabilitiesPage() {
                   <article className="industrial-card overflow-hidden p-3">
                     <div className="relative aspect-[4/3] overflow-hidden rounded-[1.25rem]">
                       <Image
-                        src={factoryCapabilities}
-                        alt="Factory equipment, machining, and finishing support for small-to-medium aluminum parts"
+                        src={sprayPainting}
+                        alt="In-house spray painting of aluminum parts at HSX DIECASTING"
                         fill
                         sizes="(min-width: 1024px) 22vw, 100vw"
                         className="object-cover"
@@ -813,8 +815,8 @@ export default function CapabilitiesPage() {
                   <div className="overflow-hidden rounded-[1.5rem] border border-[#2b2216]/15 bg-[#120f08] p-3 shadow-[0_18px_48px_rgba(18,15,8,0.22)]">
                     <div className="relative aspect-[4/3] overflow-hidden rounded-[1.1rem]">
                       <Image
-                        src={factoryCapabilities}
-                        alt="Factory capability contact support for OEM aluminum parts manufacturing"
+                        src={sprayPainting}
+                        alt="In-house spray painting of aluminum parts at HSX DIECASTING"
                         fill
                         sizes="(min-width: 1024px) 26rem, 100vw"
                         className="object-cover"

@@ -10,8 +10,8 @@ const jsonLdOrganization = {
   name: "HSX DIECASTING",
   legalName: "Foshan Huashunxiang Hardware Products Factory",
   url: "https://www.hsxdiecasting.com",
-  logo: "https://www.hsxdiecasting.com/images/hero-factory-200t-300t.png",
-  image: "https://www.hsxdiecasting.com/images/hero-factory-200t-300t.png",
+  image:
+    "https://www.hsxdiecasting.com/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg",
   description:
     "HSX DIECASTING is a Foshan manufacturing factory supplying OEM aluminum die casting parts, LED work lights, automotive and motorcycle LED lights, aluminum light housings, and decorative brake caliper covers for global B2B buyers.",
   email: "mailto:nicolson@hsxdiecasting.com",
@@ -70,10 +70,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/hero-factory-200t-300t.png",
-        width: 1672,
-        height: 941,
-        alt: "Foshan Huashunxiang aluminum die casting workshop aligned with 200-ton and 300-ton machine scope",
+        url: "/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg",
+        width: 3159,
+        height: 2074,
+        alt: "HSX aluminum die casting workshop in Foshan, Guangdong, China",
       },
     ],
   },
@@ -81,7 +81,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteTitle,
     description: siteDescription,
-    images: ["/images/hero-factory-200t-300t.png"],
+    images: [
+      "/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg",
+    ],
   },
   robots: {
     index: true,

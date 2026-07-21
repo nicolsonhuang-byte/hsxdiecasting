@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import factoryCapabilities from "../../../public/images/factory-capabilities.png";
 import oemAluminumParts from "../../../public/images/oem-small-aluminum-die-casting-parts.png";
 import asCastFullShotBlank from "../../../public/images/hsx-factory/as-cast-full-shot-die-casting-blank-with-runner-gates-overflows.jpg";
 import blueAnodizedFullShotDemo from "../../../public/images/hsx-factory/blue-anodized-die-cast-full-shot-demonstration-sample.jpg";
+import workshopHorizontal from "../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
 import redAnodizedFullShotDemo from "../../../public/images/hsx-factory/red-anodized-die-cast-full-shot-demonstration-sample.jpg";
 import anodizedColorSamplesCollage from "../../../public/images/v2-hsx-anodized-color-samples-collage-16x9.webp";
 import anodizedSampleReviewHeroCard from "../../../public/images/v2-hsx-anodized-sample-review-hero-card.webp";
@@ -923,8 +923,8 @@ export default function AnodizableAluminumDieCastingPartsPage() {
           <div className={styles.relatedImageCard}>
             <div>
               <Image
-                src={factoryCapabilities}
-                alt="HSX DIECASTING factory capabilities for aluminum die casting and production control"
+                src={workshopHorizontal}
+                alt="HSX aluminum die casting workshop and production environment"
                 sizes="(min-width: 1024px) 48vw, 100vw"
                 className={styles.responsiveImage}
                 style={{ width: "100%", height: "auto", display: "block" }}

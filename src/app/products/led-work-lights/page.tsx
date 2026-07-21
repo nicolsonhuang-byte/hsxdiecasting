@@ -2,10 +2,9 @@ import type { Metadata } from "next";
 import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 
-import factoryCapabilities from "../../../../public/images/factory-capabilities.png";
-import heroFactory from "../../../../public/images/hero-factory-200t-300t.png";
 import ledWorkLight from "../../../../public/images/led-work-light.png";
 import oemAluminumParts from "../../../../public/images/oem-small-aluminum-die-casting-parts.png";
+import workshopHorizontal from "../../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
 
 type CardItem = {
   title: string;
@@ -80,14 +79,14 @@ const heroStats = [
     note: "LED work lights, off-road lights, truck lights, and compact lighting products",
   },
   {
-    label: "Housing support",
-    value: "200T + 300T",
+    label: "Product Capability Range",
+    value: "200T / 300T",
     note: "Compact aluminum housings, brackets, covers, and heat-sink style parts",
   },
   {
     label: "Finish support",
     value: "Coat + Paint",
-    note: "Powder coating, spray painting, anodizing, polishing, and grinding support",
+    note: "In-house powder coating, spray painting, and polishing, with partner-supported anodizing for selected suitable parts",
   },
 ];
 
@@ -175,7 +174,7 @@ const processSteps: CardItem[] = [
   {
     title: "Housing and Part Feasibility",
     description:
-      "Compact aluminum lamp housings, brackets, covers, and mounting features are checked against practical 200T and 300T die casting scope.",
+      "Compact aluminum lamp housings, brackets, covers, and mounting features are checked against the practical 200T / 300T Product Capability Range.",
   },
   {
     title: "Aluminum Die Casting",
@@ -190,7 +189,7 @@ const processSteps: CardItem[] = [
   {
     title: "Surface Finishing",
     description:
-      "Powder coating, spray painting, anodizing, polishing, and grinding are coordinated around appearance, corrosion resistance, and brand presentation.",
+      "In-house powder coating, spray painting, and polishing are coordinated around appearance, corrosion resistance, and brand presentation. Anodizing can be coordinated through partner-supported resources for selected suitable parts.",
   },
   {
     title: "Inspection and Export Packing",
@@ -211,14 +210,14 @@ const finishingOptions: CardItem[] = [
       "Used when the LED lighting product requires color matching, branded visual presentation, or model-specific appearance.",
   },
   {
-    title: "Anodizing",
+    title: "Partner-Supported Anodizing",
     description:
-      "Suitable for selected aluminum parts needing a clean metallic appearance and improved surface protection.",
+      "Anodizing can be coordinated through partner-supported resources for selected suitable parts.",
   },
   {
-    title: "Polishing and Grinding",
+    title: "Polishing and Surface Preparation",
     description:
-      "Surface preparation for visible aluminum parts before coating, painting, anodizing, or final appearance review.",
+      "In-house polishing and surface preparation for visible aluminum parts before coating, painting, partner-supported anodizing, or final appearance review.",
   },
 ];
 
@@ -250,7 +249,7 @@ const rfqRequirements = [
   "Lighting type such as off-road light, truck work light, machinery work light, or custom LED light",
   "Target wattage, voltage, beam use, lens, cable, or lighting performance requirements if available",
   "Housing dimensions, bracket points, mounting requirements, and assembly needs",
-  "Surface finish such as powder coating, spray painting, anodizing, or polishing",
+  "Surface finish such as powder coating, spray painting, partner-supported anodizing, or polishing",
   "Estimated order quantity, logo request, packaging plan, and target market",
 ];
 
@@ -511,8 +510,8 @@ export default function LedWorkLightsPage() {
               <div className="industrial-card gold-frame overflow-hidden p-3">
                 <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
                   <Image
-                    src={heroFactory}
-                    alt="HSX factory with 200T and 300T die casting machines for LED work light housing support"
+                    src={workshopHorizontal}
+                    alt="HSX aluminum die casting workshop for LED work light housing projects"
                     fill
                     sizes="(min-width: 1280px) 34rem, (min-width: 1024px) 40vw, 100vw"
                     className="object-cover"
@@ -521,8 +520,9 @@ export default function LedWorkLightsPage() {
                   <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/60 p-5 backdrop-blur">
                     <p className="section-kicker">OEM manufacturing flow</p>
                     <p className="mt-3 text-lg font-semibold text-white">
-                      Photos, samples, housing review, die casting, machining,
-                      finishing, inspection, and export packing.
+                      Photos, samples, housing review, die casting,
+                      partner-supported machining when required, finishing,
+                      inspection, and export packing.
                     </p>
                   </div>
                 </div>
@@ -549,8 +549,9 @@ export default function LedWorkLightsPage() {
                     Cast to Pack
                   </p>
                   <p className="mt-3 text-sm leading-7 text-[#c4bbaa]">
-                    Aluminum die casting, machining, finishing, inspection,
-                    and export packing are coordinated for B2B buyers.
+                    Aluminum die casting, partner-supported machining when
+                    required, finishing, inspection, and export packing are
+                    coordinated for B2B buyers.
                   </p>
                 </article>
               </div>
@@ -843,7 +844,7 @@ export default function LedWorkLightsPage() {
               <span className="text-white/90">Address:</span>{" "}
               {contactDetails.address}
             </p>
-            <p>Small-to-medium aluminum die casting scope: 200T and 300T</p>
+            <p>Small-to-medium aluminum parts within the 200T / 300T Product Capability Range</p>
             <p>OEM based on photos, drawings, samples, or custom project requirements</p>
             <p className="mt-2">
               © {currentYear} HSX DIECASTING. All rights reserved.

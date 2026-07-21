@@ -3,9 +3,8 @@ import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 
 import decorativeBrakeCaliperCover from "../../../../public/images/decorative-brake-caliper-cover.png";
-import factoryCapabilities from "../../../../public/images/factory-capabilities.png";
-import heroFactory from "../../../../public/images/hero-factory-200t-300t.png";
 import oemAluminumParts from "../../../../public/images/oem-small-aluminum-die-casting-parts.png";
+import workshopHorizontal from "../../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
 
 type CardItem = {
   title: string;
@@ -574,8 +573,8 @@ export default function DecorativeBrakeCaliperCoversPage() {
               <div className="industrial-card gold-frame overflow-hidden p-3">
                 <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
                   <Image
-                    src={heroFactory}
-                    alt="HSX factory with 200T and 300T die casting machines for decorative automotive cover project support"
+                    src={workshopHorizontal}
+                    alt="HSX aluminum die casting workshop for decorative automotive cover projects"
                     fill
                     sizes="(min-width: 1280px) 34rem, (min-width: 1024px) 40vw, 100vw"
                     className="object-cover"

@@ -4,9 +4,10 @@ import Link from "next/link";
 
 import automotiveLedLight from "../../../public/images/automotive-led-light.png";
 import brakeCaliperCover from "../../../public/images/brake-caliper-cover.png";
-import factoryCapabilities from "../../../public/images/factory-capabilities.png";
 import ledWorkLight from "../../../public/images/led-work-light.png";
 import oemAluminumParts from "../../../public/images/oem-small-aluminum-die-casting-parts.png";
+import sprayPainting from "../../../public/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg";
+import workshopHorizontal from "../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
 
 type ProductCategory = {
   title: string;
@@ -73,8 +74,8 @@ const contactDetails = {
 
 const heroStats = [
   {
-    label: "Machine Scope",
-    value: "200T + 300T",
+    label: "Product Capability Range",
+    value: "200T / 300T",
     note: "Focused on small-to-medium aluminum die casting parts only",
   },
   {
@@ -93,7 +94,7 @@ const introCards = [
   {
     title: "Realistic Aluminum Die Casting Scope",
     description:
-      "Production is aligned with realistic 200T and 300T aluminum die casting scope for compact housings, brackets, covers, shells, lamp bodies, and other small-to-medium OEM components.",
+      "Production is aligned with the 200T / 300T Product Capability Range for compact housings, brackets, covers, shells, lamp bodies, and other small-to-medium OEM components.",
   },
   {
     title: "LED Lighting Product Programs",
@@ -111,7 +112,7 @@ const productCategories: ProductCategory[] = [
   {
     title: "OEM Aluminum Die Casting Parts",
     description:
-      "Compact aluminum housings, end caps, brackets, shells, covers, lamp bodies, and small-to-medium OEM components produced within the practical range of 200T and 300T die casting machines.",
+      "Compact aluminum housings, end caps, brackets, shells, covers, lamp bodies, and small-to-medium OEM components produced within the practical 200T / 300T Product Capability Range.",
     image: oemAluminumParts,
     alt: "OEM small-to-medium aluminum die casting parts for lighting and hardware projects",
     href: "/products/oem-aluminum-die-casting-parts",
@@ -138,7 +139,7 @@ const productCategories: ProductCategory[] = [
     title: "Secondary Machining and Surface Finishing",
     description:
       "Drilling, tapping, polishing, grinding, anodizing, powder coating, and spray painting support for suitable compact aluminum die casting projects.",
-    image: factoryCapabilities,
+    image: sprayPainting,
     alt: "Secondary machining and surface finishing support for OEM aluminum die casting parts",
     applications: [
       "Machined holes and threaded mounting features",
@@ -194,7 +195,7 @@ const supportStages: SupportStage[] = [
   {
     title: "Die Casting and Machining",
     description:
-      "200T and 300T aluminum die casting is paired with drilling and tapping support for compact housings, brackets, covers, and hardware parts.",
+      "The 200T / 300T Product Capability Range is paired with drilling and tapping support for compact housings, brackets, covers, and hardware parts.",
   },
   {
     title: "Finishing, Inspection, and Packing",
@@ -371,8 +372,8 @@ export default function ProductsPage() {
                 casting parts, die cast aluminum LED light housings, secondary
                 machining, surface finishing, decorative brake caliper
                 appearance covers, and selected LED lighting products. The
-                product scope stays inside realistic 200T and 300T aluminum
-                die casting capacity for compact housings, brackets, covers,
+                product scope stays inside the 200T / 300T Product Capability
+                Range for compact housings, brackets, covers,
                 shells, and other practical OEM components.
               </p>
 
@@ -574,8 +575,8 @@ export default function ProductsPage() {
             <div className="industrial-card gold-frame overflow-hidden p-3">
               <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
                 <Image
-                  src={factoryCapabilities}
-                  alt="Factory capability image showing support for mold development, production, and finishing of compact aluminum parts"
+                  src={workshopHorizontal}
+                  alt="HSX aluminum die casting workshop for small-to-medium OEM projects"
                   fill
                   sizes="(min-width: 1280px) 36rem, (min-width: 1024px) 42vw, 100vw"
                   className="object-cover"
@@ -853,7 +854,7 @@ export default function ProductsPage() {
               <span className="text-white/90">Address:</span>{" "}
               {contactDetails.address}
             </p>
-            <p>Small-to-medium aluminum die casting scope: 200T and 300T</p>
+            <p>Small-to-medium aluminum parts within the 200T / 300T Product Capability Range</p>
             <p>OEM based on drawings, samples, or custom project requirements</p>
             <p className="mt-2">
               © {currentYear} HSX DIECASTING. All rights reserved.

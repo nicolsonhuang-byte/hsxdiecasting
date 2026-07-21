@@ -62,7 +62,7 @@ const faqJsonLd = {
       name: "What aluminum die casting scope is suitable?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "HSX focuses on compact housings, brackets, covers, end caps, shells, lamp bodies, heat-sink-style housings, and other small-to-medium aluminum components within the practical product range covered by 200T and 300T die casting capability.",
+        text: "HSX focuses on compact housings, brackets, covers, end caps, shells, lamp bodies, heat-sink-style housings, and other small-to-medium aluminum components within the 200T / 300T Product Capability Range.",
       },
     },
     {
@@ -80,7 +80,7 @@ const heroProofItems = [
   {
     title: "Die Casting",
     description:
-      "Product capability aligned with the practical range typically covered by 200T and 300T die casting classes for suitable small-to-medium aluminum parts.",
+      "Suitable small-to-medium aluminum parts within the 200T / 300T Product Capability Range.",
   },
   {
     title: "Secondary Operations",
@@ -98,7 +98,7 @@ const productCategories: ProductCategory[] = [
   {
     title: "OEM Aluminum Die Casting Parts",
     description:
-      "Small-to-medium aluminum housings, end caps, brackets, shells, covers, and OEM parts within the practical product range covered by 200T and 300T die casting capability.",
+      "Small-to-medium aluminum housings, end caps, brackets, shells, covers, and OEM parts within the 200T / 300T Product Capability Range.",
     image: oemAluminumParts,
     alt: "Small-to-medium aluminum die casting parts for OEM lighting and hardware applications",
     href: "/products/oem-aluminum-die-casting-parts",
@@ -308,7 +308,7 @@ const buyerReasons: InfoCard[] = [
   {
     title: "200T / 300T Product Capability Range",
     description:
-      "Production focus stays on small-to-medium aluminum parts within the practical product range covered by 200T and 300T die casting capability.",
+      "Production focus stays on small-to-medium aluminum parts within the 200T / 300T Product Capability Range.",
   },
   {
     title: "Flexible OEM Project Input",
@@ -482,7 +482,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="Product categories"
               title="Focused aluminum parts and lighting programs"
-              description="The homepage stays within the practical product range covered by 200T and 300T die casting capability. Product messaging centers on compact cast components, aluminum housings, and export-ready lighting categories rather than oversized structural castings."
+              description="The homepage stays within the 200T / 300T Product Capability Range. Product messaging centers on compact cast components, aluminum housings, and export-ready lighting categories rather than oversized structural castings."
             />
 
             <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -586,8 +586,8 @@ export default function Home() {
                 <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/55 p-5 backdrop-blur">
                   <p className="section-kicker">Capability focus</p>
                   <p className="mt-3 text-lg font-semibold text-white">
-                    Compact aluminum parts within the practical product range
-                    covered by 200T and 300T die casting capability, with
+                    Compact aluminum parts within the 200T / 300T Product
+                    Capability Range, with
                     secondary machining and appearance finishing requirements.
                   </p>
                 </div>
@@ -956,8 +956,8 @@ export default function Home() {
                 <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
                   The site focuses on compact housings, brackets, covers, end caps,
                   shells, lamp bodies, heat-sink-style housings, and other
-                  small-to-medium aluminum components within the practical
-                  product range covered by 200T and 300T die casting capability.
+                  small-to-medium aluminum components within the 200T / 300T
+                  Product Capability Range.
                 </p>
               </article>
 
@@ -1216,7 +1216,7 @@ export default function Home() {
               <span className="text-white/90">Address:</span>{" "}
               {contactDetails.address}
             </p>
-            <p>Small-to-medium aluminum parts within the practical 200T / 300T product capability range</p>
+            <p>Small-to-medium aluminum parts within the 200T / 300T Product Capability Range</p>
             <p>OEM based on drawings, samples, or custom project requirements</p>
             <p className="mt-2">
               {"\u00A9"} {currentYear} HSX DIECASTING. All rights reserved.

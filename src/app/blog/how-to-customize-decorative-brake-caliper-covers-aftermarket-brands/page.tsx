@@ -5,7 +5,7 @@ import Link from "next/link";
 import redPackaging from "../../../../public/images/custom-decorative-brake-caliper-covers-red-packaging.jpg";
 import sprayPainting from "../../../../public/images/decorative-brake-caliper-cover-spray-painting-process.jpg";
 import yellowPackaging from "../../../../public/images/custom-decorative-brake-caliper-covers-yellow-packaging.jpg";
-import factoryCapabilities from "../../../../public/images/factory-capabilities.png";
+import inHouseSprayPainting from "../../../../public/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg";
 
 export const metadata: Metadata = {
   title:
@@ -235,8 +235,8 @@ export default function ArticlePage() {
             <figure className="my-10 overflow-hidden rounded-[2rem] border border-[#d7b56d]/25 bg-[#111111] p-3">
               <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
                 <Image
-                  src={factoryCapabilities}
-                  alt="HSX factory capability for decorative cover and OEM appearance accessory projects"
+                  src={inHouseSprayPainting}
+                  alt="In-house spray painting of aluminum parts at HSX DIECASTING"
                   fill
                   sizes="(min-width: 1024px) 56rem, 100vw"
                   className="object-cover"

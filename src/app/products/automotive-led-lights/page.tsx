@@ -3,9 +3,9 @@ import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 
 import automotiveLedLight from "../../../../public/images/automotive-led-light.png";
-import factoryCapabilities from "../../../../public/images/factory-capabilities.png";
 import ledWorkLight from "../../../../public/images/led-work-light.png";
 import oemAluminumParts from "../../../../public/images/oem-small-aluminum-die-casting-parts.png";
+import sprayPainting from "../../../../public/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg";
 
 type InfoCard = {
   title: string;
@@ -190,7 +190,7 @@ const manufacturingFlow: InfoCard[] = [
   {
     title: "Housing and Part Feasibility",
     description:
-      "Compact aluminum lamp housings, brackets, covers, and mounting features are checked against practical 200T and 300T die casting scope.",
+      "Compact aluminum lamp housings, brackets, covers, and mounting features are checked against the practical 200T / 300T Product Capability Range.",
   },
   {
     title: "Aluminum Die Casting",
@@ -579,8 +579,8 @@ export default function AutomotiveLedLightsPage() {
               <div className="industrial-card gold-frame overflow-hidden p-3">
                 <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
                   <Image
-                    src={factoryCapabilities}
-                    alt="Factory capability image for automotive LED lighting aluminum part production and finishing"
+                    src={sprayPainting}
+                    alt="In-house spray painting of aluminum parts at HSX DIECASTING"
                     fill
                     sizes="(min-width: 1280px) 34rem, (min-width: 1024px) 40vw, 100vw"
                     className="object-cover"
@@ -950,7 +950,7 @@ export default function AutomotiveLedLightsPage() {
               <span className="text-white/90">Address:</span>{" "}
               {contactDetails.address}
             </p>
-            <p>Small-to-medium aluminum die casting scope: 200T and 300T</p>
+            <p>Small-to-medium aluminum parts within the 200T / 300T Product Capability Range</p>
             <p>OEM based on photos, drawings, samples, or custom project requirements</p>
             <p className="mt-2">
               © {currentYear} HSX DIECASTING. All rights reserved.

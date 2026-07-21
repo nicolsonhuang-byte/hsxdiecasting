@@ -155,7 +155,7 @@ const processSteps: InfoCard[] = [
   {
     title: "Housing and Part Feasibility",
     description:
-      "Compact aluminum lamp housings, brackets, covers, and mounting features are checked against practical 200T and 300T die casting scope.",
+      "Compact aluminum lamp housings, brackets, covers, and mounting features are checked against the practical 200T / 300T Product Capability Range.",
   },
   {
     title: "Aluminum Die Casting",
@@ -514,8 +514,8 @@ export default function MotorcycleLedLightsPage() {
               <div className="rounded-[2rem] border border-[#d7b56d]/25 bg-white/[0.035] p-3 shadow-2xl shadow-black/40">
                 <div className="relative overflow-hidden rounded-[1.5rem]">
                   <img
-                    src="/images/factory-capabilities.png"
-                    alt="Factory capability for motorcycle LED lighting parts manufacturing"
+                    src="/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg"
+                    alt="HSX aluminum die casting workshop for motorcycle LED lighting projects"
                     className="h-full w-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
@@ -827,7 +827,7 @@ export default function MotorcycleLedLightsPage() {
               <span className="text-white/90">Address:</span>{" "}
               {contactDetails.address}
             </p>
-            <p>Small-to-medium aluminum die casting scope: 200T and 300T</p>
+            <p>Small-to-medium aluminum parts within the 200T / 300T Product Capability Range</p>
             <p>OEM based on photos, drawings, samples, or custom project requirements</p>
             <p className="mt-2">
               © {currentYear} HSX DIECASTING. All rights reserved.

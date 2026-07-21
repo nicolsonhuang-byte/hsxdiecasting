@@ -170,8 +170,8 @@ export default function ArticlePage() {
             <p className="mt-3">
               Importers and OEM project buyers can use this checklist to reduce
               missing details during first contact. A clear RFQ helps both sides
-              discuss whether the project fits 200T / 300T aluminum die casting
-              capacity and related secondary processing.
+              discuss whether the project fits the 200T / 300T Product Capability
+              Range and related secondary processing.
             </p>
           </section>
 
@@ -553,11 +553,11 @@ export default function ArticlePage() {
               parts.
             </p>
             <p className="mt-4">
-              HSX supports 200T / 300T aluminum die casting machines,
+              HSX operates 280T and 320T aluminum die casting machines and supports
               in-house trimming, deburring, flash removal, drilling, tapping,
               polishing, powder coating, spray painting, QC, and packing. CNC
-              machining and anodizing can be coordinated with partner resources
-              when required by the project.
+              machining and anodizing can be coordinated through partner-supported
+              resources when required by the project.
             </p>
             <p className="mt-4">
               HSX reviews whether the project fits its equipment, mold

@@ -252,8 +252,10 @@ export default function ArticlePage() {
             <p className="mt-4">
               In addition to decorative appearance cover projects, HSX supports
               OEM aluminum die casting custom parts. Factory capability includes
-              200T / 300T aluminum die casting, drilling, tapping, polishing,
-              powder coating, paint spraying, and aluminum anodizing.
+              suitable small-to-medium parts within the 200T / 300T Product
+              Capability Range, with in-house drilling, tapping, polishing,
+              powder coating, and spray painting. Anodizing can be coordinated
+              through partner-supported resources for selected suitable parts.
             </p>
             <p className="mt-4">
               Custom aluminum die casting projects can be evaluated based on

@@ -190,9 +190,10 @@ export default function ArticlePage() {
             </h2>
             <p className="mt-4">
               Factory capacity should match the part size and project type. For
-              compact and small-to-medium aluminum parts, 200T / 300T aluminum
-              die casting capacity can be suitable for housings, brackets, end
-              caps, covers, enclosure shells, and compact custom aluminum parts.
+              compact and small-to-medium aluminum parts, the 200T / 300T
+              Product Capability Range can be suitable for housings, brackets,
+              end caps, covers, enclosure shells, and compact custom aluminum
+              parts.
             </p>
             <p className="mt-4">
               Buyers should avoid sending unclear RFQs without part size,
@@ -285,12 +286,14 @@ export default function ArticlePage() {
               enclosure shells, covers, and compact custom aluminum parts.
             </p>
             <p className="mt-4">
-              The factory supports 200T / 300T aluminum die casting, drilling,
-              tapping, polishing, grinding, powder coating, paint spraying,
-              aluminum anodizing, and RFQ evaluation based on drawings, 3D files,
-              sample photos, or project requirements. When a project requires CNC
-              turning or CNC machining after die casting, HSX can coordinate
-              cooperative CNC machining support through partner facilities.
+              The factory operates 280T and 320T aluminum die casting machines
+              and focuses on suitable small-to-medium projects within the 200T /
+              300T Product Capability Range. In-house operations include
+              drilling, tapping, polishing, powder coating, and spray painting.
+              CNC machining and anodizing can be coordinated through
+              partner-supported resources when required by the project. RFQ
+              evaluation is based on drawings, 3D files, sample photos, or
+              project requirements.
             </p>
             <p className="mt-4">
               Buyers can also review{" "}
