@@ -4,30 +4,34 @@ import Link from "next/link";
 
 import { SiteFooter, SiteHeader } from "../components/site-navigation";
 
-import ledWorkLight from "../../../public/images/led-work-light.png";
-import oemAluminumParts from "../../../public/images/oem-small-aluminum-die-casting-parts.png";
-import sprayPainting from "../../../public/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg";
-import workshopHorizontal from "../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
+import batchPartsBeforeFinishing from "../../../public/images/hsx-factory/batch-aluminum-die-cast-parts-before-finishing.jpg";
+import batchPartsBeforeTrimming from "../../../public/images/hsx-factory/batch-die-cast-parts-before-trimming.jpg";
+import communicationHousing from "../../../public/images/hsx-factory/communication-equipment-aluminum-die-cast-housing.jpg";
+import machineryPart from "../../../public/images/hsx-factory/machinery-accessory-aluminum-die-cast-part.jpg";
+import oemHousing from "../../../public/images/hsx-factory/oem-aluminum-die-cast-housing.jpg";
+import opticalModuleHousing from "../../../public/images/hsx-factory/optical-module-aluminum-die-cast-housing-a.jpg";
+import stageLightHousing from "../../../public/images/hsx-factory/stage-light-aluminum-die-cast-housing.jpg";
 
-type ProductCategory = {
+type ProductFamily = {
   title: string;
   description: string;
   image: StaticImageData;
   alt: string;
-  applications: string[];
-  href?: string;
+  href: string;
+  directions: string[];
 };
 
-type SupportStage = {
+type RealPart = {
   title: string;
   description: string;
+  image: StaticImageData;
+  alt: string;
 };
 
-const pageTitle =
-  "Products | Aluminum Die Casting Parts & LED Lights | HSX";
+const pageTitle = "Products | Custom Aluminum Die-Cast Parts by Type | HSX";
 
 const pageDescription =
-  "Browse OEM aluminum die casting parts, die cast aluminum LED light housings, secondary machining and surface finishing support, decorative brake caliper appearance covers, and selected LED lighting products.";
+  "Explore HSX product directions for OEM aluminum die casting, including lighting housings, enclosures, hardware, mechanical parts, and other drawing-based custom projects.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -36,13 +40,11 @@ export const metadata: Metadata = {
     canonical: "/products",
   },
   keywords: [
-    "products aluminum die casting",
-    "OEM small-to-medium aluminum die casting parts",
-    "custom aluminum hardware parts",
-    "automotive LED lights",
-    "motorcycle LED lights",
-    "LED work lights",
-    "decorative brake caliper appearance covers",
+    "custom aluminum die cast parts",
+    "OEM aluminum die casting products",
+    "aluminum light housings",
+    "aluminum die cast enclosures",
+    "aluminum hardware parts",
   ],
   openGraph: {
     title: pageTitle,
@@ -50,8 +52,8 @@ export const metadata: Metadata = {
     url: "/products",
     images: [
       {
-        url: "/images/oem-small-aluminum-die-casting-parts.png",
-        alt: "OEM small-to-medium aluminum die casting parts by HSX DIECASTING",
+        url: "/images/hsx-factory/batch-aluminum-die-cast-parts-before-finishing.jpg",
+        alt: "Batch aluminum die-cast parts manufactured by HSX",
       },
     ],
   },
@@ -59,177 +61,123 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: pageTitle,
     description: pageDescription,
-    images: ["/images/oem-small-aluminum-die-casting-parts.png"],
+    images: [
+      "/images/hsx-factory/batch-aluminum-die-cast-parts-before-finishing.jpg",
+    ],
   },
 };
 
 const contactDetails = {
   email: "nicolson@hsxdiecasting.com",
+  emailHref:
+    "mailto:nicolson@hsxdiecasting.com?subject=OEM%20Aluminum%20Die%20Casting%20Project%20Review&body=Hello%20HSX%20DIECASTING%2C%0A%0AI%20would%20like%20to%20discuss%20an%20OEM%20aluminum%20die%20casting%20project.%0A%0AI%20will%20attach%20drawings%2C%203D%20files%2C%20or%20sample%20photos%20where%20available.%0A%0ARegards%2C",
   phone: "+86 176 6615 5283",
-  whatsappHref: "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%20Please%20contact%20me%20with%20quotation%20details.",
+  whatsappHref:
+    "https://wa.me/8617666155283?text=Hello%20HSX%20DIECASTING%2C%20I%20would%20like%20to%20discuss%20an%20OEM%20aluminum%20die%20casting%20project.",
   wechat: "NicolsonHwang",
   address:
     "Huayue Road, National Eco-Industrial Park, Danzao Town, Nanhai District, Foshan, Guangdong, China",
 };
 
-const heroStats = [
-  {
-    label: "Product Capability Range",
-    value: "200T / 300T",
-    note: "Focused on small-to-medium aluminum die casting parts only",
-  },
-  {
-    label: "OEM Input",
-    value: "Drawings + Samples",
-    note: "Custom manufacturing accepted from buyer drawings, samples, or project requirements",
-  },
-  {
-    label: "Product Mix",
-    value: "Parts + LED Lights",
-    note: "Built for wholesale, aftermarket, and OEM sourcing programs",
-  },
-];
-
-const introCards = [
-  {
-    title: "Realistic Aluminum Die Casting Scope",
-    description:
-      "Production is aligned with the 200T / 300T Product Capability Range for compact housings, brackets, covers, shells, lamp bodies, and other small-to-medium OEM components.",
-  },
-  {
-    title: "LED Lighting Product Programs",
-    description:
-      "The product mix includes automotive LED lights, motorcycle LED lights, and LED work lights using aluminum housings suited to practical die casting and finishing workflows.",
-  },
-  {
-    title: "OEM Development Support",
-    description:
-      "Projects can start from drawings, approved samples, or custom development requirements, then move through mold development, production, machining, finishing, and export packing.",
-  },
-];
-
-const productCategories: ProductCategory[] = [
+const productFamilies: ProductFamily[] = [
   {
     title: "Lighting Housings",
     description:
-      "Aluminum light housings, heat-dissipation bodies, covers, and compact lighting components reviewed for suitable OEM projects.",
-    image: ledWorkLight,
-    alt: "Aluminum die casting lighting housing for an OEM project",
+      "Aluminum die-cast lamp bodies, housings, heat-dissipation shells, and related structural parts for suitable lighting projects.",
+    image: stageLightHousing,
+    alt: "Aluminum die-cast stage light housing manufactured by HSX",
     href: "/products/aluminum-light-housings",
-    applications: [
-      "LED light housings and heat-dissipation bodies",
-      "Compact lamp covers and enclosure shells",
-      "Lighting parts based on drawings or samples",
+    directions: [
+      "Lamp bodies and die-cast exterior housings",
+      "Heat-dissipation housings and shells",
+      "Related aluminum die-cast lighting structures",
     ],
   },
   {
-    title: "Enclosures and Housings",
+    title: "Enclosures / Housings",
     description:
-      "Communication, optical-module, access-control, and industrial enclosure projects reviewed around structure, assembly, finishing, and packing needs.",
-    image: oemAluminumParts,
-    alt: "Custom aluminum die casting enclosures and housings",
+      "Non-lighting housings that protect, contain, or support equipment and internal components.",
+    image: oemHousing,
+    alt: "OEM aluminum die-cast enclosure manufactured by HSX",
     href: "/products/oem-aluminum-die-casting-parts",
-    applications: [
-      "Communication equipment housings",
-      "Lock and access-control housings",
-      "Protective covers and enclosure shells",
+    directions: [
+      "Communication and optical-module housings",
+      "Equipment enclosures and protective shells",
+      "Other non-lighting containment housings",
     ],
   },
   {
-    title: "Hardware and Mechanical Parts",
+    title: "Hardware & Mechanical Parts",
     description:
-      "Brackets, supports, mounting parts, end caps, covers, and other compact components produced from buyer drawings or samples.",
-    image: workshopHorizontal,
-    alt: "HSX workshop supporting custom aluminum hardware and mechanical parts",
+      "Drawing-based aluminum die-cast parts used for mounting, support, connection, or other mechanical functions.",
+    image: machineryPart,
+    alt: "Aluminum die-cast machinery part manufactured by HSX",
     href: "/products/oem-aluminum-die-casting-parts",
-    applications: [
-      "Brackets and support parts",
-      "End caps, covers, and mounting parts",
-      "Hardware and machinery components",
-    ],
-  },
-  {
-    title: "Custom OEM Die Cast Parts",
-    description:
-      "Drawing-based small-to-medium aluminum die casting projects with selected in-house secondary operations, QC, packing, and partner-supported resources when required.",
-    image: sprayPainting,
-    alt: "Surface finishing support for custom OEM aluminum die cast parts",
-    href: "/products/oem-aluminum-die-casting-parts",
-    applications: [
-      "Parts reviewed from 2D or 3D drawings",
-      "Appearance-sensitive aluminum components",
-      "Projects requiring coordinated secondary operations",
+    directions: [
+      "Machinery and mounting parts",
+      "Supports, connectors, and brackets",
+      "Door, window, and other functional hardware",
     ],
   },
 ];
 
-const productScopeItems = [
-  "Aluminum housings and enclosure shells",
-  "Lighting housings and heat-dissipation bodies",
-  "Brackets and support parts",
-  "End caps and covers",
-  "Hardware and mechanical components",
-  "Lock and access-control housings",
-  "Decorative aluminum appearance parts",
-  "Other custom OEM aluminum die cast components",
-];
-
-const supportStages: SupportStage[] = [
+const realParts: RealPart[] = [
   {
-    title: "Drawing and Geometry Review",
+    title: "Optical Module Housing",
     description:
-      "Start with 2D drawings, 3D files, or dimensional sketches to confirm part geometry, mounting features, and manufacturable aluminum scope.",
+      "Aluminum die-cast optical module housing manufactured by HSX.",
+    image: opticalModuleHousing,
+    alt: "Optical module aluminum die-cast housing manufactured by HSX",
   },
   {
-    title: "Sample and Appearance Alignment",
+    title: "Communication Equipment Housing",
     description:
-      "Approved samples or reference parts can be used to align target dimensions, appearance priorities, and assembly expectations before launch.",
+      "Aluminum die-cast communication equipment housing manufactured by HSX.",
+    image: communicationHousing,
+    alt: "Communication equipment aluminum die-cast housing manufactured by HSX",
   },
   {
-    title: "Mold Development",
+    title: "Batch Aluminum Die-Cast Parts",
     description:
-      "Mold development is arranged after feasibility review so compact aluminum parts can move into repeatable OEM production with clear expectations.",
+      "A batch of aluminum die-cast parts photographed at HSX before trimming.",
+    image: batchPartsBeforeTrimming,
+    alt: "Batch aluminum die-cast parts before trimming at HSX",
   },
   {
-    title: "Die Casting and Secondary Operations",
+    title: "Machinery Part",
     description:
-      "The 200T / 300T Product Capability Range is paired with in-house drilling and tapping. CNC machining can be coordinated through partner-supported resources when required by the project.",
-  },
-  {
-    title: "Finishing, Inspection, and Packing",
-    description:
-      "Anodizing, powder coating, spray painting, polishing, final inspection, and export packing are coordinated to match the buyer’s project needs.",
+      "Aluminum die-cast machinery part manufactured by HSX.",
+    image: machineryPart,
+    alt: "Aluminum die-cast machinery part manufactured by HSX",
   },
 ];
 
-const surfaceFinishes = [
+const productFaqs = [
   {
-    title: "Partner-Supported Anodizing",
-    description:
-      "Anodizing can be coordinated through partner-supported resources for selected suitable parts when required by the project.",
+    question: "What if my part does not fit one of the three product families?",
+    answer:
+      "Send the drawing, sample photo, or basic part requirements for review. Other suitable OEM aluminum die-casting projects can be evaluated without creating another product category.",
   },
   {
-    title: "Powder Coating",
-    description:
-      "Suitable for durable exterior coverage on housings, brackets, decorative covers, and other compact aluminum accessory parts.",
+    question: "How are lighting housings different from other enclosures?",
+    answer:
+      "Lighting housings are grouped by their lighting application and related housing or heat-dissipation structure. Non-lighting protective, containment, and equipment housings are grouped under Enclosures / Housings.",
   },
   {
-    title: "Spray Painting",
-    description:
-      "Applied where the project requires color matching, branded appearance, or a specific visual finish for end-market presentation.",
+    question: "Must a mechanical part match the examples shown here?",
+    answer:
+      "No. The examples show product directions only. HSX can review different mounting parts, supports, connectors, and mechanical components from customer drawings or samples.",
   },
   {
-    title: "Polishing and Surface Preparation",
-    description:
-      "In-house polishing and surface preparation support appearance improvement before coating, painting, or final inspection on visible aluminum parts.",
+    question: "Can HSX review OEM parts with different shapes?",
+    answer:
+      "Yes. Drawing-based parts with different structures can be reviewed for aluminum die-casting suitability before quotation.",
   },
-];
-
-const rfqChecklist = [
-  "Part drawings, sample photos, or reference samples",
-  "Required finish such as anodizing, powder coating, spray painting, or polishing",
-  "Order quantity, target market, and packaging requirements",
-  "Application details for aluminum parts, LED lights, or decorative appearance covers",
+  {
+    question: "What should a buyer do first?",
+    answer:
+      "Choose the closest product direction, then send the drawing, 3D file, sample photo, or clear part requirements through the Project Review page.",
+  },
 ];
 
 function SectionHeading({
@@ -256,19 +204,19 @@ function SectionHeading({
 
 export default function ProductsPage() {
   return (
-    <div className="relative">
+    <div className="relative overflow-x-clip">
       <div className="border-b border-white/8 bg-black/85">
         <div className="container-shell flex flex-col gap-3 py-3 text-sm text-[#d8ccb2] lg:flex-row lg:items-center lg:justify-between">
-          <div className="flex flex-col gap-3">
+          <div className="min-w-0 space-y-3">
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-6">
               <a
-                href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
-                className="flex items-center gap-3 transition-colors hover:text-white"
+                href={contactDetails.emailHref}
+                className="flex min-w-0 items-center gap-3 transition-colors hover:text-white"
               >
                 <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
                   Email
                 </span>
-                <span>{contactDetails.email}</span>
+                <span className="break-all">{contactDetails.email}</span>
               </a>
               <a
                 href={contactDetails.whatsappHref}
@@ -286,18 +234,18 @@ export default function ProductsPage() {
                 <span>{contactDetails.wechat}</span>
               </div>
             </div>
-            <div className="flex items-start gap-3">
-              <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
+            <div className="flex min-w-0 items-start gap-3">
+              <span className="shrink-0 rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
                 Address
               </span>
-              <span>{contactDetails.address}</span>
+              <span className="min-w-0 break-words">{contactDetails.address}</span>
             </div>
           </div>
           <Link
             href="/b2b-oem-project-review"
             className="gold-button w-full text-center sm:w-auto"
           >
-            Request Project Review
+            Send Your Drawing
           </Link>
         </div>
       </div>
@@ -305,83 +253,59 @@ export default function ProductsPage() {
       <SiteHeader />
 
       <main id="top">
-        <section className="border-b border-white/8 bg-[radial-gradient(circle_at_top_right,rgba(199,162,91,0.14),transparent_34%),linear-gradient(180deg,#090909_0%,#050505_100%)]">
-          <div className="container-shell grid gap-12 py-16 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-center lg:py-24">
-            <div className="motion-rise">
-              <p className="section-kicker">HSX product range</p>
-              <h1 className="section-heading mt-6 text-4xl leading-none text-white sm:text-5xl xl:text-6xl">
-                Custom OEM Aluminum Die Casting Parts and Selected Applications
+        <section className="border-b border-white/8 bg-[radial-gradient(circle_at_top_right,rgba(199,162,91,0.15),transparent_34%),linear-gradient(180deg,#090909_0%,#050505_100%)]">
+          <div className="container-shell grid gap-12 py-16 lg:grid-cols-[minmax(0,1.03fr)_minmax(0,0.97fr)] lg:items-center lg:py-24">
+            <div className="min-w-0 motion-rise">
+              <p className="section-kicker">OEM aluminum die casting</p>
+              <h1 className="section-heading mt-6 max-w-4xl text-4xl leading-[1.02] text-white sm:text-5xl xl:text-6xl">
+                Custom Aluminum Die-Cast Parts by Product Type
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-[#d4cdc0]">
-                HSX DIECASTING focuses on small-to-medium custom OEM aluminum die
-                casting parts, including lighting housings, enclosures, and
-                hardware or mechanical components, with selected secondary
-                operations and finishing coordination. The product scope stays
-                inside the 200T / 300T Product Capability Range for compact
-                housings, brackets, covers, shells, and other practical OEM
-                components.
+                Use the product directions below to find the closest match for
+                your OEM aluminum die-casting project. If the part does not fit
+                a listed family, send the drawing or sample information for
+                project review.
               </p>
-
-              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
                 <Link
                   href="/b2b-oem-project-review"
                   className="gold-button text-center"
                 >
-                  Request Project Review
+                  Send Your Drawing
                 </Link>
-                <a
-                  href={contactDetails.whatsappHref}
+                <Link
+                  href="/products/oem-aluminum-die-casting-parts"
                   className="outline-button text-center"
                 >
-                  WhatsApp RFQ
-                </a>
+                  View OEM Die Casting Fit
+                </Link>
               </div>
-
-              <div className="mt-10 grid gap-4 sm:grid-cols-3">
-                {heroStats.map((stat) => (
-                  <article key={stat.label} className="metric-pill">
-                    <p className="text-xs uppercase tracking-[0.28em] text-[#e8ce97]">
-                      {stat.label}
-                    </p>
-                    <p className="mt-3 text-2xl font-semibold text-white">
-                      {stat.value}
-                    </p>
-                    <p className="mt-3 text-sm leading-7 text-[#bdb5a8]">
-                      {stat.note}
-                    </p>
-                  </article>
-                ))}
+              <div className="mt-10 grid gap-3 border-t border-white/10 pt-6 text-sm leading-7 text-[#c8c0b3] sm:grid-cols-3">
+                <p>Lighting housings and related structures</p>
+                <p>Equipment enclosures and protective housings</p>
+                <p>Hardware, mounting, and mechanical parts</p>
               </div>
             </div>
 
-            <div className="motion-rise-delay">
-              <div className="industrial-card gold-frame relative overflow-hidden rounded-[2rem] p-3">
-                <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem]">
+            <div className="min-w-0 motion-rise-delay">
+              <div className="gold-frame relative overflow-hidden border border-white/10 bg-[#0b0b0b] p-3">
+                <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
-                    src={oemAluminumParts}
-                    alt="OEM small-to-medium aluminum die casting parts for industrial and lighting projects"
+                    src={batchPartsBeforeFinishing}
+                    alt="Batch aluminum die-cast parts manufactured by HSX"
                     fill
                     preload
                     sizes="(min-width: 1280px) 40rem, (min-width: 1024px) 44vw, 100vw"
                     className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-br from-black/10 via-black/15 to-black/80" />
-                  <div className="absolute left-5 top-5 rounded-2xl border border-white/12 bg-black/55 px-4 py-3 backdrop-blur">
-                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#efcf8d]">
-                      Realistic scope
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+                  <div className="absolute inset-x-5 bottom-5 border-l-2 border-[#d5ae67] bg-black/70 px-5 py-4 backdrop-blur-sm">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#efcf8d]">
+                      Product navigation
                     </p>
-                    <p className="mt-2 text-lg font-semibold text-white">
-                      Small-to-medium aluminum parts only
-                    </p>
-                  </div>
-                  <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/60 p-4 backdrop-blur">
-                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#efcf8d]">
-                      Typical products
-                    </p>
-                    <p className="mt-2 text-sm leading-7 text-[#ede6d7]">
-                      Compact housings, lamp bodies, end caps, accessory
-                      brackets, small covers, shells, and decorative appearance
-                      parts for OEM and wholesale supply.
+                    <p className="mt-2 text-base font-semibold leading-7 text-white">
+                      Find the nearest product direction, then confirm project
+                      fit from the actual drawing or sample.
                     </p>
                   </div>
                 </div>
@@ -390,364 +314,321 @@ export default function ProductsPage() {
           </div>
         </section>
 
-        <section className="border-b border-white/8 py-16 lg:py-20">
+        <section
+          id="core-product-families"
+          className="border-b border-white/8 py-16 lg:py-24"
+        >
           <div className="container-shell">
             <SectionHeading
-              eyebrow="Product introduction"
-              title="OEM aluminum die casting parts first, with focused supporting product lines"
-              description="This page prioritizes OEM small-to-medium aluminum die casting parts, die cast aluminum LED light housings, secondary machining and surface finishing, then decorative brake caliper appearance covers and selected LED lighting products. The offering is shaped for global wholesalers, importers, distributors, and OEM buyers who need practical product scope and clear project support."
+              eyebrow="Core product families"
+              title="Three product directions for aluminum die-cast parts"
+              description="Each part is assigned to one primary family so buyers can identify the nearest product direction without seeing the same component repeated across multiple categories."
             />
 
-            <div className="mt-10 grid gap-6 md:grid-cols-3">
-              {introCards.map((card, index) => (
-                <article key={`${card.title}-${index}`} className="industrial-card p-6">
-                  <h2 className="text-2xl font-semibold text-white">
-                    {card.title}
-                  </h2>
-                  <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
-                    {card.description}
-                  </p>
+            <div className="mt-12 border-y border-white/10">
+              {productFamilies.map((family, index) => (
+                <article
+                  key={family.title}
+                  className="grid gap-7 border-b border-white/10 py-9 last:border-b-0 lg:grid-cols-[minmax(0,0.78fr)_minmax(0,1.22fr)] lg:items-center lg:gap-12"
+                >
+                  <Link
+                    href={family.href}
+                    aria-label={`View ${family.title}`}
+                    className="group relative block min-w-0 overflow-hidden border border-white/10 bg-[#0b0b0b]"
+                  >
+                    <div className="relative aspect-[16/10] overflow-hidden">
+                      <Image
+                        src={family.image}
+                        alt={family.alt}
+                        fill
+                        sizes="(min-width: 1024px) 34vw, 100vw"
+                        className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent" />
+                    </div>
+                  </Link>
+
+                  <div className="min-w-0">
+                    <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#d8b671]">
+                      Product family {String(index + 1).padStart(2, "0")}
+                    </p>
+                    <h2 className="mt-4 text-3xl font-semibold text-white sm:text-4xl">
+                      <Link
+                        href={family.href}
+                        className="transition-colors hover:text-[#efcf8d]"
+                      >
+                        {family.title}
+                      </Link>
+                    </h2>
+                    <p className="mt-4 max-w-2xl text-base leading-8 text-[#c9c1b2]">
+                      {family.description}
+                    </p>
+                    <ul className="mt-6 grid gap-3 text-sm leading-7 text-[#f0e8d9] sm:grid-cols-2">
+                      {family.directions.map((direction) => (
+                        <li key={direction} className="flex gap-3">
+                          <span className="mt-3 h-1.5 w-1.5 shrink-0 bg-[#d5ae67]" />
+                          <span>{direction}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <Link
+                      href={family.href}
+                      className="mt-7 inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#efcf8d] transition-colors hover:text-white"
+                    >
+                      View Product Direction
+                      <span aria-hidden>→</span>
+                    </Link>
+                  </div>
                 </article>
               ))}
             </div>
           </div>
         </section>
 
-        <section
-          id="product-categories"
-          className="border-b border-white/8 bg-[linear-gradient(180deg,rgba(14,14,14,0.98)_0%,rgba(7,7,7,1)_100%)] py-16 lg:py-24"
-        >
+        <section className="border-b border-white/8 bg-[#0a0a0a] py-14 lg:py-18">
           <div className="container-shell">
-            <SectionHeading
-              eyebrow="Core OEM product categories"
-              title="Custom OEM Aluminum Die Casting"
-              description="Four representative categories help buyers identify a practical project fit. Final feasibility is reviewed from drawings, samples, dimensions, quantity, application, and finishing requirements."
-            />
-
-            <div className="mt-12 grid gap-6 md:grid-cols-2">
-              {productCategories.map((category, index) => (
-                <article
-                  key={`${category.title}-${index}`}
-                  className="industrial-card group overflow-hidden"
-                >
-                  {category.href ? (
-                    <Link
-                      href={category.href}
-                      aria-label={category.title}
-                      className="block"
-                    >
-                      <div className="relative aspect-[4/3] overflow-hidden">
-                        <Image
-                          src={category.image}
-                          alt={category.alt}
-                          fill
-                          sizes="(min-width: 1280px) 24rem, (min-width: 768px) 50vw, 100vw"
-                          className="object-cover transition-transform duration-700 group-hover:scale-105"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
-                        <div className="absolute left-4 top-4 rounded-full border border-white/10 bg-black/60 px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#efcf8d]">
-                          Category {String(index + 1).padStart(2, "0")}
-                        </div>
-                      </div>
-                    </Link>
-                  ) : (
-                    <div className="relative aspect-[4/3] overflow-hidden">
-                      <Image
-                        src={category.image}
-                        alt={category.alt}
-                        fill
-                        sizes="(min-width: 1280px) 24rem, (min-width: 768px) 50vw, 100vw"
-                        className="object-cover transition-transform duration-700 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
-                      <div className="absolute left-4 top-4 rounded-full border border-white/10 bg-black/60 px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#efcf8d]">
-                        Category {String(index + 1).padStart(2, "0")}
-                      </div>
-                    </div>
-                  )}
-                  <div className="p-6">
-                    <h2 className="text-2xl font-semibold text-white">
-                      {category.href ? (
-                        <Link
-                          href={category.href}
-                          className="transition-colors hover:text-[#efcf8d]"
-                        >
-                          {category.title}
-                        </Link>
-                      ) : (
-                        category.title
-                      )}
-                    </h2>
-                    <p className="mt-4 text-sm leading-7 text-[#c8c0b3]">
-                      {category.description}
-                    </p>
-                    <p className="mt-5 text-xs font-semibold uppercase tracking-[0.22em] text-[#efcf8d]">
-                      Key applications
-                    </p>
-                    <ul className="mt-4 space-y-3 text-sm leading-7 text-[#f3ecdd]">
-                      {category.applications.map((application) => (
-                        <li key={application} className="flex gap-3">
-                          <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-[#d5ae67]" />
-                          <span>{application}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                      {category.href ? (
-                        <Link
-                          href={category.href}
-                          className="rounded-full border border-[#d5ae67]/45 px-4 py-2 text-center text-xs font-semibold uppercase tracking-[0.18em] text-[#efcf8d] transition-colors hover:bg-[#d5ae67] hover:text-black"
-                        >
-                          View Details
-                        </Link>
-                      ) : null}
-                      <a
-                        href={contactDetails.whatsappHref}
-                        className="rounded-full bg-[#d5ae67] px-4 py-2 text-center text-xs font-semibold uppercase tracking-[0.18em] text-black transition-transform duration-200 hover:-translate-y-0.5"
-                      >
-                        WhatsApp Inquiry
-                      </a>
-                    </div>
-                  </div>
-                </article>
-              ))}
+            <div className="gold-panel grid gap-8 p-7 sm:p-9 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center lg:p-11">
+              <div className="max-w-3xl">
+                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#6d5121]">
+                  Other custom OEM project entry
+                </p>
+                <h2 className="mt-4 text-3xl font-semibold leading-tight text-[#151006] sm:text-4xl">
+                  Do not see your part type here?
+                </h2>
+                <p className="mt-4 text-base leading-8 text-[#332817]">
+                  Send the drawing, sample photo, or basic part requirements.
+                  HSX will review whether the project is suitable for aluminum
+                  die casting instead of forcing it into an unrelated product
+                  category.
+                </p>
+              </div>
+              <Link
+                href="/b2b-oem-project-review"
+                className="rounded-full bg-[#120f08] px-7 py-4 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#f8f2e6] transition-transform duration-200 hover:-translate-y-0.5"
+              >
+                Send Your Drawing
+              </Link>
             </div>
           </div>
         </section>
 
         <section className="border-b border-white/8 py-16 lg:py-24">
           <div className="container-shell">
-            <details className="industrial-card group p-6 sm:p-8">
-              <summary className="cursor-pointer list-none text-xl font-semibold text-white sm:text-2xl">
-                What kinds of aluminum die cast parts can HSX manufacture?
-              </summary>
-              <div className="mt-6 border-t border-white/10 pt-6">
-                <p className="max-w-4xl text-sm leading-7 text-[#cac1b2]">
-                  HSX manufactures custom aluminum die cast parts based on
-                  customer drawings, samples, dimensions, quantities, and
-                  application requirements.
-                </p>
-                <p className="mt-4 text-sm font-semibold text-white">
-                  Typical project types include:
-                </p>
-                <ul className="mt-5 grid gap-3 text-sm leading-7 text-[#f3ecdd] sm:grid-cols-2">
-                  {productScopeItems.map((item) => (
-                    <li key={item} className="flex gap-3">
-                      <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-[#d5ae67]" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="mt-6 max-w-4xl text-sm leading-7 text-[#cac1b2]">
-                  For a new project, customers can send 3D drawings, 2D
-                  drawings, sample photos, or basic dimensions for project
-                  review.
-                </p>
-              </div>
-            </details>
-          </div>
-        </section>
-
-        <section id="oem-support" className="border-b border-white/8 py-16 lg:py-24">
-          <div className="container-shell grid gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-center">
-            <div className="industrial-card gold-frame overflow-hidden p-3">
-              <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
-                <Image
-                  src={workshopHorizontal}
-                  alt="HSX aluminum die casting workshop for small-to-medium OEM projects"
-                  fill
-                  sizes="(min-width: 1280px) 36rem, (min-width: 1024px) 42vw, 100vw"
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
-                <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/55 p-5 backdrop-blur">
-                  <p className="section-kicker">OEM project support</p>
-                  <p className="mt-3 text-lg font-semibold text-white">
-                    Drawings, samples, mold development, production, and
-                    finishing arranged as one coordinated project flow.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <SectionHeading
-                eyebrow="OEM project support"
-                title="Project development from buyer input to finished parts"
-                description="HSX accepts OEM aluminum die casting parts manufacturing based on drawings, samples, or custom project requirements. The workflow is organized to move compact aluminum projects through review, mold development, production, machining, finishing, and shipment with clear buyer communication."
-              />
-
-              <div className="mt-8 grid gap-5">
-                {supportStages.map((stage, index) => (
-                  <article key={`${stage.title}-${index}`} className="industrial-card p-6">
-                    <h2 className="text-xl font-semibold text-white">
-                      {stage.title}
-                    </h2>
-                    <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
-                      {stage.description}
-                    </p>
-                  </article>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section
-          id="surface-finishing"
-          className="border-b border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(199,162,91,0.11),transparent_28%),linear-gradient(180deg,#0c0c0c_0%,#070707_100%)] py-16 lg:py-24"
-        >
-          <div className="container-shell">
             <SectionHeading
-              eyebrow="Surface finishing"
-              title="Finishing options for appearance and protection"
-              description="Surface treatment is coordinated around the end-market appearance, corrosion resistance, and visual quality required by each aluminum part or lighting program."
+              eyebrow="Representative real parts"
+              title="Selected parts manufactured by HSX"
+              description="Selected aluminum die-cast parts manufactured by HSX across different OEM projects."
             />
-            <p className="mt-6 max-w-3xl text-sm leading-7 text-[#cfc5b5]">
-              For appearance-sensitive RFQs, buyers can also review{" "}
-              <Link
-                href="/anodizable-aluminum-die-casting-parts"
-                className="font-semibold text-[#efcf8d] underline-offset-4 transition-colors hover:text-white hover:underline"
-              >
-                aluminum die casting parts for anodizing
-              </Link>{" "}
-              before confirming surface finishing expectations.
-            </p>
 
-            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-              {surfaceFinishes.map((finish, index) => (
-                <article key={`${finish.title}-${index}`} className="industrial-card p-6">
-                  <h2 className="text-2xl font-semibold text-white">
-                    {finish.title}
-                  </h2>
-                  <p className="mt-4 text-sm leading-7 text-[#cac1b2]">
-                    {finish.description}
-                  </p>
+            <div className="mt-12 grid gap-px overflow-hidden border border-white/10 bg-white/10 sm:grid-cols-2">
+              {realParts.map((part) => (
+                <article key={part.title} className="min-w-0 bg-[#080808]">
+                  <div
+                    className="relative overflow-hidden"
+                    style={{ aspectRatio: "16 / 11" }}
+                  >
+                    <Image
+                      src={part.image}
+                      alt={part.alt}
+                      fill
+                      sizes="(min-width: 1024px) 40rem, (min-width: 640px) 50vw, 100vw"
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent" />
+                  </div>
+                  <div className="border-t border-white/10 p-6 sm:p-7">
+                    <h2 className="text-xl font-semibold text-white">
+                      {part.title}
+                    </h2>
+                    <p className="mt-3 text-sm leading-7 text-[#c9c1b2]">
+                      {part.description}
+                    </p>
+                  </div>
                 </article>
               ))}
             </div>
           </div>
         </section>
 
-        <section id="rfq" className="py-16 lg:py-24">
-          <div className="container-shell">
-            <div className="gold-panel rounded-[2rem] p-8 sm:p-10 lg:p-12">
-              <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:items-start">
-                <div>
-                  <p className="section-kicker">RFQ contact</p>
-                  <h2 className="section-heading mt-4 text-3xl text-[#120f08] sm:text-4xl">
-                    Send us your drawing or sample for project review.
-                  </h2>
-                  <p className="mt-5 max-w-2xl text-base leading-8 text-[#2d2417] sm:text-lg">
-                    Share the product category, drawing set, reference sample,
-                    target finish, quantity plan, and packaging requirements.
-                    HSX reviews OEM small-to-medium aluminum die casting parts,
-                    custom hardware parts, die cast aluminum LED light housings,
-                    decorative brake caliper appearance cover inquiries, and
-                    selected LED lighting products for export-focused buyers.
-                  </p>
+        <section className="border-b border-white/8 bg-[radial-gradient(circle_at_top_left,rgba(199,162,91,0.11),transparent_30%),#080808] py-16 lg:py-24">
+          <div className="container-shell grid gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-start">
+            <SectionHeading
+              eyebrow="Manufacturing fit summary"
+              title="When a product direction is ready for project review"
+              description="The product family is only the starting point. Further review is appropriate when the buyer has a drawing, sample, or clear part requirements for an aluminum die-cast component."
+            />
 
-                  <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-                    <a
-                      href={contactDetails.whatsappHref}
-                      className="rounded-full bg-[#120f08] px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#f8f2e6] transition-transform duration-200 hover:-translate-y-0.5"
+            <div className="border-y border-white/10 py-7">
+              <ul className="space-y-5 text-base leading-8 text-[#e8dfcf]">
+                <li className="flex gap-4">
+                  <span className="mt-3 h-2 w-2 shrink-0 bg-[#d5ae67]" />
+                  <span>A drawing, sample, or clear part requirement is available.</span>
+                </li>
+                <li className="flex gap-4">
+                  <span className="mt-3 h-2 w-2 shrink-0 bg-[#d5ae67]" />
+                  <span>The project is for an aluminum die-cast part.</span>
+                </li>
+                <li className="flex gap-4">
+                  <span className="mt-3 h-2 w-2 shrink-0 bg-[#d5ae67]" />
+                  <span>
+                    Structure, quantity, required operations, and surface
+                    requirements can be reviewed before quotation.
+                  </span>
+                </li>
+              </ul>
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+                <Link href="/capabilities" className="outline-button text-center">
+                  View Manufacturing Capabilities
+                </Link>
+                <Link
+                  href="/products/oem-aluminum-die-casting-parts"
+                  className="outline-button text-center"
+                >
+                  Check OEM Project Fit
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="border-b border-white/8 py-16 lg:py-24">
+          <div className="container-shell">
+            <SectionHeading
+              eyebrow="Product-direction FAQ"
+              title="Questions about choosing a product direction"
+              description="These answers help buyers select the nearest product family before moving to manufacturing or project review details."
+            />
+
+            <div className="mt-10 divide-y divide-white/10 border-y border-white/10">
+              {productFaqs.map((faq) => (
+                <details key={faq.question} className="group py-2">
+                  <summary className="flex cursor-pointer list-none items-start justify-between gap-6 py-5 text-lg font-semibold leading-7 text-white">
+                    <span>{faq.question}</span>
+                    <span
+                      aria-hidden
+                      className="mt-1 text-[#d5ae67] transition-transform group-open:rotate-45"
                     >
-                      WhatsApp RFQ
-                    </a>
-                    <a
-                      href={`mailto:${contactDetails.email}?subject=RFQ%20for%20HSX%20Products%20and%20OEM%20Project&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20would%20like%20to%20request%20a%20quotation.%0A%0AProduct%20category%3A%0AQuantity%3A%0AMaterial%20/%20finish%3A%0ADrawing%20or%20sample%20available%3A%0APackaging%20requirements%3A%0A%0APlease%20contact%20me%20with%20pricing%20and%20production%20details.%0A%0ABest%20regards%2C`}
-                      className="rounded-full border border-[#2b2216]/20 px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#22190d] transition-colors hover:bg-[#120f08] hover:text-[#f8f2e6]"
+                      +
+                    </span>
+                  </summary>
+                  <p className="max-w-4xl pb-6 text-sm leading-7 text-[#c9c1b2] sm:text-base sm:leading-8">
+                    {faq.answer}
+                  </p>
+                </details>
+              ))}
+            </div>
+
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+              <Link href="/capabilities" className="outline-button text-center">
+                Manufacturing Details
+              </Link>
+              <Link
+                href="/b2b-oem-project-review"
+                className="outline-button text-center"
+              >
+                Project Review Details
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="border-b border-white/8 bg-[#060606] py-14 lg:py-18">
+          <div className="container-shell">
+            <div className="grid gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-start">
+              <div className="max-w-2xl">
+                <p className="section-kicker">Additional product references</p>
+                <h2 className="section-heading mt-4 text-3xl text-white sm:text-4xl">
+                  Additional Products and Real Aluminum Die Casting Applications
+                </h2>
+                <p className="mt-5 text-base leading-8 text-[#c9c1b2]">
+                  Browse selected lighting-related applications and decorative
+                  appearance products connected to HSX aluminum die-casting
+                  experience.
+                </p>
+              </div>
+
+              <div className="border-y border-white/10">
+                <div className="py-6">
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#d8b671]">
+                    Lighting-related applications
+                  </p>
+                  <p className="mt-3 text-sm leading-7 text-[#bfb6a8]">
+                    Reference pages related to aluminum housings and die-cast
+                    structures used in lighting applications.
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-x-6 gap-y-3 text-sm text-[#f0e6d4]">
+                    <Link href="/products/led-work-lights" className="hover:text-[#efcf8d]">
+                      LED Work Lights
+                    </Link>
+                    <Link
+                      href="/products/automotive-led-lights"
+                      className="hover:text-[#efcf8d]"
                     >
-                      Email Project Details
-                    </a>
-                    <a
-                      href="#product-categories"
-                      className="rounded-full border border-[#2b2216]/20 px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#22190d] transition-colors hover:bg-[#120f08] hover:text-[#f8f2e6]"
+                      Automotive LED Lights
+                    </Link>
+                    <Link
+                      href="/products/motorcycle-led-lights"
+                      className="hover:text-[#efcf8d]"
                     >
-                      Review Products
-                    </a>
+                      Motorcycle LED Lights
+                    </Link>
                   </div>
                 </div>
 
-                <div className="rounded-[1.5rem] border border-[#2b2216]/15 bg-white/55 p-6 backdrop-blur">
-                  <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#5f4a28]">
-                    Direct contact
+                <div className="border-t border-white/10 py-6">
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#d8b671]">
+                    Decorative appearance application
                   </p>
-                  <div className="mt-5 space-y-4 text-sm leading-7 text-[#2c2316]">
-                    <p>
-                      <span className="font-semibold">Email: </span>
-                      <a
-                        href={`mailto:${contactDetails.email}?subject=Inquiry%20for%20HSX%20Diecasting%20OEM%20Products&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20interested%20in%20your%20aluminum%20die%20casting%20parts%2C%20LED%20work%20lights%2C%20or%20OEM%20project%20support.%0A%0APlease%20contact%20me%20with%20quotation%20details.%0A%0ABest%20regards%2C`}
-                        className="transition-colors hover:text-[#120f08]"
-                      >
-                        {contactDetails.email}
-                      </a>
-                    </p>
-                    <p>
-                      <span className="font-semibold">WhatsApp / Phone: </span>
-                      <a
-                        href={contactDetails.whatsappHref}
-                        className="transition-colors hover:text-[#120f08]"
-                      >
-                        {contactDetails.phone}
-                      </a>
-                    </p>
-                    <p>
-                      <span className="font-semibold">WeChat: </span>
-                      {contactDetails.wechat}
-                    </p>
-                    <p>
-                      <span className="font-semibold">Address: </span>
-                      {contactDetails.address}
-                    </p>
-                  </div>
-
-                  <div className="mt-8 border-t border-[#2b2216]/15 pt-6">
-                    <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#5f4a28]">
-                      Recommended RFQ details
-                    </p>
-                    <ul className="mt-5 space-y-4 text-sm leading-7 text-[#2c2316]">
-                      {rfqChecklist.map((item) => (
-                        <li key={item} className="flex gap-3">
-                          <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#8d6a2d]" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                  <Link
+                    href="/products/decorative-brake-caliper-covers"
+                    className="mt-3 inline-block text-base font-semibold text-white transition-colors hover:text-[#efcf8d]"
+                  >
+                    Decorative Brake Caliper Covers
+                  </Link>
+                  <p className="mt-3 text-sm leading-7 text-[#bfb6a8]">
+                    Decorative, appearance-focused, non-load-bearing, and
+                    non-structural covers only. They are not functional braking
+                    components.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-      
-        <section className="border-t border-white/10 bg-black/20 py-12">
+
+        <section className="py-16 lg:py-24">
           <div className="container-shell">
-            <details className="rounded-3xl border border-white/10 bg-white/[0.03] p-6">
-              <summary className="cursor-pointer list-none text-lg font-semibold text-white">
-                Additional focused product pages
-              </summary>
-              <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 border-t border-white/10 pt-5 text-sm text-[#ddd2ba]">
-                <Link href="/products/automotive-led-lights" className="hover:text-white">
-                  Automotive LED Lights
-                </Link>
-                <Link href="/products/motorcycle-led-lights" className="hover:text-white">
-                  Motorcycle LED Lights
-                </Link>
-                <Link href="/products/led-work-lights" className="hover:text-white">
-                  LED Work Lights
-                </Link>
-                <Link
-                  href="/products/decorative-brake-caliper-covers"
-                  className="hover:text-white"
-                >
-                  Decorative Brake Caliper Appearance Covers
-                </Link>
+            <div className="gold-panel grid gap-8 p-8 sm:p-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center lg:p-12">
+              <div className="max-w-3xl">
+                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#6d5121]">
+                  Start with the part
+                </p>
+                <h2 className="mt-4 text-3xl font-semibold leading-tight text-[#151006] sm:text-4xl">
+                  Send Your Drawing for OEM Aluminum Die Casting Review
+                </h2>
+                <p className="mt-4 text-base leading-8 text-[#332817]">
+                  Share the drawing, 3D file, sample photo, or clear part
+                  requirements so HSX can review the nearest product direction
+                  and project fit.
+                </p>
+                <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[#3a2c18]">
+                  <a href={contactDetails.emailHref} className="hover:underline">
+                    {contactDetails.email}
+                  </a>
+                  <a href={contactDetails.whatsappHref} className="hover:underline">
+                    WhatsApp {contactDetails.phone}
+                  </a>
+                </div>
               </div>
-            </details>
+              <Link
+                href="/b2b-oem-project-review"
+                className="rounded-full bg-[#120f08] px-7 py-4 text-center text-sm font-semibold uppercase tracking-[0.18em] text-[#f8f2e6] transition-transform duration-200 hover:-translate-y-0.5"
+              >
+                Send Your Drawing
+              </Link>
+            </div>
           </div>
         </section>
-
       </main>
 
       <SiteFooter />
