@@ -525,9 +525,14 @@ export default function OemAluminumDieCastingPartsPage() {
                 <p className="text-xs font-semibold uppercase tracking-[0.26em] text-[#d8b671]">
                   In-house operations
                 </p>
-                <div className="mt-6 flex flex-wrap gap-x-7 gap-y-4 text-base text-[#f0e8da]">
+                <div className="mt-6 grid gap-x-6 gap-y-3 text-base text-[#f0e8da] sm:grid-cols-3">
                   {inHouseOperations.map((operation) => (
-                    <span key={operation}>{operation}</span>
+                    <span
+                      key={operation}
+                      className="border-l-2 border-[#d5ae67]/35 pl-5 leading-6"
+                    >
+                      {operation}
+                    </span>
                   ))}
                 </div>
               </div>
