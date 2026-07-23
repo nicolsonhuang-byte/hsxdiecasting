@@ -356,6 +356,14 @@ export default function Home() {
                 ))}
               </div>
             </div>
+
+            <Link
+              href="/projects"
+              className="mt-8 inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#efcf8d] transition-colors hover:text-white"
+            >
+              Explore Projects &amp; Real Parts
+              <span aria-hidden>→</span>
+            </Link>
           </div>
         </section>
 
