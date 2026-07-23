@@ -2,13 +2,15 @@
 
 import { usePathname } from "next/navigation";
 
-const BLOG_WITH_OWN_PROJECT_REVIEW =
-  "/blog/oem-automotive-led-light-manufacturing-process";
+const BLOGS_WITH_OWN_PROJECT_REVIEW = [
+  "/blog/oem-automotive-led-light-manufacturing-process",
+  "/blog/how-to-customize-led-work-lights",
+];
 
 export function BlogProjectReviewCta() {
   const pathname = usePathname();
 
-  if (pathname === BLOG_WITH_OWN_PROJECT_REVIEW) {
+  if (BLOGS_WITH_OWN_PROJECT_REVIEW.includes(pathname)) {
     return null;
   }
 
