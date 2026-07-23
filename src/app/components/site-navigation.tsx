@@ -1,12 +1,15 @@
 import Link from "next/link";
 
 const primaryLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
   { href: "/products", label: "Products" },
+  { href: "/capabilities", label: "Capabilities" },
+  { href: "/projects", label: "Projects" },
+  { href: "/about", label: "About" },
   { href: "/b2b-oem-project-review", label: "Project Review" },
   { href: "/contact", label: "Contact" },
 ];
+
+const footerLinks = [{ href: "/", label: "Home" }, ...primaryLinks];
 
 const emailHref =
   "mailto:nicolson@hsxdiecasting.com?subject=OEM%20Aluminum%20Die%20Casting%20Project%20Review";
@@ -34,7 +37,7 @@ export function SiteHeader() {
 
         <nav
           aria-label="Primary"
-          className="flex min-w-0 flex-wrap gap-x-5 gap-y-3 text-sm text-[#ddd2ba] lg:justify-end"
+          className="grid min-w-0 grid-cols-2 gap-x-5 gap-y-3 text-sm text-[#ddd2ba] sm:grid-cols-3 xl:flex xl:shrink-0 xl:justify-end"
         >
           {primaryLinks.map((link) => (
             <Link
@@ -56,7 +59,7 @@ export function SiteFooter() {
 
   return (
     <footer className="border-t border-white/8 bg-black/80 py-10">
-      <div className="container-shell grid min-w-0 gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.75fr)] lg:items-start">
+      <div className="container-shell grid min-w-0 gap-8 lg:grid-cols-2 lg:items-start">
         <div className="min-w-0">
           <p className="section-kicker">HSX DIECASTING</p>
           <p className="section-heading mt-3 text-2xl text-white">
@@ -70,9 +73,9 @@ export function SiteFooter() {
           </p>
           <nav
             aria-label="Footer"
-            className="mt-6 flex flex-wrap gap-x-5 gap-y-3 text-sm text-[#ddd2ba]"
+            className="mt-6 grid grid-cols-2 gap-x-5 gap-y-3 text-sm text-[#ddd2ba] sm:grid-cols-3 xl:flex"
           >
-            {primaryLinks.map((link) => (
+            {footerLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
