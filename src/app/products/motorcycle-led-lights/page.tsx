@@ -1,240 +1,145 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
 import { SiteFooter, SiteHeader } from "../../components/site-navigation";
+import motorcycleLedLight from "../../../../public/images/motorcycle-led-auxiliary-light.png";
+import batchDieCastParts from "../../../../public/images/hsx-factory/batch-die-cast-parts-before-trimming.jpg";
+import sprayPainting from "../../../../public/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg";
+import workshopHorizontal from "../../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
 
-export const metadata = {
-  title: "Motorcycle LED Lights Supplier | OEM Motorcycle Lighting",
-  description:
-    "HSX DIECASTING supplies OEM motorcycle LED lights, auxiliary lights, compact LED work lights, aluminum lamp housings, brackets, covers, and lighting accessories.",
+const pageTitle =
+  "Motorcycle LED Light Aluminum Die-Cast Housings | HSX DIECASTING";
+const pageDescription =
+  "Custom aluminum die-cast housings and related structural parts for motorcycle LED lighting applications, based on drawings, samples, and project requirements.";
+
+export const metadata: Metadata = {
+  title: pageTitle,
+  description: pageDescription,
   alternates: {
     canonical: "/products/motorcycle-led-lights",
   },
+  keywords: [
+    "motorcycle LED light aluminum die-cast housing",
+    "motorcycle lamp body die casting",
+    "aluminum die-cast lighting housing",
+    "motorcycle lighting structural die-cast parts",
+  ],
+  openGraph: {
+    title: pageTitle,
+    description: pageDescription,
+    url: "/products/motorcycle-led-lights",
+    images: [
+      {
+        url: "/images/hsx-factory/batch-die-cast-parts-before-trimming.jpg",
+        alt: "Batch aluminum die-cast parts at HSX",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: [
+      "/images/hsx-factory/batch-die-cast-parts-before-trimming.jpg",
+    ],
+  },
 };
 
-const productJsonLd = {
+const serviceJsonLd = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "OEM Motorcycle LED Lighting Manufacturing Service",
+  name: "Motorcycle LED Light Housing Die Casting Service",
   url: "https://www.hsxdiecasting.com/products/motorcycle-led-lights",
-  image: ["https://www.hsxdiecasting.com/images/motorcycle-led-auxiliary-light.png"],
+  image: [
+    "https://www.hsxdiecasting.com/images/hsx-factory/batch-die-cast-parts-before-trimming.jpg",
+    "https://www.hsxdiecasting.com/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg",
+  ],
   description:
-    "B2B OEM manufacturing service for motorcycle LED lights, auxiliary lights, compact LED work lights, aluminum lamp housings, brackets, covers, and lighting accessories for global buyers.",
+    "Custom aluminum die-cast housings and related structural parts for motorcycle LED lighting applications, based on drawings, samples, and project requirements.",
   provider: {
     "@type": "Organization",
     name: "Foshan Huashunxiang Hardware Products Factory",
     url: "https://www.hsxdiecasting.com",
   },
-  serviceType: "OEM motorcycle LED lighting manufacturing",
+  serviceType:
+    "Aluminum die-cast housing and structural part manufacturing for motorcycle LED lighting applications",
   areaServed: "Global B2B Markets",
-  category: "Motorcycle LED lighting manufacturing",
+  category: "Motorcycle lighting aluminum die casting",
+  additionalProperty: [
+    {
+      "@type": "PropertyValue",
+      name: "Supply Scope",
+      value:
+        "Aluminum die-cast housing and related die-cast mounting or structural parts",
+    },
+    {
+      "@type": "PropertyValue",
+      name: "In-house Operations",
+      value:
+        "Aluminum die casting, gate removal, deburring, drilling, tapping, polishing, powder coating, spray painting, QC, and packing",
+    },
+    {
+      "@type": "PropertyValue",
+      name: "Partner-supported Resources",
+      value: "CNC machining, anodizing, and electroplating",
+    },
+  ],
 };
 
-const contactDetails = {
-  email: "nicolson@hsxdiecasting.com",
-  phone: "+86 176 6615 5283",
-  whatsappHref:
-    "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20am%20interested%20in%20your%20motorcycle%20LED%20lights%2C%20aluminum%20lamp%20housings%2C%20or%20OEM%20motorcycle%20lighting%20project%20support.%20Please%20contact%20me%20with%20quotation%20details.",
-  wechat: "NicolsonHwang",
-  address:
-    "Huayue Road, National Eco-Industrial Park, Danzao Town, Nanhai District, Foshan, Guangdong, China",
-};
-
-const mailtoMotorcycleRfq = `mailto:${contactDetails.email}?subject=RFQ%20for%20Motorcycle%20LED%20Lights&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20would%20like%20to%20request%20a%20quotation%20for%20motorcycle%20LED%20lights%20or%20motorcycle%20lighting%20parts.%0A%0AProduct%20type%3A%0AQuantity%3A%0AHousing%20size%3A%0AMounting%20requirement%3A%0ALighting%20requirement%3A%0AFinish%20/%20packaging%20request%3A%0A%0APlease%20contact%20me%20with%20pricing%20and%20production%20details.%0A%0ABest%20regards%2C`;
-
-type InfoCard = {
-  title: string;
-  description: string;
-};
-
-type ProgramCard = {
-  tag: string;
-  title: string;
-  description: string;
-  image: string;
-  alt: string;
-  highlights: string[];
-};
-
-const heroStats: InfoCard[] = [
+const applicationParts = [
   {
-    title: "Motorcycle Focus",
+    number: "01",
+    title: "Aluminum Die-Cast Housing",
     description:
-      "Auxiliary motorcycle lights, compact LED work lights, aluminum lamp housings, brackets, covers, and lighting accessories.",
+      "The main enclosure reviewed from the buyer's drawing, sample, dimensions, and required supply stage.",
   },
   {
-    title: "OEM Input",
+    number: "02",
+    title: "Lamp Body",
     description:
-      "Buyer photos, drawings, samples, size requirements, finish requests, logo needs, and packaging plans accepted.",
+      "A die-cast aluminum body with project-specific external form, internal space, and attachment features.",
   },
   {
-    title: "Factory Support",
+    number: "03",
+    title: "Heat-Dissipation Structure",
     description:
-      "In-house aluminum die casting, drilling, tapping, polishing, coating, painting, inspection, and export packing, with partner-supported anodizing for selected suitable parts.",
+      "Housing geometry with ribs or other heat-dissipation features considered as part of the die-cast part design.",
+  },
+  {
+    number: "04",
+    title: "Mounting and Structural Parts",
+    description:
+      "Related die-cast mounting or structural parts evaluated from the actual project requirements.",
   },
 ];
 
-const productTypes: InfoCard[] = [
-  {
-    title: "Motorcycle Auxiliary Lights",
-    description:
-      "Compact auxiliary LED lights for motorcycle accessory programs, aftermarket supply, and private-label distribution channels.",
-  },
-  {
-    title: "Motorcycle LED Work Lights",
-    description:
-      "Small LED light products used for utility, repair, riding accessory, and branded lighting product programs.",
-  },
-  {
-    title: "Aluminum Lamp Bodies",
-    description:
-      "Die-cast aluminum lamp bodies and compact housings shaped around heat dissipation, mounting, and appearance needs.",
-  },
-  {
-    title: "Mounting Brackets",
-    description:
-      "Small aluminum brackets and support pieces with drilling, tapping, and mounting feature support.",
-  },
-  {
-    title: "Rear Covers and End Caps",
-    description:
-      "Compact covers, caps, closure parts, and shell components for motorcycle lighting assemblies.",
-  },
-  {
-    title: "Custom Motorcycle Lighting Parts",
-    description:
-      "Buyer-defined motorcycle lighting parts developed from drawings, samples, product photos, or OEM project requirements.",
-  },
+const manufacturingConsiderations = [
+  "Part structure",
+  "Heat-dissipation features",
+  "Mounting features",
+  "Holes and threads",
+  "Surface requirements",
+  "Quantity and project requirements",
 ];
 
-const productPrograms: ProgramCard[] = [
-  {
-    tag: "Motorcycle",
-    title: "Motorcycle Auxiliary Light Programs",
-    description:
-      "Compact motorcycle auxiliary lights for aftermarket brands, importers, repair channels, and accessory distributors.",
-    image: "/images/motorcycle-led-auxiliary-light.png",
-    alt: "Motorcycle LED auxiliary light for OEM motorcycle lighting programs",
-    highlights: [
-      "Compact motorcycle light format",
-      "Appearance-driven finishing",
-      "OEM photos or samples accepted",
-    ],
-  },
-  {
-    tag: "Work Lights",
-    title: "Compact LED Work Light Programs",
-    description:
-      "Small LED work light formats for motorcycle accessory lines, utility channels, and private-label lighting projects.",
-    image: "/images/led-work-light.png",
-    alt: "Compact LED work light suitable for motorcycle and utility lighting programs",
-    highlights: [
-      "Small lighting product scope",
-      "Aluminum housing support",
-      "Wholesale and private-label fit",
-    ],
-  },
-  {
-    tag: "Housings",
-    title: "Aluminum Housing Programs",
-    description:
-      "Die-cast aluminum lamp housings, rear covers, brackets, caps, and compact lighting-related parts matched to practical manufacturing scope.",
-    image: "/images/aluminum-light-housing-heat-sink.png",
-    alt: "Aluminum light housings and heat-sink bodies for motorcycle lighting projects",
-    highlights: [
-      "Small-to-medium aluminum parts",
-      "Drilling and tapping support",
-      "Surface finishing coordination",
-    ],
-  },
+const inHouseOperations = [
+  "Aluminum Die Casting",
+  "Gate Removal",
+  "Deburring",
+  "Drilling",
+  "Tapping",
+  "Polishing",
+  "Powder Coating",
+  "Spray Painting",
+  "QC",
+  "Packing",
 ];
 
-const processSteps: InfoCard[] = [
-  {
-    title: "Product Photo and Sample Review",
-    description:
-      "Buyer photos, samples, target size, lighting expectations, mounting style, and packaging plans are reviewed before quotation.",
-  },
-  {
-    title: "Housing and Part Feasibility",
-    description:
-      "Compact aluminum lamp housings, brackets, covers, and mounting features are reviewed for manufacturing fit based on part structure, dimensions, and project requirements.",
-  },
-  {
-    title: "Aluminum Die Casting",
-    description:
-      "Motorcycle lighting housings and lighting-related aluminum parts are produced within small-to-medium aluminum part capacity.",
-  },
-  {
-    title: "Drilling and Tapping",
-    description:
-      "Mounting holes, threaded features, bracket points, and secondary processing details are supported by multi-axis drilling and tapping equipment.",
-  },
-  {
-    title: "Surface Finishing",
-    description:
-      "In-house powder coating, spray painting, polishing, and surface preparation are coordinated with partner-supported anodizing around appearance, corrosion resistance, and brand presentation.",
-  },
-  {
-    title: "Inspection and Export Packing",
-    description:
-      "Appearance, basic dimensions, finish requirements, packing layout, and export delivery needs are checked before shipment.",
-  },
-];
-
-const finishes: InfoCard[] = [
-  {
-    title: "Powder Coating",
-    description:
-      "Durable exterior coverage for motorcycle LED light housings, brackets, covers, and compact aluminum lamp bodies.",
-  },
-  {
-    title: "Spray Painting",
-    description:
-      "Used when the motorcycle lighting product requires color matching, branded visual presentation, or model-specific appearance.",
-  },
-  {
-    title: "Partner-Supported Anodizing",
-    description:
-      "Anodizing can be coordinated through partner-supported resources for selected suitable aluminum parts when required by the project.",
-  },
-  {
-    title: "Polishing and Surface Preparation",
-    description:
-      "Surface preparation for visible aluminum parts before coating, painting, partner-supported anodizing, or final appearance review.",
-  },
-];
-
-const buyerFit: InfoCard[] = [
-  {
-    title: "Motorcycle Accessory Brands",
-    description:
-      "Motorcycle LED lights, auxiliary lights, and aluminum lamp housing parts for branded accessory product lines.",
-  },
-  {
-    title: "Aftermarket Distributors",
-    description:
-      "Compact motorcycle lighting products, mounting parts, covers, and lighting accessories for wholesale and distribution channels.",
-  },
-  {
-    title: "Repair and Utility Channels",
-    description:
-      "LED auxiliary lighting and compact work light programs for motorcycle repair, utility use, and practical accessory markets.",
-  },
-  {
-    title: "OEM Project Buyers",
-    description:
-      "Custom motorcycle lighting parts developed from buyer drawings, samples, product photos, or OEM project requirements, with direct factory-side communication for sample-stage review, new product development, and small-to-medium batch planning.",
-  },
-];
-
-const rfqRequirements = [
-  "Product photos, drawings, samples, or reference models",
-  "Lighting type such as motorcycle auxiliary light, compact LED work light, or custom motorcycle light",
-  "Housing dimensions, mounting points, bracket requirements, and assembly needs",
-  "Target wattage, voltage, lens, cable, or lighting performance requirements if available",
-  "Surface finish such as powder coating, spray painting, polishing, or partner-supported anodizing",
-  "Estimated order quantity, logo request, packaging plan, and target market",
+const partnerSupported = [
+  "CNC Machining",
+  "Anodizing",
+  "Electroplating",
 ];
 
 function SectionHeading({
@@ -248,529 +153,302 @@ function SectionHeading({
 }) {
   return (
     <div className="max-w-4xl">
-      <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
-        {eyebrow}
-      </p>
-      <h2 className="mt-5 text-3xl font-semibold uppercase tracking-[0.12em] text-white lg:text-5xl">
+      <p className="section-kicker">{eyebrow}</p>
+      <h2 className="section-heading mt-4 text-3xl text-white sm:text-4xl lg:text-5xl">
         {title}
       </h2>
-      <p className="mt-6 max-w-4xl text-base leading-8 text-[#d6cdbc] lg:text-lg">
+      <p className="mt-5 text-base leading-8 text-[#c9c1b2] sm:text-lg">
         {description}
       </p>
     </div>
   );
 }
 
-function DarkCard({ title, description }: InfoCard) {
-  return (
-    <article className="rounded-[1.5rem] border border-[#d7b56d]/20 bg-white/[0.035] p-6 shadow-2xl shadow-black/20">
-      <h3 className="text-2xl font-semibold text-white">{title}</h3>
-      <p className="mt-4 text-sm leading-7 text-[#d7d0c2]">{description}</p>
-    </article>
-  );
-}
-
 export default function MotorcycleLedLightsPage() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="relative overflow-x-clip bg-black text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceJsonLd).replace(/</g, "\\u003c"),
+        }}
       />
-
-      <div className="border-b border-white/10 bg-black">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-3 text-sm text-[#d8ccb2] lg:flex-row lg:items-center lg:justify-between lg:px-12">
-          <div className="flex flex-col gap-3">
-            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-6">
-              <a
-                href={mailtoMotorcycleRfq}
-                className="flex items-center gap-3 transition-colors hover:text-white"
-              >
-                <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
-                  Email
-                </span>
-                <span>{contactDetails.email}</span>
-              </a>
-              <a
-                href={contactDetails.whatsappHref}
-                className="flex items-center gap-3 transition-colors hover:text-white"
-              >
-                <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
-                  WhatsApp
-                </span>
-                <span>{contactDetails.phone}</span>
-              </a>
-              <div className="flex items-center gap-3">
-                <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
-                  WeChat
-                </span>
-                <span>{contactDetails.wechat}</span>
-              </div>
-            </div>
-
-            <a
-              href={contactDetails.whatsappHref}
-              className="flex items-start gap-3 transition-colors hover:text-white"
-            >
-              <span className="rounded-full border border-[#c7a25b]/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#e7ca8e]">
-                Address
-              </span>
-              <span>{contactDetails.address}</span>
-            </a>
-          </div>
-
-          <Link
-            href="/b2b-oem-project-review"
-            className="rounded-full bg-[#f4d27a] px-8 py-4 text-center text-sm font-bold uppercase tracking-[0.2em] text-black transition hover:bg-white"
-          >
-            Request Project Review
-          </Link>
-        </div>
-      </div>
 
       <SiteHeader />
 
-      <main>
-        <section className="border-b border-white/10 bg-[radial-gradient(circle_at_top_right,rgba(215,181,109,0.12),transparent_35%),linear-gradient(180deg,#090909_0%,#030303_100%)] px-6 py-16 lg:px-12 lg:py-24">
-          <div className="mx-auto grid min-w-0 max-w-7xl gap-14 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-center">
-            <div className="min-w-0">
-              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
-                Motorcycle LED lighting
-              </p>
-              <h1 className="mt-7 max-w-5xl text-4xl font-semibold uppercase leading-tight tracking-[0.06em] text-white sm:text-5xl sm:tracking-[0.1em] lg:text-7xl">
-                Motorcycle LED Lights Supplier for Global B2B Buyers
+      <main id="top">
+        <section className="relative overflow-hidden border-b border-white/8 bg-[#050505]">
+          <div className="absolute inset-0">
+            <Image
+              src={workshopHorizontal}
+              alt="HSX aluminum die casting workshop for custom housing projects"
+              fill
+              preload
+              sizes="100vw"
+              className="object-cover object-center opacity-25"
+            />
+            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.98)_0%,rgba(0,0,0,0.86)_56%,rgba(0,0,0,0.5)_100%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_84%_12%,rgba(199,162,91,0.18),transparent_30%)]" />
+          </div>
+
+          <div className="container-shell relative grid gap-12 py-16 lg:grid-cols-[minmax(0,1.05fr)_minmax(18rem,0.55fr)] lg:items-center lg:py-24">
+            <div className="max-w-4xl">
+              <p className="section-kicker">Application overview</p>
+              <h1 className="section-heading mt-6 text-4xl leading-tight text-white sm:text-5xl xl:text-6xl">
+                Motorcycle LED Light Aluminum Die-Cast Housings
               </h1>
-              <p className="mt-8 max-w-4xl text-lg leading-8 text-[#d7d0c2]">
-                HSX DIECASTING supports motorcycle LED lighting programs for
-                importers, distributors, accessory brands, repair channels, and
-                OEM project buyers. The supply scope includes motorcycle
-                auxiliary lights, compact LED work lights, aluminum lamp
-                housings, brackets, covers, and custom lighting accessories.
+              <p className="mt-7 max-w-3xl text-lg leading-8 text-[#e1dacd]">
+                HSX reviews custom aluminum die-cast housings, lamp bodies,
+                heat-dissipation structures, and related die-cast mounting or
+                structural parts for motorcycle LED lighting applications.
               </p>
-              <p className="mt-6 max-w-4xl text-base leading-8 text-[#bfb6a8]">
-                Buyers can start from product photos, samples, drawings, size
-                requirements, mounting style, LED lighting needs, logo requests,
-                finish colors, and packaging plans.
+              <p className="mt-5 max-w-3xl text-base leading-8 text-white [text-shadow:0_1px_12px_rgba(0,0,0,0.95)]">
+                Project fit is evaluated from drawings, samples, part structure,
+                quantity, surface requirements, and the buyer&apos;s required
+                supply stage.
               </p>
 
-              <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-                <a
-                  href={contactDetails.whatsappHref}
-                  className="rounded-full bg-[#f4d27a] px-7 py-4 text-center text-sm font-bold uppercase tracking-[0.18em] text-black transition hover:bg-white"
+              <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+                <Link
+                  href="/b2b-oem-project-review"
+                  className="gold-button text-center"
                 >
-                  WhatsApp RFQ
-                </a>
-                <a
-                  href={mailtoMotorcycleRfq}
-                  className="rounded-full border border-[#d7b56d]/30 px-7 py-4 text-center text-sm font-bold uppercase tracking-[0.18em] text-white transition hover:border-[#f4d27a] hover:text-[#f4d27a]"
+                  Send Your Drawing
+                </Link>
+                <Link
+                  href="/products/aluminum-light-housings"
+                  className="outline-button text-center"
                 >
-                  Email Project Details
-                </a>
+                  View Aluminum Light Housings
+                </Link>
               </div>
 
-              <div className="mt-10 grid gap-4 sm:grid-cols-3">
-                {heroStats.map((item) => (
-                  <DarkCard key={item.title} {...item} />
-                ))}
-              </div>
+              <p className="mt-9 max-w-3xl border-l border-[#d6af69]/55 pl-5 text-sm leading-7 text-white [text-shadow:0_1px_12px_rgba(0,0,0,0.95)]">
+                HSX focuses on the aluminum die-cast housing and related
+                die-cast structural parts for motorcycle LED lighting
+                applications.
+              </p>
             </div>
 
-            <div className="min-w-0 rounded-[2rem] border border-[#d7b56d]/25 bg-white/[0.035] p-3 shadow-2xl shadow-black/40">
-              <div className="relative aspect-[3/2] overflow-hidden rounded-[1.5rem]">
-                <Image
-                  src="/images/motorcycle-led-auxiliary-light.png"
-                  alt="Motorcycle LED auxiliary light product for OEM motorcycle lighting supply"
-                  fill
-                  sizes="(min-width: 1024px) 46vw, 100vw"
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
-                <div className="absolute left-5 right-5 top-5 rounded-2xl border border-white/10 bg-black/70 p-5 backdrop-blur">
-                  <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
-                    Motorcycle lighting scope
-                  </p>
-                  <p className="mt-3 text-xl font-semibold text-white">
-                    Motorcycle LED lights and aluminum lamp housing support
-                  </p>
-                </div>
-                <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/70 p-5 backdrop-blur">
-                  <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
-                    Typical products
-                  </p>
-                  <p className="mt-3 text-sm leading-7 text-[#f4ead8]">
-                    Motorcycle auxiliary lights, compact LED work lights,
-                    aluminum lamp housings, mounting brackets, rear covers, and
-                    custom motorcycle lighting components.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <figure className="relative min-h-[30rem] overflow-hidden border border-white/12 bg-[#101010] sm:min-h-[36rem]">
+              <Image
+                src={batchDieCastParts}
+                alt="Batch aluminum die-cast parts before gate removal"
+                fill
+                sizes="(min-width: 1024px) 38vw, 100vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/5 to-transparent" />
+              <figcaption className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
+                <p className="section-kicker">Real die-cast process evidence</p>
+                <p className="mt-4 text-lg font-semibold leading-8 text-white">
+                  Batch aluminum die-cast parts before gate removal.
+                </p>
+              </figcaption>
+            </figure>
           </div>
         </section>
 
-        <section id="parts" className="border-b border-white/10 px-6 py-16 lg:px-12 lg:py-24">
-          <div className="mx-auto max-w-7xl">
+        <section className="border-b border-white/8 py-16 lg:py-24">
+          <div className="container-shell grid gap-12 lg:grid-cols-[minmax(0,0.72fr)_minmax(0,1.28fr)]">
             <SectionHeading
-              eyebrow="Typical motorcycle LED lighting products"
-              title="Motorcycle lights, aluminum lamp bodies, brackets, and covers"
-              description="This page focuses on motorcycle LED lighting products and compact aluminum lighting-related parts that fit practical B2B sourcing needs for aftermarket and OEM buyers."
+              eyebrow="What HSX can manufacture for this application"
+              title="Die-cast parts defined by the actual motorcycle lighting project"
+              description="The required aluminum part type and supply scope are reviewed from the buyer's drawing, sample, dimensions, and project requirements."
             />
 
-            <div className="mt-12 grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-              <div className="rounded-[2rem] border border-[#d7b56d]/25 bg-white/[0.035] p-3 shadow-2xl shadow-black/40">
-                <div className="relative aspect-[3/2] overflow-hidden rounded-[1.5rem]">
-                  <Image
-                    src="/images/motorcycle-led-auxiliary-light.png"
-                    alt="Motorcycle LED light and compact aluminum lighting part coverage"
-                    fill
-                    sizes="(min-width: 1024px) 46vw, 100vw"
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
-                  <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/70 p-5 backdrop-blur">
-                    <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
-                      Motorcycle lighting coverage
-                    </p>
-                    <p className="mt-3 text-xl font-semibold text-white">
-                      Built around compact motorcycle LED lighting, lamp housing,
-                      mounting, and export-ready B2B supply.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="grid gap-5 md:grid-cols-2">
-                {productTypes.map((item) => (
-                  <DarkCard key={item.title} {...item} />
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="programs" className="border-b border-white/10 bg-[#050505] px-6 py-16 lg:px-12 lg:py-24">
-          <div className="mx-auto max-w-7xl">
-            <SectionHeading
-              eyebrow="Motorcycle lighting programs"
-              title="Product programs for accessory brands and OEM buyers"
-              description="These examples help buyers match their project to motorcycle LED light supply, compact LED work lights, and aluminum lighting component support."
-            />
-
-            <div className="mt-12 grid gap-6 lg:grid-cols-3">
-              {productPrograms.map((program) => (
-                <article key={program.title} className="overflow-hidden rounded-[1.5rem] border border-[#d7b56d]/20 bg-white/[0.035] shadow-2xl shadow-black/30">
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <Image
-                      src={program.image}
-                      alt={program.alt}
-                      fill
-                      sizes="(min-width: 1024px) 31vw, (min-width: 768px) 50vw, 100vw"
-                      className="object-cover transition duration-700 hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
-                    <div className="absolute left-4 top-4 rounded-full border border-white/10 bg-black/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-amber-300">
-                      {program.tag}
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-2xl font-semibold text-white">{program.title}</h3>
-                    <p className="mt-4 text-sm leading-7 text-[#d7d0c2]">
-                      {program.description}
-                    </p>
-                    <ul className="mt-5 space-y-3 text-sm leading-7 text-[#f3ecdd]">
-                      {program.highlights.map((highlight) => (
-                        <li key={highlight} className="flex gap-3">
-                          <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-[#d5ae67]" />
-                          <span>{highlight}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+            <div className="divide-y divide-white/10 border-y border-white/10">
+              {applicationParts.map((item) => (
+                <article
+                  key={item.number}
+                  className="grid gap-4 py-7 sm:grid-cols-[4rem_minmax(0,0.8fr)_minmax(0,1.2fr)] sm:items-start"
+                >
+                  <p className="text-sm font-semibold tracking-[0.24em] text-[#d7b36f]">
+                    {item.number}
+                  </p>
+                  <h2 className="text-xl font-semibold text-white">
+                    {item.title}
+                  </h2>
+                  <p className="text-sm leading-7 text-[#c5bdaf]">
+                    {item.description}
+                  </p>
                 </article>
               ))}
             </div>
           </div>
         </section>
 
-        <section id="process" className="border-b border-white/10 px-6 py-16 lg:px-12 lg:py-24">
-          <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
-            <div>
-              <div className="rounded-[2rem] border border-[#d7b56d]/25 bg-white/[0.035] p-3 shadow-2xl shadow-black/40">
-                <div className="relative aspect-[3/2] overflow-hidden rounded-[1.5rem]">
-                  <Image
-                    src="/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg"
-                    alt="HSX aluminum die casting workshop for motorcycle LED lighting projects"
-                    fill
-                    sizes="(min-width: 1024px) 42vw, 100vw"
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
-                  <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/70 p-5 backdrop-blur">
-                    <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
-                      OEM manufacturing flow
-                    </p>
-                    <p className="mt-3 text-xl font-semibold text-white">
-                      Photos, samples, housing review, die casting, machining,
-                      finishing, inspection, and export packing.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                <DarkCard
-                  title="Project Input"
-                  description="Product photos, samples, drawings, lighting requirements, and packaging requests can start the RFQ review."
-                />
-                <DarkCard
-                  title="Process Coverage"
-                  description="Aluminum die casting, machining, finishing, inspection, and export packing are coordinated for B2B buyers."
-                />
-              </div>
-            </div>
-
+        <section className="border-b border-white/8 bg-[#080808] py-16 lg:py-24">
+          <div className="container-shell grid gap-12 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center">
             <div>
               <SectionHeading
-                eyebrow="OEM project support"
-                title="From motorcycle lighting RFQ to export-ready supply"
-                description="HSX reviews motorcycle LED lighting projects around product requirements, aluminum housing fit, mounting style, surface finish, packaging, and buyer communication before quotation and production planning."
+                eyebrow="Manufacturing considerations"
+                title="Housing requirements shape the manufacturing route"
+                description="HSX evaluates the aluminum die-cast part itself. The review does not extend into LED modules, optics, drivers, wiring, electronic systems, or complete lamp assembly."
               />
 
-              <div className="mt-10 grid gap-6 md:grid-cols-2">
-                {processSteps.map((item) => (
-                  <DarkCard key={item.title} {...item} />
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="border-b border-white/10 bg-[#050505] px-6 py-16 lg:px-12 lg:py-24">
-          <div className="mx-auto max-w-7xl">
-            <SectionHeading
-              eyebrow="Surface finishing"
-              title="Finishing options for motorcycle LED light housings"
-              description="Finishing is planned around appearance, corrosion resistance, brand presentation, and practical motorcycle lighting part requirements."
-            />
-
-            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-              {finishes.map((item) => (
-                <DarkCard key={item.title} {...item} />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="border-b border-white/10 px-6 py-16 lg:px-12 lg:py-24">
-          <div className="mx-auto max-w-7xl">
-            <SectionHeading
-              eyebrow="Buyer fit"
-              title="Built for motorcycle accessory brands, importers, and OEM buyers"
-              description="The page is positioned for buyers sourcing motorcycle LED lights, auxiliary lights, aluminum lamp housings, and lighting components with practical factory support and direct export communication."
-            />
-
-            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-              {buyerFit.map((item) => (
-                <DarkCard key={item.title} {...item} />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="rfq" className="border-b border-white/10 bg-[#050505] px-6 py-16 lg:px-12 lg:py-24">
-          <div className="mx-auto max-w-7xl">
-            <SectionHeading
-              eyebrow="RFQ requirements"
-              title="Send the details needed for accurate motorcycle LED light quotation"
-              description="For faster review, buyers should send product photos, lighting requirements, housing details, finish requests, quantity plans, and packaging information."
-            />
-
-            <div className="mt-10 rounded-[1.5rem] border border-[#d7b56d]/20 bg-white/[0.035] p-8 shadow-2xl shadow-black/30">
-              <ul className="space-y-5 text-base leading-8 text-[#f3ecdd]">
-                {rfqRequirements.map((item) => (
-                  <li key={item} className="flex gap-4">
-                    <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#d5ae67]" />
-                    <span>{item}</span>
+              <ol className="mt-10 grid gap-x-8 border-t border-white/10 sm:grid-cols-2">
+                {manufacturingConsiderations.map((item, index) => (
+                  <li
+                    key={item}
+                    className="flex items-center gap-4 border-b border-white/10 py-5"
+                  >
+                    <span className="text-xs font-semibold tracking-[0.2em] text-[#d7b36f]">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <span className="text-base text-[#ede6da]">{item}</span>
                   </li>
                 ))}
-              </ul>
+              </ol>
             </div>
+
+            <figure className="relative min-h-[25rem] overflow-hidden border border-white/10 sm:min-h-[34rem]">
+              <Image
+                src={sprayPainting}
+                alt="In-house spray painting of aluminum parts at HSX"
+                fill
+                sizes="(min-width: 1024px) 54vw, 100vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
+              <figcaption className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
+                <p className="section-kicker">Real process evidence</p>
+                <p className="mt-4 max-w-xl text-xl font-semibold leading-8 text-white">
+                  In-house spray painting for suitable aluminum parts when
+                  required by the project.
+                </p>
+              </figcaption>
+            </figure>
           </div>
         </section>
 
-        <section className="border-b border-white/10 bg-[#050505] px-6 py-16 lg:px-12 lg:py-24">
-          <div className="mx-auto max-w-7xl">
-            <SectionHeading
-              eyebrow="Related product pages"
-              title="Explore related motorcycle, automotive, and aluminum product pages"
-              description="Motorcycle LED light projects may also connect with automotive LED lights, LED work lights, aluminum light housings, OEM aluminum die casting parts, and decorative appearance covers. These pages help buyers compare related product scope."
-            />
-
-            <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-              <Link
-                href="/products/automotive-led-lights"
-                className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
-              >
-                <p className="section-kicker">Related product</p>
-                <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
-                  Automotive LED Lights
-                </h2>
-                <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
-                  OEM automotive LED lights, auxiliary lights, car LED work lights,
-                  aluminum lamp housings, brackets, and compact lighting parts.
-                </p>
-              </Link>
-
-              <Link
-                href="/products/led-work-lights"
-                className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
-              >
-                <p className="section-kicker">Related product</p>
-                <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
-                  LED Work Lights
-                </h2>
-                <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
-                  LED work lights with aluminum housing support for off-road,
-                  utility, truck, machinery, and outdoor equipment programs.
-                </p>
-              </Link>
-
-              <Link
-                href="/products/aluminum-light-housings"
-                className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
-              >
-                <p className="section-kicker">Related product</p>
-                <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
-                  Aluminum Light Housings
-                </h2>
-                <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
-                  Die cast lamp housings, heat-sink-style bodies, covers, brackets,
-                  and compact aluminum lighting components.
-                </p>
-              </Link>
-
-              <Link
-                href="/products/oem-aluminum-die-casting-parts"
-                className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
-              >
-                <p className="section-kicker">Related product</p>
-                <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
-                  OEM Aluminum Die Casting Parts
-                </h2>
-                <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
-                  Small-to-medium aluminum housings, brackets, covers, shells,
-                  end caps, and custom hardware accessories.
-                </p>
-              </Link>
-
-              <Link
-                href="/products/decorative-brake-caliper-covers"
-                className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
-              >
-                <p className="section-kicker">Related product</p>
-                <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
-                  Decorative Brake Caliper Covers
-                </h2>
-                <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
-                  Non-load-bearing appearance covers installed outside the brake
-                  caliper, with color finishing and custom logo support.
-                </p>
-              </Link>
-
-              <Link
-                href="/products"
-                className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
-              >
-                <p className="section-kicker">All product categories</p>
-                <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
-                  Back to Products Overview
-                </h2>
-                <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
-                  Review the full HSX product scope before sending drawings,
-                  samples, photos, quantity, finish, and packaging requirements.
-                </p>
-              </Link>
+        <section className="border-b border-white/8 py-16 lg:py-24">
+          <div className="container-shell">
+            <div className="grid gap-10 lg:grid-cols-[minmax(0,0.72fr)_minmax(0,1.28fr)] lg:items-end">
+              <SectionHeading
+                eyebrow="Possible manufacturing route"
+                title="The route depends on the agreed supply stage"
+                description="The operations below are a compact summary for suitable aluminum die-cast housing projects. They are not a fixed process required for every part."
+              />
+              <p className="max-w-2xl border-l border-[#d6af69]/55 pl-6 text-sm leading-7 text-[#c6bdad] lg:justify-self-end">
+                A project may end at a die-cast blank, after gate removal, or
+                after selected secondary operations, finishing, QC, and packing,
+                depending on project requirements and the agreed supply scope.
+              </p>
             </div>
-          </div>
-        </section>
 
-        <section className="px-6 py-16 lg:px-12 lg:py-24">
-          <div className="mx-auto min-w-0 max-w-7xl rounded-[2rem] bg-gradient-to-br from-[#f4d27a] to-[#f8ead0] p-5 text-[#130f08] shadow-2xl shadow-black/30 sm:p-8 lg:p-12">
-            <div className="grid min-w-0 gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:items-start">
-              <div className="min-w-0">
-                <p className="text-xs font-semibold uppercase tracking-[0.35em] text-white/70">
-                  Final inquiry CTA
-                </p>
-                <h2 className="mt-5 break-words text-3xl font-semibold uppercase tracking-[0.08em] sm:text-4xl sm:tracking-[0.12em] lg:text-5xl">
-                  Send your motorcycle LED light photos, samples, or OEM project requirements
-                </h2>
-                <p className="mt-7 max-w-3xl text-base leading-8 text-[#2d2417] lg:text-lg">
-                  HSX reviews motorcycle LED lights, auxiliary lights, compact
-                  LED work lights, aluminum lamp housings, brackets, covers,
-                  and lighting-related aluminum parts for global wholesalers,
-                  importers, distributors, accessory brands, and OEM buyers.
-                </p>
-
-                <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-                  <a
-                    href={contactDetails.whatsappHref}
-                    className="inline-flex w-full min-w-0 items-center justify-center whitespace-normal rounded-full bg-[#120f08] px-5 py-4 text-center text-sm font-bold uppercase tracking-[0.18em] shadow-lg shadow-black/20 transition hover:bg-black sm:w-auto sm:px-7"
-                    aria-label="WhatsApp RFQ"
-                  >
-                    <span className="relative z-10" style={{ color: "#ffffff" }}>
-                      WhatsApp RFQ
-                    </span>
-                  </a>
-                  <a
-                    href={mailtoMotorcycleRfq}
-                    className="w-full min-w-0 whitespace-normal rounded-full border border-[#2b2216]/20 px-5 py-4 text-center text-sm font-bold uppercase tracking-[0.18em] text-white transition hover:bg-[#120f08] hover:text-white sm:w-auto sm:px-7"
-                  >
-                    Email Project Details
-                  </a>
-                  <Link
-                    href="/products"
-                    className="w-full min-w-0 whitespace-normal rounded-full border border-[#2b2216]/20 px-5 py-4 text-center text-sm font-bold uppercase tracking-[0.18em] text-white transition hover:bg-[#120f08] hover:text-white sm:w-auto sm:px-7"
-                  >
-                    Back to Products
-                  </Link>
+            <div className="mt-12 grid gap-6 lg:grid-cols-[minmax(0,1.35fr)_minmax(18rem,0.65fr)]">
+              <div className="border-y border-white/10 py-7">
+                <p className="section-kicker">In-house operations</p>
+                <div className="mt-6 grid grid-cols-2 gap-x-5 gap-y-4 sm:grid-cols-3 xl:grid-cols-5">
+                  {inHouseOperations.map((operation) => (
+                    <p
+                      key={operation}
+                      className="border-l border-[#d6af69]/45 py-1 pl-3 text-sm font-semibold leading-6 text-white"
+                    >
+                      {operation}
+                    </p>
+                  ))}
                 </div>
               </div>
 
-              <div className="space-y-6">
-                <div className="overflow-hidden rounded-[1.5rem] border border-[#120f08]/10 bg-[#120f08] p-3 shadow-2xl shadow-black/20">
-                  <div className="relative aspect-[3/2] overflow-hidden rounded-[1rem]">
-                    <Image
-                      src="/images/motorcycle-led-auxiliary-light.png"
-                      alt="Motorcycle LED lighting RFQ ready product image"
-                      fill
-                      sizes="(min-width: 1024px) 42vw, 100vw"
-                      className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
-                    <div className="absolute bottom-5 left-5 right-5">
-                      <p className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
-                        RFQ ready
-                      </p>
-                      <p className="mt-3 text-xl font-semibold leading-7 text-white">
-                        Send photos, samples, lighting requirements, finish
-                        needs, and target quantity for motorcycle LED light
-                        review.
-                      </p>
-                    </div>
-                  </div>
+              <div className="border border-[#d6af69]/30 bg-[#d6af69]/6 p-6 sm:p-7">
+                <p className="section-kicker">Partner-supported resources</p>
+                <div className="mt-6 space-y-3">
+                  {partnerSupported.map((item) => (
+                    <p
+                      key={item}
+                      className="border-l border-[#d6af69]/45 pl-4 text-base font-semibold text-white"
+                    >
+                      {item}
+                    </p>
+                  ))}
                 </div>
+                <p className="mt-6 text-sm leading-7 text-[#c6bdad]">
+                  These processes can be coordinated through partner-supported
+                  resources when required by a suitable project.
+                </p>
+                <Link
+                  href="/capabilities"
+                  className="mt-6 inline-flex text-sm font-semibold uppercase tracking-[0.16em] text-[#e9c985] transition-colors hover:text-white"
+                >
+                  View Manufacturing Capabilities
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                <div className="rounded-[1.5rem] bg-white/55 p-6 text-sm leading-7 text-[#2d2417]">
-                  <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#5b4520]">
-                    Direct contact
-                  </p>
-                  <div className="mt-5 space-y-4">
-                    <p><span className="font-semibold">Email:</span> {contactDetails.email}</p>
-                    <p><span className="font-semibold">WhatsApp / Phone:</span> {contactDetails.phone}</p>
-                    <p><span className="font-semibold">WeChat:</span> {contactDetails.wechat}</p>
-                    <p><span className="font-semibold">Address:</span> {contactDetails.address}</p>
-                  </div>
-                </div>
+        <section className="border-b border-white/8 bg-[#080808] py-16 lg:py-24">
+          <div className="container-shell">
+            <SectionHeading
+              eyebrow="Real application evidence and supply scope"
+              title="Motorcycle lighting application, with a defined die-cast scope"
+              description="HSX has experience with aluminum die-cast housings and related structural parts for motorcycle LED lighting applications. Final feasibility and supply scope are reviewed from the actual project."
+            />
+
+            <figure className="mt-12 grid overflow-hidden border border-white/10 bg-[#101010] lg:grid-cols-[minmax(0,1.25fr)_minmax(20rem,0.75fr)]">
+              <div className="relative overflow-hidden bg-black">
+                <Image
+                  src={motorcycleLedLight}
+                  alt="Motorcycle LED auxiliary lighting shown only as an application reference"
+                  sizes="(min-width: 1024px) 64vw, 100vw"
+                  className="block aspect-[16/10] min-h-[22rem] w-full object-cover object-center brightness-105 sm:min-h-[30rem] lg:h-full lg:min-h-[34rem]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                <p className="absolute left-5 top-5 bg-black/78 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#e9c985]">
+                  Application reference
+                </p>
+              </div>
+
+              <figcaption className="flex flex-col justify-center border-t border-white/10 p-7 sm:p-9 lg:border-l lg:border-t-0">
+                <p className="section-kicker">HSX supply scope</p>
+                <p className="mt-5 text-2xl font-semibold leading-9 text-white">
+                  HSX supply scope focuses on the aluminum die-cast housing or
+                  related die-cast structural parts for motorcycle LED lighting
+                  applications.
+                </p>
+                <p className="mt-5 text-sm leading-7 text-[#c5bdaf]">
+                  The application image illustrates the use context only. It
+                  does not represent LED modules, lenses, drivers, wiring,
+                  electronics, or complete lamp assembly supplied by HSX.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section className="py-16 lg:py-24">
+          <div className="container-shell">
+            <div className="gold-panel grid gap-10 p-8 sm:p-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end lg:p-12">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#5f4a28]">
+                  Project review
+                </p>
+                <h2 className="section-heading mt-5 text-4xl text-[#120f08] sm:text-5xl">
+                  Send your motorcycle housing drawing for review
+                </h2>
+                <p className="mt-6 max-w-3xl text-base leading-8 text-[#332817] lg:text-lg">
+                  Send the drawing, 3D file, sample photo, quantity, holes and
+                  threads, surface requirements, and required supply stage. HSX
+                  will review whether the aluminum die-cast housing or related
+                  structural part fits the available manufacturing route.
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-4 sm:flex-row lg:flex-col">
+                <Link
+                  href="/b2b-oem-project-review"
+                  className="inline-flex items-center justify-center rounded-full bg-[#120f08] px-7 py-4 text-center text-sm font-bold uppercase tracking-[0.18em] text-white transition hover:bg-black"
+                >
+                  Send Your Drawing
+                </Link>
+                <Link
+                  href="/products/aluminum-light-housings"
+                  className="rounded-full border border-[#2b2216]/25 px-7 py-4 text-center text-sm font-bold uppercase tracking-[0.18em] text-[#120f08] transition hover:bg-[#120f08] hover:text-white"
+                >
+                  View Aluminum Light Housings
+                </Link>
               </div>
             </div>
           </div>
