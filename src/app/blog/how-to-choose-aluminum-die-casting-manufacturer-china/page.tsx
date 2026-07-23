@@ -88,10 +88,9 @@ export default function ArticlePage() {
               shape, surface area, and assembly requirement.
             </p>
             <p className="mt-4">
-              HSX keeps its website scope aligned with the 200T / 300T Product
-              Capability Range, which is more suitable for compact housings, brackets,
-              caps, covers, shells, lamp bodies, and other small-to-medium OEM
-              aluminum parts.
+              HSX reviews compact housings, brackets, caps, covers, shells,
+              lamp bodies, and other small-to-medium OEM aluminum parts based
+              on drawings, part structure, and project requirements.
             </p>
           </section>
 

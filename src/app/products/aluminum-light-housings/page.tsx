@@ -76,8 +76,8 @@ const contactDetails = {
 
 const heroStats = [
   {
-    label: "Die Casting Scope",
-    value: "200T / 300T Product Capability Range",
+    label: "Project Focus",
+    value: "Compact Aluminum Parts",
     note: "Focused on compact aluminum light housings and small-to-medium lamp parts",
   },
   {
@@ -144,7 +144,7 @@ const processSupport: InfoCard[] = [
   {
     title: "Mold and Part Feasibility",
     description:
-      "Actual equipment: 280T and 320T aluminum die casting machines. Check whether the aluminum light housing fits the 200T / 300T Product Capability Range before mold development or production planning, including housing structure, wall thickness, ribs, fins, and machining allowance.",
+      "Actual equipment: 280T and 320T aluminum die casting machines. Check whether the aluminum light housing fits HSX's manufacturing scope before mold development or production planning, including housing structure, wall thickness, ribs, fins, and machining allowance.",
   },
   {
     title: "Aluminum Die Casting",
@@ -446,8 +446,8 @@ export default function AluminumLightHousingsPage() {
                 work light aluminum housings, die-cast heat-sink bodies,
                 covers, brackets, shells, and custom aluminum lighting parts
                 for global OEM and wholesale buyers. The product scope is
-                focused on suitable small-to-medium aluminum parts within the
-                200T / 300T Product Capability Range.
+                focused on suitable small-to-medium aluminum parts reviewed
+                against drawings and project requirements.
               </p>
               <p className="mt-5 max-w-2xl text-base leading-8 text-[#c7beaf]">
                 Buyers can start from drawings, samples, or product photos for

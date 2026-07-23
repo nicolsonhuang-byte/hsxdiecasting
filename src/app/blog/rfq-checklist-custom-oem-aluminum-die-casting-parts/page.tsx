@@ -181,8 +181,8 @@ export default function ArticlePage() {
             <p className="mt-3">
               Importers and OEM project buyers can use this checklist to reduce
               missing details during first contact. A clear RFQ helps both sides
-              discuss whether the project fits the 200T / 300T Product Capability
-              Range and related secondary processing.
+              discuss whether the project fits HSX&apos;s manufacturing scope and
+              related secondary processing.
             </p>
           </section>
 

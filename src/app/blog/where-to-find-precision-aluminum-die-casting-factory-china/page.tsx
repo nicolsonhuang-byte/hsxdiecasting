@@ -202,10 +202,10 @@ export default function ArticlePage() {
             </h2>
             <p className="mt-4">
               Factory capacity should match the part size and project type. For
-              compact and small-to-medium aluminum parts, the 200T / 300T
-              Product Capability Range can be suitable for housings, brackets,
-              end caps, covers, enclosure shells, and compact custom aluminum
-              parts.
+              compact and small-to-medium aluminum parts, buyers should confirm
+              whether housings, brackets, end caps, covers, enclosure shells,
+              and compact custom aluminum parts fit the supplier&apos;s actual
+              equipment and manufacturing scope.
             </p>
             <p className="mt-4">
               Buyers should avoid sending unclear RFQs without part size,
@@ -223,8 +223,7 @@ export default function ArticlePage() {
               Many aluminum die casting parts need secondary processing after
               casting. Buyers should check whether the supplier can coordinate
               drilling, tapping, polishing, surface preparation, powder coating,
-              paint spraying, partner-supported anodizing, assembly coordination,
-              and export packaging.
+              paint spraying, partner-supported anodizing, and export packaging.
             </p>
             <p className="mt-4">
               For finish decisions, buyers can review HSX&apos;s guide to{" "}
@@ -299,12 +298,12 @@ export default function ArticlePage() {
             </p>
             <p className="mt-4">
               The factory operates 280T and 320T aluminum die casting machines
-              and focuses on suitable small-to-medium projects within the 200T /
-              300T Product Capability Range. In-house operations include
-              drilling, tapping, polishing, powder coating, and spray painting.
-              CNC machining and anodizing can be coordinated through
-              partner-supported resources when required by the project. RFQ
-              evaluation is based on drawings, 3D files, sample photos, or
+              and reviews suitable small-to-medium projects against part
+              structure, drawings, and production requirements. In-house
+              operations include drilling, tapping, polishing, powder coating,
+              and spray painting. CNC machining and anodizing can be coordinated
+              through partner-supported resources when required by the project.
+              RFQ evaluation is based on drawings, 3D files, sample photos, or
               project requirements.
             </p>
             <p className="mt-4">

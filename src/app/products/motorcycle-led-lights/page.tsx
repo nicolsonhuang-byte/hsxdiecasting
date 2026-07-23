@@ -158,7 +158,7 @@ const processSteps: InfoCard[] = [
   {
     title: "Housing and Part Feasibility",
     description:
-      "Compact aluminum lamp housings, brackets, covers, and mounting features are checked against the practical 200T / 300T Product Capability Range.",
+      "Compact aluminum lamp housings, brackets, covers, and mounting features are reviewed for manufacturing fit based on part structure, dimensions, and project requirements.",
   },
   {
     title: "Aluminum Die Casting",

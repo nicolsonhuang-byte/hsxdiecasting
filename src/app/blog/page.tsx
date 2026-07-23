@@ -113,7 +113,7 @@ const blogPosts = [
   {
     title: "OEM Automotive LED Light Manufacturing Process",
     description:
-      "A step-by-step overview of RFQ review, sample confirmation, housing production, finishing, assembly support, and export communication.",
+      "A step-by-step overview of RFQ review, sample confirmation, housing production, finishing, and export communication.",
     href: "/blog/oem-automotive-led-light-manufacturing-process",
     category: "Automotive LED Lights",
   },

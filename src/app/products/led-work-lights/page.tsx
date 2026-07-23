@@ -81,8 +81,8 @@ const heroStats = [
     note: "LED work lights, off-road lights, truck lights, and compact lighting products",
   },
   {
-    label: "Product Capability Range",
-    value: "200T / 300T",
+    label: "Part Focus",
+    value: "Compact Aluminum Parts",
     note: "Compact aluminum housings, brackets, covers, and heat-sink style parts",
   },
   {
@@ -176,7 +176,7 @@ const processSteps: CardItem[] = [
   {
     title: "Housing and Part Feasibility",
     description:
-      "Compact aluminum lamp housings, brackets, covers, and mounting features are checked against the practical 200T / 300T Product Capability Range.",
+      "Compact aluminum lamp housings, brackets, covers, and mounting features are reviewed for manufacturing fit based on part structure, dimensions, and project requirements.",
   },
   {
     title: "Aluminum Die Casting",
