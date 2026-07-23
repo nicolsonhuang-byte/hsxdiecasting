@@ -13,7 +13,7 @@ const jsonLdOrganization = {
   image:
     "https://www.hsxdiecasting.com/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg",
   description:
-    "HSX DIECASTING is a Foshan manufacturing factory supplying OEM aluminum die casting parts, LED work lights, automotive and motorcycle LED lights, aluminum light housings, and decorative brake caliper covers for global B2B buyers.",
+    "Custom OEM aluminum die-cast parts based on drawings, samples, and project requirements. HSX supports aluminum die casting, selected secondary operations, finishing, QC, and packing in Foshan, China.",
   email: "mailto:nicolson@hsxdiecasting.com",
   telephone: "+8617666155283",
   address: {
@@ -38,10 +38,10 @@ const jsonLdOrganization = {
 
 
 const siteTitle =
-  "HSX DIECASTING | OEM Aluminum Die Casting Parts & LED Lights";
+  "HSX DIECASTING | OEM Aluminum Die Casting Manufacturer";
 
 const siteDescription =
-  "HSX DIECASTING supplies OEM aluminum die casting parts, LED work lights, automotive and motorcycle LED lights, aluminum housings, and decorative caliper covers.";
+  "Custom OEM aluminum die-cast parts based on drawings, samples, and project requirements. HSX supports aluminum die casting, selected secondary operations, finishing, QC, and packing in Foshan, China.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.hsxdiecasting.com"),
@@ -52,14 +52,12 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   keywords: [
-    "OEM aluminum die casting parts",
-    "small-to-medium aluminum die casting",
-    "custom aluminum hardware parts",
-    "automotive LED lights supplier",
-    "motorcycle LED lights supplier",
-    "LED work lights supplier",
-    "decorative brake caliper covers",
-    "Foshan aluminum die casting factory",
+    "OEM aluminum die casting manufacturer",
+    "custom aluminum die casting",
+    "aluminum die cast parts",
+    "aluminum die casting factory",
+    "custom die cast parts",
+    "aluminum die casting supplier",
   ],
   openGraph: {
     title: siteTitle,
