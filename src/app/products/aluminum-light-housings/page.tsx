@@ -707,22 +707,12 @@ export default function AluminumLightHousingsPage() {
                 >
                   project suitability review
                 </Link>
-                , or{" "}
-                <Link
-                  href="/contact"
-                  className="font-semibold text-[#efcf8d] underline-offset-4 transition-colors hover:text-white hover:underline"
-                >
-                  contact HSX for project review
-                </Link>
                 .
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
                 <Link href="/b2b-oem-project-review" className="gold-button text-center">
                   Request Project Review
-                </Link>
-                <Link href="/contact" className="outline-button text-center">
-                  Send RFQ Details
                 </Link>
               </div>
             </div>
