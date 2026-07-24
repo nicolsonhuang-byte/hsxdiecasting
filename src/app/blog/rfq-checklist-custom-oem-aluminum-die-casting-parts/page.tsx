@@ -24,12 +24,6 @@ export const metadata = buildArticleMetadata({
   path: articlePath,
 });
 
-const contactDetails = {
-  email: "nicolson@hsxdiecasting.com",
-  whatsappHref:
-    "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20am%20preparing%20an%20RFQ%20for%20custom%20OEM%20aluminum%20die%20casting%20parts.%20Please%20contact%20me%20for%20project%20evaluation.",
-};
-
 const relatedLinks = [
   {
     label: "OEM Aluminum Die Casting Parts",
@@ -647,8 +641,8 @@ export default function ArticlePage() {
               For direct contact details, visit the{" "}
               <Link href="/contact" className="font-semibold text-[#f4d27a]">
                 HSX contact page
-              </Link>{" "}
-              or use the RFQ buttons below.
+              </Link>
+              .
             </p>
           </section>
         </div>
@@ -667,40 +661,6 @@ export default function ArticlePage() {
                 {item.label}
               </Link>
             ))}
-          </div>
-        </section>
-
-        <section className="mt-10 rounded-[2rem] border border-[#d7b56d]/25 bg-[#d4ac67] p-8 text-[#120f08]">
-          <h2 className="text-2xl font-semibold">
-            Send your custom aluminum die casting RFQ to HSX
-          </h2>
-          <p className="mt-4 text-sm leading-7">
-            Send 2D drawings, 3D files such as STEP, STP, IGS, IGES, STL, or
-            X_T, sample photos, existing part photos, product application,
-            target quantity, material requirements, tolerance notes, machining /
-            drilling / tapping requirements, surface finishing requirements,
-            color sample if custom spray painting is needed, and packing details
-            by email, contact page, or WhatsApp.
-          </p>
-          <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <Link
-              href="/b2b-oem-project-review"
-              className="rounded-full bg-[#111] px-6 py-3 text-center text-sm font-semibold !text-white"
-            >
-              Request Project Review
-            </Link>
-            <Link
-              href="/contact"
-              className="rounded-full border border-[#120f08]/30 px-6 py-3 text-center text-sm font-semibold"
-            >
-              Send RFQ Details
-            </Link>
-            <a
-              href={contactDetails.whatsappHref}
-              className="rounded-full border border-[#120f08]/30 px-6 py-3 text-center text-sm font-semibold"
-            >
-              Discuss on WhatsApp
-            </a>
           </div>
         </section>
       </article>
