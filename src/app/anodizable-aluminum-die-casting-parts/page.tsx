@@ -29,7 +29,7 @@ const pageTitle =
   "Anodizable Aluminum Die Casting Parts for OEM Projects | HSX DIECASTING";
 
 const pageDescription =
-  "HSX DIECASTING helps OEM buyers evaluate anodizable aluminum die casting parts before tooling, including mold design, draft angle, alloy planning, release agent control, mold temperature, die casting process, machining, sandblasting, and anodized finishing requirements.";
+  "HSX DIECASTING helps OEM buyers evaluate anodizable aluminum die casting parts before tooling, including casting design, project-dependent secondary operations, surface preparation, appearance targets, and partner-supported anodizing.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     "anodized aluminum die casting parts",
     "anodizing-ready die casting",
     "OEM anodized aluminum die casting",
-    "aluminum die casting anodizing supplier",
+    "anodizing project evaluation for aluminum die casting",
     "anodized die cast aluminum parts",
     "surface finishing for aluminum die casting",
   ],
@@ -78,8 +78,8 @@ const mailtoRfq =
 const heroHighlights = [
   {
     label: "Scope",
-    value: "Die casting + machining",
-    note: "HSX handles aluminum die casting, post-processing coordination, project evaluation, and production control.",
+    value: "Die casting + selected operations",
+    note: "HSX provides aluminum die casting and selected in-house secondary operations; CNC machining is partner-supported when required.",
   },
   {
     label: "Finish path",
@@ -107,7 +107,7 @@ const earlyPlanningReasons: InfoCard[] = [
   {
     title: "Finishing partners need a realistic sample target",
     description:
-      "Because anodized finishing is completed through cooperating anodizing partners, HSX can help align die casting, machining, sandblasting, and sample review around the buyer's target appearance.",
+      "Because anodized finishing is completed through cooperating anodizing partners, HSX can help align die casting, confirmed secondary operations, the selected surface-preparation route, and sample review around the buyer's target appearance.",
   },
 ];
 
@@ -176,11 +176,11 @@ const keyFactors: Factor[] = [
     ],
   },
   {
-    title: "Machining, Post-Processing and Sandblasting Before Anodizing",
+    title: "Secondary Operations and Surface Preparation Before Anodizing",
     description:
-      "Machining, polishing, deburring, sandblasting, and other surface preparation can change how anodized die cast aluminum parts look. These steps should be planned together with the cooperating anodizing partner.",
+      "In-house drilling, tapping, polishing, and deburring, partner-supported CNC machining, and project-dependent surface preparation can change how anodized die cast aluminum parts look. If sandblasting is required, its role and supply route should be confirmed during project review.",
     points: [
-      "Mark machined surfaces, cosmetic surfaces, threads, and assembly areas in the drawing.",
+      "Mark machined surfaces, cosmetic surfaces, threads, and joining interfaces in the drawing.",
       "Confirm whether sandblasting texture, polishing level, or masked areas are required.",
       "Review samples before locking color, texture, and surface acceptance expectations.",
     ],
@@ -244,8 +244,8 @@ const anodizingProductionFlow = [
   "Gate / runner / overflow removal",
   "Drilling and tapping",
   "Polishing",
-  "Sandblasting as pre-anodizing preparation",
-  "Anodizing through a long-term partner",
+  "Project-dependent surface preparation",
+  "Partner-supported anodizing",
   "QC inspection",
   "Packing",
 ];
@@ -290,7 +290,7 @@ const reviewSteps: InfoCard[] = [
   {
     title: "2. Check tooling and process direction",
     description:
-      "The team evaluates whether mold design, draft, gate planning, machining, sandblasting, and production control may support the target finish.",
+      "The team evaluates mold design, draft, gate planning, confirmed in-house secondary operations, whether partner-supported CNC machining is needed, and whether sandblasting should be considered in the project-dependent surface-preparation route.",
   },
   {
     title: "3. Coordinate sample route",
@@ -310,7 +310,7 @@ const rfqItems = [
   "Part application and visible surface requirements",
   "Target surface finish and anodized color requirement",
   "Material expectation or existing material notes, if already defined",
-  "Machining, drilling, tapping, threaded feature, or assembly requirements",
+  "CNC machining needs, drilling, tapping, threaded features, or joining-interface requirements",
   "Sandblasting, polishing, surface preparation, masking, or texture expectations",
   "Sample-stage needs, target quantity, and repeat-order plan",
   "Packaging requirements and destination market information",
@@ -325,7 +325,7 @@ const faqs = [
   {
     question: "Does HSX operate its own anodizing line?",
     answer:
-      "HSX handles aluminum die casting, machining, post-processing coordination, project evaluation, and production control. Anodized finishing is completed through cooperating anodizing partners after die casting and surface preparation.",
+      "No. HSX provides aluminum die casting plus in-house drilling, tapping, polishing, and other confirmed secondary operations. CNC machining and anodized finishing are coordinated through partner-supported resources when required. Any sandblasting requirement and supply route are confirmed during project review.",
   },
   {
     question: "Is anodizing better than powder coating for die casting?",
@@ -467,19 +467,20 @@ export default function AnodizableAluminumDieCastingPartsPage() {
               requirements.
             </p>
             <p className={styles.heroBody}>
-              HSX handles aluminum die casting, machining, post-processing
-              coordination, project evaluation, and production control. Anodized
-              finishing is completed through cooperating anodizing partners
-              after die casting and surface preparation.
+              HSX provides aluminum die casting plus in-house drilling, tapping,
+              and polishing. CNC machining and anodized finishing are coordinated
+              through partner-supported resources when required. Sandblasting may
+              be evaluated as part of the project-dependent surface-preparation
+              route.
             </p>
 
             <div className={styles.heroActions}>
-              <a
-                href={contactDetails.whatsappHref}
+              <Link
+                href="/b2b-oem-project-review"
                 className={`${styles.actionButton} ${styles.primaryButton}`}
               >
                 Request OEM Project Review
-              </a>
+              </Link>
               <a
                 href={mailtoRfq}
                 className={`${styles.actionButton} ${styles.secondaryButton}`}
@@ -651,11 +652,11 @@ export default function AnodizableAluminumDieCastingPartsPage() {
 
       <section className="border-b border-white/8 py-16 lg:py-24">
         <div className="container-shell">
-          <SectionHeading
-            eyebrow="Appearance review"
-            title="Can Die-Cast Aluminum Parts Be Anodized for Appearance Requirements?"
-            description="Some buyers choose CNC machining before anodizing because common die-casting materials may not support a stable anodized appearance. For suitable projects, HSX can review whether a die-casting route can support the target appearance before tooling."
-          />
+            <SectionHeading
+              eyebrow="Appearance review"
+              title="Can Die-Cast Aluminum Parts Be Anodized for Appearance Requirements?"
+              description="Some projects use partner-supported CNC machining before anodizing because common die-casting materials may not support a stable anodized appearance. For suitable projects, HSX can review whether a die-casting route can support the target appearance before tooling."
+            />
 
           <div className="mt-10 grid gap-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-start">
             <div className="space-y-5 text-base leading-8 text-[#c9c1b2]">
@@ -682,7 +683,7 @@ export default function AnodizableAluminumDieCastingPartsPage() {
 
             <div className="industrial-card p-6 sm:p-8">
               <h3 className="text-xl font-semibold text-white">
-                Normal production flow
+                Possible project-dependent route
               </h3>
               <div className="mt-5 flex flex-wrap gap-3 text-sm leading-7 text-[#d8cfbf]">
                 {anodizingProductionFlow.map((step, index) => (
@@ -698,6 +699,11 @@ export default function AnodizableAluminumDieCastingPartsPage() {
                   </span>
                 ))}
               </div>
+              <p className="mt-5 text-sm leading-7 text-[#c9c1b2]">
+                This is one possible route, not a fixed sequence for every
+                project. If sandblasting is required, its supply route is
+                confirmed during project review. Anodizing is partner-supported.
+              </p>
               <div className="mt-6 border-t border-white/10 pt-6">
                 <h3 className="text-xl font-semibold text-white">
                   RFQ details buyers should send
@@ -990,19 +996,19 @@ export default function AnodizableAluminumDieCastingPartsPage() {
                     className={styles.ctaActions}
                   >
                     <div>
-                      <a
-                        href={contactDetails.whatsappHref}
+                      <Link
+                        href="/b2b-oem-project-review"
                         className={`${styles.ctaButton} ${styles.ctaButtonPrimary}`}
                       >
-                        WhatsApp Project Review
-                      </a>
+                        Request Project Review
+                      </Link>
                     </div>
                     <div>
                       <a
-                        href={mailtoRfq}
+                        href={contactDetails.whatsappHref}
                         className={`${styles.ctaButton} ${styles.ctaButtonSecondary}`}
                       >
-                        Email Drawings
+                        WhatsApp Project Details
                       </a>
                     </div>
                     <div>
@@ -1010,7 +1016,7 @@ export default function AnodizableAluminumDieCastingPartsPage() {
                         href="/contact"
                         className={`${styles.ctaButton} ${styles.ctaButtonTertiary}`}
                       >
-                        Contact HSX
+                        View Contact Details
                       </Link>
                     </div>
                   </div>
@@ -1025,7 +1031,7 @@ export default function AnodizableAluminumDieCastingPartsPage() {
                       "Drawings, 3D files, or clear product photos",
                       "Target surface finish and anodized color",
                       "Visible surface and application details",
-                      "Machining, sandblasting, polishing, or masking needs",
+                      "CNC machining needs, project-dependent sandblasting, polishing, or masking",
                       "Target quantity and sample-stage expectations",
                     ].map((item) => (
                       <li
