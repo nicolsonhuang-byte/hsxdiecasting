@@ -306,20 +306,26 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="mt-12 grid min-w-0 gap-5 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
-              <figure
-                className="group relative min-w-0 overflow-hidden border border-white/10 bg-[#0a0a0a]"
-                style={{ minHeight: "min(44rem, 120vw)" }}
-              >
+            <div className="mt-12 grid min-w-0 gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-start lg:gap-12">
+              <style>{`
+                @media (min-width: 40rem) {
+                  .homepage-real-part-record {
+                    grid-template-columns:
+                      minmax(11rem, 0.38fr)
+                      minmax(0, 0.62fr);
+                    align-items: end;
+                  }
+                }
+              `}</style>
+
+              <figure className="min-w-0">
                 <Image
                   src={realParts[0].image}
                   alt={realParts[0].alt}
-                  fill
-                  sizes="(min-width: 1024px) 55vw, 100vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                  sizes="(min-width: 1024px) 42vw, 100vw"
+                  className="block h-auto w-full"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-transparent" />
-                <figcaption className="absolute inset-x-0 bottom-0 border-t border-white/10 bg-black/65 p-5 backdrop-blur-[1px] sm:p-6">
+                <figcaption className="mt-5 border-t border-white/12 pt-5">
                   <h3 className="text-xl font-semibold text-white sm:text-2xl">
                     {realParts[0].title}
                   </h3>
@@ -329,30 +335,29 @@ export default function Home() {
                 </figcaption>
               </figure>
 
-              <div className="grid min-w-0 gap-5">
+              <div className="grid min-w-0 gap-8">
                 {realParts.slice(1).map((part) => (
-                <figure
-                  key={part.title}
-                  className="group relative min-w-0 overflow-hidden border border-white/10 bg-[#0a0a0a]"
-                  style={{ minHeight: "15rem" }}
-                >
-                  <Image
-                    src={part.image}
-                    alt={part.alt}
-                    fill
-                    sizes="(min-width: 1024px) 35vw, 100vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-transparent" />
-                  <figcaption className="absolute inset-x-0 bottom-0 border-t border-white/10 bg-black/65 p-5 backdrop-blur-[1px] sm:p-6">
-                    <h3 className="text-xl font-semibold text-white sm:text-2xl">
-                      {part.title}
-                    </h3>
-                    <p className="mt-2 max-w-xl text-sm leading-6 text-[#d8cfbf]">
-                      {part.description}
-                    </p>
-                  </figcaption>
-                </figure>
+                  <figure
+                    key={part.title}
+                    className="homepage-real-part-record grid min-w-0 gap-5 border-t border-white/12 pt-5"
+                  >
+                    <div className="min-w-0">
+                      <Image
+                        src={part.image}
+                        alt={part.alt}
+                        sizes="(min-width: 1024px) 18vw, (min-width: 640px) 40vw, 100vw"
+                        className="block h-auto w-full"
+                      />
+                    </div>
+                    <figcaption className="pb-1">
+                      <h3 className="text-xl font-semibold text-white sm:text-2xl">
+                        {part.title}
+                      </h3>
+                      <p className="mt-2 max-w-xl text-sm leading-6 text-[#d8cfbf]">
+                        {part.description}
+                      </p>
+                    </figcaption>
+                  </figure>
                 ))}
               </div>
             </div>
