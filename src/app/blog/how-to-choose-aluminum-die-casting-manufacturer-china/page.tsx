@@ -18,12 +18,6 @@ export const metadata = buildArticleMetadata({
   path: articlePath,
 });
 
-const contactDetails = {
-  email: "nicolson@hsxdiecasting.com",
-  whatsappHref:
-    "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20am%20looking%20for%20an%20aluminum%20die%20casting%20manufacturer%20in%20China.%20Please%20contact%20me%20with%20quotation%20details.",
-};
-
 const relatedLinks = [
   { label: "OEM Aluminum Die Casting Parts", href: "/products/oem-aluminum-die-casting-parts" },
   { label: "Factory Capabilities", href: "/capabilities" },
@@ -71,9 +65,10 @@ export default function ArticlePage() {
             </p>
             <p className="mt-4">
               HSX DIECASTING is operated by Foshan Huashunxiang Hardware Products
-              Factory in Foshan, Guangdong, China. The factory positioning is focused
-              on practical small-to-medium aluminum die casting parts and related
-              LED lighting products for global B2B buyers.
+              Factory in Foshan, Guangdong, China. The factory focuses on custom OEM
+              aluminum die casting parts for global B2B buyers. Its lighting-related
+              experience concerns aluminum die-cast housings, lamp bodies, and
+              related structural parts for lighting applications.
             </p>
           </section>
 
@@ -158,24 +153,6 @@ export default function ArticlePage() {
           </div>
         </section>
 
-        <section className="mt-10 rounded-[2rem] border border-[#d7b56d]/25 bg-[#d4ac67] p-8 text-[#120f08]">
-          <h2 className="text-2xl font-semibold">Send your sourcing project to HSX</h2>
-          <p className="mt-4 text-sm leading-7">
-            Share drawings, samples, photos, quantity, finish requirements, and
-            packaging needs. HSX can review your project before quotation.
-          </p>
-          <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <a href={contactDetails.whatsappHref} className="rounded-full bg-[#111] px-6 py-3 text-center text-sm font-semibold !text-white">
-              WhatsApp RFQ
-            </a>
-            <a
-              href={`mailto:${contactDetails.email}?subject=RFQ%20for%20Aluminum%20Die%20Casting%20Manufacturer%20in%20China&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20looking%20for%20an%20aluminum%20die%20casting%20manufacturer%20in%20China.%0A%0AProduct%20type%3A%0AQuantity%3A%0ADrawing%20or%20sample%20available%3A%0AFinish%20requirement%3A%0ATarget%20market%3A%0A%0APlease%20contact%20me%20with%20pricing%20and%20production%20details.%0A%0ABest%20regards%2C`}
-              className="rounded-full border border-[#120f08]/30 px-6 py-3 text-center text-sm font-semibold"
-            >
-              Email Project Details
-            </a>
-          </div>
-        </section>
       </article>
     </main>
   );
