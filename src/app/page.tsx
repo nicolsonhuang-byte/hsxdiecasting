@@ -1,7 +1,6 @@
 import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 
-import aboutWorkshop from "../../public/images/about-hsx-aluminum-die-casting-workshop.jpg";
 import communicationEquipmentHousing from "../../public/images/hsx-factory/communication-equipment-aluminum-die-cast-housing.jpg";
 import machineryAccessoryPart from "../../public/images/hsx-factory/machinery-accessory-aluminum-die-cast-part.jpg";
 import multiSpindleDrilling from "../../public/images/hsx-factory/multi-spindle-drilling-fixture-aluminum-part.jpg";
@@ -10,6 +9,7 @@ import qualityInspection from "../../public/images/hsx-factory/quality-inspectio
 import sprayPainting from "../../public/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg";
 import stageLightHousing from "../../public/images/hsx-factory/stage-light-aluminum-die-cast-housing.jpg";
 import workshopHorizontal from "../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
+import { HomepageHeroVideo } from "./components/homepage-hero-video";
 import { SiteFooter, SiteHeader } from "./components/site-navigation";
 
 type ProductFamily = {
@@ -163,8 +163,8 @@ export default function Home() {
           aria-labelledby="homepage-hero-heading"
           className="border-b border-white/8 bg-[radial-gradient(circle_at_top_right,rgba(199,162,91,0.14),transparent_34%),linear-gradient(180deg,#090909_0%,#050505_100%)]"
         >
-          <div className="container-shell grid min-w-0 gap-10 py-14 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-center lg:py-24">
-            <div className="min-w-0 motion-rise">
+          <div className="container-shell grid min-w-0 gap-10 py-14 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-center lg:gap-y-0 lg:py-24">
+            <div className="min-w-0 motion-rise lg:col-start-1 lg:row-start-1">
               <p className="section-kicker">China aluminum die casting workshop</p>
               <h1
                 id="homepage-hero-heading"
@@ -188,42 +188,28 @@ export default function Home() {
                   View Products
                 </Link>
               </div>
-
-              <div className="mt-10 grid gap-5 border-t border-white/10 pt-7 sm:grid-cols-2">
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#e8ce97]">
-                    Project input
-                  </p>
-                  <p className="mt-3 text-sm leading-7 text-[#c9c1b2]">
-                    Drawings, samples, photos, and project requirements
-                  </p>
-                </div>
-                <div className="border-white/10 sm:border-l sm:pl-6">
-                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#e8ce97]">
-                    Factory review
-                  </p>
-                  <p className="mt-3 text-sm leading-7 text-[#c9c1b2]">
-                    Suitability checked before tooling and quotation
-                  </p>
-                </div>
-              </div>
             </div>
 
-            <div className="min-w-0 motion-rise-delay">
-              <div className="relative aspect-[4/3] overflow-hidden border border-[#d5ae67]/35 bg-black">
-                <Image
-                  src={aboutWorkshop}
-                  alt="HSX aluminum die casting workshop with production equipment and aluminum die-cast parts"
-                  fill
-                  preload
-                  sizes="(min-width: 1280px) 40rem, (min-width: 1024px) 46vw, 100vw"
-                  className="object-cover object-[center_54%]"
-                />
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 to-transparent px-5 pb-5 pt-16 sm:px-7 sm:pb-7">
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f4d27a]">
-                    Real HSX production workshop
-                  </p>
-                </div>
+            <div className="min-w-0 motion-rise-delay lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:self-center">
+              <HomepageHeroVideo />
+            </div>
+
+            <div className="grid gap-5 border-t border-white/10 pt-7 sm:grid-cols-2 lg:col-start-1 lg:row-start-2 lg:mt-10">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#e8ce97]">
+                  Project input
+                </p>
+                <p className="mt-3 text-sm leading-7 text-[#c9c1b2]">
+                  Drawings, samples, photos, and project requirements
+                </p>
+              </div>
+              <div className="border-white/10 sm:border-l sm:pl-6">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#e8ce97]">
+                  Factory review
+                </p>
+                <p className="mt-3 text-sm leading-7 text-[#c9c1b2]">
+                  Suitability checked before tooling and quotation
+                </p>
               </div>
             </div>
           </div>
