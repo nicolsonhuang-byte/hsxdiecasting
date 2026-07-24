@@ -2,13 +2,13 @@ import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 
 import communicationEquipmentHousing from "../../public/images/hsx-factory/communication-equipment-aluminum-die-cast-housing.jpg";
+import polishingAction from "../../public/images/hsx-factory/hsx-in-house-polishing-action.jpg";
 import machineryAccessoryPart from "../../public/images/hsx-factory/machinery-accessory-aluminum-die-cast-part.jpg";
 import multiSpindleDrilling from "../../public/images/hsx-factory/multi-spindle-drilling-fixture-aluminum-part.jpg";
 import opticalModuleHousing from "../../public/images/hsx-factory/optical-module-aluminum-die-cast-housing-a.jpg";
 import qualityInspection from "../../public/images/hsx-factory/quality-inspection-finished-aluminum-parts.jpg";
 import sprayPainting from "../../public/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg";
 import stageLightHousing from "../../public/images/hsx-factory/stage-light-aluminum-die-cast-housing.jpg";
-import workshopHorizontal from "../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
 import { HomepageHeroVideo } from "./components/homepage-hero-video";
 import { SiteFooter, SiteHeader } from "./components/site-navigation";
 
@@ -28,8 +28,10 @@ type RealPart = {
 
 type FactoryEvidence = {
   title: string;
+  description: string;
   image: StaticImageData;
   alt: string;
+  objectPosition: string;
 };
 
 const contactDetails = {
@@ -114,19 +116,25 @@ const inHouseCapabilityGroups = [
 
 const factoryEvidence: FactoryEvidence[] = [
   {
-    title: "Drilling and Tapping",
+    title: "Drilling",
+    description: "Drilling performed on an aluminum die-cast part.",
     image: multiSpindleDrilling,
     alt: "In-house drilling operation for an aluminum die-cast part at HSX",
+    objectPosition: "center 56%",
   },
   {
     title: "Spray Painting",
+    description: "In-house spray painting of aluminum parts.",
     image: sprayPainting,
     alt: "In-house spray painting of aluminum parts at HSX",
+    objectPosition: "42% center",
   },
   {
     title: "Quality Inspection",
+    description: "Finished aluminum parts checked before packing.",
     image: qualityInspection,
     alt: "Manual visual inspection of finished aluminum parts before packing at HSX",
+    objectPosition: "center 58%",
   },
 ];
 
@@ -417,57 +425,104 @@ export default function Home() {
           <div className="container-shell">
             <SectionHeading
               eyebrow="Factory Evidence"
-              title="Real production spaces and in-house operations"
-              description="Workshop and process photographs show where HSX carries out aluminum die casting, drilling, tapping, spray painting, inspection, and production preparation."
+              title="Real in-house manufacturing actions"
+              description="Process photographs show HSX carrying out polishing, drilling, spray painting, and quality inspection."
             />
 
-            <div className="mt-12 grid min-w-0 gap-5 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
-              <figure
-                className="relative overflow-hidden border border-white/10 bg-black"
-                style={{ minHeight: "min(34rem, 100vw)" }}
-              >
-                <Image
-                  src={workshopHorizontal}
-                  alt="HSX aluminum die casting workshop with production equipment"
-                  fill
-                  sizes="(min-width: 1024px) 62vw, 100vw"
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                <figcaption className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
-                  <p className="section-kicker">Die Casting Workshop</p>
-                  <p className="mt-3 max-w-xl text-base leading-7 text-[#ede6d7]">
-                    A real view of the HSX production workshop in Foshan.
+            <div className="home-factory-evidence-layout mt-12 min-w-0">
+              <figure className="min-w-0">
+                <div className="relative aspect-video overflow-hidden border border-white/10 bg-black">
+                  <Image
+                    src={polishingAction}
+                    alt="In-house polishing of an aluminum die-cast part at HSX"
+                    fill
+                    sizes="(min-width: 1280px) 44rem, (min-width: 1024px) 58vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+                <figcaption className="flex flex-col gap-3 border-b border-white/10 py-5 sm:flex-row sm:items-end sm:justify-between sm:gap-8 sm:py-6">
+                  <div>
+                    <p className="section-kicker">Primary Manufacturing Action</p>
+                    <h3 className="mt-3 text-2xl font-semibold text-white">
+                      Polishing
+                    </h3>
+                  </div>
+                  <p className="max-w-sm text-sm leading-7 text-[#c9c1b2] sm:text-right">
+                    In-house polishing of aluminum die-cast parts.
                   </p>
                 </figcaption>
               </figure>
 
-              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-1">
-                {factoryEvidence.map((evidence, index) => (
+              <div className="home-factory-evidence-list min-w-0 divide-y divide-white/10 border-y border-white/10">
+                {factoryEvidence.map((evidence) => (
                   <figure
                     key={evidence.title}
-                    className={`relative min-h-[17rem] overflow-hidden border border-white/10 bg-black ${
-                      index === 2 ? "sm:col-span-2 lg:col-span-1" : ""
-                    }`}
-                    style={{ minHeight: "17rem" }}
+                    className="home-factory-evidence-row min-w-0 gap-5 py-4"
                   >
-                    <Image
-                      src={evidence.image}
-                      alt={evidence.alt}
-                      fill
-                      sizes="(min-width: 1024px) 34vw, (min-width: 640px) 50vw, 100vw"
-                      className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
-                    <figcaption className="absolute inset-x-0 bottom-0 p-5">
+                    <div className="relative aspect-[4/3] min-w-0 overflow-hidden bg-black">
+                      <Image
+                        src={evidence.image}
+                        alt={evidence.alt}
+                        fill
+                        sizes="(min-width: 1024px) 12rem, 42vw"
+                        className="object-cover"
+                        style={{ objectPosition: evidence.objectPosition }}
+                      />
+                    </div>
+                    <figcaption className="min-w-0 py-2 pr-1">
+                      <p className="text-[0.66rem] font-semibold uppercase tracking-[0.24em] text-[#d5ae67]">
+                        In-house operation
+                      </p>
                       <h3 className="text-lg font-semibold text-white">
                         {evidence.title}
                       </h3>
+                      <p className="mt-2 text-sm leading-6 text-[#bdb5a7]">
+                        {evidence.description}
+                      </p>
                     </figcaption>
                   </figure>
                 ))}
               </div>
             </div>
+            <style>{`
+              .home-factory-evidence-layout {
+                display: grid;
+                gap: 2rem;
+              }
+
+              .home-factory-evidence-list {
+                display: grid;
+              }
+
+              .home-factory-evidence-row {
+                display: grid;
+                grid-template-columns: minmax(8.25rem, 2fr) minmax(0, 3fr);
+                align-items: center;
+              }
+
+              @media (min-width: 64rem) {
+                .home-factory-evidence-layout {
+                  grid-template-columns: minmax(0, 29fr) minmax(22rem, 21fr);
+                  align-items: stretch;
+                  gap: 2.25rem;
+                }
+
+                .home-factory-evidence-list {
+                  grid-template-rows: repeat(3, minmax(0, 1fr));
+                }
+
+                .home-factory-evidence-row {
+                  grid-template-columns: minmax(0, 44fr) minmax(0, 56fr);
+                  gap: 1rem;
+                  min-height: 0;
+                  padding-block: 0.75rem;
+                }
+
+                .home-factory-evidence-row > div:first-child {
+                  aspect-ratio: 3 / 2;
+                }
+              }
+            `}</style>
           </div>
         </section>
 
