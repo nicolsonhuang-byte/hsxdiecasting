@@ -16,12 +16,6 @@ export const metadata = buildArticleMetadata({
   path: articlePath,
 });
 
-const contactDetails = {
-  email: "nicolson@hsxdiecasting.com",
-  whatsappHref:
-    "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20am%20interested%20in%20OEM%20aluminum%20die%20casting%20parts.%20Please%20contact%20me%20with%20quotation%20details.",
-};
-
 const relatedLinks = [
   { label: "OEM Aluminum Die Casting Parts", href: "/products/oem-aluminum-die-casting-parts" },
   { label: "Aluminum Light Housings", href: "/products/aluminum-light-housings" },
@@ -129,9 +123,12 @@ export default function ArticlePage() {
             <p className="mt-4">
               HSX DIECASTING is operated by Foshan Huashunxiang Hardware Products
               Factory, a real manufacturing factory in Foshan, Guangdong, China. The
-              factory focuses on small-to-medium aluminum die casting parts, aluminum
-              light housings, LED work lights, automotive and motorcycle LED lights,
-              and decorative appearance cover projects for global B2B buyers.
+              factory focuses on custom OEM aluminum die casting parts, including
+              housings, structural parts, hardware, and other project-specific
+              components based on buyer drawings, samples, and requirements.
+              Lighting-related housings, lamp bodies, heat-dissipation structures,
+              and mounting parts are aluminum die casting applications rather than
+              complete-light product lines.
             </p>
             <p className="mt-4">
               Buyers can communicate with a direct factory-side team, which helps
@@ -157,25 +154,6 @@ export default function ArticlePage() {
           </div>
         </section>
 
-        <section className="mt-10 rounded-[2rem] border border-[#d7b56d]/25 bg-[#d4ac67] p-8 text-[#120f08]">
-          <h2 className="text-2xl font-semibold">Send your aluminum die casting RFQ</h2>
-          <p className="mt-4 text-sm leading-7">
-            Share your drawings, samples, target finish, quantity, and packaging
-            needs. HSX can review whether the project fits the available factory
-            scope before quotation.
-          </p>
-          <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <a href={contactDetails.whatsappHref} className="rounded-full bg-[#111] px-6 py-3 text-center text-sm font-semibold !text-white">
-              WhatsApp RFQ
-            </a>
-            <a
-              href={`mailto:${contactDetails.email}?subject=RFQ%20for%20OEM%20Aluminum%20Die%20Casting%20Parts&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20would%20like%20to%20request%20a%20quotation%20for%20OEM%20aluminum%20die%20casting%20parts.%0A%0APart%20type%3A%0AQuantity%3A%0AMaterial%20/%20finish%3A%0ADrawing%20or%20sample%20available%3A%0APackaging%20requirements%3A%0A%0APlease%20contact%20me%20with%20pricing%20and%20production%20details.%0A%0ABest%20regards%2C`}
-              className="rounded-full border border-[#120f08]/30 px-6 py-3 text-center text-sm font-semibold"
-            >
-              Email Project Details
-            </a>
-          </div>
-        </section>
       </article>
     </main>
   );
