@@ -18,15 +18,6 @@ export const metadata = buildArticleMetadata({
   path: articlePath,
 });
 
-const contactDetails = {
-  email: "nicolson@hsxdiecasting.com",
-  whatsappHref:
-    "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20am%20looking%20for%20a%20precision%20aluminum%20die%20casting%20factory%20in%20China.%20Please%20contact%20me%20for%20OEM%20project%20review.",
-};
-
-const mailtoRfq =
-  "mailto:nicolson@hsxdiecasting.com?subject=RFQ%20for%20Precision%20Aluminum%20Die%20Casting%20Factory%20in%20China&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20am%20looking%20for%20a%20precision%20aluminum%20die%20casting%20factory%20in%20China.%0A%0AProduct%20type%3A%0ADrawings%20or%203D%20files%20available%3A%0ASample%20photos%20available%3A%0ATarget%20quantity%3A%0ASurface%20finishing%20requirements%3A%0ACNC%20turning%20or%20CNC%20machining%20requirements%20if%20needed%3A%0APackaging%20or%20project%20details%3A%0A%0APlease%20contact%20me%20with%20project%20review%20details.%0A%0ABest%20regards%2C";
-
 const relatedLinks = [
   {
     label: "OEM Aluminum Die Casting Parts",
@@ -360,8 +351,9 @@ export default function ArticlePage() {
               For direct contact details, visit the{" "}
               <Link href="/contact" className="font-semibold text-[#f4d27a]">
                 HSX contact page
-              </Link>{" "}
-              or use the RFQ buttons below.
+              </Link>
+              . To start a formal project review, use the NEXT STEP section at
+              the end of this article.
             </p>
           </section>
         </div>
@@ -399,36 +391,6 @@ export default function ArticlePage() {
           </div>
         </section>
 
-        <section className="mt-10 rounded-[2rem] border border-[#d7b56d]/25 bg-[#d4ac67] p-8 text-[#120f08]">
-          <h2 className="text-2xl font-semibold">
-            Send your aluminum die casting RFQ to HSX
-          </h2>
-          <p className="mt-4 text-sm leading-7">
-            Send drawings, 3D files, sample photos, target quantity, surface
-            finishing requirements, CNC requirements if needed, and project
-            details by email or WhatsApp.
-          </p>
-          <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <a
-              href={contactDetails.whatsappHref}
-              className="rounded-full bg-[#111] px-6 py-3 text-center text-sm font-semibold !text-white"
-            >
-              WhatsApp RFQ
-            </a>
-            <a
-              href={mailtoRfq}
-              className="rounded-full border border-[#120f08]/30 px-6 py-3 text-center text-sm font-semibold"
-            >
-              Email Project Details
-            </a>
-            <Link
-              href="/products/oem-aluminum-die-casting-parts"
-              className="rounded-full border border-[#120f08]/30 px-6 py-3 text-center text-sm font-semibold"
-            >
-              Review OEM Parts Page
-            </Link>
-          </div>
-        </section>
       </article>
     </main>
   );
