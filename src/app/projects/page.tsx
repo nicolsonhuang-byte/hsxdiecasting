@@ -5,27 +5,21 @@ import Link from "next/link";
 import { SiteFooter, SiteHeader } from "../components/site-navigation";
 import styles from "./page.module.css";
 
-import batchParts from "../../../public/images/hsx-factory/batch-aluminum-die-cast-parts-before-finishing.jpg";
+import batchBlanks from "../../../public/images/hsx-factory/batch-aluminum-die-cast-parts-before-finishing.jpg";
 import chairArmrest from "../../../public/images/hsx-factory/chair-armrest-aluminum-die-cast-part.jpg";
 import communicationHousing from "../../../public/images/hsx-factory/communication-equipment-aluminum-die-cast-housing.jpg";
 import machineryPart from "../../../public/images/hsx-factory/machinery-accessory-aluminum-die-cast-part.jpg";
-import opticalModuleHousing from "../../../public/images/hsx-factory/optical-module-aluminum-die-cast-housing-a.jpg";
+import opticalModuleHousingB from "../../../public/images/hsx-factory/optical-module-aluminum-die-cast-housing-b.jpg";
 import slidingDoorHandle from "../../../public/images/hsx-factory/sliding-door-handle-aluminum-die-cast-part.jpg";
 import smartLockBlank from "../../../public/images/hsx-factory/smart-lock-aluminum-die-cast-blank.jpg";
 import stageLightHousing from "../../../public/images/hsx-factory/stage-light-aluminum-die-cast-housing.jpg";
-import redPackaging from "../../../public/images/custom-decorative-brake-caliper-covers-red-packaging.jpg";
 import coatingFrame from "../../../public/images/projects/decorative-brake-caliper-cover-coating.jpg";
-import designFrame from "../../../public/images/projects/decorative-brake-caliper-cover-design.jpg";
-import dieCastingFrame from "../../../public/images/projects/decorative-brake-caliper-cover-die-casting.jpg";
-import finishedPackingFrame from "../../../public/images/projects/decorative-brake-caliper-cover-finished-packing.jpg";
-import gateRemovalFrame from "../../../public/images/projects/decorative-brake-caliper-cover-gate-removal.jpg";
 import inspectionPhoto from "../../../public/images/projects/decorative-brake-caliper-cover-inspection.jpg";
-import polishingFrame from "../../../public/images/projects/decorative-brake-caliper-cover-polishing.jpg";
-import rawMaterialFrame from "../../../public/images/projects/decorative-brake-caliper-cover-raw-material.jpg";
+import workLightHousing from "../../../public/images/projects/work-light-housing-production-evidence.jpg";
 
 const pageTitle = "Projects & Real Parts | HSX DIECASTING";
 const pageDescription =
-  "See the production journey of a decorative brake caliper cover project and selected real aluminum die-cast parts manufactured by HSX.";
+  "Explore real aluminum die-cast lighting housings, enclosures, hardware, mechanical parts, batch cast blanks, and selected project evidence manufactured by HSX for drawing-based OEM projects.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -39,8 +33,10 @@ export const metadata: Metadata = {
     url: "/projects",
     images: [
       {
-        url: "/images/projects/decorative-brake-caliper-cover-inspection.jpg",
-        alt: "Finished decorative brake caliper covers handled at the project worktable",
+        url: "/images/hsx-factory/batch-die-cast-parts-before-trimming.jpg",
+        width: 1080,
+        height: 1822,
+        alt: "Batch aluminum die-cast parts manufactured by HSX",
       },
     ],
   },
@@ -48,118 +44,207 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: pageTitle,
     description: pageDescription,
-    images: [
-      "/images/projects/decorative-brake-caliper-cover-inspection.jpg",
-    ],
+    images: ["/images/hsx-factory/batch-die-cast-parts-before-trimming.jpg"],
   },
 };
 
-type ProjectRecord = {
+type EvidenceRecord = {
   title: string;
-  category: string;
-  scope: string;
+  description: string;
   image: StaticImageData;
   alt: string;
-  size: "wide" | "standard" | "tall";
-  fit?: "cover" | "contain";
-  anchorId?: string;
 };
 
-const projectRecords: ProjectRecord[] = [
+type ArchiveCategory = {
+  index: string;
+  id: string;
+  title: string;
+  description: string;
+  featured: EvidenceRecord;
+  records: EvidenceRecord[];
+  tone: "base" | "soft";
+};
+
+const archiveCategories: ArchiveCategory[] = [
   {
-    title: "Optical Module Housing",
-    category: "Enclosures & Housings",
-    scope: "Aluminum die-cast optical module housing.",
-    image: opticalModuleHousing,
-    alt: "Optical module aluminum die-cast housing manufactured by HSX",
-    size: "wide",
-    fit: "contain",
-    anchorId: "enclosures-housings",
+    index: "01",
+    id: "lighting-housings",
+    title: "Lighting Housings",
+    description:
+      "Real die-cast housing experience for lighting-related applications. These records concern housings and structural parts, not complete LED lights.",
+    featured: {
+      title: "Work Light Housing",
+      description:
+        "Real aluminum die-cast work light housings shown in a production environment. This evidence concerns housings and structural parts, not complete lights.",
+      image: workLightHousing,
+      alt: "Aluminum die-cast work light housings at HSX production equipment",
+    },
+    records: [
+      {
+        title: "Stage Light Housing",
+        description:
+          "A real aluminum die-cast stage light housing previously manufactured by HSX.",
+        image: stageLightHousing,
+        alt: "Aluminum die-cast stage light housing previously manufactured by HSX",
+      },
+    ],
+    tone: "base",
   },
   {
-    title: "Communication Equipment Housing",
-    category: "Enclosures & Housings",
-    scope: "Aluminum die-cast communication equipment housing.",
-    image: communicationHousing,
-    alt: "Communication equipment aluminum die-cast housing manufactured by HSX",
-    size: "standard",
-    fit: "contain",
+    index: "02",
+    id: "enclosures-housings",
+    title: "Enclosures / Housings",
+    description:
+      "Selected aluminum die-cast housings and enclosure blanks previously manufactured for customer-specific projects.",
+    featured: {
+      title: "Smart Lock Die-Cast Blank",
+      description:
+        "Batch die-cast smart lock housing blanks from a customer-specific project.",
+      image: smartLockBlank,
+      alt: "Batch smart lock aluminum die-cast housing blanks manufactured by HSX",
+    },
+    records: [
+      {
+        title: "Optical Module Housing B",
+        description:
+          "A confirmed Optical Module Housing B part previously manufactured by HSX.",
+        image: opticalModuleHousingB,
+        alt: "Confirmed Optical Module Housing B part previously manufactured by HSX",
+      },
+      {
+        title: "Communication Equipment Housing",
+        description:
+          "A real aluminum die-cast communication equipment housing previously manufactured by HSX.",
+        image: communicationHousing,
+        alt: "Aluminum die-cast communication equipment housing previously manufactured by HSX",
+      },
+    ],
+    tone: "soft",
   },
   {
-    title: "Stage Light Housing",
-    category: "Lighting Housings",
-    scope: "Aluminum die-cast stage light housing.",
-    image: stageLightHousing,
-    alt: "Stage light aluminum die-cast housing manufactured by HSX",
-    size: "standard",
-    fit: "contain",
-    anchorId: "lighting-housings",
+    index: "03",
+    id: "hardware-mechanical-parts",
+    title: "Hardware & Mechanical Parts",
+    description:
+      "Real die-cast handles, mechanical parts and hardware components from previous customer-specific OEM projects.",
+    featured: {
+      title: "Sliding Door Handle",
+      description:
+        "Multiple sliding door handle parts previously manufactured by HSX for a customer-specific project.",
+      image: slidingDoorHandle,
+      alt: "Multiple aluminum die-cast sliding door handle parts manufactured by HSX",
+    },
+    records: [
+      {
+        title: "Machinery / Mechanical Part",
+        description:
+          "Batch aluminum die-cast mechanical parts previously manufactured by HSX.",
+        image: machineryPart,
+        alt: "Batch aluminum die-cast mechanical parts previously manufactured by HSX",
+      },
+      {
+        title: "Computer Chair Armrest",
+        description:
+          "A real aluminum die-cast chair armrest part previously manufactured by HSX.",
+        image: chairArmrest,
+        alt: "Aluminum die-cast computer chair armrest part previously manufactured by HSX",
+      },
+    ],
+    tone: "base",
   },
   {
-    title: "Sliding Door Handle",
-    category: "Hardware & Mechanical Parts",
-    scope: "Aluminum die-cast sliding door handle parts.",
-    image: slidingDoorHandle,
-    alt: "Sliding door handle aluminum die-cast parts manufactured by HSX",
-    size: "wide",
-    fit: "contain",
-    anchorId: "hardware-mechanical-parts",
-  },
-  {
-    title: "Machinery Part",
-    category: "Hardware & Mechanical Parts",
-    scope: "Aluminum die-cast machinery parts.",
-    image: machineryPart,
-    alt: "Aluminum die-cast machinery parts manufactured by HSX",
-    size: "wide",
-    fit: "contain",
-  },
-  {
-    title: "Smart Lock Die-Cast Blank",
-    category: "Enclosures & Housings",
-    scope: "Smart lock die-cast blank.",
-    image: smartLockBlank,
-    alt: "Smart lock aluminum die-cast blank manufactured by HSX",
-    size: "tall",
-    fit: "contain",
-  },
-  {
-    title: "Chair Armrest Die-Cast Part",
-    category: "Hardware & Mechanical Parts",
-    scope: "Aluminum die-cast chair armrest part.",
-    image: chairArmrest,
-    alt: "Chair armrest aluminum die-cast part manufactured by HSX",
-    size: "standard",
-    fit: "contain",
-  },
-  {
-    title: "Batch Aluminum Die-Cast Parts",
-    category: "Other Custom Parts",
-    scope: "Batch of aluminum die-cast parts before finishing.",
-    image: batchParts,
-    alt: "Batch aluminum die-cast parts manufactured by HSX before finishing",
-    size: "wide",
-    anchorId: "other-custom-parts",
+    index: "04",
+    id: "other-custom-parts",
+    title: "Other Custom Parts",
+    description:
+      "Batch aluminum die-cast blanks shown as general evidence of HSX’s real manufacturing experience.",
+    featured: {
+      title: "Batch Aluminum Die-Cast Blanks",
+      description:
+        "Batch aluminum die-cast blanks shown as general manufacturing evidence.",
+      image: batchBlanks,
+      alt: "Batch aluminum die-cast blanks shown as general manufacturing evidence",
+    },
+    records: [],
+    tone: "soft",
   },
 ];
 
-const processChapters = [
-  {
-    range: "01–03",
-    title: "Design & Casting Preparation",
-    href: "#design-casting-preparation",
-  },
-  {
-    range: "04–06",
-    title: "Casting to Surface Finish",
-    href: "#casting-surface-finish",
-  },
-  {
-    range: "07–09",
-    title: "Assembly, QC & Packing",
-    href: "#assembly-qc-packing",
-  },
-];
+function CategorySection({ category }: { category: ArchiveCategory }) {
+  return (
+    <section
+      id={category.id}
+      className={styles.categorySection}
+      data-tone={category.tone}
+      aria-labelledby={`${category.id}-heading`}
+    >
+      <div className="container-shell">
+        <header className={styles.categoryHeader}>
+          <span className={styles.categoryIndex} aria-hidden="true">
+            {category.index}
+          </span>
+          <div>
+            <p className="section-kicker">Manufacturing archive</p>
+            <h2 id={`${category.id}-heading`}>{category.title}</h2>
+          </div>
+          <p className={styles.categoryDescription}>{category.description}</p>
+        </header>
+
+        <div className={styles.categoryBody}>
+          <figure className={styles.featuredMedia}>
+            <Image
+              src={category.featured.image}
+              alt={category.featured.alt}
+              sizes="(min-width: 1000px) 42vw, (min-width: 700px) 62vw, 92vw"
+              className={styles.featuredImage}
+            />
+            <figcaption>Real manufacturing evidence</figcaption>
+          </figure>
+
+          <div className={styles.evidenceColumn}>
+            <article className={styles.featuredCopy}>
+              <p className={styles.evidenceLabel}>
+                Featured Real Part Evidence
+              </p>
+              <h3>{category.featured.title}</h3>
+              <p>{category.featured.description}</p>
+            </article>
+
+            {category.records.length > 0 ? (
+              <div className={styles.archiveList}>
+                <p className={styles.archiveListTitle}>
+                  Supporting archive records
+                </p>
+                {category.records.map((record) => (
+                  <article key={record.title} className={styles.archiveRow}>
+                    <figure className={styles.archiveThumb}>
+                      <Image
+                        src={record.image}
+                        alt={record.alt}
+                        sizes="(min-width: 1000px) 12rem, 40vw"
+                        className={styles.archiveImage}
+                      />
+                    </figure>
+                    <div className={styles.archiveCopy}>
+                      <p className={styles.recordLabel}>Real Part Evidence</p>
+                      <h3>{record.title}</h3>
+                      <p>{record.description}</p>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            ) : (
+              <p className={styles.singleRecordNote}>
+                One selected batch record is shown for this broad custom-parts
+                category.
+              </p>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 export default function ProjectsPage() {
   return (
@@ -168,321 +253,137 @@ export default function ProjectsPage() {
 
       <main>
         <section className={styles.hero} aria-labelledby="projects-heading">
-          <Image
-            src={inspectionPhoto}
-            alt="Finished decorative brake caliper covers handled at an HSX project worktable"
-            fill
-            preload
-            sizes="100vw"
-            className={styles.heroImage}
-          />
-          <div className={styles.heroShade} />
-          <div className={`container-shell ${styles.heroContent}`}>
-            <p className="section-kicker">Manufacturing evidence</p>
-            <h1 id="projects-heading" className={styles.heroTitle}>
-              Projects &amp;
-              <br />
-              Real Parts
-            </h1>
-            <p className={styles.heroLead}>
-              A visual journey through one complete HSX project, followed by
-              selected real parts from other OEM projects.
-            </p>
-            <a href="#featured-project" className={styles.heroJump}>
-              View the featured project <span aria-hidden="true">↓</span>
-            </a>
+          <div className={`container-shell ${styles.heroGrid}`}>
+            <div className={styles.heroCopy}>
+              <p className="section-kicker">Manufacturing Evidence</p>
+              <h1 id="projects-heading">
+                <span>Projects &amp;</span>
+                <span>Real Parts</span>
+              </h1>
+              <p className={styles.heroLead}>
+                Explore selected aluminum die-cast housings, enclosures,
+                hardware and mechanical parts previously manufactured by HSX
+                for customer-specific OEM projects.
+              </p>
+            </div>
+
+            <aside className={styles.heroLedger} aria-label="Archive summary">
+              <p>Archive scope</p>
+              <dl>
+                <div>
+                  <dt>04</dt>
+                  <dd>Manufacturing categories</dd>
+                </div>
+                <div>
+                  <dt>09</dt>
+                  <dd>Real part records</dd>
+                </div>
+                <div>
+                  <dt>01</dt>
+                  <dd>Selected project snapshot</dd>
+                </div>
+              </dl>
+            </aside>
           </div>
         </section>
 
-        <nav className={styles.archiveNav} aria-label="Browse project categories">
+        <section className={styles.toolingNotice} aria-labelledby="tooling-notice">
+          <div className={`container-shell ${styles.toolingNoticeInner}`}>
+            <h2 id="tooling-notice">Customer Project &amp; Tooling Notice</h2>
+            <p>
+              Images are shown only as evidence of HSX’s manufacturing
+              experience. Customer-funded tooling and project-specific designs
+              remain dedicated to the original customer and are not available
+              for third-party production or sale without written authorization.
+              New projects are reviewed independently based on the buyer’s own
+              drawings, samples and requirements.
+            </p>
+          </div>
+        </section>
+
+        <nav className={styles.archiveNav} aria-label="Project archive categories">
           <div className={`container-shell ${styles.archiveNavInner}`}>
-            <span className={styles.archiveNavLabel}>Browse the archive</span>
-            <a href="#lighting-housings">Lighting Housings</a>
-            <a href="#enclosures-housings">Enclosures &amp; Housings</a>
-            <a href="#hardware-mechanical-parts">
-              Hardware &amp; Mechanical Parts
-            </a>
-            <a href="#other-custom-parts">Other Custom Parts</a>
+            <span className={styles.archiveNavLabel}>Project archive</span>
+            {archiveCategories.map((category) => (
+              <a key={category.id} href={`#${category.id}`}>
+                {category.title}
+              </a>
+            ))}
           </div>
         </nav>
 
-        <article id="featured-project" className={styles.featuredProject}>
-          <header className={`container-shell ${styles.caseHeader}`}>
-            <div className={styles.caseNumber} aria-hidden="true">
-              01
-            </div>
-            <div className={styles.caseHeadingBlock}>
-              <p className="section-kicker">Featured project</p>
-              <h2 className={`section-heading ${styles.caseTitle}`}>
-                Decorative Brake Caliper Cover Project
-              </h2>
-              <p className={styles.boundaryStatement}>
-                Decorative appearance product, not a functional braking
-                component.
-              </p>
-            </div>
-            <div className={styles.caseScope}>
-              <p className={styles.caseScopeLabel}>HSX supply scope</p>
-              <p>
-                Design review through finished product and packing, including
-                assembly for this decorative cover project.
-              </p>
-            </div>
-          </header>
+        {archiveCategories.map((category) => (
+          <CategorySection key={category.id} category={category} />
+        ))}
 
-          <figure className={`container-shell ${styles.videoRecord}`}>
-            <video
-              controls
-              playsInline
-              preload="metadata"
-              poster="/images/projects/decorative-brake-caliper-cover-die-casting.jpg"
-              className={styles.featureVideo}
-            >
-              <source
-                src="/videos/projects/decorative-brake-caliper-cover-process.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video element.
-            </video>
-            <figcaption className={styles.videoCaption}>
-              <span>Complete project process</span>
-              <span>Design → production → finished packing</span>
-            </figcaption>
-          </figure>
-
-          <ol className={`container-shell ${styles.processIndex}`}>
-            {processChapters.map((chapter) => (
-              <li key={chapter.range}>
-                <a href={chapter.href}>
-                  <span>{chapter.range}</span>
-                  {chapter.title}
-                </a>
-              </li>
-            ))}
-          </ol>
-
-          <section
-            id="design-casting-preparation"
-            className={`container-shell ${styles.recordChapter}`}
-          >
-            <div className={styles.chapterMarker}>
-              <span>01–03</span>
-              <p>Design &amp; Casting Preparation</p>
-            </div>
-            <figure className={styles.designFigure}>
-              <div className={styles.mediaFrame}>
-                <Image
-                  src={designFrame}
-                  alt="Digital model shown during the decorative brake caliper cover project"
-                  fill
-                  sizes="(min-width: 900px) 42vw, 100vw"
-                  className={styles.coverImage}
-                />
-              </div>
-              <figcaption>
-                <span>Design</span>
-                The project begins with a digital product model.
-              </figcaption>
-            </figure>
-            <figure className={styles.materialFigure}>
-              <div className={styles.mediaFrame}>
-                <Image
-                  src={rawMaterialFrame}
-                  alt="Raw material prepared for the decorative brake caliper cover project"
-                  fill
-                  sizes="(min-width: 900px) 28vw, 100vw"
-                  className={styles.coverImage}
-                />
-              </div>
-              <figcaption>
-                <span>Raw Material</span>
-                Production input material prepared for the next project stage.
-              </figcaption>
-            </figure>
-          </section>
-
-          <figure className={styles.fullBleedRecord}>
-            <Image
-              src={dieCastingFrame}
-              alt="Die casting equipment operating during the decorative brake caliper cover project"
-              fill
-              sizes="100vw"
-              className={styles.coverImage}
-            />
-            <figcaption className={styles.fullBleedCaption}>
-              <span>03</span>
+        <section
+          className={styles.decorativeSection}
+          aria-labelledby="decorative-project-heading"
+        >
+          <div className="container-shell">
+            <header className={styles.decorativeHeader}>
               <div>
-                <p>Mold &amp; Die Casting</p>
-                <small>Casting production begins at the die-casting equipment.</small>
+                <p className="section-kicker">Decorative Appearance Application</p>
+                <h2 id="decorative-project-heading">
+                  Decorative Brake Caliper Cover Project Snapshot
+                </h2>
               </div>
-            </figcaption>
-          </figure>
+              <p>
+                A secondary project snapshot, separate from HSX’s core OEM
+                aluminum die-casting categories.
+              </p>
+            </header>
 
-          <section
-            id="casting-surface-finish"
-            className={`container-shell ${styles.processPair}`}
-          >
-            <figure className={styles.gateFigure}>
-              <div className={styles.mediaFrame}>
-                <Image
-                  src={gateRemovalFrame}
-                  alt="Gate removal on decorative brake caliper cover castings"
-                  fill
-                  sizes="(min-width: 900px) 58vw, 100vw"
-                  className={styles.coverImage}
-                />
+            <div className={styles.decorativeBody}>
+              <div className={styles.snapshotCopy}>
+                <p className={styles.evidenceLabel}>Project Snapshot</p>
+                <p className={styles.snapshotLead}>
+                  Real project evidence for a decorative appearance cover. The
+                  product is appearance-focused, non-load-bearing and
+                  non-structural, and is not a functional braking component.
+                </p>
+                <ul className={styles.boundaryList}>
+                  <li>Appearance-focused</li>
+                  <li>Non-load-bearing</li>
+                  <li>Non-structural</li>
+                  <li>Not a functional braking component</li>
+                </ul>
               </div>
-              <figcaption>
-                <span>04 / Gate Removal</span>
-                Cast components are separated from the visible runner and gate
-                material.
-              </figcaption>
-            </figure>
-            <figure className={styles.polishingFigure}>
-              <div className={styles.mediaFrame}>
-                <Image
-                  src={polishingFrame}
-                  alt="Polishing a decorative brake caliper cover casting"
-                  fill
-                  sizes="(min-width: 900px) 34vw, 100vw"
-                  className={styles.coverImage}
-                />
-              </div>
-              <figcaption>
-                <span>05 / Polishing</span>
-                The visible casting surface is prepared before coating.
-              </figcaption>
-            </figure>
-          </section>
 
-          <section className={`container-shell ${styles.coatingChapter}`}>
-            <div className={styles.coatingCopy}>
-              <span className={styles.largeStep}>06</span>
-              <p className="section-kicker">Surface Coating</p>
-              <h3 className="section-heading">Coating follows surface preparation.</h3>
-              <p>
-                The decorative covers receive their visible finish before
-                project-specific assembly and quality inspection.
-              </p>
-            </div>
-            <figure className={styles.coatingFigure}>
-              <Image
-                src={coatingFrame}
-                alt="Coating stage for decorative brake caliper cover components"
-                fill
-                sizes="(min-width: 900px) 62vw, 100vw"
-                className={styles.coverImage}
-              />
-            </figure>
-          </section>
-
-          <section id="assembly-qc-packing" className={styles.inspectionChapter}>
-            <div className={`container-shell ${styles.inspectionHeading}`}>
-              <p className="section-kicker">
-                07–08 / Project-specific Assembly &amp; QC
-              </p>
-              <h3 className="section-heading">
-                Project-specific assembly followed by quality inspection.
-              </h3>
-              <p>
-                Assembly is included in this decorative cover project’s supply
-                scope. Finished red covers are handled and checked at the
-                worktable before packing.
-              </p>
-            </div>
-            <figure className={styles.inspectionFigure}>
-              <Image
-                src={inspectionPhoto}
-                alt="Workers handling and checking finished red decorative brake caliper covers"
-                fill
-                sizes="100vw"
-                className={styles.coverImage}
-              />
-            </figure>
-          </section>
-
-          <section className={`container-shell ${styles.packingChapter}`}>
-            <div className={styles.packingCopy}>
-              <span className={styles.largeStep}>09</span>
-              <p className="section-kicker">Finished Product &amp; Packing</p>
-              <h3 className="section-heading">Finished covers prepared for packing.</h3>
-              <p>
-                Finished decorative covers are arranged in project packaging
-                with accompanying components.
-              </p>
-            </div>
-            <figure className={styles.packingWide}>
-              <Image
-                src={finishedPackingFrame}
-                alt="Finished red decorative brake caliper covers arranged in packaging"
-                fill
-                sizes="(min-width: 900px) 50vw, 100vw"
-                className={styles.coverImage}
-              />
-            </figure>
-            <figure className={styles.packingTall}>
-              <Image
-                src={redPackaging}
-                alt="Packed red decorative brake caliper cover set with accompanying components"
-                fill
-                sizes="(min-width: 900px) 28vw, 100vw"
-                className={styles.coverImage}
-              />
-            </figure>
-          </section>
-        </article>
-
-        <section className={styles.realPartsSection} aria-labelledby="real-parts-heading">
-          <header className={`container-shell ${styles.realPartsHeader}`}>
-            <p className="section-kicker">More real parts</p>
-            <h2 id="real-parts-heading" className="section-heading">
-              Selected real parts manufactured by HSX
-            </h2>
-            <p>
-              Selected aluminum die-cast parts supplied by HSX across different
-              OEM projects.
-            </p>
-          </header>
-
-          <div className={`container-shell ${styles.projectMosaic}`}>
-            {projectRecords.map((project, index) => (
-              <article
-                key={project.title}
-                id={project.anchorId}
-                className={styles.projectRecord}
-                data-size={project.size}
-              >
-                <div className={styles.projectImage} data-fit={project.fit ?? "cover"}>
+              <figure className={styles.snapshotFigure}>
+                <div className={styles.snapshotMedia}>
                   <Image
-                    src={project.image}
-                    alt={project.alt}
-                    fill
-                    sizes="(min-width: 1000px) 55vw, (min-width: 700px) 50vw, 100vw"
-                    className={styles.projectAsset}
+                    src={inspectionPhoto}
+                    alt="Decorative brake caliper covers handled during project inspection"
+                    sizes="(min-width: 900px) 32vw, 46vw"
+                    className={styles.snapshotImage}
                   />
-                  <span className={styles.projectSequence}>
-                    {String(index + 2).padStart(2, "0")}
-                  </span>
+                  <Image
+                    src={coatingFrame}
+                    alt="Decorative brake caliper cover components during coating"
+                    sizes="(min-width: 900px) 32vw, 46vw"
+                    className={styles.snapshotImage}
+                  />
                 </div>
-                <div className={styles.projectMeta}>
-                  <p>{project.category}</p>
-                  <h3>{project.title}</h3>
-                  <div className={styles.projectScope}>
-                    <span>HSX Supply Scope</span>
-                    <strong>{project.scope}</strong>
-                  </div>
-                </div>
-              </article>
-            ))}
+                <figcaption>
+                  Selected project stages shown for manufacturing evidence.
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </section>
 
-        <section className={styles.finalCta}>
+        <section className={styles.finalCta} aria-labelledby="project-review-heading">
           <div className={`container-shell ${styles.finalCtaInner}`}>
             <div>
-              <p className="section-kicker">Start with your part</p>
-              <p className={styles.finalCtaPrompt}>
-                Have a drawing, sample, or real part for review?
+              <p className="section-kicker">Project Review</p>
+              <h2 id="project-review-heading">
+                Start a New Project with Your Own Drawing
+              </h2>
+              <p>
+                Every new project is reviewed independently based on the
+                buyer’s drawings, samples, quantities, finishing requirements
+                and supply scope.
               </p>
             </div>
             <Link
