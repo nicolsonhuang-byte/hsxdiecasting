@@ -1,11 +1,17 @@
 import Link from "next/link";
+import { MobileNavigation } from "./mobile-navigation";
+import styles from "./mobile-navigation.module.css";
 
 const primaryLinks = [
   { href: "/products", label: "Products" },
   { href: "/capabilities", label: "Capabilities" },
   { href: "/projects", label: "Projects" },
   { href: "/about", label: "About" },
-  { href: "/b2b-oem-project-review", label: "Project Review" },
+  {
+    href: "/b2b-oem-project-review",
+    label: "Project Review",
+    highlight: true,
+  },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -19,25 +25,35 @@ const whatsappHref =
 export function SiteHeader() {
   return (
     <header className="relative z-40 border-b border-white/8 bg-[#050505]/88 backdrop-blur-xl">
-      <div className="container-shell flex min-w-0 flex-col gap-4 py-4 sm:py-5 lg:flex-row lg:items-center lg:justify-between">
-        <div className="min-w-0 max-w-2xl">
-          <p className="section-kicker hidden sm:block">Foshan, Guangdong, China</p>
+      <div
+        className={`container-shell flex min-w-0 flex-col gap-4 py-4 sm:py-5 lg:flex-row lg:items-center lg:justify-between ${styles.headerLayout}`}
+      >
+        <div className={`min-w-0 max-w-2xl ${styles.brandBlock}`}>
+          <p
+            className={`section-kicker hidden sm:block ${styles.desktopDetail}`}
+          >
+            Foshan, Guangdong, China
+          </p>
           <Link
             href="/"
-            className="section-heading mt-3 block text-2xl text-white transition-colors hover:text-[#efcf8d] sm:text-3xl"
+            className={`section-heading mt-3 block text-2xl text-white transition-colors hover:text-[#efcf8d] sm:text-3xl ${styles.brandLink}`}
           >
             HSX DIECASTING
           </Link>
-          <p className="mt-3 hidden text-sm leading-7 text-[#beb6a8] sm:block">
+          <p
+            className={`mt-3 hidden text-sm leading-7 text-[#beb6a8] sm:block ${styles.desktopDetail}`}
+          >
             Custom OEM aluminum die casting parts, selected secondary
             operations, project review, QC, and packing support for global B2B
             buyers.
           </p>
         </div>
 
+        <MobileNavigation links={primaryLinks} />
+
         <nav
           aria-label="Primary"
-          className="grid min-w-0 grid-cols-2 gap-x-5 gap-y-3 text-sm text-[#ddd2ba] sm:grid-cols-3 xl:flex xl:shrink-0 xl:justify-end"
+          className={`grid min-w-0 grid-cols-2 gap-x-5 gap-y-3 text-sm text-[#ddd2ba] sm:grid-cols-3 xl:flex xl:shrink-0 xl:justify-end ${styles.desktopNavigation}`}
         >
           {primaryLinks.map((link) => (
             <Link
