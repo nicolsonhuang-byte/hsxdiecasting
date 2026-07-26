@@ -370,24 +370,6 @@ export default function ArticlePage() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href="/products/led-work-lights"
-              className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 text-sm font-semibold text-[#efe7d9] hover:text-[#f4d27a]"
-            >
-              LED Work Lights
-            </Link>
-            <Link
-              href="/products/automotive-led-lights"
-              className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 text-sm font-semibold text-[#efe7d9] hover:text-[#f4d27a]"
-            >
-              Automotive LED Lights
-            </Link>
-            <Link
-              href="/products/motorcycle-led-lights"
-              className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 text-sm font-semibold text-[#efe7d9] hover:text-[#f4d27a]"
-            >
-              Motorcycle LED Lights
-            </Link>
           </div>
         </section>
 
