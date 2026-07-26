@@ -24,15 +24,6 @@ export const metadata = buildArticleMetadata({
   path: articlePath,
 });
 
-const contactDetails = {
-  email: "nicolson@hsxdiecasting.com",
-  whatsappHref:
-    "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20am%20interested%20in%20custom%20decorative%20brake%20caliper%20covers.%20Please%20contact%20me%20with%20quotation%20details.",
-};
-
-const mailtoRfq =
-  "mailto:nicolson@hsxdiecasting.com?subject=RFQ%20for%20Custom%20Decorative%20Brake%20Caliper%20Covers&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20would%20like%20to%20request%20a%20quotation%20for%20custom%20decorative%20brake%20caliper%20covers.%0A%0ATarget%20market%3A%0AVehicle%20style%20or%20reference%20model%3A%0AQuantity%3A%0AColor%20/%20finish%20request%3A%0ALogo%20font%20/%20logo%20color%20request%3A%0APackaging%20or%20label%20request%3A%0AProduct%20photos%20or%20sample%20available%3A%0A%0APlease%20contact%20me%20with%20project%20details.%0A%0ABest%20regards%2C";
-
 const relatedLinks = [
   {
     label: "Decorative Brake Caliper Covers",
@@ -97,10 +88,18 @@ export default function ArticlePage() {
           work should focus on visual style, color, logo presentation, packaging,
           and sample-stage confirmation.
         </p>
+        <p className="mt-4 text-sm leading-7 text-[#bfb5a5]">
+          Within HSX&apos;s broader OEM aluminum die-casting work, decorative brake
+          caliper covers are reviewed only as an additional appearance-focused
+          application. They are not functional braking components, load-bearing
+          brake parts, or structural brake parts, and are not presented as products
+          that change braking performance, brake-system behavior, or vehicle
+          operation.
+        </p>
 
         <ArticleImage
           src={redPackaging}
-          alt="Custom red decorative brake caliper covers with branded packaging"
+          alt="Red decorative brake caliper covers shown with packaging for appearance review"
           caption="Red decorative brake caliper covers can be planned with custom logo presentation and retail packaging for aftermarket buyers."
         />
 
@@ -140,6 +139,13 @@ export default function ArticlePage() {
               shape, appearance surface, logo area, coating expectation, and
               packaging idea before sample preparation or batch planning.
             </p>
+            <p className="mt-4">
+              Fitment must be reviewed for the exact vehicle model, model year and
+              version, wheel design and size, caliper clearance, and installation
+              area using buyer-supplied drawings, dimensions, samples, or clear
+              photos. A result from one sample or previous project does not
+              establish fitment for other vehicles or configurations.
+            </p>
           </section>
 
           <section>
@@ -149,9 +155,9 @@ export default function ArticlePage() {
             <p className="mt-4">
               Color is one of the most important decisions for decorative brake
               caliper covers. Common aftermarket directions include red, yellow,
-              black, silver, blue, gold-tone, or a custom brand color. The finish
-              can be adjusted around the product line, target market, and visible
-              appearance expected by the buyer.
+              black, silver, blue, gold-tone, or a custom brand color. Finish
+              direction can be reviewed based on the part, sample, appearance
+              requirement, quantity, and process feasibility.
             </p>
             <p className="mt-4">
               Paint spraying and finishing options should be presented for
@@ -183,6 +189,10 @@ export default function ArticlePage() {
               area and color contrast are practical for the selected decorative
               cover style.
             </p>
+            <p className="mt-4">
+              Buyers are responsible for providing only logos and trademarks that
+              they own or are authorized to use.
+            </p>
           </section>
 
           <section>
@@ -191,9 +201,9 @@ export default function ArticlePage() {
             </h2>
             <p className="mt-4">
               Packaging is part of the product experience for aftermarket brands.
-              Buyers may request neutral cartons, private-label boxes, barcode
-              labels, model labels, language-specific labels, or product-line
-              packaging that matches existing accessory ranges.
+              Packaging and label requirements, including buyer-supplied branding
+              details, model labels, barcode needs, and language requirements, can
+              be reviewed project by project.
             </p>
             <p className="mt-4">
               Clear packaging references help the factory understand carton size,
@@ -232,15 +242,14 @@ export default function ArticlePage() {
             </h2>
             <p className="mt-4">
               Many aftermarket accessory programs begin with a focused launch,
-              distributor test, or private-label trial order. A factory-side team
-              that understands small-to-medium batch projects can help buyers
-              review samples, finish direction, packaging, and order planning in a
-              practical way.
+              distributor test, or private-label trial order. Small-to-medium batch
+              requirements can be reviewed based on the part, tooling, finishing,
+              packaging, sample approval, and order plan.
             </p>
             <p className="mt-4">
-              HSX DIECASTING supports decorative brake caliper cover projects,
-              related appearance covers, and custom accessory supply through
-              direct communication with B2B buyers.
+              HSX reviews decorative brake caliper cover and related
+              appearance-cover projects for B2B buyers based on project-specific
+              requirements.
             </p>
 
             <figure className="my-10 overflow-hidden rounded-[2rem] border border-[#d7b56d]/25 bg-[#111111] p-3">
@@ -306,11 +315,23 @@ export default function ArticlePage() {
               brand requirements for factory-side review.
             </p>
             <p className="mt-4">
-              For direct communication, visit the{" "}
+              Each new project is reviewed independently using the buyer&apos;s own
+              vehicle details, drawings, samples, appearance requirements,
+              quantity, and packaging needs.
+            </p>
+            <p className="mt-4">
+              Customer-funded tooling and project-specific designs remain dedicated
+              to the original customer and are not reused for third-party
+              production or sale without the original customer&apos;s written
+              authorization.
+            </p>
+            <p className="mt-4">
+              For direct contact details, visit the{" "}
               <Link href="/contact" className="font-semibold text-[#f4d27a]">
-                contact page
-              </Link>{" "}
-              or use the RFQ buttons below.
+                HSX contact page
+              </Link>
+              {". "}To start a formal project review, use the NEXT STEP section
+              below.
             </p>
           </section>
         </div>
@@ -330,35 +351,6 @@ export default function ArticlePage() {
           </div>
         </section>
 
-        <section className="mt-10 rounded-[2rem] border border-[#d7b56d]/25 bg-[#d4ac67] p-8 text-[#120f08]">
-          <h2 className="text-2xl font-semibold">
-            Send your decorative brake caliper cover RFQ
-          </h2>
-          <p className="mt-4 text-sm leading-7">
-            Share product photos, samples, size references, color request, logo
-            needs, packaging plan, target market, and estimated quantity.
-          </p>
-          <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <a
-              href={contactDetails.whatsappHref}
-              className="rounded-full bg-[#111] px-6 py-3 text-center text-sm font-semibold !text-white"
-            >
-              WhatsApp RFQ
-            </a>
-            <a
-              href={mailtoRfq}
-              className="rounded-full border border-[#120f08]/30 px-6 py-3 text-center text-sm font-semibold"
-            >
-              Email Project Details
-            </a>
-            <Link
-              href="/products/decorative-brake-caliper-covers"
-              className="rounded-full border border-[#120f08]/30 px-6 py-3 text-center text-sm font-semibold"
-            >
-              Review Product Range
-            </Link>
-          </div>
-        </section>
       </article>
     </main>
   );
