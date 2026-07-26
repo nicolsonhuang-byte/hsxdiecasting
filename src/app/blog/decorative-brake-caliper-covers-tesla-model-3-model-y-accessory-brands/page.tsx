@@ -18,15 +18,6 @@ export const metadata = buildArticleMetadata({
   path: articlePath,
 });
 
-const contactDetails = {
-  email: "nicolson@hsxdiecasting.com",
-  whatsappHref:
-    "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20am%20interested%20in%20decorative%20brake%20caliper%20covers%20for%20Tesla%20Model%203%20or%20Model%20Y%20accessory%20projects.%20Please%20contact%20me%20with%20quotation%20details.",
-};
-
-const mailtoRfq =
-  "mailto:nicolson@hsxdiecasting.com?subject=RFQ%20for%20Tesla%20Model%203%20Model%20Y%20Decorative%20Brake%20Caliper%20Covers&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20would%20like%20to%20request%20a%20quotation%20for%20decorative%20brake%20caliper%20covers%20for%20Tesla%20Model%203%20or%20Model%20Y%20accessory%20projects.%0A%0ATarget%20model%3A%0AQuantity%3A%0AColor%20/%20finish%20request%3A%0ALogo%20font%20/%20logo%20color%20request%3A%0APackaging%20or%20label%20request%3A%0ADrawings%2C%20sample%20photos%2C%20or%20product%20requirements%20available%3A%0A%0APlease%20contact%20me%20with%20project%20details.%0A%0ABest%20regards%2C";
-
 const relatedLinks = [
   {
     label: "Decorative Brake Caliper Covers",
@@ -68,6 +59,11 @@ export default function ArticlePage() {
           upgrade product line. In this article, decorative brake caliper covers
           are discussed only as appearance-focused exterior covers, not as brake
           system products.
+        </p>
+        <p className="mt-4 text-sm leading-7 text-[#cfc6b6]">
+          HSX evaluates decorative brake caliper cover projects as an additional
+          appearance-focused application alongside its core OEM aluminum
+          die-casting work.
         </p>
 
         <div className="mt-10 space-y-10 text-base leading-8 text-[#cfc6b6]">
@@ -128,6 +124,17 @@ export default function ArticlePage() {
               visible surface, logo area, and packaging direction before sample
               work or small-to-medium batch planning begins.
             </p>
+            <p className="mt-4">
+              Tesla, Model 3, and Model Y are referenced only to identify the
+              buyer&apos;s target vehicle application. HSX is not affiliated
+              with, authorized by, or endorsed by Tesla.
+            </p>
+            <p className="mt-4">
+              Fitment must be verified separately for the exact model year and
+              version, wheel design and size, caliper clearance, and installation
+              area. A result from one project does not establish fitment for every
+              Model 3 or Model Y configuration.
+            </p>
           </section>
 
           <section>
@@ -146,6 +153,10 @@ export default function ArticlePage() {
               finishing as a brake system function. The product should still be
               presented as an appearance-focused exterior accessory.
             </p>
+            <p className="mt-4">
+              Buyers are responsible for providing only logos and trademarks that
+              they own or are authorized to use.
+            </p>
           </section>
 
           <section>
@@ -153,10 +164,8 @@ export default function ArticlePage() {
               5. Review Packaging for Tesla Accessory Channels
             </h2>
             <p className="mt-4">
-              Packaging should match the buyer&apos;s sales channel. Ecommerce
-              brands may need clean private-label boxes and model labels, while
-              distributors may prefer cartons that support inventory handling and
-              clear product identification.
+              Packaging requirements, including buyer-supplied branding details,
+              can be reviewed project by project.
             </p>
             <p className="mt-4">
               Buyers can send packaging references, label requirements, barcode
@@ -195,9 +204,8 @@ export default function ArticlePage() {
               expectations more efficiently.
             </p>
             <p className="mt-4">
-              HSX DIECASTING supports decorative appearance cover projects with
-              practical RFQ review, direct factory-side communication, and
-              production planning for B2B buyers.
+              Small-to-medium batch requirements can be reviewed based on the
+              part, tooling, finishing, packaging, and order plan.
             </p>
           </section>
 
@@ -242,9 +250,9 @@ export default function ArticlePage() {
             <p className="mt-4">
               HSX DIECASTING works with B2B buyers who need decorative brake
               caliper covers, appearance cover projects, custom colors, custom
-              logo presentation, and private-label packaging support. The factory
-              communication process is built around realistic project review
-              rather than exaggerated product claims.
+              logo presentation, and project-specific packaging requirements.
+              The factory communication process is built around realistic project
+              review rather than exaggerated product claims.
             </p>
             <p className="mt-4">
               Buyers can review HSX{" "}
@@ -253,6 +261,14 @@ export default function ArticlePage() {
               </Link>{" "}
               and then contact the team with drawings, sample photos, or product
               requirements for a Tesla Model 3 / Model Y decorative cover project.
+            </p>
+            <p className="mt-4">
+              Each new project is reviewed independently using the buyer&apos;s own
+              vehicle details, drawings, samples, appearance requirements,
+              quantity, and packaging needs. Customer-funded tooling and
+              project-specific designs remain dedicated to the original customer
+              and are not reused for third-party production or sale without the
+              original customer&apos;s written authorization.
             </p>
           </section>
 
@@ -268,11 +284,12 @@ export default function ArticlePage() {
               the project efficiently.
             </p>
             <p className="mt-4">
-              For direct contact, visit the{" "}
+              For direct contact details, visit the{" "}
               <Link href="/contact" className="font-semibold text-[#f4d27a]">
                 HSX contact page
-              </Link>{" "}
-              or use the RFQ buttons below.
+              </Link>
+              . To start a formal project review, use the NEXT STEP section
+              below.
             </p>
           </section>
         </div>
@@ -289,37 +306,6 @@ export default function ArticlePage() {
                 {item.label}
               </Link>
             ))}
-          </div>
-        </section>
-
-        <section className="mt-10 rounded-[2rem] border border-[#d7b56d]/25 bg-[#d4ac67] p-8 text-[#120f08]">
-          <h2 className="text-2xl font-semibold">
-            Send your Tesla decorative caliper cover RFQ
-          </h2>
-          <p className="mt-4 text-sm leading-7">
-            Send drawings, sample photos, or product requirements by email or
-            WhatsApp. Include Model 3 / Model Y scope, quantity, color, logo,
-            packaging, and target sales channel for factory-side review.
-          </p>
-          <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <a
-              href={contactDetails.whatsappHref}
-              className="rounded-full bg-[#111] px-6 py-3 text-center text-sm font-semibold !text-white"
-            >
-              WhatsApp RFQ
-            </a>
-            <a
-              href={mailtoRfq}
-              className="rounded-full border border-[#120f08]/30 px-6 py-3 text-center text-sm font-semibold"
-            >
-              Email Project Details
-            </a>
-            <Link
-              href="/products/decorative-brake-caliper-covers"
-              className="rounded-full border border-[#120f08]/30 px-6 py-3 text-center text-sm font-semibold"
-            >
-              Review Product Range
-            </Link>
           </div>
         </section>
       </article>
