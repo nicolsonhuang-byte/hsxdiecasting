@@ -18,15 +18,6 @@ export const metadata = buildArticleMetadata({
   path: articlePath,
 });
 
-const contactDetails = {
-  email: "nicolson@hsxdiecasting.com",
-  whatsappHref:
-    "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20am%20preparing%20an%20RFQ%20for%20OEM%20decorative%20brake%20caliper%20appearance%20covers%20for%20Tesla%20Model%203%20or%20Model%20Y.%20Please%20contact%20me%20for%20project%20review.",
-};
-
-const mailtoRfq =
-  "mailto:nicolson@hsxdiecasting.com?subject=RFQ%20for%20OEM%20Decorative%20Brake%20Caliper%20Appearance%20Covers&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20would%20like%20to%20request%20a%20project%20review%20for%20OEM%20decorative%20brake%20caliper%20appearance%20covers.%0A%0ATarget%20model%20%28Model%203%20/%20Model%20Y%29%3A%0AQuantity%20plan%3A%0AColor%20/%20surface%20finishing%20request%3A%0ALogo%20font%20/%20logo%20color%20request%3A%0APackaging%20or%20label%20request%3A%0ASample%20photos%20or%20product%20requirements%20available%3A%0A%0APlease%20contact%20me%20with%20project%20review%20details.%0A%0ABest%20regards%2C";
-
 const relatedLinks = [
   {
     label: "Decorative Brake Caliper Covers",
@@ -55,7 +46,8 @@ const relatedLinks = [
 ];
 
 const checklistItems = [
-  "Target vehicle model: Tesla Model 3, Tesla Model Y, or both",
+  "Exact vehicle model, model year, and version: Tesla Model 3, Tesla Model Y, or both",
+  "Wheel design and size, caliper clearance, and installation-area references",
   "Target sales channel: EV accessory shop, aftermarket reseller, distributor, or private-label brand",
   "Reference photos, sample photos, dimensions, or product requirements",
   "Color and surface finishing requirements for decorative appearance use",
@@ -125,8 +117,8 @@ export default function ArticlePage() {
             <p className="mt-4">
               Buyer communication should focus on appearance, color, logo
               presentation, packaging, sample confirmation, and product-line
-              positioning. The RFQ should not describe decorative covers as
-              brake system products or components that change vehicle operation.
+              positioning. They are not presented as products that change braking
+              performance, brake-system behavior, or vehicle operation.
             </p>
           </section>
 
@@ -146,6 +138,21 @@ export default function ArticlePage() {
               private-label program, distributor order, or trial launch. This
               helps HSX review packaging, presentation, and batch planning in the
               correct business context.
+            </p>
+            <p className="mt-4">
+              Tesla, Model 3, and Model Y are referenced only to identify the
+              buyer&apos;s target vehicle application. HSX is not affiliated with,
+              authorized by, or endorsed by Tesla.
+            </p>
+            <p className="mt-4">
+              Model 3 and Model Y scopes should be reviewed separately. Fitment
+              must be verified for the exact model year and version, wheel design
+              and size, caliper clearance, and installation area using
+              buyer-supplied drawings, dimensions, samples, or clear photos.
+            </p>
+            <p className="mt-4">
+              A result from one sample or previous project does not establish
+              fitment for every Model 3 or Model Y configuration.
             </p>
           </section>
 
@@ -190,6 +197,10 @@ export default function ArticlePage() {
               Model Y accessory resellers who need consistent branding across
               product listings, retail boxes, and reseller catalogs.
             </p>
+            <p className="mt-4">
+              Buyers are responsible for providing only logos and trademarks that
+              they own or are authorized to use.
+            </p>
           </section>
 
           <section>
@@ -220,10 +231,10 @@ export default function ArticlePage() {
               7. Quantity and Small-to-Medium Batch Plan
             </h2>
             <p className="mt-4">
-              HSX supports small-to-medium batch OEM customization for
-              decorative appearance cover projects. Buyers should include an
-              estimated quantity plan, sample-stage needs, and expected product
-              direction for first review.
+              HSX can review small-to-medium batch OEM customization based on the
+              part, tooling, finishing, packaging, sample approval, and order
+              plan. Buyers should include an estimated quantity plan, sample-stage
+              needs, and expected product direction for first review.
             </p>
             <p className="mt-4">
               For resellers and EV accessory shops, it is useful to explain
@@ -258,15 +269,16 @@ export default function ArticlePage() {
 
           <section>
             <h2 className="text-2xl font-semibold !text-white">
-              9. Secondary Capability: OEM Aluminum Die Casting Custom Parts
+              9. Core Manufacturing Scope: Custom OEM Aluminum Die Casting Parts
             </h2>
             <p className="mt-4">
-              In addition to decorative appearance cover projects, HSX supports
-              OEM aluminum die casting custom parts. Factory capability includes
-              suitable small-to-medium parts, with in-house drilling, tapping,
-              polishing, powder coating, and spray painting. Anodizing can be
-              coordinated through partner-supported resources for selected
-              suitable parts.
+              HSX&apos;s core manufacturing scope is custom OEM aluminum die casting.
+              Decorative brake caliper cover projects are reviewed as an
+              additional appearance-focused application. In-house capability
+              includes aluminum die casting for suitable small-to-medium parts,
+              together with drilling, tapping, polishing, powder coating, and
+              spray painting. Anodizing can be coordinated through
+              partner-supported resources for selected suitable parts.
             </p>
             <p className="mt-4">
               Custom aluminum die casting projects can be evaluated based on
@@ -319,11 +331,24 @@ export default function ArticlePage() {
               surface finishing requests, sample-stage needs, and quantity plan.
             </p>
             <p className="mt-4">
-              For direct contact details, visit the{" "}
+              Each new project is reviewed independently using the buyer&apos;s own
+              vehicle details, drawings, dimensions, samples, appearance
+              requirements, quantity, and packaging needs.
+            </p>
+            <p className="mt-4">
+              Customer-funded tooling and project-specific designs remain
+              dedicated to the original customer and are not reused for
+              third-party production or sale without the original customer&apos;s
+              written authorization.
+            </p>
+            <p className="mt-4">
+              This checklist helps buyers organize the information needed for
+              review. For direct contact details, visit the{" "}
               <Link href="/contact" className="font-semibold text-[#f4d27a]">
                 HSX contact page
-              </Link>{" "}
-              or use the RFQ buttons below.
+              </Link>
+              {". "}To start a formal project review, use the NEXT STEP section
+              below.
             </p>
           </section>
         </div>
@@ -340,37 +365,6 @@ export default function ArticlePage() {
                 {item.label}
               </Link>
             ))}
-          </div>
-        </section>
-
-        <section className="mt-10 rounded-[2rem] border border-[#d7b56d]/25 bg-[#d4ac67] p-8 text-[#120f08]">
-          <h2 className="text-2xl font-semibold">
-            Send your Tesla Model 3 / Model Y decorative cover RFQ
-          </h2>
-          <p className="mt-4 text-sm leading-7">
-            Send RFQ details by email or WhatsApp, including target models,
-            photos, samples, logo and packaging requirements, color and surface
-            finishing requests, sample-stage needs, and quantity plan.
-          </p>
-          <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <a
-              href={contactDetails.whatsappHref}
-              className="rounded-full bg-[#111] px-6 py-3 text-center text-sm font-semibold !text-white"
-            >
-              WhatsApp RFQ
-            </a>
-            <a
-              href={mailtoRfq}
-              className="rounded-full border border-[#120f08]/30 px-6 py-3 text-center text-sm font-semibold"
-            >
-              Email Project Details
-            </a>
-            <Link
-              href="/products/decorative-brake-caliper-covers"
-              className="rounded-full border border-[#120f08]/30 px-6 py-3 text-center text-sm font-semibold"
-            >
-              Review Product Page
-            </Link>
           </div>
         </section>
       </article>
