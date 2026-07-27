@@ -566,19 +566,19 @@ export default function ProductsPage() {
                   </p>
                   <div className="mt-4 flex flex-wrap gap-x-6 gap-y-3 text-sm text-[#f0e6d4]">
                     <Link href="/products/led-work-lights" className="hover:text-[#efcf8d]">
-                      LED Work Lights
+                      LED Work Light Aluminum Die-Cast Housings
                     </Link>
                     <Link
                       href="/products/automotive-led-lights"
                       className="hover:text-[#efcf8d]"
                     >
-                      Automotive LED Lights
+                      Automotive LED Light Aluminum Die-Cast Housings
                     </Link>
                     <Link
                       href="/products/motorcycle-led-lights"
                       className="hover:text-[#efcf8d]"
                     >
-                      Motorcycle LED Lights
+                      Motorcycle LED Light Aluminum Die-Cast Housings
                     </Link>
                   </div>
                 </div>

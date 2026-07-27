@@ -678,35 +678,39 @@ export default function DecorativeBrakeCaliperCoversPage() {
         <section className="border-b border-white/8 py-16 lg:py-24">
           <div className="container-shell">
             <SectionHeading
-              eyebrow="Related product pages"
-              title="Explore related appearance, lighting, and aluminum product pages"
-              description="Decorative brake caliper cover buyers may also review automotive LED lights, motorcycle LED lights, aluminum light housings, LED work lights, and OEM aluminum die casting parts. These related pages keep the product scope clear before inquiry."
+              eyebrow="Related HSX resources"
+              title="Explore Related OEM Manufacturing and Project Resources"
+              description="Decorative brake caliper cover buyers can review HSX manufacturing evidence, factory capabilities, aluminum light housings, broader OEM aluminum die casting parts, and the formal project review path before sending project details."
             />
 
             <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
               <Link
-                href="/products/automotive-led-lights"
+                href="/projects"
                 className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
               >
-                <p className="section-kicker">Related product</p>
+                <p className="section-kicker">Manufacturing evidence</p>
                 <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
-                  Automotive LED Lights
+                  Projects &amp; Real Parts
                 </h2>
                 <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
-                  OEM automotive LED lights, auxiliary lights, car LED work lights, aluminum lamp housings, brackets, and compact lighting parts.
+                  Review real HSX manufacturing evidence across lighting housings,
+                  enclosures, mechanical parts, and other custom aluminum die-cast
+                  projects.
                 </p>
               </Link>
 
               <Link
-                href="/products/motorcycle-led-lights"
+                href="/capabilities"
                 className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
               >
-                <p className="section-kicker">Related product</p>
+                <p className="section-kicker">Factory capabilities</p>
                 <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
-                  Motorcycle LED Lights
+                  Factory Capabilities
                 </h2>
                 <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
-                  Motorcycle LED lights, auxiliary lighting, compact aluminum housings, brackets, covers, and private-label lighting support.
+                  Review HSX in-house die casting and selected secondary
+                  operations, together with project-dependent partner-supported
+                  resources.
                 </p>
               </Link>
 
@@ -724,15 +728,17 @@ export default function DecorativeBrakeCaliperCoversPage() {
               </Link>
 
               <Link
-                href="/products/led-work-lights"
+                href="/b2b-oem-project-review"
                 className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
               >
-                <p className="section-kicker">Related product</p>
+                <p className="section-kicker">Start a project</p>
                 <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
-                  LED Work Lights
+                  Request Project Review
                 </h2>
                 <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
-                  LED work lights with aluminum housing support for off-road, utility, truck, machinery, and outdoor equipment programs.
+                  Send your own drawings, samples, vehicle or application details,
+                  quantity, finish, logo, and packaging requirements for a
+                  project-specific review.
                 </p>
               </Link>
 
