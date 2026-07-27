@@ -890,8 +890,8 @@ export default function AluminumLightHousingsPage() {
           <div className="container-shell">
             <SectionHeading
               eyebrow="Related product pages"
-              title="Explore related LED lighting and aluminum die casting products"
-              description="Aluminum light housing projects are often connected with LED work lights, automotive LED lights, motorcycle LED lights, OEM aluminum die casting parts, and decorative appearance covers. These related pages help buyers compare the correct product scope before sending an RFQ."
+              title="Explore Related Lighting Housings and Aluminum Die Casting Resources"
+              description="Aluminum light housing projects may relate to LED work light housings, automotive lighting housings, motorcycle lighting housings, and broader OEM aluminum die casting parts. These related pages help buyers compare the appropriate housing and structural-part scope before sending an RFQ."
             />
 
             <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
@@ -914,10 +914,10 @@ export default function AluminumLightHousingsPage() {
               >
                 <p className="section-kicker">Related product</p>
                 <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
-                  LED Work Lights
+                  LED Work Light Aluminum Die-Cast Housings
                 </h2>
                 <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
-                  LED work lights with aluminum housing support for off-road, utility, truck, machinery, and outdoor equipment programs.
+                  Aluminum die-cast housings, heat-dissipation structures, mounting features, and related structural parts for LED work light projects.
                 </p>
               </Link>
 
@@ -927,10 +927,10 @@ export default function AluminumLightHousingsPage() {
               >
                 <p className="section-kicker">Related product</p>
                 <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
-                  Automotive LED Lights
+                  Automotive LED Light Aluminum Die-Cast Housings
                 </h2>
                 <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
-                  OEM automotive LED lights, auxiliary lights, car LED work lights, aluminum lamp housings, brackets, and compact lighting parts.
+                  Aluminum die-cast housings, lamp bodies, mounting features, and related structural parts for automotive lighting projects.
                 </p>
               </Link>
 
@@ -940,23 +940,10 @@ export default function AluminumLightHousingsPage() {
               >
                 <p className="section-kicker">Related product</p>
                 <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
-                  Motorcycle LED Lights
+                  Motorcycle LED Light Aluminum Die-Cast Housings
                 </h2>
                 <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
-                  Motorcycle LED lights, auxiliary lighting, compact aluminum housings, brackets, covers, and private-label lighting support.
-                </p>
-              </Link>
-
-              <Link
-                href="/products/decorative-brake-caliper-covers"
-                className="industrial-card group block p-6 transition-transform duration-200 hover:-translate-y-1"
-              >
-                <p className="section-kicker">Related product</p>
-                <h2 className="mt-4 text-xl font-semibold text-white group-hover:text-[#f4d27a]">
-                  Decorative Brake Caliper Covers
-                </h2>
-                <p className="mt-3 text-sm leading-7 text-[#cac1b2]">
-                  Non-load-bearing appearance covers installed outside the brake caliper, with color finishing and custom logo support.
+                  Aluminum die-cast housings, lamp bodies, mounting features, and related structural parts for motorcycle lighting projects.
                 </p>
               </Link>
 
