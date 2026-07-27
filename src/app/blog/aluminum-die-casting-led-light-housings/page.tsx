@@ -17,12 +17,6 @@ export const metadata = buildArticleMetadata({
   path: articlePath,
 });
 
-const contactDetails = {
-  email: "nicolson@hsxdiecasting.com",
-  whatsappHref:
-    "https://wa.me/8617666155283?text=Hello%20HSX%20Diecasting%2C%20I%20am%20interested%20in%20aluminum%20die%20casting%20for%20LED%20light%20housings.%20Please%20contact%20me%20with%20quotation%20details.",
-};
-
 const relatedLinks = [
   { label: "OEM Aluminum Die Casting Lighting Parts", href: "/products/aluminum-light-housings" },
   { label: "LED Work Light Aluminum Die-Cast Housings", href: "/products/led-work-lights" },
@@ -152,24 +146,6 @@ export default function ArticlePage() {
           </div>
         </section>
 
-        <section className="mt-10 rounded-[2rem] border border-[#d7b56d]/25 bg-[#d4ac67] p-8 text-[#120f08]">
-          <h2 className="text-2xl font-semibold">Send your LED housing RFQ</h2>
-          <p className="mt-4 text-sm leading-7">
-            Share housing drawings, sample photos, dimensions, finish requirements,
-            quantity plan, and application market for factory review.
-          </p>
-          <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <a href={contactDetails.whatsappHref} className="rounded-full bg-[#111] px-6 py-3 text-center text-sm font-semibold !text-white">
-              WhatsApp RFQ
-            </a>
-            <a
-              href={`mailto:${contactDetails.email}?subject=RFQ%20for%20Aluminum%20LED%20Light%20Housings&body=Hello%20HSX%20Diecasting%2C%0A%0AI%20would%20like%20to%20request%20a%20quotation%20for%20aluminum%20LED%20light%20housings.%0A%0AProduct%20type%3A%0AQuantity%3A%0AHousing%20dimensions%3A%0AFinish%20requirement%3A%0ADrawing%20or%20sample%20available%3A%0AApplication%20market%3A%0A%0APlease%20contact%20me%20with%20pricing%20and%20production%20details.%0A%0ABest%20regards%2C`}
-              className="rounded-full border border-[#120f08]/30 px-6 py-3 text-center text-sm font-semibold"
-            >
-              Email Project Details
-            </a>
-          </div>
-        </section>
       </article>
     </main>
   );
