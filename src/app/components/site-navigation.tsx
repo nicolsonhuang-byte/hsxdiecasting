@@ -6,6 +6,7 @@ const primaryLinks = [
   { href: "/products", label: "Products" },
   { href: "/capabilities", label: "Capabilities" },
   { href: "/projects", label: "Projects" },
+  { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
   {
     href: "/b2b-oem-project-review",

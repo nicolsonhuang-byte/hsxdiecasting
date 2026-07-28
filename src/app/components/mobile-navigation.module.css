@@ -114,3 +114,9 @@
     display: none;
   }
 }
+
+@media (64rem <= width < 80rem) {
+  .desktopNavigation {
+    column-gap: 0.25rem;
+  }
+}
