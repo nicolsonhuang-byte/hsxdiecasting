@@ -207,10 +207,10 @@ export default function BlogPage() {
             </div>
           </div>
 
-          <div className="relative aspect-[4/3] overflow-hidden border border-[#d7b56d]/25">
+          <div className="relative aspect-video overflow-hidden border border-[#d7b56d]/25">
             <Image
-              src="/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg"
-              alt="HSX aluminum die casting workshop in Foshan, China"
+              src="/images/hsx-approved-media-20260728/blog-engineering-knowledge-cad-composite.webp"
+              alt="HSX project-specific 3D casting-layout review"
               fill
               preload
               sizes="(min-width: 1024px) 54vw, 100vw"
@@ -219,11 +219,11 @@ export default function BlogPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
             <div className="absolute bottom-5 left-5 right-5">
               <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#f4d27a]">
-                Factory Knowledge
+                Engineering Knowledge
               </p>
               <p className="mt-2 max-w-2xl text-sm leading-7 text-white/90">
-                Manufacturing guidance grounded in HSX&apos;s OEM aluminum die
-                casting work in Foshan, China.
+                Project-specific 3D casting-layout review used to explain
+                manufacturing decisions.
               </p>
             </div>
           </div>

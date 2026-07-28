@@ -7,7 +7,6 @@ import { SiteFooter, SiteHeader } from "../components/site-navigation";
 import oemAluminumParts from "../../../public/images/oem-small-aluminum-die-casting-parts.png";
 import asCastFullShotBlank from "../../../public/images/hsx-factory/as-cast-full-shot-die-casting-blank-with-runner-gates-overflows.jpg";
 import blueAnodizedFullShotDemo from "../../../public/images/hsx-factory/blue-anodized-die-cast-full-shot-demonstration-sample.jpg";
-import workshopHorizontal from "../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
 import redAnodizedFullShotDemo from "../../../public/images/hsx-factory/red-anodized-die-cast-full-shot-demonstration-sample.jpg";
 import anodizedColorSamplesCollage from "../../../public/images/v2-hsx-anodized-color-samples-collage-16x9.webp";
 import anodizedSampleReviewHeroCard from "../../../public/images/v2-hsx-anodized-sample-review-hero-card.webp";
@@ -929,20 +928,8 @@ export default function AnodizableAluminumDieCastingPartsPage() {
       </section>
 
       <section id="related-resources" className={styles.relatedSection}>
-        <div className={`container-shell ${styles.relatedLayout}`}>
-          <div className={styles.relatedImageCard}>
-            <div>
-              <Image
-                src={workshopHorizontal}
-                alt="HSX aluminum die casting workshop and production environment"
-                sizes="(min-width: 1024px) 48vw, 100vw"
-                className={styles.responsiveImage}
-                style={{ width: "100%", height: "auto", display: "block" }}
-              />
-            </div>
-          </div>
-
-          <div>
+        <div className="container-shell">
+          <div className="mx-auto max-w-5xl">
             <SectionHeading
               eyebrow="Related resources"
               title="Continue project research with HSX pages"

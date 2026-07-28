@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 import housingEvidence from "../../../../public/images/hsx-factory/oem-aluminum-die-cast-housing.jpg";
+import lightingFinnedAluminumHousing from "../../../../public/images/hsx-approved-media-20260728/lighting-finned-aluminum-housing.webp";
 import sprayPainting from "../../../../public/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg";
-import workshop from "../../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
 import ledWorkLight from "../../../../public/images/led-work-light.png";
 import {
   ArticleStructuredData,
@@ -121,19 +121,13 @@ export default function ArticlePage() {
       />
 
       <article>
-        <header className="relative overflow-hidden border-b border-white/10">
-          <div className="absolute inset-0">
-            <Image
-              src={workshop}
-              alt="HSX aluminum die casting workshop"
-              fill
-              preload
-              sizes="100vw"
-              className="object-cover object-center"
-            />
-            <div className="absolute inset-0 bg-black/65" />
-          </div>
-
+        <header
+          className="relative overflow-hidden border-b border-white/10"
+          style={{
+            background:
+              "radial-gradient(circle at 82% 16%, rgba(199, 162, 91, 0.13), transparent 32%), #050505",
+          }}
+        >
           <div className="relative mx-auto max-w-6xl px-6 py-16 lg:px-8 lg:py-24">
             <Link
               href="/blog"
@@ -142,23 +136,49 @@ export default function ArticlePage() {
               Back to Blog
             </Link>
 
-            <div className="mt-12 max-w-4xl">
-              <p className="section-kicker">
-                LED Work Light Housing Guide
-              </p>
-              <h1 className="mt-6 text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-                LED Work Light Aluminum Die-Cast Housings and Structural Parts
-              </h1>
-              <p className="mt-7 max-w-3xl text-lg leading-8 text-[#d4cdc0]">
-                Buyers developing an LED work light application can use this
-                guide to prepare an aluminum die-cast housing or related
-                structural part for manufacturing review.
-              </p>
-              <p className="mt-5 max-w-3xl text-base leading-8 text-[#c7beaf]">
-                HSX evaluates the die-cast part from drawings, samples, part
-                structure, quantity, surface requirements, and the required
-                supply stage.
-              </p>
+            <div className="mt-12 grid gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-center">
+              <div className="max-w-4xl">
+                <p className="section-kicker">
+                  LED Work Light Housing Guide
+                </p>
+                <h1 className="mt-6 text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+                  LED Work Light Aluminum Die-Cast Housings and Structural Parts
+                </h1>
+                <p className="mt-7 max-w-3xl text-lg leading-8 text-[#d4cdc0]">
+                  Buyers developing an LED work light application can use this
+                  guide to prepare an aluminum die-cast housing or related
+                  structural part for manufacturing review.
+                </p>
+                <p className="mt-5 max-w-3xl text-base leading-8 text-[#c7beaf]">
+                  HSX evaluates the die-cast part from drawings, samples, part
+                  structure, quantity, surface requirements, and the required
+                  supply stage.
+                </p>
+              </div>
+
+              <figure
+                className="mx-auto w-full overflow-hidden border border-white/10 bg-[#111111]"
+                style={{ maxWidth: "24rem" }}
+              >
+                <Image
+                  src={lightingFinnedAluminumHousing}
+                  alt="Finned aluminum die-cast housing for a lighting application"
+                  preload
+                  sizes="(min-width: 1024px) 34vw, 100vw"
+                  className="w-full"
+                  style={{ height: "auto" }}
+                />
+                <figcaption className="border-t border-white/10 p-6">
+                  <p className="text-lg font-semibold leading-8 text-white">
+                    Finned Aluminum Die-Cast Housing
+                  </p>
+                  <p className="mt-3 text-sm leading-7 text-[#c7beaf]">
+                    A housing-specific reference for reviewing die-cast
+                    structure, heat-dissipation features, and the buyer&apos;s
+                    required supply scope.
+                  </p>
+                </figcaption>
+              </figure>
             </div>
           </div>
         </header>
@@ -184,14 +204,14 @@ export default function ArticlePage() {
               </p>
             </div>
 
-            <figure className="overflow-hidden border border-white/10 bg-[#0d0d0d]">
+            <figure className="overflow-hidden border border-white/10 bg-[#111111]">
               <div className="relative aspect-[16/9]">
                 <Image
                   src={ledWorkLight}
                   alt="Complete LED work light shown as an application reference"
                   fill
                   sizes="(min-width: 1024px) 56vw, 100vw"
-                  className="object-cover object-center"
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent" />
                 <p className="absolute left-5 top-5 bg-black/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#f4d27a]">

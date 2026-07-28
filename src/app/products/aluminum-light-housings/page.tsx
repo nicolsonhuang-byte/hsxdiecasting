@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 
 import { SiteFooter, SiteHeader } from "../../components/site-navigation";
 
-import aluminumLightHousing from "../../../../public/images/aluminum-light-housing-heat-sink.png";
 import ledWorkLight from "../../../../public/images/led-work-light.png";
 import automotiveLedLight from "../../../../public/images/automotive-led-light.png";
 import motorcycleLedLight from "../../../../public/images/motorcycle-led-light.png";
-import workshopHorizontal from "../../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
+import oemAluminumHousing from "../../../../public/images/hsx-factory/oem-aluminum-die-cast-housing.jpg";
 import oemAluminumParts from "../../../../public/images/oem-small-aluminum-die-casting-parts.png";
+import machinedLightingStructuralComponent from "../../../../public/images/hsx-approved-media-20260728/lighting-machined-structural-component.webp";
 
 type InfoCard = {
   title: string;
@@ -20,7 +20,7 @@ type ProductProgram = {
   title: string;
   description: string;
   tag: string;
-  image: typeof aluminumLightHousing;
+  image: StaticImageData;
   alt: string;
   points: string[];
 };
@@ -206,7 +206,7 @@ const productPrograms: ProductProgram[] = [
     title: "LED Work Light Housings",
     description:
       "Compact die cast aluminum housings and heat-sink bodies for LED work lights used in utility, equipment, off-road, and industrial lighting channels.",
-    tag: "Work Lights",
+    tag: "Application Reference",
     image: ledWorkLight,
     alt: "LED work light using compact aluminum housing and heat sink body",
     points: [
@@ -219,7 +219,7 @@ const productPrograms: ProductProgram[] = [
     title: "Automotive Lamp Housings",
     description:
       "Aluminum housings, rear covers, and mounting parts for automotive auxiliary lights and aftermarket vehicle lighting programs.",
-    tag: "Automotive",
+    tag: "Application Reference",
     image: automotiveLedLight,
     alt: "Automotive LED light with aluminum lamp housing",
     points: [
@@ -232,7 +232,7 @@ const productPrograms: ProductProgram[] = [
     title: "Motorcycle Light Housings",
     description:
       "Small aluminum lamp housings and compact shell parts for motorcycle lighting, styling, replacement, and accessory programs.",
-    tag: "Motorcycle",
+    tag: "Application Reference",
     image: motorcycleLedLight,
     alt: "Motorcycle LED light with compact aluminum housing",
     points: [
@@ -489,18 +489,33 @@ export default function AluminumLightHousingsPage() {
             </div>
 
             <div className="motion-rise-delay">
-              <div className="industrial-card gold-frame relative overflow-hidden rounded-[2rem] p-3">
-                <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem]">
-                  <Image
-                    src={aluminumLightHousing}
-                    alt="OEM aluminum light housing heat sink and compact die cast lamp body"
-                    fill
-                    preload
-                    sizes="(min-width: 1280px) 40rem, (min-width: 1024px) 44vw, 100vw"
-                    className="object-cover"
+              <div
+                className="industrial-card gold-frame relative mx-auto w-full overflow-hidden rounded-[2rem] p-3"
+                style={{ maxWidth: "28rem" }}
+              >
+                <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem] bg-black">
+                  <video
+                    className="h-full w-full object-cover"
+                    controls
+                    muted
+                    playsInline
+                    preload="metadata"
+                    poster="/images/hsx-approved-media-20260728/lighting-finned-aluminum-housing.webp"
+                    aria-label="Real aluminum lighting housing parts shown for OEM project review"
+                  >
+                    <source
+                      src="/videos/hsx-approved-media-20260728/lighting-parts-showcase-h264.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                  <div
+                    className="absolute inset-0 bg-gradient-to-br from-black/10 via-black/15 to-black/80"
+                    style={{ pointerEvents: "none" }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-br from-black/10 via-black/15 to-black/80" />
-                  <div className="absolute left-5 top-5 rounded-2xl border border-white/12 bg-black/55 px-4 py-3 backdrop-blur">
+                  <div
+                    className="absolute left-5 top-5 rounded-2xl border border-white/12 bg-black/55 px-4 py-3 backdrop-blur"
+                    style={{ pointerEvents: "none" }}
+                  >
                     <p className="text-[11px] uppercase tracking-[0.28em] text-[#efcf8d]">
                       Lighting housing scope
                     </p>
@@ -508,14 +523,17 @@ export default function AluminumLightHousingsPage() {
                       Aluminum lamp bodies and heat-sink housings
                     </p>
                   </div>
-                  <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/60 p-4 backdrop-blur">
+                  <div
+                    className="absolute left-5 right-5 rounded-2xl border border-white/10 bg-black/60 p-4 backdrop-blur"
+                    style={{ bottom: "4rem", pointerEvents: "none" }}
+                  >
                     <p className="text-[11px] uppercase tracking-[0.28em] text-[#efcf8d]">
-                      Typical products
+                      Real housing evidence
                     </p>
                     <p className="mt-2 text-sm leading-7 text-[#ede6d7]">
-                      LED light housings, die cast lamp bodies, heat-sink
-                      shells, rear covers, mounting brackets, and custom
-                      aluminum lighting parts.
+                      Finned housings and machined structural parts shown as
+                      real OEM aluminum die-casting evidence, not as complete
+                      lamp manufacturing.
                     </p>
                   </div>
                 </div>
@@ -534,10 +552,10 @@ export default function AluminumLightHousingsPage() {
 
             <div className="mt-12 grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center">
               <div className="industrial-card gold-frame overflow-hidden p-3">
-                <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem]">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem]">
                   <Image
-                    src={aluminumLightHousing}
-                    alt="Aluminum light housing heat sink and die cast lamp body parts"
+                    src={machinedLightingStructuralComponent}
+                    alt="Machined aluminum lighting structural component for project-specific housing review"
                     fill
                     sizes="(min-width: 1280px) 34rem, (min-width: 1024px) 40vw, 100vw"
                     className="object-cover"
@@ -546,8 +564,9 @@ export default function AluminumLightHousingsPage() {
                   <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/55 p-5 backdrop-blur">
                     <p className="section-kicker">Part coverage</p>
                     <p className="mt-3 text-lg font-semibold text-white">
-                      Built for compact lamp housing geometry, heat
-                      dissipation, mounting needs, and appearance finishing.
+                      Structural features and machining requirements are
+                      reviewed project by project; CNC support is not presented
+                      as an in-house operation.
                     </p>
                   </div>
                 </div>
@@ -722,23 +741,22 @@ export default function AluminumLightHousingsPage() {
         <section id="process" className="border-b border-white/8 py-16 lg:py-24">
           <div className="container-shell grid gap-10 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] lg:items-start">
             <div className="space-y-4">
-              <div className="industrial-card gold-frame overflow-hidden p-3">
-                <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
-                  <Image
-                    src={workshopHorizontal}
-                    alt="HSX aluminum die casting workshop for small-to-medium OEM lighting projects"
-                    fill
-                    sizes="(min-width: 1280px) 34rem, (min-width: 1024px) 40vw, 100vw"
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent" />
-                  <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/55 p-5 backdrop-blur">
-                    <p className="section-kicker">Process support</p>
-                    <p className="mt-3 text-lg font-semibold text-white">
-                      Drawings, samples, mold planning, die casting, machining,
-                      finishing, inspection, and export packing.
-                    </p>
-                  </div>
+              <div className="industrial-card gold-frame p-7 sm:p-9">
+                <p className="section-kicker">Project-specific process route</p>
+                <h2 className="mt-4 text-3xl font-semibold leading-tight text-white">
+                  Manufacturing steps follow the housing drawing and agreed
+                  delivery scope
+                </h2>
+                <p className="mt-5 text-base leading-8 text-[#cac1b2]">
+                  Mold planning, die casting, selected secondary operations,
+                  finishing, inspection, and packing are reviewed for the
+                  actual aluminum housing project. Partner-supported machining
+                  is coordinated only when required.
+                </p>
+                <div className="mt-7 border-t border-white/10 pt-6 text-sm leading-7 text-[#f2eadb]">
+                  Public project media demonstrates manufacturing experience;
+                  it does not make another customer&apos;s design, tooling, or
+                  product available for reuse.
                 </div>
               </div>
 
@@ -1006,8 +1024,8 @@ export default function AluminumLightHousingsPage() {
                   <div className="overflow-hidden rounded-[1.5rem] border border-[#2b2216]/15 bg-[#120f08] p-3 shadow-[0_18px_48px_rgba(18,15,8,0.22)]">
                     <div className="relative aspect-[4/3] overflow-hidden rounded-[1.1rem]">
                       <Image
-                        src={aluminumLightHousing}
-                        alt="Aluminum light housing heat sink ready for OEM RFQ review"
+                        src={oemAluminumHousing}
+                        alt="Permission-cleared aluminum die-cast housing for OEM project review"
                         fill
                         sizes="(min-width: 1024px) 30rem, 100vw"
                         className="object-cover"

@@ -6,7 +6,7 @@ import { SiteFooter, SiteHeader } from "../../components/site-navigation";
 
 import decorativeBrakeCaliperCover from "../../../../public/images/decorative-brake-caliper-cover.png";
 import oemAluminumParts from "../../../../public/images/oem-small-aluminum-die-casting-parts.png";
-import workshopHorizontal from "../../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
+import decorativeBrakeCaliperCoverInspection from "../../../../public/images/projects/decorative-brake-caliper-cover-inspection.jpg";
 
 type CardItem = {
   title: string;
@@ -552,8 +552,8 @@ export default function DecorativeBrakeCaliperCoversPage() {
               <div className="industrial-card gold-frame overflow-hidden p-3">
                 <div className="relative aspect-[1672/941] overflow-hidden rounded-[1.5rem]">
                   <Image
-                    src={workshopHorizontal}
-                    alt="HSX aluminum die casting workshop for decorative automotive cover projects"
+                    src={decorativeBrakeCaliperCoverInspection}
+                    alt="Inspection of decorative brake caliper covers before packing"
                     fill
                     sizes="(min-width: 1280px) 34rem, (min-width: 1024px) 40vw, 100vw"
                     className="object-cover"
@@ -562,8 +562,8 @@ export default function DecorativeBrakeCaliperCoversPage() {
                   <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-black/60 p-5 backdrop-blur">
                     <p className="section-kicker">OEM manufacturing flow</p>
                     <p className="mt-3 text-lg font-semibold text-white">
-                      Photos, samples, appearance review, die casting, finishing,
-                      inspection, and export packing.
+                      Real inspection evidence for appearance-focused,
+                      non-load-bearing decorative covers before packing.
                     </p>
                   </div>
                 </div>

@@ -4,12 +4,13 @@ import Link from "next/link";
 
 import { SiteFooter, SiteHeader } from "../components/site-navigation";
 
+import lightingFinnedAluminumHousing from "../../../public/images/hsx-approved-media-20260728/lighting-finned-aluminum-housing.webp";
+import lightingMachinedStructuralComponent from "../../../public/images/hsx-approved-media-20260728/lighting-machined-structural-component.webp";
+import lightingMachinedStructuralRing from "../../../public/images/hsx-approved-media-20260728/lighting-machined-structural-ring.webp";
+import productsBatchAluminumCastings from "../../../public/images/hsx-approved-media-20260728/products-batch-aluminum-castings.webp";
 import batchPartsBeforeFinishing from "../../../public/images/hsx-factory/batch-aluminum-die-cast-parts-before-finishing.jpg";
-import batchPartsBeforeTrimming from "../../../public/images/hsx-factory/batch-die-cast-parts-before-trimming.jpg";
-import communicationHousing from "../../../public/images/hsx-factory/communication-equipment-aluminum-die-cast-housing.jpg";
 import machineryPart from "../../../public/images/hsx-factory/machinery-accessory-aluminum-die-cast-part.jpg";
 import oemHousing from "../../../public/images/hsx-factory/oem-aluminum-die-cast-housing.jpg";
-import opticalModuleHousing from "../../../public/images/hsx-factory/optical-module-aluminum-die-cast-housing-a.jpg";
 import stageLightHousing from "../../../public/images/hsx-factory/stage-light-aluminum-die-cast-housing.jpg";
 
 type ProductFamily = {
@@ -123,32 +124,32 @@ const productFamilies: ProductFamily[] = [
 
 const realParts: RealPart[] = [
   {
-    title: "Optical Module Housing",
-    description:
-      "Aluminum die-cast optical module housing manufactured by HSX.",
-    image: opticalModuleHousing,
-    alt: "Optical module aluminum die-cast housing manufactured by HSX",
-  },
-  {
-    title: "Communication Equipment Housing",
-    description:
-      "Aluminum die-cast communication equipment housing manufactured by HSX.",
-    image: communicationHousing,
-    alt: "Communication equipment aluminum die-cast housing manufactured by HSX",
-  },
-  {
     title: "Batch Aluminum Die-Cast Parts",
     description:
-      "A batch of aluminum die-cast parts photographed at HSX before trimming.",
-    image: batchPartsBeforeTrimming,
-    alt: "Batch aluminum die-cast parts before trimming at HSX",
+      "Batch aluminum die-cast parts during post-casting handling at HSX.",
+    image: productsBatchAluminumCastings,
+    alt: "Batch aluminum die-cast parts during post-casting handling at HSX",
   },
   {
-    title: "Machinery Part",
+    title: "Finned Lighting Housing",
     description:
-      "Aluminum die-cast machinery part manufactured by HSX.",
-    image: machineryPart,
-    alt: "Aluminum die-cast machinery part manufactured by HSX",
+      "Finned aluminum die-cast housing shown as lighting-application part evidence.",
+    image: lightingFinnedAluminumHousing,
+    alt: "Finned aluminum die-cast housing for a lighting application",
+  },
+  {
+    title: "Machined Lighting Structural Ring",
+    description:
+      "Machined aluminum structural ring from a lighting-related project, with the machining route reviewed according to project requirements.",
+    image: lightingMachinedStructuralRing,
+    alt: "Machined aluminum structural ring for a lighting-related project",
+  },
+  {
+    title: "Machined Lighting Structural Component",
+    description:
+      "Machined lighting-related aluminum structural component shown as project-specific part evidence.",
+    image: lightingMachinedStructuralComponent,
+    alt: "Machined lighting-related aluminum structural component",
   },
 ];
 
@@ -424,8 +425,7 @@ export default function ProductsPage() {
               {realParts.map((part) => (
                 <article key={part.title} className="min-w-0 bg-[#080808]">
                   <div
-                    className="relative overflow-hidden"
-                    style={{ aspectRatio: "16 / 11" }}
+                    className="relative aspect-[4/5] overflow-hidden"
                   >
                     <Image
                       src={part.image}

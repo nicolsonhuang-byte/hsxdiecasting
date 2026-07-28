@@ -1,21 +1,10 @@
 import type { Metadata } from "next";
-import Image, { type StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
 import { SiteFooter, SiteHeader } from "../../components/site-navigation";
 
-import communicationEquipmentHousing from "../../../../public/images/hsx-factory/communication-equipment-aluminum-die-cast-housing.jpg";
-import workshopHorizontal from "../../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
-import machineryPart from "../../../../public/images/hsx-factory/machinery-accessory-aluminum-die-cast-part.jpg";
-import opticalModuleHousing from "../../../../public/images/hsx-factory/optical-module-aluminum-die-cast-housing-a.jpg";
-import stageLightHousing from "../../../../public/images/hsx-factory/stage-light-aluminum-die-cast-housing.jpg";
-
-type RealPart = {
-  title: string;
-  description: string;
-  image: StaticImageData;
-  alt: string;
-};
+import oemCastShotComparedWithCad from "../../../../public/images/hsx-approved-media-20260728/oem-cast-shot-compared-with-cad.webp";
 
 type FaqItem = {
   question: string;
@@ -103,36 +92,6 @@ const fitSignals = [
   "Stable repeat manufacturing is important across production batches.",
   "The part has a housing, support, connection, mounting, or structural function.",
   "Holes, threads, surface requirements, or post-processing need to be reviewed as part of the manufacturing route.",
-];
-
-const realParts: RealPart[] = [
-  {
-    title: "Communication Equipment Housing",
-    description:
-      "Aluminum die-cast communication equipment housing manufactured by HSX.",
-    image: communicationEquipmentHousing,
-    alt: "Communication equipment aluminum die-cast housing manufactured by HSX",
-  },
-  {
-    title: "Optical Module Housing",
-    description:
-      "Aluminum die-cast optical module housing manufactured by HSX.",
-    image: opticalModuleHousing,
-    alt: "Optical module aluminum die-cast housing manufactured by HSX",
-  },
-  {
-    title: "Machinery Part",
-    description: "Aluminum die-cast machinery part manufactured by HSX.",
-    image: machineryPart,
-    alt: "Aluminum die-cast machinery part manufactured by HSX",
-  },
-  {
-    title: "Stage Light Housing",
-    description:
-      "Aluminum die-cast stage light housing manufactured by HSX.",
-    image: stageLightHousing,
-    alt: "Aluminum die-cast stage light housing manufactured by HSX",
-  },
 ];
 
 const factoryExperience = [
@@ -318,11 +277,11 @@ export default function OemAluminumDieCastingPartsPage() {
               <div className="gold-frame relative overflow-hidden border border-white/10 bg-[#0b0b0b] p-3">
                 <div
                   className="relative overflow-hidden"
-                  style={{ aspectRatio: "4 / 3" }}
+                  style={{ aspectRatio: "4 / 5" }}
                 >
                   <Image
-                    src={workshopHorizontal}
-                    alt="HSX aluminum die casting workshop for OEM project review"
+                    src={oemCastShotComparedWithCad}
+                    alt="Real aluminum cast shot compared with its CAD layout during OEM manufacturing review"
                     fill
                     preload
                     sizes="(min-width: 1280px) 40rem, (min-width: 1024px) 44vw, 100vw"
@@ -331,11 +290,11 @@ export default function OemAluminumDieCastingPartsPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
                   <div className="absolute inset-x-5 bottom-5 border-l-2 border-[#d5ae67] bg-black/70 px-5 py-4 backdrop-blur-sm">
                     <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#efcf8d]">
-                      Drawing-based review
+                      From project data to manufacturing review
                     </p>
                     <p className="mt-2 text-base font-semibold leading-7 text-white">
-                      Project fit is assessed from the actual part and required
-                      delivery scope.
+                      A real cast shot can be compared with project CAD data
+                      while manufacturing fit and delivery scope are reviewed.
                     </p>
                   </div>
                 </div>
@@ -415,37 +374,53 @@ export default function OemAluminumDieCastingPartsPage() {
         <section className="border-b border-white/8 py-16 lg:py-24">
           <div className="container-shell">
             <SectionHeading
-              eyebrow="Representative real parts"
-              title="Selected aluminum die-cast parts manufactured by HSX"
-              description="Four real parts from separate OEM projects provide direct evidence of HSX aluminum die-casting experience."
+              eyebrow="Real project-review evidence"
+              title="From Project Data to Manufacturing Review"
+              description="This approved real-media sequence shows how a cast shot and project CAD layout can support an OEM manufacturing review without presenting a customer-specific design, mold, or product as reusable for another buyer."
             />
 
-            <div className="mt-12 grid gap-px overflow-hidden border border-white/10 bg-white/10 sm:grid-cols-2">
-              {realParts.map((part) => (
-                <article key={part.title} className="min-w-0 bg-[#080808]">
-                  <div
-                    className="relative overflow-hidden"
-                    style={{ aspectRatio: "16 / 11" }}
-                  >
-                    <Image
-                      src={part.image}
-                      alt={part.alt}
-                      fill
-                      sizes="(min-width: 1024px) 40rem, (min-width: 640px) 50vw, 100vw"
-                      className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                  </div>
-                  <div className="border-t border-white/10 p-6 sm:p-7">
-                    <h2 className="text-xl font-semibold text-white">
-                      {part.title}
-                    </h2>
-                    <p className="mt-3 text-sm leading-7 text-[#c9c1b2]">
-                      {part.description}
-                    </p>
-                  </div>
-                </article>
-              ))}
+            <div className="mt-12 grid gap-10 border-b border-t border-white/10 py-10 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:items-center">
+              <div
+                className="mx-auto w-full overflow-hidden border border-white/10 bg-black p-3"
+                style={{ maxWidth: "24rem" }}
+              >
+                <video
+                  className="w-full bg-black object-cover"
+                  style={{ aspectRatio: "9 / 16" }}
+                  controls
+                  muted
+                  playsInline
+                  preload="metadata"
+                  poster="/images/hsx-approved-media-20260728/lighting-machined-structural-component.webp"
+                  aria-label="Real cast shot and CAD layout used during OEM manufacturing review"
+                >
+                  <source
+                    src="/videos/hsx-approved-media-20260728/project-review-cast-shot-vs-cad-h264.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+
+              <div className="min-w-0">
+                <p className="text-xs font-semibold uppercase tracking-[0.26em] text-[#d4ac67]">
+                  Approved real project evidence
+                </p>
+                <h2 className="mt-4 text-3xl font-semibold text-white">
+                  Review the actual part, CAD data, and required supply scope
+                </h2>
+                <p className="mt-5 text-base leading-8 text-[#c9c1b2]">
+                  The sequence supports discussion of part structure,
+                  manufacturing fit, later operations, and the agreed delivery
+                  stage. It is not an offer to reuse another customer&apos;s
+                  design, tooling, or project-specific product.
+                </p>
+                <div className="mt-7 border-l-2 border-[#d5ae67]/45 pl-5">
+                  <p className="text-sm leading-7 text-[#f2eadb]">
+                    Machined features are reviewed project by project. CNC
+                    machining, when required, remains partner-supported.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -459,20 +434,6 @@ export default function OemAluminumDieCastingPartsPage() {
                   title="Manufacturing decisions follow the actual project"
                   description="HSX uses production experience to assess how the part structure, required operations, surface expectations, and delivery stage should shape the manufacturing route."
                 />
-                <div className="mt-8 border border-white/10 bg-black/30 p-3">
-                  <div
-                    className="relative overflow-hidden"
-                    style={{ aspectRatio: "16 / 10" }}
-                  >
-                    <Image
-                      src={workshopHorizontal}
-                      alt="HSX aluminum die casting workshop supporting drawing-based OEM projects"
-                      fill
-                      sizes="(min-width: 1024px) 38vw, 100vw"
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
               </div>
 
               <div className="border-y border-white/10 py-2">

@@ -3,8 +3,6 @@ import type { Metadata } from "next";
 
 import { SiteFooter, SiteHeader } from "../components/site-navigation";
 
-import workshopHorizontal from "../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
-
 export const metadata: Metadata = {
   title: "OEM Aluminum Die Casting Project Review Before Quotation | HSX DIECASTING",
   description:
@@ -278,21 +276,21 @@ export default function B2BOemProjectReviewPage() {
             </div>
 
             <div
-              className="relative overflow-hidden border-t border-white/10 lg:border-l lg:border-t-0"
-              style={{ minHeight: "24rem" }}
+              className="relative aspect-video overflow-hidden border-t border-white/10"
+              style={{ alignSelf: "center" }}
             >
               <Image
-                src={workshopHorizontal}
-                alt="HSX aluminum die casting workshop for OEM project review"
+                src="/images/hsx-approved-media-20260728/project-review-technical-evaluation-composite.webp"
+                alt="HSX reviewing an aluminum die-cast part through measurement, a physical casting sample and a 3D casting-layout reference."
                 fill
-                priority
+                preload
                 sizes="(min-width: 1024px) 48vw, 100vw"
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/15 to-black/10" />
               <div className="absolute inset-x-0 bottom-0 border-t border-white/10 bg-black/55 p-5 backdrop-blur sm:p-7">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d7b56d]">
-                  Start with what you have
+                  Drawing, Sample and 3D Layout Review
                 </p>
                 <p className="mt-3 max-w-xl text-sm leading-7 text-[#eee6d8]">
                   A complete technical package is not required for the first

@@ -4,9 +4,7 @@ import Link from "next/link";
 
 import { SiteFooter, SiteHeader } from "../../components/site-navigation";
 import motorcycleLedLight from "../../../../public/images/motorcycle-led-auxiliary-light.png";
-import batchDieCastParts from "../../../../public/images/hsx-factory/batch-die-cast-parts-before-trimming.jpg";
 import sprayPainting from "../../../../public/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg";
-import workshopHorizontal from "../../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
 
 const pageTitle =
   "Motorcycle LED Light Aluminum Die-Cast Housings | HSX DIECASTING";
@@ -178,20 +176,7 @@ export default function MotorcycleLedLightsPage() {
 
       <main id="top">
         <section className="relative overflow-hidden border-b border-white/8 bg-[#050505]">
-          <div className="absolute inset-0">
-            <Image
-              src={workshopHorizontal}
-              alt="HSX aluminum die casting workshop for custom housing projects"
-              fill
-              preload
-              sizes="100vw"
-              className="object-cover object-center opacity-25"
-            />
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.98)_0%,rgba(0,0,0,0.86)_56%,rgba(0,0,0,0.5)_100%)]" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_84%_12%,rgba(199,162,91,0.18),transparent_30%)]" />
-          </div>
-
-          <div className="container-shell relative grid gap-12 py-16 lg:grid-cols-[minmax(0,1.05fr)_minmax(18rem,0.55fr)] lg:items-center lg:py-24">
+          <div className="container-shell relative py-16 lg:py-24">
             <div className="max-w-4xl">
               <p className="section-kicker">Application overview</p>
               <h1 className="section-heading mt-6 text-4xl leading-tight text-white sm:text-5xl xl:text-6xl">
@@ -230,22 +215,6 @@ export default function MotorcycleLedLightsPage() {
               </p>
             </div>
 
-            <figure className="relative min-h-[30rem] overflow-hidden border border-white/12 bg-[#101010] sm:min-h-[36rem]">
-              <Image
-                src={batchDieCastParts}
-                alt="Batch aluminum die-cast parts before gate removal"
-                fill
-                sizes="(min-width: 1024px) 38vw, 100vw"
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/5 to-transparent" />
-              <figcaption className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
-                <p className="section-kicker">Real die-cast process evidence</p>
-                <p className="mt-4 text-lg font-semibold leading-8 text-white">
-                  Batch aluminum die-cast parts before gate removal.
-                </p>
-              </figcaption>
-            </figure>
           </div>
         </section>
 

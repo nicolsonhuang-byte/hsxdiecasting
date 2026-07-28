@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 
 import { SiteFooter, SiteHeader } from "../components/site-navigation";
-
-import workshopHorizontal from "../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
 
 const pageTitle =
   "Contact HSX DIECASTING | OEM Aluminum Die Casting Projects";
@@ -62,7 +59,7 @@ export default function ContactPage() {
           aria-labelledby="contact-hero-title"
           className="border-b border-white/10 bg-black"
         >
-          <div className="container-shell grid gap-12 py-16 sm:py-20 lg:grid-cols-2 lg:items-center lg:py-24">
+          <div className="container-shell grid gap-12 py-16 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:py-24">
             <div>
               <p className="section-kicker">Contact HSX</p>
               <h1
@@ -71,13 +68,9 @@ export default function ContactPage() {
               >
                 Contact HSX
               </h1>
-              <p className="mt-7 max-w-2xl text-xl leading-9 text-stone-200">
-                Contact HSX directly for OEM aluminum die casting project
-                communication.
-              </p>
-              <p className="mt-5 max-w-2xl text-base leading-8 text-stone-400 sm:text-lg">
-                Drawings, 3D files, sample photos, or basic project information
-                can be sent by Email or WhatsApp.
+              <p className="mt-7 max-w-2xl text-xl leading-8 text-white/90">
+                Use Email, WhatsApp, phone, or WeChat for direct communication
+                with HSX in Foshan, China.
               </p>
 
               <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -96,28 +89,56 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <figure
-              className="relative overflow-hidden border border-white/10 bg-stone-900"
-              style={{ aspectRatio: "16 / 11" }}
-            >
-              <Image
-                src={workshopHorizontal}
-                alt="HSX aluminum die casting workshop in Foshan"
-                fill
-                preload
-                sizes="(min-width: 1024px) 48vw, 100vw"
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/5 to-transparent" />
-              <figcaption className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
-                <p className="text-xs font-bold uppercase tracking-widest text-amber-200">
+            <dl className="border-b border-t border-white/10">
+              <div className="grid gap-3 border-b border-white/10 py-5 sm:grid-cols-2 sm:items-center">
+                <dt className="text-xs font-bold uppercase tracking-[0.28em] text-amber-300">
+                  Email
+                </dt>
+                <dd>
+                  <a
+                    href={contactDetails.emailHref}
+                    className="break-all text-base font-semibold text-white underline-offset-4 transition hover:underline sm:text-lg"
+                  >
+                    {contactDetails.email}
+                  </a>
+                </dd>
+              </div>
+              <div className="grid gap-3 border-b border-white/10 py-5 sm:grid-cols-2 sm:items-center">
+                <dt className="text-xs font-bold uppercase tracking-[0.28em] text-amber-300">
+                  WhatsApp / Phone
+                </dt>
+                <dd className="flex flex-wrap gap-x-5 gap-y-3">
+                  <a
+                    href={contactDetails.whatsappHref}
+                    className="text-base font-semibold text-white underline-offset-4 transition hover:underline sm:text-lg"
+                  >
+                    WhatsApp
+                  </a>
+                  <a
+                    href={contactDetails.phoneHref}
+                    className="text-base font-semibold text-white underline-offset-4 transition hover:underline sm:text-lg"
+                  >
+                    {contactDetails.phone}
+                  </a>
+                </dd>
+              </div>
+              <div className="grid gap-3 border-b border-white/10 py-5 sm:grid-cols-2 sm:items-center">
+                <dt className="text-xs font-bold uppercase tracking-[0.28em] text-amber-300">
+                  WeChat
+                </dt>
+                <dd className="text-base font-semibold text-white sm:text-lg">
+                  {contactDetails.wechat}
+                </dd>
+              </div>
+              <div className="grid gap-3 py-5 sm:grid-cols-2">
+                <dt className="text-xs font-bold uppercase tracking-[0.28em] text-amber-300">
                   Factory location
-                </p>
-                <p className="mt-3 text-xl font-semibold text-white">
+                </dt>
+                <dd className="text-base leading-7 text-[#d4cdc0]">
                   Foshan, Guangdong, China
-                </p>
-              </figcaption>
-            </figure>
+                </dd>
+              </div>
+            </dl>
           </div>
         </section>
 
@@ -249,9 +270,8 @@ export default function ContactPage() {
                 Start with the information you have
               </h2>
               <p className="mt-7 max-w-xl text-base leading-8 text-stone-400 sm:text-lg">
-                Send your existing project information by Email or WhatsApp.
-                Detailed review guidance is available on the Project Review
-                page.
+                For a new OEM project, use Project Review to share drawings, 3D
+                files, samples, quantity and project requirements.
               </p>
               <Link
                 href="/b2b-oem-project-review"

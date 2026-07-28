@@ -6,7 +6,7 @@ import { SiteFooter, SiteHeader } from "../../components/site-navigation";
 import ledWorkLight from "../../../../public/images/led-work-light.png";
 import oemAluminumHousing from "../../../../public/images/hsx-factory/oem-aluminum-die-cast-housing.jpg";
 import sprayPainting from "../../../../public/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg";
-import workshopHorizontal from "../../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
+import workLightHousingProductionEvidence from "../../../../public/images/projects/work-light-housing-production-evidence.jpg";
 
 const pageTitle =
   "LED Work Light Aluminum Die-Cast Housings | HSX DIECASTING";
@@ -129,21 +129,14 @@ export default function LedWorkLightsPage() {
       <SiteHeader />
 
       <main id="top">
-        <section className="relative overflow-hidden border-b border-white/8 bg-[#050505]">
-          <div className="absolute inset-0">
-            <Image
-              src={workshopHorizontal}
-              alt="HSX aluminum die casting workshop for custom aluminum housing projects"
-              fill
-              preload
-              sizes="100vw"
-              className="object-cover object-center opacity-42"
-            />
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.96)_0%,rgba(0,0,0,0.82)_45%,rgba(0,0,0,0.42)_100%)]" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_18%,rgba(199,162,91,0.2),transparent_34%)]" />
-          </div>
-
-          <div className="container-shell relative grid min-h-[42rem] gap-12 py-16 lg:grid-cols-[minmax(0,1.02fr)_minmax(18rem,0.58fr)] lg:items-end lg:py-24">
+        <section
+          className="relative overflow-hidden border-b border-white/8"
+          style={{
+            background:
+              "radial-gradient(circle at 78% 18%, rgba(199, 162, 91, 0.13), transparent 34%), #050505",
+          }}
+        >
+          <div className="container-shell relative grid gap-12 py-16 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-center lg:py-24">
             <div className="max-w-4xl">
               <p className="section-kicker">Application overview</p>
               <h1 className="section-heading mt-6 text-4xl leading-tight text-white sm:text-5xl xl:text-6xl">
@@ -176,19 +169,32 @@ export default function LedWorkLightsPage() {
               </div>
             </div>
 
-            <div className="border-l border-[#d6af69]/55 pl-6 lg:mb-2">
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#e9c985]">
-                Scope on this page
-              </p>
-              <p className="mt-5 text-2xl font-semibold leading-9 text-white">
-                Aluminum housings and related die-cast parts for a lighting
-                application.
-              </p>
-              <p className="mt-4 text-sm leading-7 text-[#c8c0b3]">
-                HSX focuses on the aluminum die-cast housing and related
-                die-cast structural parts for this application.
-              </p>
-            </div>
+            <figure
+              className="mx-auto w-full overflow-hidden border border-white/12 bg-[#111111]"
+              style={{ maxWidth: "24rem" }}
+            >
+              <Image
+                src={workLightHousingProductionEvidence}
+                alt="Aluminum die-cast work light housing in a real production setting"
+                preload
+                sizes="(min-width: 1024px) 36vw, 100vw"
+                className="w-full"
+                style={{ height: "auto" }}
+              />
+              <figcaption className="border-t border-white/10 p-6">
+                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#e7ca8e]">
+                  Scope on this page
+                </p>
+                <p className="mt-5 text-2xl font-semibold leading-8 text-white">
+                  Aluminum housings and related die-cast parts for a lighting
+                  application.
+                </p>
+                <p className="mt-4 text-sm leading-7 text-[#c8c0b3]">
+                  HSX focuses on the aluminum die-cast housing and related
+                  die-cast structural parts for this application.
+                </p>
+              </figcaption>
+            </figure>
           </div>
         </section>
 

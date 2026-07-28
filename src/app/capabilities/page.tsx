@@ -4,9 +4,13 @@ import Link from "next/link";
 
 import { SiteFooter, SiteHeader } from "../components/site-navigation";
 
-import batchPartsBeforeTrimming from "../../../public/images/hsx-factory/batch-die-cast-parts-before-trimming.jpg";
+import capabilitiesCastPartVisualCheck from "../../../public/images/hsx-approved-media-20260728/capabilities-cast-part-visual-check.webp";
+import capabilitiesDieCastingAction from "../../../public/images/hsx-approved-media-20260728/capabilities-die-casting-action.webp";
+import capabilitiesFullShotCasting from "../../../public/images/hsx-approved-media-20260728/capabilities-full-shot-casting-runner-gates.webp";
+import capabilitiesGateRemovalTrimming from "../../../public/images/hsx-approved-media-20260728/capabilities-gate-removal-trimming.webp";
+import capabilitiesRealProcessTriptych from "../../../public/images/hsx-approved-media-20260728/capabilities-real-process-triptych.webp";
+import partnerSupportedCncTurning from "../../../public/images/hsx-approved-media-20260728/partner-supported-cnc-turning.webp";
 import drillingWithFixture from "../../../public/images/hsx-factory/fixture-supported-multi-spindle-drilling-cooling.jpg";
-import workshopHorizontal from "../../../public/images/hsx-factory/hsx-aluminum-die-casting-workshop-horizontal.jpg";
 import individualWrappingPacking from "../../../public/images/hsx-factory/individual-wrapping-batch-packing-aluminum-parts.jpg";
 import sprayPainting from "../../../public/images/hsx-factory/in-house-spray-painting-aluminum-parts.jpg";
 import qualityInspectionFinishedAluminumParts from "../../../public/images/hsx-factory/quality-inspection-finished-aluminum-parts.jpg";
@@ -87,24 +91,36 @@ const coreProcessSteps = [
     title: "Aluminum Die Casting",
     description:
       "HSX uses 280T and 320T aluminum die casting machines for suitable small-to-medium OEM aluminum parts.",
+    image: capabilitiesDieCastingAction,
+    alt: "HSX die-casting equipment in operation",
+    evidenceLabel: "Die-casting action",
   },
   {
     step: "02",
     title: "Gate Removal",
     description:
       "Cast runners and gates are removed in-house according to the part structure and agreed blank-delivery scope.",
+    image: capabilitiesFullShotCasting,
+    alt: "Full-shot aluminum casting with runner and gates before gate removal",
+    evidenceLabel: "Full-shot casting",
   },
   {
     step: "03",
     title: "Trimming",
     description:
       "In-house trimming removes remaining flash and prepares part edges for the next required operation.",
+    image: capabilitiesGateRemovalTrimming,
+    alt: "Gate removal and trimming of an aluminum die-cast part at HSX",
+    evidenceLabel: "Gate removal and trimming",
   },
   {
     step: "04",
     title: "Deburring",
     description:
       "In-house deburring removes sharp residual edges and supports safe handling, finishing, inspection, or packing.",
+    image: capabilitiesCastPartVisualCheck,
+    alt: "Visual check of a separated aluminum die-cast part after trimming",
+    evidenceLabel: "Cast-part visual check",
   },
 ];
 
@@ -120,12 +136,6 @@ const secondaryOperations = [
     title: "Polishing",
     description:
       "Polishing and surface preparation can be arranged in-house when appearance or downstream finishing requires it.",
-  },
-  {
-    scope: "Partner-supported",
-    title: "CNC Machining",
-    description:
-      "CNC machining can be coordinated through partner-supported resources when required by the project.",
   },
 ];
 
@@ -292,10 +302,10 @@ export default function CapabilitiesPage() {
             </div>
 
             <div className="motion-rise-delay border border-[#c7a25b]/25 bg-[#11100e] p-3">
-              <div className="relative aspect-[1672/941] min-h-[20rem] overflow-hidden sm:min-h-0">
+              <div className="relative aspect-video overflow-hidden">
                 <Image
-                  src={workshopHorizontal}
-                  alt="HSX aluminum die casting workshop for OEM part manufacturing"
+                  src={capabilitiesRealProcessTriptych}
+                  alt="HSX die casting, full-shot casting, gate removal, and trimming process evidence"
                   fill
                   preload
                   sizes="(min-width: 1280px) 42rem, (min-width: 1024px) 46vw, 100vw"
@@ -307,9 +317,7 @@ export default function CapabilitiesPage() {
                     Factory route
                   </p>
                   <p className="mt-2 text-base font-semibold leading-7 text-white sm:text-lg">
-                    In-house casting and selected operations, with
-                    partner-supported resources used only when the project
-                    requires them.
+                    Die Casting → Full-Shot Casting → Gate Removal and Trimming
                   </p>
                 </div>
               </div>
@@ -337,44 +345,48 @@ export default function CapabilitiesPage() {
 
             <div className="mt-12 grid gap-px overflow-hidden border border-white/10 bg-white/10 md:grid-cols-2 xl:grid-cols-4">
               {coreProcessSteps.map((item) => (
-                <article key={item.step} className="bg-[#090909] p-6 sm:p-7">
-                  <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#d9b56d]">
-                    Step {item.step}
-                  </p>
-                  <h3 className="mt-5 text-2xl font-semibold text-white">
-                    {item.title}
-                  </h3>
-                  <p className="mt-4 text-sm leading-7 text-[#c9c1b2]">
-                    {item.description}
-                  </p>
+                <article key={item.step} className="min-w-0 bg-[#080808]">
+                  <div className="relative aspect-[4/5] overflow-hidden">
+                    <Image
+                      src={item.image}
+                      alt={item.alt}
+                      fill
+                      sizes="(min-width: 1280px) 25vw, (min-width: 768px) 50vw, 100vw"
+                      className="object-cover"
+                    />
+                    <p className="absolute bottom-4 left-4 right-4 border-l-2 border-[#d4ac67]/50 bg-black/70 px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#efcf8d]">
+                      {item.evidenceLabel}
+                    </p>
+                  </div>
+                  <div className="border-t border-white/10 p-6 sm:p-7">
+                    <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#d4ac67]">
+                      Step {item.step}
+                    </p>
+                    <h3 className="mt-5 text-2xl font-semibold text-white">
+                      {item.title}
+                    </h3>
+                    <p className="mt-4 text-sm leading-7 text-[#c9c1b2]">
+                      {item.description}
+                    </p>
+                  </div>
                 </article>
               ))}
             </div>
 
-            <div className="mt-10 grid gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:items-center">
-              <div className="relative aspect-[16/9] overflow-hidden border border-white/10">
-                <Image
-                  src={batchPartsBeforeTrimming}
-                  alt="Batch aluminum die-cast parts before trimming at HSX"
-                  fill
-                  sizes="(min-width: 1024px) 62vw, 100vw"
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-transparent to-black/40" />
-              </div>
-              <div>
+            <div className="mt-10 flex flex-col gap-6 border border-white/10 bg-[#080808] p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
+              <div className="max-w-3xl">
                 <p className="section-kicker">Project fit first</p>
                 <p className="mt-4 text-xl font-semibold leading-8 text-white">
                   Part structure, size, and required downstream work should be
                   reviewed before the manufacturing route is confirmed.
                 </p>
-                <Link
-                  href="/products/oem-aluminum-die-casting-parts"
-                  className="outline-button mt-7 inline-flex text-center"
-                >
-                  Check Project Fit
-                </Link>
               </div>
+              <Link
+                href="/products/oem-aluminum-die-casting-parts"
+                className="outline-button shrink-0 text-center"
+              >
+                Check Project Fit
+              </Link>
             </div>
           </div>
         </section>
@@ -426,6 +438,45 @@ export default function CapabilitiesPage() {
                   </article>
                 ))}
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="partner-supported-cnc-turning"
+          className="border-b border-white/8 py-16 lg:py-24"
+        >
+          <div className="container-shell grid gap-10 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:items-center">
+            <figure
+              className="mx-auto w-full overflow-hidden border border-white/10 bg-[#080808]"
+              style={{ maxWidth: "36rem" }}
+            >
+              <div className="relative aspect-[4/5] overflow-hidden">
+                <Image
+                  src={partnerSupportedCncTurning}
+                  alt="Partner-supported CNC turning for a project-specific aluminum part"
+                  fill
+                  sizes="(min-width: 1024px) 34vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+              <figcaption className="border-t border-white/10 px-5 py-4 text-sm leading-7 text-[#c9c1b2]">
+                Partner-supported process evidence; this is not presented as an
+                HSX in-house operation.
+              </figcaption>
+            </figure>
+
+            <div>
+              <p className="section-kicker">Partner-supported resource</p>
+              <h2 className="section-heading mt-4 text-3xl text-white sm:text-4xl">
+                Partner-Supported CNC Turning
+              </h2>
+              <p className="mt-6 max-w-2xl text-base leading-8 text-[#d4cdc0] sm:text-lg">
+                CNC turning can be coordinated through partner-supported
+                resources when the drawing, tolerance, machining allowance, and
+                agreed supply scope require it. The specific route is confirmed
+                during project review.
+              </p>
             </div>
           </div>
         </section>

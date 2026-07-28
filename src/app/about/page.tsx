@@ -235,39 +235,37 @@ export default function AboutPage() {
                 </h2>
               </div>
               <p className="max-w-[650px] text-base leading-8 text-[#bfb7aa] sm:text-lg">
-                These views show the HSX workshop, an in-house spray painting
-                scene, and finished-part inspection before packing.
+                These views show mold handling and production preparation, an
+                in-house spray painting scene, and finished-part inspection
+                before packing.
               </p>
             </div>
 
-            <div className="mt-12 grid gap-5 lg:grid-cols-3">
+            <div className="mt-12 grid gap-5 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
               <figure
-                className="group relative overflow-hidden bg-white/5 lg:col-span-2"
-                style={{ aspectRatio: "4 / 3" }}
+                className="group relative mx-auto w-full overflow-hidden bg-white/[0.04]"
+                style={{ aspectRatio: "4 / 5" }}
               >
                 <Image
-                  src={workshopHorizontal}
-                  alt="HSX aluminum die casting workshop in Foshan"
+                  src="/images/hsx-approved-media-20260728/about-mold-handling-production-preparation.webp"
+                  alt="HSX mold handling and production preparation"
                   fill
-                  sizes="(min-width: 1024px) 66vw, 100vw"
+                  sizes="(min-width: 1024px) 38vw, 100vw"
                   className="object-cover transition duration-700 group-hover:scale-[1.015]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/5 to-transparent" />
                 <figcaption className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
                   <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#e4c27d]">
-                    Workshop floor
+                    Mold Handling and Production Preparation
                   </p>
                   <p className="mt-2 max-w-[520px] text-lg font-medium text-white">
-                    Aluminum die-cast parts inside the HSX workshop.
+                    Mold handling during production preparation at HSX.
                   </p>
                 </figcaption>
               </figure>
 
-              <div className="grid gap-5 sm:grid-cols-2 lg:col-span-1 lg:grid-cols-1">
-                <figure
-                  className="group relative overflow-hidden bg-white/5"
-                  style={{ aspectRatio: "3 / 2" }}
-                >
+              <div className="flex flex-col gap-5">
+                <figure className="group relative aspect-[3/2] overflow-hidden bg-white/[0.04]">
                   <Image
                     src={sprayPainting}
                     alt="In-house spray painting of aluminum parts at HSX"
@@ -283,10 +281,7 @@ export default function AboutPage() {
                   </figcaption>
                 </figure>
 
-                <figure
-                  className="group relative overflow-hidden bg-white/5"
-                  style={{ aspectRatio: "3 / 2" }}
-                >
+                <figure className="group relative aspect-[3/2] overflow-hidden bg-white/[0.04]">
                   <Image
                     src={qualityInspection}
                     alt="Quality inspection of finished aluminum parts at HSX"
